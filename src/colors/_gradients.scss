@@ -1,0 +1,10 @@
+/**
+ * Gradiants:
+**/
+@mixin primaryGradient () {
+  background-image: linear-gradient(to bottom, #0a79d4, #afd2f0);
+}
+
+@mixin lightGradient () {
+  background-image: linear-gradient(to bottom, #AFD2F0, #F1F9FE);
+}
