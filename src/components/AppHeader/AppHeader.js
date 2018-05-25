@@ -9,6 +9,8 @@ const AppHeader = styled.header`
   font-family: ${props => props.theme.fonts.primaryFont};
   text-transform: uppercase;
   display: flex;
+  align-items: center;
+  justify-content: space-around;
 `
 /** @component */
 export default AppHeader
