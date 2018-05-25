@@ -1,7 +1,6 @@
 {
-  "name": "mirage",
+  "name": "roa-mirage",
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -74,6 +73,7 @@
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
     ],
+    "module": "src/index.js",
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
@@ -87,6 +87,12 @@
       "mjs"
     ]
   },
+  "keywords": [
+    "react",
+    "styled-components",
+    "react-component",
+    "rockets-of-awesome"
+  ],
   "babel": {
     "presets": [
       "react-app"
@@ -94,5 +100,9 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "repository" :
+  { "type" : "git"
+  , "url" : "https://github.com/mealeyst/mirage"
   }
 }
