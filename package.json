@@ -1,6 +1,6 @@
 {
   "name": "roa-mirage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -101,8 +101,8 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "repository" :
-  { "type" : "git"
-  , "url" : "https://github.com/mealeyst/mirage"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mealeyst/mirage"
   }
 }
