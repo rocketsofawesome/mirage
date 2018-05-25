@@ -19,3 +19,8 @@
   <Logo fill='white' />
 </div>
 ```
+
+## Animated Example:
+```js
+<Logo animated />
+```

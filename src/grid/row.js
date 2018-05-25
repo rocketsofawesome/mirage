@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-import media from '../../theme/breakpoints'
+import media from '../theme/breakpoints'
 
 const tabletGrid = css`
   grid-template-columns: repeat(${props => props.tabletCols}, 1fr);
