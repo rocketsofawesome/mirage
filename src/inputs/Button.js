@@ -25,10 +25,12 @@ Button.propTypes = {
 	color: PropTypes.string,
 	size: PropTypes.oneOf(['small', 'normal', 'large']),
 };
+
 Button.defaultProps = {
 	color: '#333',
 	size: 'normal',
 };
+
 Button.sizes = {
 	small: '10px',
 	normal: '14px',

@@ -2,28 +2,27 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const H3 = styled.h3`
-  font-family: ${props => props.theme.fonts.headerFont};
-  font-size: 24px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.0833333333333333;
   letter-spacing: 0.5px;
-  text-align: left;
-  color: ${props => props.theme.colors.navy};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
+
+  color: ${props => props.theme.colors.navy};
+
+  font-family: ${props => props.theme.fonts.headerFont};
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 1.0833333333333333;
 `
 
 H3.propTypes = {
   children: PropTypes.string,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
-      headerFont: PropTypes.string.isRequired
-    }).isRequired,
+      headerFont: PropTypes.string
+    }),
     colors: PropTypes.shape({
-      navy: PropTypes.string.isRequired
-    }).isRequired
+      navy: PropTypes.string
+    })
   }),
   lowercase: PropTypes.bool
 }

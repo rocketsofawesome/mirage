@@ -5,14 +5,14 @@ module.exports = {
   webpackConfig: require('./config/webpack.config.dev.js'),
   components: 'src/**/*.{js,jsx,ts,tsx}',
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/theme')
+    Wrapper: 'src/theme'
   },
   template: {
     favicon: '//res.cloudinary.com/roa-canon/image/upload/v1508867160/favicon.ico',
     head: {
       scripts: [
         {src: 'https://use.typekit.net/bfw8xpa.js'},
-        {src: path.join(__dirname, 'src/theme/typekit.js')}
+        {src: 'src/theme/typekit.js'}
       ]
     }
   },
@@ -22,8 +22,8 @@ module.exports = {
     {
       name: 'Components',
       components: () => [
-        './src/components/AppHeader/AppHeader.js',
-        './src/components/HomeHeader/HomeHeader.js'
+        './src/header/navigation/navigation.js',
+        './src/header/navigation/navigationRegion.js'
       ]
     },
     {
@@ -36,7 +36,8 @@ module.exports = {
         './src/typography/h4.js',
         './src/typography/label.js',
         './src/typography/p.js',
-        './src/typography/serif.js'
+        './src/typography/serif.js',
+        './src/link/link.js'
       ]
     },
     {
@@ -54,15 +55,15 @@ module.exports = {
     {
       name: 'Grid',
       components: () => [
-        './src/layout/Grid/col.js',
-        './src/layout/Grid/row.js'
+        './src/grid/col.js',
+        './src/grid/row.js'
       ]
     },
     {
       name: 'Inputs',
       components: () => [
-        './src/inputs/SizeRadio.js',
-        './src/inputs/Button.js'
+        './src/inputs/sizeRadio.js',
+        './src/inputs/button.js'
       ]
     },
     {

@@ -2,25 +2,31 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Caption = styled.span`
-  font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 14px;
-  font-weight: 500;
-  font-style: italic;
-  font-stretch: normal;
-  line-height: 1.29;
-  letter-spacing: 0.5px;
+  margin: 0;
+
+  ${props => props.center ? 'text-align: center;' : ''}
+  letter-spacing: 1.29;
+  text-transform: ${props => props.uppercase
+    ? 'uppercase' : 'inherit'};
+
   color: ${props => props.theme.colors.navy};
+
+  font-family: ${props => props.theme.fonts.primaryFont};
+  font-size: 0.875em;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.29;
 `
 
 Caption.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
-      primaryFont: PropTypes.string.isRequired
-    }).isRequired,
+      primaryFont: PropTypes.string
+    }),
     colors: PropTypes.shape({
-      navy: PropTypes.string.isRequired
-    }).isRequired
-  }).isRequired
+      navy: PropTypes.string
+    })
+  })
 }
 
 /** @component */

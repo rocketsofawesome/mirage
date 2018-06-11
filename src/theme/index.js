@@ -20,3 +20,5 @@ ThemeWrapper.propTypes = {
     PropTypes.string
   ]).isRequired
 }
+
+export { theme }
