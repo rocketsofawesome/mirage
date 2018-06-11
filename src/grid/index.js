@@ -1,4 +1,4 @@
-import Col from './col'
-import Row from './row'
+import Item from './item'
+import Grid from './grid'
 
-export default {Col, Row}
+export default {Item, Grid}

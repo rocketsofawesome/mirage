@@ -1,5 +1,5 @@
 ```js
-<Navigation>
+<DesktopNav>
   <NavigationRegion columnStart={1} columnEnd={4}>
     <Link href="#">Shop</Link>
     <Link href="#">Box</Link>
@@ -10,23 +10,23 @@
     <Link href="#">Name</Link>
     <Link href="#">Bag</Link>
   </NavigationRegion>
-</Navigation>
+</DesktopNav>
 ```
 
 ## No Links Example:
 ```js
-<Navigation links={false}>
+<DesktopNav links={false}>
   <Label>CALL US: 1-877-ROCKETS</Label>
   <Logo />
   <Label alignRight>FREE SHIPPING & RETURNS</Label>
-</Navigation>
+</DesktopNav>
 ```
 
 
 ## Back Link Example:
 ```js
-<Navigation links={false}>
+<DesktopNav links={false}>
   <Link href="#">← BACK TO SHOP</Link>
   <H1 lowercase center>Checkout</H1>
-</Navigation>
+</DesktopNav>
 ```

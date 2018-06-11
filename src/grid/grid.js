@@ -13,18 +13,20 @@ const desktopGrid = css`
   margin: 0 auto;
 `
 
-const Row = styled.div`
+const Grid = styled.div`
   grid-gap: 10px;
   display: grid;
   grid-auto-flow: row;
   grid-template-columns: repeat(${props => props.mobileCols}, 1fr);
+  grid-template-rows: ${props => props.rowHeight};
+  grid-row-gap: 20px;
   grid-column-gap: 10px;
   margin: 0 7%;
   ${media.tablet`${tabletGrid}`}
   ${media.desktop`${desktopGrid}`}
 `
 
-Row.propTypes = {
+Grid.propTypes = {
   /** Number of columns in a row for the desktop breakpoint */
   desktopCols: PropTypes.number.isRequired,
   /** Number of columns in a row for the mobile breakpoint */
@@ -33,11 +35,12 @@ Row.propTypes = {
   tabletCols: PropTypes.number.isRequired
 }
 
-Row.defaultProps = {
+Grid.defaultProps = {
   desktopCols: 12,
   mobileCols: 4,
-  tabletCols: 12
+  tabletCols: 12,
+  rowHeight: '60px'
 }
 
 /** @component */
-export default Row
+export default Grid

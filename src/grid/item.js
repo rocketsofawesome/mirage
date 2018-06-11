@@ -9,11 +9,11 @@ const setRows = css`
   grid-row: ${props => props.rows};
 `
 
-export const Col = styled.div`
+export const Item = styled.div`
   ${props => props.columns && setColumns}
   ${props => props.rows && setRows}
 `
-Col.propTypes = {
+Item.propTypes = {
   /** Can be a single digit or a '/' seperated value that determines the
   where the column starts horizontially, or the column's width */
   columns: PropTypes.string,
@@ -22,9 +22,9 @@ Col.propTypes = {
   rows: PropTypes.string
 }
 
-Col.defaultProps = {
+Item.defaultProps = {
   columns: 'span 1'
 }
 
 /** @component */
-export default Col
+export default Item

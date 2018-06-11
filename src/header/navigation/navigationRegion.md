@@ -6,7 +6,7 @@
 </NavigationRegion>
 ```
 
-## More than 3 links:
+## Three Links Example:
 ```js
 <NavigationRegion>
   <Link href="#">Shop</Link>
@@ -17,7 +17,7 @@
 </NavigationRegion>
 ```
 
-## Only one link:
+## One Link Example:
 ```js
 <NavigationRegion>
   <Link href="#">Bag</Link>

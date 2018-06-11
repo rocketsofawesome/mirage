@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-const Navigation = styled.header`
+const DesktopNav = styled.header`
   display: grid;
   align-content: center;
 
@@ -18,24 +18,25 @@ const Navigation = styled.header`
     [left-links] ${props => props.links ? 'repeat(3, 1fr)' : '25%'}
     [logo] 458px
     [right-links] ${props => props.links ? 'repeat(3, 1fr)}' : '25%'};
-  > h1, a, label {
+  > h1, a, label, svg {
     height: 60px;
     display: flex;
     align-items: center;
   }
   > *:nth-child(2n) {
     justify-content: center;
+    margin: 0 auto;
   }
 `
 
-Navigation.propTypes = {
+DesktopNav.propTypes = {
   color: PropTypes.string,
   links: PropTypes.bool.isRequired
 }
 
-Navigation.defaultProps = {
+DesktopNav.defaultProps = {
   links: true
 }
 
 /** @component */
-export default Navigation
+export default DesktopNav

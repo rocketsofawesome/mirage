@@ -1,4 +1,4 @@
-import Navigation from './navigation'
+import DesktopNav from './desktopNav'
 import NavigationLinks from './navigationLinks'
 
-export default { Navigation, NavigationLinks }
+export default { DesktopNav, NavigationLinks }
