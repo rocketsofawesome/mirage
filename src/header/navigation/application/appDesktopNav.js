@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 const DesktopNav = styled.header`
   display: grid;
   align-content: center;
+  box-sizing: border-box;
 
   width: 923px;
   height: 60px;
@@ -15,27 +16,35 @@ const DesktopNav = styled.header`
   font-family: ${props => props.theme.fonts.primaryFont};
 
   grid-template-columns:
-    [left-links] ${props => props.links ? 'repeat(3, 1fr)' : '25%'}
+    [left-links] repeat(3, 1fr)
     [logo] 458px
-    [right-links] ${props => props.links ? 'repeat(3, 1fr)}' : '25%'};
+    [right-links] repeat(3, 1fr);
   > h1, a, label, svg {
     height: 60px;
     display: flex;
     align-items: center;
   }
-  > *:nth-child(2n) {
-    justify-content: center;
-    margin: 0 auto;
+  > aside {
+    width: 100%;
+  }
+  > * {
+    justify-self: center;
+    text-align: center;
+    &:nth-child(1n) {
+      grid-column: 1 / 4;
+    }
+    &:nth-child(2n) {
+      justify-self: center;
+      grid-column: 4 / 5;
+    }
+    &:nth-child(3n) {
+      grid-column: 5 / 8;
+    }
   }
 `
 
 DesktopNav.propTypes = {
-  color: PropTypes.string,
-  links: PropTypes.bool.isRequired
-}
-
-DesktopNav.defaultProps = {
-  links: true
+  color: PropTypes.string
 }
 
 /** @component */

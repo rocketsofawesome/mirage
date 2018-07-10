@@ -25,6 +25,7 @@ const colors = {
 const Link = styled.a`
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: none;
+  text-transform: ${props => props.upperCase ? 'uppercase' : 'initial'}
   &:hover {
     text-decoration: ${props => props.underline ? 'underline': 'none'};
   }
@@ -45,7 +46,8 @@ Link.propTypes = {
 
 Link.defaultProps = {
   color: 'blue',
-  underline: true
+  underline: true,
+  upperCase: false
 }
 
 /** @component */

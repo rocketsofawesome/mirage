@@ -22,28 +22,28 @@ const animateFromX = keyframes`
 
 const removeCenterLine = keyframes`
   0% {
-    stroke-dashoffset: 0;
+    opacity: 1;
   }
   100% {
-    stroke-dashoffset: 125;
+    opacity: 0;
   }
 `
 
 const addCenterLine = keyframes`
-  0% {
-    stroke-dashoffset: 125;
-  }
   100% {
-    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
   }
 `
 
 const animateCenterLine = keyframes`
-  50% {
-    stroke-dashoffset: 125;
+  33.3333333333%, 66.6666666666% {
+    opacity: 0;
   }
   0%, 100% {
-    stroke-dashoffset: 0;
+    opacity: 1;
   }
 `
 
@@ -91,17 +91,36 @@ const open = css`
   }
 `
 
+const colorStroke = (strokeColor) => {
+  switch(strokeColor){
+    default:
+      return css`
+        stroke: ${props => props.theme.colors.rocketBlue};
+      `
+    case 'white':
+      return css`
+        stroke: ${props => props.theme.colors.white};
+      `
+      case 'navy':
+        return css`
+          stroke: ${props => props.theme.colors.navy};
+        `
+  }
+}
+
 const StyledHamburger = styled.svg`
   width: 3em;
   height: 3em;
+  max-width: 100%;
+  max-height: 100%;
   cursor: pointer;
 
 .line {
   fill:none;
   stroke-linecap:round;
   stroke-miterlimit:10;
-  stroke-width:4;
-  stroke: ${props => props.theme.colors.rocketBlue};
+  stroke-width: 8;
+  ${props => colorStroke(props.strokeColor)}
 }
 
 //Closed
@@ -127,6 +146,10 @@ StyledHamburger.propTypes = {
   animated: PropTypes.bool
 }
 
+StyledHamburger.defaultProps = {
+  strokeColor: 'blue'
+}
+
 const topPoints = `M2,74.21H102c51.54,1.7,72.86-35.69,59.31-58.6S93.4-3.52,
 89.36,69.35L18.64,140.06`
 const bottomPoints = `M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
@@ -143,13 +166,7 @@ const Hamburger = (props) => {
       d={topPoints} />
     <line
       className='line hamburger-innerline'
-      x1='52'
-      y1='105.54'
-      x2='2'
-      y2='105.54' />
-    <line
-      className='line hamburger-innerline'
-      x1='52'
+      x1='2'
       y1='105.54'
       x2='102'
       y2='105.54'/>

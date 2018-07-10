@@ -1,34 +1,32 @@
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-
-const columns = css`
-  grid-column: ${props => props.columnStart} / ${ props => props.columnEnd};
-`
+import styled from 'styled-components'
 
 const NavigationRegion = styled.aside`
-  ${props => (props.columnEnd && props.columnStart) && columns}
-  grid-template-columns: [links] repeat(${props =>
-    (Array.isArray(props.children) && props.children.length > 3)
+  grid-template-columns: [links] repeat(${props => props.columns
+    ? props.columns
+    : Array.isArray(props.children)
     ? props.children.length
-    : props.columns}, 1fr);
+    : 1}, ${props => props.spacing});
   text-transform: uppercase;
   display: grid;
   align-content: center;
   height: 60px;
+  align-items: center;
+  justify-content: center;
   > * {
     display: flex;
     align-content: center;
+    justify-content: center;
   }
 `
 
 NavigationRegion.propTypes = {
-  columnEnd: PropTypes.number,
-  columnStart: PropTypes.number,
-  columns: PropTypes.number.isRequired
+  columns: PropTypes.number,
+  spacing: PropTypes.string
 }
 
 NavigationRegion.defaultProps = {
-  columns: 3
+  spacing: '1fr'
 }
 
 /** @component */

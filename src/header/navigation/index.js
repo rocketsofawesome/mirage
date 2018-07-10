@@ -1,4 +1,5 @@
-import DesktopNav from './desktopNav'
-import NavigationLinks from './navigationLinks'
+import * as ApplicationNavigation from './application'
+import * as LandingNavigation from './landing'
+import NavigationRegion from './NavigationRegion'
 
-export default { DesktopNav, NavigationLinks }
+export default {...ApplicationNavigation, ...LandingNavigation, NavigationRegion}

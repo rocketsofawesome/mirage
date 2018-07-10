@@ -38,6 +38,7 @@ AIcon.propTypes = {
 }
 
 AIcon.defaultProps = {
+  border: false,
   size: '80px'
 }
 

@@ -94,8 +94,8 @@ const fills = {
 
 const StyledLogo = styled.svg`
   ${props => props.fill ? fills[props.fill] : fills.blue}
-  max-height: ${props => props.size};
-  max-width: ${props => props.size};
+  ${props => props.width ? `max-width: ${props.width};` : ''}
+  ${props => props.height ? `max-height: ${props.height};` : ''}
   width: 100%;
   ${props => props.animated ? animated : ''}
 `
@@ -125,11 +125,12 @@ const Logo = (props) => {
 
 Logo.propTypes = {
   fill: PropTypes.string,
-  size: PropTypes.string
+  height: PropTypes.string,
+  width: PropTypes.string
 }
 
 Logo.defaultProps = {
-  size: '384px'
+  width: '384px'
 }
 
 /** @component */

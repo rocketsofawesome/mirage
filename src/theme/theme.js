@@ -3,5 +3,6 @@ import fontFamilies from './fontFamilies'
 
 export default {
   colors: colors,
-  fonts: fontFamilies
+  fonts: fontFamilies,
+  fixedPosition: 'relative'
 }

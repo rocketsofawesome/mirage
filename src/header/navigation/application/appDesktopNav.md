@@ -1,12 +1,12 @@
 ```js
 <DesktopNav>
-  <NavigationRegion columnStart={1} columnEnd={4}>
+  <NavigationRegion>
     <Link href="#">Shop</Link>
     <Link href="#">Box</Link>
     <Link href="#">Earn $$$</Link>
   </NavigationRegion>
   <Logo />
-  <NavigationRegion columnStart={5} columnEnd={9}>
+  <NavigationRegion columns={3}>
     <Link href="#">Name</Link>
     <Link href="#">Bag</Link>
   </NavigationRegion>
