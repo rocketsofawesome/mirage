@@ -2,5 +2,6 @@ import AIcon from './aIcon'
 import Chevron from './chevron'
 import Logo from './logo'
 import Spinner from './spinner'
+import Hamburger from './hamburger'
 
-export default { AIcon, Chevron, Logo, Spinner }
+export { AIcon, Chevron, Logo, Spinner, Hamburger }

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
-
+import { AIcon, Logo } from '../../../icons'
+import NavigationRegion from '../navigationRegion'
+import Link from '../../../link'
+import { Button } from '../../../inputs'
 const LandingDesktopNav = styled.header`
   background-color: ${props => props.theme.colors.rocketBlue};
   height: 80px;
@@ -8,12 +11,13 @@ const LandingDesktopNav = styled.header`
   grid-template-columns: [icon] 80px [logo] 411px [links] auto;
   grid-auto-flow: column;
   align-items: center;
-  & > *:first-child {
+  ${AIcon} {
     justify-self: center;
   }
-  & > *:last-child {
+  ${NavigationRegion} {
     justify-self: flex-end;
-    > * {
+    border: 1px solid blue;
+    ${Button}, ${Link} {
       margin-right: 25px;
     }
   }

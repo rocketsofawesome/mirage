@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Hamburger } from '../../../icons'
 
 const LandingMobileNav = styled.header`
   height: 40px;
@@ -10,7 +11,7 @@ const LandingMobileNav = styled.header`
   position: ${props => props.theme.fixedPosition};
   align-items: center;
   justify-content: center;
-  & > *:first-child {
+  ${Hamburger}{
     justify-self: flex-start;
     position: absolute;
     left: 10px;

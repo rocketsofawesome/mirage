@@ -35,4 +35,8 @@ const BagIcon = (props) => {
 }
 
 /** @component */
-export default BagIcon
+export default styled(BagIcon)``
+
+// Wrapping the component in a styled tag so that we can refference it in other
+// other styled components. See:
+// https://www.styled-components.com/docs/advanced#caveat

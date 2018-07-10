@@ -26,8 +26,9 @@ const StyledAIcon = styled.svg`
 
 const AIcon = (props) => {
   return (
-    <StyledAIcon viewBox='0 0 34.6 48.68' {...props}>
-      <path d='M34.6,48.67V24.47c0-9.3.1-14.6-4.6-19.29a18,18,0,0,0-25.3,0C0,9.87,0,15.28,0,24.47V48.68H7.3V34.47h20v14.2ZM7.3,27.87v-3.5c0-9.7.5-12.4,2.8-14.9a10,10,0,0,1,14.3,0h0c2.4,2.6,2.8,5.3,2.8,14.9v3.5Z'/>
+    <StyledAIcon viewBox='0 0 80 80' {...props}>
+      <path d='M57.5,64.6V40.1c0-9.4,0.1-14.8-4.7-19.5c-7.2-7-18.5-7-25.6,0c-4.8,4.8-4.8,10.2-4.8,19.5v24.5h7.4V50.3h20.2
+        v14.4H57.5z M29.9,43.6V40c0-9.8,0.5-12.5,2.8-15.1c3.9-4,10.5-4,14.5,0l0,0C49.6,27.6,50,30.3,50,40v3.5H29.9z'/>
     </StyledAIcon>
   )
 }
@@ -43,4 +44,8 @@ AIcon.defaultProps = {
 }
 
 /** @component */
-export default AIcon
+export default styled(AIcon)``
+
+// Wrapping the component in a styled tag so that we can refference it in other
+// other styled components. See:
+// https://www.styled-components.com/docs/advanced#caveat

@@ -1,7 +1,7 @@
 ```js
   <LandingDesktopNav>
-    <AIcon fill='white' size='60%' />
-    <Logo fill='white' size='90%' />
+    <AIcon fill='white' style={{borderRight: '1px solid white'}} />
+    <Logo fill='white' />
     <NavigationRegion spacing='auto'>
       <Link color='white' upperCase>How it Works</Link>
       <Link color='white' upperCase>Our Clothes</Link>

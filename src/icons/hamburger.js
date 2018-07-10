@@ -178,4 +178,9 @@ const Hamburger = (props) => {
 }
 
 /** @component */
-export default Hamburger
+export default styled(Hamburger)``
+
+
+// Wrapping the component in a styled tag so that we can refference it in other
+// other styled components. See:
+// https://www.styled-components.com/docs/advanced#caveat
