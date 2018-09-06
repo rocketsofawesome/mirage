@@ -13,7 +13,7 @@
 ```
 ## Selected with Checkmark
 ```js
-<Button selected checkmark width='150px'>Click Me!</Button>
+<Button selected Checkmark width='150px'>Click Me!</Button>
 ```
 
 ## Disabled

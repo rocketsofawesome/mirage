@@ -1,9 +1,9 @@
 ## Default Example:
 ```js
-<Logo />
+<GrayLogo />
 ```
 
 ## Animated Example:
 ```js
-<Logo animated />
+<GrayLogo animated />
 ```

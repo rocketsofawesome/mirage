@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import BaseButton from './Button.base'
-import Checkmark from '../icons/checkmark'
-import Spinner from '../icons/spinner'
+import Checkmark from '../icons/Checkmark'
+import Spinner from '../icons/Spinner'
 
 const colorButton = (props) => {
   const defaultStyle = css`

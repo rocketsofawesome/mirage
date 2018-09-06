@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Spinner from '../icons/spinner'
-import Checkmark from '../icons/checkmark'
+import Spinner from '../icons/Spinner'
+import Checkmark from '../icons/Checkmark'
 
 const CustomButton = ({loading, children, selected, checkmark, ...props}) => {
   return (

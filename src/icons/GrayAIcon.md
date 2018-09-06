@@ -1,4 +1,4 @@
 ## Default Example:
 ```js
-  <AIcon />
+  <GrayAIcon />
 ```

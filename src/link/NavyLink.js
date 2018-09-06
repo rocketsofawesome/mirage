@@ -3,20 +3,20 @@ import styled from 'styled-components'
 
 import BaseLink from './Link.base'
 
-const Link = styled(BaseLink)`
-  color:  ${props => props.theme.colors.rocketBlue};
+const NavyLink = styled(BaseLink)`
+  color:  ${props => props.theme.colors.navy};
   &:active, &:focus, &:hover, &:visited {
-    color: ${props => props.theme.colors.rocketBlue};
+    color: ${props => props.theme.colors.navy};
   }
 `
 
-Link.propTypes = {
+NavyLink.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string
+      navy: PropTypes.string
     })
   }).isRequired
 }
 
 /** @component */
-export default Link
+export default NavyLink

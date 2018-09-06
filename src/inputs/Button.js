@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-import Spinner from '../icons/spinner'
-import Checkmark from '../icons/checkmark'
+import Spinner from '../icons/Spinner'
+import Checkmark from '../icons/Checkmark'
 import BaseButton from './Button.base'
 
 const backgroundColor = (props) => {

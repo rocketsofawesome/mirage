@@ -4,5 +4,5 @@
 
 ## Count Example
 ```js
-  <BagIcon count={10} />
+  <BagIcon count={20} />
 ```

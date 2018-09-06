@@ -3,16 +3,16 @@ import styled from 'styled-components'
 
 import BaseLogo from './Logo.base'
 
-const Logo = styled(BaseLogo)`
-  fill: ${props => props.theme.colors.rocketBlue};
+const NavyLogo = styled(BaseLogo)`
+  fill: ${props => props.theme.colors.navy};
 `
 
-Logo.propTypes = {
+NavyLogo.propTypes = {
   width: PropTypes.string
 }
 
 /** @component */
-export default Logo
+export default NavyLogo
 
 // Wrapping the component in a styled tag so that we can refference it in other
 // other styled components. See:

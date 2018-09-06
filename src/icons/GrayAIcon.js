@@ -3,20 +3,20 @@ import styled from 'styled-components'
 
 import BaseAIcon from './AIcon.base'
 
-const AIcon = styled(BaseAIcon)`
-  fill: ${props => props.theme.colors.rocketBlue};
+const GrayAIcon = styled(BaseAIcon)`
+  fill: ${props => props.theme.colors.gray[2]};
 `
 
-AIcon.propTypes = {
+GrayAIcon.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string
+      gray: PropTypes.array
     })
   }).isRequired
 }
 
 /** @component */
-export default AIcon
+export default GrayAIcon
 
 // Wrapping the component in a styled tag so that we can refference it in other
 // other styled components. See:

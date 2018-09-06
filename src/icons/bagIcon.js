@@ -1,7 +1,9 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const StyledBagIcon = styled.svg`
+  width: ${props => props.width};
   > polygon, path {
     fill: none;
     stroke: ${props => props.theme.colors.rocketBlue};
@@ -14,7 +16,7 @@ const StyledBagIcon = styled.svg`
   > g text {
     fill: ${props => props.theme.colors.white};
     font-family: ${props => props.theme.fonts.primaryFont};
-    font-size: 10px;
+    font-size: 8px;
     font-weight: 500;
   }
 `
@@ -32,6 +34,15 @@ const BagIcon = (props) => {
       }
     </StyledBagIcon>
   )
+}
+
+BagIcon.propTypes = {
+  count: PropTypes.number,
+  width: PropTypes.string.isRequired
+}
+
+BagIcon.defaultProps = {
+  width: '20px'
 }
 
 /** @component */

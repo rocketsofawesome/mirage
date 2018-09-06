@@ -3,17 +3,17 @@ import styled from 'styled-components'
 
 import BaseImageButton from './ImageButton.base'
 
-const ImageButtonWhite = styled(BaseImageButton)`
+const ImageButtonBlue = styled(BaseImageButton)`
   > button {
-    background-color: ${props => props.theme.colors.white};
-    color: ${props => props.theme.colors.rocketBlue};
+    background-color: ${props => props.theme.colors.rocketBlue};
+    color: ${props => props.theme.colors.white};
   }
   > .borderBottom {
-    background-color: ${props => props.theme.colors.rocketBlue};
+    background-color: ${props => props.theme.colors.white};
   }
 `
 
-ImageButtonWhite.propTypes = {
+ImageButtonBlue.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string,
@@ -23,4 +23,4 @@ ImageButtonWhite.propTypes = {
 }
 
 /** @component */
-export default ImageButtonWhite
+export default ImageButtonBlue
