@@ -11,8 +11,10 @@ export default styled.div`
 
 const brandColors = {
   rocketBlue: '#0073D1',
+  rocketBlueHover: '#0073EB',
   navy: '#00003C',
   yellow: '#F0FF02',
+  yellowHover: '#D8E320',
   lightBlue0: '#EEFCFF',
   lightBlue1: '#BCE1F7',
   lightBlue2: '#76C2F3',
@@ -36,7 +38,8 @@ const supportingColors = {
     '#D5D5D5',
     '#CFCFCF'
   ],
-  red: '#FF511C'
+  red: '#FF511C',
+  loading: '#BFBFBF'
 }
 
 const colors = { ...brandColors, ...supportingColors }

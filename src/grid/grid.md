@@ -1,73 +1,15 @@
 ```js
-<Grid style={{backgroundColor: '#B5BABF'}}>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-</Grid>
-```
+// Setting up content for the grid!
+const Col = (props) => {
+  return (<div style={{height: '60px'}}></div>)
+}
+const row = []
+for (var i = 0; i < 24; i++) {
+  row.push(<Col key={1} />)
+}
 
-## Example with _mobileCols_ set:
-
-```js
-<Grid mobileCols={6} style={{backgroundColor: '#B5BABF'}}>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-</Grid>
-```
-
-## Example with _desktopCols_ set:
-
-```js
-<Grid desktopCols={6} style={{backgroundColor: '#B5BABF'}}>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-</Grid>
-```
-
-## Example with _tabletCols_ set:
-
-```js
-<Grid tabletCols={6} style={{backgroundColor: '#B5BABF'}}>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
-  <Item style={{backgroundColor:'#E6ECF2' }}/>
+// Render the grid!
+<Grid debug>
+  {row}
 </Grid>
 ```

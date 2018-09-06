@@ -1,20 +1,22 @@
-## Default:
 ```js
-<Button width='150px'>Button</Button>
-```
-## Yellow Example:
-```js
-<Button type='yellow' width='150px'>Button</Button>
+<Button width='150px'>Click Me!</Button>
 ```
 
-## Secondary Blue Border:
+## Loading
 ```js
-<Button type='secondaryBlue' width='150px'>Button</Button>
+<Button loading width='150px'>Click Me!</Button>
 ```
 
-## Secondary White Border:
+## Selected
 ```js
-<div style={{backgroundImage: 'linear-gradient(to bottom, #0A79D4, #AFD2F0)', padding: '10px'}}>
-  <Button type='secondaryWhite' width='150px'>Button</Button>
-</div>
+<Button selected width='150px'>Click Me!</Button>
+```
+## Selected with Checkmark
+```js
+<Button selected checkmark width='150px'>Click Me!</Button>
+```
+
+## Disabled
+```js
+<Button disabled width='150px'>Click Me!</Button>
 ```

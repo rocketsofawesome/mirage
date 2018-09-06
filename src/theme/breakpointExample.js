@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import media from './breakpoints'
 
 /** @component */
 export default styled.div`

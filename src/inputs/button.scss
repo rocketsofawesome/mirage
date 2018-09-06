@@ -1,0 +1,23 @@
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+  width: 150px;
+  height: 50px;
+  padding: 0 0.9375em
+
+  text-align: center;
+  letter-spacing: 0.0625em;
+  text-transform: uppercase;
+
+  border-radius: 0.125em;
+
+  font-family: arial;
+  font-size: 0.875em;
+  font-weight: 500;
+  &:hover {
+    cursor: pointer;
+  }
+}

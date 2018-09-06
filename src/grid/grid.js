@@ -1,46 +1,60 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-import media from '../theme/breakpoints'
-
-const tabletGrid = css`
-  grid-template-columns: repeat(${props => props.tabletCols}, 1fr);
+const TabletGrid = css`
+  grid-template-columns:
+    repeat(${props => props.theme.grid.columns.tablet}, 1fr);
+  margin: 0 ${props => props.theme.grid.margins.tablet};
 `
 
-const desktopGrid = css`
-  grid-template-columns: repeat(${props => props.desktopCols}, 1fr);
+const DesktopGrid = css`
+  grid-template-columns:
+    repeat(${props => props.theme.grid.columns.desktop}, 1fr);
   max-width: 1440px;
-  margin: 0 auto;
+  margin: 0 ${props => props.theme.grid.margins.desktop};
 `
 
 const Grid = styled.div`
-  grid-gap: 10px;
+  grid-gap: ${props => props.theme.grid.gutter};
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(${props => props.mobileCols}, 1fr);
-  grid-template-rows: ${props => props.rowHeight};
+  grid-template-columns:
+    repeat(${props => props.theme.grid.columns.mobile}, 1fr);
   grid-row-gap: 20px;
-  grid-column-gap: 10px;
-  margin: 0 7%;
-  ${media.tablet`${tabletGrid}`}
-  ${media.desktop`${desktopGrid}`}
+  grid-column-gap: ${props => props.theme.grid.gutter};
+  margin: 0 ${props => props.theme.grid.margins.mobile};
+  ${props => props.theme.media.tablet`${TabletGrid}`}
+  ${props => props.theme.media.desktop`${DesktopGrid}`}
+  ${props => props.debug &&
+    `> * {
+      border: 1px dashed #666;
+    }`
+  }
 `
 
 Grid.propTypes = {
-  /** Number of columns in a row for the desktop breakpoint */
-  desktopCols: PropTypes.number.isRequired,
-  /** Number of columns in a row for the mobile breakpoint */
-  mobileCols: PropTypes.number.isRequired,
-  /** Number of columns in a row for the mobile breakpoint */
-  tabletCols: PropTypes.number.isRequired
+  debug: PropTypes.bool,
+  theme: PropTypes.shape({
+    media: PropTypes.shape({
+      tablet: PropTypes.func,
+      desktop: PropTypes.func
+    }),
+    grid: PropTypes.shape({
+      columns: PropTypes.shape({
+        mobile: PropTypes.number,
+        tablet: PropTypes.number,
+        desktop: PropTypes.number
+      }),
+      gutter: PropTypes.string,
+      margins: PropTypes.shape({
+        mobile: PropTypes.number,
+        tablet: PropTypes.number,
+        desktop: PropTypes.number
+      })
+    })
+  }),
 }
 
-Grid.defaultProps = {
-  desktopCols: 12,
-  mobileCols: 4,
-  tabletCols: 12,
-  rowHeight: '60px'
-}
 
 /** @component */
 export default Grid

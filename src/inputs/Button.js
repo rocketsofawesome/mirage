@@ -1,68 +1,56 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-const styleButton = (type) => {
-  switch (type) {
-    default:
-      return css`
-        color: ${props => props.theme.colors.white};
-        border-color: transparent;
-        background-color: ${props => props.theme.colors.rocketBlue};
-      `
-    case 'yellow':
-      return css`
-        color: ${props => props.theme.colors.navy};
-        border-color: transparent;
-        background-color: ${props => props.theme.colors.yellow};
-      `
-    case 'secondaryBlue':
-      return css`
-        color: ${props => props.theme.colors.rocketBlue};
-        border-color: ${props => props.theme.colors.rocketBlue};
-        background-color: ${props => props.theme.colors.white};
-      `
-    case 'secondaryWhite':
-      return css`
-        color: ${props => props.theme.colors.white};
-        border-color: ${props => props.theme.colors.white};
-        background-color: transparent;
-      `
+import Spinner from '../icons/spinner'
+import Checkmark from '../icons/checkmark'
+import BaseButton from './Button.base'
+
+const backgroundColor = (props) => {
+  const defaultStyle = css`
+    background-color: ${props.theme.colors.rocketBlue};
+    &:hover {
+      background-color: ${props.theme.colors.rocketBlueHover};
+    }
+  `
+  const disabledOrLoading = css`
+    background-color: ${props.theme.colors.loading};
+  `
+  const selected = css`
+    background-color: ${props.theme.colors.navy}
+  `
+  if (props.selected) {
+    return selected
+  } else if (props.disabled || props.loading) {
+    return disabledOrLoading
   }
+  return defaultStyle
 }
 
-const Button = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const Button = styled(BaseButton)`
+  color: ${props => props.theme.colors.white};
+  border-color: transparent;
 
-  box-sizing: border-box;
-  height: 50px;
-  ${props => props.width ? `width: ${props.width};` : ''}
-
-  text-align: center;
-  letter-spacing: 1px;
-
-  ${props => styleButton(props.type)}
-  border-radius: 2px;
-
-  font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 14px;
-  font-weight: 500;
-  ${props => props.sentanceCase
-    ? 'text-transform: inherit;'
-    : 'text-transform: uppercase;'
+  ${Spinner} > * {
+    fill: ${props => props.theme.colors.white};
   }
+
+  ${Checkmark} > * {
+    stroke: ${props => props.theme.colors.white};
+  }
+
+  ${props => backgroundColor(props)}
+
 `
 
 Button.propTypes = {
-  type: PropTypes.string.isRequired,
-  sentanceCase: PropTypes.bool,
-  width: PropTypes.string
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string,
+      white: PropTypes.string
+    })
+  })
 }
 
-Button.defaultProps = {
-  type: 'primary'
-}
 
 /** @component */
 export default Button

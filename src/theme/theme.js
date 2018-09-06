@@ -1,8 +1,12 @@
 import { colors } from './colors'
+import media from './breakpoints'
 import fontFamilies from './fontFamilies'
+import gridSettings from './gridSettings'
 
 export default {
   colors: colors,
   fonts: fontFamilies,
-  fixedPosition: 'relative'
+  grid: gridSettings,
+  fixedPosition: 'relative',
+  media: media
 }
