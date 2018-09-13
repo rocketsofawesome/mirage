@@ -17,6 +17,7 @@ module.exports = {
     }
   },
   ignore: [
+    './index.js',
     '**/theme/**/*.{js,jsx,ts,tsx}',
     '**/*.base.{js,jsx,ts,tsx}'
   ],
