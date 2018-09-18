@@ -6,7 +6,7 @@ import theme from './theme'
 export default class ThemeWrapper extends Component {
   render () {
     return (
-      <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme} {...this.props}>
         {this.props.children}
       </ThemeProvider>
     )
@@ -20,5 +20,3 @@ ThemeWrapper.propTypes = {
     PropTypes.string
   ]).isRequired
 }
-
-export { theme }
