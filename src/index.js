@@ -36,7 +36,7 @@ export {default as NavyLink} from './link/NavyLink'
 export {default as WhiteLink} from './link/WhiteLink'
 
 //Theme
-export {default as ROATheme} from './theme/theme'
+export {default as ROATheme} from './theme/index'
 
 //Typography
 export {default as Caption} from './typography/Caption'
