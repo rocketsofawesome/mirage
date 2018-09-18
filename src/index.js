@@ -1,90 +1,49 @@
 //Grid
-import Grid from './grid/grid'
+export Grid from './grid/grid'
 
 //Icons
-import AIcon from './icons/AIcon'
-import BagIcon from './icons/BagIcon'
-import Checkmark from './icons/Checkmark'
-import Chevron from './icons/Chevron'
-import CircleChevron from './icons/CircleChevron'
-import GrayAIcon from './icons/GrayAIcon'
-import GrayLogo from './icons/GrayLogo'
-import Hamburger from './icons/Hamburger'
-import Logo from './icons/Logo'
-import NavyAIcon from './icons/NavyAIcon'
-import NavyLogo from './icons/NavyLogo'
-import Ruler from './icons/Ruler'
-import Spinner from './icons/Spinner'
-import WhiteAIcon from './icons/WhiteAIcon'
-import WhiteLogo from './icons/WhiteLogo'
-import XIcon from './icons/XIcon'
-import YellowCircleChevron from './icons/YellowCircleChevron'
+export AIcon from './icons/AIcon'
+export BagIcon from './icons/BagIcon'
+export Checkmark from './icons/Checkmark'
+export Chevron from './icons/Chevron'
+export CircleChevron from './icons/CircleChevron'
+export GrayAIcon from './icons/GrayAIcon'
+export GrayLogo from './icons/GrayLogo'
+export Hamburger from './icons/Hamburger'
+export Logo from './icons/Logo'
+export NavyAIcon from './icons/NavyAIcon'
+export NavyLogo from './icons/NavyLogo'
+export Ruler from './icons/Ruler'
+export Spinner from './icons/Spinner'
+export WhiteAIcon from './icons/WhiteAIcon'
+export WhiteLogo from './icons/WhiteLogo'
+export XIcon from './icons/XIcon'
+export YellowCircleChevron from './icons/YellowCircleChevron'
 
 //Inputs
-import BlueBorderButton from './inputs/BlueBorderButton'
-import Button from './inputs/Button'
-import ImageButtonWhite from './inputs/ImageButtonWhite'
-import ImageButtonBlue from './inputs/ImageButtonBlue'
-import ImageButtonBlack from './inputs/ImageButtonBlack'
-import SizeRadio from './inputs/SizeRadio'
-import WhiteBorderButton from './inputs/WhiteBorderButton'
-import YellowButton from './inputs/YellowButton'
+export BlueBorderButton from './inputs/BlueBorderButton'
+export Button from './inputs/Button'
+export ImageButtonWhite from './inputs/ImageButtonWhite'
+export ImageButtonBlue from './inputs/ImageButtonBlue'
+export ImageButtonBlack from './inputs/ImageButtonBlack'
+export SizeRadio from './inputs/SizeRadio'
+export WhiteBorderButton from './inputs/WhiteBorderButton'
+export YellowButton from './inputs/YellowButton'
 
 //Link
-import Link from './link/Link'
-import NavyLink from './link/NavyLink'
-import WhiteLink from './link/WhiteLink'
+export Link from './link/Link'
+export NavyLink from './link/NavyLink'
+export WhiteLink from './link/WhiteLink'
 
 //Theme
-import roaTheme from './theme/theme'
+export ROATheme, { theme} from './theme/theme'
 
 //Typography
-import Caption from './typography/Caption'
-import H1 from './typography/H1'
-import H2 from './typography/H2'
-import H3 from './typography/H3'
-import H4 from './typography/H4'
-import Label from './typography/Label'
-import P from './typography/P'
-import Serif from './typography/Serif'
-
-export {
-  AIcon,
-  BagIcon,
-  BlueBorderButton,
-  Button,
-  Caption,
-  Checkmark,
-  Chevron,
-  CircleChevron,
-  GrayAIcon,
-  GrayLogo,
-  Grid,
-  H1,
-  H2,
-  H3,
-  H4,
-  Hamburger,
-  ImageButtonWhite,
-  ImageButtonBlack,
-  ImageButtonBlue,
-  Label,
-  Link,
-  Logo,
-  NavyAIcon,
-  NavyLink,
-  NavyLogo,
-  P,
-  roaTheme,
-  Ruler,
-  Serif,
-  SizeRadio,
-  Spinner,
-  WhiteAIcon,
-  WhiteBorderButton,
-  WhiteLink,
-  WhiteLogo,
-  XIcon,
-  YellowButton,
-  YellowCircleChevron
-}
+export Caption from './typography/Caption'
+export H1 from './typography/H1'
+export H2 from './typography/H2'
+export H3 from './typography/H3'
+export H4 from './typography/H4'
+export Label from './typography/Label'
+export P from './typography/P'
+export Serif from './typography/Serif'

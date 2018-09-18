@@ -1,7 +1,7 @@
 {
   "name": "roa-mirage",
-  "version": "0.1.6",
-  "main": "src/index.js",
+  "version": "0.1.9",
+  "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
@@ -48,10 +48,16 @@
   "scripts": {
     "start": "export NODE_ENV=development && ./node_modules/.bin/styleguidist server",
     "build": "export NODE_ENV=development && ./node_modules/.bin/styleguidist build",
+    "prepublish": "export NODE_ENV=development && ./node_modules/.bin/rollup --c",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
-    "react-styleguidist": "^7.0.14"
+    "install": "^0.12.1",
+    "npm": "^6.4.1",
+    "react-styleguidist": "^7.0.14",
+    "rollup": "^0.65.2",
+    "rollup-plugin-babel": "^3.0.7",
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "jest": {
     "collectCoverageFrom": [
