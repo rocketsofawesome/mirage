@@ -1,6 +1,6 @@
 # Rockets of Awesome Pattern Library V1
 
-[Live Demo of the Pattern Library](https://mealeyst.github.io/mirage/)
+[Live Demo of the Pattern Library](https://rocketsofawesome.github.io/mirage/)
 
 The _Rockets of Awesome Pattern Library_ (RoA PL) is an organized set of interactive, reusable components that can be used to build out more complicated modules, pages, and templates. Pattern libraries often include example elements,sample code, variations, use cases, and considerations.
 ***

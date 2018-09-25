@@ -5,6 +5,7 @@ const BaseHr = styled.hr`
   height: 1px;
   width: ${props => props.width};
   border: none;
+  margin: 0.625em 0;
 `
 
 BaseHr.propTypes = {
