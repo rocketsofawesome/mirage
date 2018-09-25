@@ -1,5 +1,5 @@
 {
-  "name": "roa-mirage",
+  "name": "@rocketsofawesome/mirage",
   "version": "0.1.15",
   "main": "dist/bundle.js",
   "dependencies": {
@@ -110,6 +110,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mealeyst/mirage"
-  }
+    "url": "git+https://github.com/mealeyst/mirage.git"
+  },
+  "description": "[Live Demo of the Pattern Library](https://rocketsofawesome.github.io/mirage/)",
+  "bugs": {
+    "url": "https://github.com/mealeyst/mirage/issues"
+  },
+  "homepage": "https://github.com/mealeyst/mirage#readme",
+  "author": "Shawn Mealey",
+  "license": "MIT"
 }
