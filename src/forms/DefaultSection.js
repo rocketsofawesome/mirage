@@ -13,6 +13,9 @@ const DefaultSection = styled.section`
     top: 0.9375em;
     right: 1.25em;
   }
+  main {
+    margin-top: 0.5333333333em;
+  }
 `
 
 /** @component */
