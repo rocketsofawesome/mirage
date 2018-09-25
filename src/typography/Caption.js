@@ -12,7 +12,7 @@ const Caption = styled.span`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 0.875em;
+  font-size: ${props => props.fontSize};
   font-style: italic;
   font-weight: 500;
   line-height: 1.29;
@@ -27,6 +27,10 @@ Caption.propTypes = {
       navy: PropTypes.string
     })
   })
+}
+
+Caption.defaultProps = {
+  fontSize: '0.875em'
 }
 
 /** @component */

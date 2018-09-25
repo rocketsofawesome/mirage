@@ -8,7 +8,7 @@ const P = styled.p`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 16px;
+  font-size: ;
   line-height: 1.3125;
 `
 
@@ -22,6 +22,10 @@ P.propTypes = {
       navy: PropTypes.string
     })
   })
+}
+
+P.defaultProps = {
+  fontSize: '1em'
 }
 
 /** @component */

@@ -3,15 +3,15 @@ import styled from 'styled-components'
 
 const Label = styled.label`
   text-align: ${props => props.alignRight ? 'right' : 'left'};
-  letter-spacing: 1px;
+  letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
 
   color: ${props => props.theme.colors.navy}
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 0.875em;
-  font-weight: 500;
+  font-size: ${props => props.fontSize};
+  font-weight: ${props => props.fontWeight};
 `
 
 Label.propTypes = {
@@ -25,6 +25,12 @@ Label.propTypes = {
     })
   }),
   lowercase: PropTypes.bool
+}
+
+Label.defaultProps = {
+  letterSpacing: '1px',
+  fontSize: '0.875em',
+  fontWeight: '500'
 }
 
 /** @component */

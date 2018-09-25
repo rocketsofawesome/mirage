@@ -9,7 +9,7 @@ const H3 = styled.h3`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.headerFont};
-  font-size: 1.5em;
+  font-size: ;
   font-weight: 500;
   line-height: 1.0833333333333333;
 `
@@ -25,6 +25,10 @@ H3.propTypes = {
     })
   }),
   lowercase: PropTypes.bool
+}
+
+H3.defaultProps = {
+  fontSize: '1.5em'
 }
 
 /** @component */

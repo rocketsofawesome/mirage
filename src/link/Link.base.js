@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const BaseLink = styled.a`
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: none;
-  text-transform: ${props => props.upperCase ? 'uppercase' : 'initial'}
+  text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'}
   &:hover {
     pointer: cursor;
     text-decoration: ${props => props.underline ? 'underline': 'none'};
@@ -17,12 +17,12 @@ BaseLink.propTypes = {
       primaryFont: PropTypes.string.isRequired
     }).isRequired
   }),
-  upperCase: PropTypes.bool.isRequired,
+  uppercase: PropTypes.bool.isRequired,
   underline: PropTypes.bool.isRequired
 }
 
 BaseLink.defaultProps = {
-  upperCase: false,
+  uppercase: false,
   underline: true
 }
 

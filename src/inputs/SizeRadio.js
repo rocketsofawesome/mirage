@@ -28,7 +28,7 @@ position: relative;
   letter-spacing: normal;
 
   color: ${props => props.theme.colors.navy};
-  border: 1px solid ${props => props.theme.colors.gray[4]};
+  border: 1px solid ${props => props.theme.colors.gray[5]};
   border-radius: 50%;
   background-color: ${props => props.theme.colors.gray[0]};
 

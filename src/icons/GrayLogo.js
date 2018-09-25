@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import BaseLogo from './Logo.base'
 
 const GrayLogo = styled(BaseLogo)`
-  fill: ${props => props.theme.colors.gray[2]};
+  fill: ${props => props.theme.colors.gray[3]};
 `
 
 GrayLogo.propTypes = {

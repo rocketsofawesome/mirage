@@ -13,7 +13,7 @@ const H2 = styled.h2`
     color: ${props => props.theme.colors.navy};
 
     font-family: ${props => props.theme.fonts.headerFont};
-    font-size: 2em;
+    font-size: ${props => props.fontSize};
     font-weight: 500;
     line-height: 1.0625;
 `
@@ -29,6 +29,10 @@ H2.propTypes = {
     })
   }),
   lowercase: PropTypes.bool
+}
+
+H2.defaultProps = {
+  fontSize: '2em'
 }
 
 /** @component */

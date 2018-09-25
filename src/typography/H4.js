@@ -7,7 +7,7 @@ const H4 = styled.h4`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 1.125em;
+  font-size: ${props => props.fontSize};
   font-weight: 500;
   font-style: italic;
   line-height: 1;
@@ -23,6 +23,10 @@ H4.propTypes = {
       navy: PropTypes.string
     })
   })
+}
+
+H4.defaultProps = {
+  fontSize: '1.125em'
 }
 
 /** @component */

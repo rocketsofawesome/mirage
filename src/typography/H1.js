@@ -15,7 +15,7 @@ const H1 = styled.h1`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.headerFont};
-  font-size: 2.625em;
+  font-size: ${props => props.fontSize};
   font-weight: 500;
   line-height:1.0476190476190477;
 `
@@ -31,6 +31,10 @@ H1.propTypes = {
     })
   }),
   lowercase: PropTypes.bool
+}
+
+H1.defaultProps = {
+  fontSize: '2.625em'
 }
 
 /** @component */

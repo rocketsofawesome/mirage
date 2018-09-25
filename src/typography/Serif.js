@@ -8,7 +8,7 @@ const Serif = styled.span`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.secondaryFont};
-  font-size: 24px;
+  font-size: ${props => props.fontSize};
   line-height: 1.2083333333333333;
 `
 
@@ -22,6 +22,10 @@ Serif.propTypes = {
       navy: PropTypes.string
     })
   })
+}
+
+Serif.defaultProps = {
+  fontSize: '1.5em'
 }
 
 /** @component */
