@@ -1,6 +1,6 @@
 {
   "name": "roa-mirage",
-  "version": "0.1.12",
+  "version": "0.1.13",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
