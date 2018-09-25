@@ -14,7 +14,7 @@ const DefaultSection = styled.section`
     right: 1.25em;
   }
   main {
-    margin-top: 0.5333333333em;
+    margin-top: 2.5em;
   }
 `
 
