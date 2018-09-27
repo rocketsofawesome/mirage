@@ -2,7 +2,85 @@
 
 [Live Demo of the Pattern Library](https://rocketsofawesome.github.io/mirage/)
 
-The _Rockets of Awesome Pattern Library_ (RoA PL) is an organized set of interactive, reusable components that can be used to build out more complicated modules, pages, and templates. Pattern libraries often include example elements,sample code, variations, use cases, and considerations.
+## Use the Pattern Library
+
+First run the command:
+
+`npm install @rocketsofawesome/mirage`
+
+Then inside of your react project (preferably towards the top of the application) wrap the application in the `<ROATheme></ROATheme>` theme wrapper. This will set a bunch of props on children components such as colors, fonts, etc.
+
+To import other components into your react app, simply do the following:
+
+```
+import { Logo } from '@rocketsofawesome/mirage'
+```
+
+You should then have access to the component and can use it like a normal react component:
+
+```
+<Logo />
+```
+
+It's that easy! Additional props are documented in
+
+## Development
+
+To run the pattern library locally, run the following:
+
+```
+npm start
+```
+
+This will start the styleguidist server which parses through the directories in the `src` directory, and output those components to the pattern library.
+
+If you would like to publish your new component(s) to the styleguide demo, commit your changes like you would normally.
+
+After you have done that, run the command:
+
+```
+npm run build
+```
+
+This command will compile the components to the styleguide directory. Add and commit the newly compiled files in the directory:
+
+```
+git add styleguide; git commit;
+```
+
+To publish those changes to the `gh-pages` branch, we use the git submodules feature. Simply run the command:
+
+```
+git push origin `git subtree split --prefix styleguide master`:gh-pages --force
+```
+
+This will take the styleguide directory specifically, and push that to the `gh-pages` branch. If you don't immediately see your changes, force a hard refresh of the demo page as the code is most likely being cached.
+
+## Publish to npm
+
+If you are happy with the changes that you have made to your component and you wish to publish your changes to npm, do the following.
+
+First, be sure to add your component to the `src/index.js`
+
+This is the file that gets parsed by rollup and distributed as commonJS in the `dist` directory.
+
+Then run the following commands:
+```
+npm version patch
+npm publish
+```
+
+The first command will bump the version of the pattern library by one patch number (Note: publishing to npm requires that a new version number be supplied).
+
+The second command will push the new code up to npm so that when the command:
+
+`npm install @rocketsofawesome/mirage`
+
+is run, the latest changes will also be applied to the `npm module`!
+
+There is a `prepublish` script that is run automatically that runs the rollup script which transpiles the ECMA Script 6 code into commonJS and bundles all the code up into a nice `bundle.js` file.
+
+The _Rockets of Awesome Pattern Library_ (RoA PL) is an organized set of interactive, reusable components that can be used to build out more complicated modules, pages, and templates. Pattern libraries often include example elements, sample code, variations, use cases, and considerations.
 ***
 When building a pattern library, you should consider the following for each pattern you add:
 
