@@ -12,7 +12,7 @@ AIcon.propTypes = {
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string
     })
-  }).isRequired
+  })
 }
 
 /** @component */

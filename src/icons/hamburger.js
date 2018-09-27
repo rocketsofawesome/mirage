@@ -142,8 +142,16 @@ ${props => props.animated && animated}
 `
 
 StyledHamburger.propTypes = {
+  animated: PropTypes.bool,
   open: PropTypes.bool,
-  animated: PropTypes.bool
+  strokeColor: PropTypes.string,
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      navy: PropTypes.string,
+      rocketBlue: PropTypes.string,
+      white: PropTypes.string
+    })
+  })
 }
 
 StyledHamburger.defaultProps = {

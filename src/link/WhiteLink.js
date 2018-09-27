@@ -19,7 +19,8 @@ WhiteLink.propTypes = {
     colors: PropTypes.shape({
       white: PropTypes.string
     })
-  }).isRequired
+  }),
+  underline: PropTypes.bool.isRequired
 }
 
 WhiteLink.defaultProps = {

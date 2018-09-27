@@ -18,7 +18,7 @@ YellowCircleChevron.propTypes = {
     colors: PropTypes.shape({
       rocketBlue: PropTypes.array,
       yellow: PropTypes.string
-    }).isRequired
+    })
   }),
   width: PropTypes.string
 }

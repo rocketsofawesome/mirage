@@ -38,13 +38,13 @@ const DefaultAddress = ({address: {
 
 DefaultAddress.propTypes = {
   address: PropTypes.shape({
-    first_name: PropTypes.string,
-    last_name: PropTypes.string,
-    address1: PropTypes.string,
+    first_name: PropTypes.string.isRequired,
+    last_name: PropTypes.string.isRequired,
+    address1: PropTypes.string.isRequired,
     address2: PropTypes.string,
-    city: PropTypes.string,
-    state: PropTypes.string,
-    zipcode: PropTypes.string
+    city: PropTypes.string.isRequired,
+    state: PropTypes.string.isRequired,
+    zipcode: PropTypes.string.isRequired
   })
 }
 

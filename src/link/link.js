@@ -19,7 +19,7 @@ Link.propTypes = {
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string
     })
-  }).isRequired,
+  }),
   underline: PropTypes.bool.isRequired
 }
 

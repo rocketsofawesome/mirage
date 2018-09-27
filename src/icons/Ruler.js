@@ -31,6 +31,11 @@ const Ruler = styled(BaseIcon)`
 `
 
 Ruler.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      navy: PropTypes.string
+    })
+  }),
   width: PropTypes.string
 }
 

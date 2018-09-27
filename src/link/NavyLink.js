@@ -19,7 +19,7 @@ NavyLink.propTypes = {
     colors: PropTypes.shape({
       navy: PropTypes.string
     })
-  }).isRequired,
+  }),
   underline: PropTypes.bool.isRequired
 }
 

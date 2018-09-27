@@ -18,7 +18,7 @@ CircleChevron.propTypes = {
     colors: PropTypes.shape({
       lightBlue: PropTypes.array,
       white: PropTypes.string
-    }).isRequired
+    })
   }),
   width: PropTypes.string
 }

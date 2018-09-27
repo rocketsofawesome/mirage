@@ -99,7 +99,15 @@ const Spinner = (props) => {
 
 Spinner.propTypes = {
   fill: PropTypes.oneOf(['blue', 'navy', 'gray', 'white']),
-  size: PropTypes.string
+  size: PropTypes.string,
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string,
+      navy: PropTypes.string,
+      white: PropTypes.string,
+      gray: PropTypes.array
+    })
+  })
 }
 
 Spinner.defaultProps = {

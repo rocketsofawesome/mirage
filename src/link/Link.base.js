@@ -22,8 +22,8 @@ const BaseLink = styled.a`
 BaseLink.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
-      primaryFont: PropTypes.string.isRequired
-    }).isRequired
+      primaryFont: PropTypes.string
+    })
   }),
   uppercase: PropTypes.bool.isRequired
 }

@@ -21,6 +21,19 @@ const StyledBagIcon = styled.svg`
   }
 `
 
+StyledBagIcon.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string,
+      white: PropTypes.string
+    }),
+    fonts: PropTypes.shape({
+      primaryFont: PropTypes.string
+    })
+  }),
+  width: PropTypes.string
+}
+
 const BagIcon = (props) => {
   return (
     <StyledBagIcon version='1.1' viewBox='0 0 19 15' {...props}>

@@ -64,13 +64,13 @@ SizeRadio.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string.isRequired
-    }).isRequired,
+    }),
     colors: PropTypes.shape({
       navy: PropTypes.string.isRequired,
       rocketBlue: PropTypes.string.isRequired,
       white: PropTypes.string.isRequired,
       gray: PropTypes.array.isRequired
-    }).isRequired
+    })
   })
 }
 

@@ -8,6 +8,11 @@ const WhiteLogo = styled(BaseLogo)`
 `
 
 WhiteLogo.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      white: PropTypes.string
+    })
+  }),
   width: PropTypes.string
 }
 

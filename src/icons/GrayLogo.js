@@ -8,6 +8,11 @@ const GrayLogo = styled(BaseLogo)`
 `
 
 GrayLogo.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      gray: PropTypes.array
+    })
+  }),
   width: PropTypes.string
 }
 

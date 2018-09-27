@@ -8,6 +8,11 @@ const NavyLogo = styled(BaseLogo)`
 `
 
 NavyLogo.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      navy: PropTypes.string
+    })
+  }),
   width: PropTypes.string
 }
 

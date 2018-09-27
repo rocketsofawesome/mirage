@@ -19,7 +19,7 @@ ImageButtonWhite.propTypes = {
       rocketBlue: PropTypes.string,
       white: PropTypes.string
     })
-  }).isRequired
+  })
 }
 
 /** @component */

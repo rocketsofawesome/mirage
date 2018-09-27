@@ -20,7 +20,7 @@ ImageButtonBlack.propTypes = {
       yellow: PropTypes.string,
       white: PropTypes.string
     })
-  }).isRequired
+  })
 }
 
 /** @component */

@@ -11,7 +11,7 @@ WhiteHr.propTypes = {
     colors: PropTypes.shape({
       white: PropTypes.string
     })
-  }).isRequired,
+  }),
 }
 
 /** @component */

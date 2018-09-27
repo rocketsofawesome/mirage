@@ -12,7 +12,7 @@ GrayAIcon.propTypes = {
     colors: PropTypes.shape({
       gray: PropTypes.array
     })
-  }).isRequired
+  })
 }
 
 /** @component */

@@ -8,6 +8,11 @@ const Logo = styled(BaseLogo)`
 `
 
 Logo.propTypes = {
+  theme: PropTypes.shape({
+    color: PropTypes.shape({
+      rocketBlue: PropTypes.string
+    })
+  }),
   width: PropTypes.string
 }
 
