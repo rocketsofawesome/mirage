@@ -7,6 +7,9 @@ const DefaultSection = styled.section`
   padding: 1.25em;
   background-color: ${props => props.theme.colors.gray[2]};
   position: relative;
+  float: left;
+  width: 100%;
+  box-sizing: border-box;
 
   > ${Link} {
     position: absolute;

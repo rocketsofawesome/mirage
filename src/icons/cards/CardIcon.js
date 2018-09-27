@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Amex from './Amex.base'
+import Default from './Default.base'
 import Diners from './Diners.base'
 import Discover from './Discover.base'
 import JCB from './JCB.base'
@@ -12,17 +13,35 @@ import Paypal from './Paypal.base'
 import Visa  from './Visa.base'
 
 const CardIconBase = ({ brand, className }) => {
-  const children = {
-    amex: Amex,
-    diners: Diners,
-    discover: Discover,
-    jcb: JCB,
-    mastercard: Mastercard,
-    maestro: Maestro,
-    paypal: Paypal,
-    visa: Visa
+  let Child = null
+    switch (brand) {
+      case 'amex':
+        Child = Amex
+        break
+      case 'diners':
+        Child = Diners
+        break
+      case 'discover':
+        Child = Discover
+        break
+      case 'jcb':
+        Child = JCB
+        break
+      case 'mastercard':
+        Child = Mastercard
+        break
+      case 'maestro':
+        Child = Maestro
+        break
+      case 'paypal':
+        Child = Paypal
+        break
+      case 'visa':
+        Child = Visa
+        break
+      default:
+        Child = Default
   }
-  const Child = children[brand]
   return (
     <Child className={className} />
   )

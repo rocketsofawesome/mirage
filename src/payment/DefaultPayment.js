@@ -19,6 +19,7 @@ const DefaultLabel = ({children}) => {
 
 const StyledDefaultPayment = styled.section`
   display: block;
+  float: left;
   ${CardIcon} {
     float: left;
     display: inline-block;

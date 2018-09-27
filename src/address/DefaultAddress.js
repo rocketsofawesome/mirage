@@ -18,6 +18,7 @@ const DefaultLabel = ({children}) => {
 
 const StyledDefaultAddress = styled.section`
   display: block;
+  float: left;
   ${Label} {
     display: inline-block;
     width: 100%;
