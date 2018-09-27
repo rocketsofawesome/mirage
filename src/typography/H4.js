@@ -26,7 +26,7 @@ H4.propTypes = {
 }
 
 H4.defaultProps = {
-  fontSize: '1.125em'
+  fontSize: '1.8rem'
 }
 
 /** @component */

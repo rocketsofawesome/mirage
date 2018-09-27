@@ -109,8 +109,8 @@ const colorStroke = (strokeColor) => {
 }
 
 const StyledHamburger = styled.svg`
-  width: 3em;
-  height: 3em;
+  width: 4.8rem;
+  height: 4.8rem;
   max-width: 100%;
   max-height: 100%;
   cursor: pointer;

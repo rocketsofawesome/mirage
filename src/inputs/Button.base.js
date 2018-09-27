@@ -23,7 +23,7 @@ const BaseButton = styled(CustomButton)`
   box-sizing: border-box;
   height: 50px;
   ${props => props.width ? `width: ${props.width};` : ''}
-  padding: 0 0.9375em;
+  padding: 0 01.5rem;
 
   text-align: center;
 
@@ -33,10 +33,10 @@ const BaseButton = styled(CustomButton)`
     : 'text-transform: uppercase;'
   }
 
-  border-radius: 2px;
+  border-radius: .2rem;
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 500;
 
   transition:
@@ -58,7 +58,7 @@ const BaseButton = styled(CustomButton)`
 
   :active {
     border-style: solid;
-    transform: translateX(2px);
+    transform: translateX(.2rem);
   }
 `
 

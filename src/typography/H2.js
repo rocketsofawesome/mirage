@@ -32,7 +32,7 @@ H2.propTypes = {
 }
 
 H2.defaultProps = {
-  fontSize: '2em'
+  fontSize: '3.2rem'
 }
 
 /** @component */

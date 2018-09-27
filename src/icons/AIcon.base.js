@@ -20,7 +20,7 @@ BaseAIcon.propTypes = {
 }
 
 BaseAIcon.defaultProps = {
-  width: '5.7142857143em'
+  width: '9.2rem'
 }
 
 /** @component */

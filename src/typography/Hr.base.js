@@ -2,10 +2,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const BaseHr = styled.hr`
-  height: 1px;
+  height: .1rem;
   width: ${props => props.width};
   border: none;
-  margin: 0.625em 0;
+  margin: 1rem 0;
 `
 
 BaseHr.propTypes = {

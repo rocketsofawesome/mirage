@@ -4,8 +4,8 @@ import PropTypes from 'prop-types'
 import Link from '../link/Link'
 
 const DefaultSection = styled.section`
-  border-radius: 0.1875em;
-  padding: 1.25em;
+  border-radius: 0.3rem;
+  padding: 2rem;
   background-color: ${props => props.theme.colors.gray[2]};
   position: relative;
   float: left;
@@ -14,11 +14,11 @@ const DefaultSection = styled.section`
 
   > ${Link} {
     position: absolute;
-    top: 0.9375em;
-    right: 1.25em;
+    top: 1.5rem;
+    right: 2rem;
   }
   main {
-    margin-top: 2.5em;
+    margin-top: 4rem;
   }
 `
 

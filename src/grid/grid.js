@@ -10,7 +10,7 @@ const TabletGrid = css`
 const DesktopGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.desktop}, 1fr);
-  max-width: 90em;
+  max-width: 144rem;
   margin: 0 ${props => props.theme.grid.margins.desktop};
 `
 
@@ -20,7 +20,7 @@ const Grid = styled.div`
   grid-auto-flow: row;
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.mobile}, 1fr);
-  grid-row-gap: 1.25em;
+  grid-row-gap: 2rem;
   grid-column-gap: ${props => props.theme.grid.gutter};
   margin: 0 ${props => props.theme.grid.margins.mobile};
   ${props => props.theme.media.tablet`${TabletGrid}`}

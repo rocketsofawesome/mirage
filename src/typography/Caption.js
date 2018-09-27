@@ -30,7 +30,7 @@ Caption.propTypes = {
 }
 
 Caption.defaultProps = {
-  fontSize: '0.875em'
+  fontSize: '1.4rem'
 }
 
 /** @component */

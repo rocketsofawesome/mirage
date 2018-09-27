@@ -7,7 +7,7 @@ import Label from '../typography/Label'
 const DefaultLabel = ({children}) => {
   return (
     <Label
-      fontSize='1.25em'
+      fontSize='2rem'
       letterSpacing='normal'
       fontWeight='normal'
       lowercase>

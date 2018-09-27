@@ -8,7 +8,7 @@ import CardIcon from '../icons/cards/CardIcon'
 const DefaultLabel = ({children}) => {
   return (
     <Label
-      fontSize='1.25em'
+      fontSize='2rem'
       letterSpacing='normal'
       fontWeight='normal'
       lowercase>
@@ -23,9 +23,9 @@ const StyledDefaultPayment = styled.section`
   ${CardIcon} {
     float: left;
     display: inline-block;
-    width: 1.5625em;
-    margin-top: 6px;
-    margin-right: 10px;
+    width: 2.5rem;
+    margin-top: .6rem;
+    margin-right: 1rem;
   }
   > aside {
     float: left;

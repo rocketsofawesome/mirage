@@ -34,7 +34,7 @@ H1.propTypes = {
 }
 
 H1.defaultProps = {
-  fontSize: '2.625em'
+  fontSize: '4.2rem'
 }
 
 /** @component */

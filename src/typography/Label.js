@@ -28,8 +28,8 @@ Label.propTypes = {
 }
 
 Label.defaultProps = {
-  letterSpacing: '1px',
-  fontSize: '0.875em',
+  letterSpacing: '.1rem',
+  fontSize: '1.4rem',
   fontWeight: '500'
 }
 

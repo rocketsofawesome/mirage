@@ -7,10 +7,11 @@ const BaseLink = styled.a`
   text-decoration: none;
   text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'};
 
-  border-bottom: 0.125em solid;
+  border-bottom: 0.2rem solid;
   border-bottom-color: transparent;
 
   font-family: ${props => props.theme.fonts.primaryFont};
+  font-size: 1.6rem;
   &:hover {
     text-decoration: none;
 

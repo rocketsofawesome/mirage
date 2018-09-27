@@ -25,7 +25,7 @@ Serif.propTypes = {
 }
 
 Serif.defaultProps = {
-  fontSize: '1.5em'
+  fontSize: '2.4rem'
 }
 
 /** @component */

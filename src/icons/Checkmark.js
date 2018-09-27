@@ -50,7 +50,7 @@ Checkmark.propTypes = {
 }
 
 Checkmark.defaultProps = {
-  width: '1.571428571428571em',
+  width: '2.5rem',
   stroke: theme.colors.white
 }
 
