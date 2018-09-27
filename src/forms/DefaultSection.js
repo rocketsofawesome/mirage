@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import Link from '../link/Link'
 
@@ -20,6 +21,14 @@ const DefaultSection = styled.section`
     margin-top: 2.5em;
   }
 `
+
+DefaultSection.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      gray: PropTypes.array
+    })
+  }).isRequired,
+}
 
 /** @component */
 export default DefaultSection
