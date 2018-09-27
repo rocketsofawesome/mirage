@@ -10,7 +10,7 @@ export {default as Grid} from './grid/grid'
 //Icons
 export {default as AIcon} from './icons/AIcon'
 export {default as BagIcon} from './icons/BagIcon'
-export {default as CardIcon} from './icons/card/CardIcon'
+export {default as CardIcon} from './icons/cards/CardIcon'
 export {default as Checkmark} from './icons/Checkmark'
 export {default as Chevron} from './icons/Chevron'
 export {default as CircleChevron} from './icons/CircleChevron'
