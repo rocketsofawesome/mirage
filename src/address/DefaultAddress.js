@@ -17,10 +17,10 @@ const DefaultLabel = ({children}) => {
 }
 
 const StyledDefaultAddress = styled.section`
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   ${Label} {
-    flex: 0 0 100%;
+    display: inline-block;
+    width: 100%;
   }
 `
 

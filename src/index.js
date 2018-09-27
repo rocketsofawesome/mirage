@@ -10,6 +10,7 @@ export {default as Grid} from './grid/grid'
 //Icons
 export {default as AIcon} from './icons/AIcon'
 export {default as BagIcon} from './icons/BagIcon'
+export {default as CardIcon} from './icons/card/CardIcon'
 export {default as Checkmark} from './icons/Checkmark'
 export {default as Chevron} from './icons/Chevron'
 export {default as CircleChevron} from './icons/CircleChevron'
@@ -40,6 +41,9 @@ export {default as YellowButton} from './inputs/YellowButton'
 export {default as Link} from './link/Link'
 export {default as NavyLink} from './link/NavyLink'
 export {default as WhiteLink} from './link/WhiteLink'
+
+//Payment
+export { default as DefaultPayment} from './payment/DefaultPayment'
 
 //Theme
 export {default as ROATheme} from './theme/index'
