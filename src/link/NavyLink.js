@@ -7,6 +7,10 @@ const NavyLink = styled(BaseLink)`
   color:  ${props => props.theme.colors.navy};
   &:active, &:focus, &:hover, &:visited {
     color: ${props => props.theme.colors.navy};
+    ${props => props.underline ?
+      `border-bottom-color: ${props.theme.colors.navy};` :
+      ''
+    }
   }
 `
 
@@ -15,7 +19,12 @@ NavyLink.propTypes = {
     colors: PropTypes.shape({
       navy: PropTypes.string
     })
-  }).isRequired
+  }).isRequired,
+  underline: PropTypes.bool.isRequired
+}
+
+NavyLink.defaultProps = {
+  underline: true
 }
 
 /** @component */

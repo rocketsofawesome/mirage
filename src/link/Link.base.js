@@ -2,12 +2,19 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const BaseLink = styled.a`
-  font-family: ${props => props.theme.fonts.primaryFont};
+  transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
+
   text-decoration: none;
-  text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'}
+  text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'};
+
+  border-bottom: 0.125em solid;
+  border-bottom-color: transparent;
+
+  font-family: ${props => props.theme.fonts.primaryFont};
   &:hover {
+    text-decoration: none;
+
     pointer: cursor;
-    text-decoration: ${props => props.underline ? 'underline': 'none'};
   }
 `
 
@@ -17,13 +24,11 @@ BaseLink.propTypes = {
       primaryFont: PropTypes.string.isRequired
     }).isRequired
   }),
-  uppercase: PropTypes.bool.isRequired,
-  underline: PropTypes.bool.isRequired
+  uppercase: PropTypes.bool.isRequired
 }
 
 BaseLink.defaultProps = {
-  uppercase: false,
-  underline: true
+  uppercase: false
 }
 
 /** @component */

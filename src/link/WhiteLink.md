@@ -14,6 +14,6 @@
 # Upper Case Case Example:
 ```js
 <div style={{backgroundColor: '#333', padding: '15px'}}>
-  <WhiteLink upperCase href="#">Example White Link</WhiteLink>
+  <WhiteLink uppercase href="#">Example White Link</WhiteLink>
 </div>
 ```

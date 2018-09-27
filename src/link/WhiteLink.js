@@ -7,6 +7,10 @@ const WhiteLink = styled(BaseLink)`
   color:  ${props => props.theme.colors.white};
   &:active, &:focus, &:hover, &:visited {
     color: ${props => props.theme.colors.white};
+    ${props => props.underline ?
+      `border-bottom-color: ${props.theme.colors.white};` :
+      ''
+    }
   }
 `
 
@@ -16,6 +20,10 @@ WhiteLink.propTypes = {
       white: PropTypes.string
     })
   }).isRequired
+}
+
+WhiteLink.defaultProps = {
+  underline: true
 }
 
 /** @component */

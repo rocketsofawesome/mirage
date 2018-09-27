@@ -9,5 +9,5 @@
 
 # Upper Case Case Example:
 ```js
-<Link upperCase href="#">Example Link</Link>
+<Link uppercase href="#">Example Link</Link>
 ```
