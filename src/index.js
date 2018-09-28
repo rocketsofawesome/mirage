@@ -46,7 +46,7 @@ export {default as WhiteLink} from './link/WhiteLink'
 export { default as DefaultPayment} from './payment/DefaultPayment'
 
 //Theme
-export {default as ROATheme} from './theme/index'
+export {default as ROATheme, theme} from './theme/index'
 
 //Typography
 export {default as Caption} from './typography/Caption'

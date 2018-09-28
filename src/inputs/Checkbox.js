@@ -31,7 +31,7 @@ const fillOut = keyframes`
   }
 `
 
-const checked = `
+const checked = css`
   .box {
     animation: ${fillIn} 0.25s linear forwards;
 
@@ -46,7 +46,7 @@ const checked = `
   }
 `
 
-const unchecked =`
+const unchecked = css`
   animation: ${fillOut} 0.25s linear forwards;
 
   stroke: ${props => props.theme.colors.rocketBlue};
