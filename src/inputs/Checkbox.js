@@ -59,7 +59,7 @@ const unchecked = css`
 const CheckboxBase = (props) => {
   const { className, input, label } = props
   return (
-    <Label className={className}>
+    <Label lowercase className={className}>
       <input
         type='checkbox'
         {...input}
