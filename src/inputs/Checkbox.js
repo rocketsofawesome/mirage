@@ -49,7 +49,7 @@ const checked = css`
 const unchecked = css`
   animation: ${fillOut} 0.25s linear forwards;
 
-  stroke: ${props => props.theme.colors.rocketBlue};
+  stroke: transparent;
   stroke-width: 10;
   stroke-linecap: round;
   stroke-dashoffset: 200;
