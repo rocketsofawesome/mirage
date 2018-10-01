@@ -4,7 +4,7 @@ import styled from 'styled-components'
 import BaseAIcon from './AIcon.base'
 
 const GrayAIcon = styled(BaseAIcon)`
-  fill: ${props => props.theme.colors.gray[2]};
+  fill: ${props => props.theme.colors.gray[3]};
 `
 
 GrayAIcon.propTypes = {

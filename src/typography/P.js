@@ -9,7 +9,7 @@ const P = styled.p`
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
-  line-height: 1.3125;
+  line-height: normal;
 `
 
 P.propTypes = {

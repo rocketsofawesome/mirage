@@ -29,12 +29,14 @@ const supportingColors = {
   black: '#000000',
   gray0: '#F3F3F3',
   gray1: '#F5F5F5',
-  gray2: '#E6E6E6',
-  gray3: '#D5D5D5',
-  gray4: '#CFCFCF',
+  gray2: '#F8F8F8',
+  gray3: '#E6E6E6',
+  gray4: '#D5D5D5',
+  gray5: '#CFCFCF',
   gray: [
     '#F3F3F3',
     '#F5F5F5',
+    '#F8F8F8',
     '#E6E6E6',
     '#D5D5D5',
     '#CFCFCF'

@@ -19,7 +19,7 @@ const fills = {
     fill: ${props => props.theme.colors.navy};
   `,
   gray: css`
-    fill: ${props => props.theme.colors.gray[3]};
+    fill: ${props => props.theme.colors.gray[4]};
   `,
   white: css`
     fill: ${props => props.theme.colors.white};
