@@ -11,7 +11,8 @@ const BaseLink = styled.a`
   border-bottom-color: transparent;
 
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   &:hover {
     text-decoration: none;
 

@@ -18,19 +18,28 @@ const DefaultLabel = ({children}) => {
 }
 
 const StyledDefaultPayment = styled.section`
+  display: flex;
+  align-items: flex-start;
   ${CardIcon} {
-    float: left;
     display: inline-block;
     width: 2.5rem;
     margin-top: .6rem;
     margin-right: 1rem;
+    flex: 0 0 auto;
   }
   > aside {
     display: inline-block;
   }
   ${Label} {
     display: inline-block;
+    box-sizing: border-box;
     width: 100%;
+    &:first-of-type {
+      padding-right: 7rem;
+      ${props => props.theme.media.tablet`
+        padding-right: 5rem;
+      `}
+    }
   }
 `
 

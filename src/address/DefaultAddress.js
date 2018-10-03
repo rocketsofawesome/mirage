@@ -20,6 +20,13 @@ const StyledDefaultAddress = styled.section`
   ${Label} {
     display: inline-block;
     width: 100%;
+    box-sizing: border-box;
+    &:first-of-type {
+      padding-right: 7rem;
+      ${props => props.theme.media.tablet`
+        padding-right: 5rem;
+      `}
+    }
   }
 `
 

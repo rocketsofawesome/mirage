@@ -1,17 +1,23 @@
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-const Label = styled.label`
+const styles = css`
   text-align: ${props => props.alignRight ? 'right' : 'left'};
+  padding: 0;
   letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
 
-  color: ${props => props.theme.colors.navy}
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
+`
+
+const Label = styled.label`
+  ${styles}
+
+  color: ${props => props.theme.colors.navy}
 `
 
 Label.propTypes = {
@@ -35,3 +41,5 @@ Label.defaultProps = {
 
 /** @component */
 export default Label
+
+export { styles }
