@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components'
 
 const styles = css`
   text-align: ${props => props.alignRight ? 'right' : 'left'};
-  padding: 0;
+  margin-bottom: 0;
   letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
