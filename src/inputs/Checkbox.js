@@ -103,8 +103,8 @@ input:checked + .checkbox {
 }
 
 .checkbox {
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: .9rem;
 }
 .box {

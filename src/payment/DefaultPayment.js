@@ -66,3 +66,4 @@ DefaultPayment.propTypes = {
 
 /** @component */
 export default DefaultPayment
+export { StyledDefaultPayment }

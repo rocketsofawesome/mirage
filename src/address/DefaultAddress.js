@@ -57,3 +57,4 @@ DefaultAddress.propTypes = {
 
 /** @component */
 export default DefaultAddress
+export { StyledDefaultAddress }
