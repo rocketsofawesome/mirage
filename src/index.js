@@ -30,7 +30,7 @@ export {default as YellowCircleChevron} from './icons/YellowCircleChevron'
 //Inputs
 export {default as BlueBorderButton} from './inputs/BlueBorderButton'
 export {default as Button} from './inputs/Button'
-export {default as Checkbox} from './inputs/Checkbox'
+export {default as Checkbox} from './inputs/Checkbox/Checkbox'
 export {default as ImageButtonWhite} from './inputs/ImageButtonWhite'
 export {default as ImageButtonBlue} from './inputs/ImageButtonBlue'
 export {default as ImageButtonBlack} from './inputs/ImageButtonBlack'
