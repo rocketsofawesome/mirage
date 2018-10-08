@@ -30,7 +30,7 @@ const Button = styled(BaseButton)`
   color: ${props => props.theme.colors.white};
   border-color: transparent;
 
-  ${Spinner} > * {
+  ${Spinner} rect {
     fill: ${props => props.theme.colors.white};
   }
 

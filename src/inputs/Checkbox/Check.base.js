@@ -33,4 +33,12 @@ const StyledCheck = styled(Check)`
   stroke: ${props => props.theme.colors.white};
 `
 
+StyledCheck.propTypes = {
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      white: PropTypes.string
+    })
+  })
+}
+
 export default StyledCheck

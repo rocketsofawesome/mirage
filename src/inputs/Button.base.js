@@ -8,18 +8,16 @@ import Checkmark from '../icons/Checkmark'
 const CustomButton = ({loading, children, selected, checkmark, ...props}) => {
   return (
     <button {...props}>
-      {selected && checkmark  && <Checkmark />}
-      {!loading && children}
-      {loading && <Spinner />}
+      <span>
+        {selected && checkmark  && <Checkmark />}
+        {!loading && children}
+        {loading && <Spinner size='4rem'/>}
+      </span>
     </button>
   )
 }
 
 const BaseButton = styled(CustomButton)`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   box-sizing: border-box;
   height: 50px;
   ${props => props.width ? `width: ${props.width};` : ''}
@@ -45,7 +43,11 @@ const BaseButton = styled(CustomButton)`
     color 0.25s ease-in;
 
   ${Spinner} {
-    height: 100%;
+    display: inline-block;
+  }
+
+  ${Checkmark} {
+    margin-top: -0.5rem;
   }
 
   :hover {
@@ -59,6 +61,12 @@ const BaseButton = styled(CustomButton)`
   :active {
     border-style: solid;
     transform: translateX(.2rem);
+  }
+  > span {
+    display: inline-block;
+    > * {
+      vertical-align: middle;
+    }
   }
 `
 

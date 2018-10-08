@@ -29,52 +29,43 @@ const fills = {
 const StyledSpinner = styled.svg`
   width: ${props => props.size};
   height: ${props => props.size};
-  -webkit-transform-style: preserve-3d !important;
   rect {
     animation-name: ${animation};
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
-    transform-origin: center;
+    transform-origin: 50% 50%;
+    transform-box: view-box;
     ${props => props.fill ? fills[props.fill] : fills.blue}
-
-    &:nth-child(1) {
-      transform: rotate(0deg);
+  }
+  g {
+    &:nth-child(1) rect {
       animation-delay: -1.0799999999999998s;
     }
-    &:nth-child(2) {
-      transform: rotate(36deg);
+    &:nth-child(2) rect {
       animation-delay: -0.96s;
     }
-    &:nth-child(3) {
-      transform: rotate(72deg);
+    &:nth-child(3) rect {
       animation-delay: -0.8400000000000001s;
     }
-    &:nth-child(4) {
-      transform: rotate(108deg);
+    &:nth-child(4) rect {
       animation-delay: -0.72s;
     }
-    &:nth-child(5) {
-      transform: rotate(144deg);
+    &:nth-child(5) rect {
       animation-delay: -0.6s;
     }
-    &:nth-child(6) {
-      transform: rotate(180deg);
+    &:nth-child(6) rect {
       animation-delay: -0.48s;
     }
-    &:nth-child(7) {
-      transform: rotate(216deg);
+    &:nth-child(7) rect {
       animation-delay: -0.36s;
     }
-    &:nth-child(8) {
-      transform: rotate(252deg);
+    &:nth-child(8) rect {
       animation-delay: -0.24s;
     }
-    &:nth-child(9) {
-      transform: rotate(288deg);
+    &:nth-child(9) rect {
       animation-delay: -0.12s;
     }
-    &:nth-child(10) {
-      transform: rotate(324deg);
+    &:nth-child(10) rect {
       animation-delay: 0s;
     }
   }
@@ -82,17 +73,37 @@ const StyledSpinner = styled.svg`
 
 const Spinner = (props) => {
   return (
-    <StyledSpinner viewBox='0 0 100 100' {...props} preserveAspectRatio='xMidYMid'>
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
-      <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+    <StyledSpinner viewBox='0 0 100 100' {...props} preserveAspectRatio='xMidYMid' xmlns="http://www.w3.org/2000/svg" version='1.1' >
+      <g transform="rotate(0 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(36 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(72 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(108 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(144 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(180 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(216 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(252 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(288 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
+      <g transform="rotate(324 50 50)">
+        <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
+      </g>
     </StyledSpinner>
   )
 }

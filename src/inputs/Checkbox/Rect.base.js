@@ -50,4 +50,13 @@ const StyledRect  = styled(Rect)`
   stroke-linecap: round;
 `
 
+StyledRect.propTypes = {
+  checked: PropTypes.bool,
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string
+    })
+  })
+}
+
 export default StyledRect

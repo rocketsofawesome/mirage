@@ -1,12 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { keyframes, css } from 'styled-components'
+import styled from 'styled-components'
 import Check from './Check.base'
 import Rect from './Rect.base'
 
 import Label from '../../typography/Label'
-
-let checked = false
 
 const CheckboxSVG = ({ className, checked, ...props }) => {
   return (
@@ -81,10 +79,6 @@ const Checkbox = styled(CheckboxBase)`
     height: 0;
 
     opacity: 0;
-  }
-
-  input:checked + ${StyledCheckboxSVG} {
-    ${checked}
   }
 
   input:focused + ${Rect} {

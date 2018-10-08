@@ -32,7 +32,7 @@ const colorButton = (props) => {
 const WhiteBorderButton = styled(BaseButton)`
   background-color: rgba(255, 255, 255, 0);
   ${props => colorButton(props)}
-  ${Spinner} > * {
+  ${Spinner} rect {
     fill: ${props => props.theme.colors.loading};
   }
 
