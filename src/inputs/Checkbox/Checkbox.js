@@ -26,27 +26,20 @@ const StyledCheckboxSVG = styled(CheckboxSVG)`
 `
 
 class CheckboxBase extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      checked: props.input.checked
-    }
-  }
-
   onChange = () => {
     const { input } = this.props
-    const { checked } = this.state
-    this.setState({checked: !checked})
     input.onChange && input.onChange()
   }
+
   render() {
     const { className, input, label } = this.props
-    const { checked } = this.state
+    const checked = input.value
     return (
       <Label lowercase className={className}>
         <input
           type='checkbox'
           {...input}
+          checked={checked}
           onChange={this.onChange}
         />
       <StyledCheckboxSVG checked={checked} />
