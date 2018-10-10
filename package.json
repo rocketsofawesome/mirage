@@ -52,9 +52,15 @@
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
     "install": "^0.12.1",
+    "jest": "^20.0.4",
+    "jest-enzyme": "^7.0.0",
+    "jest-styled-components": "^6.2.1",
     "npm": "^6.4.1",
     "react-styleguidist": "^7.0.14",
+    "react-test-renderer": "^16.5.2",
     "rollup": "^0.65.2",
     "rollup-plugin-babel": "^3.0.7",
     "rollup-plugin-node-resolve": "^3.4.0"
@@ -66,6 +72,7 @@
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
     ],
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
       "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
