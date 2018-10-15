@@ -66,8 +66,12 @@
     "rollup-plugin-node-resolve": "^3.4.0"
   },
   "jest": {
+    "collectCoverage": true,
     "collectCoverageFrom": [
-      "src/**/*.{js,jsx,mjs}"
+      "src/**/*.{js,jsx,mjs}",
+      "!src/theme/**/*.{js,jsx,mjs}",
+      "!src/index.js",
+      "!src/setupTests.js"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
@@ -91,6 +95,7 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
+    "moduleDirectories": ["node_modules", "src"],
     "moduleFileExtensions": [
       "web.js",
       "js",

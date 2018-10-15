@@ -1,64 +1,43 @@
-//Address
-export {default as DefaultAddress} from './address/DefaultAddress'
+/**
+ * Core:
+**/
 
-//Forms
-export {default as DefaultSection} from './forms/DefaultSection'
+  // Icons
+  export * from 'SRC/components/icons'
 
-//Grid
-export {default as Grid} from './grid/grid'
+  //Grid
+  export {default as Grid} from '.SRC/core/grid/grid'
 
-//Icons
-export {default as AIcon} from './icons/AIcon'
-export {default as BagIcon} from './icons/BagIcon'
-export {default as CardIcon} from './icons/cards/CardIcon'
-export {default as Checkmark} from './icons/Checkmark'
-export {default as Chevron} from './icons/Chevron'
-export {default as CircleChevron} from './icons/CircleChevron'
-export {default as GrayAIcon} from './icons/GrayAIcon'
-export {default as GrayLogo} from './icons/GrayLogo'
-export {default as Hamburger} from './icons/Hamburger'
-export {default as Logo} from './icons/Logo'
-export {default as NavyAIcon} from './icons/NavyAIcon'
-export {default as NavyLogo} from './icons/NavyLogo'
-export {default as Ruler} from './icons/Ruler'
-export {default as Spinner} from './icons/Spinner'
-export {default as WhiteAIcon} from './icons/WhiteAIcon'
-export {default as WhiteLogo} from './icons/WhiteLogo'
-export {default as XIcon} from './icons/XIcon'
-export {default as YellowCircleChevron} from './icons/YellowCircleChevron'
+  //Theme
+  export {default as ROATheme, theme} from 'SRC/components/theme/index'
 
-//Inputs
-export {default as BlueBorderButton} from './inputs/BlueBorderButton'
-export {default as Button} from './inputs/Button'
-export {default as Checkbox} from './inputs/Checkbox/Checkbox'
-export {default as ImageButtonWhite} from './inputs/ImageButtonWhite'
-export {default as ImageButtonBlue} from './inputs/ImageButtonBlue'
-export {default as ImageButtonBlack} from './inputs/ImageButtonBlack'
-export {default as SizeRadio} from './inputs/SizeRadio'
-export {default as WhiteBorderButton} from './inputs/WhiteBorderButton'
-export {default as YellowButton} from './inputs/YellowButton'
+  //Typography
+  export * from 'SRC/components/typography'
 
-//Link
-export {default as Link} from './link/Link'
-export {default as NavyLink} from './link/NavyLink'
-export {default as WhiteLink} from './link/WhiteLink'
+/**
+ * Components:
+**/
 
-//Payment
-export { default as DefaultPayment} from './payment/DefaultPayment'
+  //Address
+  export {default as DefaultAddress} from 'SRC/components/address/DefaultAddress'
 
-//Theme
-export {default as ROATheme, theme} from './theme/index'
+  //Inputs
+  export * from 'SRC/components/inputs'
 
-//Typography
-export {default as Caption} from './typography/Caption'
-export {default as H1} from './typography/H1'
-export {default as H2} from './typography/H2'
-export {default as H3} from './typography/H3'
-export {default as H4} from './typography/H4'
-export {default as Label} from './typography/Label'
-export {default as P} from './typography/P'
-export {default as Serif} from './typography/Serif'
-export {default as BlueHr} from './typography/BlueHr'
-export {default as Hr} from './typography/Hr'
-export {default as NavyHr} from './typography/NavyHr'
-export {default as WhiteHr} from './typography/WhiteHr'
+  //Link
+  export * from 'SRC/components/link'
+
+/**
+ * Modules:
+**/
+
+  //Forms
+  export {default as DefaultSection} from 'SRC/modules/forms/DefaultSection'
+
+/**
+ * Templates:
+**/
+
+/**
+ * Pages:
+**/

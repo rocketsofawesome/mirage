@@ -5,7 +5,7 @@ module.exports = {
   webpackConfig: require('./config/webpack.config.dev.js'),
   components: 'src/**/*.{js,jsx,ts,tsx}',
   styleguideComponents: {
-    Wrapper: path.join(__dirname, 'src/theme')
+    Wrapper: path.join(__dirname, 'src/core/theme')
   },
   template: {
     favicon: '//res.cloudinary.com/roa-canon/image/upload/v1508867160/favicon.ico',
@@ -18,7 +18,9 @@ module.exports = {
   },
   ignore: [
     'src/index.js',
+    'src/setupTests.js',
     '**/theme/**/*.{js,jsx,ts,tsx}',
+    '**/*.test.{js,jsx,ts,tsx}',
     '**/*.base.{js,jsx,ts,tsx}'
   ],
   pagePerSection: true
