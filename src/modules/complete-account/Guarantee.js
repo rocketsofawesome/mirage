@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Label } from 'SRC/core/typography'
-import { GuaranteeIcon } from 'SRC/core/icons'
-import { InformationalSection } from 'SRC/components/sections'
+import { Label } from 'SRC/core/typography/'
+import { GuaranteeIcon } from 'SRC/core/icons/'
+import { InformationalSection } from 'SRC/components/sections/'
 
 const  UnstyledGuarantee = ({ className, children }) => {
   return (
