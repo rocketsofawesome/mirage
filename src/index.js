@@ -3,16 +3,16 @@
 **/
 
   // Icons
-  export * from './components/icons'
+  export * from './core/icons'
 
   //Grid
-  export {default as Grid} from '../core/grid/grid'
+  export {default as Grid} from './core/grid/grid'
 
   //Theme
-  export {default as ROATheme, theme} from './components/theme/index'
+  export {default as ROATheme, theme} from './core/theme/index'
 
   //Typography
-  export * from './components/typography'
+  export * from './core/typography'
 
 /**
  * Components:

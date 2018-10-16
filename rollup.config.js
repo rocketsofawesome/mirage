@@ -1,6 +1,7 @@
 // node-resolve will resolve all the node dependencies
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
+import alias from 'rollup-plugin-alias';
 export default {
   input: 'src/index.js',
   output: {
@@ -18,6 +19,9 @@ export default {
     resolve(),
     babel({
       exclude: 'node_modules/**'
+    }),
+    alias: ({
+      SRC: './src'
     })
   ]
 }
