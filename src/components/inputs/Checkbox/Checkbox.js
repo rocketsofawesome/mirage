@@ -42,6 +42,7 @@ const Checkbox = styled(CheckboxBase)`
   display: flex;
   align-items: center;
   font-size: 1.6rem;
+  font-weight: 400;
 
   input {
     width: 0;
