@@ -3,39 +3,39 @@
 **/
 
   // Icons
-  export * from 'SRC/components/icons'
+  export * from './components/icons'
 
   //Grid
-  export {default as Grid} from '.SRC/core/grid/grid'
+  export {default as Grid} from '../core/grid/grid'
 
   //Theme
-  export {default as ROATheme, theme} from 'SRC/components/theme/index'
+  export {default as ROATheme, theme} from './components/theme/index'
 
   //Typography
-  export * from 'SRC/components/typography'
+  export * from './components/typography'
 
 /**
  * Components:
 **/
 
   //Address
-  export {default as DefaultAddress} from 'SRC/components/address/DefaultAddress'
+  export {default as DefaultAddress} from './components/address/DefaultAddress'
 
   //Inputs
-  export * from 'SRC/components/inputs'
+  export * from './components/inputs'
 
   //Link
-  export * from 'SRC/components/link'
+  export * from './components/link'
 
 /**
  * Modules:
 **/
 
   //Complete Account
-  export {default as Guarantee} from 'SRC/modules/complete-account/Guarantee'
+  export {default as Guarantee} from './modules/complete-account/Guarantee'
 
   //Forms
-  export {default as DefaultSection} from 'SRC/modules/forms/DefaultSection'
+  export {default as DefaultSection} from './modules/forms/DefaultSection'
 
 /**
  * Templates:
