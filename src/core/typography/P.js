@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const P = styled.p`
   text-align: left;
   letter-spacing: normal;
+  margin: 0;
 
   color: ${props => props.theme.colors.navy};
 
