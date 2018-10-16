@@ -31,6 +31,9 @@
  * Modules:
 **/
 
+  //Complete Account
+  export {default as Guarantee} from 'SRC/modules/complete-account/Guarantee'
+
   //Forms
   export {default as DefaultSection} from 'SRC/modules/forms/DefaultSection'
 
