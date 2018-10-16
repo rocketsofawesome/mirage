@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -95,7 +95,10 @@
     "moduleNameMapper": {
       "^react-native$": "react-native-web"
     },
-    "moduleDirectories": ["node_modules", "src"],
+    "moduleDirectories": [
+      "node_modules",
+      "src"
+    ],
     "moduleFileExtensions": [
       "web.js",
       "js",
