@@ -36,6 +36,7 @@
 
   //Complete Account
   export {default as Guarantee} from './modules/complete-account/Guarantee'
+  export {default as SubscriptionShipping} from './modules/complete-account/SubscriptionShipping'
 
   //Forms
   export {default as DefaultSection} from './modules/forms/DefaultSection'
