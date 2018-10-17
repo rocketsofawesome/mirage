@@ -20,14 +20,22 @@ const UnstyledSubscriptionShipping = ({className}) => {
 
 const SubscriptionShipping = styled(UnstyledSubscriptionShipping)`
   display: flex;
-  align-items: flex-start;
-  padding: 0 1rem 1rem 1rem;
+  align-items: center;
+  padding: 1rem;
+  ${props => props.theme.media.tablet`
+    padding: 0;
+    min-height: 8rem;
+  `}
+  min-height: 8rem;
   ${MailboxIcon} {
     margin-right: 1.5rem;
-    flex: 0 0 7rem;
+    flex: 0 0 5rem;
+    ${props => props.theme.media.tablet`
+      flex: 0 0 7rem;
+      align-self: flex-end;
+    `}
   }
   aside {
-    margin-top: 1rem;
     ${P}:first-of-type {
       font-weight: 500;
     }
