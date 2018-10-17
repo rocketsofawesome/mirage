@@ -22,6 +22,7 @@ const SubscriptionShipping = styled(UnstyledSubscriptionShipping)`
   display: flex;
   align-items: center;
   padding: 1rem;
+  margin-bottom: 3rem;
   ${props => props.theme.media.tablet`
     padding: 0;
     min-height: 8rem;
