@@ -121,7 +121,7 @@ module.exports = {
             loader: require.resolve('eslint-loader'),
           },
         ],
-        include: paths.appSrc,
+        include: [paths.appSrc, paths.styleguideSrc]
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -142,7 +142,7 @@ module.exports = {
           // Process JS with Babel.
           {
             test: /\.(js|jsx|mjs)$/,
-            include: paths.appSrc,
+            include: [paths.appSrc, paths.styleguideSrc],
             loader: require.resolve('babel-loader'),
             options: {
 

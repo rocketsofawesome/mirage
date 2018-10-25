@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-const TabletGrid = css`
+const tabletGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.tablet}, 1fr);
-  margin: 0 ${props => props.theme.grid.margins.tablet};
+  margin: 0 ${props => props.margins && props.theme.grid.margins.tablet};
 `
 
-const DesktopGrid = css`
+const desktopGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.desktop}, 1fr);
   max-width: 144rem;
-  margin: 0 ${props => props.theme.grid.margins.desktop};
+  margin: 0 ${props => props.margins && props.theme.grid.margins.desktop};
 `
 
-const Grid = styled.div`
+const grid = css`
   grid-gap: ${props => props.theme.grid.gutter};
   display: grid;
   grid-auto-flow: row;
@@ -22,9 +22,9 @@ const Grid = styled.div`
     repeat(${props => props.theme.grid.columns.mobile}, 1fr);
   grid-row-gap: 2rem;
   grid-column-gap: ${props => props.theme.grid.gutter};
-  margin: 0 ${props => props.theme.grid.margins.mobile};
-  ${props => props.theme.media.tablet`${TabletGrid}`}
-  ${props => props.theme.media.desktop`${DesktopGrid}`}
+  margin: 0 ${props => props.margins && props.theme.grid.margins.mobile};
+  ${props => props.theme.media.phoneMax`${tabletGrid}`}
+  ${props => props.theme.media.tablet`${desktopGrid}`}
   ${props => props.debug &&
     `> * {
       border: 1px dashed #666;
@@ -32,8 +32,9 @@ const Grid = styled.div`
   }
 `
 
-Grid.propTypes = {
+grid.propTypes = {
   debug: PropTypes.bool,
+  margins: PropTypes.bool,
   theme: PropTypes.shape({
     media: PropTypes.shape({
       tablet: PropTypes.func,
@@ -57,4 +58,4 @@ Grid.propTypes = {
 
 
 /** @component */
-export default Grid
+export default grid

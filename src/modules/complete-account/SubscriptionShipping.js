@@ -44,7 +44,11 @@ const SubscriptionShipping = styled(UnstyledSubscriptionShipping)`
 `
 
 SubscriptionShipping.propTypes = {
-
+  theme: PropTypes.shape({
+    media: PropTypes.shape({
+      tablet: PropTypes.func
+    })
+  })
 }
 
 /** @component */

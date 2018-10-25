@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Base Component) BaseButton matching the snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 01.5rem;
+  text-align: center;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+  transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+}
+
+.c0 .c1 {
+  display: inline-block;
+}
+
+.c0 .c2 {
+  margin-top: -0.5rem;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0:focus {
+  outline: 0;
+}
+
+.c0,
+.c0:active {
+  border-style: solid;
+  -webkit-transform: translateX(.2rem);
+  -ms-transform: translateX(.2rem);
+  transform: translateX(.2rem);
+}
+
+.c0 > span {
+  display: inline-block;
+}
+
+.c0 > span > * {
+  vertical-align: middle;
+}
+
+<CustomButton
+  className="c0"
+  theme={
+    Object {
+      "base": undefined,
+      "breakpoints": Object {
+        "aboveDesktop": "(min-device-width: 1440px)",
+        "aboveLaptop": "(min-device-width: 1280px)",
+        "abovePhone": "(min-device-width: 320px)",
+        "abovePhoneMax": "(min-device-width: 414px)",
+        "aboveTablet": "(min-device-width: 768px)",
+        "aboveTabletMax": "(min-device-width: 960px)",
+        "belowDesktop": "(max-device-width: 1440px)",
+        "belowLaptop": "(max-device-width: 1280px)",
+        "belowPhone": "(max-device-width: 320px)",
+        "belowPhoneMax": "(max-device-width: 414px)",
+        "belowTablet": "(max-device-width: 768px)",
+        "belowTabletMax": "(max-device-width: 960px)",
+        "landscape": "(orientation: landscape)",
+        "portrait": "(orientation: portrait)",
+      },
+      "colors": Object {
+        "black": "#000000",
+        "electricBlue": "#080CF1",
+        "gray": Array [
+          "#F3F3F3",
+          "#F5F5F5",
+          "#F8F8F8",
+          "#E6E6E6",
+          "#D5D5D5",
+          "#CFCFCF",
+        ],
+        "gray0": "#F3F3F3",
+        "gray1": "#F5F5F5",
+        "gray2": "#F8F8F8",
+        "gray3": "#E6E6E6",
+        "gray4": "#D5D5D5",
+        "gray5": "#CFCFCF",
+        "lightBlue": Array [
+          "#EEFCFF",
+          "#BCE1F7",
+          "#76C2F3",
+        ],
+        "lightBlue0": "#EEFCFF",
+        "lightBlue1": "#BCE1F7",
+        "lightBlue2": "#76C2F3",
+        "lightPink": "#FBDDE4",
+        "loading": "#BFBFBF",
+        "navy": "#00003C",
+        "pink": "#FEACBE",
+        "red": "#FF511C",
+        "rocketBlue": "#0073D1",
+        "rocketBlueHover": "#0073EB",
+        "white": "#FFFFFF",
+        "yellow": "#F0FF02",
+        "yellowHover": "#D8E320",
+      },
+      "fixedPosition": "relative",
+      "fonts": Object {
+        "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+        "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+        "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+      },
+      "grid": Object {
+        "columns": Object {
+          "desktop": 12,
+          "mobile": 4,
+          "tablet": 10,
+        },
+        "gutter": "10px",
+        "margins": Object {
+          "desktop": "7%",
+          "mobile": "3%",
+          "tablet": "7%",
+        },
+      },
+      "media": Object {
+        "desktop": [Function],
+        "laptop": [Function],
+        "phone": [Function],
+        "phoneMax": [Function],
+        "tablet": [Function],
+        "tabletMax": [Function],
+      },
+    }
+  }
+/>
+`;
