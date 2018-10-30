@@ -11,11 +11,11 @@ const base = injectGlobal`
 `
 
 export default {
+  base: base,
   breakpoints: breakpoints,
   colors: colors,
   fonts: fontFamilies,
   grid: gridSettings,
   fixedPosition: 'relative',
-  media: media,
-  base: base
+  media: media
 }

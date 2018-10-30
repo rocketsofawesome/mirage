@@ -10,7 +10,7 @@ const tabletGrid = css`
 const desktopGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.desktop}, 1fr);
-  max-width: 144rem;
+  max-width: ${props => props.maxWidth};
   margin: 0 ${props => props.margins && props.theme.grid.margins.desktop};
 `
 
@@ -23,8 +23,8 @@ const grid = css`
   grid-row-gap: 2rem;
   grid-column-gap: ${props => props.theme.grid.gutter};
   margin: 0 ${props => props.margins && props.theme.grid.margins.mobile};
-  ${props => props.theme.media.phoneMax`${tabletGrid}`}
-  ${props => props.theme.media.tablet`${desktopGrid}`}
+  ${props => props.theme.media.tablet`${tabletGrid}`}
+  ${props => props.theme.media.laptop`${desktopGrid}`}
   ${props => props.debug &&
     `> * {
       border: 1px dashed #666;
@@ -59,3 +59,8 @@ grid.propTypes = {
 
 /** @component */
 export default grid
+
+grid.defaultProps = {
+  margin: true,
+  maxWidth: '114rem'
+}

@@ -30,16 +30,25 @@ const UnstyledStyleGuideRenderer = ({
 
 const StyleGuideRenderer = styled(UnstyledStyleGuideRenderer)`
   ${grid}
+  max-width: 100%;
   > aside {
     background-color: ${props => props.theme.colors.gray[0]};
-    grid-column: span 3;
+    grid-column: span 4;
+    ${props => props.theme.media.tablet`grid-column: span 4;`}
+    ${props => props.theme.media.laptop`grid-column: span 3;`}
+    ${props => props.theme.media.desktop`grid-column: span 2;`}
     > header {
       padding: 2rem;
       border-bottom: 1px solid ${props => props.theme.colors.gray[4]};
     }
   }
   > section {
-    grid-column: 5 / 13;
+    grid-column: span 4;
+    max-width: 100%;
+    box-sizing: border-box;
+    ${props => props.theme.media.laptop`grid-column: 4 / 13;`}
+    ${props => props.theme.media.desktop`grid-column: 5 / 13;`}
+
   }
 `
 
@@ -52,7 +61,8 @@ StyleGuideRenderer.propTypes = {
 }
 
 StyleGuideRenderer.defaultProps = {
-  margins: false
+  margins: false,
+  maxWidth: 'none'
 }
 
 const WrappedStyleGuideRenderer = (props) => (
