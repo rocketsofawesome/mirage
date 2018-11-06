@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import grid from 'SRC/core/grid/grid'
+import grid from 'SRC/core/grid/grid.base'
 import ThemeWrapper from 'SRC/core/theme'
 import H1 from 'SRC/core/typography/H1'
 
