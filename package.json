@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.40",
+  "version": "0.1.41",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -37,7 +37,7 @@
     "react-dom": "^16.3.2",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
-    "styled-components": "^3.2.6",
+    "styled-components": "^3.4.5",
     "sw-precache-webpack-plugin": "0.11.4",
     "url-loader": "0.6.2",
     "webpack": "3.8.1",
@@ -94,7 +94,7 @@
     ],
     "module": "src/index.js",
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^SRC(.*)$": "<rootDir>/src$1"
     },
     "moduleDirectories": [
       "node_modules",

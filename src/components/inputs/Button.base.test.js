@@ -5,12 +5,12 @@ import { css, keyframes } from 'styled-components'
 import 'jest-styled-components'
 
 import { theme } from 'SRC/core/theme'
-import BlueBorderButton from './BlueBorderButton'
+import BaseButton from './Button.base'
 
-describe('(Component) BlueBorderButton', () => {
+describe('(Base Component) BaseButton', () => {
   test('matching the snapshot', () => {
-    
-    const component = shallow(<BlueBorderButton theme={theme} />)
+    const component = shallow(<BaseButton theme={theme} />)
+    console.log(component.debug())
     expect(component).toMatchSnapshot()
   })
 })

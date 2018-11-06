@@ -5,26 +5,25 @@ import Spinner from 'SRC/core/icons/Spinner'
 import Checkmark from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
 
-const backgroundColor = (props) => {
-  const defaultStyle = css`
-    background-color: ${props.theme.colors.rocketBlue};
-    &:hover {
-      background-color: ${props.theme.colors.rocketBlueHover};
-    }
-  `
-  const disabledOrLoading = css`
-    background-color: ${props.theme.colors.loading};
-  `
-  const selected = css`
-    background-color: ${props.theme.colors.navy}
-  `
-  if (props.selected) {
-    return selected
-  } else if (props.disabled || props.loading) {
-    return disabledOrLoading
+export const defaultStyle = css`
+  background-color: ${props => props.theme.colors.rocketBlue};
+  &:hover {
+    background-color: ${props => props.theme.colors.rocketBlueHover};
   }
-  return defaultStyle
-}
+`
+export const disabledOrLoading = css`
+  background-color: ${props => props.theme.colors.loading};
+`
+export const selected = css`
+  background-color: ${props => props.theme.colors.navy}
+`
+
+const backgroundColor = css`
+  ${props => (!props.selected && !props.disabled && !props.loading) && defaultStyle}
+  ${props => props.selected && selected}
+  ${props => props.disabled && disabledOrLoading}
+  ${props => props.loading && disabledOrLoading}
+`
 
 const Button = styled(BaseButton)`
   color: ${props => props.theme.colors.white};
@@ -37,9 +36,7 @@ const Button = styled(BaseButton)`
   ${Checkmark} > * {
     stroke: ${props => props.theme.colors.white};
   }
-
-  ${props => backgroundColor(props)}
-
+  ${props => backgroundColor}
 `
 
 Button.propTypes = {
