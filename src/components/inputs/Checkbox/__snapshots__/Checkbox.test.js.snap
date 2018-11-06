@@ -1,5 +1,127 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`(Base Component) Checkbox matching the snapshot 1`] = `
+.c0 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: inherit;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #00003C;
+}
+
+.c4 {
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke: #FFFFFF;
+}
+
+.c3 {
+  -webkit-animation: hBmzvO 0.25s linear forwards;
+  animation: hBmzvO 0.25s linear forwards;
+  stroke: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dashoffset: 200;
+  fill: none;
+  stroke: #0073D1;
+  stroke-width: 20;
+  stroke-linecap: round;
+}
+
+.c1 {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: .9rem;
+}
+
+.c5 input:focused + .c2 {
+  stroke-width: 40;
+}
+
+<CheckboxBase
+  input={
+    Object {
+      "onChange": [Function],
+      "value": false,
+    }
+  }
+>
+  <styled.label
+    fontSize="1.4rem"
+    fontWeight="500"
+    letterSpacing=".1rem"
+    lowercase={true}
+  >
+    <label
+      className="c0"
+      fontSize="1.4rem"
+      fontWeight="500"
+      letterSpacing=".1rem"
+    >
+      <input
+        checked={false}
+        onChange={[Function]}
+        type="checkbox"
+        value={false}
+      />
+      <Styled(CheckboxSVG)
+        checked={false}
+      >
+        <CheckboxSVG
+          checked={false}
+          className="c1"
+        >
+          <svg
+            className="c1"
+            viewBox="0 0 190 190"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <Styled(Rect)
+              checked={false}
+            >
+              <Rect
+                checked={false}
+                className="c2 c3"
+              >
+                <rect
+                  className="c2 c3"
+                  height="185"
+                  rx="10"
+                  ry="10"
+                  width="185"
+                  x="2.5"
+                  y="2.5"
+                />
+              </Rect>
+            </Styled(Rect)>
+            <Styled(Check)
+              checked={false}
+            >
+              <Check
+                checked={false}
+                className="c4"
+              >
+                <polyline
+                  className="c4"
+                  points="38.75 98.75 77.75 134.75 151.25 55.25"
+                />
+              </Check>
+            </Styled(Check)>
+          </svg>
+        </CheckboxSVG>
+      </Styled(CheckboxSVG)>
+    </label>
+  </styled.label>
+</CheckboxBase>
+`;
+
 exports[`(Component) Checkbox matching the snapshot 1`] = `
 .c1 {
   text-align: left;
@@ -62,36 +184,90 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   stroke-width: 40;
 }
 
-<label
-  className="c0 c1"
-  fontSize="1.4rem"
-  fontWeight="500"
-  letterSpacing=".1rem"
+<Styled(CheckboxBase)
+  input={
+    Object {
+      "onChange": [Function],
+      "value": false,
+    }
+  }
 >
-  <input
-    checked={false}
-    type="checkbox"
-    value={false}
-  />
-  <svg
-    className="c2"
-    viewBox="0 0 190 190"
-    xmlns="http://www.w3.org/2000/svg"
+  <CheckboxBase
+    className="c0"
+    input={
+      Object {
+        "onChange": [Function],
+        "value": false,
+      }
+    }
   >
-    <rect
-      className="c3 c4"
-      height="185"
-      rx="10"
-      ry="10"
-      width="185"
-      x="2.5"
-      y="2.5"
-    />
-    <polyline
-      className="c5"
-      points="38.75 98.75 77.75 134.75 151.25 55.25"
-    />
-  </svg>
-  Example Checkbox
-</label>
+    <styled.label
+      className="c0"
+      fontSize="1.4rem"
+      fontWeight="500"
+      letterSpacing=".1rem"
+      lowercase={true}
+    >
+      <label
+        className="c0 c1"
+        fontSize="1.4rem"
+        fontWeight="500"
+        letterSpacing=".1rem"
+      >
+        <input
+          checked={false}
+          onChange={[Function]}
+          type="checkbox"
+          value={false}
+        />
+        <Styled(CheckboxSVG)
+          checked={false}
+        >
+          <CheckboxSVG
+            checked={false}
+            className="c2"
+          >
+            <svg
+              className="c2"
+              viewBox="0 0 190 190"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <Styled(Rect)
+                checked={false}
+              >
+                <Rect
+                  checked={false}
+                  className="c3 c4"
+                >
+                  <rect
+                    className="c3 c4"
+                    height="185"
+                    rx="10"
+                    ry="10"
+                    width="185"
+                    x="2.5"
+                    y="2.5"
+                  />
+                </Rect>
+              </Styled(Rect)>
+              <Styled(Check)
+                checked={false}
+              >
+                <Check
+                  checked={false}
+                  className="c5"
+                >
+                  <polyline
+                    className="c5"
+                    points="38.75 98.75 77.75 134.75 151.25 55.25"
+                  />
+                </Check>
+              </Styled(Check)>
+            </svg>
+          </CheckboxSVG>
+        </Styled(CheckboxSVG)>
+      </label>
+    </styled.label>
+  </CheckboxBase>
+</Styled(CheckboxBase)>
 `;

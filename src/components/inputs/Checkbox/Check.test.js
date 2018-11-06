@@ -6,14 +6,21 @@ import 'jest-styled-components'
 import { theme } from 'SRC/core/theme'
 import StyledCheck, { checked } from './Check.base'
 
+const { shallowWithTheme } = global
+
 describe('(Base Component) Check', () => {
+  const createBaseCheck = (props) => {
+    return shallowWithTheme(
+      <StyledCheck {...props}/>
+    )
+  }
   test('matching the snapshot', () => {
-    const component = shallow(<StyledCheck theme={theme} />)
+    const component = createBaseCheck()
     expect(component).toMatchSnapshot()
   })
 
   test('adding "checked" styles when checked is passes', () => {
-    const component = shallow(<StyledCheck theme={theme} checked/>)
+    const component = createBaseCheck({checked: true})
     expect(component).toHaveStyleRule({
       modifier: css`${checked}`,
     })

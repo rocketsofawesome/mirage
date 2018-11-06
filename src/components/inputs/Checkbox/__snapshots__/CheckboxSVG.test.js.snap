@@ -1,98 +1,131 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Component) Checkbox matching the snapshot 1`] = `
+exports[`(Base Component) CheckboxSVG matching the snapshot 1`] = `
+.c1 {
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke: #FFFFFF;
+}
+
+.c0 {
+  -webkit-animation: hBmzvO 0.25s linear forwards;
+  animation: hBmzvO 0.25s linear forwards;
+  stroke: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dashoffset: 200;
+  fill: none;
+  stroke: #0073D1;
+  stroke-width: 20;
+  stroke-linecap: round;
+}
+
+<CheckboxSVG>
+  <svg
+    viewBox="0 0 190 190"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <Styled(Rect)>
+      <Rect
+        className="c0"
+      >
+        <rect
+          className="c0"
+          height="185"
+          rx="10"
+          ry="10"
+          width="185"
+          x="2.5"
+          y="2.5"
+        />
+      </Rect>
+    </Styled(Rect)>
+    <Styled(Check)>
+      <Check
+        className="c1"
+      >
+        <polyline
+          className="c1"
+          points="38.75 98.75 77.75 134.75 151.25 55.25"
+        />
+      </Check>
+    </Styled(Check)>
+  </svg>
+</CheckboxSVG>
+`;
+
+exports[`(Component) StyledCheckboxSVG matching the snapshot 1`] = `
+.c2 {
+  fill: none;
+  stroke-width: 20;
+  stroke-linecap: round;
+  stroke: #FFFFFF;
+}
+
+.c1 {
+  -webkit-animation: hBmzvO 0.25s linear forwards;
+  animation: hBmzvO 0.25s linear forwards;
+  stroke: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dashoffset: 200;
+  fill: none;
+  stroke: #0073D1;
+  stroke-width: 20;
+  stroke-linecap: round;
+}
+
 .c0 {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: .9rem;
 }
 
-<CheckboxSVG
+<Styled(CheckboxSVG)
   checked={false}
-  className="c0"
-  theme={
-    Object {
-      "base": undefined,
-      "breakpoints": Object {
-        "aboveDesktop": "(min-device-width: 1440px)",
-        "aboveLaptop": "(min-device-width: 1280px)",
-        "abovePhone": "(min-device-width: 320px)",
-        "abovePhoneMax": "(min-device-width: 414px)",
-        "aboveTablet": "(min-device-width: 768px)",
-        "aboveTabletMax": "(min-device-width: 960px)",
-        "belowDesktop": "(max-device-width: 1440px)",
-        "belowLaptop": "(max-device-width: 1280px)",
-        "belowPhone": "(max-device-width: 320px)",
-        "belowPhoneMax": "(max-device-width: 414px)",
-        "belowTablet": "(max-device-width: 768px)",
-        "belowTabletMax": "(max-device-width: 960px)",
-        "landscape": "(orientation: landscape)",
-        "portrait": "(orientation: portrait)",
-      },
-      "colors": Object {
-        "black": "#000000",
-        "electricBlue": "#080CF1",
-        "gray": Array [
-          "#F3F3F3",
-          "#F5F5F5",
-          "#F8F8F8",
-          "#E6E6E6",
-          "#D5D5D5",
-          "#CFCFCF",
-        ],
-        "gray0": "#F3F3F3",
-        "gray1": "#F5F5F5",
-        "gray2": "#F8F8F8",
-        "gray3": "#E6E6E6",
-        "gray4": "#D5D5D5",
-        "gray5": "#CFCFCF",
-        "lightBlue": Array [
-          "#EEFCFF",
-          "#BCE1F7",
-          "#76C2F3",
-        ],
-        "lightBlue0": "#EEFCFF",
-        "lightBlue1": "#BCE1F7",
-        "lightBlue2": "#76C2F3",
-        "lightPink": "#FBDDE4",
-        "loading": "#BFBFBF",
-        "navy": "#00003C",
-        "pink": "#FEACBE",
-        "red": "#FF511C",
-        "rocketBlue": "#0073D1",
-        "rocketBlueHover": "#0073EB",
-        "white": "#FFFFFF",
-        "yellow": "#F0FF02",
-        "yellowHover": "#D8E320",
-      },
-      "fixedPosition": "relative",
-      "fonts": Object {
-        "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
-        "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
-        "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
-      },
-      "grid": Object {
-        "columns": Object {
-          "desktop": 12,
-          "mobile": 4,
-          "tablet": 10,
-        },
-        "gutter": "10px",
-        "margins": Object {
-          "desktop": "7%",
-          "mobile": "3%",
-          "tablet": "7%",
-        },
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "phoneMax": [Function],
-        "tablet": [Function],
-        "tabletMax": [Function],
-      },
-    }
-  }
-/>
+>
+  <CheckboxSVG
+    checked={false}
+    className="c0"
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 190 190"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <Styled(Rect)
+        checked={false}
+      >
+        <Rect
+          checked={false}
+          className="c1"
+        >
+          <rect
+            className="c1"
+            height="185"
+            rx="10"
+            ry="10"
+            width="185"
+            x="2.5"
+            y="2.5"
+          />
+        </Rect>
+      </Styled(Rect)>
+      <Styled(Check)
+        checked={false}
+      >
+        <Check
+          checked={false}
+          className="c2"
+        >
+          <polyline
+            className="c2"
+            points="38.75 98.75 77.75 134.75 151.25 55.25"
+          />
+        </Check>
+      </Styled(Check)>
+    </svg>
+  </CheckboxSVG>
+</Styled(CheckboxSVG)>
 `;

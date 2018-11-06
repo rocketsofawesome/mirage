@@ -6,7 +6,7 @@
   export * from './core/icons'
 
   //Grid
-  export {default as Grid} from './core/grid/grid'
+  export {default as Grid} from './core/grid/grid.base'
 
   //Theme
   export {default as ROATheme, theme} from './core/theme/index'

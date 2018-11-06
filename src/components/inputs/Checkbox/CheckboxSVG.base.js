@@ -5,11 +5,11 @@ import styled from 'styled-components'
 import Check from './Check.base'
 import Rect from './Rect.base'
 
-const CheckboxSVG = ({ className, checked, ...props }) => {
+const CheckboxSVG = ({ className, ...props }) => {
   return (
     <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'>
-      <Rect {...props} checked={checked} />
-      <Check {...props} checked={checked} />
+      <Rect {...props} />
+      <Check {...props} />
     </svg>
   )
 }
