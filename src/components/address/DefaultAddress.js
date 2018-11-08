@@ -16,7 +16,29 @@ const DefaultLabel = ({children}) => {
   )
 }
 
-const StyledDefaultAddress = styled.section`
+const DefaultAddress = ({
+  address: {
+    first_name,
+    last_name,
+    address1,
+    address2,
+    city,
+    state,
+    zipcode
+  },
+  className
+}) => {
+  return (
+    <section className={className}>
+      <DefaultLabel>{first_name} {last_name}</DefaultLabel>
+      <DefaultLabel>{address1}</DefaultLabel>
+      {address2 && <DefaultLabel>{address2}</DefaultLabel>}
+      <DefaultLabel>{city}, {state} {zipcode}</DefaultLabel>
+    </section>
+  )
+}
+
+const StyledDefaultAddress = styled(DefaultAddress)`
   ${Label} {
     display: inline-block;
     width: 100%;
@@ -30,20 +52,7 @@ const StyledDefaultAddress = styled.section`
   }
 `
 
-const DefaultAddress = ({address: {
-  first_name, last_name, address1, address2, city, state, zipcode
-}}) => {
-  return (
-    <StyledDefaultAddress>
-      <DefaultLabel>{first_name} {last_name}</DefaultLabel>
-      <DefaultLabel>{address1}</DefaultLabel>
-      {address2 && <DefaultLabel>{address2}</DefaultLabel>}
-      <DefaultLabel>{city}, {state} {zipcode}</DefaultLabel>
-    </StyledDefaultAddress>
-  )
-}
-
-DefaultAddress.propTypes = {
+StyledDefaultAddress.propTypes = {
   address: PropTypes.shape({
     first_name: PropTypes.string.isRequired,
     last_name: PropTypes.string.isRequired,
@@ -56,5 +65,5 @@ DefaultAddress.propTypes = {
 }
 
 /** @component */
-export default DefaultAddress
-export { StyledDefaultAddress }
+export default StyledDefaultAddress
+export { DefaultAddress, DefaultLabel }

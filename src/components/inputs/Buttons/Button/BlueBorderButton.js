@@ -35,7 +35,7 @@ const BlueBorderButton = styled(BaseButton)`
 `
 
 BlueBorderButton.propTypes = {
-  spinner: PropTypes.function,
+  spinner: PropTypes.func,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       white: PropTypes.string

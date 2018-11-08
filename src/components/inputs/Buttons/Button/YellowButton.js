@@ -15,7 +15,7 @@ const YellowButton = styled(BaseButton)`
 `
 
 YellowButton.propTypes = {
-  spinner: PropTypes.object,
+  spinner: PropTypes.func,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       navy: PropTypes.string,

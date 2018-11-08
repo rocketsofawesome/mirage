@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 
-import theme from 'SRC/core/theme/theme'
-
 export const UnstyledCheckmark = (props) => {
   return (
     <svg {...props} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26.5 26.5'>

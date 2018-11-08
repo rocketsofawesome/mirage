@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Styled Componenet) BlueBorderButton matching the snapshot 1`] = `
+exports[`(Styled component) WhiteBorderButton matching the snapshot 1`] = `
 .c1 {
   box-sizing: border-box;
   height: 50px;
@@ -60,13 +60,12 @@ exports[`(Styled Componenet) BlueBorderButton matching the snapshot 1`] = `
 
 .c0 {
   background-color: rgba(255,255,255,0);
-  color: #0073D1;
-  border-color: #0073D1;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .c0:hover {
-  color: #0073EB;
-  border-color: #0073EB;
+  background-color: rgba(255,255,255,0.1);
 }
 
 <Styled(Styled(CustomButton))

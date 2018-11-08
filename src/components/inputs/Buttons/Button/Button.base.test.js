@@ -13,7 +13,7 @@ const { shallowWithTheme } = global
 
 const text = 'Example'
 
-describe('(Base Component) BaseButton', () => {
+describe('(Styled Component) BaseButton', () => {
   const createBaseButton = (props) => {
     return shallowWithTheme(
       <BaseButton
@@ -25,43 +25,46 @@ describe('(Base Component) BaseButton', () => {
     )
   }
   test('matching the snapshot', () => {
-    const component = createBaseButton()
-    expect(component).toMatchSnapshot()
+    expect(createBaseButton())
+    .toMatchSnapshot()
   })
 
   test('setting the width', () => {
     const width = '2.2rem'
-    const component = createBaseButton({width: width})
-    expect(component).toHaveStyleRule({
+    expect(createBaseButton({width: width}))
+    .toHaveStyleRule({
       width: width
     })
   })
 
   test('setting text case', () => {
-    const component = createBaseButton({sentanceCase: true})
-    expect(component).toHaveStyleRule({
+    expect(createBaseButton({sentanceCase: true}))
+    .toHaveStyleRule({
       'text-transform': 'inherit'
     })
   })
 
   describe('when hovering', () => {
     test('setting cursor to pointer by default', () => {
-      const component = createBaseButton()
-      expect(component).toHaveStyleRule({
+      expect(createBaseButton())
+      .toHaveStyleRule({
         'cursor': 'pointer'
       })
     })
+
     test('not having pointer cursor when loading', () => {
-      const component = createBaseButton({loading: true})
-      expect(component).toHaveStyleRule('cursor', undefined)
+      expect(createBaseButton({loading: true}))
+      .toHaveStyleRule('cursor', undefined)
     })
+
     test('not having pointer cursor when loading', () => {
-      const component = createBaseButton({selected: true, loading: false})
-      expect(component).toHaveStyleRule('cursor', undefined)
+      expect(createBaseButton({selected: true, loading: false}))
+      .toHaveStyleRule('cursor', undefined)
     })
+
     test('setting font family', () => {
-      const component = createBaseButton()
-      expect(component).toHaveStyleRule({
+      expect(createBaseButton())
+      .toHaveStyleRule({
         'font-family': theme.fonts.primaryFont
       })
     })
@@ -85,34 +88,49 @@ describe('(Component) CustomButton', () => {
     )
   }
   test('matching the snapshot', () => {
-    const component =  createCustomButton()
-    expect(component).toMatchSnapshot()
+    expect(createCustomButton())
+    .toMatchSnapshot()
   })
 
   test('setting the button text', () => {
     const text = 'Test'
-    const component =  createCustomButton({children: text})
-    expect(component.text()).toEqual(text)
+    expect(
+      createCustomButton({children: text}).text()
+    )
+    .toEqual(text)
   })
 
   describe('setting the selected prop', () => {
     test('not rendering the checkmark if showCheckmark is not set', () => {
-      const component = createCustomButton({selected: true})
-      expect(component.find(WhiteCheckmark).length).toEqual(0)
+      expect(
+        createCustomButton({selected: true})
+        .find(WhiteCheckmark).length
+      )
+      .toEqual(0)
     })
     test('rendering the selected checkmark', () => {
-      const component = createCustomButton({
-        selected: true,
-        showCheckmark: true
-      })
-      expect(component.find(WhiteCheckmark).length).toEqual(1)
+      expect(
+        createCustomButton({
+          selected: true,
+          showCheckmark: true
+        })
+        .find(WhiteCheckmark).length
+      )
+      .toEqual(1)
   })
 })
 
   test('rendering the spinner when the loading prop is set', () => {
-    const component = createCustomButton()
-    expect(component.find(GraySpinner).length).toEqual(0)
-    component.setProps({loading: true})
-    expect(component.find(GraySpinner).length).toEqual(1)
+    expect(
+      createCustomButton()
+      .find(GraySpinner).length
+    )
+    .toEqual(0)
+
+    expect(
+      createCustomButton({loading: true})
+      .find(GraySpinner).length
+    )
+    .toEqual(1)
   })
 })

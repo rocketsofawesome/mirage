@@ -11,7 +11,7 @@ import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 
 const { mountWithTheme } = global
 
-describe('(Componenet) Button', () => {
+describe('(Styled Componenet) Button', () => {
   const createButton = (props) => {
     let children = 'Example'
     if (props && props.children){
@@ -27,47 +27,47 @@ describe('(Componenet) Button', () => {
     )
   }
   test('matching the snapshot', () => {
-    const component = createButton()
-    expect(component).toMatchSnapshot()
+    expect(createButton())
+    .toMatchSnapshot()
   })
 
   test('the color of the button text', () => {
-    const component = createButton()
-    expect(component).toHaveStyleRule({color: theme.colors.white})
+    expect(createButton())
+    .toHaveStyleRule({color: theme.colors.white})
   })
 
   test('rendering the button normally', () => {
-    const component = createButton()
-    expect(component).toHaveStyleRule({
+    expect(createButton())
+    .toHaveStyleRule({
       modifier: css`${defaultStyle}`,
     })
   })
 
   test('disabling the button', () => {
-    const component = createButton({disabled: true})
-    expect(component).toHaveStyleRule({
+    expect(createButton({disabled: true}))
+    .toHaveStyleRule({
       modifier: css`${disabledOrLoading}`,
     })
   })
 
   test('setting the button to be loading', () => {
-    const component = createButton({loading: true})
-    expect(component).toHaveStyleRule({
+    expect(createButton({loading: true}))
+    .toHaveStyleRule({
       modifier: css`${disabledOrLoading}`,
     })
   })
 
   describe('selecting the button', () => {
     test('without the checkmark', () => {
-      const component = createButton({selected: true})
-      expect(component).toHaveStyleRule({
+      expect(createButton({selected: true}))
+      .toHaveStyleRule({
         modifier: css`${selected}`,
       })
     })
 
     test('with the checkmark', () => {
-      const component = createButton({selected: true, showCheckmark: true})
-      expect(component).toHaveStyleRule({
+      expect(createButton({selected: true, showCheckmark: true}))
+      .toHaveStyleRule({
         modifier: css`${selected}`,
       })
     })
