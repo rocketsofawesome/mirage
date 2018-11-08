@@ -1,11 +1,8 @@
 import React from 'react'
-import { shallow } from 'enzyme'
-import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 
-import { theme } from 'SRC/core/theme'
 import Label from 'SRC/core/typography/Label'
-import Checkbox, { CheckboxBase, CheckboxSVG, StyledCheckboxSVG } from './Checkbox'
+import Checkbox, { CheckboxBase } from './Checkbox'
 
 const { mountWithTheme } = global
 

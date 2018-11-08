@@ -79,7 +79,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
   }
 }
 
-<DefaultAddress
+<BaseDefaultAddress
   address={
     Object {
       "address1": "123 Test Road",
@@ -150,7 +150,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
       </styled.label>
     </DefaultLabel>
   </section>
-</DefaultAddress>
+</BaseDefaultAddress>
 `;
 
 exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
@@ -184,7 +184,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
   }
 }
 
-<Styled(DefaultAddress)
+<Styled(BaseDefaultAddress)
   address={
     Object {
       "address1": "123 Test Road",
@@ -196,7 +196,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
     }
   }
 >
-  <DefaultAddress
+  <BaseDefaultAddress
     address={
       Object {
         "address1": "123 Test Road",
@@ -270,6 +270,6 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
         </styled.label>
       </DefaultLabel>
     </section>
-  </DefaultAddress>
-</Styled(DefaultAddress)>
+  </BaseDefaultAddress>
+</Styled(BaseDefaultAddress)>
 `;

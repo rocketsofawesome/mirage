@@ -1,5 +1,5 @@
 import React from 'react'
-import styled, { css, keyframes } from 'styled-components'
+import styled, { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { theme } from 'SRC/core/theme'
@@ -25,33 +25,17 @@ describe('(Base Styles) grid', () => {
     expect(createGridComponent()).toMatchSnapshot()
   })
 
-  test('setting the grid gutter', () => {
-    expect(createGridComponent())
-    .toHaveStyleRule({
-      'grid-gap': theme.grid.gutter
-    })
-  })
-
-  test('setting the number of columns', () => {
-    expect(createGridComponent())
-    .toHaveStyleRule({
-      'grid-template-columns': `repeat(${theme.grid.columns.mobile}, 1fr)`
-    })
-  })
-
-  test('setting the column gap', () => {
-    expect(createGridComponent())
-    .toHaveStyleRule({
-      'grid-column-gap': theme.grid.gutter
-    })
-  })
-
   describe('the margins', () => {
     test('should be set by default', () => {
       expect(createGridComponent())
       .toHaveStyleRule({
         modifier: css`${mobileMargins}`,
       })
+    })
+
+    test('should’t have margins if they are set to false', () => {
+      expect(createGridComponent({margin: false}))
+      .toMatchSnapshot()
     })
   })
 
@@ -97,13 +81,6 @@ describe('(Base Styles) desktopGrid', () => {
     expect(createDesktopGridComponent()).toMatchSnapshot()
   })
 
-  test('setting the number of columns', () => {
-    expect(createDesktopGridComponent())
-    .toHaveStyleRule({
-      'grid-template-columns': `repeat(${theme.grid.columns.desktop}, 1fr)`
-    })
-  })
-
   describe('the margins', () => {
     test('should be set by default', () => {
       expect(createDesktopGridComponent())
@@ -114,9 +91,7 @@ describe('(Base Styles) desktopGrid', () => {
 
     test('should not be set if margins are false', () => {
       expect(createDesktopGridComponent({margins: false}))
-      .toHaveStyleRule({
-        'margin': 0
-      })
+      .toMatchSnapshot()
     })
   })
 
@@ -142,13 +117,6 @@ describe('(Base Styles) tabletGrid', () => {
     expect(createTabletGridComponent()).toMatchSnapshot()
   })
 
-  test('setting the number of columns', () => {
-    expect(createTabletGridComponent())
-    .toHaveStyleRule({
-      'grid-template-columns': `repeat(${theme.grid.columns.desktop}, 1fr)`
-    })
-  })
-
   describe('the margins', () => {
     test('should be set by default', () => {
       expect(createTabletGridComponent())
@@ -159,9 +127,7 @@ describe('(Base Styles) tabletGrid', () => {
 
     test('should not be set if margins are false', () => {
       expect(createTabletGridComponent({margins: false}))
-      .toHaveStyleRule({
-        'margin': 0
-      })
+      .toMatchSnapshot()
     })
   })
 })
@@ -177,12 +143,6 @@ describe('(Base Styles) mobileMargins', () => {
   test('matching the snapshot', () => {
     expect(createMobileMarginComponent()).toMatchSnapshot()
   })
-
-  test('margins should be the same as the theme', () => {
-    expect(createMobileMarginComponent()).toHaveStyleRule({
-      margin: `0 ${theme.grid.margins.mobile}`
-    })
-  })
 })
 
 describe('(Base Styles) desktopMargins', () => {
@@ -196,12 +156,6 @@ describe('(Base Styles) desktopMargins', () => {
   test('matching the snapshot', () => {
     expect(createDesktopMarginComponent()).toMatchSnapshot()
   })
-
-  test('margins should be the same as the theme', () => {
-    expect(createDesktopMarginComponent()).toHaveStyleRule({
-      margin: `0 ${theme.grid.margins.desktop}`
-    })
-  })
 })
 
 describe('(Base Styles) tabletMargins', () => {
@@ -214,11 +168,5 @@ describe('(Base Styles) tabletMargins', () => {
 
   test('matching the snapshot', () => {
     expect(createTabletMarginComponent()).toMatchSnapshot()
-  })
-
-  test('margins should be the same as the theme', () => {
-    expect(createTabletMarginComponent()).toHaveStyleRule({
-      margin: `0 ${theme.grid.margins.tablet}`
-    })
   })
 })

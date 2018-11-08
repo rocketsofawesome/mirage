@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const CustomButton = ({arrow, className, children, ...props}) => {
   return (
@@ -14,10 +14,14 @@ const CustomButton = ({arrow, className, children, ...props}) => {
   )
 }
 
+const setWidth = css`
+  ${props => `width: ${props.width}`};
+`
+
 const BaseImageButton = styled(CustomButton)`
   position: relative;
   display: flex;
-  ${props => props.width ? `width: ${props.width};` : ''}
+  ${props => setWidth}
   overflow: hidden;
 
   > button {
@@ -27,7 +31,7 @@ const BaseImageButton = styled(CustomButton)`
 
     box-sizing: border-box;
     height: 30px;
-    ${props => props.width ? `width: ${props.width};` : ''}
+    ${props => setWidth}
     padding: 0 1.5rem;
 
     text-align: center;
@@ -72,9 +76,16 @@ const BaseImageButton = styled(CustomButton)`
 `
 
 BaseImageButton.propTypes = {
+  arrow: PropTypes.bool,
   sentanceCase: PropTypes.bool,
   width: PropTypes.string
 }
 
+BaseImageButton.defaultProps = {
+  width: '35rem'
+}
+
 /** @component */
 export default BaseImageButton
+
+export { CustomButton, setWidth }

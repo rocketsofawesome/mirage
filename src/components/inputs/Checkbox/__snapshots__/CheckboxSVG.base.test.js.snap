@@ -41,16 +41,16 @@ exports[`(Base Component) CheckboxSVG matching the snapshot 1`] = `
         />
       </Rect>
     </Styled(Rect)>
-    <Styled(Check)>
-      <Check
+    <Styled(BaseCheck)>
+      <BaseCheck
         className="c1"
       >
         <polyline
           className="c1"
           points="38.75 98.75 77.75 134.75 151.25 55.25"
         />
-      </Check>
-    </Styled(Check)>
+      </BaseCheck>
+    </Styled(BaseCheck)>
   </svg>
 </CheckboxSVG>
 `;
@@ -112,10 +112,10 @@ exports[`(Component) StyledCheckboxSVG matching the snapshot 1`] = `
           />
         </Rect>
       </Styled(Rect)>
-      <Styled(Check)
+      <Styled(BaseCheck)
         checked={false}
       >
-        <Check
+        <BaseCheck
           checked={false}
           className="c2"
         >
@@ -123,8 +123,8 @@ exports[`(Component) StyledCheckboxSVG matching the snapshot 1`] = `
             className="c2"
             points="38.75 98.75 77.75 134.75 151.25 55.25"
           />
-        </Check>
-      </Styled(Check)>
+        </BaseCheck>
+      </Styled(BaseCheck)>
     </svg>
   </CheckboxSVG>
 </Styled(CheckboxSVG)>

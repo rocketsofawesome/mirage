@@ -16,7 +16,7 @@ const DefaultLabel = ({children}) => {
   )
 }
 
-const DefaultAddress = ({
+const BaseDefaultAddress = ({
   address: {
     first_name,
     last_name,
@@ -38,7 +38,7 @@ const DefaultAddress = ({
   )
 }
 
-const StyledDefaultAddress = styled(DefaultAddress)`
+const DefaultAddress = styled(BaseDefaultAddress)`
   ${Label} {
     display: inline-block;
     width: 100%;
@@ -51,8 +51,7 @@ const StyledDefaultAddress = styled(DefaultAddress)`
     }
   }
 `
-
-StyledDefaultAddress.propTypes = {
+ DefaultAddress.propTypes = {
   address: PropTypes.shape({
     first_name: PropTypes.string.isRequired,
     last_name: PropTypes.string.isRequired,
@@ -65,5 +64,5 @@ StyledDefaultAddress.propTypes = {
 }
 
 /** @component */
-export default StyledDefaultAddress
-export { DefaultAddress, DefaultLabel }
+export default DefaultAddress
+export { BaseDefaultAddress, DefaultLabel }

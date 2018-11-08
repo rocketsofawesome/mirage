@@ -13,6 +13,7 @@ describe('(Component) StyledCheckboxSVG', () => {
   const createBaseStyledCheckboxSVG = (props) => {
     return mountWithTheme(<StyledCheckboxSVG {...props} />)
   }
+
   test('matching the snapshot', () => {
     const component = createBaseStyledCheckboxSVG()
     expect(component).toMatchSnapshot()

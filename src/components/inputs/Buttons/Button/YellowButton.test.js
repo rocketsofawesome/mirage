@@ -11,15 +11,9 @@ describe('(Styled Component) YellowButton', () => {
   const createYellowButton = (props) => {
     return mountWithTheme(<YellowButton {...props} />)
   }
+
   test('matching the snapshot', () => {
     expect(createYellowButton())
     .toMatchSnapshot()
-  })
-
-  test('setting the color', () => {
-    expect(createYellowButton())
-    .toHaveStyleRule({
-      color: theme.colors.navy
-    })
   })
 })

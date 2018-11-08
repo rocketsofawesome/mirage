@@ -101,10 +101,10 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
                 />
               </Rect>
             </Styled(Rect)>
-            <Styled(Check)
+            <Styled(BaseCheck)
               checked={false}
             >
-              <Check
+              <BaseCheck
                 checked={false}
                 className="c4"
               >
@@ -112,8 +112,8 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
                   className="c4"
                   points="38.75 98.75 77.75 134.75 151.25 55.25"
                 />
-              </Check>
-            </Styled(Check)>
+              </BaseCheck>
+            </Styled(BaseCheck)>
           </svg>
         </CheckboxSVG>
       </Styled(CheckboxSVG)>
@@ -172,6 +172,8 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .c0 input {
@@ -250,10 +252,10 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
                   />
                 </Rect>
               </Styled(Rect)>
-              <Styled(Check)
+              <Styled(BaseCheck)
                 checked={false}
               >
-                <Check
+                <BaseCheck
                   checked={false}
                   className="c5"
                 >
@@ -261,8 +263,8 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
                     className="c5"
                     points="38.75 98.75 77.75 134.75 151.25 55.25"
                   />
-                </Check>
-              </Styled(Check)>
+                </BaseCheck>
+              </Styled(BaseCheck)>
             </svg>
           </CheckboxSVG>
         </Styled(CheckboxSVG)>

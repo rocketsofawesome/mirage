@@ -1,8 +1,8 @@
 ```js
-<ImageButtonBlack width={'350px'}>Click Me!</ImageButtonBlack>
+<ImageButtonBlack>Click Me!</ImageButtonBlack>
 ```
 
 ## With Arrow
 ```js
-<ImageButtonBlack arrow width={'350px'}>Click Me!</ImageButtonBlack>
+<ImageButtonBlack arrow>Click Me!</ImageButtonBlack>
 ```

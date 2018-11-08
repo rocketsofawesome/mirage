@@ -14,6 +14,7 @@ describe('(Base Component) Check', () => {
       <StyledCheck {...props}/>
     )
   }
+
   test('matching the snapshot', () => {
     const component = createBaseCheck()
     expect(component).toMatchSnapshot()

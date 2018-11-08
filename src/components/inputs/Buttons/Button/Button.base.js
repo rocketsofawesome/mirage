@@ -1,25 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
-
-import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
-import { GraySpinner } from 'SRC/core/icons/Spinner'
+import styled, { css } from 'styled-components'
 
 const CustomButton = ({
-  checkmark,
+  checkmark: Checkmark,
   children,
   loading,
   selected,
   showCheckmark,
-  spinner,
+  spinner: Spinner,
   ...props
 }) => {
-  const Spinner = spinner
-  const Checkmark = checkmark
+  delete props.width
+  delete props.sentanceCase
   return (
     <button {...props}>
       <span>
-        {(selected && showCheckmark) && <Checkmark />}
+        {(selected && (showCheckmark && Checkmark)) && <Checkmark />}
         {!loading && children}
         {loading && <Spinner size='4rem'/>}
       </span>
@@ -27,10 +24,42 @@ const CustomButton = ({
   )
 }
 
+const setWidth = css`
+  width: ${props => props.width};
+`
+
+const pointerCursor = css`
+  cursor: pointer;
+  > * {
+    cursor: pointer;
+  }
+`
+
+const waitCursor = css`
+  cursor: wait;
+  > * {
+    cursor: wait;
+  }
+`
+
+const notAllowedCursor = css`
+  cursor: not-allowed;
+  > * {
+    cursor: not-allowed;
+  }
+`
+
+const setCursor = css`
+  ${props => (!props.loading && !props.disabled) && pointerCursor}
+  ${props => props.loading && waitCursor}
+  ${props => props.disabled && notAllowedCursor
+  }
+`
+
 const BaseButton = styled(CustomButton)`
   box-sizing: border-box;
   height: 50px;
-  ${props => props.width ? `width: ${props.width};` : ''}
+  ${props => props.width && setWidth}
   padding: 0 01.5rem;
 
   text-align: center;
@@ -57,7 +86,7 @@ const BaseButton = styled(CustomButton)`
   }
 
   :hover {
-    ${props => (props.disabled || props.loading ) ? '' : 'cursor: pointer;'}
+    ${props => setCursor}
   }
 
   :focus {
@@ -78,15 +107,29 @@ const BaseButton = styled(CustomButton)`
   }
 `
 
-BaseButton.propTypes = {
-  sentanceCase: PropTypes.bool,
-  width: PropTypes.string
+
+const buttonPropCheck = (props, propName, componentName) => {
+  if (props.disabled && props.loading) {
+    return new Error(`You have both the disabled and loading props set in ${componentName}, please only set one or neither of these props at a time.`)
+  }
+  return null
 }
 
-BaseButton.defaultProps = {
-  checkmark: WhiteCheckmark,
-  spinner: GraySpinner
+BaseButton.propTypes = {
+  buttonPropCheck,
+  checkmark: PropTypes.func.isRequired,
+  sentanceCase: PropTypes.bool,
+  spinner: PropTypes.func.isRequired,
+  width: PropTypes.string,
 }
 
 export default BaseButton
-export { CustomButton }
+export {
+  buttonPropCheck,
+  CustomButton,
+  notAllowedCursor,
+  pointerCursor,
+  setCursor,
+  setWidth,
+  waitCursor
+}

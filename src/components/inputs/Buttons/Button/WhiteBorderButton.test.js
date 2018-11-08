@@ -15,14 +15,10 @@ describe('(Styled component) WhiteBorderButton', () => {
   const createWhiteBorderButton = (props) => {
     return mountWithTheme(<WhiteBorderButton {...props} />)
   }
+
   test('matching the snapshot', () => {
     const component = createWhiteBorderButton()
     expect(component).toMatchSnapshot()
-  })
-
-  test('the color of the button text', () => {
-    const component = createWhiteBorderButton()
-    expect(component).toHaveStyleRule({color: theme.colors.white})
   })
 
   test('rendering the button normally', () => {

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import Link from 'SRC/components/link/Link'
 import { StyledDefaultPayment } from 'SRC/components/payment/DefaultPayment'
-import { StyledDefaultAddress } from 'SRC/components/address/DefaultAddress'
+import StyledDefaultAddress from 'SRC/components/address/DefaultAddress'
 import { styles } from 'SRC/core/typography/Label'
 
 const DefaultSection = styled.section`

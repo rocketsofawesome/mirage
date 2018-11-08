@@ -1,9 +1,7 @@
 import React from 'react'
-import { css, keyframes } from 'styled-components'
 import 'jest-styled-components'
 
-import { theme } from 'SRC/core/theme'
-import StyledDefaultAddress, { DefaultAddress, DefaultLabel } from './DefaultAddress'
+import DefaultAddress, { BaseDefaultAddress, DefaultLabel } from './DefaultAddress'
 
 const { mountWithTheme } = global
 
@@ -17,39 +15,39 @@ const address = {
 }
 
 describe('(Styled Component) DefaultAddress', () => {
-  const createStyledDefaultAddress = (props) => {
-    let addressProp = address
-    if (props && props.address) {
-      addressProp = {...address, ...props.address}
-    }
-    return mountWithTheme(
-      <StyledDefaultAddress {...props} address={addressProp} />
-    )
-  }
-
-  test('matching the snapshot', () => {
-    expect(createStyledDefaultAddress())
-    .toMatchSnapshot()
-  })
-})
-
-describe('(Component) DefaultAddress', () => {
   const createDefaultAddress = (props) => {
     let addressProp = address
     if (props && props.address) {
       addressProp = {...address, ...props.address}
     }
-    return mountWithTheme(<DefaultAddress {...props} address={addressProp} />)
+    return mountWithTheme(
+      <DefaultAddress {...props} address={addressProp} />
+    )
   }
 
   test('matching the snapshot', () => {
     expect(createDefaultAddress())
     .toMatchSnapshot()
   })
+})
+
+describe('(Component) DefaultAddress', () => {
+  const createBaseDefaultAddress = (props) => {
+    let addressProp = address
+    if (props && props.address) {
+      addressProp = {...address, ...props.address}
+    }
+    return mountWithTheme(<BaseDefaultAddress {...props} address={addressProp} />)
+  }
+
+  test('matching the snapshot', () => {
+    expect(createBaseDefaultAddress())
+    .toMatchSnapshot()
+  })
 
   test('rendering the name', () => {
     expect(
-      createDefaultAddress()
+      createBaseDefaultAddress()
       .contains(
         <DefaultLabel>
           {address.first_name} {address.last_name}
@@ -60,7 +58,7 @@ describe('(Component) DefaultAddress', () => {
 
   test('rendering the address', () => {
     expect(
-      createDefaultAddress()
+      createBaseDefaultAddress()
       .contains(
         <DefaultLabel>
           {address.address1}
@@ -76,7 +74,7 @@ describe('(Component) DefaultAddress', () => {
     }
     test('address line two shouldn’t be rendered if not provided', () => {
       expect(
-        createDefaultAddress()
+        createBaseDefaultAddress()
         .contains(
           <DefaultLabel>
             {addressWithSecondLine.address2}
@@ -87,7 +85,7 @@ describe('(Component) DefaultAddress', () => {
 
     test('address line two should be renderedd if provided', () => {
       expect(
-        createDefaultAddress({address: addressWithSecondLine})
+        createBaseDefaultAddress({address: addressWithSecondLine})
         .contains(
           <DefaultLabel>
             {addressWithSecondLine.address2}
@@ -99,7 +97,7 @@ describe('(Component) DefaultAddress', () => {
 
   test('rendering city, state, and zip', () => {
     expect(
-      createDefaultAddress()
+      createBaseDefaultAddress()
       .contains(
         <DefaultLabel>
           {address.city}, {address.state} {address.zipcode}

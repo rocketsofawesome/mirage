@@ -1,29 +1,30 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { shallow } from 'enzyme'
-import { css, keyframes } from 'styled-components'
 import 'jest-styled-components'
+import { css } from 'styled-components'
 
-import { theme } from 'SRC/core/theme'
-import BaseButton, { CustomButton } from './Button.base'
+import BaseButton, {
+  buttonPropCheck,
+  CustomButton,
+  notAllowedCursor,
+  pointerCursor,
+  setWidth,
+  waitCursor
+} from './Button.base'
 import { GraySpinner } from 'SRC/core/icons/Spinner'
 import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 
-const { shallowWithTheme } = global
-
-const text = 'Example'
+const { mountWithTheme } = global
 
 describe('(Styled Component) BaseButton', () => {
   const createBaseButton = (props) => {
-    return shallowWithTheme(
+    return mountWithTheme(
       <BaseButton
         spinner={GraySpinner}
         checkmark={WhiteCheckmark}
-        {...props}>
-        Example
-      </BaseButton>
+        {...props} />
     )
   }
+
   test('matching the snapshot', () => {
     expect(createBaseButton())
     .toMatchSnapshot()
@@ -33,7 +34,7 @@ describe('(Styled Component) BaseButton', () => {
     const width = '2.2rem'
     expect(createBaseButton({width: width}))
     .toHaveStyleRule({
-      width: width
+      modifier: css`${setWidth}`
     })
   })
 
@@ -48,24 +49,28 @@ describe('(Styled Component) BaseButton', () => {
     test('setting cursor to pointer by default', () => {
       expect(createBaseButton())
       .toHaveStyleRule({
-        'cursor': 'pointer'
+        modifier: css`${pointerCursor}`
       })
     })
 
     test('not having pointer cursor when loading', () => {
       expect(createBaseButton({loading: true}))
-      .toHaveStyleRule('cursor', undefined)
+      .toHaveStyleRule({
+        modifier: css`${waitCursor}`
+      })
     })
 
     test('not having pointer cursor when loading', () => {
       expect(createBaseButton({selected: true, loading: false}))
-      .toHaveStyleRule('cursor', undefined)
+      .toHaveStyleRule({
+        modifier: css`${pointerCursor}`
+      })
     })
 
-    test('setting font family', () => {
-      expect(createBaseButton())
+    test('having not-available cursor when disabled', () => {
+      expect(createBaseButton({disabled: true}))
       .toHaveStyleRule({
-        'font-family': theme.fonts.primaryFont
+        modifier: css`${notAllowedCursor}`
       })
     })
   })
@@ -73,18 +78,11 @@ describe('(Styled Component) BaseButton', () => {
 
 describe('(Component) CustomButton', () => {
   const createCustomButton = (props) => {
-    let children = 'Example'
-    if (props && props.children) {
-      children = props.children
-    }
-    return shallow(
+    return mountWithTheme(
       <CustomButton
-        theme={theme}
-        checkmark={WhiteCheckmark}
         spinner={GraySpinner}
-        {...props}>
-        {children}
-      </CustomButton>
+        checkmark={WhiteCheckmark}
+        {...props} />
     )
   }
   test('matching the snapshot', () => {
@@ -109,11 +107,12 @@ describe('(Component) CustomButton', () => {
       .toEqual(0)
     })
     test('rendering the selected checkmark', () => {
+      const component = createCustomButton({
+        selected: true,
+        showCheckmark: true
+      })
       expect(
-        createCustomButton({
-          selected: true,
-          showCheckmark: true
-        })
+        component
         .find(WhiteCheckmark).length
       )
       .toEqual(1)
@@ -132,5 +131,30 @@ describe('(Component) CustomButton', () => {
       .find(GraySpinner).length
     )
     .toEqual(1)
+  })
+})
+
+describe('(Custom PropType Check) buttonPropCheck', () => {
+  test('returns error if both disabled and loading props are set', () => {
+    expect(
+      buttonPropCheck(
+        {
+        disabled: true,
+        loading: true
+        },
+        '',
+        'CustomComponent'
+      )
+    ).toEqual(Error(`You have both the disabled and loading props set in CustomComponent, please only set one or neither of these props at a time.`))
+  })
+
+  test('returns null if both the disabled and loading props are not set', () => {
+    expect(
+      buttonPropCheck(
+        {},
+        '',
+        'CustomComponent'
+      )
+    ).toBeNull()
   })
 })

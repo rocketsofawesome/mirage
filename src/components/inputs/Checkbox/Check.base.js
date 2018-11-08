@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes, css } from 'styled-components'
 
-const Check  = ({ className }) => {
+const BaseCheck  = ({ className }) => {
   return (
     <polyline className={className} points='38.75 98.75 77.75 134.75 151.25 55.25' />
   )
@@ -25,7 +25,7 @@ const checked = css`
   stroke-dashoffset: 0;
 `
 
-const StyledCheck = styled(Check)`
+const Check = styled(BaseCheck)`
   ${props => props.checked && checked}
   fill: none;
   stroke-width: 20;
@@ -33,7 +33,7 @@ const StyledCheck = styled(Check)`
   stroke: ${props => props.theme.colors.white};
 `
 
-StyledCheck.propTypes = {
+Check.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       white: PropTypes.string
@@ -41,5 +41,5 @@ StyledCheck.propTypes = {
   })
 }
 
-export default StyledCheck
-export { checked }
+export default Check
+export { BaseCheck, checked }

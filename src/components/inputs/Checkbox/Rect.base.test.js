@@ -13,6 +13,7 @@ describe('(Base Component) StyledRect', () => {
   const createBaseStyledRect = (props) => {
     return shallowWithTheme(<StyledRect {...props} />)
   }
+
   test('matching the snapshot', () => {
     const component = createBaseStyledRect()
     expect(component).toMatchSnapshot()

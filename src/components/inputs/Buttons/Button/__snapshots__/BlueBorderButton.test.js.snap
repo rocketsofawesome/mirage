@@ -27,6 +27,10 @@ exports[`(Styled Componenet) BlueBorderButton matching the snapshot 1`] = `
   cursor: pointer;
 }
 
+.c1:hover > * {
+  cursor: pointer;
+}
+
 .c1:focus {
   outline: 0;
 }

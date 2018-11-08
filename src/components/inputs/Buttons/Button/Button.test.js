@@ -26,14 +26,10 @@ describe('(Styled Componenet) Button', () => {
       </Button>
     )
   }
+
   test('matching the snapshot', () => {
     expect(createButton())
     .toMatchSnapshot()
-  })
-
-  test('the color of the button text', () => {
-    expect(createButton())
-    .toHaveStyleRule({color: theme.colors.white})
   })
 
   test('rendering the button normally', () => {
