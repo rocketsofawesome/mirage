@@ -19,6 +19,8 @@ module.exports = {
   ignore: [
     'src/index.js',
     'src/setupTests.js',
+    '**/*.base.{js,jsx,ts,tsx}',
+    '**/index.{js,jsx,ts,tsx}',
     '**/theme/**/*.{js,jsx,ts,tsx}',
     '**/*.test.{js,jsx,ts,tsx}',
     '**/*.base.{js,jsx,ts,tsx}'
