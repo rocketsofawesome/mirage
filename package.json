@@ -46,10 +46,11 @@
     "whatwg-fetch": "2.0.3"
   },
   "scripts": {
-    "start": "export NODE_ENV=development && ./node_modules/.bin/styleguidist server",
+    "start": "export NODE_ENV=development && ./node_modules/.bin/styleguidist server --open",
     "build": "export NODE_ENV=development && ./node_modules/.bin/styleguidist build",
     "prepublish": "export NODE_ENV=development && ./node_modules/.bin/rollup --c",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "test:coverage": "npm run test -- --watch --coverage"
   },
   "devDependencies": {
     "enzyme": "^3.7.0",
@@ -67,12 +68,11 @@
     "rollup-plugin-node-resolve": "^3.4.0"
   },
   "jest": {
-    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}",
-      "!src/theme/**/*.{js,jsx,mjs}",
       "!src/index.js",
-      "!src/setupTests.js"
+      "!src/setupTests.js",
+      "!src/**/index.{js,jsx,mjs}"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
@@ -80,7 +80,8 @@
     "setupTestFrameworkScriptFile": "<rootDir>/src/setupTests.js",
     "testMatch": [
       "<rootDir>/src/**/__tests__/**/*.{js,jsx,mjs}",
-      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}"
+      "<rootDir>/src/**/?(*.)(spec|test).{js,jsx,mjs}",
+      "<rootDir>/src/**/?(*.base.)(spec|test).{js,jsx,mjs}"
     ],
     "testEnvironment": "node",
     "testURL": "http://localhost",

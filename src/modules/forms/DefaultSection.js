@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
-import Link from 'SRC/components/link/Link'
-import { StyledDefaultPayment } from 'SRC/components/payment/DefaultPayment'
-import { StyledDefaultAddress } from 'SRC/components/address/DefaultAddress'
 import { styles } from 'SRC/core/typography/Label'
+import DefaultAddress from 'SRC/components/address/DefaultAddress'
+import DefaultPayment from 'SRC/components/payment/DefaultPayment'
+import Link from 'SRC/components/link/Link'
 
 const DefaultSection = styled.section`
   border-radius: 0.3rem;
@@ -36,7 +36,7 @@ const DefaultSection = styled.section`
     margin-top: 4rem;
   }
 
-  ${StyledDefaultAddress}, ${StyledDefaultPayment} {
+  ${DefaultAddress}, ${DefaultPayment} {
     ${props => props.theme.media.tablet`
       margin: 0 2rem;
     `}

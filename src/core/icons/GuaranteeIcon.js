@@ -65,3 +65,4 @@ GuaranteeIcon.defaultProps = {
 
 /** @component */
 export default GuaranteeIcon
+export { animation, rotate, UnstyledGuaranteeIcon }

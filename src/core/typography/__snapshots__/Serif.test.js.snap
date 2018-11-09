@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Serif matching the snapshot 1`] = `
+.c0 {
+  text-align: left;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #00003C;
+  font-family: "adobe-caslon-pro",Helvetica,Arial,serif;
+  font-size: 2.4rem;
+  line-height: 1.2083333333333333;
+}
+
+<span
+  className="c0"
+  fontSize="2.4rem"
+/>
+`;

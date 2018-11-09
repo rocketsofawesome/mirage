@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled component) InformationalSection matching the snapshot 1`] = `
+.c0 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
+}
+
+<section
+  className="c0"
+/>
+`;

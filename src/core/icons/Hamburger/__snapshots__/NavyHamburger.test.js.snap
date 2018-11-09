@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) NavyHamburger matching the snapshot 1`] = `
+.c1 {
+  width: 4.8rem;
+  height: 4.8rem;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+.c1 .line {
+  fill: none;
+  stroke-linecap: round;
+  stroke-miterlimit: 10;
+  stroke-width: 8;
+}
+
+.c1 .hamburger-innerline {
+  stroke-dasharray: 125;
+}
+
+.c1 .hamburger-outerline {
+  stroke-dasharray: 100 322;
+}
+
+.c0 {
+  stroke: #00003C;
+}
+
+<Styled(Styled(UnstyledHamburger))>
+  <Styled(UnstyledHamburger)
+    className="c0"
+  >
+    <UnstyledHamburger
+      className="c0 c1"
+    >
+      <svg
+        className="c0 c1"
+        viewBox="0 0 167.29 210.66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          className="line hamburger-outerline"
+          d="M2,74.21H102c51.54,1.7,72.86-35.69,59.31-58.6S93.4-3.52,
+        89.36,69.35L18.64,140.06"
+        />
+        <line
+          className="line hamburger-innerline"
+          x1="2"
+          x2="102"
+          y1="105.54"
+          y2="105.54"
+        />
+        <path
+          className="line hamburger-outerline"
+          d="M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
+        19.13-72-53.74L18.64,72.94"
+        />
+      </svg>
+    </UnstyledHamburger>
+  </Styled(UnstyledHamburger)>
+</Styled(Styled(UnstyledHamburger))>
+`;

@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) BaseBagIcon matching the snapshot 1`] = `
+<svg
+  version="1.1"
+  viewBox="0 0 19 15"
+>
+  <polygon
+    points="10.5,12.7 10.6,6.8 0.5,6.8 0.5,12.7 2.6,14.5 8.7,14.5"
+  />
+  <path
+    d="M3.1,6.4v-1C3.1,4.1,4.2,3,5.5,3s2.4,1.1,2.4,2.4v1H3.1z"
+  />
+</svg>
+`;
+
+exports[`(Styled Component) BagIcon matching the snapshot 1`] = `
+.c0 {
+  width: 2rem;
+}
+
+.c0 > polygon,
+.c0 path {
+  fill: none;
+  stroke: #0073D1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.c0 > g circle {
+  fill: #0073D1;
+}
+
+.c0 > g text {
+  fill: #FFFFFF;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+<BaseBagIcon
+  className="c0"
+  width="2rem"
+/>
+`;

@@ -60,4 +60,4 @@ StyledRect.propTypes = {
 }
 
 export default StyledRect
-export { checked, unchecked }
+export { checked, Rect, unchecked }

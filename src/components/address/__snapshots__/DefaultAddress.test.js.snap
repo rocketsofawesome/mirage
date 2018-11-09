@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) DefaultAddress matching the snapshot 1`] = `
+.c1 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  text-transform: inherit;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #00003C;
+}
+
+.c2 .c0 {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c2 .c0:first-of-type {
+  padding-right: 7rem;
+}
+
+@media (min-width:76.8em) {
+  .c2 .c0:first-of-type {
+    padding-right: 5rem;
+  }
+}
+
+<BaseDefaultAddress
+  address={
+    Object {
+      "address1": "123 Test Road",
+      "city": "New York",
+      "first_name": "John",
+      "last_name": "Doe",
+      "state": "NY",
+      "zipcode": "12345",
+    }
+  }
+>
+  <section>
+    <LowercaseLabel>
+      <styled.label
+        fontSize="2rem"
+        fontWeight="normal"
+        letterSpacing="normal"
+        lowercase={true}
+      >
+        <label
+          className="c0 c1"
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+        >
+          John
+           
+          Doe
+        </label>
+      </styled.label>
+    </LowercaseLabel>
+    <LowercaseLabel>
+      <styled.label
+        fontSize="2rem"
+        fontWeight="normal"
+        letterSpacing="normal"
+        lowercase={true}
+      >
+        <label
+          className="c0 c1"
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+        >
+          123 Test Road
+        </label>
+      </styled.label>
+    </LowercaseLabel>
+    <LowercaseLabel>
+      <styled.label
+        fontSize="2rem"
+        fontWeight="normal"
+        letterSpacing="normal"
+        lowercase={true}
+      >
+        <label
+          className="c0 c1"
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+        >
+          New York
+          , 
+          NY
+           
+          12345
+        </label>
+      </styled.label>
+    </LowercaseLabel>
+  </section>
+</BaseDefaultAddress>
+`;
+
+exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
+.c2 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  text-transform: inherit;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #00003C;
+}
+
+.c0 .c1 {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.c0 .c1:first-of-type {
+  padding-right: 7rem;
+}
+
+@media (min-width:76.8em) {
+  .c0 .c1:first-of-type {
+    padding-right: 5rem;
+  }
+}
+
+<Styled(BaseDefaultAddress)
+  address={
+    Object {
+      "address1": "123 Test Road",
+      "city": "New York",
+      "first_name": "John",
+      "last_name": "Doe",
+      "state": "NY",
+      "zipcode": "12345",
+    }
+  }
+>
+  <BaseDefaultAddress
+    address={
+      Object {
+        "address1": "123 Test Road",
+        "city": "New York",
+        "first_name": "John",
+        "last_name": "Doe",
+        "state": "NY",
+        "zipcode": "12345",
+      }
+    }
+    className="c0"
+  >
+    <section
+      className="c0"
+    >
+      <LowercaseLabel>
+        <styled.label
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+          lowercase={true}
+        >
+          <label
+            className="c1 c2"
+            fontSize="2rem"
+            fontWeight="normal"
+            letterSpacing="normal"
+          >
+            John
+             
+            Doe
+          </label>
+        </styled.label>
+      </LowercaseLabel>
+      <LowercaseLabel>
+        <styled.label
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+          lowercase={true}
+        >
+          <label
+            className="c1 c2"
+            fontSize="2rem"
+            fontWeight="normal"
+            letterSpacing="normal"
+          >
+            123 Test Road
+          </label>
+        </styled.label>
+      </LowercaseLabel>
+      <LowercaseLabel>
+        <styled.label
+          fontSize="2rem"
+          fontWeight="normal"
+          letterSpacing="normal"
+          lowercase={true}
+        >
+          <label
+            className="c1 c2"
+            fontSize="2rem"
+            fontWeight="normal"
+            letterSpacing="normal"
+          >
+            New York
+            , 
+            NY
+             
+            12345
+          </label>
+        </styled.label>
+      </LowercaseLabel>
+    </section>
+  </BaseDefaultAddress>
+</Styled(BaseDefaultAddress)>
+`;

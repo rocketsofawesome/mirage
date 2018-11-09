@@ -103,3 +103,4 @@ MailboxIcon.defaultProps = {
 
 /** @component */
 export default MailboxIcon
+export { animated, UnstyledMailbox }

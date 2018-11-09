@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) CircleChev matching the snapshot 1`] = `
+<svg
+  viewBox="0 0 60 60"
+>
+  <ellipse
+    cx="30"
+    cy="30"
+    rx="30"
+    ry="30"
+  />
+  <polyline
+    className="left"
+    points="36.5,43.2 23.5,30 36.5,16.8"
+  />
+</svg>
+`;
+
+exports[`(Styled Component) BaseChevron matching the snapshot 1`] = `
+.c0 polyline {
+  stroke-linecap: round;
+  fill: none;
+}
+
+<CircleChev
+  className="c0"
+  left={true}
+  width="4rem"
+/>
+`;

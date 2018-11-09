@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Caption matching the snapshot 1`] = `
+.c0 {
+  margin: 0;
+  -webkit-letter-spacing: 1.29;
+  -moz-letter-spacing: 1.29;
+  -ms-letter-spacing: 1.29;
+  letter-spacing: 1.29;
+  text-transform: inherit;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.29;
+}
+
+<span
+  className="c0"
+  fontSize="1.4rem"
+/>
+`;

@@ -2,22 +2,35 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Label from 'SRC/core/typography/Label'
+import Label, { LowercaseLabel } from 'SRC/core/typography/Label'
 import CardIcon from 'SRC/core/icons/cards/CardIcon'
 
-const DefaultLabel = ({children}) => {
+const prettyBrand = (brand) => `${brand.charAt(0).toUpperCase()}${brand.slice(1)}`
+const cardData = (brand, last_4_digits) => {
+  return `${prettyBrand(brand)} ending in ****${last_4_digits}`
+}
+
+const BaseDefaultPayment = ({
+  card: {
+    brand,
+    exp_month,
+    exp_year,
+    last_4_digits
+  },
+  className
+}) => {
   return (
-    <Label
-      fontSize='2rem'
-      letterSpacing='normal'
-      fontWeight='normal'
-      lowercase>
-        {children}
-    </Label>
+    <section className={className}>
+      <CardIcon brand={brand} />
+      <aside>
+        <LowercaseLabel>{cardData(brand, last_4_digits)}</LowercaseLabel>
+        <LowercaseLabel>expires {exp_month}/{exp_year}</LowercaseLabel>
+      </aside>
+    </section>
   )
 }
 
-const StyledDefaultPayment = styled.section`
+const DefaultPayment = styled(BaseDefaultPayment)`
   display: flex;
   align-items: flex-start;
   ${CardIcon} {
@@ -43,27 +56,15 @@ const StyledDefaultPayment = styled.section`
   }
 `
 
-const DefaultPayment = ({card: {
-    brand, exp_month, exp_year, last_4_digits
-  }}) => {
-  return (
-    <StyledDefaultPayment>
-      <CardIcon brand={brand} />
-      <aside>
-        <DefaultLabel>{brand.charAt(0).toUpperCase()}{brand.slice(1)} ending in ****{last_4_digits}</DefaultLabel>
-        <DefaultLabel> expires {exp_month}/{exp_year}</DefaultLabel>
-      </aside>
-    </StyledDefaultPayment>
-  )
-}
-
 DefaultPayment.propTypes = {
-  brand: PropTypes.string,
-  exp_month: PropTypes.string,
-  exp_year: PropTypes.string,
-  last_4_digits: PropTypes.string
+  card: PropTypes.shape({
+    brand: PropTypes.string,
+    exp_month: PropTypes.string,
+    exp_year: PropTypes.string,
+    last_4_digits: PropTypes.string
+  }).isRequired
 }
 
 /** @component */
 export default DefaultPayment
-export { StyledDefaultPayment }
+export { BaseDefaultPayment, cardData }

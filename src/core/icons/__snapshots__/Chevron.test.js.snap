@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Chevron matching the snapshot 1`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+<Styled(BaseChevron)
+  down={true}
+>
+  <BaseChevron
+    className="c0"
+    down={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 2`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+}
+
+<Styled(BaseChevron)
+  up={true}
+>
+  <BaseChevron
+    className="c0"
+    up={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 3`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+<Styled(BaseChevron)
+  left={true}
+>
+  <BaseChevron
+    className="c0"
+    left={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 4`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+<Styled(BaseChevron)
+  right={true}
+>
+  <BaseChevron
+    className="c0"
+    right={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 5`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+  -webkit-animation: gtBSkN 0.75s infinite;
+  animation: gtBSkN 0.75s infinite;
+}
+
+<Styled(BaseChevron)
+  animated={true}
+  down={true}
+>
+  <BaseChevron
+    animated={true}
+    className="c0"
+    down={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 6`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  cursor: pointer;
+  -webkit-animation: ktSMsp 0.75s infinite;
+  animation: ktSMsp 0.75s infinite;
+}
+
+<Styled(BaseChevron)
+  animated={true}
+  up={true}
+>
+  <BaseChevron
+    animated={true}
+    className="c0"
+    up={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 7`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  -webkit-animation: blwIWx 0.75s infinite;
+  animation: blwIWx 0.75s infinite;
+}
+
+<Styled(BaseChevron)
+  animated={true}
+  left={true}
+>
+  <BaseChevron
+    animated={true}
+    className="c0"
+    left={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
+
+exports[`(Styled Component) Chevron matching the snapshot 8`] = `
+.c0 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+  -webkit-animation: bYUdgu 0.75s infinite;
+  animation: bYUdgu 0.75s infinite;
+}
+
+<Styled(BaseChevron)
+  animated={true}
+  right={true}
+>
+  <BaseChevron
+    animated={true}
+    className="c0"
+    right={true}
+  >
+    <svg
+      className="c0"
+      viewBox="0 0 48 24.12"
+    >
+      <polyline
+        points="1 1 24 22.75 47 1"
+      />
+    </svg>
+  </BaseChevron>
+</Styled(BaseChevron)>
+`;
