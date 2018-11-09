@@ -1,7 +1,8 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import DefaultAddress, { BaseDefaultAddress, DefaultLabel } from './DefaultAddress'
+import DefaultAddress, { BaseDefaultAddress } from './DefaultAddress'
+import { LowercaseLabel } from 'SRC/core/typography/Label'
 
 const { mountWithTheme } = global
 
@@ -49,9 +50,9 @@ describe('(Component) DefaultAddress', () => {
     expect(
       createBaseDefaultAddress()
       .contains(
-        <DefaultLabel>
+        <LowercaseLabel>
           {address.first_name} {address.last_name}
-        </DefaultLabel>
+        </LowercaseLabel>
       )
     ).toBeTruthy()
   })
@@ -60,9 +61,9 @@ describe('(Component) DefaultAddress', () => {
     expect(
       createBaseDefaultAddress()
       .contains(
-        <DefaultLabel>
+        <LowercaseLabel>
           {address.address1}
-        </DefaultLabel>
+        </LowercaseLabel>
       )
     ).toBeTruthy()
   })
@@ -76,9 +77,9 @@ describe('(Component) DefaultAddress', () => {
       expect(
         createBaseDefaultAddress()
         .contains(
-          <DefaultLabel>
+          <LowercaseLabel>
             {addressWithSecondLine.address2}
-          </DefaultLabel>
+          </LowercaseLabel>
         )
       ).toBeFalsy()
     })
@@ -87,9 +88,9 @@ describe('(Component) DefaultAddress', () => {
       expect(
         createBaseDefaultAddress({address: addressWithSecondLine})
         .contains(
-          <DefaultLabel>
+          <LowercaseLabel>
             {addressWithSecondLine.address2}
-          </DefaultLabel>
+          </LowercaseLabel>
         )
       ).toBeTruthy()
     })
@@ -99,33 +100,10 @@ describe('(Component) DefaultAddress', () => {
     expect(
       createBaseDefaultAddress()
       .contains(
-        <DefaultLabel>
+        <LowercaseLabel>
           {address.city}, {address.state} {address.zipcode}
-        </DefaultLabel>
+        </LowercaseLabel>
       )
     ).toBeTruthy()
-  })
-})
-
-describe('(Component) Default Label', () => {
-  const createDefaultLabel = (props) => {
-    return mountWithTheme(<DefaultLabel {...props} />)
-  }
-
-  test('matching the snapshot', () => {
-    expect(createDefaultLabel())
-    .toMatchSnapshot()
-  })
-
-  test('setting the className', () => {
-    const className = "example-classe"
-    expect(createDefaultLabel({className: className}).prop('className'))
-    .toContain(className)
-  })
-
-  test('setting the label text', () => {
-    const text = "Example Label"
-    expect(createDefaultLabel({children: text}).text())
-    .toContain(text)
   })
 })

@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) BaseXIcon matching the snapshot 1`] = `
+<svg
+  viewBox="0 0 15 15"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <line
+    x1="0"
+    x2="15"
+    y1="0"
+    y2="15"
+  />
+  <line
+    x1="0"
+    x2="15"
+    y1="15"
+    y2="0"
+  />
+</svg>
+`;
+
+exports[`(Styled Component) XIcon matching the snapshot 1`] = `
+.c0 {
+  width: 10px;
+}
+
+.c0 line {
+  stroke-width: 1.5;
+  fill: none;
+  stroke: #0073D1;
+}
+
+<BaseXIcon
+  className="c0"
+  width="10px"
+/>
+`;

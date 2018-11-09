@@ -3,7 +3,6 @@ import { shallow } from 'enzyme'
 import { css, keyframes } from 'styled-components'
 import 'jest-styled-components'
 
-import { theme } from 'SRC/core/theme'
 import Spinner, { SpinnerSVG } from './Spinner.base'
 const { shallowWithTheme } = global
 
@@ -14,14 +13,14 @@ describe('(Component) Spinner', () => {
     )
   }
   test('matching the snapshot', () => {
-    const component = createBaseSpinner()
-    expect(component).toMatchSnapshot()
+    expect(createBaseSpinner())
+    .toMatchSnapshot()
   })
 
   test('changing the size of the spinner', () => {
     const size = '10rem'
-    const component = createBaseSpinner({size: size})
-    expect(component).toHaveStyleRule({
+    expect(createBaseSpinner({size: size}))
+    .toHaveStyleRule({
       width: size,
       height: size
     })
@@ -29,6 +28,18 @@ describe('(Component) Spinner', () => {
 })
 
 describe('(Base Component) SpinnerSVG', () => {
-  const component = shallow(<SpinnerSVG />)
-  expect(component).toMatchSnapshot()
+  const createSpinnerSVG = (props) => {
+    return shallowWithTheme(<SpinnerSVG {...props} />)
+  }
+  test('matching the snapsot', () => {
+    expect(createSpinnerSVG())
+    .toMatchSnapshot()
+  })
+
+  test('setting the className', () => {
+    const className = 'example-class'
+    expect(
+      createSpinnerSVG({className: className}).prop('className')
+    ).toEqual(className)
+  })
 })

@@ -5,7 +5,7 @@ import BaseCardIcon from './CardIcon.base'
 
 const JCB = ({ className }) => (
   <BaseCardIcon className={className} box='0 0 750 471'>
-    <g fill-rule='evenodd'>
+    <g fillRule='evenodd'>
       <g>
         <rect
            x='0'

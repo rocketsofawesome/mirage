@@ -2,19 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import Label from 'SRC/core/typography/Label'
-
-const DefaultLabel = ({children}) => {
-  return (
-    <Label
-      fontSize='2rem'
-      letterSpacing='normal'
-      fontWeight='normal'
-      lowercase>
-        {children}
-    </Label>
-  )
-}
+import Label, { LowercaseLabel } from 'SRC/core/typography/Label'
 
 const BaseDefaultAddress = ({
   address: {
@@ -30,10 +18,10 @@ const BaseDefaultAddress = ({
 }) => {
   return (
     <section className={className}>
-      <DefaultLabel>{first_name} {last_name}</DefaultLabel>
-      <DefaultLabel>{address1}</DefaultLabel>
-      {address2 && <DefaultLabel>{address2}</DefaultLabel>}
-      <DefaultLabel>{city}, {state} {zipcode}</DefaultLabel>
+      <LowercaseLabel>{first_name} {last_name}</LowercaseLabel>
+      <LowercaseLabel>{address1}</LowercaseLabel>
+      {address2 && <LowercaseLabel>{address2}</LowercaseLabel>}
+      <LowercaseLabel>{city}, {state} {zipcode}</LowercaseLabel>
     </section>
   )
 }
@@ -65,4 +53,4 @@ const DefaultAddress = styled(BaseDefaultAddress)`
 
 /** @component */
 export default DefaultAddress
-export { BaseDefaultAddress, DefaultLabel }
+export { BaseDefaultAddress }

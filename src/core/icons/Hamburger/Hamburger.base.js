@@ -2,6 +2,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css, keyframes } from 'styled-components'
 
+const topPoints = `M2,74.21H102c51.54,1.7,72.86-35.69,59.31-58.6S93.4-3.52,
+89.36,69.35L18.64,140.06`
+const bottomPoints = `M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
+19.13-72-53.74L18.64,72.94`
+
+const UnstyledHamburger = ({className}) => {
+  return (
+    <svg
+      className={className}
+      xmlns='http://www.w3.org/2000/svg'
+      viewBox='0 0 167.29 210.66'>
+    <path
+      className='line hamburger-outerline'
+      d={topPoints} />
+    <line
+      className='line hamburger-innerline'
+      x1='2'
+      y1='105.54'
+      x2='102'
+      y2='105.54'/>
+    <path
+      className='line hamburger-outerline'
+      d={bottomPoints} />
+  </svg>
+  )
+}
+
 const animateToX = keyframes`
   0% {
     stroke-dashoffset: 0;
@@ -91,24 +118,7 @@ const open = css`
   }
 `
 
-const colorStroke = (strokeColor) => {
-  switch(strokeColor){
-    default:
-      return css`
-        stroke: ${props => props.theme.colors.rocketBlue};
-      `
-    case 'white':
-      return css`
-        stroke: ${props => props.theme.colors.white};
-      `
-      case 'navy':
-        return css`
-          stroke: ${props => props.theme.colors.navy};
-        `
-  }
-}
-
-const StyledHamburger = styled.svg`
+const BaseHamburger = styled(UnstyledHamburger)`
   width: 4.8rem;
   height: 4.8rem;
   max-width: 100%;
@@ -120,7 +130,6 @@ const StyledHamburger = styled.svg`
   stroke-linecap:round;
   stroke-miterlimit:10;
   stroke-width: 8;
-  ${props => colorStroke(props.strokeColor)}
 }
 
 //Closed
@@ -141,10 +150,9 @@ ${props => props.animated && animated}
 }
 `
 
-StyledHamburger.propTypes = {
+BaseHamburger.propTypes = {
   animated: PropTypes.bool,
   open: PropTypes.bool,
-  strokeColor: PropTypes.string,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       navy: PropTypes.string,
@@ -154,41 +162,6 @@ StyledHamburger.propTypes = {
   })
 }
 
-StyledHamburger.defaultProps = {
-  strokeColor: 'blue'
-}
-
-const topPoints = `M2,74.21H102c51.54,1.7,72.86-35.69,59.31-58.6S93.4-3.52,
-89.36,69.35L18.64,140.06`
-const bottomPoints = `M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
-19.13-72-53.74L18.64,72.94`
-
-const Hamburger = (props) => {
-  return (
-    <StyledHamburger
-      {...props}
-      xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 167.29 210.66'>
-    <path
-      className='line hamburger-outerline'
-      d={topPoints} />
-    <line
-      className='line hamburger-innerline'
-      x1='2'
-      y1='105.54'
-      x2='102'
-      y2='105.54'/>
-    <path
-      className='line hamburger-outerline'
-      d={bottomPoints} />
-    </StyledHamburger>
-  )
-}
-
 /** @component */
-export default styled(Hamburger)``
-
-
-// Wrapping the component in a styled tag so that we can refference it in other
-// other styled components. See:
-// https://www.styled-components.com/docs/advanced#caveat
+export default BaseHamburger
+export { animated, closed, open, UnstyledHamburger }

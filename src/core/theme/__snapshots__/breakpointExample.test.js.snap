@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Style Component) Example matching the snapshot 1`] = `
+.c0 {
+  width: 300px;
+  height: 300px;
+}
+
+@media (min-width:32em) {
+  .c0 {
+    background-color: green;
+  }
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    background-color: blue;
+  }
+}
+
+@media (min-width:144em) {
+  .c0 {
+    background-color: red;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

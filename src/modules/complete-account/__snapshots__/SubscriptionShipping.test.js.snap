@@ -1,0 +1,404 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
+.c4 {
+  text-align: left;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.c2 {
+  width: 7rem;
+}
+
+.c2 .line,
+.c2 .flag circle,
+.c2 .flag .flag-portion,
+.c2 .body {
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+}
+
+.c2 .face,
+.c2 .iris,
+.c2 .outterCircle {
+  fill: #0073D1;
+}
+
+.c2 .flag {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 51.775% 57.726%;
+  -ms-transform-origin: 51.775% 57.726%;
+  transform-origin: 51.775% 57.726%;
+  -webkit-animation: gGPZsw;
+  animation: gGPZsw;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c0 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
+}
+
+.c5 .c1 {
+  margin-right: 1.5rem;
+  -webkit-flex: 0 0 5rem;
+  -ms-flex: 0 0 5rem;
+  flex: 0 0 5rem;
+}
+
+.c5 aside .c3:first-of-type {
+  font-weight: 500;
+}
+
+@media (min-width:76.8em) {
+  .c5 .c1 {
+    -webkit-flex: 0 0 7rem;
+    -ms-flex: 0 0 7rem;
+    flex: 0 0 7rem;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+}
+
+<UnstyledSubscriptionShipping>
+  <styled.section>
+    <section
+      className="c0"
+    >
+      <Styled(UnstyledMailbox)
+        animate={true}
+        width="7rem"
+      >
+        <UnstyledMailbox
+          animate={true}
+          className="c1 c2"
+          width="7rem"
+        >
+          <svg
+            className="c1 c2"
+            viewBox="0 0 148 148"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g
+              className="mailbox"
+            >
+              <path
+                className="body"
+                d="M64.15,54.44c1.5-.69,45.25,2.25,60.25,3.18,23,3.76,22.31,29.88,22.31,29.88v22.31l-83.63.69-17.37,1,.5-38.12C46.4,70.44,48.52,54.81,64.15,54.44Z"
+              />
+              <line
+                className="line"
+                x1="83.21"
+                x2="84.08"
+                y1="148"
+                y2="110.33"
+              />
+              <line
+                className="line"
+                x1="89.9"
+                x2="90.46"
+                y1="148"
+                y2="110.33"
+              />
+              <line
+                className="line"
+                x1="109.71"
+                x2="111.89"
+                y1="148"
+                y2="110.1"
+              />
+              <path
+                className="face"
+                d="M123.81,57.5c-9.27,0-20.75,14.33-20.75,28.94v23.89l43.65-.52s-.58-14.56,0-23.48C147.9,68,133.09,57.5,123.81,57.5Zm-8.33,22.08c0-3.26,2-6.41,4.25-6.41S124,76.32,124,79.58s-2.29,5.92-4.5,5.92S115.48,82.85,115.48,79.58Zm9.86,23.23c-5.61.16-6.24-5.51-6.48-10.9l2.44-.13s0,7.72,3.76,8c4.94.44,4.34-8,4.34-8l1.78.22C131.87,94.81,132,102.62,125.34,102.81Zm7.18-17.64c-2.05,0-4.71-2.52-4.71-5.84s2.66-6.16,4.71-6.16,4.38,2.85,4.38,6.16S134.57,85.17,132.52,85.17Z"
+              />
+              <circle
+                className="iris002"
+                cx="118.33"
+                cy="80.44"
+                r="1.19"
+              />
+              <circle
+                className="iris003"
+                cx="130.46"
+                cy="79.88"
+                r="1.31"
+              />
+            </g>
+            <g
+              className="flag"
+            >
+              <path
+                className="outterCircle"
+                d="M75.57,76.42a7.39,7.39,0,0,0-5.82,1.81A9.33,9.33,0,0,0,67.07,83h1a8.52,8.52,0,0,1,2.32-4,6.15,6.15,0,0,1,4.25-1.59,7.26,7.26,0,0,1,.8,0c3.36.33,9,2.39,9,8,0,3.64-4.86,8.12-8.81,8.12A8.17,8.17,0,0,1,68,87.23H67a9.2,9.2,0,0,0,8.76,7.33c4.49,0,9.81-4.94,9.81-9.12C85.52,79.88,80.52,76.91,75.57,76.42Z"
+              />
+              <circle
+                cx="76.63"
+                cy="85.43"
+                r="3.67"
+              />
+              <polyline
+                className="flag-portion"
+                points="73.83 83.05 7.69 82.21 7.69 105.03 23.93 105.54 24.02 86.54 67.27 87.22 73.47 87.31"
+              />
+            </g>
+          </svg>
+        </UnstyledMailbox>
+      </Styled(UnstyledMailbox)>
+      <aside>
+        <styled.p
+          fontSize="1.6rem"
+        >
+          <p
+            className="c3 c4"
+            fontSize="1.6rem"
+          >
+            Seasonal Shipments
+          </p>
+        </styled.p>
+        <styled.p
+          fontSize="1.6rem"
+        >
+          <p
+            className="c3 c4"
+            fontSize="1.6rem"
+          >
+            A box every 3 months. So easy. Simple to cancel anytime.
+          </p>
+        </styled.p>
+      </aside>
+    </section>
+  </styled.section>
+</UnstyledSubscriptionShipping>
+`;
+
+exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
+.c5 {
+  text-align: left;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.c3 {
+  width: 7rem;
+}
+
+.c3 .line,
+.c3 .flag circle,
+.c3 .flag .flag-portion,
+.c3 .body {
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+}
+
+.c3 .face,
+.c3 .iris,
+.c3 .outterCircle {
+  fill: #0073D1;
+}
+
+.c3 .flag {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  -webkit-transform-origin: 51.775% 57.726%;
+  -ms-transform-origin: 51.775% 57.726%;
+  transform-origin: 51.775% 57.726%;
+  -webkit-animation: gGPZsw;
+  animation: gGPZsw;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.c1 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  min-height: 8rem;
+}
+
+.c0 .c2 {
+  margin-right: 1.5rem;
+  -webkit-flex: 0 0 5rem;
+  -ms-flex: 0 0 5rem;
+  flex: 0 0 5rem;
+}
+
+.c0 aside .c4:first-of-type {
+  font-weight: 500;
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    padding: 0;
+    min-height: 8rem;
+  }
+}
+
+@media (min-width:76.8em) {
+  .c0 .c2 {
+    -webkit-flex: 0 0 7rem;
+    -ms-flex: 0 0 7rem;
+    flex: 0 0 7rem;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+}
+
+<Styled(UnstyledSubscriptionShipping)>
+  <UnstyledSubscriptionShipping
+    className="c0"
+  >
+    <styled.section
+      className="c0"
+    >
+      <section
+        className="c0 c1"
+      >
+        <Styled(UnstyledMailbox)
+          animate={true}
+          width="7rem"
+        >
+          <UnstyledMailbox
+            animate={true}
+            className="c2 c3"
+            width="7rem"
+          >
+            <svg
+              className="c2 c3"
+              viewBox="0 0 148 148"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g
+                className="mailbox"
+              >
+                <path
+                  className="body"
+                  d="M64.15,54.44c1.5-.69,45.25,2.25,60.25,3.18,23,3.76,22.31,29.88,22.31,29.88v22.31l-83.63.69-17.37,1,.5-38.12C46.4,70.44,48.52,54.81,64.15,54.44Z"
+                />
+                <line
+                  className="line"
+                  x1="83.21"
+                  x2="84.08"
+                  y1="148"
+                  y2="110.33"
+                />
+                <line
+                  className="line"
+                  x1="89.9"
+                  x2="90.46"
+                  y1="148"
+                  y2="110.33"
+                />
+                <line
+                  className="line"
+                  x1="109.71"
+                  x2="111.89"
+                  y1="148"
+                  y2="110.1"
+                />
+                <path
+                  className="face"
+                  d="M123.81,57.5c-9.27,0-20.75,14.33-20.75,28.94v23.89l43.65-.52s-.58-14.56,0-23.48C147.9,68,133.09,57.5,123.81,57.5Zm-8.33,22.08c0-3.26,2-6.41,4.25-6.41S124,76.32,124,79.58s-2.29,5.92-4.5,5.92S115.48,82.85,115.48,79.58Zm9.86,23.23c-5.61.16-6.24-5.51-6.48-10.9l2.44-.13s0,7.72,3.76,8c4.94.44,4.34-8,4.34-8l1.78.22C131.87,94.81,132,102.62,125.34,102.81Zm7.18-17.64c-2.05,0-4.71-2.52-4.71-5.84s2.66-6.16,4.71-6.16,4.38,2.85,4.38,6.16S134.57,85.17,132.52,85.17Z"
+                />
+                <circle
+                  className="iris002"
+                  cx="118.33"
+                  cy="80.44"
+                  r="1.19"
+                />
+                <circle
+                  className="iris003"
+                  cx="130.46"
+                  cy="79.88"
+                  r="1.31"
+                />
+              </g>
+              <g
+                className="flag"
+              >
+                <path
+                  className="outterCircle"
+                  d="M75.57,76.42a7.39,7.39,0,0,0-5.82,1.81A9.33,9.33,0,0,0,67.07,83h1a8.52,8.52,0,0,1,2.32-4,6.15,6.15,0,0,1,4.25-1.59,7.26,7.26,0,0,1,.8,0c3.36.33,9,2.39,9,8,0,3.64-4.86,8.12-8.81,8.12A8.17,8.17,0,0,1,68,87.23H67a9.2,9.2,0,0,0,8.76,7.33c4.49,0,9.81-4.94,9.81-9.12C85.52,79.88,80.52,76.91,75.57,76.42Z"
+                />
+                <circle
+                  cx="76.63"
+                  cy="85.43"
+                  r="3.67"
+                />
+                <polyline
+                  className="flag-portion"
+                  points="73.83 83.05 7.69 82.21 7.69 105.03 23.93 105.54 24.02 86.54 67.27 87.22 73.47 87.31"
+                />
+              </g>
+            </svg>
+          </UnstyledMailbox>
+        </Styled(UnstyledMailbox)>
+        <aside>
+          <styled.p
+            fontSize="1.6rem"
+          >
+            <p
+              className="c4 c5"
+              fontSize="1.6rem"
+            >
+              Seasonal Shipments
+            </p>
+          </styled.p>
+          <styled.p
+            fontSize="1.6rem"
+          >
+            <p
+              className="c4 c5"
+              fontSize="1.6rem"
+            >
+              A box every 3 months. So easy. Simple to cancel anytime.
+            </p>
+          </styled.p>
+        </aside>
+      </section>
+    </styled.section>
+  </UnstyledSubscriptionShipping>
+</Styled(UnstyledSubscriptionShipping)>
+`;

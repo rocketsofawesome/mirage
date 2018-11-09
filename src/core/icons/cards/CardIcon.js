@@ -57,8 +57,9 @@ CardIcon.propTypes = {
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string
     })
-  }).isRequired
+  })
 }
 
 /** @component */
 export default CardIcon
+export { CardIconBase }

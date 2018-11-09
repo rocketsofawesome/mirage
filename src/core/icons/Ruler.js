@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseIcon = (props) => {
+const BaseRuler = (props) => {
   return (
     <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 12' {...props}>
       <path d='M26,1V11H1V1H26m.5-1H.5A.5.5,0,0,0,0,.5v11a.5.5,0,0,0,
@@ -18,7 +18,7 @@ const BaseIcon = (props) => {
   )
 }
 
-const Ruler = styled(BaseIcon)`
+const Ruler = styled(BaseRuler)`
   width: ${props => props.width};
   > path {
     fill: ${props => props.theme.colors.navy};
@@ -44,3 +44,4 @@ Ruler.defaultProps = {
 }
 /** @component */
 export default Ruler
+export { BaseRuler }

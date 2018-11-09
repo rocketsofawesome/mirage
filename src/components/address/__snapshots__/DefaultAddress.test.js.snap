@@ -1,53 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Component) Default Label matching the snapshot 1`] = `
-.c1 {
-  text-align: left;
-  margin-bottom: 0;
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  text-transform: inherit;
-  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
-  font-size: 2rem;
-  font-weight: normal;
-  color: #00003C;
-}
-
-.c2 .c0 {
-  display: inline-block;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.c2 .c0:first-of-type {
-  padding-right: 7rem;
-}
-
-@media (min-width:76.8em) {
-  .c2 .c0:first-of-type {
-    padding-right: 5rem;
-  }
-}
-
-<DefaultLabel>
-  <styled.label
-    fontSize="2rem"
-    fontWeight="normal"
-    letterSpacing="normal"
-    lowercase={true}
-  >
-    <label
-      className="c0 c1"
-      fontSize="2rem"
-      fontWeight="normal"
-      letterSpacing="normal"
-    />
-  </styled.label>
-</DefaultLabel>
-`;
-
 exports[`(Component) DefaultAddress matching the snapshot 1`] = `
 .c1 {
   text-align: left;
@@ -92,7 +44,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
   }
 >
   <section>
-    <DefaultLabel>
+    <LowercaseLabel>
       <styled.label
         fontSize="2rem"
         fontWeight="normal"
@@ -110,8 +62,8 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
           Doe
         </label>
       </styled.label>
-    </DefaultLabel>
-    <DefaultLabel>
+    </LowercaseLabel>
+    <LowercaseLabel>
       <styled.label
         fontSize="2rem"
         fontWeight="normal"
@@ -127,8 +79,8 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
           123 Test Road
         </label>
       </styled.label>
-    </DefaultLabel>
-    <DefaultLabel>
+    </LowercaseLabel>
+    <LowercaseLabel>
       <styled.label
         fontSize="2rem"
         fontWeight="normal"
@@ -148,7 +100,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
           12345
         </label>
       </styled.label>
-    </DefaultLabel>
+    </LowercaseLabel>
   </section>
 </BaseDefaultAddress>
 `;
@@ -212,7 +164,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
     <section
       className="c0"
     >
-      <DefaultLabel>
+      <LowercaseLabel>
         <styled.label
           fontSize="2rem"
           fontWeight="normal"
@@ -230,8 +182,8 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
             Doe
           </label>
         </styled.label>
-      </DefaultLabel>
-      <DefaultLabel>
+      </LowercaseLabel>
+      <LowercaseLabel>
         <styled.label
           fontSize="2rem"
           fontWeight="normal"
@@ -247,8 +199,8 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
             123 Test Road
           </label>
         </styled.label>
-      </DefaultLabel>
-      <DefaultLabel>
+      </LowercaseLabel>
+      <LowercaseLabel>
         <styled.label
           fontSize="2rem"
           fontWeight="normal"
@@ -268,7 +220,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
             12345
           </label>
         </styled.label>
-      </DefaultLabel>
+      </LowercaseLabel>
     </section>
   </BaseDefaultAddress>
 </Styled(BaseDefaultAddress)>

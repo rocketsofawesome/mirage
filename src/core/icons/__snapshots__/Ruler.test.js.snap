@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) BaseRuler matching the snapshot 1`] = `
+<svg
+  viewBox="0 0 27 12"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M26,1V11H1V1H26m.5-1H.5A.5.5,0,0,0,0,.5v11a.5.5,0,0,0, .5.5h26a.5.5,0,0,0,.5-.5V.5a.51.51,0,0,0-.5-.5Z"
+  />
+  <circle
+    cx="4"
+    cy="7.9"
+    r="1.25"
+  />
+  <line
+    x1="4"
+    x2="4"
+    y1="0.5"
+    y2="3.5"
+  />
+  <line
+    x1="8"
+    x2="8"
+    y1="0.5"
+    y2="3.5"
+  />
+  <line
+    x1="12"
+    x2="12"
+    y1="0.5"
+    y2="3.5"
+  />
+  <line
+    x1="16"
+    x2="16"
+    y1="0.5"
+    y2="3.5"
+  />
+  <line
+    x1="20"
+    x2="20"
+    y1="0.5"
+    y2="3.5"
+  />
+  <line
+    x1="24"
+    x2="24"
+    y1="0.5"
+    y2="3.5"
+  />
+</svg>
+`;
+
+exports[`(Styled Component) Ruler matching the snapshot 1`] = `
+.c0 {
+  width: 27px;
+}
+
+.c0 > path {
+  fill: #00003C;
+}
+
+.c0 > line,
+.c0 circle {
+  fill: none;
+  stroke-linecap: round;
+  stroke: #00003C;
+}
+
+<BaseRuler
+  className="c0"
+  width="27px"
+/>
+`;

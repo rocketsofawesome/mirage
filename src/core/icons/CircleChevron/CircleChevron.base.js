@@ -2,12 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const CircleChev = ({left, right, ...props}) => {
+const CircleChev = ({className, left, right}) => {
   return (
-    <svg {...props} viewBox='0 0 60 60'>
+    <svg className={className} viewBox='0 0 60 60'>
       <ellipse cx='30' cy='30' rx='30' ry='30' />
-      {right && <polyline points='23.5,16.8 36.5,30 23.5,43.2' />}
-      {left && <polyline points='36.5,43.2 23.5,30 36.5,16.8' />}
+      {right && <polyline className='right' points='23.5,16.8 36.5,30 23.5,43.2' />}
+      {left && <polyline className='left' points='36.5,43.2 23.5,30 36.5,16.8' />}
     </svg>
   )
 }
@@ -27,6 +27,7 @@ const validateDirection = (props, propName, componentName) => {
   } else if (props.left && props.right) {
     return new Error(`Both the left and right prop were supplied to ${componentName}, only select one.`)
   }
+  return null
 }
 
 CircleChev.propTypes = {
@@ -37,8 +38,9 @@ CircleChev.propTypes = {
 }
 
 CircleChev.defaultProps = {
-  width: '40px'
+  width: '4rem'
 }
 
 /** @component */
 export default BaseChevron
+export { CircleChev, validateDirection }

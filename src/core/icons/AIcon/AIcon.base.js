@@ -25,3 +25,4 @@ BaseAIcon.defaultProps = {
 
 /** @component */
 export default BaseAIcon
+export { AIcon }

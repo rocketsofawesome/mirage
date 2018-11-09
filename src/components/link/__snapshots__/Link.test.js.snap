@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Link matching the snapshot 1`] = `
+.c1 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: initial;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.c0 {
+  color: #0073D1;
+}
+
+.c0:active,
+.c0:focus,
+.c0:hover,
+.c0:visited {
+  color: #00003C;
+  border-bottom-color: #00003C;
+}
+
+<Styled(styled.a)
+  underline={true}
+>
+  <styled.a
+    className="c0"
+    underline={true}
+    uppercase={false}
+  >
+    <a
+      className="c0 c1"
+    />
+  </styled.a>
+</Styled(styled.a)>
+`;

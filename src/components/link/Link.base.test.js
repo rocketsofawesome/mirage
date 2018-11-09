@@ -14,4 +14,9 @@ describe('(Styled Component) BaseLink', () => {
     expect(createBaseLink())
     .toMatchSnapshot()
   })
+
+  test('setting the link to be upper case', () => {
+    expect(createBaseLink({uppercase: true}))
+    .toHaveStyleRule({'text-transform': 'uppercase'})
+  })
 })

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Object) colors matching the snapshot 1`] = `
+Object {
+  "black": "#000000",
+  "electricBlue": "#080CF1",
+  "gray": Array [
+    "#F3F3F3",
+    "#F5F5F5",
+    "#F8F8F8",
+    "#E6E6E6",
+    "#D5D5D5",
+    "#CFCFCF",
+  ],
+  "gray0": "#F3F3F3",
+  "gray1": "#F5F5F5",
+  "gray2": "#F8F8F8",
+  "gray3": "#E6E6E6",
+  "gray4": "#D5D5D5",
+  "gray5": "#CFCFCF",
+  "lightBlue": Array [
+    "#EEFCFF",
+    "#BCE1F7",
+    "#76C2F3",
+  ],
+  "lightBlue0": "#EEFCFF",
+  "lightBlue1": "#BCE1F7",
+  "lightBlue2": "#76C2F3",
+  "lightPink": "#FBDDE4",
+  "loading": "#BFBFBF",
+  "navy": "#00003C",
+  "pink": "#FEACBE",
+  "red": "#FF511C",
+  "rocketBlue": "#0073D1",
+  "rocketBlueHover": "#0073EB",
+  "white": "#FFFFFF",
+  "yellow": "#F0FF02",
+  "yellowHover": "#D8E320",
+}
+`;
+
+exports[`(Styled Component) Color matching the snapshot 1`] = `
+.c0 {
+  width: 180px;
+  height: 180px;
+  border-radius: 10px;
+  border: 1px solid #333;
+}
+
+<div
+  className="c0"
+/>
+`;

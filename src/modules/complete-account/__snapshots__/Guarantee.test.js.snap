@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) UnstyledGuarantee mathing the snapsot 1`] = `
+.c3 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #00003C;
+}
+
+.c2 {
+  width: 2.5rem;
+}
+
+.c2 circle {
+  fill: #FFFFFF;
+}
+
+.c2 path {
+  fill: #0073D1;
+  -webkit-animation: hYVTBr;
+  animation: hYVTBr;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.c2 polyline {
+  stroke-linecap: round;
+  stroke-width: 2;
+  fill: none;
+  stroke: #0073D1;
+}
+
+.c0 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
+}
+
+.c4 .c1 {
+  margin-right: 10px;
+}
+
+<UnstyledGuarantee>
+  <styled.section>
+    <section
+      className="c0"
+    >
+      <header>
+        <Styled(UnstyledGuaranteeIcon)
+          animated={true}
+          width="2.5rem"
+        >
+          <UnstyledGuaranteeIcon
+            animated={true}
+            className="c1 c2"
+            width="2.5rem"
+          >
+            <svg
+              className="c1 c2"
+              viewBox="0 0 42 42"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21,2.555c1.389,0,4.005-1.869,5.347-1.509s2.673,3.286,3.876,3.981,4.4.384,5.385,1.366.672,4.182,1.366,5.385,3.621,2.534,3.981,3.876S39.445,19.611,39.445,21s1.809,3.99,1.509,5.347-3.286,2.673-3.981,3.876-.384,4.4-1.366,5.385-4.182.672-5.385,1.366-2.534,3.621-3.876,3.981S22.389,39.445,21,39.445s-4.005,1.869-5.347,1.509-2.673-3.286-3.876-3.981-4.4-.384-5.385-1.366-.672-4.182-1.366-5.385S1.345,27.7,1.046,26.347,2.555,22.389,2.555,21,.686,16.995,1.046,15.653s3.286-2.673,3.981-3.876.384-4.4,1.366-5.385,4.182-.672,5.385-1.366,2.534-3.621,3.876-3.981S19.611,2.555,21,2.555Z"
+              />
+              <circle
+                cx="21"
+                cy="21"
+                r="14.7"
+              />
+              <polyline
+                points="14.629 21.734 18.691 25.483 26.345 17.203"
+              />
+            </svg>
+          </UnstyledGuaranteeIcon>
+        </Styled(UnstyledGuaranteeIcon)>
+        <styled.label
+          fontSize="1.4rem"
+          fontWeight="500"
+          letterSpacing=".1rem"
+        >
+          <label
+            className="c3"
+            fontSize="1.4rem"
+            fontWeight="500"
+            letterSpacing=".1rem"
+          >
+            FIRST BOX GUARANTEE
+          </label>
+        </styled.label>
+      </header>
+      <section />
+    </section>
+  </styled.section>
+</UnstyledGuarantee>
+`;
+
+exports[`(Styled Component) Guarantee matching the snapshot 1`] = `
+.c4 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #00003C;
+}
+
+.c3 {
+  width: 2.5rem;
+}
+
+.c3 circle {
+  fill: #FFFFFF;
+}
+
+.c3 path {
+  fill: #0073D1;
+  -webkit-animation: hYVTBr;
+  animation: hYVTBr;
+  -webkit-animation-duration: 25s;
+  animation-duration: 25s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+.c3 polyline {
+  stroke-linecap: round;
+  stroke-width: 2;
+  fill: none;
+  stroke: #0073D1;
+}
+
+.c1 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
+}
+
+.c0 header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .c2 {
+  margin-right: 10px;
+}
+
+.c0 section > * {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+<Styled(UnstyledGuarantee)>
+  <UnstyledGuarantee
+    className="c0"
+  >
+    <styled.section
+      className="c0"
+    >
+      <section
+        className="c0 c1"
+      >
+        <header>
+          <Styled(UnstyledGuaranteeIcon)
+            animated={true}
+            width="2.5rem"
+          >
+            <UnstyledGuaranteeIcon
+              animated={true}
+              className="c2 c3"
+              width="2.5rem"
+            >
+              <svg
+                className="c2 c3"
+                viewBox="0 0 42 42"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21,2.555c1.389,0,4.005-1.869,5.347-1.509s2.673,3.286,3.876,3.981,4.4.384,5.385,1.366.672,4.182,1.366,5.385,3.621,2.534,3.981,3.876S39.445,19.611,39.445,21s1.809,3.99,1.509,5.347-3.286,2.673-3.981,3.876-.384,4.4-1.366,5.385-4.182.672-5.385,1.366-2.534,3.621-3.876,3.981S22.389,39.445,21,39.445s-4.005,1.869-5.347,1.509-2.673-3.286-3.876-3.981-4.4-.384-5.385-1.366-.672-4.182-1.366-5.385S1.345,27.7,1.046,26.347,2.555,22.389,2.555,21,.686,16.995,1.046,15.653s3.286-2.673,3.981-3.876.384-4.4,1.366-5.385,4.182-.672,5.385-1.366,2.534-3.621,3.876-3.981S19.611,2.555,21,2.555Z"
+                />
+                <circle
+                  cx="21"
+                  cy="21"
+                  r="14.7"
+                />
+                <polyline
+                  points="14.629 21.734 18.691 25.483 26.345 17.203"
+                />
+              </svg>
+            </UnstyledGuaranteeIcon>
+          </Styled(UnstyledGuaranteeIcon)>
+          <styled.label
+            fontSize="1.4rem"
+            fontWeight="500"
+            letterSpacing=".1rem"
+          >
+            <label
+              className="c4"
+              fontSize="1.4rem"
+              fontWeight="500"
+              letterSpacing=".1rem"
+            >
+              FIRST BOX GUARANTEE
+            </label>
+          </styled.label>
+        </header>
+        <section />
+      </section>
+    </styled.section>
+  </UnstyledGuarantee>
+</Styled(UnstyledGuarantee)>
+`;

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[` 1`] = `
+exports[`(Base Component) SpinnerSVG matching the snapsot 1`] = `
 <svg
   preserveAspectRatio="xMidYMid"
   version="1.1"

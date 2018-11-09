@@ -53,3 +53,4 @@ SubscriptionShipping.propTypes = {
 
 /** @component */
 export default SubscriptionShipping
+export { UnstyledSubscriptionShipping }

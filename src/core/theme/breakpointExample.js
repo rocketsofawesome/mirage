@@ -4,7 +4,7 @@ import styled from 'styled-components'
 export default styled.div`
   width: 300px;
   height: 300px;
-  ${media.phone`background-color: green;`}
-  ${media.tablet`background-color: blue;`}
-  ${media.desktop`background-color: red;`}
+  ${props => props.theme.media.phone`background-color: green;`}
+  ${props => props.theme.media.tablet`background-color: blue;`}
+  ${props => props.theme.media.desktop`background-color: red;`}
 `

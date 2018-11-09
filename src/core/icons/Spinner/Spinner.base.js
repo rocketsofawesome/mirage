@@ -11,9 +11,9 @@ export const animation = keyframes`
 }
 `
 
-export const SpinnerSVG = (props) => {
+export const SpinnerSVG = ({className}) => {
   return (
-    <svg viewBox='0 0 100 100' {...props} preserveAspectRatio='xMidYMid' xmlns="http://www.w3.org/2000/svg" version='1.1' >
+    <svg className={className} viewBox='0 0 100 100' preserveAspectRatio='xMidYMid' xmlns="http://www.w3.org/2000/svg" version='1.1' >
       <g transform="rotate(0 50 50)">
         <rect x='46.5' y='16' rx='1.86' ry='0.64' width='7' height='18' />
       </g>
