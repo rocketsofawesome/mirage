@@ -24,7 +24,7 @@ YellowCircleChevron.propTypes = {
 }
 
 YellowCircleChevron.defaultProps = {
-  width: '60px'
+  width: '6rem'
 }
 
 /** @component */

@@ -23,5 +23,9 @@ CircleChevron.propTypes = {
   width: PropTypes.string
 }
 
+CircleChevron.defaultProps = {
+  width: '6rem'
+}
+
 /** @component */
 export default CircleChevron
