@@ -1,7 +1,7 @@
 const { lstatSync, readdirSync } = require('fs')
 const { resolve, join } = require('path')
 
-let directories = ['all', 'core', 'modules', 'components', 'templates', 'pages']
+let directories = ['core', 'modules', 'components', 'templates', 'pages']
 const ignorePatterns = [
   '**/index.{js,jsx,ts,tsx}',
   '**/theme/**/*.{js,jsx,ts,tsx}',
@@ -9,18 +9,11 @@ const ignorePatterns = [
   '**/*.base.{js,jsx,ts,tsx}'
 ]
 const sections = directories.map(directory => {
-  if (directory !== 'all') {
-    return {
-      name: directory.toUpperCase(),
-      components: `src/${directory}/**/*.{js,jsx,ts,tsx}`,
-      ignore: ignorePatterns
-    }
-  } else {
-    return {
-      name: directory.toUpperCase(),
-      components: 'src/**/*.{js,jsx,ts,tsx}',
-      ignore: ignorePatterns
-    }
+  return {
+    key: directory,
+    name: directory.toUpperCase(),
+    components: `src/${directory}/**/*.{js,jsx,ts,tsx}`,
+    ignore: ignorePatterns
   }
 })
 
@@ -49,6 +42,5 @@ module.exports = {
     'src/index.js',
     'src/setupTests.js',
     ...ignorePatterns
-  ],
-  pagePerSection: true
+  ]
 }

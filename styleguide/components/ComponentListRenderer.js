@@ -6,11 +6,11 @@ import { WhiteLink } from 'SRC/components/link'
 const UnstyledComponentsListRenderer = ({ className, items }) => {
   return (
     <ul className={className}>
-      {items.map(({ heading, visibleName, href, content, external }) => (
+      {items.map(({ heading, visibleName, name, content, external }) => (
         <li
-          key={href}>
+          key={name}>
           <WhiteLink
-            href={href}
+            href={`/#/${name}`}
             target={external ? '_blank' : undefined}
             uppercase>
             {visibleName}

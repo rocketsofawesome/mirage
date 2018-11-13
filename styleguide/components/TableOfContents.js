@@ -16,6 +16,11 @@ class UnstyledTableOfContents extends React.Component {
       searchTerm: '',
       sectionSelected: 0
     }
+    this.sectionsList = null
+  }
+
+  setSectionsList = (element) => {
+    this.sectionsList = element
   }
 
   selectSection = ({ currentTarget }) => {
@@ -70,10 +75,11 @@ class UnstyledTableOfContents extends React.Component {
     const  { searchTerm, sectionSelected } = this.state
     const { className, sections } = this.props
     const tableBackgroundClass = sections[sectionSelected].name.toLowerCase()
+    console.log(this.sectionList)
     return (
-      <section className={className}>
+      <section className={className} >
         <aside>
-          <ul>
+          <ul ref={element => this.setSectionsList}>
             {sections.map((section, id) => {
               return (
                 <li
@@ -124,7 +130,7 @@ const TableOfContents = styled(UnstyledTableOfContents)`
   display: flex;
   position: relative;
   background-color: #333;
-  height: 100%;
+  min-height: 100%;
   max-width: 100%;
   flex-wrap: wrap;
   > aside {

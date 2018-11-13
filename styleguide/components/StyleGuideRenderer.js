@@ -15,6 +15,7 @@ const UnstyledStyleGuideRenderer = ({
   toc,
   hasSidebar,
 }) => {
+  console.log(toc)
   return (
     <main className={className}>
       <aside>
@@ -31,12 +32,13 @@ const UnstyledStyleGuideRenderer = ({
 const StyleGuideRenderer = styled(UnstyledStyleGuideRenderer)`
   ${grid}
   max-width: 100%;
+  background-color: ${props => props.theme.colors.gray[0]};
   > aside {
     background-color: ${props => props.theme.colors.gray[0]};
     grid-column: span 4;
     ${props => props.theme.media.tablet`grid-column: span 4;`}
     ${props => props.theme.media.laptop`grid-column: span 3;`}
-    ${props => props.theme.media.desktop`grid-column: span 2;`}
+    ${props => props.theme.media.desktop`grid-column: span 3;`}
     > header {
       padding: 2rem;
       border-bottom: 1px solid ${props => props.theme.colors.gray[4]};
@@ -46,9 +48,13 @@ const StyleGuideRenderer = styled(UnstyledStyleGuideRenderer)`
     grid-column: span 4;
     max-width: 100%;
     box-sizing: border-box;
+    padding-top: 8.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin: 0 2rem;
+    background-color: ${props => props.theme.colors.white};
     ${props => props.theme.media.laptop`grid-column: 4 / 13;`}
-    ${props => props.theme.media.desktop`grid-column: 5 / 13;`}
-
+    ${props => props.theme.media.desktop`grid-column: 4 / 13;`}
   }
 `
 
