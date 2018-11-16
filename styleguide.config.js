@@ -37,6 +37,7 @@ module.exports = {
       ]
     }
   },
+  pagePerSection: true,
   sections: sections,
   ignore: [
     'src/index.js',

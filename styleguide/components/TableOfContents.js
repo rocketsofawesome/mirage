@@ -61,9 +61,27 @@ class UnstyledTableOfContents extends React.Component {
     )
   }
 
+  buildSections(inSections) {
+    const all = {
+      ...inSections[0],
+      name: 'ALL',
+      slug: 'all',
+      visibleName: 'ALL',
+      components: inSections.reduce((components, currentValue) => {
+        return [...components, ...currentValue.components]
+      })
+    }
+    return [
+      all,
+      ...inSections
+    ]
+  }
+
   renderSections() {
     const { searchTerm, sectionSelected } = this.state
-    const { sections: unfilteredSections, useRouterLinks } = this.props
+    const { sections: inSections, useRouterLinks } = this.props
+    const unfilteredSections = this.buildSections(inSections)
+
     // If there is only one section, we treat it as a root section
     // In this case the name of the section won't be rendered and it won't get left padding
     // const section = unfilteredSections.length === 1 ? unfilteredSections[0].components : unfilteredSections;
@@ -73,9 +91,9 @@ class UnstyledTableOfContents extends React.Component {
 
   render () {
     const  { searchTerm, sectionSelected } = this.state
-    const { className, sections } = this.props
-    const tableBackgroundClass = sections[sectionSelected].name.toLowerCase()
-    console.log(this.sectionList)
+    const { className, sections: inSections } = this.props
+    const sections = this.buildSections(inSections)
+    const tableBackgroundClass = sections[sectionSelected].slug
     return (
       <section className={className} >
         <aside>
@@ -87,7 +105,7 @@ class UnstyledTableOfContents extends React.Component {
                   data-section={id}
                   onClick={this.selectSection}
                   key={section.name}>
-                  <WhiteLink>{section.name}</WhiteLink>
+                  <WhiteLink href={`#${section.slug}`}>{section.name}</WhiteLink>
                 </li>
               )
             })}

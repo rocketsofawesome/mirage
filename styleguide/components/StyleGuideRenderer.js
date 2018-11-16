@@ -15,7 +15,6 @@ const UnstyledStyleGuideRenderer = ({
   toc,
   hasSidebar,
 }) => {
-  console.log(toc)
   return (
     <main className={className}>
       <aside>
