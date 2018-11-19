@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { WhiteLink } from 'SRC/components/link'
 
@@ -31,10 +30,6 @@ const ComponentsListRenderer = styled(UnstyledComponentsListRenderer)`
     padding: 0.75rem 0;
   }
 `
-
-ComponentsListRenderer.propTypes = {
-
-}
 
 /** @component */
 export default ComponentsListRenderer

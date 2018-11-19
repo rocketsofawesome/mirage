@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-import { theme } from 'SRC/core/theme'
 import { WhiteLink } from 'SRC/components/link'
 import ComponentsList from 'react-styleguidist/lib/rsg-components/ComponentsList'
 import TableOfContentsRenderer from 'react-styleguidist/lib/rsg-components/TableOfContents/TableOfContentsRenderer'
@@ -26,7 +25,7 @@ class UnstyledTableOfContents extends React.Component {
   selectSection = ({ currentTarget }) => {
     const sectionId = currentTarget.getAttribute('data-section')
     this.setState({
-      sectionSelected: parseInt(sectionId)
+      sectionSelected: parseInt(sectionId, 10)
     })
   }
 
@@ -242,7 +241,11 @@ const TableOfContents = styled(UnstyledTableOfContents)`
 `
 
 TableOfContents.propTypes = {
-
+  theme: PropTypes.shape({
+    media: PropTypes.shape({
+      tablet: PropTypes.func
+    })
+  })
 }
 
 /** @component */
