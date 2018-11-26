@@ -61,13 +61,20 @@ class UnstyledTableOfContents extends React.Component {
   }
 
   buildSections(inSections) {
+    console.log(inSections)
     const all = {
       ...inSections[0],
       name: 'ALL',
       slug: 'all',
       visibleName: 'ALL',
-      components: inSections.reduce((components, currentValue) => {
-        return [...components, ...currentValue.components]
+      components: inSections.reduce((components = [], currentValue) => {
+        if (Array.isArray(components)) {
+          return [...components, ...currentValue.components]
+        } else {
+          return [...components.components, ...currentValue.components]
+        }
+      }).sort((a, b) => {
+        return a.slug.localeCompare(b.slug)
       })
     }
     return [
