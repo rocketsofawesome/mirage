@@ -22,9 +22,8 @@ export default {
     'styleguidist'
   ],
   plugins: [
-    resolve(),
-    babel({
-      exclude: 'node_modules/**'
+    resolve({
+      modulesOnly: true
     }),
     alias({
       SRC: resolveApp('src'),  // Will check for ./bar.jsx and ./bar.js

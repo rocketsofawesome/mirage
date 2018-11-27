@@ -8,9 +8,7 @@ export { theme }
 export default class ThemeWrapper extends Component {
   render () {
     return (
-      <ThemeProvider theme={theme} {...this.props}>
-        {this.props.children}
-      </ThemeProvider>
+      <ThemeProvider theme={theme} {...this.props}/>
     )
   }
 }
