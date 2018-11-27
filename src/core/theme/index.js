@@ -1,16 +1,12 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 
 export { theme }
 
-export default class ThemeWrapper extends Component {
-  render () {
-    return (
-      <ThemeProvider theme={theme} {...this.props}/>
-    )
-  }
+const ThemeWrapper = (props) => {
+  return (<ThemeProvider theme={theme} {...props} />)
 }
 
 ThemeWrapper.propTypes = {
@@ -20,3 +16,5 @@ ThemeWrapper.propTypes = {
     PropTypes.string
   ]).isRequired
 }
+
+export default ThemeWrapper

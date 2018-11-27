@@ -25,6 +25,9 @@ export default {
     resolve({
       modulesOnly: true
     }),
+    babel({
+      exclude: 'node_modules/**'
+    }),
     alias({
       SRC: resolveApp('src'),  // Will check for ./bar.jsx and ./bar.js
       resolve: ['.js', '/index.js'] ,
