@@ -1,7 +1,9 @@
 // node-resolve will resolve all the node dependencies
+import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import babel from 'rollup-plugin-babel';
 import alias from 'rollup-plugin-alias';
+import commonjs from 'rollup-plugin-commonjs';
 import path from 'path';
 import fs from 'fs';
 
@@ -22,8 +24,12 @@ export default {
     'styleguidist'
   ],
   plugins: [
-    resolve({
-      modulesOnly: true
+    replace({
+      'process.env.NODE_ENV': JSON.stringify('production'),
+    }),
+    resolve(),
+    commonjs({
+      include: 'node_modules/**',
     }),
     babel({
       exclude: 'node_modules/**'
@@ -31,6 +37,6 @@ export default {
     alias({
       SRC: resolveApp('src'),  // Will check for ./bar.jsx and ./bar.js
       resolve: ['.js', '/index.js'] ,
-    }),
+    })
   ]
 }
