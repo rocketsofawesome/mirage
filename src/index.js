@@ -17,19 +17,7 @@
 /**
  * Components:
 **/
-
-  //Address
-  export {default as DefaultAddress} from './components/address/DefaultAddress'
-
-  //Payment
-  export {default as DefaultPayment} from './components/payment/DefaultPayment'
-
-  //Inputs
-  export * from './components/inputs'
-
-  //Link
-  export * from './components/link'
-
+  export * from './components'
 /**
  * Modules:
 **/
