@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 
-export { theme }
-
 const ThemeWrapper = (props) => {
   return (<ThemeProvider theme={theme} {...props} />)
 }
@@ -17,4 +15,4 @@ ThemeWrapper.propTypes = {
   ]).isRequired
 }
 
-export default ThemeWrapper
+export { theme, ThemeWrapper as ROATheme }
