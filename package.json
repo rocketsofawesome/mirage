@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.48",
+  "version": "0.1.49",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
