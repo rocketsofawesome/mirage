@@ -32,6 +32,8 @@ export default {
       exclude: 'node_modules/react'
     }),
     babel({
+      babelrc: false,
+      presets: [['env', { modules: false }]],
       exclude: 'node_modules/**'
     }),
     alias({
