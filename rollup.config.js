@@ -38,5 +38,10 @@ export default {
       SRC: resolveApp('src'),  // Will check for ./bar.jsx and ./bar.js
       resolve: ['.js', '/index.js'] ,
     })
-  ]
+  ],
+  globals: {
+    react: 'React',
+    'react-dom': 'ReactDOM',
+    'styled-components': 'styled'
+  },
 }
