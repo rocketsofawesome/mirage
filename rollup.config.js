@@ -29,6 +29,7 @@ export default {
     resolve(),
     commonjs({
       include: 'node_modules/**',
+      exclude: 'node_modules/react'
     }),
     babel({
       exclude: 'node_modules/**'
@@ -39,6 +40,7 @@ export default {
     })
   ],
   globals: {
-    'styled-components': 'styled'
+    react: 'React',
+    'react-dom': 'ReactDOM'
   },
 }
