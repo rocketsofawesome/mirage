@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.52",
+  "version": "0.1.53",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -122,7 +122,14 @@
   ],
   "babel": {
     "presets": [
-      "react-app"
+      "react-app",
+      "env",
+      {
+        "modules": false
+      }
+    ],
+    "plugins": [
+      "external-helpers"
     ]
   },
   "eslintConfig": {

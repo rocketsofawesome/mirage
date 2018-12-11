@@ -33,7 +33,10 @@ export default {
     }),
     babel({
       babelrc: false,
-      presets: [['env', { modules: false }]],
+      presets: [
+        "@babel/preset-env",
+        "@babel/react",
+      ],
       exclude: 'node_modules/**'
     }),
     alias({
