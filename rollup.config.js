@@ -18,7 +18,6 @@ export default {
   },
   // All the used libs needs to be here
   external: [
-    'react',
     'prop-types',
     'styled-components',
     'styleguidist'
@@ -40,8 +39,6 @@ export default {
     })
   ],
   globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM',
     'styled-components': 'styled'
   },
 }
