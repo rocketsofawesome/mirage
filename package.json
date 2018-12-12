@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.53",
+  "version": "0.1.49",
   "main": "dist/bundle.js",
   "dependencies": {
     "autoprefixer": "7.1.6",
@@ -12,6 +12,7 @@
     "babel-runtime": "6.26.0",
     "case-sensitive-paths-webpack-plugin": "2.1.1",
     "chalk": "1.1.3",
+    "cloudinary-core": "^2.5.0",
     "dotenv": "4.0.0",
     "dotenv-expand": "4.2.0",
     "eslint": "4.10.0",
@@ -31,6 +32,9 @@
     "postcss-loader": "2.0.8",
     "promise": "8.0.1",
     "raf": "3.4.0",
+    "react": "^16.3.2",
+    "react-dev-utils": "^5.0.1",
+    "react-dom": "^16.3.2",
     "resolve": "1.6.0",
     "style-loader": "0.19.0",
     "styled-components": "^3.4.5",
@@ -65,10 +69,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-replace": "^2.1.0",
     "rollup-plugin-uglify": "^6.0.0",
-    "uglify-es": "^3.3.9",
-    "react": "^16.3.2",
-    "react-dev-utils": "^5.0.1",
-    "react-dom": "^16.3.2"
+    "uglify-es": "^3.3.9"
   },
   "jest": {
     "collectCoverageFrom": [
@@ -122,14 +123,7 @@
   ],
   "babel": {
     "presets": [
-      "react-app",
-      "env",
-      {
-        "modules": false
-      }
-    ],
-    "plugins": [
-      "external-helpers"
+      "react-app"
     ]
   },
   "eslintConfig": {

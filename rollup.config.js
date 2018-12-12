@@ -18,6 +18,7 @@ export default {
   },
   // All the used libs needs to be here
   external: [
+    'react',
     'prop-types',
     'styled-components',
     'styleguidist'
@@ -29,23 +30,13 @@ export default {
     resolve(),
     commonjs({
       include: 'node_modules/**',
-      exclude: 'node_modules/react'
     }),
     babel({
-      babelrc: false,
-      presets: [
-        "@babel/preset-env",
-        "@babel/react",
-      ],
       exclude: 'node_modules/**'
     }),
     alias({
       SRC: resolveApp('src'),  // Will check for ./bar.jsx and ./bar.js
       resolve: ['.js', '/index.js'] ,
     })
-  ],
-  globals: {
-    react: 'React',
-    'react-dom': 'ReactDOM'
-  },
+  ]
 }
