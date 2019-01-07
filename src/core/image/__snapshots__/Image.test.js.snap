@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Image When no props are provided matching the snapshot 1`] = `
+<img
+  alt=""
+  sizes=""
+  src="https://dummyimage.com/100x100/CCC/333.png&text=small"
+  srcSet=""
+/>
+`;

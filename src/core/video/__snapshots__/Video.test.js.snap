@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Video matching the snapshot 1`] = `
+<video
+  autoPlay={true}
+  loop={true}
+  muted={true}
+/>
+`;

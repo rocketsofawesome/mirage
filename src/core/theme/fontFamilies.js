@@ -1,60 +1,62 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 /**
  * Global Fonts
 **/
-injectGlobal`
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 400;
+export const Fonts = createGlobalStyle`
+ body {
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 400;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT.otf');
+  }
 
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 400;
-  font-style: italic;
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 400;
+    font-style: italic;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-Italic.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-Italic.otf');
+  }
 
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 500;
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 500;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917384/web/fonts/DINOT-Medium.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917384/web/fonts/DINOT-Medium.otf');
+  }
 
 
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 500;
-  font-style: italic;
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 500;
+    font-style: italic;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917385/web/fonts/DINOT-MediumItalic.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917385/web/fonts/DINOT-MediumItalic.otf');
+  }
 
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 800;
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 800;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-Bold.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-Bold.otf');
+  }
 
-@font-face {
-  font-family: 'ff-din-web';
-  font-weight: 800;
-  font-style: italic;
+  @font-face {
+    font-family: 'ff-din-web';
+    font-weight: 800;
+    font-style: italic;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-BoldItalic.otf');
-}
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481915056/web/fonts/DINOT-BoldItalic.otf');
+  }
 
-@font-face {
-  font-family: 'din-cond';
-  font-weight: 400;
+  @font-face {
+    font-family: 'din-cond';
+    font-weight: 400;
 
-  src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917384/web/fonts/DINOT-CondMedium.otf');
+    src: url('https://res.cloudinary.com/roa-canon/raw/upload/v1481917384/web/fonts/DINOT-CondMedium.otf');
+  }
 }
 `
 

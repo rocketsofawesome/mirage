@@ -46,8 +46,8 @@ const pulseDirection = (props) => {
   }
 }
 
-const animated = css`
-  animation: ${props => `${pulse(props)} 0.75s infinite`};}
+const animated = (props) => css`
+  ${pulse(props)} 0.75s infinite
 `
 
 const direction = (props) => {
@@ -71,7 +71,7 @@ const Chevron = styled(BaseChevron)`
   stroke-width:5px;
   ${props => `transform: ${direction(props)};`}
   cursor: pointer;
-  ${props => props.animated ? animated : ''}
+  animation: ${props => props.animated ? animated : ''};
 `
 
 const validateDirection = (props, propName, componentName) => {

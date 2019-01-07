@@ -21,7 +21,8 @@ export default {
     'react',
     'prop-types',
     'styled-components',
-    'styleguidist'
+    'styleguidist',
+    'cloudinary-core'
   ],
   plugins: [
     replace({

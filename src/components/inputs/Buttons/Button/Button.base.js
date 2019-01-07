@@ -117,9 +117,9 @@ const buttonPropCheck = (props, propName, componentName) => {
 
 BaseButton.propTypes = {
   buttonPropCheck,
-  checkmark: PropTypes.func.isRequired,
+  checkmark: PropTypes.object,
   sentanceCase: PropTypes.bool,
-  spinner: PropTypes.func.isRequired,
+  spinner: PropTypes.object,
   width: PropTypes.string,
 }
 

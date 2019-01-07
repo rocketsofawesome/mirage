@@ -21,7 +21,7 @@ Object.keys(sizes).forEach((label) => {
   `(min-device-width: ${sizes[label]}px)`
 })
 
-export { breakpoints }
+export { breakpoints, sizes }
 
 export default Object.keys(sizes).reduce((accumulator, label) => {
   // use em in breakpoints to work properly cross-browser and support users

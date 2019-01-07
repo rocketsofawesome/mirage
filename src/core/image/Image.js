@@ -1,37 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css, keyframes } from 'styled-components'
 
-import cloudinary from './cloudinary'
+import Sizes from './sizes.base'
+import SourceSet from './sourceSet.base'
 
-class BaseImage extends React.Component {
-  render () {
-    const { alt, className, url } = this.props
+import cloudinary from 'SRC/services/cloudinary'
+
+const Image = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
+    const srcSet = new SourceSet(inSources).toString()
+    const sizesStr = new Sizes(inSizes).toString()
     return (
-      <img className={className} alt={alt} src={cloudinary.url(url)} />
+      <img
+        alt={alt}
+        src={cloudinary.url(src)}
+        srcSet={srcSet}
+        sizes={sizesStr}
+        {...props} />
     )
-  }
 }
 
-const fadein = keyframes`
-  from { opacity: 0; }
-  to { opacity: 1;}
-`
-
-const animation = css`
-  animation: ${fadein} 0.25s ease-in;
-`
-
-const Image = styled(BaseImage)`
-  ${props => props.animated && animation}
-`
+Image.defaultProps = {
+  alt: ''
+}
 
 Image.propTypes = {
-  animated: PropTypes.bool
+  alt: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
+  sizes: PropTypes.object,
+  srcSet: PropTypes.object
 }
 
-Image.defaltProps = {
-  animated: true
-}
 /** @component */
 export default Image

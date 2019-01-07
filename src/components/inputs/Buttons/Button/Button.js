@@ -33,16 +33,8 @@ const Button = styled(BaseButton)`
 `
 
 Button.propTypes = {
-  checkmark: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.object
-  ]),
-  spinner: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.object
-  ]),
+  checkmark: PropTypes.object.isRequired,
+  spinner: PropTypes.object.isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string,

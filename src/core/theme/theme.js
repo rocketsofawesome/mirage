@@ -1,10 +1,10 @@
-import { injectGlobal } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { colors } from './colors'
 import media, { breakpoints } from './breakpoints'
 import fontFamilies from './fontFamilies'
 import gridSettings from './gridSettings'
 
-const base = injectGlobal`
+export const BaseFontSize = createGlobalStyle`
   html {
     font-size: 10px;
   }
@@ -17,5 +17,4 @@ export default {
   grid: gridSettings,
   fixedPosition: 'relative',
   media: media,
-  base: base
 }
