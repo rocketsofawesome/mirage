@@ -4,7 +4,6 @@
 
   // Icons
   export * from './core/icons'
-
   //Grid
   export {default as Grid} from './core/grid/grid'
 
@@ -13,6 +12,8 @@
 
   //Typography
   export * from './core/typography'
+
+  export * from './core/Video'
 
 /**
  * Components:
