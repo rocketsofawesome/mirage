@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.60",
+  "version": "0.1.61",
   "main": "dist/bundle.js",
   "dependencies": {
     "cloudinary-core": "^2.5.0",
