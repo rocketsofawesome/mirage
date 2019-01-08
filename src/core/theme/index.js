@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
 
-export { theme }
-
-export default class ThemeWrapper extends Component {
+export default class ROATheme extends Component {
   render () {
     return (
       <ThemeProvider theme={theme} {...this.props}>
@@ -15,10 +13,12 @@ export default class ThemeWrapper extends Component {
   }
 }
 
-ThemeWrapper.propTypes = {
+ROATheme.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.object,
     PropTypes.string
   ]).isRequired
 }
+
+export { theme, ROATheme }
