@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) YellowCircleChevron matching the snapshot 1`] = `
+.c1 {
+  width: 60px;
+}
+
+.c1 polyline {
+  stroke-linecap: round;
+  fill: none;
+}
+
+.c0 ellipse {
+  fill: #F0FF02;
+}
+
+.c0 polyline {
+  stroke: #0073D1;
+  stroke-width: 3;
+}
+
+<Styled(Styled(CircleChev))
+  left={true}
+  width="60px"
+>
+  <Styled(CircleChev)
+    className="c0"
+    left={true}
+    width="60px"
+  >
+    <CircleChev
+      className="c0 c1"
+      left={true}
+      width="60px"
+    >
+      <svg
+        className="c0 c1"
+        viewBox="0 0 60 60"
+      >
+        <ellipse
+          cx="30"
+          cy="30"
+          rx="30"
+          ry="30"
+        />
+        <polyline
+          className="left"
+          points="36.5,43.2 23.5,30 36.5,16.8"
+        />
+      </svg>
+    </CircleChev>
+  </Styled(CircleChev)>
+</Styled(Styled(CircleChev))>
+`;

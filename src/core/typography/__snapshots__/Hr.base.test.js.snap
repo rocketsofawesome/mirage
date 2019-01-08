@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) BaseHr matching the snapshot 1`] = `
+.c0 {
+  height: .1rem;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+}
+
+<hr
+  className="c0"
+  width="100%"
+/>
+`;

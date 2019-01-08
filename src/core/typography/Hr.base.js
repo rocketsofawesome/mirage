@@ -1,7 +1,14 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseHr = styled.hr`
+const UnstyledHr = ({className}) => {
+  return (
+    <hr className={className} />
+  )
+}
+
+const BaseHr = styled(UnstyledHr)`
   height: .1rem;
   width: ${props => props.width};
   border: none;

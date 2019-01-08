@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
 
-const BaseChevron = ({animated, down, left, right, up, ...props}) => {
+const BaseChevron = ({className}) => {
   return (
-    <svg viewBox='0 0 48 24.12' {...props}>
+    <svg className={className} viewBox='0 0 48 24.12'>
       <polyline points='1 1 24 22.75 47 1' />
     </svg>
   )
@@ -29,7 +29,7 @@ const pulse = (props) => {
         transform: translateY(0px) ${direction(props)};
       }
       50% {
-        transform: translateY(-2px) ${direction(props)};
+        transform: translateY(-.2rem) ${direction(props)};
       }
       100% {
         transform: translateY(0px) ${direction(props)};
@@ -40,23 +40,23 @@ const pulse = (props) => {
 
 const pulseDirection = (props) => {
   if (props.right) {
-    return '2px'
+    return '.2rem'
   } else if (props.left) {
-    return '-2px'
+    return '-.2rem'
   }
 }
 
-const animated = css`
-  animation: ${props => `${pulse(props)} 0.75s infinite`};}
+const animated = (props) => css`
+  ${pulse(props)} 0.75s infinite
 `
 
 const direction = (props) => {
   if (props.down) {
     return 'rotate(0deg)'
-  } else if (props.right) {
-    return 'rotate(90deg)'
   } else if (props.left) {
     return 'rotate(-90deg)'
+  } else if (props.right) {
+    return 'rotate(90deg)'
   } else if (props.up) {
     return 'rotate(180deg)'
   }
@@ -71,7 +71,7 @@ const Chevron = styled(BaseChevron)`
   stroke-width:5px;
   ${props => `transform: ${direction(props)};`}
   cursor: pointer;
-  ${props => props.animated ? animated : ''}
+  animation: ${props => props.animated ? animated : ''};
 `
 
 const validateDirection = (props, propName, componentName) => {
@@ -84,21 +84,17 @@ const validateDirection = (props, propName, componentName) => {
   } else if (propDirections.length === 0) {
     return new Error(`No direction prop was supplied to ${componentName}, please select one.`)
   }
-  //   return new Error(`Both the left and right prop were supplied to ${componentName}, only use one.`)
-  // }
+  return null
 }
 
 Chevron.propTypes = {
   animated: PropTypes.bool,
-  down: validateDirection,
-  left: validateDirection,
-  right: validateDirection,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string.isRequired
     })
   }),
-  up: validateDirection
+  validateDirection
 }
 
 Chevron.defaultProps = {
@@ -107,8 +103,11 @@ Chevron.defaultProps = {
 
 /** @component */
 export default Chevron
-
-
-// Wrapping the component in a styled tag so that we can refference it in other
-// other styled components. See:
-// https://www.styled-components.com/docs/advanced#caveat
+export {
+  animated,
+  BaseChevron,
+  direction,
+  pulse,
+  pulseDirection,
+  validateDirection
+}

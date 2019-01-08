@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) BaseLink matching the snapshot 1`] = `
+.c0 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: initial;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.c0:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+<a
+  className="c0"
+/>
+`;

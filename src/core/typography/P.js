@@ -4,6 +4,7 @@ import styled from 'styled-components'
 const P = styled.p`
   text-align: left;
   letter-spacing: normal;
+  margin: 0;
 
   color: ${props => props.theme.colors.navy};
 
@@ -13,7 +14,10 @@ const P = styled.p`
 `
 
 P.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array
+  ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string

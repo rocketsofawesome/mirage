@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) CardIcon matching the snapshot 1`] = `
+.c0 {
+  fill: #00003C;
+}
+
+<Styled(CardIconBase)
+  brand=""
+>
+  <CardIconBase
+    brand=""
+    className="c0"
+  >
+    <Default
+      className="c0"
+    >
+      <BaseCardIcon
+        box="0 0 750 472"
+        className="c0"
+      >
+        <svg
+          className="c0"
+          version="1.1"
+          viewBox="0 0 750 472"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0,462a10,10,0,0,0,10,10H740a10,10,0,0,0,10-10V144H0Z"
+          />
+          <path
+            d="M750,10A10,10,0,0,0,740,0H10A10,10,0,0,0,0,10V73H750Z"
+          />
+        </svg>
+      </BaseCardIcon>
+    </Default>
+  </CardIconBase>
+</Styled(CardIconBase)>
+`;

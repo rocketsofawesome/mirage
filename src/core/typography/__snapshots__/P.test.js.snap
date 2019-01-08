@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) P matching the snapshot 1`] = `
+.c0 {
+  text-align: left;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+<p
+  className="c0"
+  fontSize="1.6rem"
+/>
+`;

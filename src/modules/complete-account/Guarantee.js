@@ -42,3 +42,4 @@ Guarantee.propTypes = {
 
 /** @component */
 export default Guarantee
+export { UnstyledGuarantee }

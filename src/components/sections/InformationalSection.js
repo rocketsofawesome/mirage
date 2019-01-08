@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import BaseInformationalSection from './InformationalSection.base'
-
-const InformationalSection = styled(BaseInformationalSection)`
+const InformationalSection = styled.section`
+  padding: 2.0rem 1.5rem;
   background-color: ${props => props.theme.colors.lightBlue[0]};
 `
 

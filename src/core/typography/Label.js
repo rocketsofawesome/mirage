@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
@@ -19,6 +20,19 @@ const Label = styled.label`
 
   color: ${props => props.theme.colors.navy}
 `
+
+const LowercaseLabel = ({className, children}) => {
+  return (
+    <Label
+      className={className}
+      fontSize='2rem'
+      letterSpacing='normal'
+      fontWeight='normal'
+      lowercase>
+        {children}
+    </Label>
+  )
+}
 
 Label.propTypes = {
   children: PropTypes.oneOfType([
@@ -46,4 +60,4 @@ Label.defaultProps = {
 /** @component */
 export default Label
 
-export { styles }
+export { LowercaseLabel, styles }

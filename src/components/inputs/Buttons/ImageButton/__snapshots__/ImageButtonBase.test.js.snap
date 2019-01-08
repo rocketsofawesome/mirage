@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) CustomButton matching the snapshot 1`] = `
+<div>
+  <button />
+  <span
+    className="borderBottom"
+  />
+</div>
+`;
+
+exports[`(Styled Component) ImageButton matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 35rem;
+  overflow: hidden;
+}
+
+.c0 > button {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 30px;
+  width: 35rem;
+  padding: 0 1.5rem;
+  text-align: center;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  border: none;
+}
+
+.c0 > button .arrow {
+  margin-left: 1.2rem;
+}
+
+.c0 > .borderBottom {
+  display: block;
+  height: .2rem;
+  width: 100%;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.25s ease-in-out;
+  -webkit-transition: transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.c0:hover > button {
+  cursor: pointer;
+}
+
+.c0:hover > .borderBottom {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  cursor: pointer;
+}
+
+<CustomButton
+  className="c0"
+  width="35rem"
+/>
+`;

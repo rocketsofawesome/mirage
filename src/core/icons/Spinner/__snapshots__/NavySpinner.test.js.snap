@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) NavySpinner matching the snapshot 1`] = `
+.c1 {
+  width: 80px;
+  height: 80px;
+}
+
+.c1 rect {
+  -webkit-animation-name: fGJyCl;
+  animation-name: fGJyCl;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform-box: view-box;
+  -ms-transform-box: view-box;
+  transform-box: view-box;
+}
+
+.c1 g:nth-child(1) rect {
+  -webkit-animation-delay: -1.0799999999999998s;
+  animation-delay: -1.0799999999999998s;
+}
+
+.c1 g:nth-child(2) rect {
+  -webkit-animation-delay: -0.96s;
+  animation-delay: -0.96s;
+}
+
+.c1 g:nth-child(3) rect {
+  -webkit-animation-delay: -0.8400000000000001s;
+  animation-delay: -0.8400000000000001s;
+}
+
+.c1 g:nth-child(4) rect {
+  -webkit-animation-delay: -0.72s;
+  animation-delay: -0.72s;
+}
+
+.c1 g:nth-child(5) rect {
+  -webkit-animation-delay: -0.6s;
+  animation-delay: -0.6s;
+}
+
+.c1 g:nth-child(6) rect {
+  -webkit-animation-delay: -0.48s;
+  animation-delay: -0.48s;
+}
+
+.c1 g:nth-child(7) rect {
+  -webkit-animation-delay: -0.36s;
+  animation-delay: -0.36s;
+}
+
+.c1 g:nth-child(8) rect {
+  -webkit-animation-delay: -0.24s;
+  animation-delay: -0.24s;
+}
+
+.c1 g:nth-child(9) rect {
+  -webkit-animation-delay: -0.12s;
+  animation-delay: -0.12s;
+}
+
+.c1 g:nth-child(10) rect {
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.c0 rect {
+  fill: #00003C;
+}
+
+<Styled(Styled(Component))>
+  <Styled(Component)
+    className="c0"
+    size="80px"
+  >
+    <Component
+      className="c0 c1"
+      size="80px"
+    >
+      <svg
+        className="c0 c1"
+        preserveAspectRatio="xMidYMid"
+        version="1.1"
+        viewBox="0 0 100 100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g
+          transform="rotate(0 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(36 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(72 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(108 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(144 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(180 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(216 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(252 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(288 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+        <g
+          transform="rotate(324 50 50)"
+        >
+          <rect
+            height="18"
+            rx="1.86"
+            ry="0.64"
+            width="7"
+            x="46.5"
+            y="16"
+          />
+        </g>
+      </svg>
+    </Component>
+  </Styled(Component)>
+</Styled(Styled(Component))>
+`;
