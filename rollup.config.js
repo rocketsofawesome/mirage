@@ -16,6 +16,7 @@ export default {
   },
   // All the used libs needs to be here
   external: [
+    'cloudinary-core',
     'react',
     'prop-types',
     'styled-components',
