@@ -8,7 +8,7 @@ exports[`(Styled Component) BaseHr matching the snapshot 1`] = `
   margin: 1rem 0;
 }
 
-<hr
+<UnstyledHr
   className="c0"
   width="100%"
 />

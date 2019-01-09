@@ -35,7 +35,14 @@ const BlueBorderButton = styled(BaseButton)`
 `
 
 BlueBorderButton.propTypes = {
-  spinner: PropTypes.object.isRequired,
+  checkmark: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.func
+  ]).isRequired,
+  spinner: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.func
+  ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       white: PropTypes.string
