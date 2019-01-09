@@ -1,0 +1,205 @@
+{
+  "data": {},
+  "content": [
+    {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "marks": [],
+          "value": "'Tis the season for awesome new arrivals",
+          "nodeType": "text"
+        }
+      ],
+      "nodeType": "heading-1"
+    },
+    {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "marks": [],
+          "value": "\"All is bright\" (and sparkly... and soft...)\nstarts here.",
+          "nodeType": "text"
+        }
+      ],
+      "nodeType": "paragraph"
+    },
+    {
+      "data": {
+        "target": {
+          "sys": {
+            "space": {
+              "sys": {
+                "type": "Link",
+                "linkType": "Space",
+                "id": "8viklopqoo0g"
+              }
+            },
+            "type": "Asset",
+            "id": "c6m6Gj2LgA2CY0coYswau",
+            "revision": 1,
+            "createdAt": "2019-01-09T19:01:35.674Z",
+            "updatedAt": "2019-01-09T19:01:57.533Z",
+            "environment": {
+              "sys": {
+                "id": "master",
+                "type": "Link",
+                "linkType": "Environment"
+              }
+            },
+            "locale": "en-US"
+          },
+          "fields": {
+            "title": "google-smile-emoji.svg",
+            "file": {
+              "url": "//images.ctfassets.net/8viklopqoo0g/c6m6Gj2LgA2CY0coYswau/7c69cd41a6fbb4dcf9e594bff236fc6c/1200px-Noto_Emoji_KitKat_263a.svg.png",
+              "details": {
+                "size": 43785,
+                "image": {
+                  "width": 1200,
+                  "height": 1200
+                }
+              },
+              "fileName": "1200px-Noto_Emoji_KitKat_263a.svg.png",
+              "contentType": "image/png"
+            }
+          }
+        }
+      },
+      "content": [],
+      "nodeType": "embedded-asset-block"
+    },
+    {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "marks": [],
+          "value": "",
+          "nodeType": "text"
+        }
+      ],
+      "nodeType": "paragraph"
+    },
+    {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "marks": [],
+          "value": "",
+          "nodeType": "text"
+        },
+        {
+          "data": {
+            "target": {
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "8viklopqoo0g"
+                  }
+                },
+                "type": "Entry",
+                "id": "6czHNxFwYg0QUGwgguSmQw",
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "heroButton"
+                  }
+                },
+                "revision": 3,
+                "createdAt": "2018-10-08T20:01:50.639Z",
+                "updatedAt": "2018-11-15T21:43:34.893Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "locale": "en-US"
+              },
+              "fields": {
+                "buttonText": "SHOP ALL BOYS",
+                "route": "/shop/boys"
+              }
+            }
+          },
+          "content": [],
+          "nodeType": "embedded-entry-inline"
+        },
+        {
+          "data": {},
+          "marks": [],
+          "value": "",
+          "nodeType": "text"
+        }
+      ],
+      "nodeType": "paragraph"
+    },
+    {
+      "data": {},
+      "content": [
+        {
+          "data": {},
+          "marks": [],
+          "value": "",
+          "nodeType": "text"
+        },
+        {
+          "data": {
+            "target": {
+              "sys": {
+                "space": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "Space",
+                    "id": "8viklopqoo0g"
+                  }
+                },
+                "type": "Entry",
+                "id": "x9kTofv9O80iyegI6uqGC",
+                "contentType": {
+                  "sys": {
+                    "type": "Link",
+                    "linkType": "ContentType",
+                    "id": "heroButton"
+                  }
+                },
+                "revision": 3,
+                "createdAt": "2018-10-08T20:01:18.667Z",
+                "updatedAt": "2018-11-15T21:43:16.174Z",
+                "environment": {
+                  "sys": {
+                    "id": "master",
+                    "type": "Link",
+                    "linkType": "Environment"
+                  }
+                },
+                "locale": "en-US"
+              },
+              "fields": {
+                "buttonText": "SHOP ALL GIRLS",
+                "route": "/shop/girls"
+              }
+            }
+          },
+          "content": [],
+          "nodeType": "embedded-entry-inline"
+        },
+        {
+          "data": {},
+          "marks": [],
+          "value": "",
+          "nodeType": "text"
+        }
+      ],
+      "nodeType": "paragraph"
+    }
+  ],
+  "nodeType": "document"
+}
