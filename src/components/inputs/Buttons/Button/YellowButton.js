@@ -15,8 +15,14 @@ const YellowButton = styled(BaseButton)`
 `
 
 YellowButton.propTypes = {
-  checkmark: PropTypes.object.isRequired,
-  spinner: PropTypes.object.isRequired,
+  checkmark: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.func
+  ]).isRequired,
+  spinner: PropTypes.oneOfType([
+    PropTypes.object,
+    PropTypes.func
+  ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       navy: PropTypes.string,

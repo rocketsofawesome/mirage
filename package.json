@@ -67,12 +67,12 @@
     "whatwg-fetch": "2.0.3"
   },
   "jest": {
-    "collectCoverage": true,
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,mjs}",
       "!src/theme/**/*.{js,jsx,mjs}",
       "!src/index.js",
-      "!src/setupTests.js"
+      "!src/setupTests.js",
+      "!src/**/index.{js,jsx,mjs}"
     ],
     "setupFiles": [
       "<rootDir>/config/polyfills.js"
@@ -94,7 +94,7 @@
     ],
     "module": "src/index.js",
     "moduleNameMapper": {
-      "^react-native$": "react-native-web"
+      "^SRC(.*)$": "<rootDir>/src$1"
     },
     "moduleDirectories": [
       "node_modules",

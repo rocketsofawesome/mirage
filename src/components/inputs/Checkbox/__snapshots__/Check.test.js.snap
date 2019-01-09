@@ -8,7 +8,7 @@ exports[`(Base Component) Check matching the snapshot 1`] = `
   stroke: #FFFFFF;
 }
 
-<Check
+<BaseCheck
   className="c0"
   theme={
     Object {

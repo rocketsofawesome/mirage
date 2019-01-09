@@ -5,7 +5,7 @@ exports[`(Styled Component) BlueHr matching the snapshot 1`] = `
   background-color: #0073D1;
 }
 
-<styled.hr
+<Styled(UnstyledHr)
   className="c0"
   width="100%"
 />
