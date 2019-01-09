@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const H3 = styled.h3`
-  letter-spacing: 0.5px;
+  letter-spacing: .05rem;
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
 
@@ -17,7 +17,8 @@ const H3 = styled.h3`
 H3.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.string
+    PropTypes.string,
+    PropTypes.object
   ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({

@@ -6,8 +6,32 @@
       "content": [
         {
           "data": {},
+          "marks": ["bold"],
+          "value": "'Tis the season",
+          "nodeType": "text"
+        },
+        {
+          "data": {},
           "marks": [],
-          "value": "'Tis the season for awesome new arrivals",
+          "value": " for ",
+          "nodeType": "text"
+        },
+        {
+          "data": {},
+          "marks": ["underline"],
+          "value": "awesome",
+          "nodeType": "text"
+        },
+        {
+          "data": {},
+          "marks": [],
+          "value": " new ",
+          "nodeType": "text"
+        },
+        {
+          "data": {},
+          "marks": ["italic"],
+          "value": "arrivals",
           "nodeType": "text"
         }
       ],
