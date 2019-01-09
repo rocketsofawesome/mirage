@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) CircleChevron matching the snapshot 1`] = `
+.c1 {
+  width: 6rem;
+}
+
 .c1 polyline {
   stroke-linecap: round;
   fill: none;
@@ -17,15 +21,17 @@ exports[`(Styled Component) CircleChevron matching the snapshot 1`] = `
 
 <Styled(Styled(CircleChev))
   left={true}
+  width="6rem"
 >
   <Styled(CircleChev)
     className="c0"
     left={true}
+    width="6rem"
   >
     <CircleChev
       className="c0 c1"
       left={true}
-      width="4rem"
+      width="6rem"
     >
       <svg
         className="c0 c1"
