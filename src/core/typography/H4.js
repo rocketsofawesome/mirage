@@ -14,7 +14,10 @@ const H4 = styled.h4`
 `
 
 H4.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string
+  ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string

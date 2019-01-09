@@ -21,7 +21,10 @@ const H1 = styled.h1`
 `
 
 H1.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string
+  ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string

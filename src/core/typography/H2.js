@@ -19,7 +19,10 @@ const H2 = styled.h2`
 `
 H2.propTypes = {
   center: PropTypes.bool,
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string
+  ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string

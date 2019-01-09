@@ -15,7 +15,10 @@ const H3 = styled.h3`
 `
 
 H3.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.string
+  ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string

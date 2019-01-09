@@ -2,11 +2,11 @@ import React from 'react'
 
 import * as typography from 'SRC/core/typography'
 
-export default class Content {
+export default class RecursiveRenderer {
   constructor (richText) {
     this.richText = richText
   }
-  parse = (element = this.richText) => {
+  parse = (element = this.richText, index) => {
     let component = null
     if (element) {
       switch (element.nodeType) {
@@ -64,9 +64,9 @@ export default class Content {
       if (element.content && component !== null){
         const Component = component
         return (
-          <Component>
-            {element.content.map((child) => {
-              return this.parse(child)
+          <Component key={index}>
+            {element.content.map((child, index) => {
+              return this.parse(child, index)
             })}
           </Component>
         )

@@ -1,10 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import Content from './parser'
+import RecursiveRenderer from './RecursiveRenderer'
 
 const RichText = ({className, richText}) => {
-  const result = new Content(richText).parse()
+  const result = new RecursiveRenderer(richText).parse()
   if (result) {
     return (React.cloneElement(result, {className: className}))
   } else {
