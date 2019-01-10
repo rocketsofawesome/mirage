@@ -18,8 +18,9 @@ describe('() RichText', () => {
     .toMatchSnapshot()
   })
 
-  test('parser should return fully rendered text area', () => {
+  test('recursiveRender should return fully rendered text area', () => {
     const renderable = createRichText().dive()
+    console.log(renderable.debug())
     expect(renderable.find('article').length).toEqual(1)
     expect(renderable.find(typography.H1).length).toEqual(1)
     expect(renderable.find(typography.P).length).toEqual(4)

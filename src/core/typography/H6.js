@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const H4 = styled.h4`
-  letter-spacing: 0.5px;
+const H6 = styled.h6`
+  letter-spacing: .075rem;
 
   color: ${props => props.theme.colors.navy};
 
@@ -13,7 +13,7 @@ const H4 = styled.h4`
   line-height: 1;
 `
 
-H4.propTypes = {
+H6.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,
@@ -29,9 +29,9 @@ H4.propTypes = {
   })
 }
 
-H4.defaultProps = {
-  fontSize: '1.8rem'
+H6.defaultProps = {
+  fontSize: '1.4rem'
 }
 
 /** @component */
-export default H4
+export default H6

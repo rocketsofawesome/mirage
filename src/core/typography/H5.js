@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const H4 = styled.h4`
+const H5 = styled.h5`
   letter-spacing: 0.5px;
 
   color: ${props => props.theme.colors.navy};
@@ -11,9 +11,10 @@ const H4 = styled.h4`
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  letter-spacing: .075rem;
 `
 
-H4.propTypes = {
+H5.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,
@@ -29,9 +30,9 @@ H4.propTypes = {
   })
 }
 
-H4.defaultProps = {
-  fontSize: '1.8rem'
+H5.defaultProps = {
+  fontSize: '1.6rem'
 }
 
 /** @component */
-export default H4
+export default H5

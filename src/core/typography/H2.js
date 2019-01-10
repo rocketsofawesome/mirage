@@ -6,7 +6,7 @@ const H2 = styled.h2`
     margin: 0;
 
     ${props => props.center ? 'text-align: center;' : ''}
-    letter-spacing: 0.5px;
+    letter-spacing: .05rem;
     text-transform: ${props => props.lowercase
       ? 'inherit' : 'uppercase'};
 
@@ -21,7 +21,8 @@ H2.propTypes = {
   center: PropTypes.bool,
   children: PropTypes.oneOfType([
     PropTypes.array,
-    PropTypes.string
+    PropTypes.string,
+    PropTypes.object
   ]),
   theme: PropTypes.shape({
     fonts: PropTypes.shape({

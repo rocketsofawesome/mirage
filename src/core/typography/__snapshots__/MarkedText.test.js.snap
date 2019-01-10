@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) MarkedText matching the snapshot 1`] = `
+.c0 {
+  white-space: pre;
+}
+
+<span
+  className="c0"
+/>
+`;
