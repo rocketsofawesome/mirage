@@ -27,7 +27,16 @@ Image.propTypes = {
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
-  srcSet: PropTypes.object
+  srcSet: PropTypes.oneOfType([
+    (props, propName, componentName) => {
+      if (props[propName] && !props['sizes']) {
+        console.warn(
+          `You have provided ${propName}, but not defined the sizes prop, this will cause your images for be sized to 100vw if a \`width\` css property is not set.`
+        )
+      }
+    },
+    PropTypes.object
+  ])
 }
 
 /** @component */

@@ -5,9 +5,14 @@ export default class Sizes {
   toString = () => {
     let output = ``
     for (let breakpoint in this.sizes) {
-      output = `${output}${breakpoint} ${this.sizes[breakpoint]},
-`
+      const width = this.sizes[breakpoint]
+      if (breakpoint !== 'default') {
+        output = `${output}${breakpoint} ${width},`
+      } else {
+        output = `${output} ${width},`
+      }
+
     }
-    return output.slice(0, -2)
+    return output.slice(0, -1)
   }
 }
