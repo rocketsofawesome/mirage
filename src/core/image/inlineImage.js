@@ -6,9 +6,15 @@ import SourceSet from './sourceSet.base'
 
 import cloudinary from 'SRC/services/cloudinary'
 
-const Image = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
-    const srcSet = new SourceSet(inSources).toString()
-    const sizesStr = new Sizes(inSizes).toString()
+const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
+    let srcSet =  undefined
+    if (inSources) {
+      srcSet = new SourceSet(inSources).toString()
+    }
+    let sizesStr = undefined
+    if (inSizes) {
+      sizesStr = new Sizes(inSizes).toString()
+    }
     return (
       <img
         alt={alt}
@@ -19,11 +25,11 @@ const Image = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
     )
 }
 
-Image.defaultProps = {
+InlineImage.defaultProps = {
   alt: ''
 }
 
-Image.propTypes = {
+InlineImage.propTypes = {
   alt: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
@@ -31,7 +37,7 @@ Image.propTypes = {
     (props, propName, componentName) => {
       if (props[propName] && !props['sizes']) {
         console.warn(
-          `You have provided ${propName}, but not defined the sizes prop, this will cause your images for be sized to 100vw if a \`width\` css property is not set.`
+          `You have provided ${propName}, but not defined the sizes prop, this will cause your InlineImages for be sized to 100vw if a \`width\` css property is not set.`
         )
       }
     },
@@ -40,4 +46,4 @@ Image.propTypes = {
 }
 
 /** @component */
-export default Image
+export default InlineImage
