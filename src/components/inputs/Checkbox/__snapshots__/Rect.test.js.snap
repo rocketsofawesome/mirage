@@ -81,9 +81,9 @@ exports[`(Base Component) Rect matching the snapshot 1`] = `
         "columns": Object {
           "desktop": 12,
           "mobile": 4,
-          "tablet": 10,
+          "tablet": 12,
         },
-        "gutter": "10px",
+        "gutter": 2,
         "margins": Object {
           "desktop": "7%",
           "mobile": "3%",

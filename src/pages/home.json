@@ -1,0 +1,54 @@
+{
+  "data": {
+    "children": [
+      {
+        "sys": {
+          "type": "Core",
+          "component": "Grid"
+        },
+        "data": {
+          "children": [
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Components",
+                      "component": "InformationalSection"
+                    },
+                    "data": {
+                      "children": [
+                        {
+                          "data": {
+                          },
+                          "sys": {
+                            "type": "Core",
+                            "component": "Logo"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "start": 4,
+                    "width": 6
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "sys": {
+    "type": "Modules",
+    "component": "Page"
+  }
+}

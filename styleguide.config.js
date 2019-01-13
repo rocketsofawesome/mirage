@@ -7,6 +7,9 @@ module.exports = {
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/core/theme')
   },
+  theme: {
+    maxWidth: 'auto'
+  },
   template: {
     favicon: '//res.cloudinary.com/roa-canon/image/upload/v1508867160/favicon.ico',
     head: {
