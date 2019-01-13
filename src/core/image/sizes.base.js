@@ -7,12 +7,16 @@ export default class Sizes {
     for (let breakpoint in this.sizes) {
       const width = this.sizes[breakpoint]
       if (breakpoint !== 'default') {
-        output = `${output}${breakpoint} ${width},`
+        output = `${output}${breakpoint} ${width},\n`
       } else {
-        output = `${output} ${width},`
+        output = `${output} ${width}`
       }
 
     }
-    return output.slice(0, -1)
+    if (Object.keys(this.sizes).includes('default')) {
+     return output
+   } else {
+     return output.slice(0, -2)
+   }
   }
 }

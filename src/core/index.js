@@ -1,4 +1,4 @@
-export { default as Grid } from './grid/grid.base'
+export * from './grid'
 export * from './icons'
 export * from './image'
 export * from './typography'

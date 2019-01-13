@@ -1,34 +1,36 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-const TabletGrid = css`
-  grid-template-columns:
-    repeat(${props => props.theme.grid.columns.tablet}, 1fr);
-  margin: 0 ${props => props.theme.grid.margins.tablet};
-`
-
-const DesktopGrid = css`
+const TwelveColGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.desktop}, 1fr);
   max-width: 144rem;
-  margin: 0 ${props => props.theme.grid.margins.desktop};
+  margin: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.desktop};
 `
 
-const Grid = styled.div`
-  grid-gap: ${props => props.theme.grid.gutter};
-  display: grid;
-  grid-auto-flow: row;
-  grid-template-columns:
-    repeat(${props => props.theme.grid.columns.mobile}, 1fr);
-  grid-row-gap: 2rem;
-  grid-column-gap: ${props => props.theme.grid.gutter};
-  margin: 0 ${props => props.theme.grid.margins.mobile};
-  ${props => props.theme.media.tablet`${TabletGrid}`}
-  ${props => props.theme.media.desktop`${DesktopGrid}`}
-  ${props => props.debug &&
-    `> * {
-      border: 1px dashed #666;
-    }`
+const Grid = styled(
+  ({className, children}) => {
+    console.log('In Grid')
+    return(<div className={className}>{children}</div>)
+  }
+)`
+  display: flex;
+  flex-wrap: wrap;
+  margin: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.mobile};
+  @supports (display:grid) {
+    max-width: 100%;
+    grid-gap: ${props => props.theme.grid.gutter}rem;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns:
+      repeat(${props => props.theme.grid.columns.mobile}, 1fr);
+    ${props => props.theme.media.tablet`${TwelveColGrid}`}
+    ${props => props.debug &&
+      `> * {
+        background-color: hsl(200, 33%, 96%);
+      }`
+    }
   }
 `
 
