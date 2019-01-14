@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Sizer matching the snapshot 1`] = `
+.c0 {
+  width: calc((100% * (4/4)) - 2rem);
+  box-sizing: border-box;
+  margin: 0 1rem;
+}
+
+@supports (display:grid) {
+  .c0 {
+    width: auto;
+    margin: 0;
+    grid-column-end: span 4;
+  }
+}
+
+<div
+  className="c0"
+/>
+`;

@@ -4,6 +4,85 @@
       {
         "sys": {
           "type": "Core",
+          "component": "BackgroundImage"
+        },
+        "data": {
+          "children": [
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Grid"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "Sizer"
+                    },
+                    "data": {
+                      "children": [
+                        {
+                          "sys": {
+                            "type": "Core",
+                            "component": "H1"
+                          },
+                          "data": {
+                            "props": {
+                              "style": {
+                                "color": "red",
+                                "textAlign": "center",
+                                "display": "block"
+
+                              }
+                            },
+                            "children": "Greetings Friends"
+                          }
+                        },
+                        {
+                          "sys": {
+                            "type": "Core",
+                            "component": "Caption"
+                          },
+                          "data": {
+                            "props": {
+                              "style": {
+                                "color": "#FFF",
+                                "textAlign": "center",
+                                "display": "block"
+                              }
+                            },
+                            "children": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+                          }
+                        }
+                      ],
+                      "props": {
+                        "desktop": {
+                          "start": 4,
+                          "width": 6
+                        },
+                        "style": {
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "props": {
+            "src": "https://www.fillmurray.com/g/100/100",
+            "sources": {
+              "960": "https://www.fillmurray.com/g/1440/400",
+              "600": "https://www.fillmurray.com/g/800/350",
+              "0": "https://www.fillmurray.com/g/320/100"
+            }
+          }
+        }
+      },
+      {
+        "sys": {
+          "type": "Core",
           "component": "Grid"
         },
         "data": {
@@ -36,8 +115,98 @@
                 ],
                 "props": {
                   "desktop": {
-                    "start": 4,
-                    "width": 6
+                    "width": 10,
+                    "start": 2
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "900": "https://www.fillmurray.com/g/1200/1440",
+                          "600": "https://www.fillmurray.com/g/700/800",
+                          "0": "https://www.fillmurray.com/g/400/400"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 8
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1100/1440",
+                          "600": "https://www.fillmurray.com/g/700/900",
+                          "0": "https://www.fillmurray.com/g/300/340"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1100/1440",
+                          "600": "https://www.fillmurray.com/g/700/900",
+                          "0": "https://www.fillmurray.com/g/300/340"
+                        },
+                        "style": {
+                          "marginTop": "2rem"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 4,
+                    "start": 9
+                  },
+                  "style": {
+                    "display": "flex",
+                    "flexDirection": "column",
+                    "justifyContent": "space-between"
                   }
                 }
               }

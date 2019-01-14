@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const Page = ({children, url}) => {
-  console.log('We are in the page')
   return (
     <main data-cms-url={url}>
       {children}
@@ -11,7 +10,11 @@ const Page = ({children, url}) => {
 }
 
 Page.propTypes = {
-
+  children: PropTypes.oneOfType([
+    PropTypes.array,
+    PropTypes.object,
+    PropTypes.string
+  ])
 }
 
 export default Page

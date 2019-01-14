@@ -1,7 +1,7 @@
 export default {
   columns: {
     mobile: 4,
-    tablet: 10,
+    tablet: 12,
     desktop: 12
   },
   margins: {
@@ -9,5 +9,5 @@ export default {
     tablet: '7%',
     desktop: '7%'
   },
-  gutter: '10px'
+  gutter: 2
 }

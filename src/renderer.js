@@ -5,8 +5,6 @@ import * as Core from './core'
 import * as Components from './components'
 import * as Modules from './modules'
 
-console.log(Components)
-
 
 const COMPONENT_RENDER_MAP = {
   Core: {
