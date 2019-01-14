@@ -1,1 +1,2 @@
-export { default as Image } from './Image'
+export {default as BackgroundImage} from './backgroundImage'
+export { default as InlineImage } from './inlineImage'
