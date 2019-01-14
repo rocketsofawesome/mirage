@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 > video {
+  width: 100%;
+}
+
+.c0 > article {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+<Styled(BaseBackgroundVideo)
+  sources="www.example.com/example.mp4"
+>
+  <BaseBackgroundVideo
+    className="c0"
+    sources="www.example.com/example.mp4"
+  >
+    <section
+      className="c0"
+    >
+      <Video
+        autoPlay={true}
+        loop={true}
+        muted={true}
+        sources="www.example.com/example.mp4"
+      >
+        <video
+          autoPlay={true}
+          loop={true}
+          muted={true}
+        >
+          <source
+            key="0"
+            src="www.example.com/example.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </Video>
+      <article>
+        <h1>
+          Hello
+        </h1>
+      </article>
+    </section>
+  </BaseBackgroundVideo>
+</Styled(BaseBackgroundVideo)>
+`;

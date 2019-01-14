@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Video from './Video'
+import Video from './video'
 
 const { shallowWithTheme } = global
 
