@@ -64,9 +64,13 @@ const COMPONENT_RENDER_MAP = {
   },
   Components: {
     InformationalSection: (item) =>
-        <Components.InformationalSection>
-          {item.children.map(child => Renderer({item: child}))}
-        </Components.InformationalSection>,
+      <Components.InformationalSection>
+        {item.children.map(child => Renderer({item: child}))}
+      </Components.InformationalSection>,
+    BackgroundVideo: (item) =>
+      <Components.BackgroundVideo {...item.props}>
+        {item.children.map(child => Renderer({item: child}))}
+      </Components.BackgroundVideo>
   },
   Modules: {
     Page: (item) =>
@@ -77,7 +81,11 @@ const COMPONENT_RENDER_MAP = {
 }
 
 const Renderer = ({item}) => {
-  return COMPONENT_RENDER_MAP[item.sys.type][item.sys.component](item.data)
+  try {
+    return COMPONENT_RENDER_MAP[item.sys.type][item.sys.component](item.data)
+  } catch(err) {
+    console.warn(`It appears that you are tying to render an element that doesn't exist in the COMPONENT_RENDER_MAP`)
+  }
 }
 
 Renderer.propTypes = {
