@@ -11,7 +11,6 @@ const TwelveColGrid = css`
 
 const Grid = styled(
   ({className, children}) => {
-    console.log('In Grid')
     return(<div className={className}>{children}</div>)
   }
 )`
