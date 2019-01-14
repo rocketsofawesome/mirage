@@ -3,23 +3,28 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { withSize } from 'react-sizeme'
 
-import Sizes from './sizes.base'
-import SourceSet from './sourceSet.base'
-
 const StyledBackgroundImage = styled.section`
+  position: relative;
   background-image: url(${props => props.src});
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   padding-top: ${props => props.defaultPaddingTop}%;
+  > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
 `
 
 class BackgroundImage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      images: [],
-      currentSrc: props.src
+      currentSrc: props.src,
+      defaultPaddingTop: 0
     }
   }
 
@@ -34,7 +39,18 @@ class BackgroundImage extends React.Component {
         return(key < width)
       })]
       if(currentSrc !== newSrc) {
-        this.setState({ currentSrc: newSrc})
+        const image = new Image();
+        image.src = newSrc
+        image.onload = () => {
+          const defaultPaddingTop = (image.height !== 0 && image.width !== 0)
+          ? ((image.height / image.width) * 100)
+          : 0
+          console.log(image.src, image.height, image.width, defaultPaddingTop)
+          this.setState({
+            currentSrc: newSrc,
+            defaultPaddingTop: defaultPaddingTop
+          })
+        }
       }
     }
   }
@@ -48,15 +64,14 @@ class BackgroundImage extends React.Component {
   }
 
   render() {
-    const { currentSrc } = this.state
-    const image = new Image();
-    image.src = currentSrc
-
-    const defaultPaddingTop = (image.height !== 0 && image.width !== 0)
-    ? ((image.height / image.width) * 100)
-    : 0
-    return (<StyledBackgroundImage {...this.props} src={image.src} defaultPaddingTop={defaultPaddingTop} />)
-  }
+    const { children, ...props } = this.props
+    const { currentSrc, defaultPaddingTop } = this.state
+      console.log('currentSrc', currentSrc)
+      return (
+        <StyledBackgroundImage {...this.props} src={currentSrc} defaultPaddingTop={defaultPaddingTop}>
+          <div>{children}</div>
+        </StyledBackgroundImage>)
+    }
 }
 
 BackgroundImage.propTypes = {
