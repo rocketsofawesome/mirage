@@ -2,10 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Source from './sources.base'
 
-const Video = ({children, source: inSource, ...props}) => {
+const Video = ({children, sources: inSources, ...props}) => {
   let sources = []
-  if (inSource) {
-    sources = new Source(inSource).render()
+  if (inSources) {
+    sources = new Source(inSources).render()
   }
   return (
     <video {...props}>
@@ -18,7 +18,7 @@ const Video = ({children, source: inSource, ...props}) => {
 }
 
 Video.propTypes = {
-  source: PropTypes.oneOfType([
+  sources: PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.array
   ]),
