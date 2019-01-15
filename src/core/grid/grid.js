@@ -6,7 +6,7 @@ const TwelveColGrid = css`
   grid-template-columns:
     repeat(${props => props.theme.grid.columns.desktop}, 1fr);
   max-width: 144rem;
-  margin: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.desktop};
+  padding: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.desktop};
 `
 
 const Grid = styled(
@@ -16,7 +16,9 @@ const Grid = styled(
 )`
   display: flex;
   flex-wrap: wrap;
-  margin: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.mobile};
+  margin-left: auto;
+  margin-right: auto;
+  padding: ${props => props.theme.grid.gutter}rem ${props => props.theme.grid.margins.mobile};
   @supports (display:grid) {
     max-width: 100%;
     grid-gap: ${props => props.theme.grid.gutter}rem;

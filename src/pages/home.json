@@ -200,13 +200,140 @@
                 ],
                 "props": {
                   "desktop": {
-                    "width": 4,
-                    "start": 9
+                    "width": 4
                   },
                   "style": {
                     "display": "flex",
                     "flexDirection": "column",
                     "justifyContent": "space-between"
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1400/1440",
+                          "600": "https://www.fillmurray.com/g/700/700",
+                          "0": "https://www.fillmurray.com/g/300/300"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 3
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1400/1440",
+                          "600": "https://www.fillmurray.com/g/700/700",
+                          "0": "https://www.fillmurray.com/g/300/300"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 3
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1400/1440",
+                          "600": "https://www.fillmurray.com/g/700/700",
+                          "0": "https://www.fillmurray.com/g/300/300"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 3
+                  }
+                }
+              }
+            },
+            {
+              "sys": {
+                "type": "Core",
+                "component": "Sizer"
+              },
+              "data": {
+                "children": [
+                  {
+                    "sys": {
+                      "type": "Core",
+                      "component": "BackgroundImage"
+                    },
+                    "data": {
+                      "children": [],
+                      "props": {
+                        "src": "https://www.fillmurray.com/g/100/100",
+                        "sources": {
+                          "960": "https://www.fillmurray.com/g/1400/1440",
+                          "600": "https://www.fillmurray.com/g/700/700",
+                          "0": "https://www.fillmurray.com/g/300/300"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "props": {
+                  "desktop": {
+                    "width": 3
                   }
                 }
               }
