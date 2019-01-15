@@ -39,6 +39,7 @@ export default {
     }),
     commonjs({
       include: 'node_modules/**',
+      exclude: ['node_modules/react', 'node_modules/react-dom'],
       namedExports: {
         // left-hand side can be an absolute path, a path
         // relative to the current directory, or the name
