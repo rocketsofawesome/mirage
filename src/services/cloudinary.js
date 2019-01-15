@@ -1,4 +1,3 @@
-import { Cloudinary } from 'cloudinary-core'
 const {
   REACT_APP_CLOUDINARY_DISTRIBUTION,
   REACT_APP_CLOUDINARY_NAME

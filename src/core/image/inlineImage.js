@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 import Sizes from './sizes.base'
 import SourceSet from './sourceSet.base'
 
-import cloudinary from 'SRC/services/cloudinary'
-
 const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
     let srcSet =  undefined
     if (inSources) {
@@ -18,7 +16,7 @@ const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) =
     return (
       <img
         alt={alt}
-        src={cloudinary.url(src)}
+        src={src}
         srcSet={srcSet}
         sizes={sizesStr}
         {...props} />

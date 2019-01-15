@@ -1,5 +1,3 @@
-import cloudinary from 'SRC/services/cloudinary'
-
 export default class SourceSet {
   constructor (sources) {
     this.sources = sources
@@ -7,7 +5,7 @@ export default class SourceSet {
   toString = () => {
     let output = ``
     for (let width in this.sources) {
-      output = `${output}${cloudinary.url(this.sources[width])} ${width},
+      output = `${output}${this.sources[width]} ${width},
 `
     }
     return output.slice(0, -2)
