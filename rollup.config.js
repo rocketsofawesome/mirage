@@ -15,15 +15,17 @@ export default {
   output: {
     file: 'dist/bundle.js',
     format: 'umd',
-    name: 'Mirage'
+    name: 'Mirage',
+    globals: {
+      react: 'React',
+      'styled-components': 'styled'
+    }
   },
   // All the used libs needs to be here
   external: [
-    'cloudinary-core',
     'react',
     'prop-types',
     'styled-components',
-    'styleguidist'
   ],
   plugins: [
     replace({

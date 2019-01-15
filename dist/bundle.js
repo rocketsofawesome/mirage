@@ -1,5 +1,8 @@
-var Mirage = (function (exports,React,PropTypes,styled) {
-  'use strict';
+(function (global, factory) {
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('react'), require('prop-types'), require('styled-components')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'react', 'prop-types', 'styled-components'], factory) :
+  (factory((global.Mirage = {}),global.React,global.PropTypes,global.styled));
+}(this, (function (exports,React,PropTypes,styled) { 'use strict';
 
   var React__default = 'default' in React ? React['default'] : React;
   PropTypes = PropTypes && PropTypes.hasOwnProperty('default') ? PropTypes['default'] : PropTypes;
@@ -8228,6 +8231,6 @@ var Mirage = (function (exports,React,PropTypes,styled) {
   exports.DefaultSection = DefaultSection;
   exports.RichText = RichText$1;
 
-  return exports;
+  Object.defineProperty(exports, '__esModule', { value: true });
 
-}({},React,PropTypes,styled));
+})));
