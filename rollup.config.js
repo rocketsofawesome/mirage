@@ -14,8 +14,7 @@ export default {
   input: 'src/index.js',
   output: {
     file: 'dist/bundle.js',
-    format: 'iife',
-    name: 'Mirage'
+    format: 'umd'
   },
   // All the used libs needs to be here
   external: [
