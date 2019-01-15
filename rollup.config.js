@@ -3,6 +3,7 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import babel from 'rollup-plugin-babel';
 import alias from 'rollup-plugin-alias';
+import replace from 'rollup-plugin-replace';
 import path from 'path';
 import fs from 'fs';
 
@@ -25,6 +26,9 @@ export default {
     'styleguidist'
   ],
   plugins: [
+    replace({
+      'process.env.NODE_ENV': JSON.stringify( 'production' )
+    }),
     resolve(),
     babel({
       exclude: 'node_modules/**'
