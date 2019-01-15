@@ -18,6 +18,7 @@ export default {
     name: 'Mirage',
     globals: {
       react: 'React',
+      'prop-types': 'PropTypes',
       'styled-components': 'styled'
     }
   },
