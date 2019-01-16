@@ -8,7 +8,6 @@ import path from 'path';
 import fs from 'fs';
 
 const dependencies = Object.keys(require('./package.json').dependencies)
-console.log(dependencies)
 const appDirectory = fs.realpathSync(process.cwd());
 const resolveApp = relativePath => path.resolve(appDirectory, relativePath);
 
@@ -16,7 +15,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/bundle.main.js',
+      file: 'dist/bundle.js',
       format: 'umd',
       name: 'Mirage',
       globals: {
