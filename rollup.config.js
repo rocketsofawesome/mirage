@@ -15,7 +15,7 @@ export default [
   {
     input: 'src/index.js',
     output: {
-      file: 'dist/bundle.js',
+      file: 'dist/bundle.main.js',
       format: 'umd',
       name: 'Mirage',
       globals: {
@@ -25,7 +25,11 @@ export default [
       }
     },
     // All the used libs needs to be here
-    external: dependencies,
+    external: [
+      'react',
+      'prop-types',
+      'styled-components',
+    ],
     plugins: [
       replace({
         'process.env.NODE_ENV': JSON.stringify( 'production' )
