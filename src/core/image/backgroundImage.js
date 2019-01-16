@@ -5,12 +5,14 @@ import { withSize } from 'react-sizeme'
 
 const StyledBackgroundImage = styled.section`
   position: relative;
-  background-image: url(${props => props.src});
-  background-size: contain;
-  background-repeat: no-repeat;
   width: 100%;
-  padding-top: ${props => props.defaultPaddingTop}%;
   > div {
+    background-image: url(${props => props.src});
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: ${props => props.defaultPaddingTop}%;
+  }
+  > article {
     position: absolute;
     top: 0;
     left: 0;
@@ -23,13 +25,14 @@ class BackgroundImage extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      currentSrc: props.src,
-      defaultPaddingTop: 0
+      currentSrc: undefined,
+      defaultPaddingTop: undefined
     }
   }
 
   setResponsiveBackground = () => {
-    const { size: { width }, sources } = this.props
+    const { size: { width }, src, sources: inSources } = this.props
+    const sources = {...inSources, 0: src}
     const { currentSrc } = this.state
     if (sources) {
       const newSrc = sources[Object.keys(sources)
@@ -45,7 +48,6 @@ class BackgroundImage extends React.Component {
           const defaultPaddingTop = (image.height !== 0 && image.width !== 0)
           ? ((image.height / image.width) * 100)
           : 0
-          console.log(image.src, image.height, image.width, defaultPaddingTop)
           this.setState({
             currentSrc: newSrc,
             defaultPaddingTop: defaultPaddingTop
@@ -64,12 +66,12 @@ class BackgroundImage extends React.Component {
   }
 
   render() {
-    const { children, ...props } = this.props
+    const { children } = this.props
     const { currentSrc, defaultPaddingTop } = this.state
-      console.log('currentSrc', currentSrc)
       return (
         <StyledBackgroundImage {...this.props} src={currentSrc} defaultPaddingTop={defaultPaddingTop}>
-          <div>{children}</div>
+          <div />
+          <article>{children}</article>
         </StyledBackgroundImage>)
     }
 }
