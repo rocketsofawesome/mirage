@@ -1,7 +1,7 @@
 {
   "name": "@rocketsofawesome/mirage",
   "version": "0.1.71",
-  "main": "dist/bundle.js",
+  "main": "src/index.js",
   "dependencies": {
     "react-sizeme": "^2.5.2",
     "styled-components": "^3.2.6"
