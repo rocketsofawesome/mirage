@@ -1,7 +1,7 @@
 {
   "name": "@rocketsofawesome/mirage",
   "version": "0.1.77",
-  "main": "dist/bundle.module.js",
+  "main": "dist/bundle.js",
   "dependencies": {
     "prop-types": "^15.6.2",
     "react": "^16.3.2",
