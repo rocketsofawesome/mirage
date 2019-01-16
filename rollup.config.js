@@ -20,7 +20,8 @@ export default {
     'react',
     'prop-types',
     'styled-components',
-    'styleguidist'
+    'styleguidist',
+    'react-sizeme'
   ],
   plugins: [
     resolve(),
