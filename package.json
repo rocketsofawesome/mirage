@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.71",
+  "version": "0.1.72",
   "main": "src/index.js",
   "dependencies": {
     "react-sizeme": "^2.5.2",
