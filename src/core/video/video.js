@@ -27,6 +27,7 @@ Video.propTypes = {
 Video.defaultProps = {
   autoPlay: true,
   playsinline: true,
+  inline: true,
   loop: true,
   muted: true
 }
