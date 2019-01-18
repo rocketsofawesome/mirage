@@ -5,7 +5,7 @@ import { Video } from 'SRC/core/video'
 
 const BaseBackgroundVideo = ({className, children, sources, ...props}) => {
   return (
-    <section className={className}>
+    <section className={className} {...props}>
       <Video sources={sources} />
       <article>{children}</article>
     </section>
