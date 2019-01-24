@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import CardIcon, { CardIconBase } from './CardIcon'
+import { CardIcon } from 'SRC'
+import { CardIconBase } from './CardIcon'
 
 import Amex from './Amex.base'
 import Default from './Default.base'

@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import NavySpinner from './NavySpinner'
+import { NavySpinner } from 'SRC'
 
 const { mountWithTheme } = global
 

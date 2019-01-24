@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import NavyLink from './NavyLink'
+import { NavyLink } from 'SRC'
 
 const { mountWithTheme } = global
 

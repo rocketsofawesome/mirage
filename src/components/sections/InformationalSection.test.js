@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import InformationalSection from './InformationalSection'
+import { InformationalSection } from 'SRC'
 
 const { shallowWithTheme } = global
 

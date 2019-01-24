@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import Label, { LowercaseLabel } from './Label'
+import { Label } from 'SRC'
+import { LowercaseLabel } from './Label'
 
 const { mountWithTheme } = global
 

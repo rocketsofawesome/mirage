@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import YellowCircleChevron from './YellowCircleChevron'
+import { YellowCircleChevron } from 'SRC'
 
 const { mountWithTheme } = global
 

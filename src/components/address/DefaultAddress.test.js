@@ -1,7 +1,8 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import DefaultAddress, { BaseDefaultAddress } from './DefaultAddress'
+import { DefaultAddress } from 'SRC'
+import { BaseDefaultAddress } from './DefaultAddress'
 import { LowercaseLabel } from 'SRC/core/typography/Label'
 
 const { mountWithTheme } = global

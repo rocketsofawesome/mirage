@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Serif from './Serif'
+import { Serif } from 'SRC'
 
 const { shallowWithTheme } = global
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import WhiteCheckmark from './WhiteCheckmark'
+import { WhiteCheckmark } from 'SRC'
 
 const { mountWithTheme } = global
 

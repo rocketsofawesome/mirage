@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import BlueHr from './BlueHr'
+import { BlueHr } from 'SRC'
 
 const { shallowWithTheme } = global
 

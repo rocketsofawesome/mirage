@@ -1,9 +1,9 @@
 import React from 'react'
-import { css, keyframes } from 'styled-components'
+import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { theme } from 'SRC/core/theme'
-import WhiteBorderButton, {
+import { WhiteBorderButton } from 'SRC'
+import {
   defaultStyle,
   disabledOrLoading,
   selected

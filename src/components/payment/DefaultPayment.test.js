@@ -2,9 +2,9 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import DefaultPayment, { BaseDefaultPayment, cardData } from './DefaultPayment'
+import { CardIcon, DefaultPayment } from 'SRC'
+import { BaseDefaultPayment, cardData } from './DefaultPayment'
 import { LowercaseLabel } from 'SRC/core/typography/Label'
-import CardIcon from 'SRC/core/icons/cards/CardIcon'
 
 const { mountWithTheme } = global
 

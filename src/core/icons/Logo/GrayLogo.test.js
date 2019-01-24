@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import GrayLogo from './GrayLogo'
+import { GrayLogo } from 'SRC'
 
 const { mountWithTheme } = global
 

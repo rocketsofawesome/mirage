@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import InlineImage from './InlineImage'
+import { InlineImage } from 'SRC'
 
 const { shallowWithTheme } = global
 

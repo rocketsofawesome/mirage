@@ -3,10 +3,10 @@
 exports[`(Styled Component) H1 matching the snapshot 1`] = `
 .c0 {
   margin: 0;
-  -webkit-letter-spacing: 1px;
-  -moz-letter-spacing: 1px;
-  -ms-letter-spacing: 1px;
-  letter-spacing: 1px;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
   text-transform: uppercase;
   color: #00003C;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;

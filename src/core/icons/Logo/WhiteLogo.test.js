@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import WhiteLogo from './WhiteLogo'
+import { WhiteLogo } from 'SRC'
 
 const { mountWithTheme } = global
 

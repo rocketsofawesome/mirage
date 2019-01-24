@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import GraySpinner from './GraySpinner'
+import { GraySpinner } from 'SRC'
 
 const { mountWithTheme } = global
 

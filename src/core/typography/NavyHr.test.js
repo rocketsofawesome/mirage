@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import NavyHr from './NavyHr'
+import { NavyHr } from 'SRC'
 
 const { shallowWithTheme } = global
 
