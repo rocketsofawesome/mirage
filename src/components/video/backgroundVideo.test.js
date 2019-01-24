@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import BackgroundVideo from './BackgroundVideo'
+import { BackgroundVideo } from 'SRC'
 
 const { mountWithTheme } = global
 

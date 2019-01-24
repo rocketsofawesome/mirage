@@ -2,10 +2,10 @@
 
 exports[`(Styled Component) H3 matching the snapshot 1`] = `
 .c0 {
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
+  -webkit-letter-spacing: .05rem;
+  -moz-letter-spacing: .05rem;
+  -ms-letter-spacing: .05rem;
+  letter-spacing: .05rem;
   text-transform: uppercase;
   color: #00003C;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;

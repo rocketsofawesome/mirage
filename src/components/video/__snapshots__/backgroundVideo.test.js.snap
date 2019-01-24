@@ -31,12 +31,14 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         autoPlay={true}
         loop={true}
         muted={true}
+        playsInline={true}
         sources="www.example.com/example.mp4"
       >
         <video
           autoPlay={true}
           loop={true}
           muted={true}
+          playsInline={true}
         >
           <source
             key="0"

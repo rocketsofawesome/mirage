@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import NavyAIcon from './NavyAIcon'
+import { NavyAIcon } from 'SRC'
 
 const { mountWithTheme } = global
 

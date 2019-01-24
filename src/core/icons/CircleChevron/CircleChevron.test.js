@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import CircleChevron from './CircleChevron'
+import { CircleChevron } from 'SRC'
 
 const { mountWithTheme } = global
 

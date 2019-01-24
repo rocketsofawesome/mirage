@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import BlueSpinner from './BlueSpinner'
+import { BlueSpinner } from 'SRC'
 
 const { mountWithTheme } = global
 

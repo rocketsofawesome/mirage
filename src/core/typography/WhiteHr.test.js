@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import WhiteHr from './WhiteHr'
+import { WhiteHr } from 'SRC'
 
 const { shallowWithTheme } = global
 

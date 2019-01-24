@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import Link from './Link'
+import { Link } from 'SRC'
 
 const { mountWithTheme } = global
 

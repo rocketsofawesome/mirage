@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import NavyCheckmark from './NavyCheckmark'
+import { NavyCheckmark } from 'SRC'
 
 const { mountWithTheme } = global
 

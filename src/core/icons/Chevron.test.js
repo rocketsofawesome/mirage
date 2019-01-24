@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import Chevron, { animated, pulseDirection, validateDirection } from './Chevron'
+import { Chevron } from 'SRC'
+import { animated, pulseDirection, validateDirection } from './Chevron'
 
 const { mountWithTheme } = global
 

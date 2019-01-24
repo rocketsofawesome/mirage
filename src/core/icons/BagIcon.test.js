@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import BagIcon, { BaseBagIcon } from './BagIcon'
+import { BagIcon } from 'SRC'
+import { BaseBagIcon } from './BagIcon'
 
 const { shallowWithTheme } = global
 

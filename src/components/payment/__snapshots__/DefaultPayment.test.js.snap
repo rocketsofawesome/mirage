@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
+.c1 {
+  fill: #00003C;
+}
+
 .c3 {
   text-align: left;
   margin-bottom: 0;
@@ -13,10 +17,6 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
   font-size: 2rem;
   font-weight: normal;
   color: #00003C;
-}
-
-.c1 {
-  fill: #00003C;
 }
 
 .c4 .c0 {
@@ -158,6 +158,10 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
 `;
 
 exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
+.c2 {
+  fill: #00003C;
+}
+
 .c4 {
   text-align: left;
   margin-bottom: 0;
@@ -170,10 +174,6 @@ exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
   font-size: 2rem;
   font-weight: normal;
   color: #00003C;
-}
-
-.c2 {
-  fill: #00003C;
 }
 
 .c0 {

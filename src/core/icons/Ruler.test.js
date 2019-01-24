@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import Ruler, { BaseRuler } from './Ruler'
+import { Ruler } from 'SRC'
+import { BaseRuler } from './Ruler'
 
 const { shallowWithTheme } = global
 

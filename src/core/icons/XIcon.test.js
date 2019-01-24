@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import XIcon, { BaseXIcon } from './XIcon'
+import { XIcon } from 'SRC'
+import { BaseXIcon } from './XIcon'
 
 const { shallowWithTheme } = global
 

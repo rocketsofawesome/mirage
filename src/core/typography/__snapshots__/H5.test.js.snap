@@ -1,25 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Styled Component) H4 matching the snapshot 1`] = `
-.c0 {
-  -webkit-letter-spacing: 0.5px;
-  -moz-letter-spacing: 0.5px;
-  -ms-letter-spacing: 0.5px;
-  letter-spacing: 0.5px;
-  color: #00003C;
-  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
-  font-size: 1.8rem;
-  font-weight: 500;
-  font-style: italic;
-  line-height: 1;
-}
-
-<h4
-  className="c0"
-  fontSize="1.8rem"
-/>
-`;
-
 exports[`(Styled Component) H5 matching the snapshot 1`] = `
 .c0 {
   -webkit-letter-spacing: 0.5px;
@@ -32,6 +12,10 @@ exports[`(Styled Component) H5 matching the snapshot 1`] = `
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  -webkit-letter-spacing: .075rem;
+  -moz-letter-spacing: .075rem;
+  -ms-letter-spacing: .075rem;
+  letter-spacing: .075rem;
 }
 
 <h5

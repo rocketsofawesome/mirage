@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import NavyLogo from './NavyLogo'
+import { NavyLogo } from 'SRC'
 
 const { mountWithTheme } = global
 
