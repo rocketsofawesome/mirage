@@ -8,14 +8,15 @@ const { REACT_APP_INSTAGRAM_ACCESS_TOKEN, REACT_APP_INSTAGRAM_CLIENT_ID, REACT_A
 class BaseInstagram extends React.Component {
   constructor(props) {
     super(props);
-    this.instagramRef = React.createRef();
+    this.instagramRef = null
   }
 
   componentDidMount () {
+    console.log(this)
     const { limit } = this.props
     this.feed = new Instafeed({
       get: 'user',
-      target: this.instagramRef.current,
+      target: this.instagramRef,
       clientId: REACT_APP_INSTAGRAM_CLIENT_ID,
       userId: REACT_APP_INSTAGRAM_USER_ID,
       accessToken: REACT_APP_INSTAGRAM_ACCESS_TOKEN,
@@ -23,10 +24,14 @@ class BaseInstagram extends React.Component {
     }).run()
   }
 
+  setInstagramRef = (element) => {
+    this.instagramRef = element
+  }
+
   render () {
     const { className } = this.props
     return (
-      <section className={className} ref={this.instagramRef}></section>
+      <section className={className} ref={this.setInstagramRef}></section>
     )
   }
 }
