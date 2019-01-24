@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Instagram matching the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > a {
+  width: 50%;
+  max-width: 17rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.c0 > a img {
+  width: 100%;
+  max-width: 15rem;
+}
+
+<BaseInstagram
+  className="c0"
+  limit={4}
+/>
+`;
