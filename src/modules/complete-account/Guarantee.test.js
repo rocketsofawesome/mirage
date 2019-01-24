@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import Guarantee, { UnstyledGuarantee } from './Guarantee'
+import { Guarantee } from 'SRC'
+import { UnstyledGuarantee } from './Guarantee'
 
 const { mountWithTheme } = global
 

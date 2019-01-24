@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import MailboxIcon, { animated, UnstyledMailbox } from './MailboxIcon'
+import { MailboxIcon } from 'SRC'
+import { animated, UnstyledMailbox } from './MailboxIcon'
 
 const { shallowWithTheme } = global
 

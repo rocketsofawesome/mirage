@@ -9,7 +9,6 @@ import * as Modules from './modules'
 const COMPONENT_RENDER_MAP = {
   Core: {
     BackgroundImage: (item) => {
-      console.log(item.props)
       return (
         <Core.BackgroundImage {...item.props}>
           {item.children.map(child => Renderer({item: child}))}

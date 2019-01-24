@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import GrayCheckmark from './GrayCheckmark'
+import { GrayCheckmark } from 'SRC'
 
 const { mountWithTheme } = global
 

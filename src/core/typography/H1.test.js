@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import H1 from './H1'
+import { H1 } from 'SRC'
 
 const { shallowWithTheme } = global
 

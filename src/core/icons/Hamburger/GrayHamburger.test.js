@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import GrayHamburger from './GrayHamburger'
+import { GrayHamburger } from 'SRC'
 
 const { mountWithTheme } = global
 

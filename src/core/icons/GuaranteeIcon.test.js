@@ -2,7 +2,8 @@ import React from 'react'
 import { css, keyframes } from 'styled-components'
 import 'jest-styled-components'
 
-import GuaranteeIcon, { animation, UnstyledGuaranteeIcon } from './GuaranteeIcon'
+import { GuaranteeIcon } from 'SRC'
+import { animation, UnstyledGuaranteeIcon } from './GuaranteeIcon'
 
 const { shallowWithTheme } = global
 

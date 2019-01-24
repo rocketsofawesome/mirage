@@ -4,8 +4,8 @@ import renderer from 'react-test-renderer'
 import 'jest-styled-components'
 
 import { theme } from 'SRC/core/theme'
-import Label from 'SRC/core/typography/Label'
-import Checkbox, { CheckboxBase, CheckboxSVG, StyledCheckboxSVG } from './Checkbox'
+import { Checkbox, Label } from 'SRC'
+import { CheckboxBase, CheckboxSVG, StyledCheckboxSVG } from './Checkbox'
 
 const LabelText = 'Example Checkbox'
 

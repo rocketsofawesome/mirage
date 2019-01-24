@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Logo from './Logo'
+import { Logo } from 'SRC'
 
 const { mountWithTheme } = global
 

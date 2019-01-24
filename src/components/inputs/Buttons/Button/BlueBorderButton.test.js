@@ -2,7 +2,8 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import BlueBorderButton, {
+import { BlueBorderButton } from 'SRC'
+import {
   defaultStyle,
   disabledOrLoading,
   selected

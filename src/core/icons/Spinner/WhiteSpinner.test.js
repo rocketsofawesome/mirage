@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import WhiteSpinner from './WhiteSpinner'
+import { WhiteSpinner } from 'SRC'
 
 const { mountWithTheme } = global
 

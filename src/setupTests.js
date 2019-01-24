@@ -30,8 +30,20 @@ const mountWithTheme = (component) => {
   })
 }
 
+const renderWithTheme = (component) => {
+  const context = enzyme.shallow(<ThemeProvider theme={theme} />)
+    .instance()
+    .getChildContext()
+
+  return enzyme.render(component, {
+    context,
+    childContextTypes: ThemeProvider.childContextTypes,
+  })
+}
+
 global.localStorage = localStorageMock;
 global.shallowWithTheme = shallowWithTheme;
 global.mountWithTheme = mountWithTheme
+global.renderWithTheme = renderWithTheme
 
 enzyme.configure({ adapter: new Adapter() });

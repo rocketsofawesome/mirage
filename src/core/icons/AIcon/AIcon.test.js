@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import AIcon from './AIcon'
+import { AIcon } from 'SRC'
 
 const { mountWithTheme } = global
 

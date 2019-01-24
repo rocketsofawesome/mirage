@@ -1,11 +1,9 @@
 import React from 'react'
-import renderer from 'react-test-renderer'
-import { mount } from 'enzyme'
-import { css, keyframes } from 'styled-components'
+import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { theme } from 'SRC/core/theme'
-import Button, { defaultStyle, disabledOrLoading, selected } from './Button'
+import { Button } from 'SRC'
+import { defaultStyle, disabledOrLoading, selected } from './Button'
 import { WhiteSpinner } from 'SRC/core/icons/Spinner'
 import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 

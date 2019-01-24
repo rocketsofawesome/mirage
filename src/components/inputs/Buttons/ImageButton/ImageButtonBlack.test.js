@@ -1,7 +1,8 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import ImageButtonBlack from './ImageButtonBlack'
+
+import { ImageButtonBlack } from 'SRC'
 
 const { mountWithTheme } = global
 

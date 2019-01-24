@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import MarkedText from './MarkedText'
+import { MarkedText } from 'SRC'
 
 const { shallowWithTheme } = global
 

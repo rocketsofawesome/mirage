@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Caption from './Caption'
+import { Caption } from 'SRC'
 
 const { shallowWithTheme } = global
 
