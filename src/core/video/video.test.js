@@ -1,12 +1,12 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Video from './video'
+import { Video } from 'SRC'
 
 const { shallowWithTheme } = global
 
 describe('(Component) Video', () => {
-  const createVideo = (props) => {
+  const createVideo = (props = {}) => {
     return shallowWithTheme(<Video {...props} />)
   }
 
@@ -15,23 +15,23 @@ describe('(Component) Video', () => {
     .toMatchSnapshot()
   })
 
-  describe('video source', () => {
-    test('setting source to a string', () => {
+  describe('video sources', () => {
+    test('setting sources to a string', () => {
       const srcString = 'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4'
       const videoComponent = createVideo({
-        source: srcString
+        sources: srcString
       })
       expect(videoComponent.find('source').prop('src')).toEqual(srcString)
     })
 
-    test('setting source to an array', () => {
+    test('setting sources to an array', () => {
       const srcArray = [
         'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4',
         'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.webm',
         'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.ogv'
       ]
       const videoComponent = createVideo({
-        source: srcArray
+        sources: srcArray
       })
       videoComponent.find('source').forEach((node, index) => {
         expect(node.prop('src')).toEqual(srcArray[index])
