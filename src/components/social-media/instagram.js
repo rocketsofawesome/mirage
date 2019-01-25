@@ -12,7 +12,6 @@ class BaseInstagram extends React.Component {
   }
 
   componentDidMount () {
-    console.log(this)
     const { limit } = this.props
     this.feed = new Instafeed({
       get: 'user',
