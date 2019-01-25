@@ -25,8 +25,6 @@ const InstagramRegion = styled(BaseInstagramRegion)`
   }
   ${H1}, ${P} {
     margin-bottom: 2rem;
-  }
-  ${P} {
     text-align: center;
   }
 `
