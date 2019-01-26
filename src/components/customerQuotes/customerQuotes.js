@@ -2,7 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { H1, H3, FadeInOut } from 'SRC'
+import {
+  H1,
+  H3,
+  FadeInOut,
+  FlexRow,
+  FlexCol
+} from 'SRC'
 import defaultProps from './data.json'
 
 
@@ -30,8 +36,12 @@ class BaseCustomerQuotes extends React.Component {
     const { index, quote } = this.state
     return (
       <section className={className}>
-        <H1>{header}</H1>
-        <FadeInOut animate={!!index}><H3 lowercase>{quote}</H3></FadeInOut>
+        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
+          <H1>{header}</H1>
+        </FlexCol>
+        <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
+          <FadeInOut animate={!!index}><H3 lowercase>{quote}</H3></FadeInOut>
+        </FlexCol>
       </section>
     )
   }
@@ -56,6 +66,7 @@ class BaseCustomerQuotes extends React.Component {
 }
 
 const CustomerQuotes = styled(BaseCustomerQuotes)`
+  ${FlexRow}
   ${H1}, ${H3} {
     text-align: center;
   }
@@ -65,7 +76,8 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     justify-content: center;
     align-items: center;
     height: 100%;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 `
 
@@ -74,7 +86,9 @@ CustomerQuotes.propTypes = {
 }
 
 CustomerQuotes.defaultProps = {
-  ...defaultProps
+  ...defaultProps,
+  padding: true,
+  constrained: true
 }
 
 /** @component */

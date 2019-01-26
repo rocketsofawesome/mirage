@@ -17,9 +17,10 @@ const animation = keyframes `
   }
 `
 
-const FadeInOut = styled(({className, children}) => {
-  console.log('Are we rendering?')
-  return (<div className={className}>{children}</div>)
+const FadeInOut = styled(({ className, children, ...props}) => {
+  return React.cloneElement(children, {
+    className: `${children.props.className ? `${children.props.className} ` : ``}${className}`
+  })
 })`
   animation: ${animation} ${props => props.duration}s ease-in-out ${props => props.iteration};
 `
