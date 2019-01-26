@@ -9,7 +9,8 @@ import {
   FlexRow,
   FlexCol
 } from 'SRC'
-import defaultProps from './data.json'
+
+const defaultProps = require('./data.json')
 
 
 class BaseCustomerQuotes extends React.Component {
