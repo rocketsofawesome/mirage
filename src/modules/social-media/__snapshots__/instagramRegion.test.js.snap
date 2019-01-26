@@ -85,9 +85,6 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 .c0 .c1,
 .c0 .c3 {
   margin-bottom: 2rem;
-}
-
-.c0 .c3 {
   text-align: center;
 }
 
