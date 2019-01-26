@@ -1,6 +1,5 @@
 //Complete Account
 export {default as Guarantee} from './complete-account/guarantee'
-export * from './contentful'
 export * from './social-media'
 export {default as SubscriptionShipping} from './complete-account/subscriptionShipping'
 export {default as Page} from './page'
