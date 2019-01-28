@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { H1, P, Instagram } from 'SRC'
-const data = require('./data.json')
+import defaultProps from './defaultProps'
 
 const BaseInstagramRegion = ({className, content, title})  => {
   return (
@@ -44,7 +44,7 @@ InstagramRegion.propTypes = {
 }
 
 InstagramRegion.defaultProps = {
-  ...data
+  ...defaultProps
 }
 
 /** @component */

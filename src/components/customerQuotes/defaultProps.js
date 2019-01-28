@@ -1,4 +1,4 @@
-{
+export default {
   "header": "WHAT AWESOME PARENTS (LIKE YOU!) ARE SAYING",
   "quotes": [
     "“These are real clothes to LIVE and PLAY in! My son is full of personality and wears Rockets of Awesome to reflect that.”—Andrea",
