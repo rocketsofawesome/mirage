@@ -1,8 +1,13 @@
 const path = require('path')
-
+require('core-js');
+const env = {
+  'development': './config/webpack.config.dev.js',
+  'production': './config/webpack.config.prod.js'
+}
+console.log(env[process.env.NODE_ENV])
 module.exports = {
   title: 'Mirage - ROA Pattern Library',
-  webpackConfig: require('./config/webpack.config.dev.js'),
+  webpackConfig: require(env[process.env.NODE_ENV]),
   components: 'src/**/*.{js,jsx,ts,tsx}',
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/core/theme')
