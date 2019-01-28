@@ -24,6 +24,7 @@ module.exports = {
     '**/index.js',
     'src/setupTests.js',
     '**/theme/**/*.{js,jsx,ts,tsx}',
+    '**/defaultProps.{js,jsx,ts,tsx}',
     '**/*.test.{js,jsx,ts,tsx}',
     '**/*.base.{js,jsx,ts,tsx}'
   ],
