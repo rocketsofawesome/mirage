@@ -1,3 +1,4 @@
+export * from './animations'
 export * from './grid'
 export * from './icons'
 export * from './image'
