@@ -1,7 +1,7 @@
 //Complete Account
-export {default as Guarantee} from './complete-account/Guarantee'
+export {default as Guarantee} from './complete-account/guarantee'
 export * from './social-media'
-export {default as SubscriptionShipping} from './complete-account/SubscriptionShipping'
+export {default as SubscriptionShipping} from './complete-account/subscriptionShipping'
 export {default as Page} from './page'
 //Forms
-export {default as DefaultSection} from './forms/DefaultSection'
+export {default as DefaultSection} from './forms/defaultSection'
