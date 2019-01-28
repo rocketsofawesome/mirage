@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) AboutUs matching the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3%;
+}
+
+.c0 .c1,
+.c0 .c2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c0 .c1 {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.c0 .c2 {
+  color: #0073D1;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.c0 .c3 {
+  text-align: center;
+  line-height: 2;
+}
+
+.c0 .flexDiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    padding: 0 7%;
+  }
+}
+
+<BaseAboutUs
+  className="c0"
+  constrained={true}
+  footer="BECAUSE IT’S MORE FUN WHEN EVERYONE WINS!"
+  header="We believe in simplifying the lives of parents and celebrating real life with kids."
+  padding={true}
+  sections={
+    Array [
+      Object {
+        "body": "And we want to celebrate them! Quirks, preferences and all—with clothes that express who they are as individuals.",
+        "title": "KIDS ARE AWESOME",
+      },
+      Object {
+        "body": "We’ll make your life easier, so you can get back to being the best snack-schlepper, soccer-practice-chauffeur...",
+        "title": "PARENTS ARE SUPERHEROES",
+      },
+      Object {
+        "body": "You shouldn’t have to go to a million sites and stores to find awesome clothes you AND your kids will love.",
+        "title": "SHOPPING SHOULD BE EASY",
+      },
+    ]
+  }
+/>
+`;

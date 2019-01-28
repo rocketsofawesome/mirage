@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import {
@@ -81,10 +80,6 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     margin-bottom: 0;
   }
 `
-
-CustomerQuotes.propTypes = {
-
-}
 
 CustomerQuotes.defaultProps = {
   ...defaultProps,

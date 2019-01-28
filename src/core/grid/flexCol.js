@@ -7,7 +7,6 @@ const columnToPercent = (elementWidth, containerWidth) => {
 }
 
 const spanner = (props, breakpoint) => {
-  console.log(props)
   if (props[breakpoint].span) {
     return css`
       margin-left: ${props => props.desktop.nested
