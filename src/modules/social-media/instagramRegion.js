@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { H1, P, Instagram } from 'SRC'
-import data from './data.json'
+const data = require('./data.json')
 
 const BaseInstagramRegion = ({className, content, title})  => {
   return (
