@@ -6,8 +6,8 @@
 # testing
 /coverage
 
-# production
-/build
+# styleguide
+/styleguide
 
 # misc
 .DS_Store

@@ -1,7 +1,7 @@
 {
   "name": "@rocketsofawesome/mirage",
   "version": "0.1.92",
-  "main": "build/lib/bundle.module.js",
+  "main": "build/lib/index.js",
   "dependencies": {
     "instafeed.js": "^1.4.1",
     "prop-types": "^15.6.2",
@@ -14,7 +14,7 @@
     "start": "export NODE_ENV=development && ./node_modules/.bin/styleguidist server --open",
     "build": "export NODE_ENV=development && ./node_modules/.bin/styleguidist build",
     "predeploy": "node ./scripts/build.js; npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d styleguide",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {

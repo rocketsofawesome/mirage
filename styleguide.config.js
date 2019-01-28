@@ -1,5 +1,4 @@
 const path = require('path')
-require('core-js');
 const env = {
   'development': './config/webpack.config.dev.js',
   'production': './config/webpack.config.prod.js'
