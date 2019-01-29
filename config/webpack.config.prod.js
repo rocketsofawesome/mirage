@@ -141,7 +141,7 @@ module.exports = {
             loader: require.resolve('babel-loader'),
             options: {
 
-              compact: true,
+              compact: false,
             },
           },
         ],
@@ -173,7 +173,7 @@ module.exports = {
         }
         console.log(message);
       },
-      minify: true,
+      minify: false,
       // For unknown URLs, fallback to the index page
       navigateFallback: publicUrl + '/index.html',
       // Ignores URLs starting from /__ (useful for Firebase):
