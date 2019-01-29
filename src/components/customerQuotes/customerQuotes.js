@@ -68,10 +68,9 @@ class BaseCustomerQuotes extends React.Component {
 const CustomerQuotes = styled(BaseCustomerQuotes)`
   ${FlexRow}
   margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
-    margin-bottom: 6rem;
   `}
   ${H1}, ${H3} {
     text-align: center;
@@ -84,7 +83,7 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    min-height: 15rem;
+    min-height: 20rem;
   }
 `
 
