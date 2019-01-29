@@ -1,4 +1,4 @@
-# Mirage ![Branches](/coverage/badge-branches.svg)![Functions](/coverage/badge-functions.svg)![Lines](/coverage/badge-lines.svg)![Statements](/coverage/badge-statements.svg)
+# Mirage ![Branches](/coverage/badge-branches.svg) ![Functions](/coverage/badge-functions.svg) ![Lines](/coverage/badge-lines.svg) ![Statements](/coverage/badge-statements.svg)
 
 [Live Demo of the Pattern Library](https://rocketsofawesome.github.io/mirage/)
 
