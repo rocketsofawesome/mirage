@@ -1,19 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) AboutUs matching the snapshot 1`] = `
-.c0 {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 3%;
-}
-
 .c0 .c1,
 .c0 .c2 {
   text-align: center;
@@ -52,12 +39,6 @@ exports[`(Styled Component) AboutUs matching the snapshot 1`] = `
   -ms-flex-pack: space-around;
   justify-content: space-around;
   margin-bottom: 60px;
-}
-
-@media (min-width:76.8em) {
-  .c0 {
-    padding: 0 7%;
-  }
 }
 
 <BaseAboutUs

@@ -5,7 +5,6 @@ import {
   H1,
   H2,
   P,
-  FlexRow,
   FlexCol
 } from 'SRC'
 
@@ -13,7 +12,7 @@ import defaultProps from './defaultProps'
 
 const BaseAboutUs = ({className, header, sections, footer, ...props}) => {
   return (<section className={className}>
-    <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
+    <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
       <H1>{header}</H1>
     </FlexCol>
     <FlexCol mobile={{width: 4}} desktop={{width: 10, span: 1}}>
@@ -39,7 +38,6 @@ const BaseAboutUs = ({className, header, sections, footer, ...props}) => {
 }
 
 const AboutUs = styled(BaseAboutUs)`
-  ${FlexRow}
   ${H1}, ${H2} {
     text-align: center;
     text-transform: uppercase;
