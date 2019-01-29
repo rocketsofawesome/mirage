@@ -1,3 +1,6 @@
+Mirage ![Branches](/coverage/badge-branches.svg)
+---
+
 # Rockets of Awesome Pattern Library V1
 
 [Live Demo of the Pattern Library](https://rocketsofawesome.github.io/mirage/)
@@ -36,26 +39,6 @@ This will start the styleguidist server which parses through the directories in 
 
 If you would like to publish your new component(s) to the styleguide demo, commit your changes like you would normally.
 
-After you have done that, run the command:
-
-```
-npm run build
-```
-
-This command will compile the components to the styleguide directory. Add and commit the newly compiled files in the directory:
-
-```
-git add styleguide; git commit;
-```
-
-To publish those changes to the `gh-pages` branch, we use the git submodules feature. Simply run the command:
-
-```
-git push origin `git subtree split --prefix styleguide master`:gh-pages --force
-```
-
-This will take the styleguide directory specifically, and push that to the `gh-pages` branch. If you don't immediately see your changes, force a hard refresh of the demo page as the code is most likely being cached.
-
 ## Publish to npm
 
 If you are happy with the changes that you have made to your component and you wish to publish your changes to npm, do the following.
@@ -78,7 +61,7 @@ The second command will push the new code up to npm so that when the command:
 
 is run, the latest changes will also be applied to the `npm module`!
 
-There is a `prepublish` script that is run automatically that runs the rollup script which transpiles the ECMA Script 6 code into commonJS and bundles all the code up into a nice `bundle.js` file.
+There is a `prepublish` script that is run automatically that runs the webpack script which transpiles the ECMA Script 6 code into commonJS and bundles all the code up into a nice `build/index.js` file. There are also several other scripts that are run including the test suite and the building/publishing of the styleguide to the `gh-pages` branch.
 
 The _Rockets of Awesome Pattern Library_ (RoA PL) is an organized set of interactive, reusable components that can be used to build out more complicated modules, pages, and templates. Pattern libraries often include example elements, sample code, variations, use cases, and considerations.
 ***
