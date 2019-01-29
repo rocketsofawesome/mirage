@@ -8,6 +8,7 @@ const ManifestPlugin = require('webpack-manifest-plugin');
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin');
 const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
+var nodeExternals = require('webpack-node-externals');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
 
@@ -56,6 +57,7 @@ module.exports = {
   // In production, we only want to load the polyfills and the app code.
   entry: [require.resolve('./polyfills'), paths.appIndexJs],
   target: 'node',
+  externals: [nodeExternals(['instafeed.js', 'react-sizeme'])],
   output: {
     // The build folder.
     path: paths.appBuild,
