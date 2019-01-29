@@ -2,19 +2,31 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Source from './sources.base'
 
-const Video = ({children, sources: inSources, ...props}) => {
-  let sources = []
-  if (inSources) {
-    sources = new Source(inSources).render()
+class Video extends React.Component {
+  constructor (props) {
+    super(props)
+    this.video = null
   }
-  return (
-    <video {...props}>
-      {sources.map((source, key) => {
-        return source
-      })}
-      {children && children}
-    </video>
-  )
+
+  setVideoRef = (element) => {
+    this.video = element
+  }
+
+  render () {
+    const {children, sources: inSources, ...props} = this.props
+    let sources = []
+    if (inSources) {
+      sources = new Source(inSources).render()
+    }
+    return (
+      <video ref={this.setVideoRef} {...props}>
+        {sources.map((source, key) => {
+          return source
+        })}
+        {children && children}
+      </video>
+    )
+  }
 }
 
 Video.propTypes = {
