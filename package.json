@@ -1,7 +1,7 @@
 {
   "name": "@rocketsofawesome/mirage",
   "version": "0.1.95",
-  "main": "src/index.js",
+  "main": "build/index.js",
   "dependencies": {
     "instafeed.js": "^1.4.1",
     "prop-types": "^15.6.2",
