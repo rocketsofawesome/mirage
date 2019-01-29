@@ -84,6 +84,7 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
+    min-height: 15rem;
   }
 `
 
