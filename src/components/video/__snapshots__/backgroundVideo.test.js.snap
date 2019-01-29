@@ -18,21 +18,47 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
 }
 
 <Styled(BaseBackgroundVideo)
-  sources="www.example.com/example.mp4"
+  size={
+    Object {
+      "width": 300,
+    }
+  }
+  sources={
+    Object {
+      "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
+      "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+    }
+  }
 >
   <BaseBackgroundVideo
     className="c0"
-    sources="www.example.com/example.mp4"
+    size={
+      Object {
+        "width": 300,
+      }
+    }
+    sources={
+      Object {
+        "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
+        "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+      }
+    }
   >
     <section
       className="c0"
+      sources={
+        Object {
+          "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
+          "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+        }
+      }
     >
       <Video
         autoPlay={true}
         loop={true}
         muted={true}
         playsInline={true}
-        sources="www.example.com/example.mp4"
+        sources="https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4"
       >
         <video
           autoPlay={true}
@@ -42,7 +68,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         >
           <source
             key="0"
-            src="www.example.com/example.mp4"
+            src="https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4"
             type="video/mp4"
           />
         </video>
