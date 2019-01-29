@@ -10,7 +10,6 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const paths = require('./paths');
 const getClientEnvironment = require('./env');
-console.log('WHIMMY WHAM')
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // It requires a trailing slash, or the file assets will get an incorrect path.
@@ -56,6 +55,7 @@ module.exports = {
   devtool: shouldUseSourceMap ? 'source-map' : false,
   // In production, we only want to load the polyfills and the app code.
   entry: [require.resolve('./polyfills'), paths.appIndexJs],
+  target: 'node',
   output: {
     // The build folder.
     path: paths.appBuild,
@@ -197,8 +197,5 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty',
-  },
-  optimization: {
-    minification: false
   }
 };
