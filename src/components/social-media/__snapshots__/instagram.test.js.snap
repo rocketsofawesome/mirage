@@ -17,14 +17,20 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
 
 .c0 > a {
   width: 50%;
-  max-width: 17rem;
+  max-width: 28rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .c0 > a img {
   width: 100%;
-  max-width: 15rem;
+  max-width: 26rem;
+}
+
+.c0 .gif {
+  height: 260px;
+  margin-right: -50px;
+  z-index: 10;
 }
 
 <BaseInstagram

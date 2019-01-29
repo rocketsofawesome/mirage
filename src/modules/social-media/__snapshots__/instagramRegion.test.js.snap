@@ -44,14 +44,20 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 
 .c5 > a {
   width: 50%;
-  max-width: 17rem;
+  max-width: 28rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 
 .c5 > a img {
   width: 100%;
-  max-width: 15rem;
+  max-width: 26rem;
+}
+
+.c5 .gif {
+  height: 260px;
+  margin-right: -50px;
+  z-index: 10;
 }
 
 .c0 {
@@ -129,7 +135,19 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         >
           <section
             className="c5"
-          />
+          >
+            <InlineImage
+              alt=""
+              className="gif"
+              src="https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif"
+            >
+              <img
+                alt=""
+                className="gif"
+                src="https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif"
+              />
+            </InlineImage>
+          </section>
         </BaseInstagram>
       </Styled(BaseInstagram)>
     </section>
