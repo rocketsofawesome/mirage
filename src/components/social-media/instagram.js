@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import Instafeed from 'instafeed.js'
 
+console.log(process.env)
 const { REACT_APP_INSTAGRAM_ACCESS_TOKEN, REACT_APP_INSTAGRAM_CLIENT_ID, REACT_APP_INSTAGRAM_USER_ID } = process.env
 
 class BaseInstagram extends React.Component {
@@ -13,14 +14,16 @@ class BaseInstagram extends React.Component {
 
   componentDidMount () {
     const { limit } = this.props
-    this.feed = new Instafeed({
-      get: 'user',
-      target: this.instagramRef,
-      clientId: REACT_APP_INSTAGRAM_CLIENT_ID,
-      userId: REACT_APP_INSTAGRAM_USER_ID,
-      accessToken: REACT_APP_INSTAGRAM_ACCESS_TOKEN,
-      limit: limit
-    }).run()
+    if (REACT_APP_INSTAGRAM_ACCESS_TOKEN && REACT_APP_INSTAGRAM_CLIENT_ID && REACT_APP_INSTAGRAM_USER_ID) {
+      this.feed = new Instafeed({
+        get: 'user',
+        target: this.instagramRef,
+        clientId: REACT_APP_INSTAGRAM_CLIENT_ID,
+        userId: REACT_APP_INSTAGRAM_USER_ID,
+        accessToken: REACT_APP_INSTAGRAM_ACCESS_TOKEN,
+        limit: limit
+      }).run()
+    }
   }
 
   setInstagramRef = (element) => {

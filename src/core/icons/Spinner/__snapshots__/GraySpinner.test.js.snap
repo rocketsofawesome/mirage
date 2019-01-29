@@ -75,12 +75,12 @@ exports[`(Styled Component) GraySpinner matching the snapshot 1`] = `
   fill: #BFBFBF;
 }
 
-<Styled(Styled(Component))>
-  <Styled(Component)
+<Styled(Styled(SpinnerSVG))>
+  <Styled(SpinnerSVG)
     className="c0"
     size="80px"
   >
-    <Component
+    <SpinnerSVG
       className="c0 c1"
       size="80px"
     >
@@ -212,7 +212,7 @@ exports[`(Styled Component) GraySpinner matching the snapshot 1`] = `
           />
         </g>
       </svg>
-    </Component>
-  </Styled(Component)>
-</Styled(Styled(Component))>
+    </SpinnerSVG>
+  </Styled(SpinnerSVG)>
+</Styled(Styled(SpinnerSVG))>
 `;

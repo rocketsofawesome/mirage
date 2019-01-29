@@ -201,7 +201,7 @@ exports[`(Component) Spinner matching the snapshot 1`] = `
   animation-delay: 0s;
 }
 
-<Component
+<SpinnerSVG
   className="c0"
   size="80px"
 />

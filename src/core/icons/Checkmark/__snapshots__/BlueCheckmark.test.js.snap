@@ -21,12 +21,12 @@ exports[`(Component) BlueCheckmark matching the snapshot 1`] = `
   stroke: #0073D1;
 }
 
-<Styled(Styled(Component))>
-  <Styled(Component)
+<Styled(Styled(UnstyledCheckmark))>
+  <Styled(UnstyledCheckmark)
     className="c0"
     width="2.6rem"
   >
-    <Component
+    <UnstyledCheckmark
       className="c0 c1"
       width="2.6rem"
     >
@@ -40,7 +40,7 @@ exports[`(Component) BlueCheckmark matching the snapshot 1`] = `
           points="7,14 11,17.7 18.6,9.5"
         />
       </svg>
-    </Component>
-  </Styled(Component)>
-</Styled(Styled(Component))>
+    </UnstyledCheckmark>
+  </Styled(UnstyledCheckmark)>
+</Styled(Styled(UnstyledCheckmark))>
 `;

@@ -15,7 +15,7 @@
     "build": "export NODE_ENV=development && ./node_modules/.bin/styleguidist build",
     "predeploy": "node ./scripts/build.js; npm run build",
     "deploy": "gh-pages -d styleguide",
-    "prepublish": "npm run test --coverage; npm run deploy",
+    "prepublish": "npm run test -- --coverage; npm run deploy",
     "test": "node scripts/test.js --env=jsdom"
   },
   "devDependencies": {

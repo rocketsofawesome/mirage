@@ -28,7 +28,7 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
   animation-duration: 0.5s;
 }
 
-<Component
+<UnstyledCheckmark
   className="c0"
   theme={
     Object {
