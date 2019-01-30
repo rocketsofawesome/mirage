@@ -64,7 +64,7 @@ class BasePressQuotes extends React.Component {
 
   renderPressRow = (pressIcons) => {
     return(
-      <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
+      <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
         <div className="press_icons">
           {pressIcons.map((press_icon, index) => {
             return(
@@ -84,6 +84,8 @@ class BasePressQuotes extends React.Component {
   render () {
     const { className, header } = this.props
     const { quote } = this.state
+    const topRow = ["new_york_times", "la_times", "people_magazine", "tech_crunch"]
+    const bottomRow = ["fast_company", "parents_magazine", "today_show", "new_york_post"]
 
     return (
       <section className={className}>
@@ -97,8 +99,8 @@ class BasePressQuotes extends React.Component {
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
-        {this.renderPressRow(["new_york_times", "la_times", "people_magazine", "tech_crunch"])}
-        {this.renderPressRow(["fast_company", "parents_magazine", "today_show", "new_york_post"])}
+        {this.renderPressRow(topRow)}
+        {this.renderPressRow(bottomRow)}
       </section>
     )
   }
@@ -154,10 +156,12 @@ const PressQuotes = styled(BasePressQuotes)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 30px;
+    min-height: 3rem;
+    max-height: 12rem;
   }
   .press_icons {
     display: flex;
+    max-height: 12rem;
     > * {
       width: 30rem;
     }
