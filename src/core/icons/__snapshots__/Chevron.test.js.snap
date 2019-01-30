@@ -74,9 +74,9 @@ exports[`(Styled Component) Chevron matching the snapshot 3`] = `
   stroke: #0073D1;
   stroke-miterlimit: 10;
   stroke-width: 5px;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   cursor: pointer;
 }
 
@@ -107,9 +107,9 @@ exports[`(Styled Component) Chevron matching the snapshot 4`] = `
   stroke: #0073D1;
   stroke-miterlimit: 10;
   stroke-width: 5px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   cursor: pointer;
 }
 
@@ -214,12 +214,12 @@ exports[`(Styled Component) Chevron matching the snapshot 7`] = `
   stroke: #0073D1;
   stroke-miterlimit: 10;
   stroke-width: 5px;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
   cursor: pointer;
-  -webkit-animation: blwIWx 0.75s infinite;
-  animation: blwIWx 0.75s infinite;
+  -webkit-animation: hGBtOi 0.75s infinite;
+  animation: hGBtOi 0.75s infinite;
 }
 
 <Styled(BaseChevron)
@@ -251,12 +251,12 @@ exports[`(Styled Component) Chevron matching the snapshot 8`] = `
   stroke: #0073D1;
   stroke-miterlimit: 10;
   stroke-width: 5px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
   cursor: pointer;
-  -webkit-animation: bYUdgu 0.75s infinite;
-  animation: bYUdgu 0.75s infinite;
+  -webkit-animation: lovGSO 0.75s infinite;
+  animation: lovGSO 0.75s infinite;
 }
 
 <Styled(BaseChevron)

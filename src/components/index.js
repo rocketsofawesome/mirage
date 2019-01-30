@@ -1,5 +1,6 @@
 export { default as DefaultAddress } from './address/DefaultAddress'
 export { default as CustomerQuotes } from './customerQuotes/customerQuotes'
+export { default as PressQuotes } from './pressQuotes/pressQuotes'
 export * from './inputs'
 export * from './link'
 export { default as DefaultPayment } from './payment/DefaultPayment'
