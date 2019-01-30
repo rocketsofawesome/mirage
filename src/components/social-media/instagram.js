@@ -14,14 +14,14 @@ class BaseInstagram extends React.Component {
   }
 
   componentDidMount () {
-    const { limit } = this.props
-    if (REACT_APP_INSTAGRAM_ACCESS_TOKEN && REACT_APP_INSTAGRAM_CLIENT_ID && REACT_APP_INSTAGRAM_USER_ID) {
+    const { limit, clientId, userId, accessToken } = this.props
+    if (clientId && userId && accessToken) {
       this.feed = new Instafeed({
       get: 'user',
       target: this.instagramRef,
-      clientId: REACT_APP_INSTAGRAM_CLIENT_ID,
-      userId: REACT_APP_INSTAGRAM_USER_ID,
-      accessToken: REACT_APP_INSTAGRAM_ACCESS_TOKEN,
+      clientId: clientId,
+      userId: userId,
+      accessToken: accessToken,
       resolution: 'standard_resolution',
       limit: limit
     }).run()
@@ -59,16 +59,22 @@ const Instagram = styled(BaseInstagram)`
   .gif {
     height: 260px;
     margin-right: -50px;
-    z-index: 10;
+    z-index: 0;
   }
 `
 
 Instagram.propTypes = {
-  limit: PropTypes.number
+  limit: PropTypes.number,
+  clientId: PropTypes.string,
+  userId: PropTypes.string,
+  accessToken: PropTypes.string
 }
 
 Instagram.defaultProps = {
-  limit: 4
+  limit: 4,
+  clientId: REACT_APP_INSTAGRAM_CLIENT_ID,
+  userId: REACT_APP_INSTAGRAM_USER_ID,
+  accessToken: REACT_APP_INSTAGRAM_ACCESS_TOKEN
 }
 
 /** @component */

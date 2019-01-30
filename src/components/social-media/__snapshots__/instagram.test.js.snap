@@ -30,11 +30,14 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
 .c0 .gif {
   height: 260px;
   margin-right: -50px;
-  z-index: 10;
+  z-index: 0;
 }
 
 <BaseInstagram
+  accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
   className="c0"
+  clientId="573c73f61f5342549cfabb281c37f4de"
   limit={4}
+  userId="2310062225"
 />
 `;
