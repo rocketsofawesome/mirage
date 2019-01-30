@@ -35,7 +35,6 @@ describe('(Styled Component) BackgroundVideo', () => {
   })
 
   test('passing children into article', () => {
-    console.log(createBackgroundVideo().debug())
     expect(
       createBackgroundVideo()
       .find('article')
