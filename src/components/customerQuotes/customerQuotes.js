@@ -2,11 +2,12 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {
-  H1,
-  H3,
   FadeInOut,
+  FlexCol,
   FlexRow,
-  FlexCol
+  InlineImage,
+  H1,
+  H3
 } from 'SRC'
 
 import defaultProps from './defaultProps.js'
@@ -39,8 +40,16 @@ class BaseCustomerQuotes extends React.Component {
         <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
           <H1>{header}</H1>
         </FlexCol>
-        <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
-          <FadeInOut animate={!!index}><H3 lowercase>{quote}</H3></FadeInOut>
+        <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
+          <InlineImage className='confetti' src='https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left.gif' />
+        </FlexCol>
+        <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
+          <FadeInOut duration={4} animate={!!index}>
+            <H3 lowercase>{quote}</H3>
+          </FadeInOut>
+        </FlexCol>
+        <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
+          <InlineImage className='confetti' src='https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_right.gif' />
         </FlexCol>
       </section>
     )
@@ -61,7 +70,7 @@ class BaseCustomerQuotes extends React.Component {
           quote: quotes[index + 1]
         })
       }
-    }, 5000)
+    }, 4000)
   }
 }
 
@@ -69,6 +78,7 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
   ${FlexRow}
   margin-top: 4rem;
   margin-bottom: 2rem;
+  align-items: flex-start;
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}
@@ -84,6 +94,23 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     margin-top: 0;
     margin-bottom: 0;
     min-height: 20rem;
+    order: 1;
+    ${props => props.theme.media.tablet`
+      order: 2;
+    `}
+  }
+
+  .confetti {
+    height: auto;
+    &:first-of-type {
+      order: 2;
+      ${props => props.theme.media.tablet`
+        order: 1;
+      `}
+    }
+    &:last-of-type {
+      order: 3;
+    }
   }
 `
 
