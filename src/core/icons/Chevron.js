@@ -2,9 +2,9 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
 
-const BaseChevron = ({className}) => {
+const BaseChevron = ({className, ...props}) => {
   return (
-    <svg className={className} viewBox='0 0 48 24.12'>
+    <svg className={className} viewBox='0 0 48 24.12' onClick={props.onClick}>
       <polyline points='1 1 24 22.75 47 1' />
     </svg>
   )
@@ -54,9 +54,9 @@ const direction = (props) => {
   if (props.down) {
     return 'rotate(0deg)'
   } else if (props.left) {
-    return 'rotate(-90deg)'
-  } else if (props.right) {
     return 'rotate(90deg)'
+  } else if (props.right) {
+    return 'rotate(-90deg)'
   } else if (props.up) {
     return 'rotate(180deg)'
   }

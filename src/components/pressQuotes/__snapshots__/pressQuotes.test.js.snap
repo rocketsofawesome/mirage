@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 3%;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.c0 .c3,
+.c0 .c4 {
+  text-align: center;
+}
+
+.c0 .c4 {
+  color: #0073D1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  min-height: 20rem;
+  font-style: italic;
+}
+
+.c0 .c2 {
+  width: 24px;
+  height: 24px;
+  stroke-width: 7px;
+}
+
+.c0 .c1:hover {
+  fill: #0073EB;
+}
+
+.c0 .quote_controller {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 30px;
+}
+
+.c0 .press_icons {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .press_icons > * {
+  width: 30rem;
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    padding: 0 7%;
+  }
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    margin-top: 6rem;
+  }
+}
+
+<BasePressQuotes
+  className="c0"
+  constrained={true}
+  header="BUZZZZZZZZZ"
+  order={
+    Array [
+      "new_york_times",
+      "la_times",
+      "people_magazine",
+      "tech_crunch",
+      "fast_company",
+      "parents_magazine",
+      "today_show",
+      "new_york_post",
+    ]
+  }
+  padding={true}
+  quotes={
+    Object {
+      "fast_company": "“Shopping for kids’ clothes can be fun.”",
+      "la_times": "“Obsessively kid friendly”",
+      "new_york_post": "“The witty graphics, throwback bombers and metallic-accented tutus from this fashion-forward label are all about encouraging kids 'to be their authentic selves.'",
+      "new_york_times": "“Materials and details are thoughtful, and the clothes are wildly cute.”",
+      "parents_magazine": "“You can’t buy these clothes in stores.”",
+      "people_magazine": "“They'll be at the top of their playground game with these clothes.”",
+      "tech_crunch": "“Rockets of Awesome is a total no brainer.”",
+      "today_show": "“The clothing is so stylish and so affordable...and the softest quality.”",
+    }
+  }
+/>
+`;
