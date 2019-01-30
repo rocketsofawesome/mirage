@@ -65,7 +65,8 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  min-height: 30px;
+  min-height: 3rem;
+  max-height: 12rem;
 }
 
 .c0 .press_icons {
@@ -73,6 +74,7 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  max-height: 12rem;
 }
 
 .c0 .press_icons > * {
