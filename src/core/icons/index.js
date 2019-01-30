@@ -1,6 +1,7 @@
 //Icons
 export { default as BagIcon } from './BagIcon'
 export { default as CardIcon } from './cards/CardIcon'
+export { default as PressIcon } from './press/PressIcon'
 export { default as Chevron } from './Chevron'
 export { default as GuaranteeIcon } from './GuaranteeIcon'
 export { default as MailboxIcon } from './MailboxIcon'
