@@ -46,12 +46,6 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
   >
     <section
       className="c0"
-      sources={
-        Object {
-          "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
-          "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
-        }
-      }
     >
       <Video
         autoPlay={true}

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 import {
   H1,
@@ -12,6 +12,7 @@ import {
 import PressIcon from 'SRC/core/icons/press/PressIcon'
 import defaultProps from './defaultProps.js'
 
+import MediaQuery from 'react-responsive';
 import { CSSTransitionGroup } from 'react-transition-group'
 
 class BasePressQuotes extends React.Component {
@@ -24,14 +25,14 @@ class BasePressQuotes extends React.Component {
     }
   }
 
-  componentDidMount () {
+  componentWillUnmount () {
+    clearInterval(this.timer)
+  }
+
+  componentWillMount () {
     const { quotes } = this.props
     this.quoteTimer()
     this.setState({key: "new_york_times", quote: quotes.new_york_times, index: 0})
-  }
-
-  componentWillUnmount () {
-    clearInterval(this.timer)
   }
 
   onClick = (press_icon) => {
@@ -81,9 +82,24 @@ class BasePressQuotes extends React.Component {
     )
   }
 
+  renderPressRowMobile = () => {
+    const { key, index } = this.state
+    return(
+      <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
+        <div className="press_icons">
+          <PressIcon
+            key={index}
+            brand={key}
+            selected={true}
+          />
+        </div>
+      </FlexCol>
+    )
+  }
+
   render () {
-    const { className, header } = this.props
-    const { quote } = this.state
+    const { className, header, theme } = this.props
+    const { quote, index } = this.state
     const topRow = ["new_york_times", "today_show", "people_magazine", "tech_crunch"]
     const bottomRow = ["fast_company", "parents_magazine", "la_times", "new_york_post"]
 
@@ -99,13 +115,18 @@ class BasePressQuotes extends React.Component {
               transitionName="quote"
               transitionEnterTimeout={500}
               transitionLeaveTimeout={1}>
-              <H2 lowercase key={this.state.index}>{quote}</H2>
+              <H2 lowercase key={index}>{quote}</H2>
             </CSSTransitionGroup>
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
-        {this.renderPressRow(topRow)}
-        {this.renderPressRow(bottomRow)}
+        <MediaQuery query={theme.breakpoints.aboveTablet}>
+          {this.renderPressRow(topRow)}
+          {this.renderPressRow(bottomRow)}
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 767px)">
+          {this.renderPressRowMobile()}
+        </MediaQuery>
       </section>
     )
   }
@@ -144,7 +165,8 @@ const PressQuotes = styled(BasePressQuotes)`
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    min-height: 20rem;
+    min-height: 12rem;
+    max-height: 45rem;
     font-style: italic;
   }
   ${Chevron} {
@@ -154,21 +176,23 @@ const PressQuotes = styled(BasePressQuotes)`
   }
   ${PressIcon} {
     max-height: 4.5rem;
-    margin: 1rem;
+    margin: 0.5rem;
     &: hover {
       fill: ${props => props.theme.colors.rocketBlueHover};
     }
   }
   .quote_controller {
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 3rem;
-    max-height: 12rem;
+    min-height: 12rem;
+    max-height: 45rem;
   }
   .press_icons {
     display: flex;
     max-height: 12rem;
+    justify-content: center;
     > * {
       width: 30rem;
     }
@@ -177,8 +201,8 @@ const PressQuotes = styled(BasePressQuotes)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 3rem;
-    max-height: 12rem;
+    min-height: 12rem;
+    max-height: 45rem;
   }
   .quote-enter {
     opacity: 0.01;
@@ -202,4 +226,4 @@ PressQuotes.defaultProps = {
 }
 
 /** @component */
-export default PressQuotes
+export default withTheme(PressQuotes)

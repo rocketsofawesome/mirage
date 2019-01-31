@@ -48,10 +48,10 @@ class BaseBackgroundVideo extends React.Component {
   }
 
   render () {
-    const {className, children, size, ...props} = this.props
+    const { className, children } = this.props
     const { currentSources } = this.state
     return (
-      <section className={className} {...props}>
+      <section className={className}>
         <Video ref={this.setVideo} sources={currentSources} />
         <article>{children}</article>
       </section>
