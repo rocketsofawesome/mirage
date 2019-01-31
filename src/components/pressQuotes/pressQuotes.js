@@ -4,7 +4,6 @@ import styled from 'styled-components'
 import {
   H1,
   H2,
-  FadeInOut,
   FlexRow,
   FlexCol,
   Chevron
@@ -13,6 +12,7 @@ import {
 import PressIcon from 'SRC/core/icons/press/PressIcon'
 import defaultProps from './defaultProps.js'
 
+import { CSSTransitionGroup } from 'react-transition-group'
 
 class BasePressQuotes extends React.Component {
   constructor (props) {
@@ -26,8 +26,8 @@ class BasePressQuotes extends React.Component {
 
   componentDidMount () {
     const { quotes } = this.props
-    this.setState({key: "new_york_times", quote: quotes.new_york_times, index: 0})
     this.quoteTimer()
+    this.setState({key: "new_york_times", quote: quotes.new_york_times, index: 0})
   }
 
   componentWillUnmount () {
@@ -84,8 +84,8 @@ class BasePressQuotes extends React.Component {
   render () {
     const { className, header } = this.props
     const { quote } = this.state
-    const topRow = ["new_york_times", "la_times", "people_magazine", "tech_crunch"]
-    const bottomRow = ["fast_company", "parents_magazine", "today_show", "new_york_post"]
+    const topRow = ["new_york_times", "today_show", "people_magazine", "tech_crunch"]
+    const bottomRow = ["fast_company", "parents_magazine", "la_times", "new_york_post"]
 
     return (
       <section className={className}>
@@ -95,7 +95,12 @@ class BasePressQuotes extends React.Component {
         <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <div className="quote_controller">
             <Chevron left onClick={this.onClickChevronLeft} />
-            <FadeInOut><H2 lowercase>{quote}</H2></FadeInOut>
+            <CSSTransitionGroup
+              transitionName="quote"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={1}>
+              <H2 lowercase key={this.state.index}>{quote}</H2>
+            </CSSTransitionGroup>
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
@@ -148,6 +153,8 @@ const PressQuotes = styled(BasePressQuotes)`
     stroke-width: 7px;
   }
   ${PressIcon} {
+    max-height: 4.5rem;
+    margin: 1rem;
     &: hover {
       fill: ${props => props.theme.colors.rocketBlueHover};
     }
@@ -165,6 +172,26 @@ const PressQuotes = styled(BasePressQuotes)`
     > * {
       width: 30rem;
     }
+  }
+  .quote_controller span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 3rem;
+    max-height: 12rem;
+  }
+  .quote-enter {
+    opacity: 0.01;
+  }
+  .quote-enter.quote-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .quote-leave {
+    opacity: 0;
+  }
+  .quote-leave.quote-leave-active {
+    opacity: 0;
   }
 `
 

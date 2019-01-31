@@ -48,6 +48,11 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   stroke-width: 7px;
 }
 
+.c0 .c1 {
+  max-height: 4.5rem;
+  margin: 1rem;
+}
+
 .c0 .c1:hover {
   fill: #0073EB;
 }
@@ -81,6 +86,41 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   width: 30rem;
 }
 
+.c0 .quote_controller span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 3rem;
+  max-height: 12rem;
+}
+
+.c0 .quote-enter {
+  opacity: 0.01;
+}
+
+.c0 .quote-enter.quote-enter-active {
+  opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
+  transition: opacity 500ms ease-in;
+}
+
+.c0 .quote-leave {
+  opacity: 0;
+}
+
+.c0 .quote-leave.quote-leave-active {
+  opacity: 0;
+}
+
 @media (min-width:76.8em) {
   .c0 {
     padding: 0 7%;
@@ -100,12 +140,12 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   order={
     Array [
       "new_york_times",
-      "la_times",
+      "today_show",
       "people_magazine",
       "tech_crunch",
       "fast_company",
       "parents_magazine",
-      "today_show",
+      "la_times",
       "new_york_post",
     ]
   }
