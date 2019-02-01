@@ -1,5 +1,4 @@
-import PropTypes from 'prop-types'
-import styled, {css} from 'styled-components'
+import styled from 'styled-components'
 
 const BlockQuote = styled.blockquote`
   position: relative;

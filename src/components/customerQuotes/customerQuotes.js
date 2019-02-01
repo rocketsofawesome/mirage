@@ -44,7 +44,7 @@ class BaseCustomerQuotes extends React.Component {
           <InlineImage className='confetti' src='https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left.gif' />
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
-          <FadeInOut duration={4} animate={!!index}>
+          <FadeInOut duration={9} animate={!!index}>
             <H3 lowercase>{quote}</H3>
           </FadeInOut>
         </FlexCol>
@@ -70,7 +70,7 @@ class BaseCustomerQuotes extends React.Component {
           quote: quotes[index + 1]
         })
       }
-    }, 4000)
+    }, 9000)
   }
 }
 

@@ -120,11 +120,11 @@ class BasePressQuotes extends React.Component {
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
-        <MediaQuery query={theme.breakpoints.aboveTablet}>
+        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
           {this.renderPressRow(topRow)}
           {this.renderPressRow(bottomRow)}
         </MediaQuery>
-        <MediaQuery query="(max-device-width: 767px)">
+        <MediaQuery query="(max-device-width: 959px)">
           {this.renderPressRowMobile()}
         </MediaQuery>
       </section>
@@ -156,6 +156,7 @@ const PressQuotes = styled(BasePressQuotes)`
   `}
   ${H1}, ${H2} {
     text-align: center;
+    margin: 0 0 1rem 0;
   }
   ${H2} {
     color: ${props => props.theme.colors.rocketBlue};
@@ -176,13 +177,13 @@ const PressQuotes = styled(BasePressQuotes)`
   }
   ${PressIcon} {
     max-height: 4.5rem;
-    margin: 0.5rem;
+    padding: 0.5rem;
+    box-sizing: border-box;
     &: hover {
       fill: ${props => props.theme.colors.rocketBlueHover};
     }
   }
   .quote_controller {
-    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -191,10 +192,12 @@ const PressQuotes = styled(BasePressQuotes)`
   }
   .press_icons {
     display: flex;
+    flex-wrap: wrap;
     max-height: 12rem;
     justify-content: center;
     > * {
       width: 30rem;
+      @media (min-width: 959px) { width: 25%; }
     }
   }
   .quote_controller span {
