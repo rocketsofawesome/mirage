@@ -60,9 +60,7 @@ module.exports = {
   externals: [
     nodeExternals([
       'instafeed.js',
-      'react-sizeme',
-      'react-responsive',
-      'react-transition-group'
+      'react-sizeme'
     ])],
   output: {
     // The build folder.
