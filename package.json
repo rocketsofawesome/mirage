@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.115",
+  "version": "0.1.116",
   "main": "./build/index.js",
   "dependencies": {
     "instafeed.js": "^1.4.1",
