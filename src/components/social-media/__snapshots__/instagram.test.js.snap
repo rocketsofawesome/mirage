@@ -34,7 +34,10 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
 }
 
 <BaseInstagram
+  accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
   className="c0"
+  clientId="573c73f61f5342549cfabb281c37f4de"
   limit={4}
+  userId="2310062225"
 />
 `;

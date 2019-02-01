@@ -8,18 +8,18 @@ import { BackgroundImage, Markdown, Link } from 'SRC'
 const BaseSplitTout = ({className, description, links, ...props}) => {
   return (
     <section className={className} {...props}>
-      {links.map((link) => {
+      {links.map((link, index) => {
         return (
-          <Link underline={false} href={link.destination}>
+          <Link key={index} underline={false} href={link.destination}>
             <BackgroundImage src={link.images[0]} sources={link.images} />
           </Link>
         )
       })}
       <article>
         <Markdown>{description}</Markdown>
-        {links.map((link) => {
+        {links.map((link, index) => {
           return (
-            <span className='call-to-action'>
+            <span key={index} className='call-to-action'>
               <Link href={link.destination}>{link.text}</Link>
             </span>
           )

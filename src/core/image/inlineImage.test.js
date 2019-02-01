@@ -50,18 +50,7 @@ describe('(Styled Component) InlineImage', () => {
       `https://dummyInlineImage.com/800x800/CCC/333.png&text=large 800w,
 https://dummyInlineImage.com/350x350/CCC/333.png&text=medium 350w,
 https://dummyInlineImage.com/100x100/CCC/333.png&text=small 100w`
-      const InlineImageComponent = createInlineImage({
-        srcSet: {
-          '800w': 'https://dummyInlineImage.com/800x800/CCC/333.png&text=large',
-          '350w': 'https://dummyInlineImage.com/350x350/CCC/333.png&text=medium',
-          '100w': 'https://dummyInlineImage.com/100x100/CCC/333.png&text=small'
-        }
-      })
-      expect(InlineImageComponent.find('img').prop('srcSet')).toEqual(srcSetString)
-    })
-
-    test('setting the sizes', () => {
-      const sizesString = `800px (min-width: 500px),
+const sizesString = `800px (min-width: 500px),
 350px (min-width: 300px),
 100px (min-width: 200px)`
       const InlineImageComponent = createInlineImage({
@@ -69,8 +58,14 @@ https://dummyInlineImage.com/100x100/CCC/333.png&text=small 100w`
           '800px': '(min-width: 500px)',
           '350px': '(min-width: 300px)',
           '100px': '(min-width: 200px)'
+        },
+        srcSet: {
+          '800w': 'https://dummyInlineImage.com/800x800/CCC/333.png&text=large',
+          '350w': 'https://dummyInlineImage.com/350x350/CCC/333.png&text=medium',
+          '100w': 'https://dummyInlineImage.com/100x100/CCC/333.png&text=small'
         }
       })
+      expect(InlineImageComponent.find('img').prop('srcSet')).toEqual(srcSetString)
       expect(InlineImageComponent.find('img').prop('sizes')).toContain(sizesString)
     })
   })
