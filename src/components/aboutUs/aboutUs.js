@@ -44,16 +44,20 @@ const AboutUs = styled(BaseAboutUs)`
   }
   ${H1} {
     margin: 0 auto;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   ${H2} {
     color: ${props => props.theme.colors.rocketBlue};
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 10px;
   }
   ${P} {
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 18px;
+    letter-spacing: 1px;
   }
   .flexDiv {
     display: flex;
