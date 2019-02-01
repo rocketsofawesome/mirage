@@ -1,3 +1,5 @@
+export * from './link'
+export {default as BlockQuote} from './BlockQuote'
 export {default as Caption} from './Caption'
 export {default as H1} from './H1'
 export {default as H2} from './H2'

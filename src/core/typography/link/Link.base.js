@@ -21,7 +21,7 @@ font-weight: 500;
 `
 
 const BaseLink = styled.a`
-  ${props => baseLinkStyles}
+  ${baseLinkStyles}
 `
 
 BaseLink.propTypes = {

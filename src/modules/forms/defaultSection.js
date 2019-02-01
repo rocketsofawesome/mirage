@@ -2,9 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 
 import { styles } from 'SRC/core/typography/Label'
-import DefaultAddress from 'SRC/components/address/DefaultAddress'
-import DefaultPayment from 'SRC/components/payment/DefaultPayment'
-import Link from 'SRC/components/link/Link'
+import {DefaultAddress, DefaultPayment, Link} from 'SRC'
 
 const DefaultSection = styled.section`
   border-radius: 0.3rem;

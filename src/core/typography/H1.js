@@ -5,8 +5,6 @@ import styled from 'styled-components'
  * Main title component
  */
 const H1 = styled.h1`
-  margin: 0;
-
   ${props => props.center ? 'text-align: center;' : ''}
   letter-spacing: .1rem;
   text-transform: ${props => props.lowercase
