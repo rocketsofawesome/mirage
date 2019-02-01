@@ -57,7 +57,13 @@ module.exports = {
   // In production, we only want to load the polyfills and the app code.
   entry: [require.resolve('./polyfills'), paths.appIndexJs],
   target: 'node',
-  externals: [nodeExternals(['instafeed.js', 'react-sizeme'])],
+  externals: [
+    nodeExternals([
+      'instafeed.js',
+      'react-sizeme',
+      'react-responsive',
+      'react-transition-group'
+    ])],
   output: {
     // The build folder.
     path: paths.appBuild,
