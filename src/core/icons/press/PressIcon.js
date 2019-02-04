@@ -52,7 +52,7 @@ export const defaultStyle = css`
 `
 
 export const selected = css`
-  fill: ${props => props.theme.colors.rocketBlueHover};
+  fill: ${props => props.theme.colors.rocketBlue};
 `
 
 const colorPressIcon = css`

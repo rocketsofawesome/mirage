@@ -180,7 +180,7 @@ const PressQuotes = styled(BasePressQuotes)`
     padding: 0.5rem;
     box-sizing: border-box;
     &: hover {
-      fill: ${props => props.theme.colors.rocketBlueHover};
+      fill: ${props => props.theme.colors.rocketBlue};
     }
   }
   .quote_controller {
