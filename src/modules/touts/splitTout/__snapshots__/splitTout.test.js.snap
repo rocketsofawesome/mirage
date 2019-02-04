@@ -165,6 +165,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
     >
       <Styled(styled.a)
         href="https://www.example.com"
+        key="0"
         underline={false}
       >
         <styled.a
@@ -223,6 +224,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
       </Styled(styled.a)>
       <Styled(styled.a)
         href="https://www.example.com"
+        key="1"
         underline={false}
       >
         <styled.a
@@ -333,6 +335,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
         </Styled(Component)>
         <span
           className="call-to-action"
+          key="0"
         >
           <Styled(styled.a)
             href="https://www.example.com"
@@ -355,6 +358,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
         </span>
         <span
           className="call-to-action"
+          key="1"
         >
           <Styled(styled.a)
             href="https://www.example.com"
