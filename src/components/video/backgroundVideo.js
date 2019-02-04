@@ -48,11 +48,11 @@ class BaseBackgroundVideo extends React.Component {
   }
 
   render () {
-    const { className, children } = this.props
+    const { className, children, mobileFallback, desktopFallback } = this.props
     const { currentSources } = this.state
     return (
       <section className={className}>
-        <Video ref={this.setVideo} sources={currentSources} />
+        <Video ref={this.setVideo} sources={currentSources} mobileFallback={mobileFallback} desktopFallback={desktopFallback} />
         <article>{children}</article>
       </section>
     )
@@ -61,7 +61,7 @@ class BaseBackgroundVideo extends React.Component {
 
 const BackgroundVideo = styled(BaseBackgroundVideo)`
   position: relative;
-  > video {
+  > div > video {
     width: 100%;
   }
   > article {
@@ -74,7 +74,9 @@ const BackgroundVideo = styled(BaseBackgroundVideo)`
 `
 
 BackgroundVideo.propTypes = {
-  sources: PropTypes.object
+  sources: PropTypes.object,
+  mobileFallback: PropTypes.string,
+  desktopFallback: PropTypes.string
 }
 
 export { BackgroundVideo }
