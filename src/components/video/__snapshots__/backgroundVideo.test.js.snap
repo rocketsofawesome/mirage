@@ -5,7 +5,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
   position: relative;
 }
 
-.c0 > video {
+.c0 > div > video {
   width: 100%;
 }
 
@@ -47,26 +47,112 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
     <section
       className="c0"
     >
-      <Video
-        autoPlay={true}
-        loop={true}
-        muted={true}
-        playsInline={true}
+      <WithTheme(Video)
         sources="https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4"
       >
-        <video
+        <Video
           autoPlay={true}
           loop={true}
           muted={true}
           playsInline={true}
+          sources="https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4"
+          theme={
+            Object {
+              "base": undefined,
+              "breakpoints": Object {
+                "aboveDesktop": "(min-device-width: 1440px)",
+                "aboveLaptop": "(min-device-width: 1280px)",
+                "abovePhone": "(min-device-width: 320px)",
+                "abovePhoneMax": "(min-device-width: 414px)",
+                "aboveTablet": "(min-device-width: 768px)",
+                "aboveTabletMax": "(min-device-width: 960px)",
+                "belowDesktop": "(max-device-width: 1440px)",
+                "belowLaptop": "(max-device-width: 1280px)",
+                "belowPhone": "(max-device-width: 320px)",
+                "belowPhoneMax": "(max-device-width: 414px)",
+                "belowTablet": "(max-device-width: 768px)",
+                "belowTabletMax": "(max-device-width: 960px)",
+                "landscape": "(orientation: landscape)",
+                "portrait": "(orientation: portrait)",
+              },
+              "colors": Object {
+                "black": "#000000",
+                "electricBlue": "#080CF1",
+                "gray": Array [
+                  "#F3F3F3",
+                  "#F5F5F5",
+                  "#F8F8F8",
+                  "#E6E6E6",
+                  "#D5D5D5",
+                  "#CFCFCF",
+                ],
+                "gray0": "#F3F3F3",
+                "gray1": "#F5F5F5",
+                "gray2": "#F8F8F8",
+                "gray3": "#E6E6E6",
+                "gray4": "#D5D5D5",
+                "gray5": "#CFCFCF",
+                "lightBlue": Array [
+                  "#EEFCFF",
+                  "#BCE1F7",
+                  "#76C2F3",
+                ],
+                "lightBlue0": "#EEFCFF",
+                "lightBlue1": "#BCE1F7",
+                "lightBlue2": "#76C2F3",
+                "lightPink": "#FBDDE4",
+                "loading": "#BFBFBF",
+                "navy": "#00003C",
+                "pink": "#FEACBE",
+                "red": "#FF511C",
+                "rocketBlue": "#0073D1",
+                "rocketBlueHover": "#0073EB",
+                "white": "#FFFFFF",
+                "yellow": "#F0FF02",
+                "yellowHover": "#D8E320",
+              },
+              "fixedPosition": "relative",
+              "fonts": Object {
+                "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+                "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+                "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+              },
+              "grid": Object {
+                "columns": Object {
+                  "desktop": 12,
+                  "mobile": 4,
+                  "tablet": 12,
+                },
+                "gutter": 2,
+                "margins": Object {
+                  "desktop": "7%",
+                  "mobile": "3%",
+                  "tablet": "7%",
+                },
+              },
+              "media": Object {
+                "desktop": [Function],
+                "laptop": [Function],
+                "phone": [Function],
+                "phoneMax": [Function],
+                "tablet": [Function],
+                "tabletMax": [Function],
+              },
+            }
+          }
         >
-          <source
-            key="0"
-            src="https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </Video>
+          <div>
+            <MediaQuery
+              query="(min-device-width: 960px)"
+              values={Object {}}
+            />
+            <MediaQuery
+              query="(max-device-width: 959px)"
+              values={Object {}}
+            />
+          </div>
+        </Video>
+      </WithTheme(Video)>
       <article>
         <h1>
           Hello
