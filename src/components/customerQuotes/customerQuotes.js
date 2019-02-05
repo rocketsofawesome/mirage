@@ -7,6 +7,7 @@ import {
   FlexRow,
   InlineImage,
   H1,
+  H2,
   H3
 } from 'SRC'
 
@@ -18,7 +19,7 @@ class BaseCustomerQuotes extends React.Component {
     super(props)
     this.state = {
       index: 0,
-      quote: undefined
+      quote: { quote: undefined, signature: undefined }
     }
   }
 
@@ -45,7 +46,10 @@ class BaseCustomerQuotes extends React.Component {
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
           <FadeInOut duration={9} animate={!!index}>
-            <H3 lowercase>{quote}</H3>
+            <div className="quote_controller">
+              <H2 lowercase>{quote.quote}</H2>
+              <H3 lowercase>{quote.signature}</H3>
+            </div>
           </FadeInOut>
         </FlexCol>
         <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
@@ -82,10 +86,10 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}
-  ${H1}, ${H3} {
+  ${H1}, ${H2}, ${H3} {
     text-align: center;
   }
-  ${H3} {
+  ${H2}, ${H3} {
     color: ${props => props.theme.colors.rocketBlue};
     display: flex;
     justify-content: center;
@@ -93,13 +97,31 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     height: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    min-height: 20rem;
+    font-style: italic;
     order: 1;
     ${props => props.theme.media.tablet`
       order: 2;
     `}
   }
-
+  ${H2} {
+    margin-top: 1rem;
+    min-height: 5rem;
+  }
+  ${H3} {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    min-height: 1rem;
+  }
+  .quote_controller {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+    ${props => props.theme.media.tablet`
+      order: 2;
+    `}
+  }
   .confetti {
     height: auto;
     &:first-of-type {
