@@ -120,13 +120,15 @@ class BasePressQuotes extends React.Component {
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
-        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-          {this.renderPressRow(topRow)}
-          {this.renderPressRow(bottomRow)}
-        </MediaQuery>
-        <MediaQuery query="(max-device-width: 959px)">
-          {this.renderPressRowMobile()}
-        </MediaQuery>
+        <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
+          <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+            {this.renderPressRow(topRow)}
+            {this.renderPressRow(bottomRow)}
+          </MediaQuery>
+          <MediaQuery query="(max-device-width: 959px)">
+            {this.renderPressRowMobile()}
+          </MediaQuery>
+        </FlexCol>
       </section>
     )
   }
