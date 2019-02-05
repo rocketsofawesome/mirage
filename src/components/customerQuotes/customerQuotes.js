@@ -104,10 +104,13 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     `}
   }
   ${H2} {
+    font-weight: 300;
     margin-top: 1rem;
     min-height: 5rem;
   }
   ${H3} {
+    font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+    font-size: 1.8rem;
     font-weight: 100;
     font-style: normal;
     margin-top: 2rem;
