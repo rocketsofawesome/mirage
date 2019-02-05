@@ -108,6 +108,8 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     min-height: 5rem;
   }
   ${H3} {
+    font-weight: 100;
+    font-style: normal;
     margin-top: 2rem;
     margin-bottom: 2rem;
     min-height: 1rem;
