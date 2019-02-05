@@ -125,6 +125,8 @@ class BasePressQuotes extends React.Component {
             {this.renderPressRow(topRow)}
             {this.renderPressRow(bottomRow)}
           </MediaQuery>
+        </FlexCol>
+        <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <MediaQuery query="(max-device-width: 959px)">
             {this.renderPressRowMobile()}
           </MediaQuery>
