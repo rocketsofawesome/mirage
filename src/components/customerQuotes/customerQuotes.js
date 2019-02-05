@@ -7,7 +7,7 @@ import {
   FlexRow,
   InlineImage,
   H1,
-  H3
+  H2
 } from 'SRC'
 
 import defaultProps from './defaultProps.js'
@@ -18,7 +18,7 @@ class BaseCustomerQuotes extends React.Component {
     super(props)
     this.state = {
       index: 0,
-      quote: undefined
+      quote: { quote: undefined, signature: undefined }
     }
   }
 
@@ -45,7 +45,7 @@ class BaseCustomerQuotes extends React.Component {
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
           <FadeInOut duration={9} animate={!!index}>
-            <H3 lowercase>{quote}</H3>
+            <H2 lowercase>{quote.quote}<br />{quote.signature}</H2>
           </FadeInOut>
         </FlexCol>
         <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
@@ -82,10 +82,10 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}
-  ${H1}, ${H3} {
+  ${H1}, ${H2} {
     text-align: center;
   }
-  ${H3} {
+  ${H2} {
     color: ${props => props.theme.colors.rocketBlue};
     display: flex;
     justify-content: center;
@@ -94,6 +94,7 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
     margin-top: 0;
     margin-bottom: 0;
     min-height: 20rem;
+    font-style: italic;
     order: 1;
     ${props => props.theme.media.tablet`
       order: 2;
