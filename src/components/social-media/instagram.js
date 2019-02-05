@@ -45,7 +45,7 @@ class BaseInstagram extends React.Component {
   }
 
   setInstragramPics = (args) => {
-    this.setState({instagramLoading: false, instagramPictures: args.data})
+    this.instagramRef && this.setState({instagramLoading: false, instagramPictures: args.data})
   }
 
   setInstagramRef = (element) => {
