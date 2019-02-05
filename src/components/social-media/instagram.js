@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import MediaQuery from 'react-responsive'
+import styled, { withTheme } from 'styled-components'
+import Slider from 'react-slick'
 import Instafeed from 'instafeed.js'
 
 import { InlineImage } from 'SRC'
@@ -11,6 +13,19 @@ class BaseInstagram extends React.Component {
   constructor(props) {
     super(props);
     this.instagramRef = null
+
+    this.config = {
+      infinite: false,
+      arrows: false,
+      className: 'slider',
+      centerMode: true,
+      slidesToShow: 1,
+      variableWidth: true
+    }
+    this.state = {
+      instagramLoading: true,
+      instagramPictures: []
+    }
   }
 
   componentDidMount () {
@@ -23,9 +38,14 @@ class BaseInstagram extends React.Component {
       userId: userId,
       accessToken: accessToken,
       resolution: 'standard_resolution',
-      limit: limit
+      limit: limit,
+      success: (args) => this.setInstragramPics(args)
     }).run()
     }
+  }
+
+  setInstragramPics = (args) => {
+    this.setState({instagramLoading: false, instagramPictures: args.data})
   }
 
   setInstagramRef = (element) => {
@@ -33,33 +53,82 @@ class BaseInstagram extends React.Component {
   }
 
   render () {
-    const { className } = this.props
+    const { className, theme } = this.props
+    const { instagramLoading, instagramPictures } = this.state
     return (
-      <section className={className} ref={this.setInstagramRef}>
-        <InlineImage className='gif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
-      </section>
+      <div className={className}>
+        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+          <section className='desktopContainer' ref={this.setInstagramRef}>
+            <InlineImage className='gif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
+          </section>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 959px)">
+          <div className='mobileContainer'>
+            <InlineImage className='mobileGif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
+            {!instagramLoading && <Slider {...this.config}>
+              {instagramPictures.map((imageObject, i) => {
+                return (<a key={`imageObject-${i}`} href={imageObject.link} target="_blank">
+                  <img className='mobileImg' src={imageObject.images.standard_resolution.url} alt='mobile instagram'/>
+                </a>)
+              })}
+            </Slider>}
+            <div ref={this.setInstagramRef} style={{display: 'none'}} />
+          </div>
+        </MediaQuery>
+      </div>
     )
   }
 }
 
 const Instagram = styled(BaseInstagram)`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  > a {
-    width: 50%;
-    max-width: 28rem;
-    padding: 1rem;
-    box-sizing: border-box;
-    img {
-      width: 100%;
-      max-width: 26rem;
+  width: 100%;
+  .desktopContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    > a {
+      width: 50%;
+      max-width: 28rem;
+      padding: 1rem;
+      box-sizing: border-box;
+      img {
+        width: 100%;
+        max-width: 26rem;
+      }
+    }
+    .gif {
+      height: 260px;
+      margin-right: -50px;
+      z-index: 0;
     }
   }
-  .gif {
-    height: 260px;
-    margin-right: -50px;
-    z-index: 0;
+  .mobileContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .mobileGif {
+    width: 14rem;
+    z-index: 1;
+    left: 0;
+    position: absolute;
+  }
+  .mobileImg {
+    width: 26rem;
+  }
+  .slider {
+    overflow: hidden;
+    > div > div {
+      display: flex;
+    }
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      padding-right: 20px;
+    }
   }
 `
 
@@ -67,7 +136,8 @@ Instagram.propTypes = {
   limit: PropTypes.number,
   clientId: PropTypes.string,
   userId: PropTypes.string,
-  accessToken: PropTypes.string
+  accessToken: PropTypes.string,
+  theme: PropTypes.object
 }
 
 Instagram.defaultProps = {
@@ -78,4 +148,4 @@ Instagram.defaultProps = {
 }
 
 /** @component */
-export default Instagram
+export default withTheme(Instagram)

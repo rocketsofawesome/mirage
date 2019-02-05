@@ -41,6 +41,14 @@ const renderWithTheme = (component) => {
   })
 }
 
+window.matchMedia = window.matchMedia || function() {
+return {
+matches : false,
+addListener : function() {},
+removeListener: function() {}
+};
+};
+
 global.localStorage = localStorageMock;
 global.shallowWithTheme = shallowWithTheme;
 global.mountWithTheme = mountWithTheme
