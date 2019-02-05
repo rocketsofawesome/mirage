@@ -1,94 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) Instagram matching the snapshot 1`] = `
-<Styled(BaseInstagram)
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > a {
+  width: 50%;
+  max-width: 28rem;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.c0 > a img {
+  width: 100%;
+  max-width: 26rem;
+}
+
+.c0 .gif {
+  height: 260px;
+  margin-right: -50px;
+  z-index: 0;
+}
+
+<BaseInstagram
   accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
+  className="c0"
   clientId="573c73f61f5342549cfabb281c37f4de"
   limit={4}
-  theme={
-    Object {
-      "base": undefined,
-      "breakpoints": Object {
-        "aboveDesktop": "(min-device-width: 1440px)",
-        "aboveLaptop": "(min-device-width: 1280px)",
-        "abovePhone": "(min-device-width: 320px)",
-        "abovePhoneMax": "(min-device-width: 414px)",
-        "aboveTablet": "(min-device-width: 768px)",
-        "aboveTabletMax": "(min-device-width: 960px)",
-        "belowDesktop": "(max-device-width: 1440px)",
-        "belowLaptop": "(max-device-width: 1280px)",
-        "belowPhone": "(max-device-width: 320px)",
-        "belowPhoneMax": "(max-device-width: 414px)",
-        "belowTablet": "(max-device-width: 768px)",
-        "belowTabletMax": "(max-device-width: 960px)",
-        "landscape": "(orientation: landscape)",
-        "portrait": "(orientation: portrait)",
-      },
-      "colors": Object {
-        "black": "#000000",
-        "electricBlue": "#080CF1",
-        "gray": Array [
-          "#F3F3F3",
-          "#F5F5F5",
-          "#F8F8F8",
-          "#E6E6E6",
-          "#D5D5D5",
-          "#CFCFCF",
-        ],
-        "gray0": "#F3F3F3",
-        "gray1": "#F5F5F5",
-        "gray2": "#F8F8F8",
-        "gray3": "#E6E6E6",
-        "gray4": "#D5D5D5",
-        "gray5": "#CFCFCF",
-        "lightBlue": Array [
-          "#EEFCFF",
-          "#BCE1F7",
-          "#76C2F3",
-        ],
-        "lightBlue0": "#EEFCFF",
-        "lightBlue1": "#BCE1F7",
-        "lightBlue2": "#76C2F3",
-        "lightPink": "#FBDDE4",
-        "loading": "#BFBFBF",
-        "navy": "#00003C",
-        "pink": "#FEACBE",
-        "red": "#FF511C",
-        "rocketBlue": "#0073D1",
-        "rocketBlueHover": "#0073EB",
-        "white": "#FFFFFF",
-        "yellow": "#F0FF02",
-        "yellowHover": "#D8E320",
-      },
-      "fixedPosition": "relative",
-      "fonts": Object {
-        "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
-        "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
-        "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
-      },
-      "grid": Object {
-        "columns": Object {
-          "desktop": 12,
-          "mobile": 4,
-          "tablet": 12,
-        },
-        "gutter": 2,
-        "margins": Object {
-          "desktop": "7%",
-          "mobile": "3%",
-          "tablet": "7%",
-        },
-      },
-      "media": Object {
-        "desktop": [Function],
-        "laptop": [Function],
-        "phone": [Function],
-        "phoneMax": [Function],
-        "tablet": [Function],
-        "tabletMax": [Function],
-      },
-    }
-  }
   userId="2310062225"
 />
 `;
