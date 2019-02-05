@@ -56,6 +56,8 @@ exports[`(Styled Component) CustomerQuotes matching the snapshot 1`] = `
 }
 
 .c0 .c3 {
+  font-weight: 100;
+  font-style: normal;
   margin-top: 2rem;
   margin-bottom: 2rem;
   min-height: 1rem;

@@ -7,7 +7,7 @@ export default {
     tech_crunch: '“Rockets of Awesome is a total no brainer.”',
     fast_company: '“Shopping for kids’ clothes can be fun.”',
     parents_magazine: '“You can’t buy these clothes in stores.”',
-    la_times: '“Obsessively kid friendly”',
+    la_times: '“Obsessively kid friendly.”',
     new_york_post: '“The witty graphics, throwback bombers and metallic-accented tutus from this fashion-forward label are all about encouraging kids \'to be their authentic selves.\''
   },
   "order": ["new_york_times", "today_show", "people_magazine", "tech_crunch", "fast_company", "parents_magazine", "la_times", "new_york_post"]

@@ -20,7 +20,7 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
   quotes={
     Object {
       "fast_company": "“Shopping for kids’ clothes can be fun.”",
-      "la_times": "“Obsessively kid friendly”",
+      "la_times": "“Obsessively kid friendly.”",
       "new_york_post": "“The witty graphics, throwback bombers and metallic-accented tutus from this fashion-forward label are all about encouraging kids 'to be their authentic selves.'",
       "new_york_times": "“Materials and details are thoughtful, and the clothes are wildly cute.”",
       "parents_magazine": "“You can’t buy these clothes in stores.”",

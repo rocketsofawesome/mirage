@@ -199,6 +199,7 @@ const PressQuotes = styled(BasePressQuotes)`
     flex-wrap: wrap;
     max-height: 12rem;
     justify-content: center;
+    @media (max-width: 958px) { margin-top: 0.5em; }
     > * {
       width: 30rem;
       @media (min-width: 959px) { width: 25%; }
