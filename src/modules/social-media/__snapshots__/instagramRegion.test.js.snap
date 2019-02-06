@@ -88,6 +88,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   z-index: 1;
   left: 0;
   position: absolute;
+  padding-left: 5px;
 }
 
 .c5 .mobileImg {
