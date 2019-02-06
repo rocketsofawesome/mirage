@@ -153,6 +153,12 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   padding-left: 10px;
 }
 
+@media (max-width:958px) {
+  .c0 .c1 {
+    font-size: 3.8rem;
+  }
+}
+
 <Styled(BaseInstagramRegion)
   content="This is the example content"
   title="Example Title"
