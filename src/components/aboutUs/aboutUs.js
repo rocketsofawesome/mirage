@@ -41,7 +41,7 @@ const AboutUs = styled(BaseAboutUs)`
   ${H1}, ${H2} {
     text-align: center;
     text-transform: uppercase;
-    @media (max-width: 958px) { font-size: 3.8rem; }
+    @media (max-width: 958px) { font-size: 3.4rem; }
   }
   ${H1} {
     margin: 0 auto;
