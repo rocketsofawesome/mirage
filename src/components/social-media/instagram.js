@@ -73,7 +73,6 @@ class BaseInstagram extends React.Component {
         </MediaQuery>
         <MediaQuery query="(max-device-width: 959px)">
           <div className='mobileContainer'>
-            <InlineImage className='mobileGif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
             {!instagramLoading && <Slider {...this.config}>
               {instagramPictures.map((imageObject, i) => {
                 return (<a key={`imageObject-${i}`} href={imageObject.link} target="_blank">
@@ -81,6 +80,7 @@ class BaseInstagram extends React.Component {
                 </a>)
               })}
             </Slider>}
+            <InlineImage className='mobileGif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
             <div ref={this.setInstagramRef} style={{display: 'none'}} />
           </div>
         </MediaQuery>
@@ -121,7 +121,6 @@ const Instagram = styled(BaseInstagram)`
   }
   .mobileGif {
     width: 14rem;
-    z-index: 1;
     left: 0;
     position: absolute;
     padding-left: 5px;
