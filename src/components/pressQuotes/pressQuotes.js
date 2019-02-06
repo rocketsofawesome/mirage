@@ -162,6 +162,9 @@ const PressQuotes = styled(BasePressQuotes)`
     text-align: center;
     margin: 0 0 1rem 0;
   }
+  ${H1} {
+    @media (max-width: 958px) { font-size: 3.8rem; }
+  }
   ${H2} {
     color: ${props => props.theme.colors.rocketBlue};
     display: flex;

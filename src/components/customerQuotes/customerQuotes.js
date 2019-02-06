@@ -103,6 +103,9 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
       order: 2;
     `}
   }
+  ${H1} {
+    @media (max-width: 958px) { font-size: 3.8rem; }
+  }
   ${H2} {
     font-weight: 300;
     margin-top: 1rem;
