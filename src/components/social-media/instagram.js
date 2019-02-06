@@ -127,7 +127,7 @@ const Instagram = styled(BaseInstagram)`
     padding-left: 5px;
   }
   .mobileImg {
-    width: 26rem;
+    width: 20rem;
   }
   .slider {
     overflow: hidden;
