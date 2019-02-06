@@ -124,6 +124,7 @@ const Instagram = styled(BaseInstagram)`
     z-index: 1;
     left: 0;
     position: absolute;
+    padding-left: 5px;
   }
   .mobileImg {
     width: 26rem;
