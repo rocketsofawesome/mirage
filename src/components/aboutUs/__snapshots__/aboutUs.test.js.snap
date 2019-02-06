@@ -51,7 +51,7 @@ exports[`(Styled Component) AboutUs matching the snapshot 1`] = `
 @media (max-width:958px) {
   .c0 .c1,
   .c0 .c2 {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
   }
 }
 

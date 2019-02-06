@@ -24,7 +24,7 @@ const InstagramRegion = styled(BaseInstagramRegion)`
     justify-content: center;
   }
   ${H1} {
-    @media (max-width: 958px) { font-size: 3.8rem; }
+    @media (max-width: 958px) { font-size: 3.4rem; }
   }
   ${H1}, ${P} {
     margin-bottom: 2rem;
