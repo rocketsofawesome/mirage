@@ -126,7 +126,7 @@ exports[`(Styled Component) CustomerQuotes matching the snapshot 1`] = `
 
 @media (max-width:958px) {
   .c0 .c1 {
-    font-size: 3.8rem;
+    font-size: 3.4rem;
   }
 }
 
