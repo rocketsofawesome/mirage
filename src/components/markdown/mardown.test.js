@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { H1, Markdown } from 'SRC'
+import { H1, MirageMarkdown } from 'SRC'
 
 const { mountWithTheme } = global
 
@@ -11,7 +11,7 @@ describe('(Styled Component) markdown', () => {
     children: '# Heading 1'
   }
   const createmarkdown = (props = defaultProps) => {
-    return mountWithTheme(<Markdown {...props} />)
+    return mountWithTheme(<MirageMarkdown {...props} />)
   }
 
   test('matching the snapshot', () => {
