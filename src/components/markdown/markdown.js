@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import ReactMarkdown from 'react-markdown'
 
@@ -20,7 +21,7 @@ const headerRenderer = ({level, children, ...props}) => {
     return React.createElement(headers[level-1], props, children)
 }
 
-const Markdown = styled(({className, children, ...props}) => {
+const MirageMarkdown = styled(({className, children, ...props}) => {
   return(
     <ReactMarkdown source={children} renderers={{
       link: Link,
@@ -33,9 +34,9 @@ const Markdown = styled(({className, children, ...props}) => {
 })`
 `
 
-Markdown.propTypes = {
-
+MirageMarkdown.propTypes = {
+  children: PropTypes.string
 }
 
 /** @component */
-export default Markdown
+export default MirageMarkdown

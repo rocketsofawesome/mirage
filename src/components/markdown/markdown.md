@@ -1,5 +1,5 @@
 ```js
-  <Markdown>
+  <MirageMarkdown>
 {`
 # Header 1
 ## Header 2
@@ -10,5 +10,5 @@
 Paragraph
 ![Example Image](https://via.placeholder.com/40x50)
 `}
-  </Markdown>
+  </MirageMarkdown>
 ```

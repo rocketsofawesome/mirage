@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {default as defaultProps} from './defaultProps.base'
-import { BackgroundImage, Markdown, Link } from 'SRC'
+import { BackgroundImage, MirageMarkdown, Link } from 'SRC'
 
 const BaseSplitTout = ({className, description, links, ...props}) => {
   return (
@@ -15,7 +15,7 @@ const BaseSplitTout = ({className, description, links, ...props}) => {
         )
       })}
       <article>
-        <Markdown>{description}</Markdown>
+        <MirageMarkdown>{description}</MirageMarkdown>
         {links.map((link, index) => {
           return (
             <span key={index} className='call-to-action'>
