@@ -48,6 +48,13 @@ exports[`(Styled Component) AboutUs matching the snapshot 1`] = `
   margin-bottom: 60px;
 }
 
+@media (max-width:958px) {
+  .c0 .c1,
+  .c0 .c2 {
+    font-size: 3.4rem;
+  }
+}
+
 <BaseAboutUs
   className="c0"
   constrained={true}

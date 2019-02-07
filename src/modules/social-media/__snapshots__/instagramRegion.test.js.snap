@@ -28,6 +28,10 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 }
 
 .c5 {
+  width: 100%;
+}
+
+.c5 .desktopContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -41,22 +45,76 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   justify-content: center;
 }
 
-.c5 > a {
+.c5 .desktopContainer > a {
   width: 50%;
   max-width: 28rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-.c5 > a img {
+.c5 .desktopContainer > a img {
   width: 100%;
   max-width: 26rem;
 }
 
-.c5 .gif {
+.c5 .desktopContainer .gif {
   height: 260px;
   margin-right: -50px;
   z-index: 0;
+}
+
+.c5 .mobileContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.c5 .mobileGif {
+  width: 14rem;
+  left: 0;
+  position: absolute;
+  padding-left: 5px;
+}
+
+.c5 .mobileImg {
+  width: 20rem;
+}
+
+.c5 .slider {
+  overflow: hidden;
+}
+
+.c5 .slider > div > div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c5 .slider .slick-slide {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-right: 20px;
 }
 
 .c0 {
@@ -91,6 +149,14 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 .c0 .c3 {
   margin-bottom: 2rem;
   text-align: center;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@media (max-width:958px) {
+  .c0 .c1 {
+    font-size: 3.4rem;
+  }
 }
 
 <Styled(BaseInstagramRegion)
@@ -125,36 +191,203 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
           This is the example content
         </p>
       </styled.p>
-      <Styled(BaseInstagram)
-        accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
-        clientId="573c73f61f5342549cfabb281c37f4de"
-        limit={4}
-        userId="2310062225"
-      >
-        <BaseInstagram
+      <WithTheme(Styled(BaseInstagram))>
+        <Styled(BaseInstagram)
           accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
-          className="c5"
           clientId="573c73f61f5342549cfabb281c37f4de"
           limit={4}
+          theme={
+            Object {
+              "base": undefined,
+              "breakpoints": Object {
+                "aboveDesktop": "(min-device-width: 1440px)",
+                "aboveLaptop": "(min-device-width: 1280px)",
+                "abovePhone": "(min-device-width: 320px)",
+                "abovePhoneMax": "(min-device-width: 414px)",
+                "aboveTablet": "(min-device-width: 768px)",
+                "aboveTabletMax": "(min-device-width: 960px)",
+                "belowDesktop": "(max-device-width: 1440px)",
+                "belowLaptop": "(max-device-width: 1280px)",
+                "belowPhone": "(max-device-width: 320px)",
+                "belowPhoneMax": "(max-device-width: 414px)",
+                "belowTablet": "(max-device-width: 768px)",
+                "belowTabletMax": "(max-device-width: 960px)",
+                "landscape": "(orientation: landscape)",
+                "portrait": "(orientation: portrait)",
+              },
+              "colors": Object {
+                "black": "#000000",
+                "electricBlue": "#080CF1",
+                "gray": Array [
+                  "#F3F3F3",
+                  "#F5F5F5",
+                  "#F8F8F8",
+                  "#E6E6E6",
+                  "#D5D5D5",
+                  "#CFCFCF",
+                ],
+                "gray0": "#F3F3F3",
+                "gray1": "#F5F5F5",
+                "gray2": "#F8F8F8",
+                "gray3": "#E6E6E6",
+                "gray4": "#D5D5D5",
+                "gray5": "#CFCFCF",
+                "lightBlue": Array [
+                  "#EEFCFF",
+                  "#BCE1F7",
+                  "#76C2F3",
+                ],
+                "lightBlue0": "#EEFCFF",
+                "lightBlue1": "#BCE1F7",
+                "lightBlue2": "#76C2F3",
+                "lightPink": "#FBDDE4",
+                "loading": "#BFBFBF",
+                "navy": "#00003C",
+                "pink": "#FEACBE",
+                "red": "#FF511C",
+                "rocketBlue": "#0073D1",
+                "rocketBlueHover": "#0073EB",
+                "white": "#FFFFFF",
+                "yellow": "#F0FF02",
+                "yellowHover": "#D8E320",
+              },
+              "fixedPosition": "relative",
+              "fonts": Object {
+                "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+                "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+                "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+              },
+              "grid": Object {
+                "columns": Object {
+                  "desktop": 12,
+                  "mobile": 4,
+                  "tablet": 12,
+                },
+                "gutter": 2,
+                "margins": Object {
+                  "desktop": "7%",
+                  "mobile": "3%",
+                  "tablet": "7%",
+                },
+              },
+              "media": Object {
+                "desktop": [Function],
+                "laptop": [Function],
+                "phone": [Function],
+                "phoneMax": [Function],
+                "tablet": [Function],
+                "tabletMax": [Function],
+              },
+            }
+          }
           userId="2310062225"
         >
-          <section
+          <BaseInstagram
+            accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
             className="c5"
+            clientId="573c73f61f5342549cfabb281c37f4de"
+            limit={4}
+            theme={
+              Object {
+                "base": undefined,
+                "breakpoints": Object {
+                  "aboveDesktop": "(min-device-width: 1440px)",
+                  "aboveLaptop": "(min-device-width: 1280px)",
+                  "abovePhone": "(min-device-width: 320px)",
+                  "abovePhoneMax": "(min-device-width: 414px)",
+                  "aboveTablet": "(min-device-width: 768px)",
+                  "aboveTabletMax": "(min-device-width: 960px)",
+                  "belowDesktop": "(max-device-width: 1440px)",
+                  "belowLaptop": "(max-device-width: 1280px)",
+                  "belowPhone": "(max-device-width: 320px)",
+                  "belowPhoneMax": "(max-device-width: 414px)",
+                  "belowTablet": "(max-device-width: 768px)",
+                  "belowTabletMax": "(max-device-width: 960px)",
+                  "landscape": "(orientation: landscape)",
+                  "portrait": "(orientation: portrait)",
+                },
+                "colors": Object {
+                  "black": "#000000",
+                  "electricBlue": "#080CF1",
+                  "gray": Array [
+                    "#F3F3F3",
+                    "#F5F5F5",
+                    "#F8F8F8",
+                    "#E6E6E6",
+                    "#D5D5D5",
+                    "#CFCFCF",
+                  ],
+                  "gray0": "#F3F3F3",
+                  "gray1": "#F5F5F5",
+                  "gray2": "#F8F8F8",
+                  "gray3": "#E6E6E6",
+                  "gray4": "#D5D5D5",
+                  "gray5": "#CFCFCF",
+                  "lightBlue": Array [
+                    "#EEFCFF",
+                    "#BCE1F7",
+                    "#76C2F3",
+                  ],
+                  "lightBlue0": "#EEFCFF",
+                  "lightBlue1": "#BCE1F7",
+                  "lightBlue2": "#76C2F3",
+                  "lightPink": "#FBDDE4",
+                  "loading": "#BFBFBF",
+                  "navy": "#00003C",
+                  "pink": "#FEACBE",
+                  "red": "#FF511C",
+                  "rocketBlue": "#0073D1",
+                  "rocketBlueHover": "#0073EB",
+                  "white": "#FFFFFF",
+                  "yellow": "#F0FF02",
+                  "yellowHover": "#D8E320",
+                },
+                "fixedPosition": "relative",
+                "fonts": Object {
+                  "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+                  "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+                  "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+                },
+                "grid": Object {
+                  "columns": Object {
+                    "desktop": 12,
+                    "mobile": 4,
+                    "tablet": 12,
+                  },
+                  "gutter": 2,
+                  "margins": Object {
+                    "desktop": "7%",
+                    "mobile": "3%",
+                    "tablet": "7%",
+                  },
+                },
+                "media": Object {
+                  "desktop": [Function],
+                  "laptop": [Function],
+                  "phone": [Function],
+                  "phoneMax": [Function],
+                  "tablet": [Function],
+                  "tabletMax": [Function],
+                },
+              }
+            }
+            userId="2310062225"
           >
-            <InlineImage
-              alt=""
-              className="gif"
-              src="https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif"
+            <div
+              className="c5"
             >
-              <img
-                alt=""
-                className="gif"
-                src="https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif"
+              <MediaQuery
+                query="(min-device-width: 960px)"
+                values={Object {}}
               />
-            </InlineImage>
-          </section>
-        </BaseInstagram>
-      </Styled(BaseInstagram)>
+              <MediaQuery
+                query="(max-device-width: 959px)"
+                values={Object {}}
+              />
+            </div>
+          </BaseInstagram>
+        </Styled(BaseInstagram)>
+      </WithTheme(Styled(BaseInstagram))>
     </section>
   </BaseInstagramRegion>
 </Styled(BaseInstagramRegion)>

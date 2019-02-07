@@ -23,9 +23,14 @@ const InstagramRegion = styled(BaseInstagramRegion)`
     display: flex;
     justify-content: center;
   }
+  ${H1} {
+    @media (max-width: 958px) { font-size: 3.4rem; }
+  }
   ${H1}, ${P} {
     margin-bottom: 2rem;
     text-align: center;
+    padding-right: 10px;
+    padding-left: 10px;
   }
 `
 
