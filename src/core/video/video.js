@@ -23,16 +23,16 @@ class Video extends React.Component {
     return (
       <div>
         <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-          <video poster={desktopFallback} ref={this.setVideoRef} {...props}>
+          <video key={`${desktopFallback}-${1}`} poster={desktopFallback} ref={this.setVideoRef} {...props}>
             {sources.map((source, key) => {
               return source
             })}
-            {desktopFallback && <img src={desktopFallback} alt='Desktopu Fallback'/>}
+            {desktopFallback && <img src={desktopFallback} alt='Desktop Fallback'/>}
             {children && children}
           </video>
         </MediaQuery>
         <MediaQuery query="(max-device-width: 959px)">
-          <video poster={mobileFallback} ref={this.setVideoRef} {...props}>
+          <video key={`${mobileFallback}-${1}`} poster={mobileFallback} ref={this.setVideoRef} {...props}>
             {sources.map((source, key) => {
               return source
             })}
