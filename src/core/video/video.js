@@ -8,21 +8,32 @@ class Video extends React.Component {
   constructor (props) {
     super(props)
     this.video = null
+    this.state = {
+      videoSrc: null
+    }
   }
 
   setVideoRef = (element) => {
     this.video = element
+    if (element) {
+      this.setState({
+        videoSrc: element.children[0].src
+      })
+    }
   }
 
   componentDidMount () {
     if (this.video) {
       this.video.load()
+      this.setState({
+        videoSrc: this.video.children[0].src
+      })
       this.video.play()
     }
   }
 
-  componentDidUpdate () {
-    if (this.video) {
+  componentDidUpdate (prevProps, prevState) {
+    if (this.video && (prevState.videoSrc !== this.state.videoSrc)) {
       this.video.load()
       this.video.play()
     }
