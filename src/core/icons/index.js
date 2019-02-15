@@ -1,10 +1,13 @@
 //Icons
 export { default as BagIcon } from './BagIcon'
+export { default as BoxIcon } from './Box'
 export { default as CardIcon } from './cards/CardIcon'
 export { default as PressIcon } from './press/PressIcon'
 export { default as Chevron } from './Chevron'
 export { default as GuaranteeIcon } from './GuaranteeIcon'
 export { default as MailboxIcon } from './MailboxIcon'
+export { default as Pencil } from './Pencil'
+export { default as Phone } from './Phone'
 export { default as Ruler } from './Ruler'
 export { default as XIcon } from './XIcon'
 export * from './AIcon'
