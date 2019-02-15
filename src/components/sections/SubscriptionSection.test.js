@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import SubscriptionSection from './SubscriptionSection'
+import { SubscriptionSection } from 'SRC'
 
 const { shallowWithTheme } = global
 
@@ -15,5 +15,5 @@ describe('(Styled Component) SubscriptionSection', () => {
     expect(createSubscriptionSection())
     .toMatchSnapshot()
   })
-  
+
 })
