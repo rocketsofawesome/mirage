@@ -5,54 +5,11 @@ import { Video } from 'SRC/core/video'
 import { withSize } from 'react-sizeme'
 
 class BaseBackgroundVideo extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      currentSources: undefined
-    }
-    this.backgroundVideo = null
-  }
-
-  setResponsiveBackground = () => {
-    const { size: { width }, sources } = this.props
-    const { currentSources } = this.state
-    if (sources) {
-      const newSources = sources[Object.keys(sources)
-      .sort((keyA, keyB) => keyA-keyB)
-      .reverse()
-      .find((key) => {
-        return(key < width)
-      })]
-      if(currentSources !== newSources) {
-        this.setState({
-          currentSources: newSources
-        })
-        if (this.backgroundVideo && this.backgroundVideo.video) {
-          this.backgroundVideo.video.load()
-          this.backgroundVideo.video.play()
-        }
-      }
-    }
-  }
-
-  setVideo = (element) => {
-    this.backgroundVideo = element
-  }
-
-  componentDidMount () {
-    this.setResponsiveBackground()
-  }
-
-  componentDidUpdate() {
-    this.setResponsiveBackground()
-  }
-
   render () {
-    const { className, children, mobileFallback, desktopFallback } = this.props
-    const { currentSources } = this.state
+    const { className, children, mobileFallback, desktopFallback, sources } = this.props
     return (
       <section className={className}>
-        <Video ref={this.setVideo} sources={currentSources} mobileFallback={mobileFallback} desktopFallback={desktopFallback} />
+        <Video sources={sources} mobileFallback={mobileFallback} desktopFallback={desktopFallback} />
         <article>{children}</article>
       </section>
     )

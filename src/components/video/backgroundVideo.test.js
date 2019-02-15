@@ -31,7 +31,7 @@ describe('(Styled Component) BackgroundVideo', () => {
       createBackgroundVideo()
       .find('Video')
       .prop('sources')
-    ).toEqual(defaultProps.sources[0])
+    ).toEqual(defaultProps.sources)
   })
 
   test('passing children into article', () => {
