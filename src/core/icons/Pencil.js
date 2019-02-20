@@ -27,8 +27,7 @@ const Pencil = styled(({className}) => {
     fill: ${props => props.theme.colors.rocketBlue};
   }
   &:hover {
-    .Pencil {
-      ${props => props.animated && Wiggle}
+    ${props => props.animated && Wiggle}
   }
 `
 

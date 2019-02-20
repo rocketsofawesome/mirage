@@ -10,56 +10,65 @@ const SubscriptionSection = styled((props) => {
   const { header, details, footer } = children
   return (
     <section className={className}>
-      <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
-        <header>
-          <H1>{header.title}</H1>
-          <P>{header.content}</P>
-        </header>
-      </FlexCol>
-      {details.map((detail, index) => {
-        const Icon = detail.icon
-        return (
-          <FlexCol mobile={{width: 4}} desktop={{width: 4}}>
-            <aside>
-              {detail.icon  && <Icon animated />}
-              <H3>{detail.header}</H3>
-              <P>{detail.content}</P>
-            </aside>
-          </FlexCol>
-        )
-      })}
-      <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-        <footer>
-          <Link href={footer.link.href}>{footer.link.text}</Link>
-        </footer>
-      </FlexCol>
+      <div>
+        <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
+          <header>
+            <H1>{header.title}</H1>
+            <P dangerouslySetInnerHTML={{__html: header.content}} />
+          </header>
+        </FlexCol>
+        {details.map((detail, index) => {
+          const Icon = detail.icon
+          return (
+            <FlexCol mobile={{width: 4}} desktop={{width: 4}}>
+              <aside className='trio'>
+                {detail.icon  && <Icon animated />}
+                <H3>{detail.header}</H3>
+                <P dangerouslySetInnerHTML={{__html: detail.content}} />
+              </aside>
+            </FlexCol>
+          )
+        })}
+        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
+          <footer>
+            <H3><a href={footer.link.href}>{footer.link.text}</a></H3>
+          </footer>
+        </FlexCol>
+      </div>
     </section>
   )
 })`
-  ${FlexRow}
   background-color: ${props => props.theme.colors.lightBlue[0]};
+  display: flex;
+  justify-content: center;
+  > div {
+    ${FlexRow}
+    max-width: 144rem;
+    margin: 0 auto;
+  }
   ${H1} {
-    margin: 0 0 4rem;
+    margin: 2rem 0;
     ${props => props.theme.media.tablet`
-      margin: 0 0 6rem;
+      margin: 4rem 0;
     `}
+  }
+  ${H3} a {
+    color: ${props => props.theme.colors.navy};
+    text-decoration: none;
+    &:hover, &:visited {
+      color: ${props => props.theme.colors.navy};
+    }
   }
   * {
     text-align: center;
   }
-  > header, footer {
-    flex: 1 1 100%;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    ${props => props.theme.media.tablet`
-      margin-top: 6rem;
-      margin-bottom: 6rem;
-    `}
+  footer {
+    margin-bottom: 2rem;
   }
-  > aside {
-    margin: 0 0 4rem;
+  .trio {
+    margin: 2rem 0;
     ${props => props.theme.media.tablet`
-      margin: 0 0 6rem;
+      margin: 4rem 0;
     `}
     svg {
       max-height: 8rem;
