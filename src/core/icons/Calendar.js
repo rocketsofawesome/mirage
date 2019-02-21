@@ -45,7 +45,12 @@ const Calendar = styled(({className}) => {
 `
 
 Calendar.propTypes = {
-
+  animated: PropTypes.true,
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string
+    })
+  })
 }
 
 /** @component */

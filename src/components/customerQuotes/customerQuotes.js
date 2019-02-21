@@ -138,6 +138,7 @@ ${H3} {
 .confetti {
   display: flex;
   align-self: center
+  min-height: 15rem;
   &:first-of-type {
     order: 2;
     ${props => props.theme.media.tablet`
@@ -202,8 +203,8 @@ class BaseCustomerQuotes extends React.Component {
       const { quotes } = this.props
       this.setState({
         height: '0',
-        left: 'a',
-        right: 'a'
+        left: 'https://res.cloudinary.com/roa-canon/image/upload/v1550773588/web/transparent.png',
+        right: 'https://res.cloudinary.com/roa-canon/image/upload/v1550773588/web/transparent.png'
       })
       if ( index === quotes.length - 1) {
         this.setState({
@@ -222,7 +223,7 @@ class BaseCustomerQuotes extends React.Component {
           left: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
           right: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
         })
-      }, 0)
+      }, 1000)
     }, 8000)
   }
 }

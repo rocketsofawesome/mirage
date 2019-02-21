@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import {SubscriptionSectionProps as defaultProps} from './defaultProps'
-import { FlexRow, FlexCol, H1, H3, P, Link } from 'SRC'
+import { FlexRow, FlexCol, H1, H3, P } from 'SRC'
 
 const SubscriptionSection = styled((props) => {
   const { className, children } = props
@@ -47,10 +47,14 @@ const SubscriptionSection = styled((props) => {
     margin: 0 auto;
   }
   ${H1} {
-    margin: 2rem 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     ${props => props.theme.media.tablet`
-      margin: 4rem 0;
+      margin-top: 4rem;
     `}
+  }
+  ${H3} {
+    margin: 1rem 0;
   }
   ${H3} a {
     color: ${props => props.theme.colors.navy};
@@ -67,9 +71,6 @@ const SubscriptionSection = styled((props) => {
   }
   .trio {
     margin: 2rem 0;
-    ${props => props.theme.media.tablet`
-      margin: 4rem 0;
-    `}
     svg {
       max-height: 8rem;
     }

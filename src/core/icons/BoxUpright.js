@@ -46,7 +46,12 @@ const BoxUpright = styled(({className}) => {
 `
 
 BoxUpright.propTypes = {
-
+  animated: PropTypes.bool,
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string
+    })
+  })
 }
 
 /** @component */
