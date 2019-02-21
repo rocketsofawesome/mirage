@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) Calendar matching the snapshot 1`] = `
+.c0 path {
+  fill: #0073D1;
+}
+
+<Component
+  className="c0"
+/>
+`;

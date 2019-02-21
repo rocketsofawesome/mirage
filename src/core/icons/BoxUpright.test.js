@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import BoxUpright from 'SRC'
+import { BoxUpright } from 'SRC'
 
 const { shallowWithTheme } = global
 

@@ -2,6 +2,18 @@
 
 exports[`(Styled Component) SubscriptionSection matching the snapshot 1`] = `
 .c0 {
+  background-color: #EEFCFF;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c0 > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -12,36 +24,48 @@ exports[`(Styled Component) SubscriptionSection matching the snapshot 1`] = `
   max-width: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  background-color: #EEFCFF;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 .c0 .c1 {
-  margin: 0 0 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.c0 .c2 {
+  margin: 1rem 0;
+}
+
+.c0 .c2 a {
+  color: #00003C;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0 .c2 a:hover,
+.c0 .c2 a:visited {
+  color: #00003C;
 }
 
 .c0 * {
   text-align: center;
 }
 
-.c0 > header,
 .c0 footer {
-  -webkit-flex: 1 1 100%;
-  -ms-flex: 1 1 100%;
-  flex: 1 1 100%;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
-.c0 > aside {
-  margin: 0 0 4rem;
+.c0 .trio {
+  margin: 2rem 0;
 }
 
-.c0 > aside svg {
+.c0 .trio svg {
   max-height: 8rem;
 }
 
 @media (min-width:76.8em) {
-  .c0 {
+  .c0 > div {
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -49,21 +73,7 @@ exports[`(Styled Component) SubscriptionSection matching the snapshot 1`] = `
 
 @media (min-width:76.8em) {
   .c0 .c1 {
-    margin: 0 0 6rem;
-  }
-}
-
-@media (min-width:76.8em) {
-  .c0 > header,
-  .c0 footer {
-    margin-top: 6rem;
-    margin-bottom: 6rem;
-  }
-}
-
-@media (min-width:76.8em) {
-  .c0 > aside {
-    margin: 0 0 6rem;
+    margin-top: 4rem;
   }
 }
 
