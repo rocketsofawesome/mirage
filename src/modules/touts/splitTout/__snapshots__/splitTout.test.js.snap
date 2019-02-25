@@ -305,7 +305,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
               sourcePos={false}
               transformLinkUri={[Function]}
             >
-              <div
+              <Root
                 key="root-1-1"
               >
                 <headerRenderer
@@ -319,11 +319,17 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
                       className="c4"
                       fontSize="1.8rem"
                     >
-                      NEW ARRIVALS TO MAKE THEM JUMP, JUMP!
+                      <TextRenderer
+                        key="text-1-6"
+                        nodeKey="text-1-6"
+                        value="NEW ARRIVALS TO MAKE THEM JUMP, JUMP!"
+                      >
+                        NEW ARRIVALS TO MAKE THEM JUMP, JUMP!
+                      </TextRenderer>
                     </h4>
                   </styled.h4>
                 </headerRenderer>
-              </div>
+              </Root>
             </ReactMarkdown>
           </Component>
         </Styled(Component)>
