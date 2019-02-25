@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { withSize } from 'react-sizeme'
+require("jspolyfill-array.prototype.find")
 
 const StyledBackgroundImage = styled.section`
   position: relative;
