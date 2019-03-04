@@ -48,6 +48,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
       className="c0"
     >
       <WithTheme(Video)
+        aria-hidden={true}
         sources={
           Object {
             "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
@@ -56,6 +57,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         }
       >
         <Video
+          aria-hidden={true}
           autoPlay={true}
           loop={true}
           muted={true}
