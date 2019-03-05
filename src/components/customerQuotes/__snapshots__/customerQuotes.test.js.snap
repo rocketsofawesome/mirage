@@ -37,6 +37,18 @@ exports[`(Styled Component) CustomerQuotes matching the snapshot 1`] = `
   order: 1;
 }
 
+.c0 blockquote {
+  border: 0;
+  -webkit-clip: rect(0 0 0 0);
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 @media (min-width:76.8em) {
   .c0 {
     padding: 0 7%;
