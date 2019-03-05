@@ -71,7 +71,7 @@ class BasePressQuotes extends React.Component {
             return(
               <PressIcon
                 key={index}
-                brand={press_icon}
+                brand={press_icon.toLowerCase()}
                 selected={(press_icon === this.state.key) ? true : false}
                 onClick={this.onClick}
               />
@@ -98,10 +98,10 @@ class BasePressQuotes extends React.Component {
   }
 
   render () {
-    const { className, header, theme } = this.props
+    const { className, header, theme, quotes} = this.props
     const { quote, index } = this.state
     const topRow = ["new_york_times", "today_show", "people_magazine", "tech_crunch"]
-    const bottomRow = ["fast_company", "parents_magazine", "la_times", "new_york_post"]
+    const bottomRow = ["fast_company", "parents_magazine", "LA_times", "new_york_post"]
 
     return (
       <section className={className}>
@@ -112,6 +112,7 @@ class BasePressQuotes extends React.Component {
           <div className="quote_controller">
             <Chevron left onClick={this.onClickChevronLeft} />
             <CSSTransitionGroup
+              aria-hidden
               transitionName="quote"
               transitionEnterTimeout={500}
               transitionLeaveTimeout={1}>
@@ -131,6 +132,14 @@ class BasePressQuotes extends React.Component {
             {this.renderPressRowMobile()}
           </MediaQuery>
         </FlexCol>
+        {Object.keys(quotes).map((key) => {
+          return (
+            <blockquote>
+              {quotes[key]}
+              <cite>{key.replace(/_/g, ' ')}</cite>
+            </blockquote>
+          )
+        })}
       </section>
     )
   }
@@ -227,6 +236,16 @@ const PressQuotes = styled(BasePressQuotes)`
   }
   .quote-leave.quote-leave-active {
     opacity: 0;
+  }
+  blockquote {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 `
 
