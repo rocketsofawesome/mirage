@@ -117,6 +117,10 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   padding-right: 20px;
 }
 
+.c5 .image-link {
+  font-size: 0px;
+}
+
 .c0 {
   display: -webkit-box;
   display: -webkit-flex;
