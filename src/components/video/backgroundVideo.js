@@ -9,7 +9,11 @@ class BaseBackgroundVideo extends React.Component {
     const { className, children, mobileFallback, desktopFallback, sources } = this.props
     return (
       <section className={className}>
-        <Video sources={sources} mobileFallback={mobileFallback} desktopFallback={desktopFallback} />
+        <Video
+          sources={sources}
+          mobileFallback={mobileFallback}
+          desktopFallback={desktopFallback}
+          aria-hidden />
         <article>{children}</article>
       </section>
     )

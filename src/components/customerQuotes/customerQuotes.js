@@ -37,7 +37,7 @@ class CustomerQuote extends React.Component {
   render () {
     const { className, quote, index, left, right, height } = this.props
       return (
-        <aside className={className}>
+        <aside className={className} aria-hidden>
           <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
             <img
               style={{height: height}}
@@ -180,7 +180,7 @@ class BaseCustomerQuotes extends React.Component {
   }
 
   render () {
-    const { className, header } = this.props
+    const { className, header, quotes } = this.props
     const { index, quote, left, right, height } = this.state
     return (
       <section className={className}>
@@ -193,6 +193,16 @@ class BaseCustomerQuotes extends React.Component {
           left={left}
           right={right}
           height={height} />
+        {quotes.map((quote) => {
+          return (
+            <blockquote>
+              <p>{quote.quote}</p>
+              <cite>
+                <p>{quote.signature}</p>
+              </cite>
+            </blockquote>
+          )
+        })}
       </section>
     )
   }
@@ -251,6 +261,16 @@ const CustomerQuotes = styled(BaseCustomerQuotes)`
   }
   ${H1} {
     @media (max-width: 958px) { font-size: 3.4rem; }
+  }
+  blockquote {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
   }
 `
 
