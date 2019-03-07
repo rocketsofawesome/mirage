@@ -4,6 +4,7 @@
   "main": "./build/index.js",
   "dependencies": {
     "instafeed.js": "^1.4.1",
+    "jspolyfill-array.prototype.find": "^0.1.3",
     "prop-types": "^15.6.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -57,7 +58,6 @@
     "jest-coverage-badges": "^1.1.2",
     "jest-enzyme": "^7.0.0",
     "jest-styled-components": "^6.2.1",
-    "jspolyfill-array.prototype.find": "^0.1.3",
     "npm": "^6.4.1",
     "object-assign": "4.1.1",
     "postcss-flexbugs-fixes": "3.2.0",
