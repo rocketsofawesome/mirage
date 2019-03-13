@@ -42,6 +42,7 @@ class BaseInstagram extends React.Component {
       accessToken: accessToken,
       resolution: 'standard_resolution',
       limit: limit,
+      template: '<a class="image-link" aria-label="{{caption}}" href="{{link}}"><img src="{{image}}" aria-hidden /></a>',
       success: (args) => this.setInstragramPics(args)
     }).run()
     }
@@ -81,7 +82,7 @@ class BaseInstagram extends React.Component {
               })}
             </Slider>}
             <InlineImage className='mobileGif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
-            <div ref={this.setInstagramRef} style={{display: 'none'}} />
+            <div ref={this.setInstagramRef} style={{display: 'none'}} aria-hidden />
           </div>
         </MediaQuery>
       </div>
@@ -138,6 +139,9 @@ const Instagram = styled(BaseInstagram)`
       justify-content: center;
       padding-right: 20px;
     }
+  }
+  .image-link {
+    font-size: 0px;
   }
 `
 
