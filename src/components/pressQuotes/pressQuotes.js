@@ -10,6 +10,7 @@ import {
 } from 'SRC'
 
 import PressIcon from 'SRC/core/icons/press/PressIcon'
+import IconRow from './IconRow'
 import defaultProps from './defaultProps.js'
 
 import MediaQuery from 'react-responsive';
@@ -19,10 +20,60 @@ class BasePressQuotes extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      key: undefined,
-      quote: undefined,
-      index: undefined
+      index: 0
     }
+  }
+
+  onClick = (index) => {
+    return (() => {
+      this.setState({index: index})
+      clearInterval(this.timer)
+      this.quoteTimer()
+    })
+  }
+
+  onClickChevronLeft = () => {
+    const { quotes } = this.props
+    const { index } = this.state
+    if (index === 0) {
+      this.setState({index: (quotes.length - 1) })
+      clearInterval(this.timer)
+      this.quoteTimer((quotes.length - 1))
+    } else {
+      this.setState({index: index - 1 })
+      clearInterval(this.timer)
+      this.quoteTimer()
+    }
+  }
+
+  onClickChevronRight = () => {
+    const { index } = this.state
+    const { quotes } = this.props
+
+    if (index === (quotes.length - 1)) {
+      this.setState({index: 0})
+      clearInterval(this.timer)
+      this.quoteTimer()
+    } else {
+      this.setState({index: index + 1})
+      clearInterval(this.timer)
+      this.quoteTimer()
+    }
+  }
+
+  updateIndex = () => {
+    const { quotes } = this.props
+    const { index } = this.state
+
+    if (index === quotes.length - 1) {
+      this.setState({index: 0})
+    } else {
+      this.setState({index: index + 1})
+    }
+  }
+
+  quoteTimer = () => {
+    this.timer = setInterval(this.updateIndex, 5000)
   }
 
   componentWillUnmount () {
@@ -30,83 +81,17 @@ class BasePressQuotes extends React.Component {
   }
 
   componentWillMount () {
-    const { quotes } = this.props
+    this.setState({index: 0})
     this.quoteTimer()
-    this.setState({key: "new_york_times", quote: quotes.new_york_times, index: 0})
-  }
-
-  onClick = (press_icon) => {
-    const { quotes, order } = this.props
-    this.setState({key: press_icon, quote: quotes[press_icon], index: order.indexOf(press_icon)})
-  }
-
-  onClickChevronLeft = () => {
-    const { quotes, order } = this.props
-
-    if (this.state.index === 0) {
-      const lastIndex = this.props.order.length - 1
-      this.setState({index: lastIndex, key: order[lastIndex], quote: quotes[order[lastIndex]]})
-    } else {
-      const newIndex = this.state.index - 1
-      this.setState({index: newIndex, key: order[newIndex], quote: quotes[order[newIndex]]})
-    }
-  }
-
-  onClickChevronRight = () => {
-    const { quotes, order } = this.props
-
-    if ((this.props.order.length - 1) === this.state.index) {
-      this.setState({index: 0, key: order[0], quote: quotes[order[0]]})
-    } else {
-      const newIndex = this.state.index + 1
-      this.setState({index: newIndex, key: order[newIndex], quote: quotes[order[newIndex]]})
-    }
-  }
-
-  renderPressRow = (pressIcons) => {
-    return(
-      <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-        <div className="press_icons">
-          {pressIcons.map((press_icon, index) => {
-            return(
-              <PressIcon
-                key={index}
-                brand={press_icon.toLowerCase()}
-                selected={(press_icon === this.state.key) ? true : false}
-                onClick={this.onClick}
-              />
-            )
-          })}
-        </div>
-      </FlexCol>
-    )
-  }
-
-  renderPressRowMobile = () => {
-    const { key, index } = this.state
-    return(
-      <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-        <div className="press_icons">
-          <PressIcon
-            key={index}
-            brand={key}
-            selected={true}
-          />
-        </div>
-      </FlexCol>
-    )
   }
 
   render () {
-    const { className, header, theme, quotes} = this.props
-    const { quote, index } = this.state
-    const topRow = ["new_york_times", "today_show", "people_magazine", "tech_crunch"]
-    const bottomRow = ["fast_company", "parents_magazine", "LA_times", "new_york_post"]
-
+    const { className, header, headerLabel, theme, quotes} = this.props
+    const { index } = this.state
     return (
       <section className={className}>
         <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-          <H1>{header}</H1>
+          <H1 aria-label={headerLabel}>{header}</H1>
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <div className="quote_controller">
@@ -116,47 +101,37 @@ class BasePressQuotes extends React.Component {
               transitionName="quote"
               transitionEnterTimeout={500}
               transitionLeaveTimeout={1}>
-              <H2 lowercase key={index}>{quote}</H2>
+              <H2 lowercase key={index}>{quotes[index].quote}</H2>
             </CSSTransitionGroup>
             <Chevron right onClick={this.onClickChevronRight} />
           </div>
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-            {this.renderPressRow(topRow)}
-            {this.renderPressRow(bottomRow)}
+            <IconRow
+              quotes={quotes}
+              onClick={this.onClick}
+              selected={index} />
           </MediaQuery>
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <MediaQuery query="(max-device-width: 959px)">
-            {this.renderPressRowMobile()}
+            <PressIcon
+              key={index}
+              brand={quotes[index].id}
+              selected={true} />
           </MediaQuery>
         </FlexCol>
-        {Object.keys(quotes).map((key) => {
+        {quotes.map(({quote, name}, index) => {
           return (
-            <blockquote>
-              {quotes[key]}
-              <cite>{key.replace(/_/g, ' ')}</cite>
+            <blockquote key={index}>
+              {quote}
+              <cite>{name}</cite>
             </blockquote>
           )
         })}
       </section>
     )
-  }
-
-  quoteTimer = () => {
-    this.timer = setInterval(() => {
-      const { index } = this.state
-      const { quotes, order } = this.props
-      const lastIndex = this.props.order.length - 1
-
-      if (index === lastIndex) {
-        this.setState({index: 0, key: order[0], quote: quotes[order[0]]})
-      } else {
-        const newIndex = this.state.index + 1
-        this.setState({index: newIndex, key: order[newIndex], quote: quotes[order[newIndex]]})
-      }
-    }, 5000)
   }
 }
 
@@ -187,9 +162,10 @@ const PressQuotes = styled(BasePressQuotes)`
     font-style: italic;
   }
   ${Chevron} {
-    width: 24px;
-    height: 24px;
-    stroke-width: 7px;
+    flex-basis: 2.4rem;
+    min-width: 2.4rem;
+    height: 2.4rem;
+    stroke-width: .7rem;
   }
   ${PressIcon} {
     max-height: 4.5rem;
@@ -203,8 +179,10 @@ const PressQuotes = styled(BasePressQuotes)`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 12rem;
+    min-height: 14rem;
     max-height: 45rem;
+    position: relative
+    width: 100%;
   }
   .press_icons {
     display: flex;

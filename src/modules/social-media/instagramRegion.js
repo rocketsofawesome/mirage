@@ -4,10 +4,10 @@ import styled from 'styled-components'
 import { H1, P, Instagram } from 'SRC'
 import defaultProps from './defaultProps'
 
-const BaseInstagramRegion = ({className, content, title})  => {
+const BaseInstagramRegion = ({className, ariaLabel, content, title})  => {
   return (
     <section className={className}>
-      <H1>{title}</H1>
+      <H1 aria-label={ariaLabel}>{title}</H1>
       <P>{content}</P>
       <Instagram />
     </section>
@@ -35,6 +35,7 @@ const InstagramRegion = styled(BaseInstagramRegion)`
 `
 
 InstagramRegion.propTypes = {
+  ariaLabel: PropTypes.string,
   className: PropTypes.string,
   content: PropTypes.oneOfType([
     PropTypes.array,
