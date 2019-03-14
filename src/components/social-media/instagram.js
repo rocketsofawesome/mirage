@@ -69,7 +69,7 @@ class BaseInstagram extends React.Component {
       <div className={className}>
         <MediaQuery query={theme.breakpoints.aboveTabletMax}>
           <section className='desktopContainer' ref={this.setInstagramRef}>
-            <InlineImage className='gif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
+            <InlineImage aria-hidden className='gif' src='https://res.cloudinary.com/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
           </section>
         </MediaQuery>
         <MediaQuery query="(max-device-width: 959px)">
