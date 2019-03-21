@@ -46,8 +46,8 @@ const FlexCol = styled(({ className, children, ...props}) => {
       padding-right: 0;
     `
     : `
-      padding-left: 5px;
-      padding-right: 5px;
+      padding-left: ${props.gutter || '5px'};
+      padding-right: ${props.gutter || '5px'};
     `
   }
 

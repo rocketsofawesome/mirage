@@ -38,14 +38,14 @@ class CustomerQuote extends React.Component {
     const { className, quote, index, left, right, height } = this.props
       return (
         <aside className={className} aria-hidden>
-          <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
+          <FlexCol key='cutsomerQuoteLeftConfetti' mobile={{width: 2}} desktop={{width: 3}}>
             <img
               style={{height: height}}
               alt='confetti'
               className='confetti'
               src={left} />
           </FlexCol>
-          <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
+          <FlexCol key='cutsomeQuoteBody' mobile={{width: 4}} desktop={{width: 6}}>
               <CSSTransitionGroup
                 className='quote'
                 transitionName='fader'
@@ -59,7 +59,7 @@ class CustomerQuote extends React.Component {
                   }
               </CSSTransitionGroup>
           </FlexCol>
-          <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
+          <FlexCol key='cutsomerQuoteRightConfetti' mobile={{width: 2}} desktop={{width: 3}}>
               <img
                 style={{height: height}}
                 alt='confetti'
@@ -184,25 +184,27 @@ class BaseCustomerQuotes extends React.Component {
     const { index, quote, left, right, height } = this.state
     return (
       <section className={className}>
-        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-          <H1>{header}</H1>
-        </FlexCol>
-        <StyledCustomerQuote
-          quote={quote}
-          index={index}
-          left={left}
-          right={right}
-          height={height} />
-        {quotes.map((quote) => {
-          return (
-            <blockquote>
-              <p>{quote.quote}</p>
-              <cite>
-                <p>{quote.signature}</p>
-              </cite>
-            </blockquote>
-          )
-        })}
+        <FlexRow align='flex-start'>
+          <FlexCol key='customerQuoteHeader' mobile={{width: 4}} desktop={{width: 12}}>
+            <H1>{header}</H1>
+          </FlexCol>
+          <StyledCustomerQuote
+            quote={quote}
+            index={index}
+            left={left}
+            right={right}
+            height={height} />
+          {quotes.map((quote, i) => {
+            return (
+              <blockquote key={`customerQuoteBlock-${i}`}>
+                <p>{quote.quote}</p>
+                <cite>
+                  <p>{quote.signature}</p>
+                </cite>
+              </blockquote>
+            )
+          })}
+        </FlexRow>
       </section>
     )
   }
@@ -239,10 +241,8 @@ class BaseCustomerQuotes extends React.Component {
 }
 
 const CustomerQuotes = styled(BaseCustomerQuotes)`
-  ${FlexRow}
   margin-top: 4rem;
   margin-bottom: 2rem;
-  align-items: flex-start;
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-import { css } from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const constrained = css`
   max-width: 1440px;
@@ -23,11 +23,12 @@ const padding = css`
   `}
 `
 
-const FlexRow = css`
+const FlexRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   ${props => props.constrained ? constrained : notConstrained}
   ${props => props.padding && padding}
+  align-items: ${props => props.align || 'stretch'}
 `
 
 FlexRow.propTypes = {
