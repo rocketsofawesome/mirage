@@ -80,18 +80,18 @@ const BaseFooter = ({
           <FlexRow constrained className='socialLinks'>
             <FlexCol gutter='15px' mobile={{width: 4}} desktop={{width: 12}}>
               <div>
-                <WhiteLink light href={LINKS['instagram']} target='_blank'>
+                <a href={LINKS['instagram']} target='_blank'>
                   <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/instagram.png' alt='instagram' />
-                </WhiteLink>
-                <WhiteLink light href={LINKS['facebook']} target='_blank'>
+                </a>
+                <a href={LINKS['facebook']} target='_blank'>
                   <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/facebook.png' alt='facebook' />
-                </WhiteLink>
-                <WhiteLink light href={LINKS['twitter']} target='_blank'>
+                </a>
+                <a href={LINKS['twitter']} target='_blank'>
                   <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/twitter.png' alt='twitter' />
-                </WhiteLink>
-                <WhiteLink light href={LINKS['snapchat']} target='_blank'>
+                </a>
+                <a href={LINKS['snapchat']} target='_blank'>
                   <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/snapchat.png' alt='snapchat' />
-                </WhiteLink>
+                </a>
               </div>
             </FlexCol>
           </FlexRow>
@@ -120,7 +120,7 @@ const BaseFooter = ({
 
       <FlexRow constrained>
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
-          <P fontSize='1em'>© {new Date().getFullYear()} Rockets of Awesome. All Rights Reserved</P>
+          <P fontSize='1.4rem'>© {new Date().getFullYear()} Rockets of Awesome. All Rights Reserved</P>
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
           <div className='commonLinks'>
@@ -139,7 +139,7 @@ const Footer = styled(BaseFooter)`
   padding: 30px 0px 25px;
   color: ${props => props.theme.colors.white};
   font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 1.4em;
+  font-size: 1.4rem;
 
   .socialLinks {
     margin-top: 20px;
