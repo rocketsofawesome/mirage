@@ -14,16 +14,6 @@ exports[`(Styled Component) SubscriptionSection matching the snapshot 1`] = `
 }
 
 .c0 > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  max-width: 100%;
-  margin-left: 10px;
-  margin-right: 10px;
   max-width: 144rem;
   margin: 0 auto;
 }
@@ -62,13 +52,6 @@ exports[`(Styled Component) SubscriptionSection matching the snapshot 1`] = `
 
 .c0 .trio svg {
   max-height: 8rem;
-}
-
-@media (min-width:76.8em) {
-  .c0 > div {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
 }
 
 @media (min-width:76.8em) {

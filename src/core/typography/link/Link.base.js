@@ -12,7 +12,7 @@ border-bottom-color: transparent;
 
 font-family: ${props => props.theme.fonts.primaryFont};
 font-size: 1.4rem;
-font-weight: 500;
+font-weight: ${props => props.light ? '300' : '500'};
 &:hover {
   text-decoration: none;
 
@@ -25,6 +25,7 @@ const BaseLink = styled.a`
 `
 
 BaseLink.propTypes = {
+  light: PropTypes.bool,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string

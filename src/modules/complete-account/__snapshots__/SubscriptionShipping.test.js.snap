@@ -2,7 +2,6 @@
 
 exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
 .c4 {
-  text-align: left;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -190,7 +189,6 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
 
 exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
 .c5 {
-  text-align: left;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
