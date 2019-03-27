@@ -15,7 +15,6 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 }
 
 .c4 {
-  text-align: left;
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -164,10 +163,12 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
 }
 
 <Styled(BaseInstagramRegion)
+  ariaLabel="Find us @ rockets of awesome"
   content="This is the example content"
   title="Example Title"
 >
   <BaseInstagramRegion
+    ariaLabel="Find us @ rockets of awesome"
     className="c0"
     content="This is the example content"
     title="Example Title"
@@ -176,9 +177,11 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
       className="c0"
     >
       <styled.h1
+        aria-label="Find us @ rockets of awesome"
         fontSize="4.2rem"
       >
         <h1
+          aria-label="Find us @ rockets of awesome"
           className="c1 c2"
           fontSize="4.2rem"
         >
