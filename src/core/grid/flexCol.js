@@ -20,18 +20,6 @@ const spanner = (props, breakpoint) => {
 
 const FlexCol = styled(({ element, children, ...props}) => {
   return React.createElement(element, props, children)
-  // if(Array.isArray(children)) {
-  //   return children.map((child, index) => {
-  //     return React.cloneElement(child, {
-  //       className: `${child.props.className ? `${child.props.className} ` : ``}${className}`,
-  //       key: index
-  //     })
-  //   })
-  // } else {
-  //   return React.cloneElement(children, {
-  //     className: `${children.props.className ? `${children.props.className} ` : ``}${className}`
-  //   })
-  // }
 })`
   box-sizing: border-box;
   max-width: ${props => props.mobile.nested
