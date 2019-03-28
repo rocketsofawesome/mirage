@@ -15,8 +15,7 @@ const BaseAboutUs = ({className, header, sections, footer, ...props}) => {
     <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
       <H1>{header}</H1>
     </FlexCol>
-    <FlexCol mobile={{width: 4}} desktop={{width: 10, span: 1}}>
-      <div className={'flexDiv'}>
+    <FlexCol className='flexDiv' mobile={{width: 4}} desktop={{width: 10, span: 1}}>
         {
           sections.map((section, i) => {
             return (
@@ -29,7 +28,6 @@ const BaseAboutUs = ({className, header, sections, footer, ...props}) => {
             )
           })
         }
-      </div>
     </FlexCol>
     <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
       <H2>{footer}</H2>

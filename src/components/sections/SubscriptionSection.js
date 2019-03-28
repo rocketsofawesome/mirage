@@ -10,31 +10,40 @@ const SubscriptionSection = styled((props) => {
   const { header, details, footer } = children
   return (
     <section className={className}>
-      <div>
-        <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
-          <header>
-            <H1>{header.title}</H1>
-            <P dangerouslySetInnerHTML={{__html: header.content}} />
-          </header>
+      <FlexRow>
+        <FlexCol
+          element='header'
+          key='SubscriptionSectionHeader'
+          mobile={{width: 4}}
+          desktop={{width: 8, span: 2}}>
+          <H1>{header.title}</H1>
+          <P dangerouslySetInnerHTML={{__html: header.content}} />
         </FlexCol>
         {details.map((detail, index) => {
           const Icon = detail.icon
           return (
-            <FlexCol mobile={{width: 4}} desktop={{width: 4}}>
-              <aside className='trio'>
-                {detail.icon  && <Icon animated />}
-                <H3>{detail.header}</H3>
-                <P dangerouslySetInnerHTML={{__html: detail.content}} />
-              </aside>
+            <FlexCol
+              element='aside'
+              className='trio'
+              key={`SubscriptionSectionBody-${index}`}
+              mobile={{width: 4}}
+              desktop={{width: 4}}>
+              {detail.icon  && <Icon animated />}
+              <H3>{detail.header}</H3>
+              <P dangerouslySetInnerHTML={{__html: detail.content}} />
             </FlexCol>
           )
         })}
-        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-          <footer>
-            <H3><a href={footer.link.href}>{footer.link.text}</a></H3>
-          </footer>
+        <FlexCol
+          element='footer'
+          key='SubscriptionSectionFooter'
+          mobile={{width: 4}}
+          desktop={{width: 12}}>
+          <H3>
+            <a href={footer.link.href}>{footer.link.text}</a>
+          </H3>
         </FlexCol>
-      </div>
+      </FlexRow>
     </section>
   )
 })`

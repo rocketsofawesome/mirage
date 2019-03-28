@@ -18,19 +18,20 @@ const spanner = (props, breakpoint) => {
   }
 }
 
-const FlexCol = styled(({ className, children, ...props}) => {
-  if(Array.isArray(children)) {
-    return children.map((child, index) => {
-      return React.cloneElement(child, {
-        className: `${child.props.className ? `${child.props.className} ` : ``}${className}`,
-        key: index
-      })
-    })
-  } else {
-    return React.cloneElement(children, {
-      className: `${children.props.className ? `${children.props.className} ` : ``}${className}`
-    })
-  }
+const FlexCol = styled(({ element, children, ...props}) => {
+  return React.createElement(element, props, children)
+  // if(Array.isArray(children)) {
+  //   return children.map((child, index) => {
+  //     return React.cloneElement(child, {
+  //       className: `${child.props.className ? `${child.props.className} ` : ``}${className}`,
+  //       key: index
+  //     })
+  //   })
+  // } else {
+  //   return React.cloneElement(children, {
+  //     className: `${children.props.className ? `${children.props.className} ` : ``}${className}`
+  //   })
+  // }
 })`
   box-sizing: border-box;
   max-width: ${props => props.mobile.nested
@@ -64,6 +65,10 @@ const FlexCol = styled(({ className, children, ...props}) => {
 `
 
 FlexCol.propTypes = {
+  element: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]),
   children: PropTypes.node.isRequired,
   mobile: PropTypes.shape({
     width: PropTypes.number.isRequired,
@@ -78,6 +83,7 @@ FlexCol.propTypes = {
 }
 
 FlexCol.defaultProps = {
+  element: 'div',
   mobile: {
     width: 4
   },

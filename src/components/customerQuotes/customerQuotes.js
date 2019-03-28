@@ -37,17 +37,21 @@ class CustomerQuote extends React.Component {
   render () {
     const { className, quote, index, left, right, height } = this.props
       return (
-        <aside className={className} aria-hidden>
-          <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
-            <img
-              style={{height: height}}
-              alt='confetti'
-              className='confetti'
-              src={left} />
-          </FlexCol>
-          <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
+        <FlexRow
+          constrained
+          element='aside'
+          className={className}
+          aria-hidden>
+          <FlexCol
+            element='img'
+            key='cutsomerQuoteLeftConfetti'
+            mobile={{width: 2}}
+            desktop={{width: 3}}
+            alt='confetti'
+            className='confetti'
+            src={left} />
+          <FlexCol className='quote' key='cutsomeQuoteBody' mobile={{width: 4}} desktop={{width: 6}}>
               <CSSTransitionGroup
-                className='quote'
                 transitionName='fader'
                 transitionEnterTimeout={3000}
                 transitionLeaveTimeout={3000}>
@@ -59,14 +63,15 @@ class CustomerQuote extends React.Component {
                   }
               </CSSTransitionGroup>
           </FlexCol>
-          <FlexCol mobile={{width: 2}} desktop={{width: 3}}>
-              <img
-                style={{height: height}}
-                alt='confetti'
-                className='confetti'
-                src={right} />
-          </FlexCol>
-        </aside>
+          <FlexCol
+            element='img'
+            key='cutsomerQuoteRightConfetti'
+            mobile={{width: 2}}
+            desktop={{width: 3}}
+            alt='confetti'
+            className='confetti'
+            src={right} />
+        </FlexRow>
       )
   }
 
@@ -159,7 +164,6 @@ class BaseCustomerQuotes extends React.Component {
     super(props)
     this.state = {
       index: 0,
-      height: 'auto',
       left: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
       right: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
       quote: {
@@ -183,8 +187,11 @@ class BaseCustomerQuotes extends React.Component {
     const { className, header, quotes } = this.props
     const { index, quote, left, right, height } = this.state
     return (
-      <section className={className}>
-        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
+      <FlexRow
+        element='section'
+        className={className}
+        align='flex-start'>
+        <FlexCol key='customerQuoteHeader' mobile={{width: 4}} desktop={{width: 12}}>
           <H1>{header}</H1>
         </FlexCol>
         <StyledCustomerQuote
@@ -193,9 +200,9 @@ class BaseCustomerQuotes extends React.Component {
           left={left}
           right={right}
           height={height} />
-        {quotes.map((quote) => {
+        {quotes.map((quote, i) => {
           return (
-            <blockquote>
+            <blockquote key={`customerQuoteBlock-${i}`}>
               <p>{quote.quote}</p>
               <cite>
                 <p>{quote.signature}</p>
@@ -203,7 +210,7 @@ class BaseCustomerQuotes extends React.Component {
             </blockquote>
           )
         })}
-      </section>
+      </FlexRow>
     )
   }
 

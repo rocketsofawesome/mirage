@@ -89,12 +89,14 @@ class BasePressQuotes extends React.Component {
     const { className, header, headerLabel, theme, quotes} = this.props
     const { index } = this.state
     return (
-      <section className={className}>
+      <FlexRow constrained element='section' className={className}>
         <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
           <H1 aria-label={headerLabel}>{header}</H1>
         </FlexCol>
-        <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-          <div className="quote_controller">
+        <FlexCol
+          className="quote_controller"
+          mobile={{width: 4}}
+          desktop={{span: 1, width: 10}}>
             <Chevron left onClick={this.onClickChevronLeft} />
             <CSSTransitionGroup
               aria-hidden
@@ -104,7 +106,6 @@ class BasePressQuotes extends React.Component {
               <H2 lowercase key={index}>{quotes[index].quote}</H2>
             </CSSTransitionGroup>
             <Chevron right onClick={this.onClickChevronRight} />
-          </div>
         </FlexCol>
         <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
           <MediaQuery query={theme.breakpoints.aboveTabletMax}>
@@ -130,7 +131,7 @@ class BasePressQuotes extends React.Component {
             </blockquote>
           )
         })}
-      </section>
+      </FlexRow>
     )
   }
 }
