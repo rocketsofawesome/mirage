@@ -246,10 +246,8 @@ class BaseCustomerQuotes extends React.Component {
 }
 
 const CustomerQuotes = styled(BaseCustomerQuotes)`
-  ${FlexRow}
   margin-top: 4rem;
   margin-bottom: 2rem;
-  align-items: flex-start;
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}

@@ -90,7 +90,11 @@ const BaseFooter = ({
         </FlexRow>
       </FlexCol>
       {isSubscriptionMember &&
-        <FlexCol className='referrals' gutter='15px' mobile={{width: 4}} desktop={{width: 4, span: 1}}>
+        <FlexCol
+          className='referrals'
+          gutter='15px'
+          mobile={{width: 4}}
+          desktop={{width: 4, span: 1}}>
             <H2>TELL A FRIEND, GET ${referralAmount}</H2>
             <P>
               Get ${referralAmount} when your friend makes their <br />
@@ -112,7 +116,10 @@ const BaseFooter = ({
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
           <P fontSize='1.4rem'>© {new Date().getFullYear()} Rockets of Awesome. All Rights Reserved</P>
         </FlexCol>
-        <FlexCol className='commonLinks' mobile={{width: 4}} desktop={{width: 6}}>
+        <FlexCol
+          className='commonLinks'
+          mobile={{width: 4}}
+          desktop={{width: 6}}>
           <WhiteLink light href={`${homepageUrl}/terms`} target='_blank'>Terms &amp; Conditions</WhiteLink>
           <WhiteLink light href={`${homepageUrl}/privacy`} target='_blank'>Privacy Policy</WhiteLink>
           <WhiteLink light href={`${homepageUrl}/accessibility`} target='_blank'>Accessibility</WhiteLink>

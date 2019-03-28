@@ -42,8 +42,8 @@ exports[`(Styled Component) DefaultSection matching the snapshot 1`] = `
 }
 
 @media (min-width:76.8em) {
-  .c0 .sc-uJMKN,
-  .c0 .sc-kTUwUJ {
+  .c0 .sc-bbmXgH,
+  .c0 .sc-dfVpRl {
     margin: 0 2rem;
   }
 }

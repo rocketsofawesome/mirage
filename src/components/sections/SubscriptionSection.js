@@ -51,7 +51,6 @@ const SubscriptionSection = styled((props) => {
   display: flex;
   justify-content: center;
   > div {
-    ${FlexRow}
     max-width: 144rem;
     margin: 0 auto;
   }
