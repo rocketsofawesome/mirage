@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
@@ -23,7 +24,10 @@ const padding = css`
   `}
 `
 
-const FlexRow = styled.div`
+const FlexRow = styled(({ children, element, ...props }) => {
+  return React.createElement(element, props, children)
+})`
+  flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
   ${props => props.constrained ? constrained : notConstrained}
@@ -32,9 +36,16 @@ const FlexRow = styled.div`
 `
 
 FlexRow.propTypes = {
+  element: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.object
+  ]),
   constrained: PropTypes.bool,
   padding: PropTypes.bool
 }
 
+FlexRow.defaultProps = {
+  element: 'div'
+}
 /** @component */
 export default FlexRow
