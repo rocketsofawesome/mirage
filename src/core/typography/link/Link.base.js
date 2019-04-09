@@ -1,3 +1,4 @@
+import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
@@ -20,7 +21,16 @@ font-weight: ${props => props.light ? '300' : '500'};
 }
 `
 
-const BaseLink = styled.a`
+const BaseLink = styled(({ renderLink, ...props }) => {
+  delete props.light
+  delete props.uppercase
+  delete props.underline
+  if (renderLink) {
+    return renderLink(props)
+  } else {
+    return (<a {...props} />)
+  }
+})`
   ${baseLinkStyles}
 `
 
@@ -31,7 +41,8 @@ BaseLink.propTypes = {
       primaryFont: PropTypes.string
     })
   }),
-  uppercase: PropTypes.bool.isRequired
+  uppercase: PropTypes.bool.isRequired,
+  underline: PropTypes.bool
 }
 
 BaseLink.defaultProps = {

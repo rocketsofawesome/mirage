@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes, css } from 'styled-components'
 
-const UnstyledBaseLogo = ({className}) => {
+const UnstyledBaseLogo = ({className, ...props}) => {
   return (
-      <svg className={className} viewBox='0 0 492 60'>
+      <svg className={className} viewBox='0 0 492 60' {...props}>
         <path className='letter letter-r' d='M52.6,39.4l-4.1-8.1h-3.6v8.1H42V20.2h7.5c3.6,0,6,2.4,6,5.6c0.1,2.4-1.5,4.5-3.8,5.1l4.4,8.5L52.6,39.4z
           M49.2,22.8h-4.3v6h4.3c2,0,3.3-1.1,3.3-3C52.5,24,51.2,22.8,49.2,22.8z'/>
         <path className='letter letter-o' d='M78,37.7c-2.8,2.8-7.3,2.8-10.1,0c-1.9-1.9-1.8-4-1.8-7.7c0-3.7,0-5.8,1.8-7.8c2.8-2.8,7.3-2.8,10.1,0

@@ -10,7 +10,8 @@ const BaseBagIcon = ({ className, count}) => {
       {count &&
         <g>
           <circle cx='13' cy='6' r='6'/>
-          <text x='12.75' y='7' alignmentBaseline='middle' textAnchor='middle'>{count}</text>
+          <text x='0' y='0' className='screenReader'>{`${count} items currently added`}</text>
+          <text x='12.75' y='7' alignmentBaseline='middle' textAnchor='middle' aria-hidden>{count}</text>
         </g>
       }
     </svg>
@@ -33,6 +34,9 @@ const BagIcon = styled(BaseBagIcon)`
     font-family: ${props => props.theme.fonts.primaryFont};
     font-size: .8rem;
     font-weight: 500;
+  }
+  .screenReader{
+    font-size: 0;
   }
 `
 

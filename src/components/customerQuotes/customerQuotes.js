@@ -187,6 +187,31 @@ class BaseCustomerQuotes extends React.Component {
     const { className, header, quotes } = this.props
     const { index, quote, left, right, height } = this.state
     return (
+<<<<<<< HEAD
+      <section className={className}>
+        <FlexRow align='flex-start'>
+          <FlexCol key='customerQuoteHeader' mobile={{width: 4}} desktop={{width: 12}}>
+            <H1>{header}</H1>
+          </FlexCol>
+          <StyledCustomerQuote
+            quote={quote}
+            index={index}
+            left={left}
+            right={right}
+            height={height} />
+          {quotes.map((quote, i) => {
+            return (
+              <blockquote key={`customerQuoteBlock-${i}`}>
+                <p>{quote.quote}</p>
+                <cite>
+                  <p>{quote.signature}</p>
+                </cite>
+              </blockquote>
+            )
+          })}
+        </FlexRow>
+      </section>
+=======
       <FlexRow
         element='section'
         className={className}
@@ -211,6 +236,7 @@ class BaseCustomerQuotes extends React.Component {
           )
         })}
       </FlexRow>
+>>>>>>> 6a5368bbaf19... Tweaking FlexRow and FlexCol
     )
   }
 

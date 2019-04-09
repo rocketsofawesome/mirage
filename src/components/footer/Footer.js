@@ -23,6 +23,85 @@ const BaseFooter = ({
   <footer className={className} id='global-footer'>
     <FlexRow constrained>
       <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
+<<<<<<< HEAD
+        <div>
+          <FlexRow constrained>
+            <FlexCol gutter='15px' mobile={{width: 2}} desktop={{width: 3}}>
+              <div>
+                <H5>MORE</H5>
+                <ul>
+                {isNotSubscriber &&
+                  <li>
+                    <WhiteLink light href={`${homepageUrl}?view=subscribe`}>Subscribe + Save</WhiteLink>
+                  </li>
+                }
+                <li>
+                  <WhiteLink light href={homepageUrl + '/about'} target='_blank'>About Us</WhiteLink>
+                </li>
+                <li>
+                  <WhiteLink light href='https://news.rocketsofawesome.com/' target='_blank'>The Awesome News</WhiteLink>
+                </li>
+                <li>
+                  <WhiteLink light href='https://rocketsofawesome.recruiterbox.com/' target='_blank'>Careers</WhiteLink>
+                </li>
+                </ul>
+              </div>
+            </FlexCol>
+            <FlexCol gutter='15px' mobile={{width: 2}} desktop={{width: 3}}>
+              <div>
+                <H5>SUPPORT</H5>
+                <ul>
+                  <li>
+                    <WhiteLink light href={LINKS['faq']} target='_blank'>FAQ</WhiteLink>
+                  </li>
+                  <li>
+                    <WhiteLink light href={LINKS['faq']} target='_blank'>Help</WhiteLink>
+                  </li>
+                </ul>
+              </div>
+            </FlexCol>
+
+            <FlexCol gutter='15px' mobile={{width: 4}} desktop={{width: 6}}>
+              <div>
+                <div className='mobileSeparator' />
+                <H5>CUSTOMER SERVICE</H5>
+                <ul>
+                  <li>
+                    <WhiteLink light href='tel:+1-877-ROCKETS'>1-877-ROCKETS </WhiteLink>
+                    <span>&nbsp;&nbsp;[9am-5pm ET]</span>
+                  </li>
+                  <li>
+                    <WhiteLink light href='mailto:help@rocketsofawesome.com'>help@rocketsofawesome.com</WhiteLink>
+                  </li>
+                </ul>
+                <div className='mobileSeparator' />
+              </div>
+            </FlexCol>
+          </FlexRow>
+          <FlexRow constrained className='socialLinks'>
+            <FlexCol gutter='15px' mobile={{width: 4}} desktop={{width: 12}}>
+              <div>
+                <a href={LINKS['instagram']} target='_blank'>
+                  <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/instagram.png' alt='instagram' />
+                </a>
+                <a href={LINKS['facebook']} target='_blank'>
+                  <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/facebook.png' alt='facebook' />
+                </a>
+                <a href={LINKS['twitter']} target='_blank'>
+                  <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/twitter.png' alt='twitter' />
+                </a>
+                <a href={LINKS['snapchat']} target='_blank'>
+                  <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/snapchat.png' alt='snapchat' />
+                </a>
+              </div>
+            </FlexCol>
+          </FlexRow>
+        </div>
+      </FlexCol>
+      {isSubscriptionMember &&
+        <FlexCol gutter='15px' mobile={{width: 4}} desktop={{width: 4, span: 1}}>
+          <div className='referrals'>
+=======
         <FlexRow constrained>
           <FlexCol gutter='15px' mobile={{width: 2}} desktop={{width: 3}}>
             <H5>MORE</H5>
@@ -90,11 +169,8 @@ const BaseFooter = ({
         </FlexRow>
       </FlexCol>
       {isSubscriptionMember &&
-        <FlexCol
-          className='referrals'
-          gutter='15px'
-          mobile={{width: 4}}
-          desktop={{width: 4, span: 1}}>
+        <FlexCol className='referrals' gutter='15px' mobile={{width: 4}} desktop={{width: 4, span: 1}}>
+>>>>>>> 6a5368bbaf19... Tweaking FlexRow and FlexCol
             <H2>TELL A FRIEND, GET ${referralAmount}</H2>
             <P>
               Get ${referralAmount} when your friend makes their <br />
@@ -105,6 +181,10 @@ const BaseFooter = ({
                 GET ${referralAmount}
               </PinkButtonLink>
             </div>
+<<<<<<< HEAD
+          </div>
+=======
+>>>>>>> 6a5368bbaf19... Tweaking FlexRow and FlexCol
         </FlexCol>
       }
     </FlexRow>
@@ -116,13 +196,19 @@ const BaseFooter = ({
         <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
           <P fontSize='1.4rem'>© {new Date().getFullYear()} Rockets of Awesome. All Rights Reserved</P>
         </FlexCol>
-        <FlexCol
-          className='commonLinks'
-          mobile={{width: 4}}
-          desktop={{width: 6}}>
+<<<<<<< HEAD
+        <FlexCol mobile={{width: 4}} desktop={{width: 6}}>
+          <div className='commonLinks'>
+            <WhiteLink light href={`${homepageUrl}/terms`} target='_blank'>Terms &amp; Conditions</WhiteLink>
+            <WhiteLink light href={`${homepageUrl}/privacy`} target='_blank'>Privacy Policy</WhiteLink>
+            <WhiteLink light href={`${homepageUrl}/accessibility`} target='_blank'>Accessibility</WhiteLink>
+          </div>
+=======
+        <FlexCol className='commonLinks' mobile={{width: 4}} desktop={{width: 6}}>
           <WhiteLink light href={`${homepageUrl}/terms`} target='_blank'>Terms &amp; Conditions</WhiteLink>
           <WhiteLink light href={`${homepageUrl}/privacy`} target='_blank'>Privacy Policy</WhiteLink>
           <WhiteLink light href={`${homepageUrl}/accessibility`} target='_blank'>Accessibility</WhiteLink>
+>>>>>>> 6a5368bbaf19... Tweaking FlexRow and FlexCol
         </FlexCol>
       </FlexRow>
     </div>

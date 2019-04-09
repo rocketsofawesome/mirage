@@ -89,10 +89,7 @@ class BasePressQuotes extends React.Component {
     const { className, header, headerLabel, theme, quotes} = this.props
     const { index } = this.state
     return (
-      <FlexRow
-        constrained
-        element='section'
-        className={className}>
+      <FlexRow constrained element='section' className={className}>
         <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
           <H1 aria-label={headerLabel}>{header}</H1>
         </FlexCol>

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled component) DesktopHeader matching the snapshot 1`] = `
+.c0 {
+  background-color: #FFFFFF;
+  min-height: 6rem;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+<header
+  className="c0"
+/>
+`;
