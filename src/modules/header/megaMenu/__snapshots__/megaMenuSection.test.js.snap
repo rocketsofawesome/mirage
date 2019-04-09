@@ -1,0 +1,866 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
+.c3 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: initial;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.c3:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.c2 {
+  color: #00003C;
+}
+
+.c2:active,
+.c2:focus,
+.c2:hover,
+.c2:visited {
+  color: #00003C;
+}
+
+.c1 {
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1;
+}
+
+.c0 {
+  padding-left: 0;
+}
+
+.c0 > li {
+  list-style: none;
+}
+
+<Styled(BaseMegaMenuSection)
+  clearMenuImage={[Function]}
+  section={
+    Object {
+      "id": "category",
+      "links": Array [
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+          "target": "#",
+          "text": "Shop New",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+          "target": "#",
+          "text": "Best Sellers",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+          "target": "#",
+          "text": "Graphics Shop",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+          "target": "#",
+          "text": "Tees & Tops",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+          "target": "#",
+          "text": "Sweatshirts",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+          "target": "#",
+          "text": "Dresses & Skirts",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+          "target": "#",
+          "text": "Leggings & Sweatpants",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+          "target": "#",
+          "text": "Active",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+          "target": "#",
+          "text": "Outerwear",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+          "target": "#",
+          "text": "Swim",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+          "target": "#",
+          "text": "Accessories",
+        },
+        Object {
+          "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+          "target": "#",
+          "text": "Shop All",
+        },
+      ],
+      "title": "Shop by Category",
+    }
+  }
+  setMenuImage={[Function]}
+>
+  <BaseMegaMenuSection
+    className="c0"
+    clearMenuImage={[Function]}
+    section={
+      Object {
+        "id": "category",
+        "links": Array [
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+            "target": "#",
+            "text": "Shop New",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+            "target": "#",
+            "text": "Best Sellers",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+            "target": "#",
+            "text": "Graphics Shop",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+            "target": "#",
+            "text": "Tees & Tops",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+            "target": "#",
+            "text": "Sweatshirts",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+            "target": "#",
+            "text": "Dresses & Skirts",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+            "target": "#",
+            "text": "Leggings & Sweatpants",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+            "target": "#",
+            "text": "Active",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+            "target": "#",
+            "text": "Outerwear",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+            "target": "#",
+            "text": "Swim",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+            "target": "#",
+            "text": "Accessories",
+          },
+          Object {
+            "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+            "target": "#",
+            "text": "Shop All",
+          },
+        ],
+        "title": "Shop by Category",
+      }
+    }
+    setMenuImage={[Function]}
+  >
+    <ol
+      className="c0"
+      id="category"
+      key="category"
+    >
+      <styled.h4
+        fontSize="1.8rem"
+      >
+        <h4
+          className="c1"
+          fontSize="1.8rem"
+        >
+          Shop by Category
+        </h4>
+      </styled.h4>
+      <li
+        key="[object Object]-0"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-0"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+              "target": "#",
+              "text": "Shop New",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-0"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Shop New
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-1"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-1"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+              "target": "#",
+              "text": "Best Sellers",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-1"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Best Sellers
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-2"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-2"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+              "target": "#",
+              "text": "Graphics Shop",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-2"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Graphics Shop
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-3"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-3"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+              "target": "#",
+              "text": "Tees & Tops",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-3"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Tees & Tops
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-4"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-4"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+              "target": "#",
+              "text": "Sweatshirts",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-4"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Sweatshirts
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-5"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-5"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+              "target": "#",
+              "text": "Dresses & Skirts",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-5"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Dresses & Skirts
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-6"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-6"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+              "target": "#",
+              "text": "Leggings & Sweatpants",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-6"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Leggings & Sweatpants
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-7"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-7"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+              "target": "#",
+              "text": "Active",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-7"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Active
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-8"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-8"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+              "target": "#",
+              "text": "Outerwear",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-8"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Outerwear
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-9"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-9"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+              "target": "#",
+              "text": "Swim",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-9"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Swim
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-10"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-10"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+              "target": "#",
+              "text": "Accessories",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-10"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Accessories
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+      <li
+        key="[object Object]-11"
+      >
+        <MegaMenuLink
+          clearMenuImage={[Function]}
+          id="[object Object]-11"
+          link={
+            Object {
+              "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+              "target": "#",
+              "text": "Shop All",
+            }
+          }
+          setMenuImage={[Function]}
+        >
+          <Styled(Styled(Component))
+            key="[object Object]-11"
+            light={true}
+            onBlur={[Function]}
+            onMouseLeave={[Function]}
+            target="#"
+            underline={false}
+          >
+            <Styled(Component)
+              className="c2"
+              light={true}
+              onBlur={[Function]}
+              onMouseLeave={[Function]}
+              target="#"
+              underline={false}
+              uppercase={false}
+            >
+              <Component
+                className="c2 c3"
+                light={true}
+                onBlur={[Function]}
+                onMouseLeave={[Function]}
+                target="#"
+                underline={false}
+                uppercase={false}
+              >
+                <a
+                  className="c2 c3"
+                  onBlur={[Function]}
+                  onMouseLeave={[Function]}
+                  target="#"
+                >
+                  Shop All
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </MegaMenuLink>
+      </li>
+    </ol>
+  </BaseMegaMenuSection>
+</Styled(BaseMegaMenuSection)>
+`;

@@ -1,0 +1,484 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`] = `
+.c5 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.c5:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.c4 {
+  color: #0073D1;
+}
+
+.c4:active,
+.c4:focus,
+.c4:hover,
+.c4:visited {
+  color: #00003C;
+}
+
+.c6 {
+  position: absolute;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  top: 100%;
+  right: -1px;
+  z-index: 10;
+}
+
+.c6 .subMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.c6 .subMenu > * {
+  width: 100%;
+}
+
+.c6 .subMenu {
+  width: 225px;
+  border: 1px solid #0073D1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+  background-color: #FFFFFF;
+}
+
+.c6 .subMenu .c3 {
+  height: 50px;
+  padding: 0 26px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.c6 .subMenu .c3:hover {
+  background-color: #0073D1;
+  color: #FFFFFF;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.c6 .enter {
+  z-index: 3;
+  -webkit-animation: cOMQan 0.25s;
+  animation: cOMQan 0.25s;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.c6 .leave {
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  transition: transform 0.25s ease-in;
+  -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px);
+}
+
+.c2 {
+  position: relative;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 6rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:active,
+.c2:visited {
+  color: #0073D1;
+}
+
+.c2 > span {
+  z-index: 1;
+  padding: 0.5rem 1.5rem;
+}
+
+.c2 .screenReader {
+  font-size: 0;
+  height: 0;
+}
+
+.c2 .c7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 12rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c0 .c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 0.1rem solid transparent;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.c0.active .c1 {
+  border: 0.1rem solid #0073D1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+<Styled(BaseAccountLinks)
+  highlightable={true}
+  isSubscriptionMember={false}
+  loggedIn={true}
+  name="Josh"
+  subMenuOpen={false}
+>
+  <BaseAccountLinks
+    className="c0"
+    highlightable={true}
+    isSubscriptionMember={false}
+    loggedIn={true}
+    name="Josh"
+    subMenuOpen={false}
+  >
+    <div
+      className="c0"
+    >
+      <Styled(BaseHeaderLink)
+        highlightOn="hover"
+        highlightable={false}
+        onClick={[Function]}
+        spacing={true}
+      >
+        <BaseHeaderLink
+          className="c1 c2"
+          highlightOn="hover"
+          highlightable={false}
+          onClick={[Function]}
+          spacing={true}
+        >
+          <Styled(Styled(Component))
+            className="c1 c2"
+            light={true}
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            underline={false}
+            uppercase={true}
+          >
+            <Styled(Component)
+              className="c1 c2 c3 c4"
+              light={true}
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              underline={false}
+              uppercase={true}
+            >
+              <Component
+                className="c1 c2 c3 c4 c5"
+                light={true}
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                underline={false}
+                uppercase={true}
+              >
+                <a
+                  className="c1 c2 c3 c4 c5"
+                  onClick={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                >
+                  <span>
+                    Josh
+                  </span>
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
+        </BaseHeaderLink>
+      </Styled(BaseHeaderLink)>
+      <Styled(BaseSubMenu)
+        childCount={0}
+        isSubscriptionMember={false}
+        open={false}
+      >
+        <BaseSubMenu
+          childCount={0}
+          className="c6"
+          isSubscriptionMember={false}
+          open={false}
+        >
+          <CSSTransitionGroup
+            className="c6"
+            transitionAppear={false}
+            transitionEnter={true}
+            transitionEnterTimeout={250}
+            transitionLeave={true}
+            transitionLeaveTimeout={250}
+            transitionName={
+              Object {
+                "enter": "enter",
+                "leave": "leave",
+              }
+            }
+          >
+            <TransitionGroup
+              childFactory={[Function]}
+              className="c6"
+              component="span"
+              transitionAppear={false}
+              transitionEnter={true}
+              transitionEnterTimeout={250}
+              transitionLeave={true}
+              transitionLeaveTimeout={250}
+              transitionName={
+                Object {
+                  "enter": "enter",
+                  "leave": "leave",
+                }
+              }
+            >
+              <span
+                className="c6"
+              />
+            </TransitionGroup>
+          </CSSTransitionGroup>
+        </BaseSubMenu>
+      </Styled(BaseSubMenu)>
+    </div>
+  </BaseAccountLinks>
+</Styled(BaseAccountLinks)>
+`;
+
+exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1`] = `
+.c4 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.c4:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.c3 {
+  color: #0073D1;
+}
+
+.c3:active,
+.c3:focus,
+.c3:hover,
+.c3:visited {
+  color: #00003C;
+}
+
+.c2 {
+  position: relative;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 6rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c2:active,
+.c2:visited {
+  color: #0073D1;
+}
+
+.c2 > span {
+  z-index: 1;
+  padding: 0.5rem 1.5rem;
+}
+
+.c2 .screenReader {
+  font-size: 0;
+  height: 0;
+}
+
+.c2 .c5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 12rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.c0 {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+}
+
+.c0 .c1 {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 0.1rem solid transparent;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+.c0.active .c1 {
+  border: 0.1rem solid #0073D1;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+<Styled(BaseAccountLinks)
+  highlightable={false}
+  isSubscriptionMember={false}
+  loggedIn={false}
+  renderLink={[Function]}
+  subMenuOpen={false}
+>
+  <BaseAccountLinks
+    className="c0"
+    highlightable={false}
+    isSubscriptionMember={false}
+    loggedIn={false}
+    renderLink={[Function]}
+    subMenuOpen={false}
+  >
+    <Styled(BaseHeaderLink)
+      className="c0"
+      highlightOn="hover"
+      highlightable={false}
+      renderLink={[Function]}
+      spacing={true}
+      target="shop/login"
+    >
+      <BaseHeaderLink
+        className="c0 c1 c2"
+        highlightOn="hover"
+        highlightable={false}
+        renderLink={[Function]}
+        spacing={true}
+        target="shop/login"
+      >
+        <Styled(Styled(Component))
+          className="c0 c1 c2"
+          light={true}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          renderLink={[Function]}
+          target="shop/login"
+          underline={false}
+          uppercase={true}
+        >
+          <Styled(Component)
+            className="c0 c1 c2 c3"
+            light={true}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            renderLink={[Function]}
+            target="shop/login"
+            underline={false}
+            uppercase={true}
+          >
+            <Component
+              className="c0 c1 c2 c3 c4"
+              light={true}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              renderLink={[Function]}
+              target="shop/login"
+              underline={false}
+              uppercase={true}
+            >
+              <a
+                className="c0 c1 c2 c3 c4"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                target="shop/login"
+              >
+                <span>
+                  Log In
+                </span>
+              </a>
+            </Component>
+          </Styled(Component)>
+        </Styled(Styled(Component))>
+      </BaseHeaderLink>
+    </Styled(BaseHeaderLink)>
+  </BaseAccountLinks>
+</Styled(BaseAccountLinks)>
+`;

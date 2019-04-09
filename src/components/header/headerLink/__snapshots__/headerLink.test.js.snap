@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin: 0 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 6rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c0:active,
+.c0:visited {
+  color: #0073D1;
+}
+
+.c0 > span {
+  z-index: 1;
+  padding: 0.5rem 1.5rem;
+}
+
+.c0 .screenReader {
+  font-size: 0;
+  height: 0;
+}
+
+.c0 .c1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  max-width: 12rem;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+<BaseHeaderLink
+  className="c0"
+  highlightOn="hover"
+  highlightable={true}
+  spacing={true}
+/>
+`;

@@ -163,40 +163,28 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
     <section
       className="c0"
     >
-      <Styled(styled.a)
+      <Styled(Styled(Component))
         href="https://www.example.com"
         key="0"
         underline={false}
       >
-        <styled.a
+        <Styled(Component)
           className="c1 c2"
           href="https://www.example.com"
           underline={false}
           uppercase={false}
         >
-          <a
+          <Component
             className="c1 c2 c3"
             href="https://www.example.com"
+            underline={false}
+            uppercase={false}
           >
-            <SizeMe(BackgroundImage)
-              sources={
-                Object {
-                  "0": "https://via.placeholder.com/127x190",
-                  "200": "https://via.placeholder.com/280x426",
-                }
-              }
-              src="https://via.placeholder.com/127x190"
+            <a
+              className="c1 c2 c3"
+              href="https://www.example.com"
             >
-              <SizeMeRenderer(BackgroundImage)
-                disablePlaceholder={false}
-                explicitRef={[Function]}
-                size={
-                  Object {
-                    "height": undefined,
-                    "position": undefined,
-                    "width": undefined,
-                  }
-                }
+              <SizeMe(BackgroundImage)
                 sources={
                   Object {
                     "0": "https://via.placeholder.com/127x190",
@@ -205,57 +193,64 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
                 }
                 src="https://via.placeholder.com/127x190"
               >
-                <SizeMeReferenceWrapper>
-                  <SizeMePlaceholder>
-                    <div
-                      style={
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
+                <SizeMeRenderer(BackgroundImage)
+                  disablePlaceholder={false}
+                  explicitRef={[Function]}
+                  size={
+                    Object {
+                      "height": undefined,
+                      "position": undefined,
+                      "width": undefined,
+                    }
+                  }
+                  sources={
+                    Object {
+                      "0": "https://via.placeholder.com/127x190",
+                      "200": "https://via.placeholder.com/280x426",
+                    }
+                  }
+                  src="https://via.placeholder.com/127x190"
+                >
+                  <SizeMeReferenceWrapper>
+                    <SizeMePlaceholder>
+                      <div
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
                         }
-                      }
-                    />
-                  </SizeMePlaceholder>
-                </SizeMeReferenceWrapper>
-              </SizeMeRenderer(BackgroundImage)>
-            </SizeMe(BackgroundImage)>
-          </a>
-        </styled.a>
-      </Styled(styled.a)>
-      <Styled(styled.a)
+                      />
+                    </SizeMePlaceholder>
+                  </SizeMeReferenceWrapper>
+                </SizeMeRenderer(BackgroundImage)>
+              </SizeMe(BackgroundImage)>
+            </a>
+          </Component>
+        </Styled(Component)>
+      </Styled(Styled(Component))>
+      <Styled(Styled(Component))
         href="https://www.example.com"
         key="1"
         underline={false}
       >
-        <styled.a
+        <Styled(Component)
           className="c1 c2"
           href="https://www.example.com"
           underline={false}
           uppercase={false}
         >
-          <a
+          <Component
             className="c1 c2 c3"
             href="https://www.example.com"
+            underline={false}
+            uppercase={false}
           >
-            <SizeMe(BackgroundImage)
-              sources={
-                Object {
-                  "0": "https://via.placeholder.com/127x190",
-                  "200": "https://via.placeholder.com/280x426",
-                }
-              }
-              src="https://via.placeholder.com/127x190"
+            <a
+              className="c1 c2 c3"
+              href="https://www.example.com"
             >
-              <SizeMeRenderer(BackgroundImage)
-                disablePlaceholder={false}
-                explicitRef={[Function]}
-                size={
-                  Object {
-                    "height": undefined,
-                    "position": undefined,
-                    "width": undefined,
-                  }
-                }
+              <SizeMe(BackgroundImage)
                 sources={
                   Object {
                     "0": "https://via.placeholder.com/127x190",
@@ -264,23 +259,42 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
                 }
                 src="https://via.placeholder.com/127x190"
               >
-                <SizeMeReferenceWrapper>
-                  <SizeMePlaceholder>
-                    <div
-                      style={
-                        Object {
-                          "height": "100%",
-                          "width": "100%",
+                <SizeMeRenderer(BackgroundImage)
+                  disablePlaceholder={false}
+                  explicitRef={[Function]}
+                  size={
+                    Object {
+                      "height": undefined,
+                      "position": undefined,
+                      "width": undefined,
+                    }
+                  }
+                  sources={
+                    Object {
+                      "0": "https://via.placeholder.com/127x190",
+                      "200": "https://via.placeholder.com/280x426",
+                    }
+                  }
+                  src="https://via.placeholder.com/127x190"
+                >
+                  <SizeMeReferenceWrapper>
+                    <SizeMePlaceholder>
+                      <div
+                        style={
+                          Object {
+                            "height": "100%",
+                            "width": "100%",
+                          }
                         }
-                      }
-                    />
-                  </SizeMePlaceholder>
-                </SizeMeReferenceWrapper>
-              </SizeMeRenderer(BackgroundImage)>
-            </SizeMe(BackgroundImage)>
-          </a>
-        </styled.a>
-      </Styled(styled.a)>
+                      />
+                    </SizeMePlaceholder>
+                  </SizeMeReferenceWrapper>
+                </SizeMeRenderer(BackgroundImage)>
+              </SizeMe(BackgroundImage)>
+            </a>
+          </Component>
+        </Styled(Component)>
+      </Styled(Styled(Component))>
       <article>
         <Styled(Component)>
           <Component
@@ -337,47 +351,61 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
           className="call-to-action"
           key="0"
         >
-          <Styled(styled.a)
+          <Styled(Styled(Component))
             href="https://www.example.com"
             underline={true}
           >
-            <styled.a
+            <Styled(Component)
               className="c1 c5"
               href="https://www.example.com"
               underline={true}
               uppercase={false}
             >
-              <a
+              <Component
                 className="c1 c5 c3"
                 href="https://www.example.com"
+                underline={true}
+                uppercase={false}
               >
-                SHOP GIRLS
-              </a>
-            </styled.a>
-          </Styled(styled.a)>
+                <a
+                  className="c1 c5 c3"
+                  href="https://www.example.com"
+                >
+                  SHOP GIRLS
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
         </span>
         <span
           className="call-to-action"
           key="1"
         >
-          <Styled(styled.a)
+          <Styled(Styled(Component))
             href="https://www.example.com"
             underline={true}
           >
-            <styled.a
+            <Styled(Component)
               className="c1 c5"
               href="https://www.example.com"
               underline={true}
               uppercase={false}
             >
-              <a
+              <Component
                 className="c1 c5 c3"
                 href="https://www.example.com"
+                underline={true}
+                uppercase={false}
               >
-                SHOP BOYS
-              </a>
-            </styled.a>
-          </Styled(styled.a)>
+                <a
+                  className="c1 c5 c3"
+                  href="https://www.example.com"
+                >
+                  SHOP BOYS
+                </a>
+              </Component>
+            </Styled(Component)>
+          </Styled(Styled(Component))>
         </span>
       </article>
     </section>

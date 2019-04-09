@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) MegaMenuLink matching the snapshot 1`] = `
+.c1 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: initial;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+.c1:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  pointer: cursor;
+}
+
+.c0 {
+  color: #00003C;
+}
+
+.c0:active,
+.c0:focus,
+.c0:hover,
+.c0:visited {
+  color: #00003C;
+}
+
+<MegaMenuLink
+  clearMenuImage={[Function]}
+  id="example-link"
+  link={
+    Object {
+      "src": "https://www.fillmurray.com/g/300/300",
+      "target": "/example",
+      "text": "Example",
+    }
+  }
+  renderLink={[Function]}
+  setMenuImage={[Function]}
+>
+  <Styled(Styled(Component))
+    key="example-link"
+    light={true}
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    renderLink={[Function]}
+    target="/example"
+    underline={false}
+  >
+    <Styled(Component)
+      className="c0"
+      light={true}
+      onBlur={[Function]}
+      onFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      renderLink={[Function]}
+      target="/example"
+      underline={false}
+      uppercase={false}
+    >
+      <Component
+        className="c0 c1"
+        light={true}
+        onBlur={[Function]}
+        onFocus={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        renderLink={[Function]}
+        target="/example"
+        underline={false}
+        uppercase={false}
+      >
+        <a
+          className="c0 c1"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          target="/example"
+        >
+          Example
+        </a>
+      </Component>
+    </Styled(Component)>
+  </Styled(Styled(Component))>
+</MegaMenuLink>
+`;
