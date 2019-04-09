@@ -89,50 +89,52 @@ class BasePressQuotes extends React.Component {
     const { className, header, headerLabel, theme, quotes} = this.props
     const { index } = this.state
     return (
-      <section className={className}>
-        <FlexRow>
-          <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-            <H1 aria-label={headerLabel}>{header}</H1>
-          </FlexCol>
-          <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-            <div className="quote_controller">
-              <Chevron left onClick={this.onClickChevronLeft} />
-              <CSSTransitionGroup
-                aria-hidden
-                transitionName="quote"
-                transitionEnterTimeout={500}
-                transitionLeaveTimeout={1}>
-                <H2 lowercase key={index}>{quotes[index].quote}</H2>
-              </CSSTransitionGroup>
-              <Chevron right onClick={this.onClickChevronRight} />
-            </div>
-          </FlexCol>
-          <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-            <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-              <IconRow
-                quotes={quotes}
-                onClick={this.onClick}
-                selected={index} />
-            </MediaQuery>
-          </FlexCol>
-          <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
-            <MediaQuery query="(max-device-width: 959px)">
-              <PressIcon
-                key={index}
-                brand={quotes[index].id}
-                selected={true} />
-            </MediaQuery>
-          </FlexCol>
-          {quotes.map(({quote, name}, index) => {
-            return (
-              <blockquote key={index}>
-                {quote}
-                <cite>{name}</cite>
-              </blockquote>
-            )
-          })}
-        </FlexRow>
-      </section>
+      <FlexRow
+        constrained
+        element='section'
+        className={className}>
+        <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
+          <H1 aria-label={headerLabel}>{header}</H1>
+        </FlexCol>
+        <FlexCol
+          className="quote_controller"
+          mobile={{width: 4}}
+          desktop={{span: 1, width: 10}}>
+            <Chevron left onClick={this.onClickChevronLeft} />
+            <CSSTransitionGroup
+              aria-hidden
+              transitionName="quote"
+              transitionEnterTimeout={500}
+              transitionLeaveTimeout={1}>
+              <H2 lowercase key={index}>{quotes[index].quote}</H2>
+            </CSSTransitionGroup>
+            <Chevron right onClick={this.onClickChevronRight} />
+        </FlexCol>
+        <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
+          <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+            <IconRow
+              quotes={quotes}
+              onClick={this.onClick}
+              selected={index} />
+          </MediaQuery>
+        </FlexCol>
+        <FlexCol mobile={{width: 4}} desktop={{span: 1, width: 10}}>
+          <MediaQuery query="(max-device-width: 959px)">
+            <PressIcon
+              key={index}
+              brand={quotes[index].id}
+              selected={true} />
+          </MediaQuery>
+        </FlexCol>
+        {quotes.map(({quote, name}, index) => {
+          return (
+            <blockquote key={index}>
+              {quote}
+              <cite>{name}</cite>
+            </blockquote>
+          )
+        })}
+      </FlexRow>
     )
   }
 }
