@@ -32,17 +32,23 @@ exports[`(Styled Component) NavyLink matching the snapshot 1`] = `
   border-bottom-color: #00003C;
 }
 
-<Styled(styled.a)
+<Styled(Styled(Component))
   underline={true}
 >
-  <styled.a
+  <Styled(Component)
     className="c0"
     underline={true}
     uppercase={false}
   >
-    <a
+    <Component
       className="c0 c1"
-    />
-  </styled.a>
-</Styled(styled.a)>
+      underline={true}
+      uppercase={false}
+    >
+      <a
+        className="c0 c1"
+      />
+    </Component>
+  </Styled(Component)>
+</Styled(Styled(Component))>
 `;

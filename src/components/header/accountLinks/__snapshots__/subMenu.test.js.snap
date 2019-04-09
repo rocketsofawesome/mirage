@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled) SubMenu matching the snapshot 1`] = `
+.c0 {
+  position: absolute;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+  top: 100%;
+  right: -1px;
+  z-index: 10;
+}
+
+.c0 .subMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.c0 .subMenu > * {
+  width: 100%;
+}
+
+.c0 .subMenu {
+  width: 225px;
+  border: 1px solid #0073D1;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+  background-color: #FFFFFF;
+}
+
+.c0 .subMenu .c1 {
+  height: 50px;
+  padding: 0 26px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.c0 .subMenu .c1:hover {
+  background-color: #0073D1;
+  color: #FFFFFF;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.c0 .enter {
+  z-index: 3;
+  -webkit-animation: cOMQan 0.25s;
+  animation: cOMQan 0.25s;
+  -webkit-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  transform: translateY(-1px);
+}
+
+.c0 .leave {
+  z-index: 3;
+  -webkit-transition: -webkit-transform 0.25s ease-in;
+  -webkit-transition: transform 0.25s ease-in;
+  transition: transform 0.25s ease-in;
+  -webkit-transform: translateY(-60px);
+  -ms-transform: translateY(-60px);
+  transform: translateY(-60px);
+}
+
+<BaseSubMenu
+  childCount={0}
+  className="c0"
+  isSubscriptionMember={false}
+/>
+`;

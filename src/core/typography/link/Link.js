@@ -3,7 +3,7 @@ import styled, {css} from 'styled-components'
 
 import BaseLink, {BaseStyles} from './Link.base'
 
-const blueStyles = css`
+const BlueStyles = css`
   color:  ${props => props.theme.colors.rocketBlue};
   &:active, &:focus, &:hover, &:visited {
     color: ${props => props.theme.colors.navy};
@@ -14,13 +14,13 @@ const blueStyles = css`
   }
 `
 
-const aStyle = css`
+const LinkStyles = css`
   ${BaseStyles}
-  ${blueStyles}
+  ${BlueStyles}
 `
 
 const Link = styled(BaseLink)`
-  ${blueStyles}
+  ${BlueStyles}
 `
 
 Link.propTypes = {
@@ -29,12 +29,12 @@ Link.propTypes = {
       rocketBlue: PropTypes.string
     })
   }),
-  underline: PropTypes.bool.isRequired
+  uppercase: PropTypes.bool,
+  underline: PropTypes.bool
 }
 
 Link.defaultProps = {
   underline: true
 }
 /** @component */
-export default Link
-export {aStyle}
+export { Link, LinkStyles }

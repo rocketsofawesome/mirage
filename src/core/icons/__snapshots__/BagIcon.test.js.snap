@@ -38,6 +38,10 @@ exports[`(Styled Component) BagIcon matching the snapshot 1`] = `
   font-weight: 500;
 }
 
+.c0 .screenReader {
+  font-size: 0;
+}
+
 <BaseBagIcon
   className="c0"
   width="2rem"
