@@ -40,7 +40,7 @@ describe('(Component) BaseBagIcon', () => {
     const count = 4
     expect(
       createBaseBagIcon({count: count})
-      .find('text').text()
+      .find('text').last().text()
     ).toEqual(count.toString())
   })
 })
