@@ -14,7 +14,7 @@ const DesktopHeader = styled.header`
 `
 
 DesktopHeader.propTypes = {
-
+  
 }
 
 DesktopHeader.defaultProps = {
