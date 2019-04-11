@@ -122,12 +122,17 @@ const animated = css`
 `
 
 const BaseLogo = styled(UnstyledBaseLogo)`
-  width: ${props => props.width};
+  width: 100%;
+  max-width: ${props => props.maxWidth};
   ${props => props.animated ? animated : ''}
 `
 
 BaseLogo.propTypes = {
-  width: PropTypes.string
+  maxWidth: PropTypes.string
+}
+
+BaseLogo.defaultProps = {
+  maxWidth: '36rem'
 }
 
 /** @component */
