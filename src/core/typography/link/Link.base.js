@@ -28,9 +28,12 @@ const BaseLink = styled(({ renderLink, ...props }) => {
   delete props.light
   delete props.uppercase
   delete props.underline
+<<<<<<< HEAD
   delete props.fontFamily
   delete props.fontSize
   delete props.fontWeight
+=======
+>>>>>>> 03b2da4cb32b5a27a68b9befb3aa7a1a192ea806
   if (renderLink) {
     return renderLink(props)
   } else {
