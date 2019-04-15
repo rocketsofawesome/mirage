@@ -13,7 +13,7 @@ NavyLogo.propTypes = {
       navy: PropTypes.string
     })
   }),
-  width: PropTypes.string
+  maxWidth: PropTypes.string
 }
 
 /** @component */

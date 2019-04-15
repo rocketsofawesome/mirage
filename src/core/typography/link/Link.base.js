@@ -24,7 +24,7 @@ font-style: ${props => props.fontStyle}
 }
 `
 
-const BaseLink = styled(({ renderLink, ...props }) => {
+const BaseLink = styled(({ renderLink, children, ...props }) => {
   delete props.light
   delete props.uppercase
   delete props.underline
@@ -32,9 +32,9 @@ const BaseLink = styled(({ renderLink, ...props }) => {
   delete props.fontSize
   delete props.fontWeight
   if (renderLink) {
-    return renderLink(props)
+    return renderLink({...props, children: children})
   } else {
-    return (<a {...props} />)
+    return (<a {...props}>{children}</a>)
   }
 })`
   ${baseLinkStyles}

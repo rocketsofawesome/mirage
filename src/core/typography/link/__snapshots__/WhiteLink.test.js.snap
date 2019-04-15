@@ -12,6 +12,7 @@ exports[`(Styled Component) WhiteLink matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
+  font-style: normal;
 }
 
 .c1:hover {
@@ -37,16 +38,25 @@ exports[`(Styled Component) WhiteLink matching the snapshot 1`] = `
 >
   <Styled(Component)
     className="c0"
+    fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+    fontSize="1.4rem"
+    fontStyle="normal"
+    fontWeight={500}
     underline={true}
     uppercase={false}
   >
     <Component
       className="c0 c1"
+      fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+      fontSize="1.4rem"
+      fontStyle="normal"
+      fontWeight={500}
       underline={true}
       uppercase={false}
     >
       <a
         className="c0 c1"
+        fontStyle="normal"
       />
     </Component>
   </Styled(Component)>

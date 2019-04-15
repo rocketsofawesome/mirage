@@ -1,0 +1,460 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
+.c3 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.c4 .toggleElement .c2 {
+  margin-left: 1rem;
+}
+
+.c1 {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 01.5rem;
+  text-align: center;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+  transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+}
+
+.c1 .c5 {
+  display: inline-block;
+}
+
+.c1:hover {
+  cursor: pointer;
+}
+
+.c1:hover > * {
+  cursor: pointer;
+}
+
+.c1:focus {
+  outline: 0;
+}
+
+.c1,
+.c1:active {
+  border-style: solid;
+  -webkit-transform: translateX(.2rem);
+  -ms-transform: translateX(.2rem);
+  transform: translateX(.2rem);
+}
+
+.c1 > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c1 > span > * {
+  vertical-align: middle;
+}
+
+.c0 {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #0073D1;
+}
+
+.c0:hover {
+  background-color: #0073EB;
+}
+
+<BaseAccordion
+  ignoreErrors={true}
+  toggleElement={
+    <Styled(Styled(CustomButton))
+      checkmark={[Function]}
+      spinner={[Function]}
+    >
+      Toggle
+    </Styled(Styled(CustomButton))>
+  }
+>
+  <div
+    role="region"
+  >
+    <Styled(Styled(CustomButton))
+      checkmark={[Function]}
+      className="toggleElement"
+      onClick={[Function]}
+      spinner={[Function]}
+    >
+      <Styled(CustomButton)
+        checkmark={[Function]}
+        className="toggleElement c0"
+        onClick={[Function]}
+        spinner={[Function]}
+      >
+        <CustomButton
+          checkmark={[Function]}
+          className="toggleElement c0 c1"
+          onClick={[Function]}
+          spinner={[Function]}
+        >
+          <button
+            className="toggleElement c0 c1"
+            onClick={[Function]}
+          >
+            <span>
+              Toggle
+              <Styled(BaseChevron)
+                down={true}
+                ignoreErrors={true}
+                key="toggleChevron"
+                up={false}
+              >
+                <BaseChevron
+                  className="c2 c3"
+                  down={true}
+                  ignoreErrors={true}
+                  up={false}
+                >
+                  <svg
+                    className="c2 c3"
+                    viewBox="0 0 48 24.12"
+                  >
+                    <polyline
+                      points="1 1 24 22.75 47 1"
+                    />
+                  </svg>
+                </BaseChevron>
+              </Styled(BaseChevron)>
+            </span>
+          </button>
+        </CustomButton>
+      </Styled(CustomButton)>
+    </Styled(Styled(CustomButton))>
+    <CSSTransitionGroup
+      className="drawer"
+      transitionAppear={false}
+      transitionEnter={true}
+      transitionEnterTimeout={500}
+      transitionLeave={true}
+      transitionLeaveTimeout={500}
+      transitionName={
+        Object {
+          "enter": "accordionEnter",
+          "leave": "accordionLeave",
+        }
+      }
+    >
+      <TransitionGroup
+        childFactory={[Function]}
+        className="drawer"
+        component="span"
+        transitionAppear={false}
+        transitionEnter={true}
+        transitionEnterTimeout={500}
+        transitionLeave={true}
+        transitionLeaveTimeout={500}
+        transitionName={
+          Object {
+            "enter": "accordionEnter",
+            "leave": "accordionLeave",
+          }
+        }
+      >
+        <span
+          className="drawer"
+        />
+      </TransitionGroup>
+    </CSSTransitionGroup>
+  </div>
+</BaseAccordion>
+`;
+
+exports[`(Styled Component) Accordion matching the snapshot 1`] = `
+.c4 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  cursor: pointer;
+}
+
+.c0 .toggleElement {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-right: 1.5rem;
+}
+
+.c0 .toggleElement .c3 {
+  margin-left: 1rem;
+}
+
+.c0 .drawer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .drawer ul {
+  -webkit-transform-origin: 50% 0 0;
+  -ms-transform-origin: 50% 0 0;
+  transform-origin: 50% 0 0;
+}
+
+.c0 .drawer .accordionEnter {
+  -webkit-animation-name: bPPZXN;
+  animation-name: bPPZXN;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+.c0 .drawer .accordionLeave {
+  -webkit-animation-name: eOYKPt;
+  animation-name: eOYKPt;
+  -webkit-animation-duration: 0.6s;
+  animation-duration: 0.6s;
+}
+
+.c0 .drawer * {
+  width: 100%;
+}
+
+.c0 .drawer li {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 4rem;
+}
+
+.c2 {
+  box-sizing: border-box;
+  height: 50px;
+  padding: 0 01.5rem;
+  text-align: center;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+  transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+}
+
+.c2 .c5 {
+  display: inline-block;
+}
+
+.c2:hover {
+  cursor: pointer;
+}
+
+.c2:hover > * {
+  cursor: pointer;
+}
+
+.c2:focus {
+  outline: 0;
+}
+
+.c2,
+.c2:active {
+  border-style: solid;
+  -webkit-transform: translateX(.2rem);
+  -ms-transform: translateX(.2rem);
+  transform: translateX(.2rem);
+}
+
+.c2 > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c2 > span > * {
+  vertical-align: middle;
+}
+
+.c1 {
+  color: #FFFFFF;
+  border-color: transparent;
+  background-color: #0073D1;
+}
+
+.c1:hover {
+  background-color: #0073EB;
+}
+
+<Styled(BaseAccordion)
+  ignoreErrors={true}
+  toggleElement={
+    <Styled(Styled(CustomButton))
+      checkmark={[Function]}
+      spinner={[Function]}
+    >
+      Toggle
+    </Styled(Styled(CustomButton))>
+  }
+>
+  <BaseAccordion
+    className="c0"
+    ignoreErrors={true}
+    toggleElement={
+      <Styled(Styled(CustomButton))
+        checkmark={[Function]}
+        spinner={[Function]}
+      >
+        Toggle
+      </Styled(Styled(CustomButton))>
+    }
+  >
+    <div
+      className="c0"
+      role="region"
+    >
+      <Styled(Styled(CustomButton))
+        checkmark={[Function]}
+        className="toggleElement"
+        onClick={[Function]}
+        spinner={[Function]}
+      >
+        <Styled(CustomButton)
+          checkmark={[Function]}
+          className="toggleElement c1"
+          onClick={[Function]}
+          spinner={[Function]}
+        >
+          <CustomButton
+            checkmark={[Function]}
+            className="toggleElement c1 c2"
+            onClick={[Function]}
+            spinner={[Function]}
+          >
+            <button
+              className="toggleElement c1 c2"
+              onClick={[Function]}
+            >
+              <span>
+                Toggle
+                <Styled(BaseChevron)
+                  down={true}
+                  ignoreErrors={true}
+                  key="toggleChevron"
+                  up={false}
+                >
+                  <BaseChevron
+                    className="c3 c4"
+                    down={true}
+                    ignoreErrors={true}
+                    up={false}
+                  >
+                    <svg
+                      className="c3 c4"
+                      viewBox="0 0 48 24.12"
+                    >
+                      <polyline
+                        points="1 1 24 22.75 47 1"
+                      />
+                    </svg>
+                  </BaseChevron>
+                </Styled(BaseChevron)>
+              </span>
+            </button>
+          </CustomButton>
+        </Styled(CustomButton)>
+      </Styled(Styled(CustomButton))>
+      <CSSTransitionGroup
+        className="drawer"
+        transitionAppear={false}
+        transitionEnter={true}
+        transitionEnterTimeout={500}
+        transitionLeave={true}
+        transitionLeaveTimeout={500}
+        transitionName={
+          Object {
+            "enter": "accordionEnter",
+            "leave": "accordionLeave",
+          }
+        }
+      >
+        <TransitionGroup
+          childFactory={[Function]}
+          className="drawer"
+          component="span"
+          transitionAppear={false}
+          transitionEnter={true}
+          transitionEnterTimeout={500}
+          transitionLeave={true}
+          transitionLeaveTimeout={500}
+          transitionName={
+            Object {
+              "enter": "accordionEnter",
+              "leave": "accordionLeave",
+            }
+          }
+        >
+          <span
+            className="drawer"
+          />
+        </TransitionGroup>
+      </CSSTransitionGroup>
+    </div>
+  </BaseAccordion>
+</Styled(BaseAccordion)>
+`;

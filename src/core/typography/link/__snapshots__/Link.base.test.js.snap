@@ -12,6 +12,7 @@ exports[`(Styled Component) BaseLink matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
+  font-style: normal;
 }
 
 .c0:hover {
@@ -20,7 +21,12 @@ exports[`(Styled Component) BaseLink matching the snapshot 1`] = `
   pointer: cursor;
 }
 
-<a
+<Component
   className="c0"
+  fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+  fontSize="1.4rem"
+  fontStyle="normal"
+  fontWeight={500}
+  uppercase={false}
 />
 `;

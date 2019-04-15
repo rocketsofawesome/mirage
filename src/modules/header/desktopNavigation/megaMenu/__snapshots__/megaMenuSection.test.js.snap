@@ -11,7 +11,8 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   border-bottom-color: transparent;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c3:hover {
@@ -237,6 +238,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -246,6 +251,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -255,6 +264,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -291,6 +301,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -300,6 +314,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -309,6 +327,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -345,6 +364,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -354,6 +377,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -363,6 +390,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -399,6 +427,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -408,6 +440,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -417,6 +453,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -453,6 +490,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -462,6 +503,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -471,6 +516,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -507,6 +553,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -516,6 +566,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -525,6 +579,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -561,6 +616,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -570,6 +629,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -579,6 +642,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -615,6 +679,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -624,6 +692,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -633,6 +705,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -669,6 +742,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -678,6 +755,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -687,6 +768,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -723,6 +805,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -732,6 +818,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -741,6 +831,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -777,6 +868,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -786,6 +881,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -795,6 +894,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"
@@ -831,6 +931,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c2"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onBlur={[Function]}
               onMouseLeave={[Function]}
@@ -840,6 +944,10 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             >
               <Component
                 className="c2 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onBlur={[Function]}
                 onMouseLeave={[Function]}
@@ -849,6 +957,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               >
                 <a
                   className="c2 c3"
+                  fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
                   target="#"

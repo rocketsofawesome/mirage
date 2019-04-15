@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) MobileLinkTertiary matching the snapshot 1`] = `
+.c0 {
+  height: 3.6rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  background-color: transparent;
+}
+
+.c0:active,
+.c0:focus,
+.c0:hover,
+.c0:visited {
+  color: #0073D1;
+}
+
+<Styled(Styled(Component))
+  background="transparent"
+  className="c0"
+  fontSize="1.6rem"
+  fontStyle="italic"
+  light={true}
+  underline={false}
+/>
+`;

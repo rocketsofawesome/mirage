@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`] = `
+exports[`(Styled Component) DesktopAccountLinks when logged in matching the snapshot 1`] = `
 .c5 {
   -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
@@ -11,7 +11,8 @@ exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`
   border-bottom-color: transparent;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c5:hover {
@@ -216,6 +217,10 @@ exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`
           >
             <Styled(Component)
               className="c1 c2 c3 c4"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onClick={[Function]}
               onMouseEnter={[Function]}
@@ -225,6 +230,10 @@ exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`
             >
               <Component
                 className="c1 c2 c3 c4 c5"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 light={true}
                 onClick={[Function]}
                 onMouseEnter={[Function]}
@@ -234,6 +243,7 @@ exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`
               >
                 <a
                   className="c1 c2 c3 c4 c5"
+                  fontStyle="normal"
                   onClick={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
@@ -300,7 +310,7 @@ exports[`(Styled Component) AccountLinks when logged in matching the snapshot 1`
 </Styled(BaseAccountLinks)>
 `;
 
-exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1`] = `
+exports[`(Styled Component) DesktopAccountLinks when logged out matching the snapshot 1`] = `
 .c4 {
   -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
@@ -311,7 +321,8 @@ exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1
   border-bottom-color: transparent;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c4:hover {
@@ -446,6 +457,10 @@ exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1
         >
           <Styled(Component)
             className="c0 c1 c2 c3"
+            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+            fontSize="1.4rem"
+            fontStyle="normal"
+            fontWeight={500}
             light={true}
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
@@ -456,6 +471,10 @@ exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1
           >
             <Component
               className="c0 c1 c2 c3 c4"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               light={true}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
@@ -466,6 +485,7 @@ exports[`(Styled Component) AccountLinks when logged out matching the snapshot 1
             >
               <a
                 className="c0 c1 c2 c3 c4"
+                fontStyle="normal"
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
                 target="shop/login"

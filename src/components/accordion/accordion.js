@@ -2,7 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 import { CSSTransitionGroup } from 'react-transition-group'
-import classNames from 'classnames'
 
 import { Chevron } from 'SRC'
 
@@ -21,21 +20,22 @@ export class BaseAccordion extends React.Component {
   }
 
   toggleAccordion = () => {
-    console.log('Hello')
     this.setState({open: !this.state.open})
   }
 
   render() {
-    const { className, children, label, toggleElement } = this.props
+    const { className, children, ignoreErrors, label, toggleElement } = this.props
     const { open } = this.state
     const ToggleElement = React.createElement(
       toggleElement.type,
       {
         ...toggleElement.props,
-        className: `${toggleElement.props.className} toggleElement`,
+        className: toggleElement.props.className ?
+          `${toggleElement.props.className} toggleElement`:
+          'toggleElement',
         onClick: this.toggleAccordion
       },
-      [toggleElement.props.children, <Chevron down={!open} up={open} />]
+      [toggleElement.props.children, <Chevron key='toggleChevron' down={!open} up={open} ignoreErrors={ignoreErrors}/>]
     )
 
     return (
@@ -116,7 +116,8 @@ const Accordion = styled(BaseAccordion)`
 
 Accordion.propTypes = {
   className: PropTypes.string,
-  childdren: PropTypes.element.isRequired,
+  children: PropTypes.element.isRequired,
+  ignoreErrors: PropTypes.bool,
   label: PropTypes.string
 }
 

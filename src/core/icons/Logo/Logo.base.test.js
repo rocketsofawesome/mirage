@@ -21,7 +21,7 @@ describe('(Component) BaseLogo', () => {
     const size = '10rem'
     expect(createBaseLogo({size: size}))
     .toHaveStyleRule({
-      width: size,
+      maxWidth: size,
       height: size
     })
   })

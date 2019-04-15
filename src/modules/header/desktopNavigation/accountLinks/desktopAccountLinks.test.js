@@ -1,39 +1,39 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import { AccountLinks, Link, HeaderLink, SubMenu } from 'SRC'
-import { BaseAccountLinks } from './accountLinks'
+import { DesktopAccountLinks, Link, HeaderLink, SubMenu } from 'SRC'
+import { BaseDesktopAccountLinks } from './desktopAccountLinks'
 
 const { mountWithTheme } = global
 
-describe('(Styled Component) AccountLinks', () => {
-  const createAccountLinks = (props) => {
-    return mountWithTheme(<AccountLinks {...props} />)
+describe('(Styled Component) DesktopAccountLinks', () => {
+  const createDesktopAccountLinks = (props) => {
+    return mountWithTheme(<DesktopAccountLinks {...props} />)
   }
   describe('when logged out', () => {
     const loggedOutProps = {
       isSubscriptionMember: false,
       loggedIn: false,
       name: undefined,
-      renderLink: jest.fn((props) => <a {...props} />),
+      renderLink: jest.fn(({children, ...props}) => <a {...props}>{children}</a>),
       subMenuOpen: false,
       highlightable: false
     }
 
     test('matching the snapshot', () => {
-      expect(createAccountLinks(loggedOutProps))
+      expect(createDesktopAccountLinks(loggedOutProps))
       .toMatchSnapshot()
     })
 
     test('rendering the Log In link', () => {
       expect(
-        createAccountLinks(loggedOutProps)
+        createDesktopAccountLinks(loggedOutProps)
         .contains('Log In')
       ).toBeTruthy()
     })
 
     test('renderLink firing on render', () => {
-      createAccountLinks(loggedOutProps)
+      createDesktopAccountLinks(loggedOutProps)
       expect(loggedOutProps.renderLink).toBeCalled()
     })
   })
@@ -48,26 +48,26 @@ describe('(Styled Component) AccountLinks', () => {
     }
 
     test('matching the snapshot', () => {
-      expect(createAccountLinks(loggedInProps))
+      expect(createDesktopAccountLinks(loggedInProps))
       .toMatchSnapshot()
     })
 
     test('Rendering user\'s name', () => {
       expect(
-        createAccountLinks(loggedInProps)
+        createDesktopAccountLinks(loggedInProps)
         .contains(loggedInProps.name)
       ).toBeTruthy()
     })
 
     test('opening the subMenu', () => {
-      const component = createAccountLinks(loggedInProps)
+      const component = createDesktopAccountLinks(loggedInProps)
       expect(component.find(SubMenu).find(Link).length).toEqual(0)
       component.find(HeaderLink).simulate('click')
       expect(component.find(SubMenu).find(Link).length).toEqual(3)
     })
 
     test('rendering out subscription links', () => {
-      const nonSubscriptionComponent = createAccountLinks({
+      const nonSubscriptionComponent = createDesktopAccountLinks({
         ...loggedInProps,
         open: true
       })
@@ -78,7 +78,7 @@ describe('(Styled Component) AccountLinks', () => {
         .length
       ).toEqual(3)
 
-      const subscriptionComponent = createAccountLinks({
+      const subscriptionComponent = createDesktopAccountLinks({
         ...loggedInProps,
         isSubscriptionMember: true,
         open: true

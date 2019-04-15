@@ -16,7 +16,6 @@ flex-direction: row;
 `
 
 const UL = styled(({className, children}) => {
-  console.log()
   return (
     <ul className={className}>
       {children}

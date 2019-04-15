@@ -13,7 +13,7 @@ GrayLogo.propTypes = {
       gray: PropTypes.array
     })
   }),
-  width: PropTypes.string
+  maxWidth: PropTypes.string
 }
 
 /** @component */
