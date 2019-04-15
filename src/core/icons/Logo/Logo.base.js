@@ -123,8 +123,8 @@ const animated = css`
 `
 
 const BaseLogo = styled(UnstyledBaseLogo)`
-  maxWidth: 100%;
-  max-maxWidth: ${props => props.maxWidth};
+  width: 100%;
+  max-width: ${props => props.maxWidth};
   ${props => props.animated ? animated : ''}
 `
 
