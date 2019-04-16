@@ -12,6 +12,7 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
+  font-style: normal;
 }
 
 .c3:hover {
@@ -170,18 +171,27 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
       >
         <Styled(Component)
           className="c1 c2"
+          fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+          fontSize="1.4rem"
+          fontStyle="normal"
+          fontWeight={500}
           href="https://www.example.com"
           underline={false}
           uppercase={false}
         >
           <Component
             className="c1 c2 c3"
+            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+            fontSize="1.4rem"
+            fontStyle="normal"
+            fontWeight={500}
             href="https://www.example.com"
             underline={false}
             uppercase={false}
           >
             <a
               className="c1 c2 c3"
+              fontStyle="normal"
               href="https://www.example.com"
             >
               <SizeMe(BackgroundImage)
@@ -236,18 +246,27 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
       >
         <Styled(Component)
           className="c1 c2"
+          fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+          fontSize="1.4rem"
+          fontStyle="normal"
+          fontWeight={500}
           href="https://www.example.com"
           underline={false}
           uppercase={false}
         >
           <Component
             className="c1 c2 c3"
+            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+            fontSize="1.4rem"
+            fontStyle="normal"
+            fontWeight={500}
             href="https://www.example.com"
             underline={false}
             uppercase={false}
           >
             <a
               className="c1 c2 c3"
+              fontStyle="normal"
               href="https://www.example.com"
             >
               <SizeMe(BackgroundImage)
@@ -357,18 +376,27 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c1 c5"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               href="https://www.example.com"
               underline={true}
               uppercase={false}
             >
               <Component
                 className="c1 c5 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 href="https://www.example.com"
                 underline={true}
                 uppercase={false}
               >
                 <a
                   className="c1 c5 c3"
+                  fontStyle="normal"
                   href="https://www.example.com"
                 >
                   SHOP GIRLS
@@ -387,18 +415,27 @@ exports[`(Styled Components) SplitTout matching the snapshot 1`] = `
           >
             <Styled(Component)
               className="c1 c5"
+              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+              fontSize="1.4rem"
+              fontStyle="normal"
+              fontWeight={500}
               href="https://www.example.com"
               underline={true}
               uppercase={false}
             >
               <Component
                 className="c1 c5 c3"
+                fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                fontSize="1.4rem"
+                fontStyle="normal"
+                fontWeight={500}
                 href="https://www.example.com"
                 underline={true}
                 uppercase={false}
               >
                 <a
                   className="c1 c5 c3"
+                  fontStyle="normal"
                   href="https://www.example.com"
                 >
                   SHOP BOYS

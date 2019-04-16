@@ -11,7 +11,8 @@ exports[`(Styled Component) MegaMenuLink matching the snapshot 1`] = `
   border-bottom-color: transparent;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .c1:hover {
@@ -57,6 +58,10 @@ exports[`(Styled Component) MegaMenuLink matching the snapshot 1`] = `
   >
     <Styled(Component)
       className="c0"
+      fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+      fontSize="1.4rem"
+      fontStyle="normal"
+      fontWeight={500}
       light={true}
       onBlur={[Function]}
       onFocus={[Function]}
@@ -69,6 +74,10 @@ exports[`(Styled Component) MegaMenuLink matching the snapshot 1`] = `
     >
       <Component
         className="c0 c1"
+        fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+        fontSize="1.4rem"
+        fontStyle="normal"
+        fontWeight={500}
         light={true}
         onBlur={[Function]}
         onFocus={[Function]}
@@ -81,6 +90,7 @@ exports[`(Styled Component) MegaMenuLink matching the snapshot 1`] = `
       >
         <a
           className="c0 c1"
+          fontStyle="normal"
           onBlur={[Function]}
           onFocus={[Function]}
           onMouseEnter={[Function]}

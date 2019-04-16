@@ -1,1 +1,1 @@
-export { default as AccountLinks } from './accountLinks'
+export { default as DesktopAccountLinks } from './desktopAccountLinks'

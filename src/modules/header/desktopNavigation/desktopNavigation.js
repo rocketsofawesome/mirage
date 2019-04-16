@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import {
-  AccountLinks,
+  DesktopAccountLinks,
   BagIcon,
   DesktopHeader,
   FlexRow,
@@ -139,7 +139,7 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink highlightable={highlightable}>Blog</HeaderLink>
                 </li>
                 <li className='spacer'>
-                  <AccountLinks
+                  <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
                     {...props} />

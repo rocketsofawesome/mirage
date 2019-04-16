@@ -1,6 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) GrayLogo matching the snapshot 1`] = `
+.c1 {
+  maxWidth: 100%;
+  max-maxWidth: 36rem;
+}
+
 .c0 {
   fill: #D5D5D5;
 }
@@ -8,12 +13,14 @@ exports[`(Styled Component) GrayLogo matching the snapshot 1`] = `
 <Styled(Styled(UnstyledBaseLogo))>
   <Styled(UnstyledBaseLogo)
     className="c0"
+    maxWidth="36rem"
   >
     <UnstyledBaseLogo
-      className="c0 "
+      className="c0 c1"
+      maxWidth="36rem"
     >
       <svg
-        className="c0 "
+        className="c0 c1"
         viewBox="0 0 492 60"
       >
         <path

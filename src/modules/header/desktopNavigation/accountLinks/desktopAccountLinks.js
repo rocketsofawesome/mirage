@@ -59,7 +59,7 @@ export class BaseAccountLinks extends React.Component {
   }
 }
 
-const AccountLinks =  styled(BaseAccountLinks)`
+const DesktopAccountLinks =  styled(BaseAccountLinks)`
 display: inline-flex;
 position: relative;
 ${HeaderLink} {
@@ -75,7 +75,7 @@ ${HeaderLink} {
 }
 `
 
-AccountLinks.propTypes = {
+DesktopAccountLinks.propTypes = {
   className: PropTypes.string,
   isSubscriptionMember: PropTypes.bool,
   loggedIn: PropTypes.bool,
@@ -84,11 +84,11 @@ AccountLinks.propTypes = {
   subMenuOpen: PropTypes.bool
 }
 
-AccountLinks.defaultProps = {
+DesktopAccountLinks.defaultProps = {
   subMenuOpen: false,
   //Used in snap shot testing only
   highlightable: true
 }
 
 /** @component */
-export default AccountLinks
+export default DesktopAccountLinks

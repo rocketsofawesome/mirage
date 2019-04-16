@@ -13,7 +13,7 @@ WhiteLogo.propTypes = {
       white: PropTypes.string
     })
   }),
-  width: PropTypes.string
+  maxWidth: PropTypes.string
 }
 
 /** @component */

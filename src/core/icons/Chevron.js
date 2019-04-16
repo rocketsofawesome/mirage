@@ -79,9 +79,9 @@ const validateDirection = (props, propName, componentName) => {
   const propDirections = Object.keys(props).filter((key) => {
     return directions.includes(key)
   })
-  if (propDirections.length > 1) {
+  if (!props.ignoreErrors && (propDirections.length > 1)) {
     return new Error(`More than one direction prop was supplied to ${componentName}, only use one.`)
-  } else if (propDirections.length === 0) {
+  } else if (!props.ignoreErrors && propDirections.length === 0) {
     return new Error(`No direction prop was supplied to ${componentName}, please select one.`)
   }
   return null
@@ -94,11 +94,12 @@ Chevron.propTypes = {
       rocketBlue: PropTypes.string.isRequired
     })
   }),
+  ignoreErrors: PropTypes.bool,
   validateDirection
 }
 
 Chevron.defaultProps = {
-
+  ignoreErrors: false
 }
 
 /** @component */

@@ -7,12 +7,13 @@ const topPoints = `M2,74.21H102c51.54,1.7,72.86-35.69,59.31-58.6S93.4-3.52,
 const bottomPoints = `M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
 19.13-72-53.74L18.64,72.94`
 
-const UnstyledHamburger = ({className}) => {
+const UnstyledHamburger = ({className, ...props}) => {
   return (
     <svg
       className={className}
       xmlns='http://www.w3.org/2000/svg'
-      viewBox='0 0 167.29 210.66'>
+      viewBox='0 0 167.29 210.66'
+      {...props}>
     <path
       className='line hamburger-outerline'
       d={topPoints} />

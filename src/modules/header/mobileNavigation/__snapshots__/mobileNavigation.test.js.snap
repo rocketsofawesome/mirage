@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
+.c0 {
+  min-height: 71rem;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.c0 {
+  min-height: 100%;
+}
+
+<BaseMobileNavigation
+  className="c0"
+  drawerPosition="fixed"
+  position="fixed"
+/>
+`;

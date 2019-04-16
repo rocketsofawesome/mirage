@@ -13,7 +13,7 @@ Logo.propTypes = {
       rocketBlue: PropTypes.string
     })
   }),
-  width: PropTypes.string
+  maxWidth: PropTypes.string
 }
 
 /** @component */

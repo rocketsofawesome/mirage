@@ -72,7 +72,13 @@ exports[`(Base Component) UnstyledBaseLogo matching the snapsot 1`] = `
 `;
 
 exports[`(Component) BaseLogo matching the snapshot 1`] = `
+.c0 {
+  maxWidth: 100%;
+  max-maxWidth: 36rem;
+}
+
 <UnstyledBaseLogo
-  className=""
+  className="c0"
+  maxWidth="36rem"
 />
 `;

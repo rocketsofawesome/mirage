@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { keyframes, css } from 'styled-components'
 
 const UnstyledBaseLogo = ({className, ...props}) => {
+  delete props.maxWidth
   return (
       <svg className={className} viewBox='0 0 492 60' {...props}>
         <path className='letter letter-r' d='M52.6,39.4l-4.1-8.1h-3.6v8.1H42V20.2h7.5c3.6,0,6,2.4,6,5.6c0.1,2.4-1.5,4.5-3.8,5.1l4.4,8.5L52.6,39.4z
@@ -122,12 +123,17 @@ const animated = css`
 `
 
 const BaseLogo = styled(UnstyledBaseLogo)`
-  width: ${props => props.width};
+  width: 100%;
+  max-width: ${props => props.maxWidth};
   ${props => props.animated ? animated : ''}
 `
 
 BaseLogo.propTypes = {
-  width: PropTypes.string
+  maxWidth: PropTypes.string
+}
+
+BaseLogo.defaultProps = {
+  maxWidth: '36rem'
 }
 
 /** @component */

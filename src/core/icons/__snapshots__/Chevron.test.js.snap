@@ -16,10 +16,12 @@ exports[`(Styled Component) Chevron matching the snapshot 1`] = `
 
 <Styled(BaseChevron)
   down={true}
+  ignoreErrors={false}
 >
   <BaseChevron
     className="c0"
     down={true}
+    ignoreErrors={false}
   >
     <svg
       className="c0"
@@ -48,10 +50,12 @@ exports[`(Styled Component) Chevron matching the snapshot 2`] = `
 }
 
 <Styled(BaseChevron)
+  ignoreErrors={false}
   up={true}
 >
   <BaseChevron
     className="c0"
+    ignoreErrors={false}
     up={true}
   >
     <svg
@@ -81,10 +85,12 @@ exports[`(Styled Component) Chevron matching the snapshot 3`] = `
 }
 
 <Styled(BaseChevron)
+  ignoreErrors={false}
   left={true}
 >
   <BaseChevron
     className="c0"
+    ignoreErrors={false}
     left={true}
   >
     <svg
@@ -114,10 +120,12 @@ exports[`(Styled Component) Chevron matching the snapshot 4`] = `
 }
 
 <Styled(BaseChevron)
+  ignoreErrors={false}
   right={true}
 >
   <BaseChevron
     className="c0"
+    ignoreErrors={false}
     right={true}
   >
     <svg
@@ -151,11 +159,13 @@ exports[`(Styled Component) Chevron matching the snapshot 5`] = `
 <Styled(BaseChevron)
   animated={true}
   down={true}
+  ignoreErrors={false}
 >
   <BaseChevron
     animated={true}
     className="c0"
     down={true}
+    ignoreErrors={false}
   >
     <svg
       className="c0"
@@ -187,11 +197,13 @@ exports[`(Styled Component) Chevron matching the snapshot 6`] = `
 
 <Styled(BaseChevron)
   animated={true}
+  ignoreErrors={false}
   up={true}
 >
   <BaseChevron
     animated={true}
     className="c0"
+    ignoreErrors={false}
     up={true}
   >
     <svg
@@ -224,11 +236,13 @@ exports[`(Styled Component) Chevron matching the snapshot 7`] = `
 
 <Styled(BaseChevron)
   animated={true}
+  ignoreErrors={false}
   left={true}
 >
   <BaseChevron
     animated={true}
     className="c0"
+    ignoreErrors={false}
     left={true}
   >
     <svg
@@ -261,11 +275,13 @@ exports[`(Styled Component) Chevron matching the snapshot 8`] = `
 
 <Styled(BaseChevron)
   animated={true}
+  ignoreErrors={false}
   right={true}
 >
   <BaseChevron
     animated={true}
     className="c0"
+    ignoreErrors={false}
     right={true}
   >
     <svg

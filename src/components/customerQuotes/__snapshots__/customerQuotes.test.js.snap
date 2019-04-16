@@ -8,12 +8,12 @@ exports[`(Styled Component) CustomerQuotes matching the snapshot 1`] = `
 
 .c0 .c1,
 .c0 .c2,
-.c0 .sc-cHGsZl {
+.c0 .sc-ksYbfQ {
   text-align: center;
 }
 
 .c0 .c2,
-.c0 .sc-cHGsZl {
+.c0 .sc-ksYbfQ {
   color: #0073D1;
   margin-top: 0;
   margin-bottom: 0;
@@ -43,7 +43,7 @@ exports[`(Styled Component) CustomerQuotes matching the snapshot 1`] = `
 
 @media (min-width:76.8em) {
   .c0 .c2,
-  .c0 .sc-cHGsZl {
+  .c0 .sc-ksYbfQ {
     -webkit-order: 2;
     -ms-flex-order: 2;
     order: 2;
