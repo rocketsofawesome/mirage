@@ -14,7 +14,7 @@
 /**
  * Templates:
 **/
-  export {default as Renderer} from './renderer'
+  export * from './templates'
 /**
  * Pages:
 **/
