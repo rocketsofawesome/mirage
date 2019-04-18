@@ -34,3 +34,14 @@ export default Object.keys(sizes).reduce((accumulator, label) => {
   `
   return accumulator
 }, {})
+
+export const breakpointsVerbose = Object.keys(breakpoints).reduce((accumulator, label) => {
+  // use em in breakpoints to work properly cross-browser and support users
+  // changing their browsers font-size: https://zellwk.com/blog/media-query-units/
+  accumulator[label] = (...args) => css`
+    @media ${breakpoints[label]} {
+      ${css(...args)}
+    }
+  `
+  return accumulator
+}, {})
