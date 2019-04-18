@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components'
 import { colors } from './colors'
-import media, { breakpoints } from './breakpoints'
+import media, { breakpoints, breakpointsVerbose } from './breakpoints'
 import fontFamilies from './fontFamilies'
 import gridSettings from './gridSettings'
 
@@ -17,5 +17,6 @@ export default {
   grid: gridSettings,
   fixedPosition: 'relative',
   media: media,
+  breakpointsVerbose: breakpointsVerbose,
   base: base
 }
