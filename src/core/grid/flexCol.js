@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, {css} from 'styled-components'
 
+import { theme } from 'SRC/core/theme'
+
 const columnToPercent = (elementWidth, containerWidth) => {
   return `${100 * (elementWidth/containerWidth)}%`
 }
@@ -11,7 +13,7 @@ const spanner = (props, breakpoint) => {
     return css`
       margin-left: ${props => props.desktop.nested
         ? columnToPercent(props.desktop.span, props.desktop.nested)
-        : columnToPercent(props.desktop.span, props.theme.grid.columns.desktop)};
+        : columnToPercent(props.desktop.span, props.columns.desktop)};
     `
   } else {
     return null
@@ -24,10 +26,10 @@ const FlexCol = styled(({ element, children, ...props}) => {
   box-sizing: border-box;
   max-width: ${props => props.mobile.nested
     ? columnToPercent(props.mobile.width, props.mobile.nested)
-    : columnToPercent(props.mobile.width, props.theme.grid.columns.mobile)};
+    : columnToPercent(props.mobile.width, props.columns.mobile)};
   flex-basis: ${props => props.mobile.nested
     ? columnToPercent(props.mobile.width, props.mobile.nested)
-    : columnToPercent(props.mobile.width, props.theme.grid.columns.mobile)};
+    : columnToPercent(props.mobile.width, props.columns.mobile)};
   ${props => spanner(props, 'mobile')}
   ${props => props.nested
     ? `
@@ -43,10 +45,10 @@ const FlexCol = styled(({ element, children, ...props}) => {
   ${props => props.theme.media.tablet`
     max-width: ${props => props.desktop.nested
       ? columnToPercent(props.desktop.width, props.desktop.nested)
-      : columnToPercent(props.desktop.width, props.theme.grid.columns.desktop)};
+      : columnToPercent(props.desktop.width, props.columns.desktop)};
     flex-basis: ${props => props.desktop.nested
       ? columnToPercent(props.desktop.width, props.desktop.nested)
-      : columnToPercent(props.desktop.width, props.theme.grid.columns.desktop)};
+      : columnToPercent(props.desktop.width, props.columns.desktop)};
     ${ props => spanner(props, 'desktop')}
   `
 }
@@ -77,6 +79,10 @@ FlexCol.defaultProps = {
   },
   desktop: {
     width: 12
+  },
+  columns: {
+    mobile: theme.grid.columns.mobile,
+    desktop: theme.grid.columns.desktop
   }
 }
 
