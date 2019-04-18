@@ -2,8 +2,8 @@
 
 exports[`(Styled Component) WhiteLogo matching the snapshot 1`] = `
 .c1 {
-  maxWidth: 100%;
-  max-maxWidth: 36rem;
+  width: 100%;
+  max-width: 36rem;
 }
 
 .c0 {

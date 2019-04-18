@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`() SizePicker matching the snapshot 1`] = `
+.c2 {
+  box-sizing: border-box;
+  width: 6rem;
+  height: 4.7rem;
+  border-radius: 0.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  cursor: pointer;
+  border: solid 0.1rem #0073D1;
+  position: relative;
+}
+
+.c2:hover {
+  background-color: #BCE1F7;
+}
+
+.c2 > input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.c2.outOfStock {
+  border: solid 0.1rem #979797;
+  color: #979797;
+}
+
+.c2.outOfStock:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c2.selected {
+  background-color: #BCE1F7;
+}
+
+.c0 .c1 {
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+<Styled(Component)
+  currentSize={4}
+  name="12345"
+  sizes={
+    Array [
+      Object {
+        "inStock": true,
+        "value": 3,
+      },
+      Object {
+        "inStock": true,
+        "value": 4,
+      },
+      Object {
+        "inStock": true,
+        "value": 5,
+      },
+      Object {
+        "inStock": true,
+        "value": 6,
+      },
+      Object {
+        "inStock": false,
+        "value": 7,
+      },
+      Object {
+        "inStock": true,
+        "value": 9,
+      },
+      Object {
+        "inStock": true,
+        "value": 12,
+      },
+    ]
+  }
+>
+  <Component
+    className="c0"
+    currentSize={4}
+    name="12345"
+    sizes={
+      Array [
+        Object {
+          "inStock": true,
+          "value": 3,
+        },
+        Object {
+          "inStock": true,
+          "value": 4,
+        },
+        Object {
+          "inStock": true,
+          "value": 5,
+        },
+        Object {
+          "inStock": true,
+          "value": 6,
+        },
+        Object {
+          "inStock": false,
+          "value": 7,
+        },
+        Object {
+          "inStock": true,
+          "value": 9,
+        },
+        Object {
+          "inStock": true,
+          "value": 12,
+        },
+      ]
+    }
+  >
+    <div
+      className="c0"
+    >
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 3,
+          }
+        }
+        key="12345-0"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 3,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            3
+            <input
+              name="12345"
+              type="radio"
+              value={3}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 4,
+          }
+        }
+        key="12345-1"
+        selected={true}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 4,
+            }
+          }
+          selected={true}
+        >
+          <label
+            className="c1 c2 selected"
+          >
+            4
+            <input
+              name="12345"
+              type="radio"
+              value={4}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 5,
+          }
+        }
+        key="12345-2"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 5,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            5
+            <input
+              name="12345"
+              type="radio"
+              value={5}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 6,
+          }
+        }
+        key="12345-3"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 6,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            6
+            <input
+              name="12345"
+              type="radio"
+              value={6}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={false}
+        input={
+          Object {
+            "name": "12345",
+            "value": 7,
+          }
+        }
+        key="12345-4"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={false}
+          input={
+            Object {
+              "name": "12345",
+              "value": 7,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2 outOfStock"
+          >
+            7
+            <input
+              name="12345"
+              type="radio"
+              value={7}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 9,
+          }
+        }
+        key="12345-5"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 9,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            9
+            <input
+              name="12345"
+              type="radio"
+              value={9}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "name": "12345",
+            "value": 12,
+          }
+        }
+        key="12345-6"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "name": "12345",
+              "value": 12,
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            12
+            <input
+              name="12345"
+              type="radio"
+              value={12}
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+    </div>
+  </Component>
+</Styled(Component)>
+`;

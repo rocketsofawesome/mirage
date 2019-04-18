@@ -34,8 +34,8 @@ const SizeRadio = styled(BaseSizeRadio)`
     align-items: center;
     justify-content: center;
 
-    width: 64px;
-    height: 64px;
+    width: 6.4rem;
+    height: 6.4rem;
 
     cursor: pointer;
     transition-timing-function: ease-in-out;
@@ -50,7 +50,7 @@ const SizeRadio = styled(BaseSizeRadio)`
     background-color: ${props => props.theme.colors.gray[0]};
 
     font-family: ${props => props.theme.fonts.primaryFont};
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 500;
     font-style: normal;
     font-stretch: normal;
@@ -63,7 +63,7 @@ const SizeRadio = styled(BaseSizeRadio)`
 `
 
 SizeRadio.propTypes = {
-  children: PropTypes.string,
+  children: PropTypes.node,
   input: PropTypes.object,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({

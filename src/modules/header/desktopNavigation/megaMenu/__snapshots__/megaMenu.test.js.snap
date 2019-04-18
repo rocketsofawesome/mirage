@@ -9,6 +9,7 @@ exports[`(Styled Component) MegaMenu matching the snapshot 1`] = `
   box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
   border-top: 0.2rem solid #0073D1;
   border-bottom: 0.2rem solid #0073D1;
+  z-index: 100;
 }
 
 .c0.closed {

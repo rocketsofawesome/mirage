@@ -41,6 +41,7 @@ const supportingColors = {
     '#D5D5D5',
     '#CFCFCF'
   ],
+  shadyLady: '#979797',
   red: '#FF511C',
   loading: '#BFBFBF'
 }

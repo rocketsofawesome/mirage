@@ -42,7 +42,7 @@ const FlexCol = styled(({ element, children, ...props}) => {
     `
   }
 
-  ${props => props.theme.media.tablet`
+  ${props => props.theme.breakpointsVerbose.aboveLaptop`
     max-width: ${props => props.desktop.nested
       ? columnToPercent(props.desktop.width, props.desktop.nested)
       : columnToPercent(props.desktop.width, props.columns.desktop)};

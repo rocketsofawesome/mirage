@@ -165,6 +165,7 @@ export class BaseDesktopNavigation extends React.Component {
 const DesktopNavigation = styled(BaseDesktopNavigation)`
   width: 100%;
   flex-wrap: wrap;
+  z-index: 100;
   .nav-wrapper {
     position: relative
     width: 100%;

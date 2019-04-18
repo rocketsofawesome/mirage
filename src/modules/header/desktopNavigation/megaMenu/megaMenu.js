@@ -126,6 +126,7 @@ const MegaMenu = styled(BaseMegaMenu)`
   box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
   border-top: 0.2rem solid ${props => props.theme.colors.rocketBlue};
   border-bottom: 0.2rem solid ${props => props.theme.colors.rocketBlue};
+  z-index: 100;
   &.closed {
     opacity: 0;
     height: 0;

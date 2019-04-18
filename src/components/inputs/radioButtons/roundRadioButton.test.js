@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import SizeRadio, { checked } from './SizeRadio'
+import RoundRadio, { checked } from './RoundRadio'
 
 const { shallowWithTheme } = global
 
@@ -12,21 +12,21 @@ const input = {
   value: '1'
 }
 
-describe('(Styled Component) SizeRadio', () => {
-  const createSizeRadio = (props) => {
+describe('(Styled Component) RoundRadio', () => {
+  const createRoundRadio = (props) => {
     let inputProp = input
     if (props && props.input) {
       inputProp = {...input, ...props.input}
     }
-    return shallowWithTheme(<SizeRadio {...props} input={inputProp} />)
+    return shallowWithTheme(<RoundRadio {...props} input={inputProp} />)
   }
   test('matching the snapshot', () => {
-    expect(createSizeRadio())
+    expect(createRoundRadio())
     .toMatchSnapshot()
   })
 
   test('when a radio is checked', () => {
-    expect(createSizeRadio())
+    expect(createRoundRadio())
     .toHaveStyleRule({
       modifier: css`${checked}`
     })

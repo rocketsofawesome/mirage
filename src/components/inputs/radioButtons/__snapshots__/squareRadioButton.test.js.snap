@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`() SquareRadioButton matching the snapshot 1`] = `
+.c0 {
+  box-sizing: border-box;
+  width: 6rem;
+  height: 4.7rem;
+  border-radius: 0.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  cursor: pointer;
+  border: solid 0.1rem #0073D1;
+  position: relative;
+}
+
+.c0:hover {
+  background-color: #BCE1F7;
+}
+
+.c0 > input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.c0.outOfStock {
+  border: solid 0.1rem #979797;
+  color: #979797;
+}
+
+.c0.outOfStock:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c0.selected {
+  background-color: #BCE1F7;
+}
+
+<Styled(Component)
+  inStock={true}
+>
+  <Component
+    className="c0"
+    inStock={true}
+  >
+    <label
+      className="c0"
+    >
+      4
+      <input
+        type="radio"
+      />
+    </label>
+  </Component>
+</Styled(Component)>
+`;

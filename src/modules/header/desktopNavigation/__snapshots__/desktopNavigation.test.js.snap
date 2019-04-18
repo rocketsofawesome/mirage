@@ -78,8 +78,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 .c9 {
-  maxWidth: 100%;
-  max-maxWidth: 36rem;
+  width: 100%;
+  max-width: 36rem;
 }
 
 .c8 {
@@ -272,6 +272,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 .c0 .nav-wrapper {
@@ -358,6 +359,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
   border-top: 0.2rem solid #0073D1;
   border-bottom: 0.2rem solid #0073D1;
+  z-index: 100;
 }
 
 .c11.closed {
@@ -971,6 +973,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 className="c2"
                               >
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "span": 2,
@@ -986,6 +994,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c12"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "span": 2,
@@ -1001,6 +1015,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c12"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "span": 2,
@@ -2033,6 +2053,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   </Component>
                                 </Styled(Component)>
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "width": 3,
@@ -2047,6 +2073,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c18"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "width": 3,
@@ -2061,6 +2093,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c18"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "width": 3,
@@ -2444,6 +2482,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   </Component>
                                 </Styled(Component)>
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "width": 4,
@@ -2458,6 +2502,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c19"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "width": 4,
@@ -2472,6 +2522,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c19"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "width": 4,
@@ -2779,6 +2835,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 className="c2"
                               >
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "span": 2,
@@ -2794,6 +2856,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c12"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "span": 2,
@@ -2809,6 +2877,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c12"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "span": 2,
@@ -3760,6 +3834,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   </Component>
                                 </Styled(Component)>
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "width": 3,
@@ -3774,6 +3854,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c18"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "width": 3,
@@ -3788,6 +3874,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c18"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "width": 3,
@@ -4090,6 +4182,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   </Component>
                                 </Styled(Component)>
                                 <Styled(Component)
+                                  columns={
+                                    Object {
+                                      "desktop": 12,
+                                      "mobile": 4,
+                                    }
+                                  }
                                   desktop={
                                     Object {
                                       "width": 4,
@@ -4104,6 +4202,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 >
                                   <Component
                                     className="c19"
+                                    columns={
+                                      Object {
+                                        "desktop": 12,
+                                        "mobile": 4,
+                                      }
+                                    }
                                     desktop={
                                       Object {
                                         "width": 4,
@@ -4118,6 +4222,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c19"
+                                      columns={
+                                        Object {
+                                          "desktop": 12,
+                                          "mobile": 4,
+                                        }
+                                      }
                                       desktop={
                                         Object {
                                           "width": 4,

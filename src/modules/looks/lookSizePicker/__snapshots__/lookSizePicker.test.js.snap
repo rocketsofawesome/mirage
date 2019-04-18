@@ -1,0 +1,949 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`() LookSizePicker matching the snapshot 1`] = `
+.c2 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #00003C;
+}
+
+.c5 {
+  box-sizing: border-box;
+  width: 6rem;
+  height: 4.7rem;
+  border-radius: 0.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  cursor: pointer;
+  border: solid 0.1rem #0073D1;
+  position: relative;
+}
+
+.c5:hover {
+  background-color: #BCE1F7;
+}
+
+.c5 > input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.c5.outOfStock {
+  border: solid 0.1rem #979797;
+  color: #979797;
+}
+
+.c5.outOfStock:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c5.selected {
+  background-color: #BCE1F7;
+}
+
+.c3 .c4 {
+  margin-top: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.c0 .c1 {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c0 .product .image {
+  margin-right: 2rem;
+}
+
+.c0 .product {
+  -webkit-transform: translateY(-.75rem);
+  -ms-transform: translateY(-.75rem);
+  transform: translateY(-.75rem);
+}
+
+<Styled(Component)
+  products={
+    Array [
+      Object {
+        "id": "12345",
+        "image": Object {
+          "alt": "Fuzzy Tiger Tee front",
+          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+        },
+        "sizes": Array [
+          Object {
+            "inStock": true,
+            "value": 3,
+          },
+          Object {
+            "inStock": true,
+            "value": 4,
+          },
+          Object {
+            "inStock": true,
+            "value": 5,
+          },
+          Object {
+            "inStock": true,
+            "value": 6,
+          },
+          Object {
+            "inStock": false,
+            "value": 7,
+          },
+          Object {
+            "inStock": true,
+            "value": 9,
+          },
+          Object {
+            "inStock": true,
+            "value": 12,
+          },
+        ],
+      },
+      Object {
+        "id": "12346",
+        "image": Object {
+          "alt": "Cool Down Active Short front",
+          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+        },
+        "sizes": Array [
+          Object {
+            "inStock": true,
+            "value": 3,
+          },
+          Object {
+            "inStock": true,
+            "value": 4,
+          },
+          Object {
+            "inStock": true,
+            "value": 5,
+          },
+          Object {
+            "inStock": true,
+            "value": 6,
+          },
+          Object {
+            "inStock": false,
+            "value": 7,
+          },
+          Object {
+            "inStock": true,
+            "value": 9,
+          },
+          Object {
+            "inStock": true,
+            "value": 12,
+          },
+        ],
+      },
+    ]
+  }
+>
+  <Component
+    className="c0"
+    products={
+      Array [
+        Object {
+          "id": "12345",
+          "image": Object {
+            "alt": "Fuzzy Tiger Tee front",
+            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+          },
+          "sizes": Array [
+            Object {
+              "inStock": true,
+              "value": 3,
+            },
+            Object {
+              "inStock": true,
+              "value": 4,
+            },
+            Object {
+              "inStock": true,
+              "value": 5,
+            },
+            Object {
+              "inStock": true,
+              "value": 6,
+            },
+            Object {
+              "inStock": false,
+              "value": 7,
+            },
+            Object {
+              "inStock": true,
+              "value": 9,
+            },
+            Object {
+              "inStock": true,
+              "value": 12,
+            },
+          ],
+        },
+        Object {
+          "id": "12346",
+          "image": Object {
+            "alt": "Cool Down Active Short front",
+            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+          },
+          "sizes": Array [
+            Object {
+              "inStock": true,
+              "value": 3,
+            },
+            Object {
+              "inStock": true,
+              "value": 4,
+            },
+            Object {
+              "inStock": true,
+              "value": 5,
+            },
+            Object {
+              "inStock": true,
+              "value": 6,
+            },
+            Object {
+              "inStock": false,
+              "value": 7,
+            },
+            Object {
+              "inStock": true,
+              "value": 9,
+            },
+            Object {
+              "inStock": true,
+              "value": 12,
+            },
+          ],
+        },
+      ]
+    }
+  >
+    <div
+      className="c0"
+    >
+      <styled.label
+        fontSize="1.4rem"
+        fontWeight="500"
+        letterSpacing=".1rem"
+      >
+        <label
+          className="c1 c2"
+          fontSize="1.4rem"
+          fontWeight="500"
+          letterSpacing=".1rem"
+        >
+          Sizes:
+        </label>
+      </styled.label>
+      <div
+        className="product"
+        key="12345"
+      >
+        <InlineImage
+          alt="Fuzzy Tiger Tee front"
+          className="image"
+          src="https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+        >
+          <img
+            alt="Fuzzy Tiger Tee front"
+            className="image"
+            src="https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+          />
+        </InlineImage>
+        <Styled(Component)
+          name="12345"
+          sizes={
+            Array [
+              Object {
+                "inStock": true,
+                "value": 3,
+              },
+              Object {
+                "inStock": true,
+                "value": 4,
+              },
+              Object {
+                "inStock": true,
+                "value": 5,
+              },
+              Object {
+                "inStock": true,
+                "value": 6,
+              },
+              Object {
+                "inStock": false,
+                "value": 7,
+              },
+              Object {
+                "inStock": true,
+                "value": 9,
+              },
+              Object {
+                "inStock": true,
+                "value": 12,
+              },
+            ]
+          }
+        >
+          <Component
+            className="c3"
+            name="12345"
+            sizes={
+              Array [
+                Object {
+                  "inStock": true,
+                  "value": 3,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 4,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 5,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 6,
+                },
+                Object {
+                  "inStock": false,
+                  "value": 7,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 9,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 12,
+                },
+              ]
+            }
+          >
+            <div
+              className="c3"
+            >
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 3,
+                  }
+                }
+                key="12345-0"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 3,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    3
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={3}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 4,
+                  }
+                }
+                key="12345-1"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 4,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    4
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={4}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 5,
+                  }
+                }
+                key="12345-2"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 5,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    5
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={5}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 6,
+                  }
+                }
+                key="12345-3"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 6,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    6
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={6}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={false}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 7,
+                  }
+                }
+                key="12345-4"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={false}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 7,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5 outOfStock"
+                  >
+                    7
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={7}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 9,
+                  }
+                }
+                key="12345-5"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 9,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    9
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={9}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12345",
+                    "value": 12,
+                  }
+                }
+                key="12345-6"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12345",
+                      "value": 12,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    12
+                    <input
+                      name="12345"
+                      type="radio"
+                      value={12}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+            </div>
+          </Component>
+        </Styled(Component)>
+      </div>
+      <div
+        className="product"
+        key="12346"
+      >
+        <InlineImage
+          alt="Cool Down Active Short front"
+          className="image"
+          src="https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+        >
+          <img
+            alt="Cool Down Active Short front"
+            className="image"
+            src="https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+          />
+        </InlineImage>
+        <Styled(Component)
+          name="12346"
+          sizes={
+            Array [
+              Object {
+                "inStock": true,
+                "value": 3,
+              },
+              Object {
+                "inStock": true,
+                "value": 4,
+              },
+              Object {
+                "inStock": true,
+                "value": 5,
+              },
+              Object {
+                "inStock": true,
+                "value": 6,
+              },
+              Object {
+                "inStock": false,
+                "value": 7,
+              },
+              Object {
+                "inStock": true,
+                "value": 9,
+              },
+              Object {
+                "inStock": true,
+                "value": 12,
+              },
+            ]
+          }
+        >
+          <Component
+            className="c3"
+            name="12346"
+            sizes={
+              Array [
+                Object {
+                  "inStock": true,
+                  "value": 3,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 4,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 5,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 6,
+                },
+                Object {
+                  "inStock": false,
+                  "value": 7,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 9,
+                },
+                Object {
+                  "inStock": true,
+                  "value": 12,
+                },
+              ]
+            }
+          >
+            <div
+              className="c3"
+            >
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 3,
+                  }
+                }
+                key="12346-0"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 3,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    3
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={3}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 4,
+                  }
+                }
+                key="12346-1"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 4,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    4
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={4}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 5,
+                  }
+                }
+                key="12346-2"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 5,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    5
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={5}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 6,
+                  }
+                }
+                key="12346-3"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 6,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    6
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={6}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={false}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 7,
+                  }
+                }
+                key="12346-4"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={false}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 7,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5 outOfStock"
+                  >
+                    7
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={7}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 9,
+                  }
+                }
+                key="12346-5"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 9,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    9
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={9}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+              <Styled(Component)
+                inStock={true}
+                input={
+                  Object {
+                    "name": "12346",
+                    "value": 12,
+                  }
+                }
+                key="12346-6"
+                selected={false}
+              >
+                <Component
+                  className="c4 c5"
+                  inStock={true}
+                  input={
+                    Object {
+                      "name": "12346",
+                      "value": 12,
+                    }
+                  }
+                  selected={false}
+                >
+                  <label
+                    className="c4 c5"
+                  >
+                    12
+                    <input
+                      name="12346"
+                      type="radio"
+                      value={12}
+                    />
+                  </label>
+                </Component>
+              </Styled(Component)>
+            </div>
+          </Component>
+        </Styled(Component)>
+      </div>
+    </div>
+  </Component>
+</Styled(Component)>
+`;
