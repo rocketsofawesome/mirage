@@ -2,9 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 
-import { FlexRow, FlexCol, Gallery, Desktop, Default } from 'SRC'
+import { 
+  Default,
+  Desktop, 
+  FlexCol, 
+  FlexRow, 
+  Gallery, 
+  ProductInformation 
+ } from 'SRC'
 
-const BaseLookDetail = ({className, theme, children, images}) => {
+const BaseLookDetail = ({className, theme, children, images, information}) => {
   return (
     <FlexRow constrained={false} className={className}>
       <FlexCol className='breadcrumb' desktop={{width: 12}}/>
@@ -16,13 +23,16 @@ const BaseLookDetail = ({className, theme, children, images}) => {
           <h1>We mobile y'all</h1>
         </Default>
       </FlexCol>
-      <FlexCol className='information' desktop={{width: 6}}/>
+      <FlexCol 
+        className='information' 
+        desktop={{width: 6}} 
+        element={ProductInformation}
+        {...information} />
     </FlexRow>
   )
 }
 
 const LookDetail =  styled(BaseLookDetail)`
-  border: 1px solid red;
   .breadcrumb {
     height: 1.6rem;
     border: 1px solid grey;
@@ -37,7 +47,6 @@ const LookDetail =  styled(BaseLookDetail)`
   }
   .information {
     height: 80rem;
-    border: 1px solid grey;
   }
 `
 
