@@ -1,0 +1,151 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`() ProductInformation matching the snapshot 1`] = `
+.c4 {
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: #00003C;
+  font-family: "din-cond","din-condensed-web",Arial,sans-serif;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 1.0476190476190477;
+}
+
+.c6 {
+  -webkit-letter-spacing: .05rem;
+  -moz-letter-spacing: .05rem;
+  -ms-letter-spacing: .05rem;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  color: #00003C;
+  font-family: "din-cond","din-condensed-web",Arial,sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.0625;
+}
+
+.c2 {
+  -webkit-letter-spacing: .05rem;
+  -moz-letter-spacing: .05rem;
+  -ms-letter-spacing: .05rem;
+  letter-spacing: .05rem;
+  text-transform: uppercase;
+  color: #00003C;
+  font-family: "din-cond","din-condensed-web",Arial,sans-serif;
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.0833333333333333;
+}
+
+.c9 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  margin: 0;
+  color: #00003C;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+}
+
+.c8 {
+  height: .1rem;
+  width: 100%;
+  border: none;
+  margin: 1rem 0;
+}
+
+.c7 {
+  background-color: #D5D5D5;
+}
+
+.c0 .c3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.c0 .c5,
+.c0 .c1 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+<Styled(Component)
+  description="Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy."
+  header="Weekends Are For Fun Outfit"
+  price="$55"
+  subheader="The Trend: Sparkly Rainbow"
+>
+  <Component
+    className="c0"
+    description="Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy."
+    header="Weekends Are For Fun Outfit"
+    price="$55"
+    subheader="The Trend: Sparkly Rainbow"
+  >
+    <div
+      className="c0"
+    >
+      <styled.h3
+        fontSize="2.4rem"
+      >
+        <h3
+          className="c1 c2"
+          fontSize="2.4rem"
+        >
+          The Trend: Sparkly Rainbow
+        </h3>
+      </styled.h3>
+      <styled.h1
+        fontSize="4.2rem"
+      >
+        <h1
+          className="c3 c4"
+          fontSize="4.2rem"
+        >
+          Weekends Are For Fun Outfit
+        </h1>
+      </styled.h1>
+      <styled.h2
+        fontSize="3.2rem"
+      >
+        <h2
+          className="c5 c6"
+          fontSize="3.2rem"
+        >
+          $55
+        </h2>
+      </styled.h2>
+      <Styled(Styled(UnstyledHr))>
+        <Styled(UnstyledHr)
+          className="c7"
+          width="100%"
+        >
+          <UnstyledHr
+            className="c7 c8"
+            width="100%"
+          >
+            <hr
+              className="c7 c8"
+            />
+          </UnstyledHr>
+        </Styled(UnstyledHr)>
+      </Styled(Styled(UnstyledHr))>
+      <styled.p
+        fontSize="1.6rem"
+      >
+        <p
+          className="c9"
+          fontSize="1.6rem"
+        >
+          Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy.
+        </p>
+      </styled.p>
+    </div>
+  </Component>
+</Styled(Component)>
+`;
