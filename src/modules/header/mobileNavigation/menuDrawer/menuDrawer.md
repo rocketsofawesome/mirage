@@ -1,5 +1,5 @@
 ```js
-  <MenuDrawer open style={{height: '73.6rem'}}>
+  <MenuDrawer position='static' open style={{height: '73.6rem'}}>
     <UL leftPad='1.4rem' type='none'>
       <li>
         <MobileLinkTop>Shop</MobileLinkTop>
