@@ -20,6 +20,12 @@ module.exports = {
       scripts: [
         {src: 'https://use.typekit.net/bfw8xpa.js'},
         {src: 'src/theme/typekit.js'}
+      ],
+      links: [
+        {
+          rel: 'stylesheet',
+          href:'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css'
+        }
       ]
     }
   },

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`() Gallery matching the snapshot 1`] = `
-.c0 {
+.c1 {
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -21,7 +21,17 @@ exports[`() Gallery matching the snapshot 1`] = `
   align-items: stretch;
 }
 
-.c1 {
+.c2 {
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.c4 {
   box-sizing: border-box;
   max-width: 100%;
   -webkit-flex-basis: 100%;
@@ -32,16 +42,6 @@ exports[`() Gallery matching the snapshot 1`] = `
 }
 
 .c3 {
-  box-sizing: border-box;
-  max-width: 100%;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.c2 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -51,7 +51,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   flex-direction: column;
 }
 
-.c2 .thumbnail {
+.c3 .thumbnail {
   margin-bottom: 1.5rem;
   width: 100%;
   border: 1px solid transparent;
@@ -59,23 +59,27 @@ exports[`() Gallery matching the snapshot 1`] = `
   transition: border-color 0.25s ease-in-out;
 }
 
-.c2 .thumbnail:hover {
+.c3 .thumbnail:hover {
   cursor: pointer;
 }
 
-.c2 .thumbnail.active {
+.c3 .thumbnail.active {
   border-color: #0073D1;
 }
 
+.c0 .imageZoom {
+  z-index: 1;
+}
+
 @media (min-width:76.8em) {
-  .c0 {
+  .c1 {
     margin-left: 20px;
     margin-right: 20px;
   }
 }
 
 @media (min-width:76.8em) {
-  .c1 {
+  .c2 {
     max-width: 16.666666666666664%;
     -webkit-flex-basis: 16.666666666666664%;
     -ms-flex-preferred-size: 16.666666666666664%;
@@ -84,7 +88,7 @@ exports[`() Gallery matching the snapshot 1`] = `
 }
 
 @media (min-width:76.8em) {
-  .c3 {
+  .c4 {
     max-width: 83.33333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
@@ -180,6 +184,22 @@ exports[`() Gallery matching the snapshot 1`] = `
           "landscape": "(orientation: landscape)",
           "portrait": "(orientation: portrait)",
         },
+        "breakpointsVerbose": Object {
+          "aboveDesktop": [Function],
+          "aboveLaptop": [Function],
+          "abovePhone": [Function],
+          "abovePhoneMax": [Function],
+          "aboveTablet": [Function],
+          "aboveTabletMax": [Function],
+          "belowDesktop": [Function],
+          "belowLaptop": [Function],
+          "belowPhone": [Function],
+          "belowPhoneMax": [Function],
+          "belowTablet": [Function],
+          "belowTabletMax": [Function],
+          "landscape": [Function],
+          "portrait": [Function],
+        },
         "colors": Object {
           "black": "#000000",
           "electricBlue": "#080CF1",
@@ -212,6 +232,7 @@ exports[`() Gallery matching the snapshot 1`] = `
           "red": "#FF511C",
           "rocketBlue": "#0073D1",
           "rocketBlueHover": "#0073EB",
+          "shadyLady": "#979797",
           "white": "#FFFFFF",
           "yellow": "#F0FF02",
           "yellowHover": "#D8E320",
@@ -248,7 +269,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   >
     <BaseGallery
       activeImage={0}
-      className=""
+      className="c0"
       images={
         Array [
           Object {
@@ -300,6 +321,22 @@ exports[`() Gallery matching the snapshot 1`] = `
             "landscape": "(orientation: landscape)",
             "portrait": "(orientation: portrait)",
           },
+          "breakpointsVerbose": Object {
+            "aboveDesktop": [Function],
+            "aboveLaptop": [Function],
+            "abovePhone": [Function],
+            "abovePhoneMax": [Function],
+            "aboveTablet": [Function],
+            "aboveTabletMax": [Function],
+            "belowDesktop": [Function],
+            "belowLaptop": [Function],
+            "belowPhone": [Function],
+            "belowPhoneMax": [Function],
+            "belowTablet": [Function],
+            "belowTabletMax": [Function],
+            "landscape": [Function],
+            "portrait": [Function],
+          },
           "colors": Object {
             "black": "#000000",
             "electricBlue": "#080CF1",
@@ -332,6 +369,7 @@ exports[`() Gallery matching the snapshot 1`] = `
             "red": "#FF511C",
             "rocketBlue": "#0073D1",
             "rocketBlueHover": "#0073EB",
+            "shadyLady": "#979797",
             "white": "#FFFFFF",
             "yellow": "#F0FF02",
             "yellowHover": "#D8E320",
@@ -367,17 +405,17 @@ exports[`() Gallery matching the snapshot 1`] = `
       }
     >
       <div
-        className=""
+        className="c0"
       >
         <Styled(Component)
           element="div"
         >
           <Component
-            className="c0"
+            className="c1"
             element="div"
           >
             <div
-              className="c0"
+              className="c1"
             >
               <Styled(Component)
                 active="production/catalog/bi5flgfpxbyr9tp2xkd9"
@@ -434,7 +472,7 @@ exports[`() Gallery matching the snapshot 1`] = `
               >
                 <Component
                   active="production/catalog/bi5flgfpxbyr9tp2xkd9"
-                  className="c1"
+                  className="c2"
                   columns={
                     Object {
                       "desktop": 12,
@@ -488,7 +526,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                 >
                   <Styled(Component)
                     active="production/catalog/bi5flgfpxbyr9tp2xkd9"
-                    className="c1"
+                    className="c2"
                     columns={
                       Object {
                         "desktop": 12,
@@ -541,7 +579,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                   >
                     <Component
                       active="production/catalog/bi5flgfpxbyr9tp2xkd9"
-                      className="c1 c2"
+                      className="c2 c3"
                       columns={
                         Object {
                           "desktop": 12,
@@ -593,7 +631,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                       }
                     >
                       <div
-                        className="c1 c2"
+                        className="c2 c3"
                       >
                         <InlineImage
                           alt="Cool Down Active Short on model"
@@ -713,7 +751,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                 </Component>
               </Styled(Component)>
               <Styled(Component)
-                className="imageZoom"
                 columns={
                   Object {
                     "desktop": 12,
@@ -733,7 +770,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                 }
               >
                 <Component
-                  className="imageZoom c3"
+                  className="c4"
                   columns={
                     Object {
                       "desktop": 12,
@@ -753,7 +790,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                   }
                 >
                   <div
-                    className="imageZoom c3"
+                    className="c4"
                     columns={
                       Object {
                         "desktop": 12,
@@ -772,6 +809,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                     }
                   >
                     <ReactImageMagnify
+                      className="imageZoom"
                       enlargedImageContainerDimensions={
                         Object {
                           "height": "100%",
@@ -805,6 +843,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                       }
                     >
                       <ReactCursorPosition
+                        className="imageZoom"
                         hoverDelayInMs={250}
                         hoverOffDelayInMs={150}
                         isActivatedOnTouch={false}
@@ -829,6 +868,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                         }
                       >
                         <div
+                          className="imageZoom"
                           style={
                             Object {
                               "WebkitUserSelect": "none",
