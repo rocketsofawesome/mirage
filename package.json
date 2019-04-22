@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d styleguide",
     "prepublish": "npm run test:badges; npm run deploy",
     "test": "node scripts/test.js --env=jsdom",
-    "test:coverage": "npm test -- --coverage",
+    "test:coverage": "npm test -- --coverage --u",
     "test:badges": "npm run test:coverage  && jest-coverage-badges"
   },
   "devDependencies": {
