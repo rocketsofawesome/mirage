@@ -3,9 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 
 import {
-  DesktopNavigation,
-  Default,
-  Desktop,
+  Header,
   FlexCol,
   FlexRow,
   Gallery,
@@ -14,9 +12,10 @@ import {
   Footer
  } from 'SRC'
 
-const BaseLookDetail = ({className, images, information, products}) => {
+const BaseLookDetail = ({className, images, information, products, header, footer, ...props }) => {
   return (
-    <div>
+    <div className={className} {...props}>
+      {header}
       <FlexRow constrained={false} className={className}>
         <FlexCol className='breadcrumb' desktop={{width: 12}}/>
         <FlexCol className='images' desktop={{width: 6}}>
@@ -28,6 +27,7 @@ const BaseLookDetail = ({className, images, information, products}) => {
         </FlexCol>
       </FlexRow>
       <Footer />
+      {footer}
     </div>
   )
 }
@@ -50,6 +50,22 @@ LookDetail.propTypes = {
   images: PropTypes.array.isRequired,
   information: PropTypes.string,
   products: PropTypes.array
+}
+
+LookDetail.defaultProps = {
+  footer: <Footer />,
+  header: <Header
+    mobileProps={
+      {
+        position: 'absolute',
+        drawerPosition:'absolute'
+      }
+    }
+    desktopProps={
+      {
+        position: 'absolute'
+      }
+    } />
 }
 
 /** @component */
