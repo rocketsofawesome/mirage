@@ -9,7 +9,7 @@ const Thumbnails = styled(({className, active, thumbnails, onClick}) => {
   return (
     <div className={className}>
       {thumbnails && thumbnails.map((thumbnail, index) => {
-        const classes = classNames('thumbnail', {
+        const classes = classNames('roa-thumbnail', {
           'active': (thumbnail.src.includes(active))
         })
         return (
@@ -27,7 +27,7 @@ const Thumbnails = styled(({className, active, thumbnails, onClick}) => {
 })`
   display: inline-flex;
   flex-direction: column;
-  .thumbnail {
+  .roa-thumbnail {
     margin-bottom: 1.5rem;
     width: 100%;
     border: 1px solid transparent;

@@ -2,6 +2,14 @@
 
 exports[`() Gallery matching the snapshot 1`] = `
 .c1 {
+  display: none;
+}
+
+.c6 {
+  display: none;
+}
+
+.c2 {
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -21,7 +29,17 @@ exports[`() Gallery matching the snapshot 1`] = `
   align-items: stretch;
 }
 
-.c2 {
+.c3 {
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.c5 {
   box-sizing: border-box;
   max-width: 100%;
   -webkit-flex-basis: 100%;
@@ -32,16 +50,6 @@ exports[`() Gallery matching the snapshot 1`] = `
 }
 
 .c4 {
-  box-sizing: border-box;
-  max-width: 100%;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -51,7 +59,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   flex-direction: column;
 }
 
-.c3 .thumbnail {
+.c4 .thumbnail {
   margin-bottom: 1.5rem;
   width: 100%;
   border: 1px solid transparent;
@@ -59,11 +67,11 @@ exports[`() Gallery matching the snapshot 1`] = `
   transition: border-color 0.25s ease-in-out;
 }
 
-.c3 .thumbnail:hover {
+.c4 .thumbnail:hover {
   cursor: pointer;
 }
 
-.c3 .thumbnail.active {
+.c4 .thumbnail.active {
   border-color: #0073D1;
 }
 
@@ -71,15 +79,99 @@ exports[`() Gallery matching the snapshot 1`] = `
   z-index: 1;
 }
 
-@media (min-width:76.8em) {
+.c0 .slider .image {
+  width: 100%;
+}
+
+.c0 .dots {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.c0 .dots li {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c0 .dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 2px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.c0 .dots li button:hover,
+.c0 .dots li button:focus {
+  outline: none;
+}
+
+.c0 .dots li button:hover:before,
+.c0 .dots li button:focus:before {
+  opacity: 1;
+}
+
+.c0 .dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  content: '•';
+  text-align: center;
+  border: #00003C solid 2px;
+  border-radius: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.c0 .dots .slick-active button:before {
+  background-color: #00003C !important;
+  border: 2px solid transparent!important;
+}
+
+@media (min-width:1280px) {
   .c1 {
-    margin-left: 20px;
-    margin-right: 20px;
+    display: block;
+  }
+}
+
+@media (max-width:1280px) {
+  .c6 {
+    display: block;
   }
 }
 
 @media (min-width:76.8em) {
   .c2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width:1280px) {
+  .c3 {
     max-width: 16.666666666666664%;
     -webkit-flex-basis: 16.666666666666664%;
     -ms-flex-preferred-size: 16.666666666666664%;
@@ -87,12 +179,26 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:76.8em) {
-  .c4 {
+@media (min-width:1280px) {
+  .c5 {
     max-width: 83.33333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 .slider {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width:960px) {
+  .c0 .slider {
+    width: 50%;
   }
 }
 
@@ -169,18 +275,18 @@ exports[`() Gallery matching the snapshot 1`] = `
       Object {
         "base": undefined,
         "breakpoints": Object {
-          "aboveDesktop": "(min-device-width: 1440px)",
-          "aboveLaptop": "(min-device-width: 1280px)",
-          "abovePhone": "(min-device-width: 320px)",
-          "abovePhoneMax": "(min-device-width: 414px)",
-          "aboveTablet": "(min-device-width: 768px)",
-          "aboveTabletMax": "(min-device-width: 960px)",
-          "belowDesktop": "(max-device-width: 1440px)",
-          "belowLaptop": "(max-device-width: 1280px)",
-          "belowPhone": "(max-device-width: 320px)",
-          "belowPhoneMax": "(max-device-width: 414px)",
-          "belowTablet": "(max-device-width: 768px)",
-          "belowTabletMax": "(max-device-width: 960px)",
+          "aboveDesktop": "(min-width: 1440px)",
+          "aboveLaptop": "(min-width: 1280px)",
+          "abovePhone": "(min-width: 320px)",
+          "abovePhoneMax": "(min-width: 414px)",
+          "aboveTablet": "(min-width: 768px)",
+          "aboveTabletMax": "(min-width: 960px)",
+          "belowDesktop": "(max-width: 1440px)",
+          "belowLaptop": "(max-width: 1280px)",
+          "belowPhone": "(max-width: 320px)",
+          "belowPhoneMax": "(max-width: 414px)",
+          "belowTablet": "(max-width: 768px)",
+          "belowTabletMax": "(max-width: 960px)",
           "landscape": "(orientation: landscape)",
           "portrait": "(orientation: portrait)",
         },
@@ -306,18 +412,18 @@ exports[`() Gallery matching the snapshot 1`] = `
         Object {
           "base": undefined,
           "breakpoints": Object {
-            "aboveDesktop": "(min-device-width: 1440px)",
-            "aboveLaptop": "(min-device-width: 1280px)",
-            "abovePhone": "(min-device-width: 320px)",
-            "abovePhoneMax": "(min-device-width: 414px)",
-            "aboveTablet": "(min-device-width: 768px)",
-            "aboveTabletMax": "(min-device-width: 960px)",
-            "belowDesktop": "(max-device-width: 1440px)",
-            "belowLaptop": "(max-device-width: 1280px)",
-            "belowPhone": "(max-device-width: 320px)",
-            "belowPhoneMax": "(max-device-width: 414px)",
-            "belowTablet": "(max-device-width: 768px)",
-            "belowTabletMax": "(max-device-width: 960px)",
+            "aboveDesktop": "(min-width: 1440px)",
+            "aboveLaptop": "(min-width: 1280px)",
+            "abovePhone": "(min-width: 320px)",
+            "abovePhoneMax": "(min-width: 414px)",
+            "aboveTablet": "(min-width: 768px)",
+            "aboveTabletMax": "(min-width: 960px)",
+            "belowDesktop": "(max-width: 1440px)",
+            "belowLaptop": "(max-width: 1280px)",
+            "belowPhone": "(max-width: 320px)",
+            "belowPhoneMax": "(max-width: 414px)",
+            "belowTablet": "(max-width: 768px)",
+            "belowTabletMax": "(max-width: 960px)",
             "landscape": "(orientation: landscape)",
             "portrait": "(orientation: portrait)",
           },
@@ -418,168 +524,17 @@ exports[`() Gallery matching the snapshot 1`] = `
               className="c1"
             >
               <Styled(Component)
-                active="production/catalog/bi5flgfpxbyr9tp2xkd9"
-                columns={
-                  Object {
-                    "desktop": 12,
-                    "mobile": 4,
-                  }
-                }
-                desktop={
-                  Object {
-                    "width": 2,
-                  }
-                }
-                element={[Function]}
-                mobile={
-                  Object {
-                    "width": 4,
-                  }
-                }
-                onClick={[Function]}
-                thumbnails={
-                  Array [
-                    Object {
-                      "alt": "Cool Down Active Short on model",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                    },
-                    Object {
-                      "alt": "Cool Down Active Short on model",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
-                    },
-                    Object {
-                      "alt": "Fuzzy Tiger Tee on model",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
-                    },
-                    Object {
-                      "alt": "Fuzzy Tiger Tee front",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
-                    },
-                    Object {
-                      "alt": "Fuzzy Tiger Tee detail",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
-                    },
-                    Object {
-                      "alt": "Cool Down Active Short front",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
-                    },
-                    Object {
-                      "alt": "Cool Down Active Short back",
-                      "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
-                    },
-                  ]
-                }
+                element="div"
               >
                 <Component
-                  active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                   className="c2"
-                  columns={
-                    Object {
-                      "desktop": 12,
-                      "mobile": 4,
-                    }
-                  }
-                  desktop={
-                    Object {
-                      "width": 2,
-                    }
-                  }
-                  element={[Function]}
-                  mobile={
-                    Object {
-                      "width": 4,
-                    }
-                  }
-                  onClick={[Function]}
-                  thumbnails={
-                    Array [
-                      Object {
-                        "alt": "Cool Down Active Short on model",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                      },
-                      Object {
-                        "alt": "Cool Down Active Short on model",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
-                      },
-                      Object {
-                        "alt": "Fuzzy Tiger Tee on model",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
-                      },
-                      Object {
-                        "alt": "Fuzzy Tiger Tee front",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
-                      },
-                      Object {
-                        "alt": "Fuzzy Tiger Tee detail",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
-                      },
-                      Object {
-                        "alt": "Cool Down Active Short front",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
-                      },
-                      Object {
-                        "alt": "Cool Down Active Short back",
-                        "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
-                      },
-                    ]
-                  }
+                  element="div"
                 >
-                  <Styled(Component)
-                    active="production/catalog/bi5flgfpxbyr9tp2xkd9"
+                  <div
                     className="c2"
-                    columns={
-                      Object {
-                        "desktop": 12,
-                        "mobile": 4,
-                      }
-                    }
-                    desktop={
-                      Object {
-                        "width": 2,
-                      }
-                    }
-                    mobile={
-                      Object {
-                        "width": 4,
-                      }
-                    }
-                    onClick={[Function]}
-                    thumbnails={
-                      Array [
-                        Object {
-                          "alt": "Cool Down Active Short on model",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                        },
-                        Object {
-                          "alt": "Cool Down Active Short on model",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
-                        },
-                        Object {
-                          "alt": "Fuzzy Tiger Tee on model",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
-                        },
-                        Object {
-                          "alt": "Fuzzy Tiger Tee front",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
-                        },
-                        Object {
-                          "alt": "Fuzzy Tiger Tee detail",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
-                        },
-                        Object {
-                          "alt": "Cool Down Active Short front",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
-                        },
-                        Object {
-                          "alt": "Cool Down Active Short back",
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
-                        },
-                      ]
-                    }
                   >
-                    <Component
+                    <Styled(Component)
                       active="production/catalog/bi5flgfpxbyr9tp2xkd9"
-                      className="c2 c3"
                       columns={
                         Object {
                           "desktop": 12,
@@ -591,6 +546,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           "width": 2,
                         }
                       }
+                      element={[Function]}
                       mobile={
                         Object {
                           "width": 4,
@@ -630,660 +586,360 @@ exports[`() Gallery matching the snapshot 1`] = `
                         ]
                       }
                     >
-                      <div
-                        className="c2 c3"
+                      <Component
+                        active="production/catalog/bi5flgfpxbyr9tp2xkd9"
+                        className="c3"
+                        columns={
+                          Object {
+                            "desktop": 12,
+                            "mobile": 4,
+                          }
+                        }
+                        desktop={
+                          Object {
+                            "width": 2,
+                          }
+                        }
+                        element={[Function]}
+                        mobile={
+                          Object {
+                            "width": 4,
+                          }
+                        }
+                        onClick={[Function]}
+                        thumbnails={
+                          Array [
+                            Object {
+                              "alt": "Cool Down Active Short on model",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                            },
+                            Object {
+                              "alt": "Cool Down Active Short on model",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                            },
+                            Object {
+                              "alt": "Fuzzy Tiger Tee on model",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                            },
+                            Object {
+                              "alt": "Fuzzy Tiger Tee front",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                            },
+                            Object {
+                              "alt": "Fuzzy Tiger Tee detail",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                            },
+                            Object {
+                              "alt": "Cool Down Active Short front",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                            },
+                            Object {
+                              "alt": "Cool Down Active Short back",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                            },
+                          ]
+                        }
                       >
-                        <InlineImage
-                          alt="Cool Down Active Short on model"
-                          className="thumbnail active"
-                          key="0"
+                        <Styled(Component)
+                          active="production/catalog/bi5flgfpxbyr9tp2xkd9"
+                          className="c3"
+                          columns={
+                            Object {
+                              "desktop": 12,
+                              "mobile": 4,
+                            }
+                          }
+                          desktop={
+                            Object {
+                              "width": 2,
+                            }
+                          }
+                          mobile={
+                            Object {
+                              "width": 4,
+                            }
+                          }
                           onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                          thumbnails={
+                            Array [
+                              Object {
+                                "alt": "Cool Down Active Short on model",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                              },
+                              Object {
+                                "alt": "Cool Down Active Short on model",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                              },
+                              Object {
+                                "alt": "Fuzzy Tiger Tee on model",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                              },
+                              Object {
+                                "alt": "Fuzzy Tiger Tee front",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                              },
+                              Object {
+                                "alt": "Fuzzy Tiger Tee detail",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                              },
+                              Object {
+                                "alt": "Cool Down Active Short front",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                              },
+                              Object {
+                                "alt": "Cool Down Active Short back",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                              },
+                            ]
+                          }
                         >
-                          <img
-                            alt="Cool Down Active Short on model"
-                            className="thumbnail active"
+                          <Component
+                            active="production/catalog/bi5flgfpxbyr9tp2xkd9"
+                            className="c3 c4"
+                            columns={
+                              Object {
+                                "desktop": 12,
+                                "mobile": 4,
+                              }
+                            }
+                            desktop={
+                              Object {
+                                "width": 2,
+                              }
+                            }
+                            mobile={
+                              Object {
+                                "width": 4,
+                              }
+                            }
                             onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Cool Down Active Short on model"
-                          className="thumbnail"
-                          key="1"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
-                        >
-                          <img
-                            alt="Cool Down Active Short on model"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Fuzzy Tiger Tee on model"
-                          className="thumbnail"
-                          key="2"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
-                        >
-                          <img
-                            alt="Fuzzy Tiger Tee on model"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Fuzzy Tiger Tee front"
-                          className="thumbnail"
-                          key="3"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
-                        >
-                          <img
-                            alt="Fuzzy Tiger Tee front"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Fuzzy Tiger Tee detail"
-                          className="thumbnail"
-                          key="4"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
-                        >
-                          <img
-                            alt="Fuzzy Tiger Tee detail"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Cool Down Active Short front"
-                          className="thumbnail"
-                          key="5"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
-                        >
-                          <img
-                            alt="Cool Down Active Short front"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
-                          />
-                        </InlineImage>
-                        <InlineImage
-                          alt="Cool Down Active Short back"
-                          className="thumbnail"
-                          key="6"
-                          onClick={[Function]}
-                          role="button"
-                          src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
-                        >
-                          <img
-                            alt="Cool Down Active Short back"
-                            className="thumbnail"
-                            onClick={[Function]}
-                            role="button"
-                            src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
-                          />
-                        </InlineImage>
-                      </div>
-                    </Component>
-                  </Styled(Component)>
-                </Component>
-              </Styled(Component)>
-              <Styled(Component)
-                columns={
-                  Object {
-                    "desktop": 12,
-                    "mobile": 4,
-                  }
-                }
-                desktop={
-                  Object {
-                    "width": 10,
-                  }
-                }
-                element="div"
-                mobile={
-                  Object {
-                    "width": 4,
-                  }
-                }
-              >
-                <Component
-                  className="c4"
-                  columns={
-                    Object {
-                      "desktop": 12,
-                      "mobile": 4,
-                    }
-                  }
-                  desktop={
-                    Object {
-                      "width": 10,
-                    }
-                  }
-                  element="div"
-                  mobile={
-                    Object {
-                      "width": 4,
-                    }
-                  }
-                >
-                  <div
-                    className="c4"
-                    columns={
-                      Object {
-                        "desktop": 12,
-                        "mobile": 4,
-                      }
-                    }
-                    desktop={
-                      Object {
-                        "width": 10,
-                      }
-                    }
-                    mobile={
-                      Object {
-                        "width": 4,
-                      }
-                    }
-                  >
-                    <ReactImageMagnify
-                      className="imageZoom"
-                      enlargedImageContainerDimensions={
+                            thumbnails={
+                              Array [
+                                Object {
+                                  "alt": "Cool Down Active Short on model",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                },
+                                Object {
+                                  "alt": "Cool Down Active Short on model",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                                },
+                                Object {
+                                  "alt": "Fuzzy Tiger Tee on model",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                                },
+                                Object {
+                                  "alt": "Fuzzy Tiger Tee front",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                                },
+                                Object {
+                                  "alt": "Fuzzy Tiger Tee detail",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                                },
+                                Object {
+                                  "alt": "Cool Down Active Short front",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                                },
+                                Object {
+                                  "alt": "Cool Down Active Short back",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                                },
+                              ]
+                            }
+                          >
+                            <div
+                              className="c3 c4"
+                            >
+                              <InlineImage
+                                alt="Cool Down Active Short on model"
+                                className="thumbnail active"
+                                key="0"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                              >
+                                <img
+                                  alt="Cool Down Active Short on model"
+                                  className="thumbnail active"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Cool Down Active Short on model"
+                                className="thumbnail"
+                                key="1"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                              >
+                                <img
+                                  alt="Cool Down Active Short on model"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Fuzzy Tiger Tee on model"
+                                className="thumbnail"
+                                key="2"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                              >
+                                <img
+                                  alt="Fuzzy Tiger Tee on model"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Fuzzy Tiger Tee front"
+                                className="thumbnail"
+                                key="3"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                              >
+                                <img
+                                  alt="Fuzzy Tiger Tee front"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Fuzzy Tiger Tee detail"
+                                className="thumbnail"
+                                key="4"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                              >
+                                <img
+                                  alt="Fuzzy Tiger Tee detail"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Cool Down Active Short front"
+                                className="thumbnail"
+                                key="5"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                              >
+                                <img
+                                  alt="Cool Down Active Short front"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                                />
+                              </InlineImage>
+                              <InlineImage
+                                alt="Cool Down Active Short back"
+                                className="thumbnail"
+                                key="6"
+                                onClick={[Function]}
+                                role="button"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                              >
+                                <img
+                                  alt="Cool Down Active Short back"
+                                  className="thumbnail"
+                                  onClick={[Function]}
+                                  role="button"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                                />
+                              </InlineImage>
+                            </div>
+                          </Component>
+                        </Styled(Component)>
+                      </Component>
+                    </Styled(Component)>
+                    <Styled(Component)
+                      columns={
                         Object {
-                          "height": "100%",
-                          "width": "100%",
+                          "desktop": 12,
+                          "mobile": 4,
                         }
                       }
-                      fadeDurationInMs={300}
-                      hintComponent={[Function]}
-                      hintTextMouse="Hover to Zoom"
-                      hintTextTouch="Long-Touch to Zoom"
-                      hoverDelayInMs={250}
-                      hoverOffDelayInMs={150}
-                      isEnlargedImagePortalEnabledForTouch={false}
-                      isHintEnabled={false}
-                      largeImage={
+                      desktop={
                         Object {
-                          "alt": "Cool Down Active Short on model Main Enlarged Image",
-                          "height": 1989,
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                          "width": 1440,
+                          "width": 10,
                         }
                       }
-                      shouldHideHintAfterFirstActivation={true}
-                      shouldUsePositiveSpaceLens={false}
-                      smallImage={
+                      element="div"
+                      mobile={
                         Object {
-                          "alt": "Cool Down Active Short on model Main Image",
-                          "isFluidWidth": true,
-                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                          "width": 4,
                         }
                       }
                     >
-                      <ReactCursorPosition
-                        className="imageZoom"
-                        hoverDelayInMs={250}
-                        hoverOffDelayInMs={150}
-                        isActivatedOnTouch={false}
-                        isEnabled={true}
-                        mapChildProps={[Function]}
-                        onActivationChanged={[Function]}
-                        onDetectedEnvironmentChanged={[Function]}
-                        onDetectedInputTypeChanged={[Function]}
-                        onPositionChanged={[Function]}
-                        pressDuration={500}
-                        pressMoveThreshold={5}
-                        shouldDecorateChildren={true}
-                        shouldStopTouchMovePropagation={true}
-                        style={
+                      <Component
+                        className="c5"
+                        columns={
                           Object {
-                            "cursor": "crosshair",
-                            "fontSize": "0px",
-                            "height": "auto",
-                            "position": "relative",
-                            "width": "auto",
+                            "desktop": 12,
+                            "mobile": 4,
+                          }
+                        }
+                        desktop={
+                          Object {
+                            "width": 10,
+                          }
+                        }
+                        element="div"
+                        mobile={
+                          Object {
+                            "width": 4,
                           }
                         }
                       >
                         <div
-                          className="imageZoom"
-                          style={
+                          className="c5"
+                          columns={
                             Object {
-                              "WebkitUserSelect": "none",
-                              "cursor": "crosshair",
-                              "fontSize": "0px",
-                              "height": "auto",
-                              "position": "relative",
-                              "width": "auto",
+                              "desktop": 12,
+                              "mobile": 4,
+                            }
+                          }
+                          desktop={
+                            Object {
+                              "width": 10,
+                            }
+                          }
+                          mobile={
+                            Object {
+                              "width": 4,
                             }
                           }
                         >
-                          <img
-                            alt="Cool Down Active Short on model Main Image"
-                            key=".0"
-                            onError={[Function]}
-                            onLoad={[Function]}
-                            src="https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                            style={
+                          <ReactImageMagnify
+                            className="imageZoom"
+                            enlargedImageContainerDimensions={
                               Object {
-                                "display": "block",
-                                "height": "auto",
-                                "pointerEvents": "none",
+                                "height": "100%",
                                 "width": "100%",
                               }
                             }
-                          />
-                          <NegativeSpaceLens
-                            cursorOffset={
-                              Object {
-                                "x": 0,
-                                "y": 0,
-                              }
-                            }
-                            detectedEnvironment={
-                              Object {
-                                "isMouseDetected": false,
-                                "isTouchDetected": false,
-                              }
-                            }
-                            elementDimensions={
-                              Object {
-                                "height": 0,
-                                "width": 0,
-                              }
-                            }
                             fadeDurationInMs={300}
-                            isActive={false}
-                            isPositionOutside={true}
-                            key=".2"
-                            onDetectedInputTypeChanged={[Function]}
-                            position={
-                              Object {
-                                "x": 0,
-                                "y": 0,
-                              }
-                            }
-                            smallImage={
-                              Object {
-                                "alt": "Cool Down Active Short on model Main Image",
-                                "height": 0,
-                                "isFluidWidth": true,
-                                "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                "width": 0,
-                              }
-                            }
-                          >
-                            <div>
-                              <LensTop
-                                cursorOffset={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                detectedEnvironment={
-                                  Object {
-                                    "isMouseDetected": false,
-                                    "isTouchDetected": false,
-                                  }
-                                }
-                                elementDimensions={
-                                  Object {
-                                    "height": 0,
-                                    "width": 0,
-                                  }
-                                }
-                                fadeDurationInMs={300}
-                                isActive={false}
-                                isPositionOutside={true}
-                                onDetectedInputTypeChanged={[Function]}
-                                position={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                smallImage={
-                                  Object {
-                                    "alt": "Cool Down Active Short on model Main Image",
-                                    "height": 0,
-                                    "isFluidWidth": true,
-                                    "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                    "width": 0,
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "backgroundColor": "rgba(0,0,0,.4)",
-                                  }
-                                }
-                              >
-                                <Lens
-                                  fadeDurationInMs={300}
-                                  isActive={false}
-                                  isPositionOutside={true}
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,.4)",
-                                      "height": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                    }
-                                  }
-                                  translateX={0}
-                                  translateY={0}
-                                >
-                                  <div
-                                    style={
-                                      Object {
-                                        "backgroundColor": "rgba(0,0,0,.4)",
-                                        "bottom": "auto",
-                                        "display": "block",
-                                        "height": "0px",
-                                        "left": "auto",
-                                        "opacity": 0,
-                                        "position": "absolute",
-                                        "right": "auto",
-                                        "top": "0px",
-                                        "transition": "opacity 300ms ease-in",
-                                        "width": "100%",
-                                      }
-                                    }
-                                  />
-                                </Lens>
-                              </LensTop>
-                              <LensLeft
-                                cursorOffset={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                detectedEnvironment={
-                                  Object {
-                                    "isMouseDetected": false,
-                                    "isTouchDetected": false,
-                                  }
-                                }
-                                elementDimensions={
-                                  Object {
-                                    "height": 0,
-                                    "width": 0,
-                                  }
-                                }
-                                fadeDurationInMs={300}
-                                isActive={false}
-                                isPositionOutside={true}
-                                onDetectedInputTypeChanged={[Function]}
-                                position={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                smallImage={
-                                  Object {
-                                    "alt": "Cool Down Active Short on model Main Image",
-                                    "height": 0,
-                                    "isFluidWidth": true,
-                                    "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                    "width": 0,
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "backgroundColor": "rgba(0,0,0,.4)",
-                                  }
-                                }
-                              >
-                                <Lens
-                                  fadeDurationInMs={300}
-                                  isActive={false}
-                                  isPositionOutside={true}
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,.4)",
-                                      "height": "0px",
-                                      "left": "0px",
-                                      "top": "0px",
-                                      "width": "0px",
-                                    }
-                                  }
-                                  translateX={0}
-                                  translateY={0}
-                                >
-                                  <div
-                                    style={
-                                      Object {
-                                        "backgroundColor": "rgba(0,0,0,.4)",
-                                        "bottom": "auto",
-                                        "display": "block",
-                                        "height": "0px",
-                                        "left": "0px",
-                                        "opacity": 0,
-                                        "position": "absolute",
-                                        "right": "auto",
-                                        "top": "0px",
-                                        "transition": "opacity 300ms ease-in",
-                                        "width": "0px",
-                                      }
-                                    }
-                                  />
-                                </Lens>
-                              </LensLeft>
-                              <LensRight
-                                cursorOffset={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                detectedEnvironment={
-                                  Object {
-                                    "isMouseDetected": false,
-                                    "isTouchDetected": false,
-                                  }
-                                }
-                                elementDimensions={
-                                  Object {
-                                    "height": 0,
-                                    "width": 0,
-                                  }
-                                }
-                                fadeDurationInMs={300}
-                                isActive={false}
-                                isPositionOutside={true}
-                                onDetectedInputTypeChanged={[Function]}
-                                position={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                smallImage={
-                                  Object {
-                                    "alt": "Cool Down Active Short on model Main Image",
-                                    "height": 0,
-                                    "isFluidWidth": true,
-                                    "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                    "width": 0,
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "backgroundColor": "rgba(0,0,0,.4)",
-                                  }
-                                }
-                              >
-                                <Lens
-                                  fadeDurationInMs={300}
-                                  isActive={false}
-                                  isPositionOutside={true}
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,.4)",
-                                      "height": "0px",
-                                      "right": "0px",
-                                      "top": "0px",
-                                      "width": "0px",
-                                    }
-                                  }
-                                  translateX={0}
-                                  translateY={0}
-                                >
-                                  <div
-                                    style={
-                                      Object {
-                                        "backgroundColor": "rgba(0,0,0,.4)",
-                                        "bottom": "auto",
-                                        "display": "block",
-                                        "height": "0px",
-                                        "left": "auto",
-                                        "opacity": 0,
-                                        "position": "absolute",
-                                        "right": "0px",
-                                        "top": "0px",
-                                        "transition": "opacity 300ms ease-in",
-                                        "width": "0px",
-                                      }
-                                    }
-                                  />
-                                </Lens>
-                              </LensRight>
-                              <LensBottom
-                                cursorOffset={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                detectedEnvironment={
-                                  Object {
-                                    "isMouseDetected": false,
-                                    "isTouchDetected": false,
-                                  }
-                                }
-                                elementDimensions={
-                                  Object {
-                                    "height": 0,
-                                    "width": 0,
-                                  }
-                                }
-                                fadeDurationInMs={300}
-                                isActive={false}
-                                isPositionOutside={true}
-                                onDetectedInputTypeChanged={[Function]}
-                                position={
-                                  Object {
-                                    "x": 0,
-                                    "y": 0,
-                                  }
-                                }
-                                smallImage={
-                                  Object {
-                                    "alt": "Cool Down Active Short on model Main Image",
-                                    "height": 0,
-                                    "isFluidWidth": true,
-                                    "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                    "width": 0,
-                                  }
-                                }
-                                style={
-                                  Object {
-                                    "backgroundColor": "rgba(0,0,0,.4)",
-                                  }
-                                }
-                              >
-                                <Lens
-                                  fadeDurationInMs={300}
-                                  isActive={false}
-                                  isPositionOutside={true}
-                                  style={
-                                    Object {
-                                      "backgroundColor": "rgba(0,0,0,.4)",
-                                      "height": "0px",
-                                      "top": "0px",
-                                      "width": "100%",
-                                    }
-                                  }
-                                  translateX={0}
-                                  translateY={0}
-                                >
-                                  <div
-                                    style={
-                                      Object {
-                                        "backgroundColor": "rgba(0,0,0,.4)",
-                                        "bottom": "auto",
-                                        "display": "block",
-                                        "height": "0px",
-                                        "left": "auto",
-                                        "opacity": 0,
-                                        "position": "absolute",
-                                        "right": "auto",
-                                        "top": "0px",
-                                        "transition": "opacity 300ms ease-in",
-                                        "width": "100%",
-                                      }
-                                    }
-                                  />
-                                </Lens>
-                              </LensBottom>
-                            </div>
-                          </NegativeSpaceLens>
-                          <RenderEnlargedImage
-                            containerDimensions={
-                              Object {
-                                "height": 0,
-                                "width": 0,
-                              }
-                            }
-                            cursorOffset={
-                              Object {
-                                "x": 0,
-                                "y": 0,
-                              }
-                            }
-                            detectedEnvironment={
-                              Object {
-                                "isMouseDetected": false,
-                                "isTouchDetected": false,
-                              }
-                            }
-                            elementDimensions={
-                              Object {
-                                "height": 0,
-                                "width": 0,
-                              }
-                            }
-                            fadeDurationInMs={300}
-                            isActive={false}
-                            isInPlaceMode={false}
-                            isPortalEnabledForTouch={false}
-                            isPositionOutside={true}
-                            isTouchDetected={false}
-                            key=".3"
+                            hintComponent={[Function]}
+                            hintTextMouse="Hover to Zoom"
+                            hintTextTouch="Long-Touch to Zoom"
+                            hoverDelayInMs={250}
+                            hoverOffDelayInMs={150}
+                            isEnlargedImagePortalEnabledForTouch={false}
+                            isHintEnabled={false}
                             largeImage={
                               Object {
                                 "alt": "Cool Down Active Short on model Main Enlarged Image",
@@ -1292,88 +948,1064 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 "width": 1440,
                               }
                             }
-                            onDetectedInputTypeChanged={[Function]}
-                            position={
-                              Object {
-                                "x": 0,
-                                "y": 0,
-                              }
-                            }
+                            shouldHideHintAfterFirstActivation={true}
+                            shouldUsePositiveSpaceLens={false}
                             smallImage={
                               Object {
                                 "alt": "Cool Down Active Short on model Main Image",
-                                "height": 0,
                                 "isFluidWidth": true,
                                 "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                "width": 0,
                               }
                             }
                           >
-                            <EnlargedImage
-                              containerDimensions={
-                                Object {
-                                  "height": 0,
-                                  "width": 0,
-                                }
-                              }
-                              cursorOffset={
-                                Object {
-                                  "x": 0,
-                                  "y": 0,
-                                }
-                              }
-                              detectedEnvironment={
-                                Object {
-                                  "isMouseDetected": false,
-                                  "isTouchDetected": false,
-                                }
-                              }
-                              elementDimensions={
-                                Object {
-                                  "height": 0,
-                                  "width": 0,
-                                }
-                              }
-                              fadeDurationInMs={300}
-                              isActive={false}
-                              isInPlaceMode={false}
-                              isLazyLoaded={true}
-                              isPortalEnabledForTouch={false}
-                              isPortalRendered={false}
-                              isPositionOutside={true}
-                              isTouchDetected={false}
-                              largeImage={
-                                Object {
-                                  "alt": "Cool Down Active Short on model Main Enlarged Image",
-                                  "height": 1989,
-                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                  "width": 1440,
-                                }
-                              }
+                            <ReactCursorPosition
+                              className="imageZoom"
+                              hoverDelayInMs={250}
+                              hoverOffDelayInMs={150}
+                              isActivatedOnTouch={false}
+                              isEnabled={true}
+                              mapChildProps={[Function]}
+                              onActivationChanged={[Function]}
+                              onDetectedEnvironmentChanged={[Function]}
                               onDetectedInputTypeChanged={[Function]}
-                              position={
+                              onPositionChanged={[Function]}
+                              pressDuration={500}
+                              pressMoveThreshold={5}
+                              shouldDecorateChildren={true}
+                              shouldStopTouchMovePropagation={true}
+                              style={
                                 Object {
-                                  "x": 0,
-                                  "y": 0,
+                                  "cursor": "crosshair",
+                                  "fontSize": "0px",
+                                  "height": "auto",
+                                  "position": "relative",
+                                  "width": "auto",
                                 }
                               }
-                              smallImage={
-                                Object {
-                                  "alt": "Cool Down Active Short on model Main Image",
-                                  "height": 0,
-                                  "isFluidWidth": true,
-                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
-                                  "width": 0,
+                            >
+                              <div
+                                className="imageZoom"
+                                style={
+                                  Object {
+                                    "WebkitUserSelect": "none",
+                                    "cursor": "crosshair",
+                                    "fontSize": "0px",
+                                    "height": "auto",
+                                    "position": "relative",
+                                    "width": "auto",
+                                  }
                                 }
-                              }
-                            />
-                          </RenderEnlargedImage>
+                              >
+                                <img
+                                  alt="Cool Down Active Short on model Main Image"
+                                  key=".0"
+                                  onError={[Function]}
+                                  onLoad={[Function]}
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                  style={
+                                    Object {
+                                      "display": "block",
+                                      "height": "auto",
+                                      "pointerEvents": "none",
+                                      "width": "100%",
+                                    }
+                                  }
+                                />
+                                <NegativeSpaceLens
+                                  cursorOffset={
+                                    Object {
+                                      "x": 0,
+                                      "y": 0,
+                                    }
+                                  }
+                                  detectedEnvironment={
+                                    Object {
+                                      "isMouseDetected": false,
+                                      "isTouchDetected": false,
+                                    }
+                                  }
+                                  elementDimensions={
+                                    Object {
+                                      "height": 0,
+                                      "width": 0,
+                                    }
+                                  }
+                                  fadeDurationInMs={300}
+                                  isActive={false}
+                                  isPositionOutside={true}
+                                  key=".2"
+                                  onDetectedInputTypeChanged={[Function]}
+                                  position={
+                                    Object {
+                                      "x": 0,
+                                      "y": 0,
+                                    }
+                                  }
+                                  smallImage={
+                                    Object {
+                                      "alt": "Cool Down Active Short on model Main Image",
+                                      "height": 0,
+                                      "isFluidWidth": true,
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "width": 0,
+                                    }
+                                  }
+                                >
+                                  <div>
+                                    <LensTop
+                                      cursorOffset={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      detectedEnvironment={
+                                        Object {
+                                          "isMouseDetected": false,
+                                          "isTouchDetected": false,
+                                        }
+                                      }
+                                      elementDimensions={
+                                        Object {
+                                          "height": 0,
+                                          "width": 0,
+                                        }
+                                      }
+                                      fadeDurationInMs={300}
+                                      isActive={false}
+                                      isPositionOutside={true}
+                                      onDetectedInputTypeChanged={[Function]}
+                                      position={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      smallImage={
+                                        Object {
+                                          "alt": "Cool Down Active Short on model Main Image",
+                                          "height": 0,
+                                          "isFluidWidth": true,
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "width": 0,
+                                        }
+                                      }
+                                      style={
+                                        Object {
+                                          "backgroundColor": "rgba(0,0,0,.4)",
+                                        }
+                                      }
+                                    >
+                                      <Lens
+                                        fadeDurationInMs={300}
+                                        isActive={false}
+                                        isPositionOutside={true}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "rgba(0,0,0,.4)",
+                                            "height": "0px",
+                                            "top": "0px",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        translateX={0}
+                                        translateY={0}
+                                      >
+                                        <div
+                                          style={
+                                            Object {
+                                              "backgroundColor": "rgba(0,0,0,.4)",
+                                              "bottom": "auto",
+                                              "display": "block",
+                                              "height": "0px",
+                                              "left": "auto",
+                                              "opacity": 0,
+                                              "position": "absolute",
+                                              "right": "auto",
+                                              "top": "0px",
+                                              "transition": "opacity 300ms ease-in",
+                                              "width": "100%",
+                                            }
+                                          }
+                                        />
+                                      </Lens>
+                                    </LensTop>
+                                    <LensLeft
+                                      cursorOffset={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      detectedEnvironment={
+                                        Object {
+                                          "isMouseDetected": false,
+                                          "isTouchDetected": false,
+                                        }
+                                      }
+                                      elementDimensions={
+                                        Object {
+                                          "height": 0,
+                                          "width": 0,
+                                        }
+                                      }
+                                      fadeDurationInMs={300}
+                                      isActive={false}
+                                      isPositionOutside={true}
+                                      onDetectedInputTypeChanged={[Function]}
+                                      position={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      smallImage={
+                                        Object {
+                                          "alt": "Cool Down Active Short on model Main Image",
+                                          "height": 0,
+                                          "isFluidWidth": true,
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "width": 0,
+                                        }
+                                      }
+                                      style={
+                                        Object {
+                                          "backgroundColor": "rgba(0,0,0,.4)",
+                                        }
+                                      }
+                                    >
+                                      <Lens
+                                        fadeDurationInMs={300}
+                                        isActive={false}
+                                        isPositionOutside={true}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "rgba(0,0,0,.4)",
+                                            "height": "0px",
+                                            "left": "0px",
+                                            "top": "0px",
+                                            "width": "0px",
+                                          }
+                                        }
+                                        translateX={0}
+                                        translateY={0}
+                                      >
+                                        <div
+                                          style={
+                                            Object {
+                                              "backgroundColor": "rgba(0,0,0,.4)",
+                                              "bottom": "auto",
+                                              "display": "block",
+                                              "height": "0px",
+                                              "left": "0px",
+                                              "opacity": 0,
+                                              "position": "absolute",
+                                              "right": "auto",
+                                              "top": "0px",
+                                              "transition": "opacity 300ms ease-in",
+                                              "width": "0px",
+                                            }
+                                          }
+                                        />
+                                      </Lens>
+                                    </LensLeft>
+                                    <LensRight
+                                      cursorOffset={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      detectedEnvironment={
+                                        Object {
+                                          "isMouseDetected": false,
+                                          "isTouchDetected": false,
+                                        }
+                                      }
+                                      elementDimensions={
+                                        Object {
+                                          "height": 0,
+                                          "width": 0,
+                                        }
+                                      }
+                                      fadeDurationInMs={300}
+                                      isActive={false}
+                                      isPositionOutside={true}
+                                      onDetectedInputTypeChanged={[Function]}
+                                      position={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      smallImage={
+                                        Object {
+                                          "alt": "Cool Down Active Short on model Main Image",
+                                          "height": 0,
+                                          "isFluidWidth": true,
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "width": 0,
+                                        }
+                                      }
+                                      style={
+                                        Object {
+                                          "backgroundColor": "rgba(0,0,0,.4)",
+                                        }
+                                      }
+                                    >
+                                      <Lens
+                                        fadeDurationInMs={300}
+                                        isActive={false}
+                                        isPositionOutside={true}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "rgba(0,0,0,.4)",
+                                            "height": "0px",
+                                            "right": "0px",
+                                            "top": "0px",
+                                            "width": "0px",
+                                          }
+                                        }
+                                        translateX={0}
+                                        translateY={0}
+                                      >
+                                        <div
+                                          style={
+                                            Object {
+                                              "backgroundColor": "rgba(0,0,0,.4)",
+                                              "bottom": "auto",
+                                              "display": "block",
+                                              "height": "0px",
+                                              "left": "auto",
+                                              "opacity": 0,
+                                              "position": "absolute",
+                                              "right": "0px",
+                                              "top": "0px",
+                                              "transition": "opacity 300ms ease-in",
+                                              "width": "0px",
+                                            }
+                                          }
+                                        />
+                                      </Lens>
+                                    </LensRight>
+                                    <LensBottom
+                                      cursorOffset={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      detectedEnvironment={
+                                        Object {
+                                          "isMouseDetected": false,
+                                          "isTouchDetected": false,
+                                        }
+                                      }
+                                      elementDimensions={
+                                        Object {
+                                          "height": 0,
+                                          "width": 0,
+                                        }
+                                      }
+                                      fadeDurationInMs={300}
+                                      isActive={false}
+                                      isPositionOutside={true}
+                                      onDetectedInputTypeChanged={[Function]}
+                                      position={
+                                        Object {
+                                          "x": 0,
+                                          "y": 0,
+                                        }
+                                      }
+                                      smallImage={
+                                        Object {
+                                          "alt": "Cool Down Active Short on model Main Image",
+                                          "height": 0,
+                                          "isFluidWidth": true,
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "width": 0,
+                                        }
+                                      }
+                                      style={
+                                        Object {
+                                          "backgroundColor": "rgba(0,0,0,.4)",
+                                        }
+                                      }
+                                    >
+                                      <Lens
+                                        fadeDurationInMs={300}
+                                        isActive={false}
+                                        isPositionOutside={true}
+                                        style={
+                                          Object {
+                                            "backgroundColor": "rgba(0,0,0,.4)",
+                                            "height": "0px",
+                                            "top": "0px",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        translateX={0}
+                                        translateY={0}
+                                      >
+                                        <div
+                                          style={
+                                            Object {
+                                              "backgroundColor": "rgba(0,0,0,.4)",
+                                              "bottom": "auto",
+                                              "display": "block",
+                                              "height": "0px",
+                                              "left": "auto",
+                                              "opacity": 0,
+                                              "position": "absolute",
+                                              "right": "auto",
+                                              "top": "0px",
+                                              "transition": "opacity 300ms ease-in",
+                                              "width": "100%",
+                                            }
+                                          }
+                                        />
+                                      </Lens>
+                                    </LensBottom>
+                                  </div>
+                                </NegativeSpaceLens>
+                                <RenderEnlargedImage
+                                  containerDimensions={
+                                    Object {
+                                      "height": 0,
+                                      "width": 0,
+                                    }
+                                  }
+                                  cursorOffset={
+                                    Object {
+                                      "x": 0,
+                                      "y": 0,
+                                    }
+                                  }
+                                  detectedEnvironment={
+                                    Object {
+                                      "isMouseDetected": false,
+                                      "isTouchDetected": false,
+                                    }
+                                  }
+                                  elementDimensions={
+                                    Object {
+                                      "height": 0,
+                                      "width": 0,
+                                    }
+                                  }
+                                  fadeDurationInMs={300}
+                                  isActive={false}
+                                  isInPlaceMode={false}
+                                  isPortalEnabledForTouch={false}
+                                  isPositionOutside={true}
+                                  isTouchDetected={false}
+                                  key=".3"
+                                  largeImage={
+                                    Object {
+                                      "alt": "Cool Down Active Short on model Main Enlarged Image",
+                                      "height": 1989,
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "width": 1440,
+                                    }
+                                  }
+                                  onDetectedInputTypeChanged={[Function]}
+                                  position={
+                                    Object {
+                                      "x": 0,
+                                      "y": 0,
+                                    }
+                                  }
+                                  smallImage={
+                                    Object {
+                                      "alt": "Cool Down Active Short on model Main Image",
+                                      "height": 0,
+                                      "isFluidWidth": true,
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "width": 0,
+                                    }
+                                  }
+                                >
+                                  <EnlargedImage
+                                    containerDimensions={
+                                      Object {
+                                        "height": 0,
+                                        "width": 0,
+                                      }
+                                    }
+                                    cursorOffset={
+                                      Object {
+                                        "x": 0,
+                                        "y": 0,
+                                      }
+                                    }
+                                    detectedEnvironment={
+                                      Object {
+                                        "isMouseDetected": false,
+                                        "isTouchDetected": false,
+                                      }
+                                    }
+                                    elementDimensions={
+                                      Object {
+                                        "height": 0,
+                                        "width": 0,
+                                      }
+                                    }
+                                    fadeDurationInMs={300}
+                                    isActive={false}
+                                    isInPlaceMode={false}
+                                    isLazyLoaded={true}
+                                    isPortalEnabledForTouch={false}
+                                    isPortalRendered={false}
+                                    isPositionOutside={true}
+                                    isTouchDetected={false}
+                                    largeImage={
+                                      Object {
+                                        "alt": "Cool Down Active Short on model Main Enlarged Image",
+                                        "height": 1989,
+                                        "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                        "width": 1440,
+                                      }
+                                    }
+                                    onDetectedInputTypeChanged={[Function]}
+                                    position={
+                                      Object {
+                                        "x": 0,
+                                        "y": 0,
+                                      }
+                                    }
+                                    smallImage={
+                                      Object {
+                                        "alt": "Cool Down Active Short on model Main Image",
+                                        "height": 0,
+                                        "isFluidWidth": true,
+                                        "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                        "width": 0,
+                                      }
+                                    }
+                                  />
+                                </RenderEnlargedImage>
+                              </div>
+                            </ReactCursorPosition>
+                          </ReactImageMagnify>
                         </div>
-                      </ReactCursorPosition>
-                    </ReactImageMagnify>
+                      </Component>
+                    </Styled(Component)>
                   </div>
                 </Component>
               </Styled(Component)>
+            </div>
+          </Component>
+        </Styled(Component)>
+        <Styled(Component)
+          element="div"
+        >
+          <Component
+            className="c6"
+            element="div"
+          >
+            <div
+              className="c6"
+            >
+              <Slider
+                arrows={false}
+                className="slider"
+                dots={true}
+                dotsClass="dots"
+                infinite={true}
+                lazyLoad="progressive"
+                slidesToShow={1}
+              >
+                <InnerSlider
+                  accessibility={true}
+                  adaptiveHeight={false}
+                  afterChange={null}
+                  appendDots={[Function]}
+                  arrows={false}
+                  autoplay={false}
+                  autoplaySpeed={3000}
+                  beforeChange={null}
+                  centerMode={false}
+                  centerPadding="50px"
+                  className="slider"
+                  cssEase="ease"
+                  customPaging={[Function]}
+                  dots={true}
+                  dotsClass="dots"
+                  draggable={true}
+                  easing="linear"
+                  edgeFriction={0.35}
+                  fade={false}
+                  focusOnSelect={false}
+                  infinite={true}
+                  initialSlide={0}
+                  lazyLoad="progressive"
+                  nextArrow={null}
+                  onEdge={null}
+                  onInit={null}
+                  onLazyLoadError={null}
+                  onReInit={null}
+                  pauseOnDotsHover={false}
+                  pauseOnFocus={false}
+                  pauseOnHover={true}
+                  prevArrow={null}
+                  responsive={null}
+                  rows={1}
+                  rtl={false}
+                  slide="div"
+                  slidesPerRow={1}
+                  slidesToScroll={1}
+                  slidesToShow={1}
+                  speed={500}
+                  swipe={true}
+                  swipeEvent={null}
+                  swipeToSlide={false}
+                  touchMove={true}
+                  touchThreshold={5}
+                  useCSS={true}
+                  useTransform={true}
+                  variableWidth={false}
+                  vertical={false}
+                  waitForAnimate={true}
+                >
+                  <div
+                    className="slick-slider slider slick-initialized"
+                    dir="ltr"
+                  >
+                    <div
+                      className="slick-list"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseLeave={null}
+                      onMouseMove={null}
+                      onMouseUp={[Function]}
+                      onTouchCancel={null}
+                      onTouchEnd={[Function]}
+                      onTouchMove={null}
+                      onTouchStart={[Function]}
+                      style={Object {}}
+                    >
+                      <Track
+                        centerMode={false}
+                        centerPadding="50px"
+                        cssEase="ease"
+                        currentSlide={0}
+                        fade={false}
+                        focusOnSelect={null}
+                        infinite={true}
+                        lazyLoad="progressive"
+                        lazyLoadedList={
+                          Array [
+                            0,
+                          ]
+                        }
+                        listHeight={0}
+                        onMouseEnter={[Function]}
+                        onMouseLeave={[Function]}
+                        onMouseOver={[Function]}
+                        rtl={false}
+                        slideCount={7}
+                        slideHeight={0}
+                        slideWidth={0}
+                        slidesToScroll={1}
+                        slidesToShow={1}
+                        speed={500}
+                        trackStyle={
+                          Object {
+                            "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                            "WebkitTransition": "",
+                            "msTransform": "translateX(0px)",
+                            "opacity": 1,
+                            "transform": "translate3d(0px, 0px, 0px)",
+                            "transition": "",
+                          }
+                        }
+                        variableWidth={false}
+                        vertical={false}
+                      >
+                        <div
+                          className="slick-track"
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          onMouseOver={[Function]}
+                          style={
+                            Object {
+                              "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                              "WebkitTransition": "",
+                              "msTransform": "translateX(0px)",
+                              "opacity": 1,
+                              "transform": "translate3d(0px, 0px, 0px)",
+                              "transition": "",
+                            }
+                          }
+                        >
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={-1}
+                            key="precloned-1"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={false}
+                            className="slick-slide slick-active slick-current"
+                            data-index={0}
+                            key="original0"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          >
+                            <div
+                              key="0"
+                            >
+                              <InlineImage
+                                alt="Cool Down Active Short on model"
+                                className="image"
+                                key="0"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                    "width": "100%",
+                                  }
+                                }
+                                tabIndex={-1}
+                              >
+                                <img
+                                  alt="Cool Down Active Short on model"
+                                  className="image"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabIndex={-1}
+                                />
+                              </InlineImage>
+                            </div>
+                          </div>
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={1}
+                            key="original1"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={2}
+                            key="original2"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={3}
+                            key="original3"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={4}
+                            key="original4"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={5}
+                            key="original5"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide"
+                            data-index={6}
+                            key="original6"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "outline": "none",
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={7}
+                            key="postcloned0"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          >
+                            <div
+                              key="0"
+                            >
+                              <InlineImage
+                                alt="Cool Down Active Short on model"
+                                className="image"
+                                key="0"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                style={
+                                  Object {
+                                    "display": "inline-block",
+                                    "width": "100%",
+                                  }
+                                }
+                                tabIndex={-1}
+                              >
+                                <img
+                                  alt="Cool Down Active Short on model"
+                                  className="image"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                  style={
+                                    Object {
+                                      "display": "inline-block",
+                                      "width": "100%",
+                                    }
+                                  }
+                                  tabIndex={-1}
+                                />
+                              </InlineImage>
+                            </div>
+                          </div>
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={8}
+                            key="postcloned8"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={9}
+                            key="postcloned9"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={10}
+                            key="postcloned10"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={11}
+                            key="postcloned11"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={12}
+                            key="postcloned12"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                          <div
+                            aria-hidden={true}
+                            className="slick-slide slick-cloned"
+                            data-index={13}
+                            key="postcloned13"
+                            onClick={[Function]}
+                            style={
+                              Object {
+                                "width": 0,
+                              }
+                            }
+                            tabIndex="-1"
+                          />
+                        </div>
+                      </Track>
+                    </div>
+                    <Dots
+                      appendDots={[Function]}
+                      clickHandler={[Function]}
+                      currentSlide={0}
+                      customPaging={[Function]}
+                      dotsClass="dots"
+                      infinite={true}
+                      onMouseEnter={null}
+                      onMouseLeave={null}
+                      onMouseOver={null}
+                      slideCount={7}
+                      slidesToScroll={1}
+                      slidesToShow={1}
+                    >
+                      <ul
+                        className="dots"
+                        onMouseEnter={null}
+                        onMouseLeave={null}
+                        onMouseOver={null}
+                        style={
+                          Object {
+                            "display": "block",
+                          }
+                        }
+                      >
+                        <li
+                          className="slick-active"
+                          key="0"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            1
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="1"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            2
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="2"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            3
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="3"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            4
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="4"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            5
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="5"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            6
+                          </button>
+                        </li>
+                        <li
+                          className=""
+                          key="6"
+                        >
+                          <button
+                            onClick={[Function]}
+                          >
+                            7
+                          </button>
+                        </li>
+                      </ul>
+                    </Dots>
+                  </div>
+                </InnerSlider>
+              </Slider>
             </div>
           </Component>
         </Styled(Component)>

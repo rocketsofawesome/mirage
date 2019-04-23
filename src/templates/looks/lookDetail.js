@@ -44,6 +44,9 @@ const LookDetail =  styled(BaseLookDetail)`
   ${LookSizePicker} {
     margin-top: 4rem;
   }
+  ${Button} { 
+    width: 100%;
+  }
 `
 
 LookDetail.propTypes = {

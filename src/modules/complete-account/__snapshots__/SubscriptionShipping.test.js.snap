@@ -6,11 +6,11 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  margin: 0;
-  color: #00003C;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  margin: 0;
+  color: #00003C;
 }
 
 .c0 {
@@ -162,20 +162,24 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
       </Styled(UnstyledMailbox)>
       <aside>
         <styled.p
+          color="#00003C"
           fontSize="1.6rem"
         >
           <p
             className="c3 c4"
+            color="#00003C"
             fontSize="1.6rem"
           >
             Seasonal Shipments
           </p>
         </styled.p>
         <styled.p
+          color="#00003C"
           fontSize="1.6rem"
         >
           <p
             className="c3 c4"
+            color="#00003C"
             fontSize="1.6rem"
           >
             A box every 3 months. So easy. Simple to cancel anytime.
@@ -193,11 +197,11 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  margin: 0;
-  color: #00003C;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  margin: 0;
+  color: #00003C;
 }
 
 .c1 {
@@ -375,20 +379,24 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
         </Styled(UnstyledMailbox)>
         <aside>
           <styled.p
+            color="#00003C"
             fontSize="1.6rem"
           >
             <p
               className="c4 c5"
+              color="#00003C"
               fontSize="1.6rem"
             >
               Seasonal Shipments
             </p>
           </styled.p>
           <styled.p
+            color="#00003C"
             fontSize="1.6rem"
           >
             <p
               className="c4 c5"
+              color="#00003C"
               fontSize="1.6rem"
             >
               A box every 3 months. So easy. Simple to cancel anytime.

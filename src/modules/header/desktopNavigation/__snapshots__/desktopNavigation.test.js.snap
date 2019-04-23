@@ -448,7 +448,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   transition: all 0.25s ease-in-out;
 }
 
-@media (min-width:76.8em) {
+@media (min-width:1280px) {
   .c12 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
@@ -458,7 +458,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:76.8em) {
+@media (min-width:1280px) {
   .c18 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
@@ -467,7 +467,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:76.8em) {
+@media (min-width:1280px) {
   .c19 {
     max-width: 33.33333333333333%;
     -webkit-flex-basis: 33.33333333333333%;

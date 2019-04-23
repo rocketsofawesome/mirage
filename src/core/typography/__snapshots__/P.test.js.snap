@@ -6,15 +6,16 @@ exports[`(Styled Component) P matching the snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  margin: 0;
-  color: #00003C;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  margin: 0;
+  color: #00003C;
 }
 
 <p
   className="c0"
+  color="#00003C"
   fontSize="1.6rem"
 />
 `;

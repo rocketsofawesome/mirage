@@ -19,11 +19,11 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
   letter-spacing: normal;
-  margin: 0;
-  color: #00003C;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  margin: 0;
+  color: #00003C;
 }
 
 .c5 {
@@ -189,10 +189,12 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         </h1>
       </styled.h1>
       <styled.p
+        color="#00003C"
         fontSize="1.6rem"
       >
         <p
           className="c3 c4"
+          color="#00003C"
           fontSize="1.6rem"
         >
           This is the example content
@@ -207,18 +209,18 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
             Object {
               "base": undefined,
               "breakpoints": Object {
-                "aboveDesktop": "(min-device-width: 1440px)",
-                "aboveLaptop": "(min-device-width: 1280px)",
-                "abovePhone": "(min-device-width: 320px)",
-                "abovePhoneMax": "(min-device-width: 414px)",
-                "aboveTablet": "(min-device-width: 768px)",
-                "aboveTabletMax": "(min-device-width: 960px)",
-                "belowDesktop": "(max-device-width: 1440px)",
-                "belowLaptop": "(max-device-width: 1280px)",
-                "belowPhone": "(max-device-width: 320px)",
-                "belowPhoneMax": "(max-device-width: 414px)",
-                "belowTablet": "(max-device-width: 768px)",
-                "belowTabletMax": "(max-device-width: 960px)",
+                "aboveDesktop": "(min-width: 1440px)",
+                "aboveLaptop": "(min-width: 1280px)",
+                "abovePhone": "(min-width: 320px)",
+                "abovePhoneMax": "(min-width: 414px)",
+                "aboveTablet": "(min-width: 768px)",
+                "aboveTabletMax": "(min-width: 960px)",
+                "belowDesktop": "(max-width: 1440px)",
+                "belowLaptop": "(max-width: 1280px)",
+                "belowPhone": "(max-width: 320px)",
+                "belowPhoneMax": "(max-width: 414px)",
+                "belowTablet": "(max-width: 768px)",
+                "belowTabletMax": "(max-width: 960px)",
                 "landscape": "(orientation: landscape)",
                 "portrait": "(orientation: portrait)",
               },
@@ -315,18 +317,18 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               Object {
                 "base": undefined,
                 "breakpoints": Object {
-                  "aboveDesktop": "(min-device-width: 1440px)",
-                  "aboveLaptop": "(min-device-width: 1280px)",
-                  "abovePhone": "(min-device-width: 320px)",
-                  "abovePhoneMax": "(min-device-width: 414px)",
-                  "aboveTablet": "(min-device-width: 768px)",
-                  "aboveTabletMax": "(min-device-width: 960px)",
-                  "belowDesktop": "(max-device-width: 1440px)",
-                  "belowLaptop": "(max-device-width: 1280px)",
-                  "belowPhone": "(max-device-width: 320px)",
-                  "belowPhoneMax": "(max-device-width: 414px)",
-                  "belowTablet": "(max-device-width: 768px)",
-                  "belowTabletMax": "(max-device-width: 960px)",
+                  "aboveDesktop": "(min-width: 1440px)",
+                  "aboveLaptop": "(min-width: 1280px)",
+                  "abovePhone": "(min-width: 320px)",
+                  "abovePhoneMax": "(min-width: 414px)",
+                  "aboveTablet": "(min-width: 768px)",
+                  "aboveTabletMax": "(min-width: 960px)",
+                  "belowDesktop": "(max-width: 1440px)",
+                  "belowLaptop": "(max-width: 1280px)",
+                  "belowPhone": "(max-width: 320px)",
+                  "belowPhoneMax": "(max-width: 414px)",
+                  "belowTablet": "(max-width: 768px)",
+                  "belowTabletMax": "(max-width: 960px)",
                   "landscape": "(orientation: landscape)",
                   "portrait": "(orientation: portrait)",
                 },
@@ -418,7 +420,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               className="c5"
             >
               <MediaQuery
-                query="(min-device-width: 960px)"
+                query="(min-width: 960px)"
                 values={Object {}}
               />
               <MediaQuery

@@ -69,7 +69,8 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 
 .c3 .c4 {
   margin-top: 1.5rem;
-  margin-right: 1.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
 }
 
 .c0 .c1 {
@@ -94,13 +95,32 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 }
 
 .c0 .product .image {
-  margin-right: 2rem;
+  width: auto;
+  margin-right: 1.25rem;
 }
 
 .c0 .product {
   -webkit-transform: translateY(-.75rem);
   -ms-transform: translateY(-.75rem);
   transform: translateY(-.75rem);
+}
+
+@media (max-width:1280px) {
+  .c0 .product {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D5D5D5;
+  }
+
+  .c0 .product:last-of-type {
+    border-bottom: none;
+  }
+}
+
+@media (max-width:768px) {
+  .c0 .product .image {
+    margin-right: .75rem;
+    width: 25%;
+  }
 }
 
 <Styled(Component)
