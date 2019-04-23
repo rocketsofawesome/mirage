@@ -9,24 +9,25 @@ import {
   Gallery,
   ProductInformation,
   LookSizePicker,
-  Footer
+  Footer,
+  Button
  } from 'SRC'
 
-const BaseLookDetail = ({className, images, information, products, header, footer, ...props }) => {
+const BaseLookDetail = ({className, images, information, products, header, footer, onClick, ...props }) => {
   return (
     <div className={className} {...props}>
       {header}
       <FlexRow constrained={false} className={className}>
         <FlexCol className='breadcrumb' desktop={{width: 12}}/>
-        <FlexCol className='images' desktop={{width: 6}}>
+        <FlexCol element="aside" className='images' desktop={{width: 6}}>
           <Gallery images={images} />
         </FlexCol>
-        <FlexCol className='information' desktop={{width: 5, span: 1}} >
+        <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
           <ProductInformation {...information} />
           <LookSizePicker products={products} />
+          <Button onClick={onClick}>Add Outfit to Bag</Button>
         </FlexCol>
       </FlexRow>
-      <Footer />
       {footer}
     </div>
   )
