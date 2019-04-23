@@ -1,15 +1,20 @@
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-const P = styled.p`
+import { theme } from 'SRC/core/theme'
+
+export const pStyle = css`
   letter-spacing: normal;
-  margin: 0;
-
-  color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   line-height: normal;
+`
+
+const P = styled.p`
+ ${pStyle}
+ margin: 0;
+ color: ${props => props.color};
 `
 
 P.propTypes = {
@@ -28,7 +33,8 @@ P.propTypes = {
 }
 
 P.defaultProps = {
-  fontSize: '1.6rem'
+  fontSize: '1.6rem',
+  color: theme.colors.navy
 }
 
 /** @component */

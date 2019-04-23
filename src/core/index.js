@@ -1,4 +1,5 @@
 export * from './animations'
+export * from './breakpoints'
 export * from './grid'
 export * from './icons'
 export * from './image'
