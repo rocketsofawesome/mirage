@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-const BaseSizeRadio = ({children, className, input, ...props}) => {
+const BaseRoundRadioButton = ({children, className, input, ...props}) => {
   return (
     <div className={className}>
       <input id={input.value} type='radio' {...input} />
@@ -19,7 +19,7 @@ const checked = css`
   background-color: ${props => props.theme.colors.rocketBlue};
 `
 
-const SizeRadio = styled(BaseSizeRadio)`
+const RoundRadioButton = styled(BaseRoundRadioButton)`
   position: relative;
   > input {
     position: absolute;
@@ -62,7 +62,7 @@ const SizeRadio = styled(BaseSizeRadio)`
   }
 `
 
-SizeRadio.propTypes = {
+RoundRadioButton.propTypes = {
   children: PropTypes.node,
   input: PropTypes.object,
   theme: PropTypes.shape({
@@ -79,5 +79,5 @@ SizeRadio.propTypes = {
 }
 
 /** @component */
-export default SizeRadio
-export { BaseSizeRadio, checked }
+export default RoundRadioButton
+export { BaseRoundRadioButton, checked }

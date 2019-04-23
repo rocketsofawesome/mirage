@@ -5,7 +5,6 @@ import styled from 'styled-components'
 import { SizePicker, InlineImage, Label } from 'SRC'
 
 const LookSizePicker = styled(({className, products}) => {
-  console.log(products)
   return (
     <div className={className}>
       <Label>Sizes:</Label>

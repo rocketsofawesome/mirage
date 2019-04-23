@@ -59,7 +59,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   flex-direction: column;
 }
 
-.c4 .thumbnail {
+.c4 .roa-thumbnail {
   margin-bottom: 1.5rem;
   width: 100%;
   border: 1px solid transparent;
@@ -67,11 +67,11 @@ exports[`() Gallery matching the snapshot 1`] = `
   transition: border-color 0.25s ease-in-out;
 }
 
-.c4 .thumbnail:hover {
+.c4 .roa-thumbnail:hover {
   cursor: pointer;
 }
 
-.c4 .thumbnail.active {
+.c4 .roa-thumbnail.active {
   border-color: #0073D1;
 }
 
@@ -751,7 +751,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                             >
                               <InlineImage
                                 alt="Cool Down Active Short on model"
-                                className="thumbnail active"
+                                className="roa-thumbnail active"
                                 key="0"
                                 onClick={[Function]}
                                 role="button"
@@ -759,7 +759,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Cool Down Active Short on model"
-                                  className="thumbnail active"
+                                  className="roa-thumbnail active"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
@@ -767,7 +767,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Cool Down Active Short on model"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="1"
                                 onClick={[Function]}
                                 role="button"
@@ -775,7 +775,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Cool Down Active Short on model"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
@@ -783,7 +783,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Fuzzy Tiger Tee on model"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="2"
                                 onClick={[Function]}
                                 role="button"
@@ -791,7 +791,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee on model"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
@@ -799,7 +799,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Fuzzy Tiger Tee front"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="3"
                                 onClick={[Function]}
                                 role="button"
@@ -807,7 +807,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee front"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
@@ -815,7 +815,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Fuzzy Tiger Tee detail"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="4"
                                 onClick={[Function]}
                                 role="button"
@@ -823,7 +823,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee detail"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
@@ -831,7 +831,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Cool Down Active Short front"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="5"
                                 onClick={[Function]}
                                 role="button"
@@ -839,7 +839,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Cool Down Active Short front"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
@@ -847,7 +847,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               </InlineImage>
                               <InlineImage
                                 alt="Cool Down Active Short back"
-                                className="thumbnail"
+                                className="roa-thumbnail"
                                 key="6"
                                 onClick={[Function]}
                                 role="button"
@@ -855,7 +855,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               >
                                 <img
                                   alt="Cool Down Active Short back"
-                                  className="thumbnail"
+                                  className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
                                   src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
