@@ -5,16 +5,16 @@ import { SquareRadioButton, SizePicker } from 'SRC'
 const { mountWithTheme } = global
 
 const defaultProps = {
-  name: '12345',
-  currentSize: 4,
-  sizes: [
-    {value: 3, inStock: true},
-    {value: 4, inStock: true},
-    {value: 5, inStock: true},
-    {value: 6, inStock: true},
-    {value: 7, inStock: false},
-    {value: 9, inStock: true},
-    {value: 12, inStock: true},
+  productId: '12345',
+  currentSize: 'sku-12345',
+  variants: [
+    {sku: "sku-12345", size: 3, inStock: true},
+    {sku: "sku-21354", size: 4, inStock: true},
+    {sku: "sku-13245", size: 5, inStock: true},
+    {sku: "sku-15234", size: 6, inStock: true},
+    {sku: "sku-14235", size: 7, inStock: false},
+    {sku: "sku-13254", size: 9, inStock: true},
+    {sku: "sku-13534", size: 12, inStock: true},
   ]
 }
 
@@ -33,7 +33,7 @@ describe('() SizePicker', () => {
   })
 
   test('renders out proper amount of radio buttons', () => {
-    expect(createSizePicker().find(SquareRadioButton).length).toEqual(defaultProps.sizes.length)
+    expect(createSizePicker().find(SquareRadioButton).length).toEqual(defaultProps.variants.length)
   })
 
   test('current size is being selected', () => {
@@ -44,15 +44,5 @@ describe('() SizePicker', () => {
       .prop('input')
       .value
     ).toEqual(defaultProps.currentSize)
-  })
-
-  test('name is set on input', () => {
-    expect(
-      createSizePicker()
-      .find(SquareRadioButton)
-      .first()
-      .prop('input')
-      .name
-    ).toEqual(defaultProps.name)
   })
 })

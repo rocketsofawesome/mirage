@@ -60,74 +60,88 @@ exports[`() SizePicker matching the snapshot 1`] = `
 }
 
 <Styled(Component)
-  currentSize={4}
-  name="12345"
-  sizes={
+  currentSize="sku-12345"
+  productId="12345"
+  variants={
     Array [
       Object {
         "inStock": true,
-        "value": 3,
+        "size": 3,
+        "sku": "sku-12345",
       },
       Object {
         "inStock": true,
-        "value": 4,
+        "size": 4,
+        "sku": "sku-21354",
       },
       Object {
         "inStock": true,
-        "value": 5,
+        "size": 5,
+        "sku": "sku-13245",
       },
       Object {
         "inStock": true,
-        "value": 6,
+        "size": 6,
+        "sku": "sku-15234",
       },
       Object {
         "inStock": false,
-        "value": 7,
+        "size": 7,
+        "sku": "sku-14235",
       },
       Object {
         "inStock": true,
-        "value": 9,
+        "size": 9,
+        "sku": "sku-13254",
       },
       Object {
         "inStock": true,
-        "value": 12,
+        "size": 12,
+        "sku": "sku-13534",
       },
     ]
   }
 >
   <Component
     className="c0"
-    currentSize={4}
-    name="12345"
-    sizes={
+    currentSize="sku-12345"
+    productId="12345"
+    variants={
       Array [
         Object {
           "inStock": true,
-          "value": 3,
+          "size": 3,
+          "sku": "sku-12345",
         },
         Object {
           "inStock": true,
-          "value": 4,
+          "size": 4,
+          "sku": "sku-21354",
         },
         Object {
           "inStock": true,
-          "value": 5,
+          "size": 5,
+          "sku": "sku-13245",
         },
         Object {
           "inStock": true,
-          "value": 6,
+          "size": 6,
+          "sku": "sku-15234",
         },
         Object {
           "inStock": false,
-          "value": 7,
+          "size": 7,
+          "sku": "sku-14235",
         },
         Object {
           "inStock": true,
-          "value": 9,
+          "size": 9,
+          "sku": "sku-13254",
         },
         Object {
           "inStock": true,
-          "value": 12,
+          "size": 12,
+          "sku": "sku-13534",
         },
       ]
     }
@@ -139,45 +153,12 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={true}
         input={
           Object {
-            "name": "12345",
-            "value": 3,
+            "checked": true,
+            "onClick": undefined,
+            "value": "sku-12345",
           }
         }
         key="12345-0"
-        selected={false}
-      >
-        <Component
-          className="c1 c2"
-          inStock={true}
-          input={
-            Object {
-              "name": "12345",
-              "value": 3,
-            }
-          }
-          selected={false}
-        >
-          <label
-            className="c1 c2"
-          >
-            3
-            <input
-              name="12345"
-              type="radio"
-              value={3}
-            />
-          </label>
-        </Component>
-      </Styled(Component)>
-      <Styled(Component)
-        inStock={true}
-        input={
-          Object {
-            "name": "12345",
-            "value": 4,
-          }
-        }
-        key="12345-1"
         selected={true}
       >
         <Component
@@ -185,8 +166,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={true}
           input={
             Object {
-              "name": "12345",
-              "value": 4,
+              "checked": true,
+              "onClick": undefined,
+              "value": "sku-12345",
             }
           }
           selected={true}
@@ -194,11 +176,11 @@ exports[`() SizePicker matching the snapshot 1`] = `
           <label
             className="c1 c2 selected"
           >
-            4
+            3
             <input
-              name="12345"
+              checked={true}
               type="radio"
-              value={4}
+              value="sku-12345"
             />
           </label>
         </Component>
@@ -207,8 +189,45 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={true}
         input={
           Object {
-            "name": "12345",
-            "value": 5,
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-21354",
+          }
+        }
+        key="12345-1"
+        selected={false}
+      >
+        <Component
+          className="c1 c2"
+          inStock={true}
+          input={
+            Object {
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-21354",
+            }
+          }
+          selected={false}
+        >
+          <label
+            className="c1 c2"
+          >
+            4
+            <input
+              checked={false}
+              type="radio"
+              value="sku-21354"
+            />
+          </label>
+        </Component>
+      </Styled(Component)>
+      <Styled(Component)
+        inStock={true}
+        input={
+          Object {
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-13245",
           }
         }
         key="12345-2"
@@ -219,8 +238,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={true}
           input={
             Object {
-              "name": "12345",
-              "value": 5,
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-13245",
             }
           }
           selected={false}
@@ -230,9 +250,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           >
             5
             <input
-              name="12345"
+              checked={false}
               type="radio"
-              value={5}
+              value="sku-13245"
             />
           </label>
         </Component>
@@ -241,8 +261,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={true}
         input={
           Object {
-            "name": "12345",
-            "value": 6,
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-15234",
           }
         }
         key="12345-3"
@@ -253,8 +274,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={true}
           input={
             Object {
-              "name": "12345",
-              "value": 6,
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-15234",
             }
           }
           selected={false}
@@ -264,9 +286,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           >
             6
             <input
-              name="12345"
+              checked={false}
               type="radio"
-              value={6}
+              value="sku-15234"
             />
           </label>
         </Component>
@@ -275,8 +297,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={false}
         input={
           Object {
-            "name": "12345",
-            "value": 7,
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-14235",
           }
         }
         key="12345-4"
@@ -287,8 +310,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={false}
           input={
             Object {
-              "name": "12345",
-              "value": 7,
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-14235",
             }
           }
           selected={false}
@@ -298,9 +322,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           >
             7
             <input
-              name="12345"
+              checked={false}
               type="radio"
-              value={7}
+              value="sku-14235"
             />
           </label>
         </Component>
@@ -309,8 +333,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={true}
         input={
           Object {
-            "name": "12345",
-            "value": 9,
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-13254",
           }
         }
         key="12345-5"
@@ -321,8 +346,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={true}
           input={
             Object {
-              "name": "12345",
-              "value": 9,
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-13254",
             }
           }
           selected={false}
@@ -332,9 +358,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           >
             9
             <input
-              name="12345"
+              checked={false}
               type="radio"
-              value={9}
+              value="sku-13254"
             />
           </label>
         </Component>
@@ -343,8 +369,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
         inStock={true}
         input={
           Object {
-            "name": "12345",
-            "value": 12,
+            "checked": false,
+            "onClick": undefined,
+            "value": "sku-13534",
           }
         }
         key="12345-6"
@@ -355,8 +382,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           inStock={true}
           input={
             Object {
-              "name": "12345",
-              "value": 12,
+              "checked": false,
+              "onClick": undefined,
+              "value": "sku-13534",
             }
           }
           selected={false}
@@ -366,9 +394,9 @@ exports[`() SizePicker matching the snapshot 1`] = `
           >
             12
             <input
-              name="12345"
+              checked={false}
               type="radio"
-              value={12}
+              value="sku-13534"
             />
           </label>
         </Component>
