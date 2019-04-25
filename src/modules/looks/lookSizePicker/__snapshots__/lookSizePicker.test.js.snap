@@ -124,6 +124,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 }
 
 <Styled(Component)
+  onSizeSelect={[Function]}
   products={
     Array [
       Object {
@@ -132,34 +133,41 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           "alt": "Fuzzy Tiger Tee front",
           "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
         },
-        "sizes": Array [
+        "variants": Array [
           Object {
             "inStock": true,
-            "value": 3,
+            "size": 3,
+            "sku": "sku-1",
           },
           Object {
             "inStock": true,
-            "value": 4,
+            "size": 4,
+            "sku": "sku-2",
           },
           Object {
             "inStock": true,
-            "value": 5,
+            "size": 5,
+            "sku": "sku-3",
           },
           Object {
             "inStock": true,
-            "value": 6,
+            "size": 6,
+            "sku": "sku-4",
           },
           Object {
             "inStock": false,
-            "value": 7,
+            "size": 7,
+            "sku": "sku-5",
           },
           Object {
             "inStock": true,
-            "value": 9,
+            "size": 9,
+            "sku": "sku-6",
           },
           Object {
             "inStock": true,
-            "value": 12,
+            "size": 12,
+            "sku": "sku-7",
           },
         ],
       },
@@ -169,34 +177,41 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           "alt": "Cool Down Active Short front",
           "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
         },
-        "sizes": Array [
+        "variants": Array [
           Object {
             "inStock": true,
-            "value": 3,
+            "size": 3,
+            "sku": "sku-20",
           },
           Object {
             "inStock": true,
-            "value": 4,
+            "size": 4,
+            "sku": "sku-21",
           },
           Object {
             "inStock": true,
-            "value": 5,
+            "size": 5,
+            "sku": "sku-22",
           },
           Object {
             "inStock": true,
-            "value": 6,
+            "size": 6,
+            "sku": "sku-23",
           },
           Object {
             "inStock": false,
-            "value": 7,
+            "size": 7,
+            "sku": "sku-24",
           },
           Object {
             "inStock": true,
-            "value": 9,
+            "size": 9,
+            "sku": "sku-25",
           },
           Object {
             "inStock": true,
-            "value": 12,
+            "size": 12,
+            "sku": "sku-26",
           },
         ],
       },
@@ -205,6 +220,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 >
   <Component
     className="c0"
+    onSizeSelect={[Function]}
     products={
       Array [
         Object {
@@ -213,34 +229,41 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             "alt": "Fuzzy Tiger Tee front",
             "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
           },
-          "sizes": Array [
+          "variants": Array [
             Object {
               "inStock": true,
-              "value": 3,
+              "size": 3,
+              "sku": "sku-1",
             },
             Object {
               "inStock": true,
-              "value": 4,
+              "size": 4,
+              "sku": "sku-2",
             },
             Object {
               "inStock": true,
-              "value": 5,
+              "size": 5,
+              "sku": "sku-3",
             },
             Object {
               "inStock": true,
-              "value": 6,
+              "size": 6,
+              "sku": "sku-4",
             },
             Object {
               "inStock": false,
-              "value": 7,
+              "size": 7,
+              "sku": "sku-5",
             },
             Object {
               "inStock": true,
-              "value": 9,
+              "size": 9,
+              "sku": "sku-6",
             },
             Object {
               "inStock": true,
-              "value": 12,
+              "size": 12,
+              "sku": "sku-7",
             },
           ],
         },
@@ -250,34 +273,41 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             "alt": "Cool Down Active Short front",
             "src": "https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
           },
-          "sizes": Array [
+          "variants": Array [
             Object {
               "inStock": true,
-              "value": 3,
+              "size": 3,
+              "sku": "sku-20",
             },
             Object {
               "inStock": true,
-              "value": 4,
+              "size": 4,
+              "sku": "sku-21",
             },
             Object {
               "inStock": true,
-              "value": 5,
+              "size": 5,
+              "sku": "sku-22",
             },
             Object {
               "inStock": true,
-              "value": 6,
+              "size": 6,
+              "sku": "sku-23",
             },
             Object {
               "inStock": false,
-              "value": 7,
+              "size": 7,
+              "sku": "sku-24",
             },
             Object {
               "inStock": true,
-              "value": 9,
+              "size": 9,
+              "sku": "sku-25",
             },
             Object {
               "inStock": true,
-              "value": 12,
+              "size": 12,
+              "sku": "sku-26",
             },
           ],
         },
@@ -317,72 +347,86 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           />
         </InlineImage>
         <Styled(Component)
-          name="12345"
-          sizes={
+          productId="12345"
+          variants={
             Array [
               Object {
                 "inStock": true,
-                "value": 3,
+                "size": 3,
+                "sku": "sku-1",
               },
               Object {
                 "inStock": true,
-                "value": 4,
+                "size": 4,
+                "sku": "sku-2",
               },
               Object {
                 "inStock": true,
-                "value": 5,
+                "size": 5,
+                "sku": "sku-3",
               },
               Object {
                 "inStock": true,
-                "value": 6,
+                "size": 6,
+                "sku": "sku-4",
               },
               Object {
                 "inStock": false,
-                "value": 7,
+                "size": 7,
+                "sku": "sku-5",
               },
               Object {
                 "inStock": true,
-                "value": 9,
+                "size": 9,
+                "sku": "sku-6",
               },
               Object {
                 "inStock": true,
-                "value": 12,
+                "size": 12,
+                "sku": "sku-7",
               },
             ]
           }
         >
           <Component
             className="c3"
-            name="12345"
-            sizes={
+            productId="12345"
+            variants={
               Array [
                 Object {
                   "inStock": true,
-                  "value": 3,
+                  "size": 3,
+                  "sku": "sku-1",
                 },
                 Object {
                   "inStock": true,
-                  "value": 4,
+                  "size": 4,
+                  "sku": "sku-2",
                 },
                 Object {
                   "inStock": true,
-                  "value": 5,
+                  "size": 5,
+                  "sku": "sku-3",
                 },
                 Object {
                   "inStock": true,
-                  "value": 6,
+                  "size": 6,
+                  "sku": "sku-4",
                 },
                 Object {
                   "inStock": false,
-                  "value": 7,
+                  "size": 7,
+                  "sku": "sku-5",
                 },
                 Object {
                   "inStock": true,
-                  "value": 9,
+                  "size": 9,
+                  "sku": "sku-6",
                 },
                 Object {
                   "inStock": true,
-                  "value": 12,
+                  "size": 12,
+                  "sku": "sku-7",
                 },
               ]
             }
@@ -394,8 +438,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 3,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-1",
                   }
                 }
                 key="12345-0"
@@ -406,8 +451,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 3,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-1",
                     }
                   }
                   selected={false}
@@ -417,9 +463,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     3
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={3}
+                      value="sku-1"
                     />
                   </label>
                 </Component>
@@ -428,8 +474,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 4,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-2",
                   }
                 }
                 key="12345-1"
@@ -440,8 +487,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 4,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-2",
                     }
                   }
                   selected={false}
@@ -451,9 +499,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     4
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={4}
+                      value="sku-2"
                     />
                   </label>
                 </Component>
@@ -462,8 +510,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 5,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-3",
                   }
                 }
                 key="12345-2"
@@ -474,8 +523,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 5,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-3",
                     }
                   }
                   selected={false}
@@ -485,9 +535,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     5
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={5}
+                      value="sku-3"
                     />
                   </label>
                 </Component>
@@ -496,8 +546,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 6,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-4",
                   }
                 }
                 key="12345-3"
@@ -508,8 +559,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 6,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-4",
                     }
                   }
                   selected={false}
@@ -519,9 +571,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     6
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={6}
+                      value="sku-4"
                     />
                   </label>
                 </Component>
@@ -530,8 +582,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={false}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 7,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-5",
                   }
                 }
                 key="12345-4"
@@ -542,8 +595,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={false}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 7,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-5",
                     }
                   }
                   selected={false}
@@ -553,9 +607,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     7
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={7}
+                      value="sku-5"
                     />
                   </label>
                 </Component>
@@ -564,8 +618,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 9,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-6",
                   }
                 }
                 key="12345-5"
@@ -576,8 +631,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 9,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-6",
                     }
                   }
                   selected={false}
@@ -587,9 +643,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     9
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={9}
+                      value="sku-6"
                     />
                   </label>
                 </Component>
@@ -598,8 +654,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12345",
-                    "value": 12,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-7",
                   }
                 }
                 key="12345-6"
@@ -610,8 +667,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12345",
-                      "value": 12,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-7",
                     }
                   }
                   selected={false}
@@ -621,9 +679,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     12
                     <input
-                      name="12345"
+                      checked={false}
                       type="radio"
-                      value={12}
+                      value="sku-7"
                     />
                   </label>
                 </Component>
@@ -648,72 +706,86 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           />
         </InlineImage>
         <Styled(Component)
-          name="12346"
-          sizes={
+          productId="12346"
+          variants={
             Array [
               Object {
                 "inStock": true,
-                "value": 3,
+                "size": 3,
+                "sku": "sku-20",
               },
               Object {
                 "inStock": true,
-                "value": 4,
+                "size": 4,
+                "sku": "sku-21",
               },
               Object {
                 "inStock": true,
-                "value": 5,
+                "size": 5,
+                "sku": "sku-22",
               },
               Object {
                 "inStock": true,
-                "value": 6,
+                "size": 6,
+                "sku": "sku-23",
               },
               Object {
                 "inStock": false,
-                "value": 7,
+                "size": 7,
+                "sku": "sku-24",
               },
               Object {
                 "inStock": true,
-                "value": 9,
+                "size": 9,
+                "sku": "sku-25",
               },
               Object {
                 "inStock": true,
-                "value": 12,
+                "size": 12,
+                "sku": "sku-26",
               },
             ]
           }
         >
           <Component
             className="c3"
-            name="12346"
-            sizes={
+            productId="12346"
+            variants={
               Array [
                 Object {
                   "inStock": true,
-                  "value": 3,
+                  "size": 3,
+                  "sku": "sku-20",
                 },
                 Object {
                   "inStock": true,
-                  "value": 4,
+                  "size": 4,
+                  "sku": "sku-21",
                 },
                 Object {
                   "inStock": true,
-                  "value": 5,
+                  "size": 5,
+                  "sku": "sku-22",
                 },
                 Object {
                   "inStock": true,
-                  "value": 6,
+                  "size": 6,
+                  "sku": "sku-23",
                 },
                 Object {
                   "inStock": false,
-                  "value": 7,
+                  "size": 7,
+                  "sku": "sku-24",
                 },
                 Object {
                   "inStock": true,
-                  "value": 9,
+                  "size": 9,
+                  "sku": "sku-25",
                 },
                 Object {
                   "inStock": true,
-                  "value": 12,
+                  "size": 12,
+                  "sku": "sku-26",
                 },
               ]
             }
@@ -725,8 +797,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 3,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-20",
                   }
                 }
                 key="12346-0"
@@ -737,8 +810,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 3,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-20",
                     }
                   }
                   selected={false}
@@ -748,9 +822,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     3
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={3}
+                      value="sku-20"
                     />
                   </label>
                 </Component>
@@ -759,8 +833,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 4,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-21",
                   }
                 }
                 key="12346-1"
@@ -771,8 +846,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 4,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-21",
                     }
                   }
                   selected={false}
@@ -782,9 +858,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     4
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={4}
+                      value="sku-21"
                     />
                   </label>
                 </Component>
@@ -793,8 +869,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 5,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-22",
                   }
                 }
                 key="12346-2"
@@ -805,8 +882,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 5,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-22",
                     }
                   }
                   selected={false}
@@ -816,9 +894,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     5
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={5}
+                      value="sku-22"
                     />
                   </label>
                 </Component>
@@ -827,8 +905,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 6,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-23",
                   }
                 }
                 key="12346-3"
@@ -839,8 +918,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 6,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-23",
                     }
                   }
                   selected={false}
@@ -850,9 +930,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     6
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={6}
+                      value="sku-23"
                     />
                   </label>
                 </Component>
@@ -861,8 +941,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={false}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 7,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-24",
                   }
                 }
                 key="12346-4"
@@ -873,8 +954,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={false}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 7,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-24",
                     }
                   }
                   selected={false}
@@ -884,9 +966,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     7
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={7}
+                      value="sku-24"
                     />
                   </label>
                 </Component>
@@ -895,8 +977,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 9,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-25",
                   }
                 }
                 key="12346-5"
@@ -907,8 +990,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 9,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-25",
                     }
                   }
                   selected={false}
@@ -918,9 +1002,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     9
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={9}
+                      value="sku-25"
                     />
                   </label>
                 </Component>
@@ -929,8 +1013,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 inStock={true}
                 input={
                   Object {
-                    "name": "12346",
-                    "value": 12,
+                    "checked": false,
+                    "onClick": undefined,
+                    "value": "sku-26",
                   }
                 }
                 key="12346-6"
@@ -941,8 +1026,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   inStock={true}
                   input={
                     Object {
-                      "name": "12346",
-                      "value": 12,
+                      "checked": false,
+                      "onClick": undefined,
+                      "value": "sku-26",
                     }
                   }
                   selected={false}
@@ -952,9 +1038,9 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   >
                     12
                     <input
-                      name="12346"
+                      checked={false}
                       type="radio"
-                      value={12}
+                      value="sku-26"
                     />
                   </label>
                 </Component>

@@ -13,7 +13,70 @@ import {
   Button
  } from 'SRC'
 
-const BaseLookDetail = ({className, images, information, products, header, footer, onClick, ...props }) => {
+/*
+  It would be cool to know the structure of these props being passed down.. ie:
+
+  images (Array)
+    [
+      {
+        alt: 'Fuzzy Tiger Tee detail',
+        src: 'production/catalog/jhpde0cdhl11lu9fa41o'
+      },
+      {
+        alt: 'Cool Down Active Short front',
+        src: 'production/catalog/xrpiecxqwmiso3acxucc'
+      },
+      {
+        alt: 'Cool Down Active Short back',
+        src: 'production/catalog/wmwxd0bxeavdtgt0uqzx'
+      }
+    ]
+
+  information (Object)
+    {
+      subheader: "The Trend: Sparkly Rainbow",
+      header: "Weekends Are For Fun Outfit",
+      price: '$55',
+      description: "Cheesecake bocconcini red leicester."
+    }
+
+  products (Array)
+    [
+      {
+        image: {
+          alt: 'Fuzzy Tiger Tee front',
+          src: 'https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png'
+        },
+        sizes: [
+          { value: 3, inStock: true },
+          { value: 4, inStock: true },
+          { value: 5, inStock: true },
+          { value: 6, inStock: true },
+          { value: 7, inStock: false },
+          { value: 9, inStock: true },
+          { value: 12, inStock: true },
+        ],
+        id: '12345'
+      },
+      {}
+    ]
+
+  header (Node)
+  footer (Node)
+  onClick (Function)
+*/
+const BaseLookDetail = ({
+  className, 
+  images, 
+  information, 
+  products, 
+  header, 
+  footer, 
+  addToBag, 
+  onSizeSelect,
+  currentSizes,
+  ...props
+}) => {
   return (
     <div className={className} {...props}>
       {header}
@@ -24,8 +87,11 @@ const BaseLookDetail = ({className, images, information, products, header, foote
         </FlexCol>
         <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
           <ProductInformation {...information} />
-          <LookSizePicker products={products} />
-          <Button onClick={onClick}>Add Outfit to Bag</Button>
+          <LookSizePicker
+            products={products} 
+            onSizeSelect={onSizeSelect} 
+            currentSizes={currentSizes} />
+          <Button onClick={addToBag}>Add Outfit to Bag</Button>
         </FlexCol>
       </FlexRow>
       {footer}

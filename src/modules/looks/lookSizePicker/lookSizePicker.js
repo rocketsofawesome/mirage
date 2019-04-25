@@ -4,21 +4,25 @@ import styled from 'styled-components'
 
 import { SizePicker, InlineImage, Label } from 'SRC'
 
-const LookSizePicker = styled(({className, products}) => {
+const LookSizePicker = styled(({className, currentSizes, products, onSizeSelect}) => {
   return (
     <div className={className}>
       <Label>Sizes:</Label>
-      {products.map((product) => {
-        return(
+      {Object.keys(products).map((index) => {
+        const product = products[index]
+        const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
+        return (
           <div className='product' key={product.id}>
             <InlineImage
               className='image'
               {...product.image} />
             <SizePicker
-              name={product.id}
-              sizes={product.sizes} />
+              productId={product.id}
+              variants={product.variants}
+              currentSize={currentSize}
+              onSizeSelect={onSizeSelect(product.id)} />
           </div>
-          )
+        )
       })}
     </div>
   )
