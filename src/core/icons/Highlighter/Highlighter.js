@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import styled, { keyframes } from 'styled-components'
 import classNames from 'classnames'
 import { pointCollection } from './defaultProps'
-import BrowserDetection from 'utils/browser-detection'
 
 export class Highlighter extends React.Component {
   constructor (props) {
@@ -17,10 +16,8 @@ export class Highlighter extends React.Component {
   }
   render () {
     const  { className: highlighterClass, highlight } = this.props
-    const isIE = BrowserDetection.isIE()
     const className = classNames(highlighterClass, {
       'highlight': highlight,
-      'ie': isIE
     })
     return (
       <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 30'>
@@ -57,9 +54,6 @@ export default styled(Highlighter)`
 
   &.highlight {
     animation: ${dash} 1.5s linear forwards;
-  }
-  .ie {
-    stroke-dashoffset: 0;
   }
 
 `

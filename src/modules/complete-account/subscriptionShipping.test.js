@@ -1,7 +1,9 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import SubscriptionShipping, { UnstyledSubscriptionShipping } from './SubscriptionShipping'
+import SubscriptionShipping from 'SRC'
+
+import { UnstyledSubscriptionShipping } from './subscriptionShipping'
 
 const { mountWithTheme } = global
 

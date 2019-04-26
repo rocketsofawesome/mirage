@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { Guarantee } from 'SRC'
-import { UnstyledGuarantee } from './Guarantee'
+import { UnstyledGuarantee } from './guarantee'
 
 const { mountWithTheme } = global
 
