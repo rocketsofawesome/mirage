@@ -755,62 +755,62 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               "id": "category",
                               "links": Array [
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
                                   "target": "#",
                                   "text": "Shop New",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
                                   "target": "#",
                                   "text": "Best Sellers",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
                                   "target": "#",
                                   "text": "Graphics Shop",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
                                   "target": "#",
                                   "text": "Tees & Tops",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
                                   "target": "#",
                                   "text": "Sweatshirts",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
                                   "target": "#",
                                   "text": "Dresses & Skirts",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
                                   "target": "#",
                                   "text": "Leggings & Sweatpants",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
                                   "target": "#",
                                   "text": "Active",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
                                   "target": "#",
                                   "text": "Outerwear",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
                                   "target": "#",
                                   "text": "Swim",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
                                   "target": "#",
                                   "text": "Accessories",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
                                   "target": "#",
                                   "text": "Shop All",
                                 },
@@ -823,22 +823,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               "id": "story",
                               "links": Array [
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                   "target": "#",
                                   "text": "Next-Level Neon",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
                                   "target": "#",
                                   "text": "Not Your Average Rainbow",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                   "target": "#",
                                   "text": "Awesome Graffiti",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                   "target": "#",
                                   "text": "Vacation-Ready Styles",
                                 },
@@ -862,62 +862,62 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 "id": "category",
                                 "links": Array [
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
                                     "target": "#",
                                     "text": "Shop New",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
                                     "target": "#",
                                     "text": "Best Sellers",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
                                     "target": "#",
                                     "text": "Graphics Shop",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
                                     "target": "#",
                                     "text": "Tees & Tops",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
                                     "target": "#",
                                     "text": "Sweatshirts",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
                                     "target": "#",
                                     "text": "Dresses & Skirts",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
                                     "target": "#",
                                     "text": "Leggings & Sweatpants",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
                                     "target": "#",
                                     "text": "Active",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
                                     "target": "#",
                                     "text": "Outerwear",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
                                     "target": "#",
                                     "text": "Swim",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
                                     "target": "#",
                                     "text": "Accessories",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
                                     "target": "#",
                                     "text": "Shop All",
                                   },
@@ -930,22 +930,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 "id": "story",
                                 "links": Array [
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                     "target": "#",
                                     "text": "Next-Level Neon",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
                                     "target": "#",
                                     "text": "Not Your Average Rainbow",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                     "target": "#",
                                     "text": "Awesome Graffiti",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                     "target": "#",
                                     "text": "Vacation-Ready Styles",
                                   },
@@ -1041,62 +1041,62 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             "id": "category",
                                             "links": Array [
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
                                                 "target": "#",
                                                 "text": "Shop New",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
                                                 "target": "#",
                                                 "text": "Best Sellers",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
                                                 "target": "#",
                                                 "text": "Graphics Shop",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
                                                 "target": "#",
                                                 "text": "Tees & Tops",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
                                                 "target": "#",
                                                 "text": "Sweatshirts",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
                                                 "target": "#",
                                                 "text": "Dresses & Skirts",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
                                                 "target": "#",
                                                 "text": "Leggings & Sweatpants",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
                                                 "target": "#",
                                                 "text": "Active",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
                                                 "target": "#",
                                                 "text": "Outerwear",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
                                                 "target": "#",
                                                 "text": "Swim",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
                                                 "target": "#",
                                                 "text": "Accessories",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
                                                 "target": "#",
                                                 "text": "Shop All",
                                               },
@@ -1114,62 +1114,62 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                               "id": "category",
                                               "links": Array [
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
                                                   "target": "#",
                                                   "text": "Shop New",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
                                                   "target": "#",
                                                   "text": "Best Sellers",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
                                                   "target": "#",
                                                   "text": "Graphics Shop",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
                                                   "target": "#",
                                                   "text": "Tees & Tops",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
                                                   "target": "#",
                                                   "text": "Sweatshirts",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
                                                   "target": "#",
                                                   "text": "Dresses & Skirts",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
                                                   "target": "#",
                                                   "text": "Leggings & Sweatpants",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
                                                   "target": "#",
                                                   "text": "Active",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
                                                   "target": "#",
                                                   "text": "Outerwear",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
                                                   "target": "#",
                                                   "text": "Swim",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
                                                   "target": "#",
                                                   "text": "Accessories",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
                                                   "target": "#",
                                                   "text": "Shop All",
                                                 },
@@ -1202,7 +1202,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-0"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
                                                     "target": "#",
                                                     "text": "Shop New",
                                                   }
@@ -1273,7 +1273,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-1"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
                                                     "target": "#",
                                                     "text": "Best Sellers",
                                                   }
@@ -1344,7 +1344,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-2"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
                                                     "target": "#",
                                                     "text": "Graphics Shop",
                                                   }
@@ -1415,7 +1415,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-3"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
                                                     "target": "#",
                                                     "text": "Tees & Tops",
                                                   }
@@ -1486,7 +1486,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-4"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
                                                     "target": "#",
                                                     "text": "Sweatshirts",
                                                   }
@@ -1557,7 +1557,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-5"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
                                                     "target": "#",
                                                     "text": "Dresses & Skirts",
                                                   }
@@ -1628,7 +1628,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-6"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
                                                     "target": "#",
                                                     "text": "Leggings & Sweatpants",
                                                   }
@@ -1699,7 +1699,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-7"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
                                                     "target": "#",
                                                     "text": "Active",
                                                   }
@@ -1770,7 +1770,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-8"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
                                                     "target": "#",
                                                     "text": "Outerwear",
                                                   }
@@ -1841,7 +1841,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-9"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
                                                     "target": "#",
                                                     "text": "Swim",
                                                   }
@@ -1912,7 +1912,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-10"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
                                                     "target": "#",
                                                     "text": "Accessories",
                                                   }
@@ -1983,7 +1983,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-11"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_All.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
                                                     "target": "#",
                                                     "text": "Shop All",
                                                   }
@@ -2118,22 +2118,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             "id": "story",
                                             "links": Array [
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                 "target": "#",
                                                 "text": "Next-Level Neon",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
                                                 "target": "#",
                                                 "text": "Not Your Average Rainbow",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                 "target": "#",
                                                 "text": "Awesome Graffiti",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                 "target": "#",
                                                 "text": "Vacation-Ready Styles",
                                               },
@@ -2151,22 +2151,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                               "id": "story",
                                               "links": Array [
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                   "target": "#",
                                                   "text": "Next-Level Neon",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
                                                   "target": "#",
                                                   "text": "Not Your Average Rainbow",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                   "target": "#",
                                                   "text": "Awesome Graffiti",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                   "target": "#",
                                                   "text": "Vacation-Ready Styles",
                                                 },
@@ -2199,7 +2199,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-0"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                     "target": "#",
                                                     "text": "Next-Level Neon",
                                                   }
@@ -2270,7 +2270,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-1"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
                                                     "target": "#",
                                                     "text": "Not Your Average Rainbow",
                                                   }
@@ -2341,7 +2341,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-2"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                     "target": "#",
                                                     "text": "Awesome Graffiti",
                                                   }
@@ -2412,7 +2412,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-3"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                     "target": "#",
                                                     "text": "Vacation-Ready Styles",
                                                   }
@@ -2637,57 +2637,57 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               "id": "category",
                               "links": Array [
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
                                   "target": "#",
                                   "text": "Shop New",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
                                   "target": "#",
                                   "text": "Best Sellers",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
                                   "target": "#",
                                   "text": "Graphics Shop",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
                                   "target": "#",
                                   "text": "Tees & Tops",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
                                   "target": "#",
                                   "text": "Sweatshirts",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
                                   "target": "#",
                                   "text": "Pants & Shorts",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
                                   "target": "#",
                                   "text": "Active",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
                                   "target": "#",
                                   "text": "Outerwear",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
                                   "target": "#",
                                   "text": "Swim",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
                                   "target": "#",
                                   "text": "Accessories",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_All.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
                                   "target": "#",
                                   "text": "Shop All",
                                 },
@@ -2700,17 +2700,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               "id": "story",
                               "links": Array [
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                   "target": "#",
                                   "text": "Next-Level Neon",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                   "target": "#",
                                   "text": "Awesome Graffiti",
                                 },
                                 Object {
-                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                   "target": "#",
                                   "text": "Vacation-Ready Styles",
                                 },
@@ -2734,57 +2734,57 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 "id": "category",
                                 "links": Array [
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
                                     "target": "#",
                                     "text": "Shop New",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
                                     "target": "#",
                                     "text": "Best Sellers",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
                                     "target": "#",
                                     "text": "Graphics Shop",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
                                     "target": "#",
                                     "text": "Tees & Tops",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
                                     "target": "#",
                                     "text": "Sweatshirts",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
                                     "target": "#",
                                     "text": "Pants & Shorts",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
                                     "target": "#",
                                     "text": "Active",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
                                     "target": "#",
                                     "text": "Outerwear",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
                                     "target": "#",
                                     "text": "Swim",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
                                     "target": "#",
                                     "text": "Accessories",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_All.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
                                     "target": "#",
                                     "text": "Shop All",
                                   },
@@ -2797,17 +2797,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 "id": "story",
                                 "links": Array [
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                     "target": "#",
                                     "text": "Next-Level Neon",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                     "target": "#",
                                     "text": "Awesome Graffiti",
                                   },
                                   Object {
-                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                     "target": "#",
                                     "text": "Vacation-Ready Styles",
                                   },
@@ -2903,57 +2903,57 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             "id": "category",
                                             "links": Array [
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
                                                 "target": "#",
                                                 "text": "Shop New",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
                                                 "target": "#",
                                                 "text": "Best Sellers",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
                                                 "target": "#",
                                                 "text": "Graphics Shop",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
                                                 "target": "#",
                                                 "text": "Tees & Tops",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
                                                 "target": "#",
                                                 "text": "Sweatshirts",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
                                                 "target": "#",
                                                 "text": "Pants & Shorts",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
                                                 "target": "#",
                                                 "text": "Active",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
                                                 "target": "#",
                                                 "text": "Outerwear",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
                                                 "target": "#",
                                                 "text": "Swim",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
                                                 "target": "#",
                                                 "text": "Accessories",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_All.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
                                                 "target": "#",
                                                 "text": "Shop All",
                                               },
@@ -2971,57 +2971,57 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                               "id": "category",
                                               "links": Array [
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
                                                   "target": "#",
                                                   "text": "Shop New",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
                                                   "target": "#",
                                                   "text": "Best Sellers",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
                                                   "target": "#",
                                                   "text": "Graphics Shop",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
                                                   "target": "#",
                                                   "text": "Tees & Tops",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
                                                   "target": "#",
                                                   "text": "Sweatshirts",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
                                                   "target": "#",
                                                   "text": "Pants & Shorts",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
                                                   "target": "#",
                                                   "text": "Active",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
                                                   "target": "#",
                                                   "text": "Outerwear",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
                                                   "target": "#",
                                                   "text": "Swim",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
                                                   "target": "#",
                                                   "text": "Accessories",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_All.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
                                                   "target": "#",
                                                   "text": "Shop All",
                                                 },
@@ -3054,7 +3054,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-0"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
                                                     "target": "#",
                                                     "text": "Shop New",
                                                   }
@@ -3125,7 +3125,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-1"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
                                                     "target": "#",
                                                     "text": "Best Sellers",
                                                   }
@@ -3196,7 +3196,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-2"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
                                                     "target": "#",
                                                     "text": "Graphics Shop",
                                                   }
@@ -3267,7 +3267,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-3"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
                                                     "target": "#",
                                                     "text": "Tees & Tops",
                                                   }
@@ -3338,7 +3338,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-4"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
                                                     "target": "#",
                                                     "text": "Sweatshirts",
                                                   }
@@ -3409,7 +3409,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-5"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
                                                     "target": "#",
                                                     "text": "Pants & Shorts",
                                                   }
@@ -3480,7 +3480,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-6"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
                                                     "target": "#",
                                                     "text": "Active",
                                                   }
@@ -3551,7 +3551,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-7"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
                                                     "target": "#",
                                                     "text": "Outerwear",
                                                   }
@@ -3622,7 +3622,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-8"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
                                                     "target": "#",
                                                     "text": "Swim",
                                                   }
@@ -3693,7 +3693,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-9"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
                                                     "target": "#",
                                                     "text": "Accessories",
                                                   }
@@ -3764,7 +3764,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-10"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_B_All.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
                                                     "target": "#",
                                                     "text": "Shop All",
                                                   }
@@ -3899,17 +3899,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             "id": "story",
                                             "links": Array [
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                 "target": "#",
                                                 "text": "Next-Level Neon",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                 "target": "#",
                                                 "text": "Awesome Graffiti",
                                               },
                                               Object {
-                                                "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                 "target": "#",
                                                 "text": "Vacation-Ready Styles",
                                               },
@@ -3927,17 +3927,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                               "id": "story",
                                               "links": Array [
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                   "target": "#",
                                                   "text": "Next-Level Neon",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                   "target": "#",
                                                   "text": "Awesome Graffiti",
                                                 },
                                                 Object {
-                                                  "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                   "target": "#",
                                                   "text": "Vacation-Ready Styles",
                                                 },
@@ -3970,7 +3970,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-0"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
                                                     "target": "#",
                                                     "text": "Next-Level Neon",
                                                   }
@@ -4041,7 +4041,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-1"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
                                                     "target": "#",
                                                     "text": "Awesome Graffiti",
                                                   }
@@ -4112,7 +4112,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                 id="[object Object]-2"
                                                 link={
                                                   Object {
-                                                    "src": "https://res.cloudinary.com/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                                                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
                                                     "target": "#",
                                                     "text": "Vacation-Ready Styles",
                                                   }
