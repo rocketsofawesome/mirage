@@ -1,26 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
-.c1 {
+.c2 {
   width: 7rem;
 }
 
-.c1 .line,
-.c1 .flag circle,
-.c1 .flag .flag-portion,
-.c1 .body {
+.c2 .line,
+.c2 .flag circle,
+.c2 .flag .flag-portion,
+.c2 .body {
   fill: none;
   stroke: #0073D1;
   stroke-miterlimit: 10;
 }
 
-.c1 .face,
-.c1 .iris,
-.c1 .outterCircle {
+.c2 .face,
+.c2 .iris,
+.c2 .outterCircle {
   fill: #0073D1;
 }
 
-.c1 .flag {
+.c2 .flag {
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
@@ -37,7 +37,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
   animation-iteration-count: infinite;
 }
 
-.c2 {
+.c4 {
   -webkit-letter-spacing: normal;
   -moz-letter-spacing: normal;
   -ms-letter-spacing: normal;
@@ -54,6 +54,28 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
   background-color: #EEFCFF;
 }
 
+.c5 .c1 {
+  margin-right: 1.5rem;
+  -webkit-flex: 0 0 5rem;
+  -ms-flex: 0 0 5rem;
+  flex: 0 0 5rem;
+}
+
+.c5 aside .c3:first-of-type {
+  font-weight: 500;
+}
+
+@media (min-width:76.8em) {
+  .c5 .c1 {
+    -webkit-flex: 0 0 7rem;
+    -ms-flex: 0 0 7rem;
+    flex: 0 0 7rem;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+  }
+}
+
 <UnstyledSubscriptionShipping>
   <styled.section>
     <section
@@ -65,11 +87,11 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
       >
         <UnstyledMailbox
           animate={true}
-          className="c1"
+          className="c1 c2"
           width="7rem"
         >
           <svg
-            className="c1"
+            className="c1 c2"
             viewBox="0 0 148 148"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -144,7 +166,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
           fontSize="1.6rem"
         >
           <p
-            className="c2"
+            className="c3 c4"
             color="#00003C"
             fontSize="1.6rem"
           >
@@ -156,7 +178,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
           fontSize="1.6rem"
         >
           <p
-            className="c2"
+            className="c3 c4"
             color="#00003C"
             fontSize="1.6rem"
           >
@@ -170,23 +192,6 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
 `;
 
 exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
-.c5 {
-  -webkit-letter-spacing: normal;
-  -moz-letter-spacing: normal;
-  -ms-letter-spacing: normal;
-  letter-spacing: normal;
-  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
-  font-size: 1.6rem;
-  line-height: normal;
-  margin: 0;
-  color: #00003C;
-}
-
-.c1 {
-  padding: 2.0rem 1.5rem;
-  background-color: #EEFCFF;
-}
-
 .c3 {
   width: 7rem;
 }
@@ -221,6 +226,23 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
   animation-timing-function: ease-in-out;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
+}
+
+.c5 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+  margin: 0;
+  color: #00003C;
+}
+
+.c1 {
+  padding: 2.0rem 1.5rem;
+  background-color: #EEFCFF;
 }
 
 .c0 {

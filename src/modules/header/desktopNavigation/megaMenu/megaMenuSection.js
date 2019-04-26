@@ -6,10 +6,6 @@ import { H4 } from 'SRC'
 import { MegaMenuLink } from 'SRC'
 
 class BaseMegaMenuSection extends React.Component {
-  preloadImage (src) {
-    const image = new Image()
-    image.src = src
-  }
 
   render () {
     const {className, section, ...props} = this.props
@@ -21,7 +17,6 @@ class BaseMegaMenuSection extends React.Component {
             <H4>{section.title}</H4>
           }
           {section.links.map((link, id) => {
-            this.preloadImage(link.src)
             return (
               <li key={`${section}-${id}`}>
                 <MegaMenuLink
