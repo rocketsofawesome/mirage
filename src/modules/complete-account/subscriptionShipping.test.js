@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import SubscriptionShipping from 'SRC'
+import { SubscriptionShipping } from 'SRC'
 
 import { UnstyledSubscriptionShipping } from './subscriptionShipping'
 
