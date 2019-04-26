@@ -66,13 +66,13 @@ import {
   onClick (Function)
 */
 const BaseLookDetail = ({
+  button,
   className, 
   images, 
   information, 
   products, 
   header, 
-  footer, 
-  addToBag, 
+  footer,  
   onSizeSelect,
   currentSizes,
   ...props
@@ -91,7 +91,7 @@ const BaseLookDetail = ({
             products={products} 
             onSizeSelect={onSizeSelect} 
             currentSizes={currentSizes} />
-          <Button onClick={addToBag}>Add Outfit to Bag</Button>
+          {button}
         </FlexCol>
       </FlexRow>
       {footer}
@@ -123,6 +123,7 @@ LookDetail.propTypes = {
 }
 
 LookDetail.defaultProps = {
+  button: <Button>Add to Bag</Button>,
   footer: <Footer />,
   header: <Header
     mobileProps={

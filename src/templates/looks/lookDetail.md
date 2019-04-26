@@ -4,7 +4,7 @@
   information={require('./defaultProps').information}
   products={require('./defaultProps').products}
   style={{position: 'relative'}} 
-   currentSizes={
+  currentSizes={
     {   
       12345: 'sku-1',
       12346: 'sku-26'
