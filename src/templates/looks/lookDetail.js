@@ -28,8 +28,7 @@ const BaseLookDetail = ({
   return (
     <div className={className} {...props}>
       {header}
-      <FlexRow constrained={false} className={className}>
-        <FlexCol className='breadcrumb' desktop={{width: 12}}/>
+      <FlexRow constrained className={className}>
         <FlexCol element="aside" className='images' desktop={{width: 6}}>
           <Gallery images={images} />
         </FlexCol>
@@ -48,13 +47,6 @@ const BaseLookDetail = ({
 }
 
 const LookDetail =  styled(BaseLookDetail)`
-  .breadcrumb {
-    height: 1.6rem;
-  }
-  .thumbnails {
-  }
-  .information {
-  }
   ${LookSizePicker} {
     margin-top: 4rem;
   }
@@ -66,6 +58,8 @@ const LookDetail =  styled(BaseLookDetail)`
 LookDetail.propTypes = {
   button: PropTypes.node,
   className: PropTypes.string,
+  footer: PropTypes.node,
+  header: PropTypes.node,
   images: PropTypes.array.isRequired,
   information: PropTypes.string,
   products: PropTypes.array
@@ -73,19 +67,6 @@ LookDetail.propTypes = {
 
 LookDetail.defaultProps = {
   button: <Button>Add to Bag</Button>,
-  footer: <Footer />,
-  header: <Header
-    mobileProps={
-      {
-        position: 'absolute',
-        drawerPosition:'absolute'
-      }
-    }
-    desktopProps={
-      {
-        position: 'absolute'
-      }
-    } />
 }
 
 /** @component */
