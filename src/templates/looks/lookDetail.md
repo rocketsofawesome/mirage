@@ -10,5 +10,6 @@
       12346: 'sku-26'
     }
   }
-  onSizeSelect={(productId) => ({target: { value }}) => { alert(`productId: ${productId}, value: ${value}`) }} />
+  onSizeSelect={(productId) => ({target: { value }}) => { alert(`productId: ${productId}, value: ${value}`) }}
+  button={<Button>Add Outfit to Bag</Button>} />
 ```
