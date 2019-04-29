@@ -63,14 +63,8 @@ const LookDetail =  styled(BaseLookDetail)`
   }
 `
 
-const buttonPropTypeValidation = function (props, propName, componentName) {
-  if (!props[propName] || props[propName].type.displayName !==  'Styled(Styled(CustomButton))') {
-    throw new Error(`You did not provide a Styled Button component in ${componentName}`)
-  }
-}
-
 LookDetail.propTypes = {
-  button: buttonPropTypeValidation,
+  button: PropTypes.node,
   className: PropTypes.string,
   images: PropTypes.array.isRequired,
   information: PropTypes.string,
