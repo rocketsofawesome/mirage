@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.166",
+  "version": "0.1.167",
   "main": "./build/index.js",
   "dependencies": {
     "cloudinary-core": "^2.6.3",
