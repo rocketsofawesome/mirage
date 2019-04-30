@@ -1,18 +1,19 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import { Card, CardInformation, InlineImage, FlexCol, FlexRow } from 'SRC'
+import { Card, InlineImage, FlexCol, FlexRow } from 'SRC'
 
-const LookCards = ({className, looks}) => {
+const LookCards = styled(({className, element, looks}) => {
   return (
     <FlexRow constrained>
       {
         looks.map((look, index) => {
           return (
-            <FlexCol desktop={{width: 4}} key={index}>
-              <Card constrained={false}>
+            <FlexCol className={className} desktop={{width: 4}} key={index}>
+              <Card {...look.card}>
                 <InlineImage {...look.image} />
-                <CardInformation {...look.information} />
+                {look.information}
               </Card>
             </FlexCol>
           )
@@ -20,10 +21,15 @@ const LookCards = ({className, looks}) => {
       }
     </FlexRow>
   )
-}
+})`
+  ${Card} {
+    margin-bottom: 6rem;
+  }
+`
 
 LookCards.propTypes = {
-  
+  element: PropTypes.node,
+  look: PropTypes.array
 }
 /** @component */
 export default LookCards

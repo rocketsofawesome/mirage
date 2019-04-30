@@ -1,1 +1,1 @@
-export { default as lookCards } from './lookCards'
+export { default as LookCards } from './lookCards'

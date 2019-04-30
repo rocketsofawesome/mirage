@@ -4,7 +4,12 @@ import styled, { css } from 'styled-components'
 
 import { InlineImage } from 'SRC'
 
-const cardHover = css`&:hover { cursor: pointer }`
+const cardHover = css`
+  text-decoration: none;
+  &:hover {
+    cursor: pointer
+  }
+`
 const constrainedWidth = css`max-width: ${props => props.maxWidth};`
 
 const Card = styled(({
@@ -43,7 +48,6 @@ Card.propTypes = {
 }
 
 Card.defaultProps = {
-  constrained: true,
   element: 'a',
   maxWidth: '29.5rem'
 }
