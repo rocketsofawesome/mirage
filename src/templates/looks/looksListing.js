@@ -29,12 +29,13 @@ const LooksListing = styled(({className, element, headerContent, looks}) => {
 `
 LooksListing.propTypes = {
   element: PropTypes.node,
-  information: PropTypes.array,
+  headerContent: PropTypes.array,
   looks: PropTypes.array
 }
 
 LooksListing.defaultProp = {
-  element: 'a'
+  element: 'a',
+  looks: []
 }
 /** @component */
 export default LooksListing

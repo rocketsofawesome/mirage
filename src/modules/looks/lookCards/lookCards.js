@@ -31,5 +31,10 @@ LookCards.propTypes = {
   element: PropTypes.node,
   look: PropTypes.array
 }
+
+LookCards.defaultProps = {
+  element: 'a'
+}
+
 /** @component */
 export default LookCards

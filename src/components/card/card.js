@@ -17,6 +17,7 @@ const Card = styled(({
   element,
   ...props
 }) => {
+  delete props.maxWidth
   return React.createElement(element, props, children)
 
 })`
