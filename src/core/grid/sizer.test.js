@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import Sizer from './Sizer'
+import { Sizer } from 'SRC'
 
 const { shallowWithTheme } = global
 

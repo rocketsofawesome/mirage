@@ -1,7 +1,7 @@
 import React from 'react'
 import 'jest-styled-components'
 
-import DefaultSection from './DefaultSection'
+import { DefaultSection } from 'SRC'
 
 const { mountWithTheme } = global
 
