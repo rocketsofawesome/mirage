@@ -8,7 +8,7 @@ import { MegaMenuLink } from 'SRC'
 class BaseMegaMenuSection extends React.Component {
 
   render () {
-    const {className, section, ...props} = this.props
+    const {className, section, renderLink, ...props} = this.props
     if (section) {
       return (
         <ol className={className} key={section.id} id={section.id}>
@@ -21,6 +21,7 @@ class BaseMegaMenuSection extends React.Component {
               <li key={`${section}-${id}`}>
                 <MegaMenuLink
                   link={link}
+                  renderLink={renderLink}
                   id={`${section}-${id}`}
                   {...props} />
               </li>

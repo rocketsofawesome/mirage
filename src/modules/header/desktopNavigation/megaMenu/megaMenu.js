@@ -75,7 +75,7 @@ export class BaseMegaMenu extends React.Component {
   }
 
   render () {
-    const { className, regions, visible } = this.props
+    const { className, regions, visible, renderLink } = this.props
     const { menuImage: src, closing, closed } = this.state
     const classes = classNames(className, {
       'opened': visible,
@@ -91,6 +91,7 @@ export class BaseMegaMenu extends React.Component {
                 <MegaMenuSection
                   key={`left-${id}`}
                   section={section}
+                  renderLink={renderLink}
                   setMenuImage={this.setMenuImage}
                   clearMenuImage={this.clearMenuImage} />
               )
@@ -102,6 +103,7 @@ export class BaseMegaMenu extends React.Component {
               <MegaMenuSection
                 key={`right-${id}`}
                 section={section}
+                renderLink={renderLink}
                 setMenuImage={this.setMenuImage}
                 clearMenuImage={this.clearMenuImage} />
             )
@@ -178,7 +180,8 @@ MegaMenu.propTypes = {
     left: PropTypes.array,
     right: PropTypes.array
   }),
-  visible: PropTypes.bool
+  visible: PropTypes.bool,
+  renderLink: PropTypes.func
 }
 
 MegaMenu.defaultProps = {

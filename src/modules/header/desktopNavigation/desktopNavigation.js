@@ -59,6 +59,9 @@ export class BaseDesktopNavigation extends React.Component {
       renderLink,
       isSubscriptionMember,
       highlightable,
+      girlsLinks,
+      boysLinks,
+      bagCount,
       ...props
     } = this.props
     const {
@@ -97,7 +100,8 @@ export class BaseDesktopNavigation extends React.Component {
                   </HeaderLink>
                   <MegaMenu
                     className='megaMenu'
-                    regions={girls.regions}
+                    regions={girlsLinks.regions}
+                    renderLink={renderLink}
                     animationLength={animationLength}
                     {...girlsState} />
                 </li>
@@ -111,7 +115,8 @@ export class BaseDesktopNavigation extends React.Component {
                   </HeaderLink>
                   <MegaMenu
                     className='megaMenu'
-                    regions={boys.regions}
+                    regions={boysLinks.regions}
+                    renderLink={renderLink}
                     animationLength={animationLength}
                     {...boysState} />
                 </li>
@@ -120,7 +125,7 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      highlightable={false}>
+                      highlightable={highlightable}>
                         Subscribe + Save
                     </HeaderLink>
                   }
@@ -128,7 +133,7 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      highlightable={false}
+                      highlightable={highlightable}
                       renderLink={renderLink}>
                         My Subscription
                     </HeaderLink>
@@ -147,11 +152,12 @@ export class BaseDesktopNavigation extends React.Component {
                 <li>
                   <HeaderLink
                     justify='flex-end'
-                    highlightable={false}
+                    renderLink={renderLink}
+                    highlightable={highlightable}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
                     <span className='screenReader'>Bag</span>
-                    <BagIcon count={5}/>
+                    <BagIcon count={bagCount}/>
                   </HeaderLink>
                 </li>
               </ol>
@@ -218,19 +224,25 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
   }
 `
 
-DesktopNavigation.propTypes = {
+BaseDesktopNavigation.propTypes = {
   className: PropTypes.string,
   loggedIn: PropTypes.bool,
   animationLength: PropTypes.number,
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool
+  isSubscriptionMember: PropTypes.bool,
+  girlsLinks: PropTypes.object,
+  boysLinks: PropTypes.object,
+  bagCount: PropTypes.number
 }
 
-DesktopNavigation.defaultProps = {
+BaseDesktopNavigation.defaultProps = {
   animationLength: 300,
   renderLink: renderLink,
   //Only used for snapshot testing
-  highlightable: true
+  highlightable: true,
+  girlsLinks: girls,
+  boysLinks: boys,
+  bagCount: 5
 }
 
 /** @component */

@@ -1,22 +1,136 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
-.c0 {
-  min-height: 71rem;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.c0 {
-  min-height: 100%;
-}
-
-<BaseMobileNavigation
-  className="c0"
-  drawerPosition="fixed"
-  position="fixed"
-/>
+<div>
+  <styled.header
+    position="fixed"
+  >
+    <Styled(Styled(UnstyledHamburger))
+      onClick={[Function]}
+    />
+    <Styled(Styled(UnstyledBaseLogo)) />
+    <Styled(BaseBagIcon)
+      count={5}
+      width="2rem"
+    />
+  </styled.header>
+  <Styled(BaseMenuDrawer)
+    closeDrawer={[Function]}
+    open={false}
+    position="fixed"
+  >
+    <Styled(Component)
+      color="#0073D1"
+      fontSize="1.6rem"
+      itemHeight="auto"
+      leftPad="1.4rem"
+      outside={true}
+      type="none"
+    >
+      <li>
+        <Styled(Styled(Styled(Component)))
+          background="transparent"
+          fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
+          fontSize="2.6rem"
+          target="/shop"
+          underline={false}
+          uppercase={true}
+        >
+          Shop
+        </Styled(Styled(Styled(Component)))>
+        <Styled(Component)
+          color="#0073D1"
+          fontSize="1.6rem"
+          itemHeight="auto"
+          leftPad="1rem"
+          outside={true}
+          type="none"
+        >
+          <li>
+            <Styled(BaseAccordion)
+              toggleElement={
+                <Styled(Styled(Styled(Component)))
+                  background="transparent"
+                  fontSize="1.6rem"
+                  light={true}
+                  underline={false}
+                  uppercase={true}
+                >
+                  Boys
+                </Styled(Styled(Styled(Component)))>
+              }
+            >
+              <Styled(Component)
+                color="#0073D1"
+                fontSize="1.6rem"
+                itemHeight="auto"
+                leftPad="1rem"
+                outside={true}
+                type="none"
+              />
+            </Styled(BaseAccordion)>
+          </li>
+          <li>
+            <Styled(BaseAccordion)
+              toggleElement={
+                <Styled(Styled(Styled(Component)))
+                  background="transparent"
+                  fontSize="1.6rem"
+                  light={true}
+                  underline={false}
+                  uppercase={true}
+                >
+                  Girls
+                </Styled(Styled(Styled(Component)))>
+              }
+            >
+              <Styled(Component)
+                color="#0073D1"
+                fontSize="1.6rem"
+                itemHeight="auto"
+                leftPad="1rem"
+                outside={true}
+                type="none"
+              />
+            </Styled(BaseAccordion)>
+          </li>
+        </Styled(Component)>
+      </li>
+      <li>
+        <Styled(Styled(Styled(Component)))
+          background="transparent"
+          fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
+          fontSize="2.6rem"
+          target=""
+          underline={false}
+          uppercase={true}
+        >
+          Subscribe + Save
+        </Styled(Styled(Styled(Component)))>
+      </li>
+      <li>
+        <Styled(Styled(Styled(Component)))
+          background="transparent"
+          fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
+          fontSize="2.6rem"
+          underline={false}
+          uppercase={true}
+        >
+          Log In
+        </Styled(Styled(Styled(Component)))>
+      </li>
+      <li>
+        <Styled(Styled(Styled(Component)))
+          background="transparent"
+          fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
+          fontSize="2.6rem"
+          underline={false}
+          uppercase={true}
+        >
+          Blog
+        </Styled(Styled(Styled(Component)))>
+      </li>
+    </Styled(Component)>
+  </Styled(BaseMenuDrawer)>
+</div>
 `;

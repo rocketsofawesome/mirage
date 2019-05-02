@@ -105,7 +105,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   transform: translateY(-.75rem);
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c0 .product {
     padding-bottom: 2rem;
     border-bottom: 1px solid #D5D5D5;
@@ -116,7 +116,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:767px) {
   .c0 .product .image {
     margin-right: .75rem;
     width: 25%;

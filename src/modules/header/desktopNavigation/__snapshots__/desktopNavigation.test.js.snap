@@ -477,13 +477,206 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 <Styled(BaseDesktopNavigation)
-  animationLength={300}
   highlightable={false}
-  renderLink={[Function]}
 >
   <BaseDesktopNavigation
     animationLength={300}
+    bagCount={5}
+    boysLinks={
+      Object {
+        "regions": Object {
+          "left": Array [
+            Object {
+              "id": "category",
+              "links": Array [
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_NewArrivals.jpg",
+                  "target": "#",
+                  "text": "Shop New",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_BestSellers.jpg",
+                  "target": "#",
+                  "text": "Best Sellers",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_GraphicTees.jpg",
+                  "target": "#",
+                  "text": "Graphics Shop",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Tops.jpg",
+                  "target": "#",
+                  "text": "Tees & Tops",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Sweats.jpg",
+                  "target": "#",
+                  "text": "Sweatshirts",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Pants.jpg",
+                  "target": "#",
+                  "text": "Pants & Shorts",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Active.jpg",
+                  "target": "#",
+                  "text": "Active",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Outerwear.jpg",
+                  "target": "#",
+                  "text": "Outerwear",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Swim.jpg",
+                  "target": "#",
+                  "text": "Swim",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_Accessories.jpg",
+                  "target": "#",
+                  "text": "Accessories",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_B_All.jpg",
+                  "target": "#",
+                  "text": "Shop All",
+                },
+              ],
+              "title": "Shop by Category",
+            },
+          ],
+          "right": Array [
+            Object {
+              "id": "story",
+              "links": Array [
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                  "target": "#",
+                  "text": "Next-Level Neon",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                  "target": "#",
+                  "text": "Awesome Graffiti",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                  "target": "#",
+                  "text": "Vacation-Ready Styles",
+                },
+              ],
+              "title": "Shop by Story",
+            },
+          ],
+        },
+      }
+    }
     className="c0"
+    girlsLinks={
+      Object {
+        "regions": Object {
+          "left": Array [
+            Object {
+              "id": "category",
+              "links": Array [
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg",
+                  "target": "#",
+                  "text": "Shop New",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_BestSellers.jpg",
+                  "target": "#",
+                  "text": "Best Sellers",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_GraphicTees.jpg",
+                  "target": "#",
+                  "text": "Graphics Shop",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Tops.jpg",
+                  "target": "#",
+                  "text": "Tees & Tops",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Sweats.jpg",
+                  "target": "#",
+                  "text": "Sweatshirts",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Dresses.jpg",
+                  "target": "#",
+                  "text": "Dresses & Skirts",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Pants.jpg",
+                  "target": "#",
+                  "text": "Leggings & Sweatpants",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Active.jpg",
+                  "target": "#",
+                  "text": "Active",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Outerwear.jpg",
+                  "target": "#",
+                  "text": "Outerwear",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Swim.jpg",
+                  "target": "#",
+                  "text": "Swim",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_Accessories.jpg",
+                  "target": "#",
+                  "text": "Accessories",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_All.jpg",
+                  "target": "#",
+                  "text": "Shop All",
+                },
+              ],
+              "title": "Shop by Category",
+            },
+          ],
+          "right": Array [
+            Object {
+              "id": "story",
+              "links": Array [
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Neon.jpg",
+                  "target": "#",
+                  "text": "Next-Level Neon",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Rainbow.jpg",
+                  "target": "#",
+                  "text": "Not Your Average Rainbow",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Graffiti.jpg",
+                  "target": "#",
+                  "text": "Awesome Graffiti",
+                },
+                Object {
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg",
+                  "target": "#",
+                  "text": "Vacation-Ready Styles",
+                },
+              ],
+              "title": "Shop by Story",
+            },
+          ],
+        },
+      }
+    }
     highlightable={false}
     renderLink={[Function]}
   >
@@ -848,6 +1041,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           ],
                         }
                       }
+                      renderLink={[Function]}
                       visible={false}
                     >
                       <BaseMegaMenu
@@ -955,6 +1149,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             ],
                           }
                         }
+                        renderLink={[Function]}
                         visible={false}
                       >
                         <div
@@ -1036,6 +1231,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
                                         key="left-0"
+                                        renderLink={[Function]}
                                         section={
                                           Object {
                                             "id": "category",
@@ -1109,6 +1305,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         <BaseMegaMenuSection
                                           className="c13"
                                           clearMenuImage={[Function]}
+                                          renderLink={[Function]}
                                           section={
                                             Object {
                                               "id": "category",
@@ -1207,6 +1404,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Shop New",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1216,6 +1414,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1230,6 +1429,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1245,6 +1445,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1252,11 +1453,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Shop New
                                                       </a>
@@ -1278,6 +1479,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Best Sellers",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1287,6 +1489,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1301,6 +1504,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1316,6 +1520,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1323,11 +1528,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Best Sellers
                                                       </a>
@@ -1349,6 +1554,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Graphics Shop",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1358,6 +1564,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1372,6 +1579,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1387,6 +1595,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1394,11 +1603,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Graphics Shop
                                                       </a>
@@ -1420,6 +1629,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Tees & Tops",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1429,6 +1639,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1443,6 +1654,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1458,6 +1670,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1465,11 +1678,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Tees & Tops
                                                       </a>
@@ -1491,6 +1704,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Sweatshirts",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1500,6 +1714,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1514,6 +1729,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1529,6 +1745,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1536,11 +1753,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Sweatshirts
                                                       </a>
@@ -1562,6 +1779,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Dresses & Skirts",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1571,6 +1789,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1585,6 +1804,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1600,6 +1820,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1607,11 +1828,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Dresses & Skirts
                                                       </a>
@@ -1633,6 +1854,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Leggings & Sweatpants",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1642,6 +1864,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1656,6 +1879,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1671,6 +1895,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1678,11 +1903,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Leggings & Sweatpants
                                                       </a>
@@ -1704,6 +1929,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Active",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1713,6 +1939,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1727,6 +1954,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1742,6 +1970,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1749,11 +1978,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Active
                                                       </a>
@@ -1775,6 +2004,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Outerwear",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1784,6 +2014,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1798,6 +2029,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1813,6 +2045,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1820,11 +2053,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Outerwear
                                                       </a>
@@ -1846,6 +2079,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Swim",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1855,6 +2089,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1869,6 +2104,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1884,6 +2120,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1891,11 +2128,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Swim
                                                       </a>
@@ -1917,6 +2154,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Accessories",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1926,6 +2164,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -1940,6 +2179,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -1955,6 +2195,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -1962,11 +2203,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Accessories
                                                       </a>
@@ -1988,6 +2229,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Shop All",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -1997,6 +2239,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -2011,6 +2254,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -2026,6 +2270,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -2033,11 +2278,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Shop All
                                                       </a>
@@ -2113,6 +2358,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
                                         key="right-0"
+                                        renderLink={[Function]}
                                         section={
                                           Object {
                                             "id": "story",
@@ -2146,6 +2392,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         <BaseMegaMenuSection
                                           className="c13"
                                           clearMenuImage={[Function]}
+                                          renderLink={[Function]}
                                           section={
                                             Object {
                                               "id": "story",
@@ -2204,6 +2451,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Next-Level Neon",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -2213,6 +2461,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -2227,6 +2476,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -2242,6 +2492,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -2249,11 +2500,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Next-Level Neon
                                                       </a>
@@ -2275,6 +2526,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Not Your Average Rainbow",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -2284,6 +2536,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -2298,6 +2551,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -2313,6 +2567,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -2320,11 +2575,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Not Your Average Rainbow
                                                       </a>
@@ -2346,6 +2601,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Awesome Graffiti",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -2355,6 +2611,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -2369,6 +2626,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -2384,6 +2642,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -2391,11 +2650,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Awesome Graffiti
                                                       </a>
@@ -2417,6 +2676,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Vacation-Ready Styles",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -2426,6 +2686,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -2440,6 +2701,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -2455,6 +2717,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -2462,11 +2725,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Vacation-Ready Styles
                                                       </a>
@@ -2720,6 +2983,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           ],
                         }
                       }
+                      renderLink={[Function]}
                       visible={false}
                     >
                       <BaseMegaMenu
@@ -2817,6 +3081,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             ],
                           }
                         }
+                        renderLink={[Function]}
                         visible={false}
                       >
                         <div
@@ -2898,6 +3163,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
                                         key="left-0"
+                                        renderLink={[Function]}
                                         section={
                                           Object {
                                             "id": "category",
@@ -2966,6 +3232,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         <BaseMegaMenuSection
                                           className="c13"
                                           clearMenuImage={[Function]}
+                                          renderLink={[Function]}
                                           section={
                                             Object {
                                               "id": "category",
@@ -3059,6 +3326,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Shop New",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3068,6 +3336,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3082,6 +3351,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3097,6 +3367,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3104,11 +3375,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Shop New
                                                       </a>
@@ -3130,6 +3401,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Best Sellers",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3139,6 +3411,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3153,6 +3426,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3168,6 +3442,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3175,11 +3450,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Best Sellers
                                                       </a>
@@ -3201,6 +3476,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Graphics Shop",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3210,6 +3486,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3224,6 +3501,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3239,6 +3517,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3246,11 +3525,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Graphics Shop
                                                       </a>
@@ -3272,6 +3551,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Tees & Tops",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3281,6 +3561,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3295,6 +3576,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3310,6 +3592,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3317,11 +3600,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Tees & Tops
                                                       </a>
@@ -3343,6 +3626,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Sweatshirts",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3352,6 +3636,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3366,6 +3651,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3381,6 +3667,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3388,11 +3675,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Sweatshirts
                                                       </a>
@@ -3414,6 +3701,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Pants & Shorts",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3423,6 +3711,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3437,6 +3726,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3452,6 +3742,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3459,11 +3750,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Pants & Shorts
                                                       </a>
@@ -3485,6 +3776,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Active",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3494,6 +3786,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3508,6 +3801,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3523,6 +3817,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3530,11 +3825,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Active
                                                       </a>
@@ -3556,6 +3851,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Outerwear",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3565,6 +3861,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3579,6 +3876,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3594,6 +3892,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3601,11 +3900,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Outerwear
                                                       </a>
@@ -3627,6 +3926,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Swim",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3636,6 +3936,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3650,6 +3951,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3665,6 +3967,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3672,11 +3975,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Swim
                                                       </a>
@@ -3698,6 +4001,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Accessories",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3707,6 +4011,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3721,6 +4026,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3736,6 +4042,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3743,11 +4050,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Accessories
                                                       </a>
@@ -3769,6 +4076,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Shop All",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3778,6 +4086,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3792,6 +4101,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -3807,6 +4117,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -3814,11 +4125,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Shop All
                                                       </a>
@@ -3894,6 +4205,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
                                         key="right-0"
+                                        renderLink={[Function]}
                                         section={
                                           Object {
                                             "id": "story",
@@ -3922,6 +4234,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         <BaseMegaMenuSection
                                           className="c13"
                                           clearMenuImage={[Function]}
+                                          renderLink={[Function]}
                                           section={
                                             Object {
                                               "id": "story",
@@ -3975,6 +4288,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Next-Level Neon",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -3984,6 +4298,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -3998,6 +4313,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -4013,6 +4329,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -4020,11 +4337,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Next-Level Neon
                                                       </a>
@@ -4046,6 +4363,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Awesome Graffiti",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -4055,6 +4373,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -4069,6 +4388,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -4084,6 +4404,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -4091,11 +4412,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Awesome Graffiti
                                                       </a>
@@ -4117,6 +4438,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     "text": "Vacation-Ready Styles",
                                                   }
                                                 }
+                                                renderLink={[Function]}
                                                 setMenuImage={[Function]}
                                               >
                                                 <Styled(Styled(Component))
@@ -4126,6 +4448,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   onFocus={[Function]}
                                                   onMouseEnter={[Function]}
                                                   onMouseLeave={[Function]}
+                                                  renderLink={[Function]}
                                                   target="#"
                                                   underline={false}
                                                 >
@@ -4140,6 +4463,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
+                                                    renderLink={[Function]}
                                                     target="#"
                                                     underline={false}
                                                     uppercase={false}
@@ -4155,6 +4479,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       onFocus={[Function]}
                                                       onMouseEnter={[Function]}
                                                       onMouseLeave={[Function]}
+                                                      renderLink={[Function]}
                                                       target="#"
                                                       underline={false}
                                                       uppercase={false}
@@ -4162,11 +4487,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       <a
                                                         className="c15 c16 c17"
                                                         fontStyle="normal"
+                                                        href="#"
                                                         onBlur={[Function]}
                                                         onFocus={[Function]}
                                                         onMouseEnter={[Function]}
                                                         onMouseLeave={[Function]}
-                                                        target="#"
                                                       >
                                                         Vacation-Ready Styles
                                                       </a>
@@ -4469,6 +4794,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       highlightOn="hover"
                       highlightable={false}
                       justify="flex-end"
+                      renderLink={[Function]}
                       spacing={true}
                     >
                       <BaseHeaderLink
@@ -4477,6 +4803,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         highlightOn="hover"
                         highlightable={false}
                         justify="flex-end"
+                        renderLink={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
@@ -4486,6 +4813,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           light={true}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
+                          renderLink={[Function]}
                           underline={false}
                           uppercase={true}
                         >
@@ -4500,6 +4828,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             light={true}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
+                            renderLink={[Function]}
                             underline={false}
                             uppercase={true}
                           >
@@ -4514,6 +4843,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               light={true}
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
+                              renderLink={[Function]}
                               underline={false}
                               uppercase={true}
                             >

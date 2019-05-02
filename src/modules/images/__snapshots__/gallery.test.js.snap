@@ -157,7 +157,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1279px) {
   .c6 {
     display: block;
   }
@@ -281,12 +281,12 @@ exports[`() Gallery matching the snapshot 1`] = `
           "abovePhoneMax": "(min-width: 414px)",
           "aboveTablet": "(min-width: 768px)",
           "aboveTabletMax": "(min-width: 960px)",
-          "belowDesktop": "(max-width: 1440px)",
-          "belowLaptop": "(max-width: 1280px)",
-          "belowPhone": "(max-width: 320px)",
-          "belowPhoneMax": "(max-width: 414px)",
-          "belowTablet": "(max-width: 768px)",
-          "belowTabletMax": "(max-width: 960px)",
+          "belowDesktop": "(max-width: 1439px)",
+          "belowLaptop": "(max-width: 1279px)",
+          "belowPhone": "(max-width: 319px)",
+          "belowPhoneMax": "(max-width: 413px)",
+          "belowTablet": "(max-width: 767px)",
+          "belowTabletMax": "(max-width: 959px)",
           "landscape": "(orientation: landscape)",
           "portrait": "(orientation: portrait)",
         },
@@ -418,12 +418,12 @@ exports[`() Gallery matching the snapshot 1`] = `
             "abovePhoneMax": "(min-width: 414px)",
             "aboveTablet": "(min-width: 768px)",
             "aboveTabletMax": "(min-width: 960px)",
-            "belowDesktop": "(max-width: 1440px)",
-            "belowLaptop": "(max-width: 1280px)",
-            "belowPhone": "(max-width: 320px)",
-            "belowPhoneMax": "(max-width: 414px)",
-            "belowTablet": "(max-width: 768px)",
-            "belowTabletMax": "(max-width: 960px)",
+            "belowDesktop": "(max-width: 1439px)",
+            "belowLaptop": "(max-width: 1279px)",
+            "belowPhone": "(max-width: 319px)",
+            "belowPhoneMax": "(max-width: 413px)",
+            "belowTablet": "(max-width: 767px)",
+            "belowTabletMax": "(max-width: 959px)",
             "landscape": "(orientation: landscape)",
             "portrait": "(orientation: portrait)",
           },
@@ -557,31 +557,31 @@ exports[`() Gallery matching the snapshot 1`] = `
                         Array [
                           Object {
                             "alt": "Cool Down Active Short on model",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                           },
                           Object {
                             "alt": "Cool Down Active Short on model",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
                           },
                           Object {
                             "alt": "Fuzzy Tiger Tee on model",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
                           },
                           Object {
                             "alt": "Fuzzy Tiger Tee front",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
                           },
                           Object {
                             "alt": "Fuzzy Tiger Tee detail",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
                           },
                           Object {
                             "alt": "Cool Down Active Short front",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
                           },
                           Object {
                             "alt": "Cool Down Active Short back",
-                            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                            "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
                           },
                         ]
                       }
@@ -611,31 +611,31 @@ exports[`() Gallery matching the snapshot 1`] = `
                           Array [
                             Object {
                               "alt": "Cool Down Active Short on model",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                             },
                             Object {
                               "alt": "Cool Down Active Short on model",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
                             },
                             Object {
                               "alt": "Fuzzy Tiger Tee on model",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
                             },
                             Object {
                               "alt": "Fuzzy Tiger Tee front",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
                             },
                             Object {
                               "alt": "Fuzzy Tiger Tee detail",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
                             },
                             Object {
                               "alt": "Cool Down Active Short front",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
                             },
                             Object {
                               "alt": "Cool Down Active Short back",
-                              "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                              "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
                             },
                           ]
                         }
@@ -664,31 +664,31 @@ exports[`() Gallery matching the snapshot 1`] = `
                             Array [
                               Object {
                                 "alt": "Cool Down Active Short on model",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                               },
                               Object {
                                 "alt": "Cool Down Active Short on model",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
                               },
                               Object {
                                 "alt": "Fuzzy Tiger Tee on model",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
                               },
                               Object {
                                 "alt": "Fuzzy Tiger Tee front",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
                               },
                               Object {
                                 "alt": "Fuzzy Tiger Tee detail",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
                               },
                               Object {
                                 "alt": "Cool Down Active Short front",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
                               },
                               Object {
                                 "alt": "Cool Down Active Short back",
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
                               },
                             ]
                           }
@@ -717,31 +717,31 @@ exports[`() Gallery matching the snapshot 1`] = `
                               Array [
                                 Object {
                                   "alt": "Cool Down Active Short on model",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                 },
                                 Object {
                                   "alt": "Cool Down Active Short on model",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
                                 },
                                 Object {
                                   "alt": "Fuzzy Tiger Tee on model",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
                                 },
                                 Object {
                                   "alt": "Fuzzy Tiger Tee front",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
                                 },
                                 Object {
                                   "alt": "Fuzzy Tiger Tee detail",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
                                 },
                                 Object {
                                   "alt": "Cool Down Active Short front",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
                                 },
                                 Object {
                                   "alt": "Cool Down Active Short back",
-                                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                                  "src": "https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
                                 },
                               ]
                             }
@@ -755,14 +755,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="0"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                               >
                                 <img
                                   alt="Cool Down Active Short on model"
                                   className="roa-thumbnail active"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -771,14 +771,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="1"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
                               >
                                 <img
                                   alt="Cool Down Active Short on model"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -787,14 +787,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="2"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee on model"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -803,14 +803,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="3"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee front"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -819,14 +819,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="4"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
                               >
                                 <img
                                   alt="Fuzzy Tiger Tee detail"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -835,14 +835,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="5"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
                               >
                                 <img
                                   alt="Cool Down Active Short front"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
                                 />
                               </InlineImage>
                               <InlineImage
@@ -851,14 +851,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 key="6"
                                 onClick={[Function]}
                                 role="button"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
                               >
                                 <img
                                   alt="Cool Down Active Short back"
                                   className="roa-thumbnail"
                                   onClick={[Function]}
                                   role="button"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/c_fit,w_120/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
                                 />
                               </InlineImage>
                             </div>
@@ -944,7 +944,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               Object {
                                 "alt": "Cool Down Active Short on model Main Enlarged Image",
                                 "height": 1989,
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                 "width": 1440,
                               }
                             }
@@ -954,7 +954,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                               Object {
                                 "alt": "Cool Down Active Short on model Main Image",
                                 "isFluidWidth": true,
-                                "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                               }
                             }
                           >
@@ -1001,7 +1001,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                   key=".0"
                                   onError={[Function]}
                                   onLoad={[Function]}
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                   style={
                                     Object {
                                       "display": "block",
@@ -1046,7 +1046,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                       "alt": "Cool Down Active Short on model Main Image",
                                       "height": 0,
                                       "isFluidWidth": true,
-                                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                       "width": 0,
                                     }
                                   }
@@ -1086,7 +1086,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           "alt": "Cool Down Active Short on model Main Image",
                                           "height": 0,
                                           "isFluidWidth": true,
-                                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                           "width": 0,
                                         }
                                       }
@@ -1164,7 +1164,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           "alt": "Cool Down Active Short on model Main Image",
                                           "height": 0,
                                           "isFluidWidth": true,
-                                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                           "width": 0,
                                         }
                                       }
@@ -1243,7 +1243,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           "alt": "Cool Down Active Short on model Main Image",
                                           "height": 0,
                                           "isFluidWidth": true,
-                                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                           "width": 0,
                                         }
                                       }
@@ -1322,7 +1322,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           "alt": "Cool Down Active Short on model Main Image",
                                           "height": 0,
                                           "isFluidWidth": true,
-                                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                          "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                           "width": 0,
                                         }
                                       }
@@ -1404,7 +1404,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     Object {
                                       "alt": "Cool Down Active Short on model Main Enlarged Image",
                                       "height": 1989,
-                                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                       "width": 1440,
                                     }
                                   }
@@ -1420,7 +1420,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                       "alt": "Cool Down Active Short on model Main Image",
                                       "height": 0,
                                       "isFluidWidth": true,
-                                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                      "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                       "width": 0,
                                     }
                                   }
@@ -1462,7 +1462,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                       Object {
                                         "alt": "Cool Down Active Short on model Main Enlarged Image",
                                         "height": 1989,
-                                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                        "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp_large/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                         "width": 1440,
                                       }
                                     }
@@ -1478,7 +1478,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                         "alt": "Cool Down Active Short on model Main Image",
                                         "height": 0,
                                         "isFluidWidth": true,
-                                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                                        "src": "https://res.cloudinary.com/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
                                         "width": 0,
                                       }
                                     }
@@ -1673,7 +1673,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 alt="Cool Down Active Short on model"
                                 className="image"
                                 key="0"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
                                 style={
                                   Object {
                                     "display": "inline-block",
@@ -1685,7 +1685,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 <img
                                   alt="Cool Down Active Short on model"
                                   className="image"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
                                   style={
                                     Object {
                                       "display": "inline-block",
@@ -1801,7 +1801,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 alt="Cool Down Active Short on model"
                                 className="image"
                                 key="0"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
                                 style={
                                   Object {
                                     "display": "inline-block",
@@ -1813,7 +1813,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                 <img
                                   alt="Cool Down Active Short on model"
                                   className="image"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
+                                  src="https://res.cloudinary.com/roa-canon/image/upload/v1/production/catalog/bi5flgfpxbyr9tp2xkd9"
                                   style={
                                     Object {
                                       "display": "inline-block",
