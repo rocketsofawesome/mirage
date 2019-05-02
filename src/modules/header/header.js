@@ -1,9 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
 import { Desktop, Default, DesktopNavigation, MobileNavigation } from 'SRC'
 
-const Header = ({
+const BaseHeader = ({
   above,
   below,
   className,
@@ -23,6 +24,12 @@ const Header = ({
     </div>
   )
 }
+
+const Header = styled(BaseHeader)`
+  position: ${(props) => props.position};
+  z-index: 1;
+  width: 100%;
+`
 
 Header.propTypes = {
   className: PropTypes.string,

@@ -48,7 +48,7 @@ export class MobileNavigation extends React.Component {
     const { open } = this.state
     return (
       <div className={className}>
-        <MobileHeader position={position}>
+        <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
           <Logo />
           <BagIcon count={bagCount}/>
@@ -164,13 +164,11 @@ export class MobileNavigation extends React.Component {
 }
 
 MobileNavigation.propTypes = {
-  position: PropTypes.string,
   drawerPosition: PropTypes.string,
   bagCount: PropTypes.number
 }
 
 MobileNavigation.defaultProps = {
-  position: 'fixed',
   drawerPosition: 'fixed',
   bagCount: 5
 }

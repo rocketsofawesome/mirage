@@ -2,9 +2,7 @@
 
 exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
 <div>
-  <styled.header
-    position="fixed"
-  >
+  <styled.header>
     <Styled(Styled(UnstyledHamburger))
       onClick={[Function]}
     />
