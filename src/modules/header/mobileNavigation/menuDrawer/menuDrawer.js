@@ -55,8 +55,8 @@ const MenuDrawer = styled(BaseMenuDrawer)`
   left: 0;
   display: flex;
   width: 100%;
-  height: 100%;
-  z-index: 2;
+  height: 100vh;
+  z-index: 3;
   transform: translateX(-200%);
   transition: transform 0.6s ease-in-out;
   &.open {
