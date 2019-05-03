@@ -39,12 +39,12 @@ exports[`() SquareRadioButton matching the snapshot 1`] = `
   opacity: 0;
 }
 
-.c0.outOfStock {
+.c0.disabled {
   border: solid 0.1rem #979797;
   color: #979797;
 }
 
-.c0.outOfStock:hover {
+.c0.disabled:hover {
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -53,12 +53,9 @@ exports[`() SquareRadioButton matching the snapshot 1`] = `
   background-color: #BCE1F7;
 }
 
-<Styled(Component)
-  inStock={true}
->
+<Styled(Component)>
   <Component
     className="c0"
-    inStock={true}
   >
     <label
       className="c0"

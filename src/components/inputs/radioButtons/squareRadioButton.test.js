@@ -4,7 +4,7 @@ import { SquareRadioButton } from 'SRC'
 
 const { mountWithTheme } = global
 
-const defaultProps = { children: "4", inStock: true }
+const defaultProps = { children: "4" }
 
 describe('() SquareRadioButton', () => {
   const createSquareRadioButton = (inProps) => {
@@ -29,7 +29,7 @@ describe('() SquareRadioButton', () => {
   })
 
   test('disabled should apply proper class', () => {
-    expect(createSquareRadioButton({ inStock: false }).find('.outOfStock').length).toEqual(1)
+    expect(createSquareRadioButton({ disabled: true }).find('.disabled').length).toEqual(1)
   })
 
   test('onClick is fired when input is clicked', () => {

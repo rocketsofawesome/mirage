@@ -39,12 +39,12 @@ exports[`() SizePicker matching the snapshot 1`] = `
   opacity: 0;
 }
 
-.c2.outOfStock {
+.c2.disabled {
   border: solid 0.1rem #979797;
   color: #979797;
 }
 
-.c2.outOfStock:hover {
+.c2.disabled:hover {
   background-color: transparent;
   cursor: not-allowed;
 }
@@ -150,7 +150,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       className="c0"
     >
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": true,
@@ -163,7 +163,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": true,
@@ -174,7 +174,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={true}
         >
           <label
-            className="c1 c2 selected"
+            className="c1 c2 selected disabled"
           >
             3
             <input
@@ -186,7 +186,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -199,7 +199,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -210,7 +210,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2"
+            className="c1 c2 disabled"
           >
             4
             <input
@@ -222,7 +222,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -235,7 +235,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -246,7 +246,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2"
+            className="c1 c2 disabled"
           >
             5
             <input
@@ -258,7 +258,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -271,7 +271,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -282,7 +282,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2"
+            className="c1 c2 disabled"
           >
             6
             <input
@@ -294,7 +294,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={false}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -307,7 +307,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={false}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -318,7 +318,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2 outOfStock"
+            className="c1 c2 disabled"
           >
             7
             <input
@@ -330,7 +330,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -343,7 +343,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -354,7 +354,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2"
+            className="c1 c2 disabled"
           >
             9
             <input
@@ -366,7 +366,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         </Component>
       </Styled(Component)>
       <Styled(Component)
-        inStock={true}
+        disabled={true}
         input={
           Object {
             "checked": false,
@@ -379,7 +379,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
       >
         <Component
           className="c1 c2"
-          inStock={true}
+          disabled={true}
           input={
             Object {
               "checked": false,
@@ -390,7 +390,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           selected={false}
         >
           <label
-            className="c1 c2"
+            className="c1 c2 disabled"
           >
             12
             <input
