@@ -74,16 +74,16 @@ const BaseFooter = ({
           <FlexCol gutter='15px' mobile={{width: 4}} desktop={{width: 12}}>
             <div>
               <a href={LINKS['instagram']} target='_blank'>
-                <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/instagram.png' alt='instagram' />
+                <InlineImage src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/q_auto:good/web/social/instagram.png' alt='instagram' />
               </a>
               <a href={LINKS['facebook']} target='_blank'>
-                <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/facebook.png' alt='facebook' />
+                <InlineImage src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/q_auto:good/web/social/facebook.png' alt='facebook' />
               </a>
               <a href={LINKS['twitter']} target='_blank'>
-                <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/twitter.png' alt='twitter' />
+                <InlineImage src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/q_auto:good/web/social/twitter.png' alt='twitter' />
               </a>
               <a href={LINKS['snapchat']} target='_blank'>
-                <InlineImage src='https://res.cloudinary.com/roa-canon/q_auto:good/web/social/snapchat.png' alt='snapchat' />
+                <InlineImage src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/q_auto:good/web/social/snapchat.png' alt='snapchat' />
               </a>
             </div>
           </FlexCol>

@@ -4,7 +4,7 @@
     {
       target: '#',
       text: 'Shop New',
-      src: 'https://res.cloudinary.com/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg'
+      src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_G_NewArrivals.jpg'
     }
   }
   id='example-id'

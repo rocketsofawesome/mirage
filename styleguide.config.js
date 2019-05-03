@@ -15,7 +15,7 @@ module.exports = {
     maxWidth: 'auto'
   },
   template: {
-    favicon: '//res.cloudinary.com/roa-canon/image/upload/v1508867160/favicon.ico',
+    favicon: '//d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1508867160/favicon.ico',
     head: {
       scripts: [
         {src: 'https://use.typekit.net/bfw8xpa.js'},

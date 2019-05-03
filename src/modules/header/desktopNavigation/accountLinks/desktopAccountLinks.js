@@ -23,6 +23,7 @@ export class BaseAccountLinks extends React.Component {
       highlightable,
       isSubscriptionMember,
       loggedIn,
+      renderLink,
       name,
       ...props
     } = this.props
@@ -50,6 +51,7 @@ export class BaseAccountLinks extends React.Component {
         <HeaderLink
           className={className}
           target='shop/login'
+          renderLink={renderLink}
           highlightable={highlightable}
           {...props} >
             Log In

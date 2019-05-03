@@ -40,7 +40,7 @@ export class BaseGallery extends React.Component {
   }
 
   render() {
-    const { className, images, theme } = this.props
+    const { className, images } = this.props
     const { activeImage } = this.state
 
     const smallImage = {

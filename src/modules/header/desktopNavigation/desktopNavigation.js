@@ -59,6 +59,10 @@ export class BaseDesktopNavigation extends React.Component {
       renderLink,
       isSubscriptionMember,
       highlightable,
+      girlsLinks,
+      boysLinks,
+      bagCount,
+      homepageUrl,
       ...props
     } = this.props
     const {
@@ -97,7 +101,8 @@ export class BaseDesktopNavigation extends React.Component {
                   </HeaderLink>
                   <MegaMenu
                     className='megaMenu'
-                    regions={girls.regions}
+                    regions={girlsLinks.regions}
+                    renderLink={renderLink}
                     animationLength={animationLength}
                     {...girlsState} />
                 </li>
@@ -111,7 +116,8 @@ export class BaseDesktopNavigation extends React.Component {
                   </HeaderLink>
                   <MegaMenu
                     className='megaMenu'
-                    regions={boys.regions}
+                    regions={boysLinks.regions}
+                    renderLink={renderLink}
                     animationLength={animationLength}
                     {...boysState} />
                 </li>
@@ -120,7 +126,8 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      highlightable={false}>
+                      href={`${homepageUrl}?view=subscribe`}
+                      highlightable={highlightable}>
                         Subscribe + Save
                     </HeaderLink>
                   }
@@ -128,7 +135,8 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      highlightable={false}
+                      highlightable={highlightable}
+                      target='/box'
                       renderLink={renderLink}>
                         My Subscription
                     </HeaderLink>
@@ -136,22 +144,27 @@ export class BaseDesktopNavigation extends React.Component {
                 </li>
                 <span>|</span>
                 <li>
-                  <HeaderLink highlightable={highlightable}>Blog</HeaderLink>
+                  <HeaderLink
+                    href='https://news.rocketsofawesome.com'
+                    highlightable={highlightable}>
+                      Blog
+                  </HeaderLink>
                 </li>
                 <li className='spacer'>
                   <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
+                    renderLink={renderLink}
                     {...props} />
                 </li>
                 <li>
                   <HeaderLink
                     justify='flex-end'
-                    highlightable={false}
+                    highlightable={highlightable}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
                     <span className='screenReader'>Bag</span>
-                    <BagIcon count={5}/>
+                    <BagIcon count={bagCount}/>
                   </HeaderLink>
                 </li>
               </ol>
@@ -218,19 +231,27 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
   }
 `
 
-DesktopNavigation.propTypes = {
+BaseDesktopNavigation.propTypes = {
   className: PropTypes.string,
   loggedIn: PropTypes.bool,
   animationLength: PropTypes.number,
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool
+  isSubscriptionMember: PropTypes.bool,
+  girlsLinks: PropTypes.object,
+  boysLinks: PropTypes.object,
+  bagCount: PropTypes.number,
+  homepageUrl: PropTypes.string
 }
 
-DesktopNavigation.defaultProps = {
+BaseDesktopNavigation.defaultProps = {
   animationLength: 300,
   renderLink: renderLink,
   //Only used for snapshot testing
-  highlightable: true
+  highlightable: true,
+  girlsLinks: girls,
+  boysLinks: boys,
+  bagCount: 5,
+  homepageUrl: 'https://rocketsofawesome.com'
 }
 
 /** @component */

@@ -86,7 +86,7 @@
 
 ### Setting bullet to be an image:
 ```js
-<UL image='https://res.cloudinary.com/roa-canon/image/upload/c_scale,w_14/v1554922788/web/rocket_1f680.png'>
+<UL image='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_14/v1554922788/web/rocket_1f680.png'>
   <li><Link>Example 1</Link></li>
   <li><Link>Example 2</Link></li>
   <li><Link>Example 3</Link></li>

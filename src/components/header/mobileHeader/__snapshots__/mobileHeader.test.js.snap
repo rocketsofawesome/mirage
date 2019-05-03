@@ -5,7 +5,6 @@ exports[`(Styled Component) MobileHeader matching the snapshot 1`] = `
   min-height: 4.8rem;
   background-color: #FFFFFF;
   box-shadow: 0 0.2rem 0.1rem 0 rgba(0,0,0,.16);
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
