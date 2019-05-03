@@ -3,10 +3,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import classNames from 'classnames'
 
-const SquareRadioButton = styled(({className, children, selected, input, inStock}) => {
+const SquareRadioButton = styled(({className, children, selected, input, disabled}) => {
   const classes = classNames(className, {
     selected: selected,
-    outOfStock: !inStock
+    disabled: disabled
   })
   return (
     <label className={classes}>
@@ -39,7 +39,7 @@ const SquareRadioButton = styled(({className, children, selected, input, inStock
     width: 0;
     opacity: 0;
   }
-  &.outOfStock {
+  &.disabled {
     border: solid 0.1rem ${props => props.theme.colors.shadyLady};
     color: ${props => props.theme.colors.shadyLady};
     &:hover {
@@ -56,7 +56,7 @@ SquareRadioButton.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
   input: PropTypes.object,
-  inStock: PropTypes.bool,
+  disabled: PropTypes.bool,
   selected: PropTypes.bool
 }
 

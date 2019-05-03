@@ -18,7 +18,7 @@ const SizePicker = styled(({className, variants, currentSize, onSizeSelect, prod
                 checked: (currentSize === variant.sku)
               }
             }
-            inStock={variant.inStock}
+            disabled={!variant.in_stock}
             selected={(currentSize === variant.sku)}
             children={variant.size} />
           )
@@ -31,7 +31,7 @@ const SizePicker = styled(({className, variants, currentSize, onSizeSelect, prod
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
-  
+
 `
 SizePicker.propTypes = {
   className: PropTypes.string,
