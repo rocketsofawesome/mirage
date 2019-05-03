@@ -9,9 +9,9 @@
 ```js
 <Video
   sources={[
-    'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4',
-    'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.webm',
-    'https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.ogv'
+    'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4',
+    'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.webm',
+    'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.ogv'
   ]}
   style={{width: '500px'}}/>
 ```
@@ -19,9 +19,9 @@
 ### Passing the sources as children:
 ```js
 <Video style={{width: '500px'}}>
-  <source src='https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4' type='video/mp4' />
-  <source src='https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.webm' type='video/webm' />
-  <source src='https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.ogv' type='video/ogv' />
+  <source src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4' type='video/mp4' />
+  <source src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.webm' type='video/webm' />
+  <source src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.ogv' type='video/ogv' />
 </Video>
 ```
 
@@ -39,5 +39,5 @@
 <Video
   controls
   muted={false}
-  sources='https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4'
+  sources='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4'
   style={{width: '500px'}}/>

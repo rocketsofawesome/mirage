@@ -164,8 +164,8 @@ class BaseCustomerQuotes extends React.Component {
     super(props)
     this.state = {
       index: 0,
-      left: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
-      right: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
+      left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
+      right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
       quote: {
         quote: undefined,
         signature: undefined
@@ -220,8 +220,8 @@ class BaseCustomerQuotes extends React.Component {
       const { quotes } = this.props
       this.setState({
         height: '0',
-        left: 'https://res.cloudinary.com/roa-canon/image/upload/v1550773588/web/transparent.png',
-        right: 'https://res.cloudinary.com/roa-canon/image/upload/v1550773588/web/transparent.png'
+        left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1550773588/web/transparent.png',
+        right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1550773588/web/transparent.png'
       })
       if ( index === quotes.length - 1) {
         this.setState({
@@ -237,8 +237,8 @@ class BaseCustomerQuotes extends React.Component {
       setTimeout(() => {
         this.setState({
           height: 'auto',
-          left: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
-          right: 'https://res.cloudinary.com/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
+          left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
+          right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
         })
       }, 1000)
     }, 8000)

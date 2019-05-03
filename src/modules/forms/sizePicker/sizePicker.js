@@ -31,13 +31,16 @@ const SizePicker = styled(({className, variants, currentSize, onSizeSelect, prod
     margin-right: 0.75rem;
     margin-left: 0.75rem;
   }
-  
+
 `
 SizePicker.propTypes = {
   className: PropTypes.string,
-  sizes: PropTypes.array.isRequired,
-  name: PropTypes.string.isRequired,
-  currentSize: PropTypes.number
+  sizes: PropTypes.array,
+  name: PropTypes.string,
+  currentSize: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ])
 }
 
 /** @component */
