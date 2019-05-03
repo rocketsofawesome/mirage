@@ -99,7 +99,7 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
           background="transparent"
           fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
           fontSize="2.6rem"
-          target=""
+          href="https://rocketsofawesome.com?view=subscribe"
           underline={false}
           uppercase={true}
         >
@@ -111,6 +111,7 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
           background="transparent"
           fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
           fontSize="2.6rem"
+          target="/shop/login"
           underline={false}
           uppercase={true}
         >
@@ -122,6 +123,7 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
           background="transparent"
           fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
           fontSize="2.6rem"
+          href="https://news.rocketsofawesome.com"
           underline={false}
           uppercase={true}
         >

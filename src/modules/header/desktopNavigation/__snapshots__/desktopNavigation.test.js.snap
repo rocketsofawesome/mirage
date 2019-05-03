@@ -678,6 +678,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
       }
     }
     highlightable={false}
+    homepageUrl="https://rocketsofawesome.com"
     renderLink={[Function]}
   >
     <styled.header
@@ -4581,6 +4582,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
+                      href="https://rocketsofawesome.com?view=subscribe"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       spacing={true}
@@ -4589,12 +4591,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
+                        href="https://rocketsofawesome.com?view=subscribe"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
+                          href="https://rocketsofawesome.com?view=subscribe"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -4608,6 +4612,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
+                            href="https://rocketsofawesome.com?view=subscribe"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -4621,6 +4626,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
+                              href="https://rocketsofawesome.com?view=subscribe"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -4631,6 +4637,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
+                                href="https://rocketsofawesome.com?view=subscribe"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
@@ -4652,16 +4659,19 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
+                      href="https://news.rocketsofawesome.com"
                       spacing={true}
                     >
                       <BaseHeaderLink
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
+                        href="https://news.rocketsofawesome.com"
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
+                          href="https://news.rocketsofawesome.com"
                           light={true}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
@@ -4674,6 +4684,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
+                            href="https://news.rocketsofawesome.com"
                             light={true}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
@@ -4686,6 +4697,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
+                              href="https://news.rocketsofawesome.com"
                               light={true}
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
@@ -4695,6 +4707,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
+                                href="https://news.rocketsofawesome.com"
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                               >
@@ -4713,17 +4726,20 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                   >
                     <Styled(BaseAccountLinks)
                       highlightable={false}
+                      renderLink={[Function]}
                       subMenuOpen={false}
                     >
                       <BaseAccountLinks
                         className="c20"
                         highlightable={false}
+                        renderLink={[Function]}
                         subMenuOpen={false}
                       >
                         <Styled(BaseHeaderLink)
                           className="c20"
                           highlightOn="hover"
                           highlightable={false}
+                          renderLink={[Function]}
                           spacing={true}
                           target="shop/login"
                         >
@@ -4731,6 +4747,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             className="c20 c3 c10"
                             highlightOn="hover"
                             highlightable={false}
+                            renderLink={[Function]}
                             spacing={true}
                             target="shop/login"
                           >
@@ -4739,6 +4756,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               light={true}
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
+                              renderLink={[Function]}
                               target="shop/login"
                               underline={false}
                               uppercase={true}
@@ -4752,6 +4770,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 light={true}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
+                                renderLink={[Function]}
                                 target="shop/login"
                                 underline={false}
                                 uppercase={true}
@@ -4765,6 +4784,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   light={true}
                                   onMouseEnter={[Function]}
                                   onMouseLeave={[Function]}
+                                  renderLink={[Function]}
                                   target="shop/login"
                                   underline={false}
                                   uppercase={true}
@@ -4772,9 +4792,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   <a
                                     className="c20 c3 c10 c5 c6"
                                     fontStyle="normal"
+                                    href="shop/login"
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
-                                    target="shop/login"
                                   >
                                     <span>
                                       Log In
@@ -4794,7 +4814,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       highlightOn="hover"
                       highlightable={false}
                       justify="flex-end"
-                      renderLink={[Function]}
                       spacing={true}
                     >
                       <BaseHeaderLink
@@ -4803,7 +4822,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         highlightOn="hover"
                         highlightable={false}
                         justify="flex-end"
-                        renderLink={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
@@ -4813,7 +4831,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           light={true}
                           onMouseEnter={[Function]}
                           onMouseLeave={[Function]}
-                          renderLink={[Function]}
                           underline={false}
                           uppercase={true}
                         >
@@ -4828,7 +4845,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             light={true}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
-                            renderLink={[Function]}
                             underline={false}
                             uppercase={true}
                           >
@@ -4843,7 +4859,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               light={true}
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
-                              renderLink={[Function]}
                               underline={false}
                               uppercase={true}
                             >
