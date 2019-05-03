@@ -62,6 +62,7 @@ export class BaseDesktopNavigation extends React.Component {
       girlsLinks,
       boysLinks,
       bagCount,
+      homepageUrl,
       ...props
     } = this.props
     const {
@@ -125,6 +126,7 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
+                      href={`${homepageUrl}?view=subscribe`}
                       highlightable={highlightable}>
                         Subscribe + Save
                     </HeaderLink>
@@ -134,6 +136,7 @@ export class BaseDesktopNavigation extends React.Component {
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
                       highlightable={highlightable}
+                      target='/box'
                       renderLink={renderLink}>
                         My Subscription
                     </HeaderLink>
@@ -141,18 +144,22 @@ export class BaseDesktopNavigation extends React.Component {
                 </li>
                 <span>|</span>
                 <li>
-                  <HeaderLink highlightable={highlightable}>Blog</HeaderLink>
+                  <HeaderLink
+                    href='https://news.rocketsofawesome.com'
+                    highlightable={highlightable}>
+                      Blog
+                  </HeaderLink>
                 </li>
                 <li className='spacer'>
                   <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
+                    renderLink={renderLink}
                     {...props} />
                 </li>
                 <li>
                   <HeaderLink
                     justify='flex-end'
-                    renderLink={renderLink}
                     highlightable={highlightable}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
@@ -232,7 +239,8 @@ BaseDesktopNavigation.propTypes = {
   isSubscriptionMember: PropTypes.bool,
   girlsLinks: PropTypes.object,
   boysLinks: PropTypes.object,
-  bagCount: PropTypes.number
+  bagCount: PropTypes.number,
+  homepageUrl: PropTypes.string
 }
 
 BaseDesktopNavigation.defaultProps = {
@@ -242,7 +250,8 @@ BaseDesktopNavigation.defaultProps = {
   highlightable: true,
   girlsLinks: girls,
   boysLinks: boys,
-  bagCount: 5
+  bagCount: 5,
+  homepageUrl: 'https://rocketsofawesome.com'
 }
 
 /** @component */

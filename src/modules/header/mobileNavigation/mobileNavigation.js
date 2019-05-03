@@ -40,7 +40,7 @@ export class MobileNavigation extends React.Component {
       className,
       drawerPosition,
       loggedIn,
-      position,
+      homepageUrl,
       renderLink,
       isSubscriptionMember,
       bagCount
@@ -107,8 +107,7 @@ export class MobileNavigation extends React.Component {
             {!isSubscriptionMember &&
               <li>
                 <MobileLinkTop
-                  target=''
-                  renderLink={renderLink}>
+                  href={`${homepageUrl}?view=subscribe`}>
                   Subscribe + Save
                 </MobileLinkTop>
               </li>
@@ -141,7 +140,9 @@ export class MobileNavigation extends React.Component {
             }
             {!loggedIn &&
               <li>
-                <MobileLinkTop>
+                <MobileLinkTop
+                  target='/shop/login'
+                  renderLink={renderLink}>
                   Log In
                 </MobileLinkTop>
               </li>
@@ -152,7 +153,7 @@ export class MobileNavigation extends React.Component {
                 renderLink={renderLink} />
             }
             <li>
-              <MobileLinkTop>
+              <MobileLinkTop href={`https://news.rocketsofawesome.com`}>
                 Blog
               </MobileLinkTop>
             </li>
@@ -165,12 +166,20 @@ export class MobileNavigation extends React.Component {
 
 MobileNavigation.propTypes = {
   drawerPosition: PropTypes.string,
-  bagCount: PropTypes.number
+  bagCount: PropTypes.number,
+  homepageUrl: PropTypes.string,
+  boysLinks: PropTypes.object,
+  girlsLinks: PropTypes.object,
+  className: PropTypes.string,
+  loggedIn: PropTypes.bool,
+  renderLink: PropTypes.func,
+  isSubscriptionMember: PropTypes.bool
 }
 
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
-  bagCount: 5
+  bagCount: 5,
+  homepageUrl: 'https://rocketsofawesome.com'
 }
 
 /** @component */
