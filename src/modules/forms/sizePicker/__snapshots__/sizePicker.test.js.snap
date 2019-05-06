@@ -154,7 +154,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": true,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-12345",
           }
         }
@@ -167,7 +167,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": true,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-12345",
             }
           }
@@ -190,7 +190,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-21354",
           }
         }
@@ -203,7 +203,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-21354",
             }
           }
@@ -226,7 +226,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-13245",
           }
         }
@@ -239,7 +239,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-13245",
             }
           }
@@ -262,7 +262,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-15234",
           }
         }
@@ -275,7 +275,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-15234",
             }
           }
@@ -298,7 +298,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-14235",
           }
         }
@@ -311,7 +311,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-14235",
             }
           }
@@ -334,7 +334,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-13254",
           }
         }
@@ -347,7 +347,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-13254",
             }
           }
@@ -370,7 +370,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
         input={
           Object {
             "checked": false,
-            "onClick": undefined,
+            "onChange": undefined,
             "value": "sku-13534",
           }
         }
@@ -383,7 +383,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
           input={
             Object {
               "checked": false,
-              "onClick": undefined,
+              "onChange": undefined,
               "value": "sku-13534",
             }
           }

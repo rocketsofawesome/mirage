@@ -120,12 +120,12 @@ BaseButton.propTypes = {
   checkmark: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.func
-  ]).isRequired,
+  ]),
   sentanceCase: PropTypes.bool,
   spinner: PropTypes.oneOfType([
     PropTypes.object,
     PropTypes.func
-  ]).isRequired,
+  ]),
   width: PropTypes.string,
 }
 

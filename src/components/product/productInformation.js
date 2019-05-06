@@ -4,11 +4,11 @@ import styled from 'styled-components'
 import { H1, H2, H3, Hr, P } from 'SRC'
 
 const ProductInformation = styled(({
-  className, 
+  className,
   description,
-  header, 
+  header,
   price,
-  subheader 
+  subheader
 }) => {
   return (
     <div className={className}>

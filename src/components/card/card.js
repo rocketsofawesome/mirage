@@ -2,8 +2,6 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-import { InlineImage } from 'SRC'
-
 const cardHover = css`
   text-decoration: none;
   &:hover {
@@ -17,7 +15,10 @@ const Card = styled(({
   element,
   ...props
 }) => {
+
   delete props.maxWidth
+  delete props.constrained
+
   return React.createElement(element, props, children)
 
 })`

@@ -1,5 +1,4 @@
 import React from 'react'
-import { HeaderLink, Logo, MegaMenu } from 'SRC'
 export const girls = {
   regions: {
     left: [
@@ -86,6 +85,6 @@ export const accountLinks = {
 }
 
 export const renderLink = (inProps) => {
-  const {target, ...props } = inProps
-  return (<a href={target} {...props} />)
+  const {target, children, ...props } = inProps
+  return (<a href={target} {...props}>{children}</a>)
 }

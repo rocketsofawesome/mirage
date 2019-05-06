@@ -20,7 +20,7 @@ const spanner = (props, breakpoint) => {
   }
 }
 
-const FlexCol = styled(({ element, children, ...props}) => {
+const FlexCol = styled(({ element, children, key, ...props}) => {
   return React.createElement(element, props, children)
 })`
   box-sizing: border-box;
@@ -57,9 +57,11 @@ const FlexCol = styled(({ element, children, ...props}) => {
 FlexCol.propTypes = {
   element: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.object
+    PropTypes.element,
+    PropTypes.node,
+    PropTypes.func
   ]),
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
   mobile: PropTypes.shape({
     width: PropTypes.number.isRequired,
     span: PropTypes.number,

@@ -39,7 +39,7 @@ const UL = styled(({className, children}) => {
 UL.propTypes = {
     color: PropTypes.string,
     itemHeight: PropTypes.string,
-    inline: PropTypes.string,
+    inline: PropTypes.bool,
     image: PropTypes.string,
     fontSize: PropTypes.string,
     leftPad: PropTypes.string,

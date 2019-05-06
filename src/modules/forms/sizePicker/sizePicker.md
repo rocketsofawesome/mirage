@@ -10,5 +10,6 @@
       {sku: "sku-14235", size: 7, inStock: false},
       {sku: "sku-13254", size: 9, inStock: true},
       {sku: "sku-13534", size: 12, inStock: true},
-    ]}/>
+    ]}
+    onSizeSelect={() => {}}/>
 ```

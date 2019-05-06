@@ -75,8 +75,14 @@ export class MobileNavigation extends React.Component {
                     <UL
                       type='none'
                       leftPad='1rem'>
-                      {boysLinks && boysLinks.map((link) => {
-                        return (<li><MobileLinkTertiary target={link.target} renderLink={renderLink}>{link.text}</MobileLinkTertiary></li>)
+                      {boysLinks && boysLinks.map((link, index) => {
+                        return (
+                          <li key={index}>
+                            <MobileLinkTertiary target={link.target} renderLink={renderLink}>
+                              {link.text}
+                            </MobileLinkTertiary>
+                        </li>
+                      )
                       })}
                     </UL>
                   </Accordion>
@@ -87,9 +93,9 @@ export class MobileNavigation extends React.Component {
                     <MobileLinkSecondary>Girls</MobileLinkSecondary>
                   }>
                   <UL type='none' leftPad='1rem'>
-                  {girlsLinks && girlsLinks.map((link) => {
+                  {girlsLinks && girlsLinks.map((link, index) => {
                     return (
-                      <li>
+                      <li key={index}>
                         <MobileLinkTertiary
                           target={link.target}
                           renderLink={renderLink}>
@@ -168,8 +174,8 @@ MobileNavigation.propTypes = {
   drawerPosition: PropTypes.string,
   bagCount: PropTypes.number,
   homepageUrl: PropTypes.string,
-  boysLinks: PropTypes.object,
-  girlsLinks: PropTypes.object,
+  boysLinks: PropTypes.array,
+  girlsLinks: PropTypes.array,
   className: PropTypes.string,
   loggedIn: PropTypes.bool,
   renderLink: PropTypes.func,

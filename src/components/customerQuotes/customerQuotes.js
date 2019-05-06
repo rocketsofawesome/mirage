@@ -35,7 +35,7 @@ const FadeOut = keyframes `
 
 class CustomerQuote extends React.Component {
   render () {
-    const { className, quote, index, left, right, height } = this.props
+    const { className, quote, index, left, right } = this.props
       return (
         <FlexRow
           constrained
@@ -185,7 +185,7 @@ class BaseCustomerQuotes extends React.Component {
 
   render () {
     const { className, header, quotes } = this.props
-    const { index, quote, left, right, height } = this.state
+    const { index, quote, left, right } = this.state
     return (
       <FlexRow
         element='section'
@@ -198,8 +198,7 @@ class BaseCustomerQuotes extends React.Component {
           quote={quote}
           index={index}
           left={left}
-          right={right}
-          height={height} />
+          right={right} />
         {quotes.map((quote, i) => {
           return (
             <blockquote key={`customerQuoteBlock-${i}`}>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled, { keyframes, css } from 'styled-components'
 
 const UnstyledBaseLogo = ({className, ...props}) => {
+  delete props.animated
   delete props.maxWidth
   return (
       <svg className={className} viewBox='0 0 492 60' {...props}>

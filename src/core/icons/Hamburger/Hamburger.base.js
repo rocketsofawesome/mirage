@@ -8,6 +8,7 @@ const bottomPoints = `M2,138.79H102c51.54-1.7,72.86,35.69,59.31,58.6s-67.91,
 19.13-72-53.74L18.64,72.94`
 
 const UnstyledHamburger = ({className, ...props}) => {
+  delete props.animated
   return (
     <svg
       className={className}

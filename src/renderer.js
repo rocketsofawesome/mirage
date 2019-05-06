@@ -84,6 +84,7 @@ const Renderer = ({item}) => {
     return COMPONENT_RENDER_MAP[item.sys.type][item.sys.component](item.data)
   } catch(err) {
     console.warn(`It appears that you are tying to render an element that doesn't exist in the COMPONENT_RENDER_MAP`)
+    return null
   }
 }
 

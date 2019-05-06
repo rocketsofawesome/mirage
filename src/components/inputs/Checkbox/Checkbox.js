@@ -34,7 +34,8 @@ CheckboxBase.propTypes = {
 
 CheckboxBase.defaultProps = {
   input: {
-    value: false
+    value: false,
+    onChange: () => {}
   }
 }
 

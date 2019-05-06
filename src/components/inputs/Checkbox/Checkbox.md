@@ -1,7 +1,8 @@
 ```js
 <Checkbox
   input={{
-    value: true
+    value: true,
+    onChange: () => {}
   }}
   label='Example Checkbox Checked' />
 ```
@@ -9,7 +10,8 @@
 ```js
 <Checkbox
   input={{
-    value: false
+    value: false,
+    onChange: () => {}
   }}
   label='Example Checkbox Not Checked' />
 ```

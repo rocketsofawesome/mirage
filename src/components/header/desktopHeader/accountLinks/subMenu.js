@@ -1,5 +1,4 @@
 import React from 'react'
-import classNames from 'classnames'
 import styled, { css, keyframes } from 'styled-components'
 import { CSSTransitionGroup } from 'react-transition-group'
 import { Link } from 'SRC'

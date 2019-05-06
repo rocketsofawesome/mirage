@@ -8,8 +8,8 @@ const LookSizePicker = styled(({className, currentSizes, products, onSizeSelect}
   return (
     <div className={className}>
       <Label>Sizes:</Label>
-      {Object.keys(products).map((index) => {
-        const product = products[index]
+      {Object.keys(products).map((size) => {
+        const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
         return (
           <div className='product' key={product.id}>

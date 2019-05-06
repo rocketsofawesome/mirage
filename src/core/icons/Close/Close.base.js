@@ -9,7 +9,7 @@ const BaseClose = styled(({className, ...props}) => {
       version='1.1'
       viewBox='0 0 800 800'
       {...props}>
-      <text class>Close</text>
+      <text>Close</text>
       <line x1='50' y1='50' x2='750' y2='750'/>
       <line x1='750' y1='50' x2='50' y2='750'/>
   </svg>

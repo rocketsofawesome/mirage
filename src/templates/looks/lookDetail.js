@@ -4,23 +4,21 @@ import styled, { withTheme } from 'styled-components'
 
 import {
   Button,
-  Header,
   FlexCol,
   FlexRow,
   Gallery,
   ProductInformation,
-  LookSizePicker,
-  Footer
+  LookSizePicker
  } from 'SRC'
 
 const BaseLookDetail = ({
   button,
-  className, 
-  images, 
-  information, 
-  products, 
-  header, 
-  footer,  
+  className,
+  images,
+  information,
+  products,
+  header,
+  footer,
   onSizeSelect,
   currentSizes,
   ...props
@@ -35,8 +33,8 @@ const BaseLookDetail = ({
         <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
           <ProductInformation {...information} />
           <LookSizePicker
-            products={products} 
-            onSizeSelect={onSizeSelect} 
+            products={products}
+            onSizeSelect={onSizeSelect}
             currentSizes={currentSizes} />
           {button}
         </FlexCol>
@@ -50,7 +48,7 @@ const LookDetail =  styled(BaseLookDetail)`
   ${LookSizePicker} {
     margin-top: 4rem;
   }
-  ${Button} { 
+  ${Button} {
     width: 100%;
   }
 `
@@ -61,7 +59,7 @@ LookDetail.propTypes = {
   footer: PropTypes.node,
   header: PropTypes.node,
   images: PropTypes.array.isRequired,
-  information: PropTypes.string,
+  information: PropTypes.object,
   products: PropTypes.array
 }
 

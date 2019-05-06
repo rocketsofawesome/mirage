@@ -13,7 +13,7 @@ const SizePicker = styled(({className, variants, currentSize, onSizeSelect, prod
             key={`${productId}-${index}`}
             input={
               {
-                onClick: onSizeSelect,
+                onChange: onSizeSelect,
                 value: variant.sku,
                 checked: (currentSize === variant.sku)
               }

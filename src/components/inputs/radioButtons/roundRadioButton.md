@@ -1,7 +1,7 @@
 ```js
-<RoundRadio input={{name: 'size', value: 6}}>6</RoundRadio>
+<RoundRadioButton input={{name: 'size', value: 6}}>6</RoundRadioButton>
 ```
 ## Checked
 ```js
-<RoundRadio input={{name: 'size', value: 5, defaultChecked: true}}>5</RoundRadio>
+<RoundRadioButton input={{name: 'size', value: 5, defaultChecked: true}}>5</RoundRadioButton>
 ```

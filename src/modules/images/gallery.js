@@ -25,7 +25,6 @@ export class BaseGallery extends React.Component {
     })
     this.config = {
       infinite: true,
-      dots: false,
       lazyLoad: 'progressive',
       arrows: false,
       slidesToShow: 1,
@@ -89,9 +88,9 @@ export class BaseGallery extends React.Component {
         </Desktop>
         <Default>
           <Slider className='slider' {...this.config}>
-            {images.map((image) => {
+            {images.map((image, index) => {
               return (
-                <InlineImage className='image' src={cloudinary.url(image.src)} alt={image.alt} />
+                <InlineImage key={index} className='image' src={cloudinary.url(image.src)} alt={image.alt} />
               )
             })}
           </Slider>

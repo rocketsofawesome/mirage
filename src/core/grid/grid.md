@@ -19,62 +19,62 @@
 <Grid>
   <Sizer desktop={{width: 12}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer  desktop={{start: 2, width: 10}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{start: 3, width: 8}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{start: 4, width: 6}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{start: 5, width: 4}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{start: 1, width: 3}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{width: 3}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{width: 3}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{width: 3}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer desktop={{width: 4}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer mobile={{width: 2}} desktop={{width: 4}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
   <Sizer mobile={{width: 2}} desktop={{width: 4}}>
     <InformationalSection>
-      <Image src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
+      <InlineImage src={'https://dummyimage.com/100x100/CCC/333.png&text=small'}/>
     </InformationalSection>
   </Sizer>
 </Grid>
