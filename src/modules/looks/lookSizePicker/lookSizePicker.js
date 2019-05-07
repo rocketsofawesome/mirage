@@ -1,22 +1,36 @@
 import React from 'react'
+import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import { SizePicker, InlineImage, Label } from 'SRC'
 
-const LookSizePicker = styled(({className, currentSizes, products, onSizeSelect}) => {
+const LookSizePicker = styled(({
+  className,
+  currentSizes,
+  element,
+  products,
+  onSizeSelect
+}) => {
   return (
     <div className={className}>
       <Label>Sizes:</Label>
       {Object.keys(products).map((size) => {
         const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
+        const Image = React.createElement(element.type, {
+          ...element.props,
+          className: classNames('image-wrapper', element.props.className)}, [
+          <InlineImage
+            key='product-image'
+            className='image'
+            {...product.image} />
+        ])
         return (
           <div className='product' key={product.id}>
-            <InlineImage
-              className='image'
-              {...product.image} />
+            {Image}
             <SizePicker
+              className='size-picker'
               productId={product.id}
               variants={product.variants}
               currentSize={currentSize}
@@ -27,9 +41,23 @@ const LookSizePicker = styled(({className, currentSizes, products, onSizeSelect}
     </div>
   )
 })`
+  .image-wrapper {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-right: 1.25rem;
+    max-width: 25%;
+    ${props => props.theme.breakpointsVerbose.belowTablet`
+      margin-right: .75rem;
+      width: auto;
+    `}
+  }
   ${Label} {
     margin-bottom: 2rem;
     display: flex;
+  }
+  .size-picker {
+    min-width: 30rem;
   }
   .product {
     display: flex;
@@ -45,21 +73,29 @@ const LookSizePicker = styled(({className, currentSizes, products, onSizeSelect}
     `}
     .image {
       width: auto
-      margin-right: 1.25rem;
-      ${props => props.theme.breakpointsVerbose.belowTablet`
-        margin-right: .75rem;
-        width: 25%;
-      `}
     }
-    ${SizePicker} {
-      transform: translateY(-.75rem);
-    }
+
   }
 `
 
 LookSizePicker.propTypes = {
+  element: PropTypes.shape({
+    type: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.node,
+      PropTypes.func
+    ]),
+    props: PropTypes.object
+  }),
   products: PropTypes.array.isRequired,
   className: PropTypes.string
+}
+
+LookSizePicker.defaultProps = {
+  element: {
+    type: 'a',
+    props: {}
+  }
 }
 
 /** @component */
