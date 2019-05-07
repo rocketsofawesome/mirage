@@ -21,6 +21,7 @@ const BaseLookDetail = ({
   footer,
   onSizeSelect,
   currentSizes,
+  sizePickerLink,
   ...props
 }) => {
   return (
@@ -35,7 +36,8 @@ const BaseLookDetail = ({
           <LookSizePicker
             products={products}
             onSizeSelect={onSizeSelect}
-            currentSizes={currentSizes} />
+            currentSizes={currentSizes}
+            element={sizePickerLink} />
           {button}
         </FlexCol>
       </FlexRow>
@@ -60,11 +62,16 @@ LookDetail.propTypes = {
   header: PropTypes.node,
   images: PropTypes.array.isRequired,
   information: PropTypes.object,
-  products: PropTypes.array
+  products: PropTypes.array,
+  sizePickerLink: PropTypes.object
 }
 
 LookDetail.defaultProps = {
   button: <Button>Add to Bag</Button>,
+  sizePickerLink: {
+    type: 'a',
+    props: {}
+  }
 }
 
 /** @component */
