@@ -21,7 +21,6 @@ const BaseLookDetail = ({
   footer,
   onSizeSelect,
   currentSizes,
-  sizePickerLink,
   ...props
 }) => {
   return (
@@ -36,8 +35,7 @@ const BaseLookDetail = ({
           <LookSizePicker
             products={products}
             onSizeSelect={onSizeSelect}
-            currentSizes={currentSizes}
-            element={sizePickerLink} />
+            currentSizes={currentSizes} />
           {button}
         </FlexCol>
       </FlexRow>

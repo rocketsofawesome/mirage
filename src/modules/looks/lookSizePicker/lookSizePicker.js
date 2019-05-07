@@ -18,17 +18,23 @@ const LookSizePicker = styled(({
       {Object.keys(products).map((size) => {
         const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
-        const Image = React.createElement(element.type, {
-          ...element.props,
-          className: classNames('image-wrapper', element.props.className)}, [
-          <InlineImage
-            key='product-image'
-            className='image'
-            {...product.image} />
-        ])
+        const ProductLink = product.link
         return (
           <div className='product' key={product.id}>
-            {Image}
+            {ProductLink && 
+              <ProductLink>
+                <InlineImage
+                  key='product-image'
+                  className='image'
+                  {...product.image} />
+              </ProductLink>
+            }
+            {!ProductLink &&
+              <InlineImage
+                key='product-image'
+                className='image'
+                {...product.image} />
+            }
             <SizePicker
               className='size-picker'
               productId={product.id}
@@ -89,13 +95,6 @@ LookSizePicker.propTypes = {
   }),
   products: PropTypes.array.isRequired,
   className: PropTypes.string
-}
-
-LookSizePicker.defaultProps = {
-  element: {
-    type: 'a',
-    props: {}
-  }
 }
 
 /** @component */
