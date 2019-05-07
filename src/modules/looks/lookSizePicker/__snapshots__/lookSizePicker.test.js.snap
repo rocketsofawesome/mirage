@@ -73,12 +73,30 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   margin-left: 0.75rem;
 }
 
+.c0 .image-wrapper {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 1.25rem;
+  max-width: 25%;
+}
+
 .c0 .c1 {
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+}
+
+.c0 .size-picker {
+  min-width: 30rem;
 }
 
 .c0 .product {
@@ -96,13 +114,13 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 
 .c0 .product .image {
   width: auto;
-  margin-right: 1.25rem;
 }
 
-.c0 .product {
-  -webkit-transform: translateY(-.75rem);
-  -ms-transform: translateY(-.75rem);
-  transform: translateY(-.75rem);
+@media (max-width:767px) {
+  .c0 .image-wrapper {
+    margin-right: .75rem;
+    width: auto;
+  }
 }
 
 @media (max-width:1279px) {
@@ -116,14 +134,13 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   }
 }
 
-@media (max-width:767px) {
-  .c0 .product .image {
-    margin-right: .75rem;
-    width: 25%;
-  }
-}
-
 <Styled(Component)
+  element={
+    Object {
+      "props": Object {},
+      "type": "a",
+    }
+  }
   onSizeSelect={[Function]}
   products={
     Array [
@@ -220,6 +237,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
 >
   <Component
     className="c0"
+    element={
+      Object {
+        "props": Object {},
+        "type": "a",
+      }
+    }
     onSizeSelect={[Function]}
     products={
       Array [
@@ -335,18 +358,24 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         className="product"
         key="12345"
       >
-        <InlineImage
-          alt="Fuzzy Tiger Tee front"
-          className="image"
-          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+        <a
+          className="image-wrapper"
         >
-          <img
+          <InlineImage
             alt="Fuzzy Tiger Tee front"
             className="image"
+            key="product-image"
             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
-          />
-        </InlineImage>
+          >
+            <img
+              alt="Fuzzy Tiger Tee front"
+              className="image"
+              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+            />
+          </InlineImage>
+        </a>
         <Styled(Component)
+          className="size-picker"
           productId="12345"
           variants={
             Array [
@@ -389,7 +418,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           }
         >
           <Component
-            className="c3"
+            className="size-picker c3"
             productId="12345"
             variants={
               Array [
@@ -432,7 +461,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             }
           >
             <div
-              className="c3"
+              className="size-picker c3"
             >
               <Styled(Component)
                 disabled={true}
@@ -694,18 +723,24 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         className="product"
         key="12346"
       >
-        <InlineImage
-          alt="Cool Down Active Short front"
-          className="image"
-          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+        <a
+          className="image-wrapper"
         >
-          <img
+          <InlineImage
             alt="Cool Down Active Short front"
             className="image"
+            key="product-image"
             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
-          />
-        </InlineImage>
+          >
+            <img
+              alt="Cool Down Active Short front"
+              className="image"
+              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+            />
+          </InlineImage>
+        </a>
         <Styled(Component)
+          className="size-picker"
           productId="12346"
           variants={
             Array [
@@ -748,7 +783,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           }
         >
           <Component
-            className="c3"
+            className="size-picker c3"
             productId="12346"
             variants={
               Array [
@@ -791,7 +826,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             }
           >
             <div
-              className="c3"
+              className="size-picker c3"
             >
               <Styled(Component)
                 disabled={true}

@@ -45,6 +45,7 @@ const BaseLookDetail = ({
 }
 
 const LookDetail =  styled(BaseLookDetail)`
+margin-top: 4rem;
   ${LookSizePicker} {
     margin-top: 4rem;
   }
