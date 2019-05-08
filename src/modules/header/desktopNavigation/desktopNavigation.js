@@ -63,7 +63,7 @@ export class BaseDesktopNavigation extends React.Component {
       boysLinks,
       bagCount,
       homepageUrl,
-      clickBag
+      clickBag,
       ...props
     } = this.props
     const {
