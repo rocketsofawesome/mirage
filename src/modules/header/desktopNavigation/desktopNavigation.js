@@ -63,6 +63,7 @@ export class BaseDesktopNavigation extends React.Component {
       boysLinks,
       bagCount,
       homepageUrl,
+      clickBag
       ...props
     } = this.props
     const {
@@ -161,6 +162,7 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     justify='flex-end'
                     highlightable={highlightable}
+                    onClick={clickBag}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
                     <span className='screenReader'>Bag</span>
@@ -240,7 +242,8 @@ BaseDesktopNavigation.propTypes = {
   girlsLinks: PropTypes.object,
   boysLinks: PropTypes.object,
   bagCount: PropTypes.number,
-  homepageUrl: PropTypes.string
+  homepageUrl: PropTypes.string,
+  clickBag: PropTypes.func
 }
 
 BaseDesktopNavigation.defaultProps = {

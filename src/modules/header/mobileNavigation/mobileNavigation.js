@@ -43,7 +43,8 @@ export class MobileNavigation extends React.Component {
       homepageUrl,
       renderLink,
       isSubscriptionMember,
-      bagCount
+      bagCount,
+      clickBag
     } = this.props
     const { open } = this.state
     return (
@@ -51,7 +52,7 @@ export class MobileNavigation extends React.Component {
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
           <Logo />
-          <BagIcon count={bagCount}/>
+          <BagIcon onClick={clickBag} count={bagCount}/>
         </MobileHeader>
         <MenuDrawer
           open={open}
@@ -179,7 +180,8 @@ MobileNavigation.propTypes = {
   className: PropTypes.string,
   loggedIn: PropTypes.bool,
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool
+  isSubscriptionMember: PropTypes.bool,
+  clickBag: PropTypes.func
 }
 
 MobileNavigation.defaultProps = {
