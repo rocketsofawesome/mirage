@@ -61,16 +61,11 @@ LookDetail.propTypes = {
   header: PropTypes.node,
   images: PropTypes.array.isRequired,
   information: PropTypes.object,
-  products: PropTypes.array,
-  sizePickerLink: PropTypes.object
+  products: PropTypes.array
 }
 
 LookDetail.defaultProps = {
-  button: <Button>Add to Bag</Button>,
-  sizePickerLink: {
-    type: 'a',
-    props: {}
-  }
+  button: <Button>Add to Bag</Button>
 }
 
 /** @component */

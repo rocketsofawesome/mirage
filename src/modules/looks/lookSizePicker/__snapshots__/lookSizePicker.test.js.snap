@@ -112,10 +112,6 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   align-items: center;
 }
 
-.c0 .product .image {
-  width: auto;
-}
-
 @media (max-width:767px) {
   .c0 .image-wrapper {
     margin-right: .75rem;
@@ -228,6 +224,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
       },
     ]
   }
+  renderProductLink={[Function]}
 >
   <Component
     className="c0"
@@ -324,6 +321,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         },
       ]
     }
+    renderProductLink={[Function]}
   >
     <div
       className="c0"
@@ -346,18 +344,68 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         className="product"
         key="12345"
       >
-        <InlineImage
-          alt="Fuzzy Tiger Tee front"
-          className="image"
-          key="product-image"
-          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+        <a
+          href="#products/undefined"
         >
-          <img
-            alt="Fuzzy Tiger Tee front"
-            className="image"
-            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
-          />
-        </InlineImage>
+          <LookProductImage
+            product={
+              Object {
+                "id": "12345",
+                "image": Object {
+                  "alt": "Fuzzy Tiger Tee front",
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+                },
+                "variants": Array [
+                  Object {
+                    "inStock": true,
+                    "size": 3,
+                    "sku": "sku-1",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 4,
+                    "sku": "sku-2",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 5,
+                    "sku": "sku-3",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 6,
+                    "sku": "sku-4",
+                  },
+                  Object {
+                    "inStock": false,
+                    "size": 7,
+                    "sku": "sku-5",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 9,
+                    "sku": "sku-6",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 12,
+                    "sku": "sku-7",
+                  },
+                ],
+              }
+            }
+          >
+            <InlineImage
+              alt="Fuzzy Tiger Tee front"
+              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+            >
+              <img
+                alt="Fuzzy Tiger Tee front"
+                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+              />
+            </InlineImage>
+          </LookProductImage>
+        </a>
         <Styled(Component)
           className="size-picker"
           productId="12345"
@@ -707,18 +755,68 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         className="product"
         key="12346"
       >
-        <InlineImage
-          alt="Cool Down Active Short front"
-          className="image"
-          key="product-image"
-          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+        <a
+          href="#products/undefined"
         >
-          <img
-            alt="Cool Down Active Short front"
-            className="image"
-            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
-          />
-        </InlineImage>
+          <LookProductImage
+            product={
+              Object {
+                "id": "12346",
+                "image": Object {
+                  "alt": "Cool Down Active Short front",
+                  "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+                },
+                "variants": Array [
+                  Object {
+                    "inStock": true,
+                    "size": 3,
+                    "sku": "sku-20",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 4,
+                    "sku": "sku-21",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 5,
+                    "sku": "sku-22",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 6,
+                    "sku": "sku-23",
+                  },
+                  Object {
+                    "inStock": false,
+                    "size": 7,
+                    "sku": "sku-24",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 9,
+                    "sku": "sku-25",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 12,
+                    "sku": "sku-26",
+                  },
+                ],
+              }
+            }
+          >
+            <InlineImage
+              alt="Cool Down Active Short front"
+              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+            >
+              <img
+                alt="Cool Down Active Short front"
+                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+              />
+            </InlineImage>
+          </LookProductImage>
+        </a>
         <Styled(Component)
           className="size-picker"
           productId="12346"

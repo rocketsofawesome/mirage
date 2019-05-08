@@ -51,7 +51,8 @@ export const products = [
       {sku: 'sku-6', size: 9, in_stock: true},
       {sku: 'sku-7', size: 12, in_stock: true},
     ],
-    id: '12345'
+    id: '12345',
+    slug: 'example-slug'
   },
   {
     image: {
@@ -67,6 +68,7 @@ export const products = [
       {sku: 'sku-25', size: 9, in_stock: true},
       {sku: 'sku-26', size: 12, in_stock: true},
     ],
-    id: '12346'
+    id: '12346',
+    slug: 'example-slug'
   }
 ]

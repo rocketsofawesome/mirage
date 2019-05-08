@@ -5,12 +5,18 @@ import styled from 'styled-components'
 
 import { SizePicker, InlineImage, Label } from 'SRC'
 
+const LookProductImage = ({product}) => (
+  <InlineImage
+    {...product.image} />
+)
+
 const LookSizePicker = styled(({
   className,
   currentSizes,
   element,
   products,
-  onSizeSelect
+  onSizeSelect,
+  renderProductLink
 }) => {
   return (
     <div className={className}>
@@ -18,23 +24,10 @@ const LookSizePicker = styled(({
       {Object.keys(products).map((size) => {
         const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
-        const ProductLink = product.link
+
         return (
           <div className='product' key={product.id}>
-            {ProductLink && 
-              <ProductLink>
-                <InlineImage
-                  key='product-image'
-                  className='image'
-                  {...product.image} />
-              </ProductLink>
-            }
-            {!ProductLink &&
-              <InlineImage
-                key='product-image'
-                className='image'
-                {...product.image} />
-            }
+            {renderProductLink(product)}
             <SizePicker
               className='size-picker'
               productId={product.id}
@@ -77,9 +70,6 @@ const LookSizePicker = styled(({
         border-bottom: none;
       }
     `}
-    .image {
-      width: auto
-    }
 
   }
 `
@@ -95,6 +85,14 @@ LookSizePicker.propTypes = {
   }),
   products: PropTypes.array.isRequired,
   className: PropTypes.string
+}
+
+LookSizePicker.defaultProps = {
+  renderProductLink: (product) => (
+    <a href={`#products/${product.slug}`}>
+      <LookProductImage product={product} />
+    </a>
+  )
 }
 
 /** @component */
