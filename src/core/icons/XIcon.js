@@ -16,8 +16,9 @@ const XIcon = styled(BaseXIcon)`
   line {
     stroke-width: 1.5;
     fill: none;
-    stroke: ${props => props.theme.colors.rocketBlue};
+    stroke: ${props => props.stroke || props.theme.colors.rocketBlue};
   }
+  cursor: pointer;
 `
 
 XIcon.propTypes = {

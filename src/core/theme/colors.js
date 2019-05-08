@@ -22,7 +22,8 @@ const brandColors = {
   electricBlue: '#080CF1',
   lightPink: '#FBDDE4',
   pink: '#FEACBE',
-  white: '#FFFFFF'
+  white: '#FFFFFF',
+  flameOrange: '#FF511C'
 }
 
 const supportingColors = {

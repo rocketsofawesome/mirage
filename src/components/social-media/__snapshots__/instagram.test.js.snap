@@ -43,6 +43,7 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
       "colors": Object {
         "black": "#000000",
         "electricBlue": "#080CF1",
+        "flameOrange": "#FF511C",
         "gray": Array [
           "#F3F3F3",
           "#F5F5F5",
