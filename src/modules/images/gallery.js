@@ -4,7 +4,7 @@ import styled, { withTheme }  from 'styled-components'
 import ReactImageMagnify from 'react-image-magnify'
 import Slider from 'react-slick'
 
-import { FlexRow, FlexCol, InlineImage, Thumbnails, Desktop, Default } from 'SRC'
+import { FlexCol, InlineImage, Thumbnails, Desktop, Default } from 'SRC'
 import cloudinary from 'SRC/services/cloudinary'
 
 export class BaseGallery extends React.Component {
