@@ -19,7 +19,8 @@ module.exports = {
     head: {
       scripts: [
         {src: 'https://use.typekit.net/bfw8xpa.js'},
-        {src: 'src/theme/typekit.js'}
+        {src: 'src/theme/typekit.js'},
+        {src: 'https://js.stripe.com/v3/'}
       ],
       links: [
         {
