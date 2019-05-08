@@ -38,27 +38,23 @@ If you would like to publish your new component(s) to the styleguide demo, commi
 
 ## Publish to npm
 
+First, be sure to do your work on a feature branch, we have scripts that are run specifically on the master branch.
+
 If you are happy with the changes that you have made to your component and you wish to publish your changes to npm, do the following.
 
-First, be sure to add your component to the `src/index.js`
+First, be sure to add your component to the `src/index.js`, if you test your components by pulling them in from the `SRC` directory, you should be able to tell if they are being exported properly for consumption.
 
-This is the file that gets parsed by rollup and distributed as commonJS in the `dist` directory.
+This is the file that gets distributed in the `dist` directory.
 
 Then run the following commands:
 ```
 npm version patch
-npm publish
 ```
 
-The first command will bump the version of the pattern library by one patch number (Note: publishing to npm requires that a new version number be supplied).
+This command will bump the version of the pattern library by one patch number (Note: publishing to npm requires that a new version number be supplied).
 
-The second command will push the new code up to npm so that when the command:
+When you merge your feature branch onto master, the `npm publish` script will be run and your changes will then be available when you do `npm install --save @rocketsofawesome/mirage` in the codebase that is using our styled components. There is also another command that gets run that builds the styleguide code and then publishes that code to the `gh-pages` branch. This serves the static version of the component library.
 
-`npm install @rocketsofawesome/mirage`
-
-is run, the latest changes will also be applied to the `npm module`!
-
-There is a `prepublish` script that is run automatically that runs the webpack script which transpiles the ECMA Script 6 code into commonJS and bundles all the code up into a nice `build/index.js` file. There are also several other scripts that are run including the test suite and the building/publishing of the styleguide to the `gh-pages` branch.
 
 The _Rockets of Awesome Pattern Library_ (RoA PL) is an organized set of interactive, reusable components that can be used to build out more complicated modules, pages, and templates. Pattern libraries often include example elements, sample code, variations, use cases, and considerations.
 ***
