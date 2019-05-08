@@ -27,7 +27,7 @@ const BaseLookDetail = ({
   return (
     <div className={className} {...props}>
       {header}
-      <FlexRow constrained className={className}>
+      <FlexRow constrained>
         <FlexCol element="aside" className='images' desktop={{width: 6}}>
           <Gallery images={images} />
         </FlexCol>
@@ -47,7 +47,7 @@ const BaseLookDetail = ({
 }
 
 const LookDetail =  styled(BaseLookDetail)`
-margin-top: 4rem;
+margin: 6rem 0;
   ${LookSizePicker} {
     margin-top: 4rem;
   }

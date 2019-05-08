@@ -63,28 +63,26 @@ export class BaseGallery extends React.Component {
     }
     return (
       <div className={className}>
-        <Desktop>
-          <FlexRow>
-            <FlexCol
-              active={activeImage.src}
-              element={Thumbnails}
-              desktop={{width: 2}}
-              thumbnails={this.thumbnails}
-              onClick={this.thumbnailClick} />
-            <FlexCol
-              desktop={{width: 10}}>
-              <ReactImageMagnify
-                className='imageZoom'
-                {...{
-                  smallImage: {
-                    ...smallImage
-                  },
-                  largeImage: {
-                    ...largeImage
-                  }
-                }} />
-              </FlexCol>
-          </FlexRow>
+        <Desktop className='roa-row'>
+          <FlexCol
+            active={activeImage.src}
+            element={Thumbnails}
+            desktop={{width: 2}}
+            thumbnails={this.thumbnails}
+            onClick={this.thumbnailClick} />
+          <FlexCol
+            desktop={{width: 10}}>
+            <ReactImageMagnify
+              className='imageZoom'
+              {...{
+                smallImage: {
+                  ...smallImage
+                },
+                largeImage: {
+                  ...largeImage
+                }
+              }} />
+            </FlexCol>
         </Desktop>
         <Default>
           <Slider className='slider' {...this.config}>
@@ -101,6 +99,9 @@ export class BaseGallery extends React.Component {
 }
 
 export const Gallery = styled(BaseGallery)`
+  .roa-row {
+    display: flex;
+  }
   .imageZoom {
     z-index: 1;
   }
