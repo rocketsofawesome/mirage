@@ -24,8 +24,8 @@
     "start": "export NODE_ENV=development && ./node_modules/.bin/styleguidist server --open --max_old_space_size=4096",
     "build": "export NODE_ENV=development && ./node_modules/.bin/styleguidist build",
     "predeploy": "node ./scripts/build.js; npm run build",
-    "deploy": "gh-pages -d styleguide",
-    "prepublishOnly": "npm run test:badges; npm run deploy",
+    "deploy": "gh-pages -d styleguide --user 'ROAPairingStation <engineering@rocketsofawesome.com>'",
+    "prepublishOnly": "npm run deploy",
     "test": "node scripts/test.js --env=jsdom",
     "test:coverage": "npm test -- --coverage --u",
     "test:badges": "npm run test:coverage  && jest-coverage-badges"
