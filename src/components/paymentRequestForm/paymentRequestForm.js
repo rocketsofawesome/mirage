@@ -33,7 +33,7 @@ export class PaymentRequestForm extends React.Component {
     super(props)
     // For full documentation of the available paymentRequest options, see:
     // https://stripe.com/docs/stripe.js#the-payment-request-object
-    const paymentRequest = this.createPaymentRequest()
+    const paymentRequest = props.stripe ? this.createPaymentRequest() : null
 
     this.state = {
       canMakePayment: false,
@@ -42,7 +42,7 @@ export class PaymentRequestForm extends React.Component {
   }
 
   componentDidUpdate (prevProps, prevState) {
-    if (this.props.order.total !== prevProps.order.total) {
+    if ((this.props.stripe !== null && prevProps.stripe === null) || (this.props.order.total !== prevProps.order.total)) {
       const paymentRequest = this.createPaymentRequest()
       this.setState({
         canMakePayment: false,
