@@ -21,6 +21,7 @@ const BaseLookDetail = ({
   footer,
   onSizeSelect,
   currentSizes,
+  renderProductLink,
   ...props
 }) => {
   return (
@@ -35,7 +36,8 @@ const BaseLookDetail = ({
           <LookSizePicker
             products={products}
             onSizeSelect={onSizeSelect}
-            currentSizes={currentSizes} />
+            currentSizes={currentSizes}
+            renderProductLink={renderProductLink} />
           {button}
         </FlexCol>
       </FlexRow>
@@ -61,7 +63,8 @@ LookDetail.propTypes = {
   header: PropTypes.node,
   images: PropTypes.array.isRequired,
   information: PropTypes.object,
-  products: PropTypes.array
+  products: PropTypes.array,
+  renderProductLink: PropTypes.func
 }
 
 LookDetail.defaultProps = {

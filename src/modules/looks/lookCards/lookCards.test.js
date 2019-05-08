@@ -14,8 +14,8 @@ const defaultProps = {
         src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg'
       },
       information: [
-        <Label>Lacey & Lively</Label>,
-        <Label>$50.00</Label>
+        <Label key='title'>Lacey & Lively</Label>,
+        <Label key='price'>$50.00</Label>
       ]
     }
   ]
