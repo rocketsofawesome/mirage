@@ -162,6 +162,10 @@ class BaseCartSidebar extends React.Component {
     }
   }
 
+  componentWillUnmount () {
+    document.body.style.overflow = 'inherit'
+  }
+
   setBag = (element) => {
     this.bag = element
   }
