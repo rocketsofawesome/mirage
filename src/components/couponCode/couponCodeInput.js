@@ -91,7 +91,7 @@ export default class CouponCodeInput extends React.Component {
               onChange={onChange}
               formError={!!errorMessage}
               errorMessage={errorMessage} />
-            <PromoButton disabled={loading} onClick={this.applyPromotion}>
+            <PromoButton loading={loading} onClick={this.applyPromotion}>
               APPLY
             </PromoButton>
           </ApplyContainer>
