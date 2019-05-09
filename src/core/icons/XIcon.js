@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-const BaseXIcon = ({className}) => {
+const BaseXIcon = ({className, onClick}) => {
   return (
-    <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'>
+    <svg className={className} onClick={onClick} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'>
       <line x1='0' y1='0' x2='15' y2='15' />
       <line x1='0' y1='15' x2='15' y2='0' />
     </svg>

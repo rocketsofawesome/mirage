@@ -3,7 +3,7 @@
     <CartSidebar
       shouldShowCartSidebar={true}
       hideCartSidebar={() => {}}
-      submitBag={() => {}}
+      submitBag={() => { console.log('submit bag') }}
       subTotal={"22.5"}
       itemsInBag={1}
       order={{applied_coupon_codes: [],
@@ -94,15 +94,15 @@
         total: "24.5",
         variant_id:16975}
         ]}
-      updateBag={() => {}}
-      removeItem={() => {}}
-      segmentCartViewed={() => {}}
+      updateBag={() => { console.log('update bag') }}
+      removeItem={() => { console.log('remove item') }}
+      segmentCartViewed={() => { console.log('segment cart viewed') }}
       promotion={null}
       promotionLoading={false}
       promoHasBeenApplied={null}
       promoErrorMessage={null}
-      applyPromotion={() => {}}
-      removePromotion={() => {}}
+      applyPromotion={() => { console.log('apply promotion') }}
+      removePromotion={() => { console.log('remove promotion') }}
       appliedPromotion={null}
     />
   </StripeProviderWrapper>

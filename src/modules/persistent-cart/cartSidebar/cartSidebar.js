@@ -188,7 +188,8 @@ class BaseCartSidebar extends React.Component {
       promoErrorMessage,
       applyPromotion,
       removePromotion,
-      appliedPromotion
+      appliedPromotion,
+      renderProductLink
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -218,6 +219,7 @@ class BaseCartSidebar extends React.Component {
               hideCartSidebar={hideCartSidebar}
               updateBag={updateBag}
               removeItem={removeItem}
+              renderProductLink={renderProductLink}
               segmentCartViewed={segmentCartViewed} />
           </div>
           <Footer>
@@ -278,11 +280,13 @@ BaseCartSidebar.propTypes = {
   promoErrorMessage: PropTypes.string,
   applyPromotion: PropTypes.func,
   removePromotion: PropTypes.func,
-  appliedPromotion: PropTypes.object
+  appliedPromotion: PropTypes.object,
+  renderProductLink: PropTypes.func
 }
 
 BaseCartSidebar.defaultProps = {
-  renderLink: renderLink
+  renderLink: renderLink,
+  renderProductLink: renderLink
 }
 
 const CartSidebar = styled(BaseCartSidebar)`
