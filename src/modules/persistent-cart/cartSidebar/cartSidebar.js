@@ -155,8 +155,11 @@ class BaseCartSidebar extends React.Component {
     document.body.style.overflow = 'hidden'
   }
 
-  componentWillUnmount () {
-    document.body.style.overflow = 'inherit'
+  componentDidUpdate (prevProps, prevState) {
+    const { shouldShowCartSidebar } = this.props
+    if (prevProps.shouldShowCartSidebar === true && shouldShowCartSidebar === false) {
+      document.body.style.overflow = 'inherit'
+    }
   }
 
   setBag = (element) => {
