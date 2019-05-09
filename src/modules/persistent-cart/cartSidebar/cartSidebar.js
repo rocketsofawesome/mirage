@@ -219,7 +219,6 @@ class BaseCartSidebar extends React.Component {
               updateBag={updateBag}
               removeItem={removeItem}
               segmentCartViewed={segmentCartViewed} />
-              }
           </div>
           <Footer>
             <CouponCodeWrapper
