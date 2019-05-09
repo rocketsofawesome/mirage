@@ -236,9 +236,9 @@ class BaseCartSidebar extends React.Component {
           <Footer>
             <CouponCodeWrapper
               promotion={promotion}
-              promotionLoading={promotionLoading}
+              loading={promotionLoading}
               promoHasBeenApplied={promoHasBeenApplied}
-              promoErrorMessage={promoErrorMessage}
+              errorMessage={promoErrorMessage}
               applyPromotion={applyPromotion}
               removePromotion={removePromotion}
               appliedPromotion={appliedPromotion}
