@@ -30,7 +30,7 @@ const RemoveCouponCode = styled.div`
   letter-spacing: 1px;
   color: ${props => props.theme.colors.rocketBlue};
   cursor: pointer;
-  opacity: ${props => props.loading ? .5 : 1}
+  opacity: ${props => props.loading ? .5 : 1};
 `
 
 export default RemoveCouponCode
