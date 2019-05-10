@@ -88,7 +88,7 @@ export class PaymentRequestForm extends React.Component {
         state: shippingAddress.region,
         phone: shippingAddress.phone,
         default: false,
-        email: 'guest@example.com'
+        email: this.props.currentUserEmail || 'guest@example.com'
       }
 
       if (shippingAddress.country !== 'US') {
@@ -148,7 +148,8 @@ PaymentRequestForm.propTypes = {
   order: PropTypes.object,
   setShippingAddress: PropTypes.func.isRequired,
   submitCheckout: PropTypes.func.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  currentUserEmail: PropTypes.string
 }
 
 export default injectStripe(PaymentRequestForm)

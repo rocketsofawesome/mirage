@@ -178,7 +178,6 @@ class BaseCartSidebar extends React.Component {
       shouldShowCartSidebar,
       className,
       hideCartSidebar,
-      submitBag,
       subTotal,
       itemsInBag,
       order,
@@ -195,7 +194,8 @@ class BaseCartSidebar extends React.Component {
       applyPromotion,
       removePromotion,
       appliedPromotion,
-      renderProductLink
+      renderProductLink,
+      currentUserEmail
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -241,6 +241,7 @@ class BaseCartSidebar extends React.Component {
             <Total>TOTAL<Em>{accounting.formatMoney(order.total)}</Em></Total>
             {parseFloat(order.total) > 0 && <Elements>
               <PaymentRequestButton
+                currentUserEmail={currentUserEmail}
                 order={order}
                 setShippingAddress={setShippingAddress}
                 submitCheckout={this.submitCheckout} />
@@ -291,7 +292,8 @@ BaseCartSidebar.propTypes = {
   applyPromotion: PropTypes.func,
   removePromotion: PropTypes.func,
   appliedPromotion: PropTypes.object,
-  renderProductLink: PropTypes.func
+  renderProductLink: PropTypes.func,
+  currentUserEmail: PropTypes.string
 }
 
 BaseCartSidebar.defaultProps = {
