@@ -44,6 +44,7 @@ const ImageLink = styled(({ renderLink, children, ...props }) => {
     return (<a {...props}>{children}</a>)
   }
 })`
+  cursor: pointer;
 `
 
 const ItemName = styled.h4`

@@ -4,7 +4,7 @@ import { Elements } from 'react-stripe-elements'
 import styled from 'styled-components'
 import accounting from 'accounting'
 
-import { H3, H4, Button, ProgressBar, FreeShippingText, PersistentCartProductList, XIcon, PaymentRequestForm, CouponCodeWrapper } from 'SRC'
+import { H3, H4, ButtonLink, ProgressBar, FreeShippingText, PersistentCartProductList, XIcon, PaymentRequestForm, CouponCodeWrapper } from 'SRC'
 
 const Overlay = styled.div`
   height: 100%;
@@ -108,11 +108,6 @@ const Total = styled(H4)`
 const Em = styled.em`
   margin-left: 12px;
   font-style: normal;
-`
-
-const CheckoutButton = styled(Button)`
-  width: 100%;
-  max-width: 30rem;
 `
 
 const PaymentRequestButton = styled(PaymentRequestForm)`
@@ -244,17 +239,21 @@ class BaseCartSidebar extends React.Component {
               appliedPromotion={appliedPromotion}
               showBorder={false} />
             <Total>TOTAL<Em>{accounting.formatMoney(order.total)}</Em></Total>
-            {parseFloat(subTotal) > 0 && <Elements>
+            {parseFloat(order.total) > 0 && <Elements>
               <PaymentRequestButton
                 order={order}
                 setShippingAddress={setShippingAddress}
                 submitCheckout={this.submitCheckout} />
             </Elements>}
-            <CheckoutButton
-              disabled={isCheckoutButtonDisabled}
-              onClick={submitBag}>
+            <ButtonLink
+              renderLink={renderLink}
+              target='/checkout'
+              width='100%'
+              maxWidth='30rem'
+              kind='blue'
+              disabled={isCheckoutButtonDisabled}>
               CHECKOUT
-            </CheckoutButton>
+            </ButtonLink>
             <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>Continue Shopping</CheckoutLink>
           </Footer>
         </CartSidebarContainer>

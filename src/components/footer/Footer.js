@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { FlexRow, FlexCol, WhiteLink, H5, H2, P, InlineImage, PinkButtonLink } from 'SRC'
+import { FlexRow, FlexCol, WhiteLink, H5, H2, P, InlineImage, ButtonLink } from 'SRC'
 
 const LINKS = {
   'faq': 'https://support.rocketsofawesome.com/hc/en-us',
@@ -101,9 +101,9 @@ const BaseFooter = ({
                first purchase—they’ll get ${referralAmount} too!
             </P>
             <div className='referralButton'>
-              <PinkButtonLink href='/invite' width='100%' maxWidth='290px'>
+              <ButtonLink href='/invite' kind='pink' width='100%' maxWidth='290px'>
                 GET ${referralAmount}
-              </PinkButtonLink>
+              </ButtonLink>
             </div>
         </FlexCol>
       }
