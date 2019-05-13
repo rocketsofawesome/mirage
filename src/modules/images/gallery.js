@@ -63,7 +63,7 @@ export class BaseGallery extends React.Component {
     }
     return (
       <div className={className}>
-        <Desktop className='roa-row'>
+        <Desktop display='flex' className='roa-row'>
           <FlexCol
             active={activeImage.src}
             element={Thumbnails}
@@ -99,9 +99,6 @@ export class BaseGallery extends React.Component {
 }
 
 export const Gallery = styled(BaseGallery)`
-  .roa-row {
-    display: flex;
-  }
   .imageZoom {
     z-index: 1;
   }
