@@ -39,17 +39,6 @@ const LookSizePicker = styled(({
     </div>
   )
 })`
-  .image-wrapper {
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    margin-right: 1.25rem;
-    max-width: 25%;
-    ${props => props.theme.breakpointsVerbose.belowTablet`
-      margin-right: .75rem;
-      width: auto;
-    `}
-  }
   ${Label} {
     margin-bottom: 2rem;
     display: flex;
@@ -62,6 +51,7 @@ const LookSizePicker = styled(({
     margin-top: 1rem;
     margin-bottom: 1rem;
     align-items: center;
+    flex-wrap: wrap;
     ${props => props.theme.breakpointsVerbose.belowLaptop`
       padding-bottom: 2rem;
       border-bottom: 1px solid ${props.theme.colors.gray[4]}
@@ -69,7 +59,18 @@ const LookSizePicker = styled(({
         border-bottom: none;
       }
     `}
-
+    &:first-child {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      margin-right: 1.25rem;
+      max-width: 25%;
+      border: 1px solid red;
+      ${props => props.theme.breakpointsVerbose.belowTablet`
+        margin-right: .75rem;
+        width: auto;
+      `}
+    }
   }
 `
 
