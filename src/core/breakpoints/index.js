@@ -7,7 +7,7 @@ const Desktop = styled(({element, children, ...props}) => {
 })`
 display: none;
 ${props => props.theme.breakpointsVerbose.aboveLaptop`
-  display: block;
+  display: ${props => props.display};
 `}
 `
 
@@ -17,6 +17,7 @@ Desktop.propTypes = {
   element: PropTypes.node
 }
 Desktop.defaultProps = {
+  display: 'block',
   element: 'div'
 }
 
@@ -25,7 +26,7 @@ const Tablet = styled(({element, children, ...props}) => {
 })`
 display: none;
 ${props => props.theme.breakpointsVerbose.aboveTablet`
-  display: block;
+  display: ${props => props.display};
 `}
 ${props => props.theme.breakpointsVerbose.abovelaptop`
   display: none;
@@ -38,13 +39,14 @@ Tablet.propTypes = {
   element: PropTypes.node
 }
 Tablet.defaultProps = {
+  display: 'block',
   element: 'div'
 }
 
 const Mobile = styled(({element, children, ...props}) => {
   return React.createElement(element, props, children)
 })`
-display: block;
+display: ${props => props.display};
 ${props => props.theme.breakpointsVerbose.aboveTablet`
   display: none;
 `}
@@ -56,6 +58,7 @@ Mobile.propTypes = {
   element: PropTypes.node
 }
 Mobile.defaultProps = {
+  display: 'block',
   element: 'div'
 }
 
@@ -64,7 +67,7 @@ const Default = styled(({element, children, ...props}) => {
 })`
 display: none;
 ${props => props.theme.breakpointsVerbose.belowLaptop`
-  display: block;
+  display: ${props => props.display};
 `}
 `
 
@@ -74,6 +77,7 @@ Default.propTypes = {
   element: PropTypes.node
 }
 Default.defaultProps = {
+  display: 'block',
   element: 'div'
 }
 
