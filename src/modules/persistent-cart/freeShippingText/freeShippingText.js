@@ -50,7 +50,11 @@ const FreeShippingText = ({subTotal}) => {
       </FreeShippingNotMet>
     )
   } else {
-    return (<FreeShipping lowercase>Yay! You’ll get free shipping!🚀</FreeShipping>)
+    return (
+      <FreeShipping lowercase>Yay! You’ll get free shipping!
+        <span role="img" aria-label="Rocket">🚀</span>
+      </FreeShipping>
+    )
   }
 }
 
