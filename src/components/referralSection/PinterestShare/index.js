@@ -25,7 +25,7 @@ export class BasePinterestShare extends React.Component {
       'description': `Get ${referralValue} off Rockets of Awesome when you sign up today!
 Their supercool kids clothes are hand-picked based on your child’s unique
 preferences—and magically delivered to your door every season.`
-    })
+})
   }
   render () {
     return (
@@ -33,7 +33,7 @@ preferences—and magically delivered to your door every season.`
         className={this.props.className}
         data-pin-custom='true'
         data-pin-do='buttonBookmark'
-        onClick={this.handleClick} />
+        onClick={this.handleClick}>Share on Pintrest</a>
     )
   }
 }
@@ -45,6 +45,7 @@ BasePinterestShare.propTypes = {
 }
 
 const PinterestShare = styled(BasePinterestShare)`
+  font-size: 0;
   width: 50px;
   height: 50px;
   background-image: url('https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1520886939/web/social/pinterest-circle.svg');

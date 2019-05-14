@@ -10,7 +10,7 @@ const BaseTwitterShare = ({ className, url, referralValue, referralClicked}) => 
       href={`https://twitter.com/intent/tweet?text=Rockets of Awesome makes
   one-of-a-kind kids clothes! Sign up with my link to get ${referralValue} off your
   first purchase. Shipping and returns are free and there’s no commitment
-  (i.e. no reason not to try!). ${url}`} />
+  (i.e. no reason not to try!). ${url}`}>Share On Twitter</a>
 }
 
 BaseTwitterShare.propTypes = {
@@ -19,6 +19,7 @@ BaseTwitterShare.propTypes = {
 }
 
 const TwitterShare = styled(BaseTwitterShare)`
+  font-size: 0;
   display: flex;
 
   width: 50px;

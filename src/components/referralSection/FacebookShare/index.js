@@ -20,9 +20,9 @@ export class BaseFacebookShare extends React.Component {
 
   render () {
     return (
-      <div
+      <a
         className={`${this.props.className} facebook-jssdk`}
-        onClick={this.handleClick} />
+        onClick={this.handleClick}>Share on Facebook</a>
     )
   }
 }
@@ -34,6 +34,7 @@ BaseFacebookShare.propTypes = {
 }
 
 const FacebookShare = styled(BaseFacebookShare)`
+  font-size: 0;
   height: 50px;
   width: 50px;
   background-color: #3c5a99;
