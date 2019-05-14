@@ -12,7 +12,6 @@ import {
  } from 'SRC'
 
 const BaseLookDetail = ({
-  button,
   className,
   images,
   information,
@@ -21,6 +20,8 @@ const BaseLookDetail = ({
   footer,
   onSizeSelect,
   currentSizes,
+  sizePickerFooter,
+  sizePickerHeader,
   renderProductLink,
   ...props
 }) => {
@@ -33,12 +34,13 @@ const BaseLookDetail = ({
         </FlexCol>
         <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
           <ProductInformation {...information} />
+          <div className='roa-outfit-sizepicker-header'>{sizePickerHeader}</div>
           <LookSizePicker
             products={products}
             onSizeSelect={onSizeSelect}
             currentSizes={currentSizes}
             renderProductLink={renderProductLink} />
-          {button}
+          {sizePickerFooter}
         </FlexCol>
       </FlexRow>
       {footer}
@@ -48,22 +50,36 @@ const BaseLookDetail = ({
 
 const LookDetail =  styled(BaseLookDetail)`
 margin: 6rem 0;
-  ${LookSizePicker} {
-    margin-top: 4rem;
+.roa-outfit-sizepicker-header > * {
+  display: inline-block;
+  margin: 0.5rem 0;
+  &:first-child {
+    margin-top: 0;
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+${ProductInformation} {
+  margin-bottom: 4rem;
+}
+${LookSizePicker} {
+  margin-top: 2rem;
+}
   ${Button} {
     width: 100%;
   }
 `
 
 LookDetail.propTypes = {
-  button: PropTypes.node,
   className: PropTypes.string,
   footer: PropTypes.node,
   header: PropTypes.node,
   images: PropTypes.array.isRequired,
   information: PropTypes.object,
   products: PropTypes.array,
+  sizePickerFooter: PropTypes.node,
+  sizePickerHeader: PropTypes.node,
   renderProductLink: PropTypes.func
 }
 

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
@@ -19,7 +20,6 @@ const LookSizePicker = styled(({
 }) => {
   return (
     <div className={className}>
-      <Label>Sizes:</Label>
       {Object.keys(products).map((size) => {
         const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
@@ -32,6 +32,7 @@ const LookSizePicker = styled(({
               productId={product.id}
               variants={product.variants}
               currentSize={currentSize}
+              inputDisabled
               onSizeSelect={onSizeSelect(product.id)} />
           </div>
         )

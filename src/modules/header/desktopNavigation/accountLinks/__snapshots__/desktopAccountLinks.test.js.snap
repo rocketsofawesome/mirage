@@ -435,7 +435,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
       highlightable={false}
       renderLink={[Function]}
       spacing={true}
-      target="shop/login"
+      target="/shop/login"
     >
       <BaseHeaderLink
         className="c0 c1 c2"
@@ -443,7 +443,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
         highlightable={false}
         renderLink={[Function]}
         spacing={true}
-        target="shop/login"
+        target="/shop/login"
       >
         <Styled(Styled(Component))
           className="c0 c1 c2"
@@ -451,7 +451,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
           onMouseEnter={[Function]}
           onMouseLeave={[Function]}
           renderLink={[Function]}
-          target="shop/login"
+          target="/shop/login"
           underline={false}
           uppercase={true}
         >
@@ -465,7 +465,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
             onMouseEnter={[Function]}
             onMouseLeave={[Function]}
             renderLink={[Function]}
-            target="shop/login"
+            target="/shop/login"
             underline={false}
             uppercase={true}
           >
@@ -479,7 +479,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
               renderLink={[Function]}
-              target="shop/login"
+              target="/shop/login"
               underline={false}
               uppercase={true}
             >
@@ -488,7 +488,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
                 fontStyle="normal"
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
-                target="shop/login"
+                target="/shop/login"
               >
                 <span>
                   Log In
