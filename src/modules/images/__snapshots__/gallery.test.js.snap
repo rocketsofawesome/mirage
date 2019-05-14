@@ -55,13 +55,6 @@ exports[`() Gallery matching the snapshot 1`] = `
   border-color: #0073D1;
 }
 
-.c0 .roa-row {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .c0 .imageZoom {
   z-index: 1;
 }
@@ -140,7 +133,10 @@ exports[`() Gallery matching the snapshot 1`] = `
 
 @media (min-width:1280px) {
   .c1 {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -497,14 +493,17 @@ exports[`() Gallery matching the snapshot 1`] = `
       >
         <Styled(Component)
           className="roa-row"
+          display="flex"
           element="div"
         >
           <Component
             className="roa-row c1"
+            display="flex"
             element="div"
           >
             <div
               className="roa-row c1"
+              display="flex"
             >
               <Styled(Component)
                 active="production/catalog/bi5flgfpxbyr9tp2xkd9"
@@ -1467,14 +1466,17 @@ exports[`() Gallery matching the snapshot 1`] = `
           </Component>
         </Styled(Component)>
         <Styled(Component)
+          display="block"
           element="div"
         >
           <Component
             className="c5"
+            display="block"
             element="div"
           >
             <div
               className="c5"
+              display="block"
             >
               <Slider
                 arrows={false}
