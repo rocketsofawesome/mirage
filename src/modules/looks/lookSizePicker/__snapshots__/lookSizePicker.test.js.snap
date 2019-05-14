@@ -59,21 +59,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   margin-left: 0.75rem;
 }
 
-.c0 .image-wrapper {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  margin-right: 1.25rem;
-  max-width: 25%;
-}
-
-.c0 .c1 {
+.c0 .c4 {
   margin-bottom: 2rem;
   display: -webkit-box;
   display: -webkit-flex;
