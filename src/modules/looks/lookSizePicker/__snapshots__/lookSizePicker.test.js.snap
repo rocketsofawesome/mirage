@@ -1,21 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`() LookSizePicker matching the snapshot 1`] = `
-.c2 {
-  text-align: left;
-  margin-bottom: 0;
-  -webkit-letter-spacing: .1rem;
-  -moz-letter-spacing: .1rem;
-  -ms-letter-spacing: .1rem;
-  letter-spacing: .1rem;
-  text-transform: uppercase;
-  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
-  font-size: 1.4rem;
-  font-weight: 500;
-  color: #00003C;
-}
-
-.c5 {
+.c3 {
   box-sizing: border-box;
   width: 6rem;
   height: 4.7rem;
@@ -42,35 +28,49 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   position: relative;
 }
 
-.c5:hover {
+.c3:hover {
   background-color: #BCE1F7;
 }
 
-.c5 > input {
+.c3 > input {
   position: absolute;
   height: 0;
   width: 0;
   opacity: 0;
 }
 
-.c5.disabled {
+.c3.disabled {
   border: solid 0.1rem #979797;
   color: #979797;
 }
 
-.c5.disabled:hover {
+.c3.disabled:hover {
   background-color: transparent;
   cursor: not-allowed;
 }
 
-.c5.selected {
+.c3.selected {
   background-color: #BCE1F7;
 }
 
-.c3 .c4 {
+.c1 .c2 {
   margin-top: 1.5rem;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
+}
+
+.c0 .image-wrapper {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-right: 1.25rem;
+  max-width: 25%;
 }
 
 .c0 .c1 {
@@ -330,20 +330,6 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
     <div
       className="c0"
     >
-      <styled.label
-        fontSize="1.4rem"
-        fontWeight="500"
-        letterSpacing=".1rem"
-      >
-        <label
-          className="c1 c2"
-          fontSize="1.4rem"
-          fontWeight="500"
-          letterSpacing=".1rem"
-        >
-          Sizes:
-        </label>
-      </styled.label>
       <div
         className="product"
         key="12345"
@@ -412,6 +398,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         </a>
         <Styled(Component)
           className="size-picker"
+          inputDisabled={true}
           productId="12345"
           variants={
             Array [
@@ -454,7 +441,8 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           }
         >
           <Component
-            className="size-picker c3"
+            className="size-picker c1"
+            inputDisabled={true}
             productId="12345"
             variants={
               Array [
@@ -497,13 +485,14 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             }
           >
             <div
-              className="size-picker c3"
+              className="size-picker c1"
             >
               <Styled(Component)
                 disabled={true}
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-1",
                   }
@@ -512,11 +501,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-1",
                     }
@@ -524,11 +514,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     3
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-1"
                     />
@@ -540,6 +531,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-2",
                   }
@@ -548,11 +540,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-2",
                     }
@@ -560,11 +553,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     4
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-2"
                     />
@@ -576,6 +570,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-3",
                   }
@@ -584,11 +579,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-3",
                     }
@@ -596,11 +592,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     5
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-3"
                     />
@@ -612,6 +609,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-4",
                   }
@@ -620,11 +618,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-4",
                     }
@@ -632,11 +631,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     6
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-4"
                     />
@@ -648,6 +648,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-5",
                   }
@@ -656,11 +657,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-5",
                     }
@@ -668,11 +670,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     7
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-5"
                     />
@@ -684,6 +687,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-6",
                   }
@@ -692,11 +696,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-6",
                     }
@@ -704,11 +709,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     9
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-6"
                     />
@@ -720,6 +726,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-7",
                   }
@@ -728,11 +735,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-7",
                     }
@@ -740,11 +748,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     12
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-7"
                     />
@@ -823,6 +832,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
         </a>
         <Styled(Component)
           className="size-picker"
+          inputDisabled={true}
           productId="12346"
           variants={
             Array [
@@ -865,7 +875,8 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
           }
         >
           <Component
-            className="size-picker c3"
+            className="size-picker c1"
+            inputDisabled={true}
             productId="12346"
             variants={
               Array [
@@ -908,13 +919,14 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
             }
           >
             <div
-              className="size-picker c3"
+              className="size-picker c1"
             >
               <Styled(Component)
                 disabled={true}
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-20",
                   }
@@ -923,11 +935,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-20",
                     }
@@ -935,11 +948,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     3
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-20"
                     />
@@ -951,6 +965,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-21",
                   }
@@ -959,11 +974,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-21",
                     }
@@ -971,11 +987,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     4
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-21"
                     />
@@ -987,6 +1004,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-22",
                   }
@@ -995,11 +1013,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-22",
                     }
@@ -1007,11 +1026,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     5
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-22"
                     />
@@ -1023,6 +1043,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-23",
                   }
@@ -1031,11 +1052,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-23",
                     }
@@ -1043,11 +1065,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     6
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-23"
                     />
@@ -1059,6 +1082,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-24",
                   }
@@ -1067,11 +1091,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-24",
                     }
@@ -1079,11 +1104,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     7
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-24"
                     />
@@ -1095,6 +1121,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-25",
                   }
@@ -1103,11 +1130,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-25",
                     }
@@ -1115,11 +1143,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     9
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-25"
                     />
@@ -1131,6 +1160,7 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 input={
                   Object {
                     "checked": false,
+                    "disabled": true,
                     "onChange": undefined,
                     "value": "sku-26",
                   }
@@ -1139,11 +1169,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                 selected={false}
               >
                 <Component
-                  className="c4 c5"
+                  className="c2 c3"
                   disabled={true}
                   input={
                     Object {
                       "checked": false,
+                      "disabled": true,
                       "onChange": undefined,
                       "value": "sku-26",
                     }
@@ -1151,11 +1182,12 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
                   selected={false}
                 >
                   <label
-                    className="c4 c5 disabled"
+                    className="c2 c3 disabled"
                   >
                     12
                     <input
                       checked={false}
+                      disabled={true}
                       type="radio"
                       value="sku-26"
                     />
