@@ -50,7 +50,7 @@ export class BaseAccountLinks extends React.Component {
       return (
         <HeaderLink
           className={className}
-          target='shop/login'
+          target='/shop/login'
           renderLink={renderLink}
           highlightable={highlightable}
           {...props} >
