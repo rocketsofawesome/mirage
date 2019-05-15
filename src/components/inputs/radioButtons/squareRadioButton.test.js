@@ -4,7 +4,7 @@ import { SquareRadioButton } from 'SRC'
 
 const { mountWithTheme } = global
 
-const defaultProps = { children: "4" }
+const defaultProps = { children: "4", input: { onChange: () => {} } }
 
 describe('() SquareRadioButton', () => {
   const createSquareRadioButton = (inProps) => {

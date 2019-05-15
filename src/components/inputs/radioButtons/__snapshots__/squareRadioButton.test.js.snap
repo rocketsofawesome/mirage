@@ -53,15 +53,27 @@ exports[`() SquareRadioButton matching the snapshot 1`] = `
   background-color: #BCE1F7;
 }
 
-<Styled(Component)>
+<Styled(Component)
+  input={
+    Object {
+      "onChange": [Function],
+    }
+  }
+>
   <Component
     className="c0"
+    input={
+      Object {
+        "onChange": [Function],
+      }
+    }
   >
     <label
       className="c0"
     >
       4
       <input
+        onChange={[Function]}
         type="radio"
       />
     </label>

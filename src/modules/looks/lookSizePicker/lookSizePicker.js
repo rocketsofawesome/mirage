@@ -56,7 +56,7 @@ const LookSizePicker = styled(({
     display: flex;
   }
   .size-picker {
-    min-width: 30rem;
+    // min-width: 30rem;
   }
   .product {
     display: flex;
@@ -66,6 +66,11 @@ const LookSizePicker = styled(({
     ${props => props.theme.breakpointsVerbose.belowLaptop`
       padding-bottom: 2rem;
       border-bottom: 1px solid ${props.theme.colors.gray[4]}
+      flex-wrap: wrap;
+
+      > *:first-child {
+        margin-right: auto;
+      }
       &:last-of-type {
         border-bottom: none;
       }

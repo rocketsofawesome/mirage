@@ -81,10 +81,6 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   display: flex;
 }
 
-.c0 .size-picker {
-  min-width: 30rem;
-}
-
 .c0 .product {
   display: -webkit-box;
   display: -webkit-flex;
@@ -109,6 +105,13 @@ exports[`() LookSizePicker matching the snapshot 1`] = `
   .c0 .product {
     padding-bottom: 2rem;
     border-bottom: 1px solid #D5D5D5;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .c0 .product > *:first-child {
+    margin-right: auto;
   }
 
   .c0 .product:last-of-type {
