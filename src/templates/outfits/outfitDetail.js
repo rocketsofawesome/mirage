@@ -28,7 +28,7 @@ const BaseOutfitDetail = ({
   return (
     <div className={className} {...props}>
       {header}
-      <FlexRow constrained>
+      <FlexRow padding constrained>
         <FlexCol element="aside" className='images' desktop={{width: 6}}>
           <Gallery images={images} />
         </FlexCol>
