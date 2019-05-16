@@ -33,18 +33,26 @@ class BaseInstagram extends React.Component {
   componentDidMount () {
     this._isMounted = true
     const { limit, clientId, userId, accessToken } = this.props
-    if (clientId && userId && accessToken) {
-      this.feed = new Instafeed({
-      get: 'user',
-      target: this.instagramRef,
-      clientId: clientId,
-      userId: userId,
-      accessToken: accessToken,
-      resolution: 'standard_resolution',
-      limit: limit,
-      template: '<a class="image-link" aria-label="{{caption}}" href="{{link}}"><img src="{{image}}" aria-hidden /></a>',
-      success: (args) => this.setInstragramPics(args)
-    }).run()
+    
+    try {
+      if (clientId && userId && accessToken) {
+        this.feed = new Instafeed({
+          get: 'user',
+          target: this.instagramRef,
+          clientId: clientId,
+          userId: userId,
+          accessToken: accessToken,
+          resolution: 'standard_resolution',
+          limit: limit,
+          template: '<a class="image-link" aria-label="{{caption}}" href="{{link}}"><img src="{{image}}" aria-hidden /></a>',
+          success: (args) => {
+            console.log(`success ${JSON.stringify(args)}`)
+            this.setInstragramPics(args)
+          }
+        }).run()
+      }
+    } catch(error) {
+      console.log(`error: ${error}`)
     }
   }
 
