@@ -33,6 +33,10 @@ class BaseInstagram extends React.Component {
   componentDidMount () {
     this._isMounted = true
     const { limit, clientId, userId, accessToken } = this.props
+    console.log('componentDidMount')
+    console.log(clientId)
+    console.log(userId)
+    console.log(accessToken)
     
     try {
       if (clientId && userId && accessToken) {
@@ -71,6 +75,7 @@ class BaseInstagram extends React.Component {
   }
 
   render () {
+    console.log('instagram render')
     const { className, theme } = this.props
     const { instagramLoading, instagramPictures } = this.state
     return (
