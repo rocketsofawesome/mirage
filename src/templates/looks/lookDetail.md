@@ -11,5 +11,6 @@
     }
   }
   onSizeSelect={(productId) => ({target: { value }}) => { alert(`productId: ${productId}, value: ${value}`) }}
-  button={<Button>Add Outfit to Bag</Button>} />
+  sizePickerHeader={[<Label>Sizes:</Label>,<br />, <Link>SIZE CHART</Link>]}
+  sizePickerFooter={<Button>Add Outfit to Bag</Button>} />
 ```

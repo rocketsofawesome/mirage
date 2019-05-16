@@ -4741,7 +4741,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           highlightable={false}
                           renderLink={[Function]}
                           spacing={true}
-                          target="shop/login"
+                          target="/shop/login"
                         >
                           <BaseHeaderLink
                             className="c20 c3 c10"
@@ -4749,7 +4749,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             highlightable={false}
                             renderLink={[Function]}
                             spacing={true}
-                            target="shop/login"
+                            target="/shop/login"
                           >
                             <Styled(Styled(Component))
                               className="c20 c3 c10"
@@ -4757,7 +4757,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
                               renderLink={[Function]}
-                              target="shop/login"
+                              target="/shop/login"
                               underline={false}
                               uppercase={true}
                             >
@@ -4771,7 +4771,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                                 renderLink={[Function]}
-                                target="shop/login"
+                                target="/shop/login"
                                 underline={false}
                                 uppercase={true}
                               >
@@ -4785,14 +4785,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   onMouseEnter={[Function]}
                                   onMouseLeave={[Function]}
                                   renderLink={[Function]}
-                                  target="shop/login"
+                                  target="/shop/login"
                                   underline={false}
                                   uppercase={true}
                                 >
                                   <a
                                     className="c20 c3 c10 c5 c6"
                                     fontStyle="normal"
-                                    href="shop/login"
+                                    href="/shop/login"
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
                                   >

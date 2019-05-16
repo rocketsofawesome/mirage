@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { SquareRadioButton } from 'SRC'
 
-const SizePicker = styled(({className, variants, currentSize, onSizeSelect, productId }) => {
+const SizePicker = styled(({className, inputDisabled, variants, currentSize, onSizeSelect, productId }) => {
   return (
     <div className={className}>
       {variants.map((variant, index)=> {
@@ -15,7 +15,8 @@ const SizePicker = styled(({className, variants, currentSize, onSizeSelect, prod
               {
                 onChange: onSizeSelect,
                 value: variant.sku,
-                checked: (currentSize === variant.sku)
+                checked: (currentSize === variant.sku),
+                disabled: inputDisabled && !variant.in_stock
               }
             }
             disabled={!variant.in_stock}

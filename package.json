@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.200",
+  "version": "0.1.204",
   "main": "./build/index.js",
   "dependencies": {
     "accounting": "^0.4.1",
@@ -28,7 +28,7 @@
     "deploy": "gh-pages -d styleguide --user 'ROAPairingStation <engineering@rocketsofawesome.com>'",
     "prepublishOnly": "npm run deploy",
     "test": "node scripts/test.js --env=jsdom",
-    "test:coverage": "npm test -- --coverage --u",
+    "test:coverage": "npm test -- -coverage -u",
     "test:badges": "npm run test:coverage  && jest-coverage-badges"
   },
   "devDependencies": {
