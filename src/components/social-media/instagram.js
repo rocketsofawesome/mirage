@@ -33,11 +33,7 @@ class BaseInstagram extends React.Component {
   componentDidMount () {
     this._isMounted = true
     const { limit, clientId, userId, accessToken } = this.props
-    console.log('componentDidMount')
-    console.log(clientId)
-    console.log(userId)
-    console.log(accessToken)
-    
+
     try {
       if (clientId && userId && accessToken) {
         this.feed = new Instafeed({
@@ -50,13 +46,12 @@ class BaseInstagram extends React.Component {
           limit: limit,
           template: '<a class="image-link" aria-label="{{caption}}" href="{{link}}"><img src="{{image}}" aria-hidden /></a>',
           success: (args) => {
-            console.log(`success ${JSON.stringify(args)}`)
             this.setInstragramPics(args)
           }
         }).run()
       }
     } catch(error) {
-      console.log(`error: ${error}`)
+      console.error(`error: ${error}`)
     }
   }
 
@@ -75,7 +70,6 @@ class BaseInstagram extends React.Component {
   }
 
   render () {
-    console.log('instagram render')
     const { className, theme } = this.props
     const { instagramLoading, instagramPictures } = this.state
     return (
