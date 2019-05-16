@@ -8,10 +8,10 @@ import {
   FlexRow,
   Gallery,
   ProductInformation,
-  LookSizePicker
+  OutfitSizePicker
  } from 'SRC'
 
-const BaseLookDetail = ({
+const BaseOutfitDetail = ({
   className,
   images,
   information,
@@ -35,7 +35,7 @@ const BaseLookDetail = ({
         <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
           <ProductInformation {...information} />
           <div className='roa-outfit-sizepicker-header'>{sizePickerHeader}</div>
-          <LookSizePicker
+          <OutfitSizePicker
             products={products}
             onSizeSelect={onSizeSelect}
             currentSizes={currentSizes}
@@ -48,7 +48,7 @@ const BaseLookDetail = ({
   )
 }
 
-const LookDetail =  styled(BaseLookDetail)`
+const OutfitDetail =  styled(BaseOutfitDetail)`
 margin: 6rem 0;
 .roa-outfit-sizepicker-header > * {
   display: inline-block;
@@ -63,7 +63,7 @@ margin: 6rem 0;
 ${ProductInformation} {
   margin-bottom: 4rem;
 }
-${LookSizePicker} {
+${OutfitSizePicker} {
   margin-top: 2rem;
 }
   ${Button} {
@@ -71,7 +71,7 @@ ${LookSizePicker} {
   }
 `
 
-LookDetail.propTypes = {
+OutfitDetail.propTypes = {
   className: PropTypes.string,
   footer: PropTypes.node,
   header: PropTypes.node,
@@ -83,9 +83,9 @@ LookDetail.propTypes = {
   renderProductLink: PropTypes.func
 }
 
-LookDetail.defaultProps = {
+OutfitDetail.defaultProps = {
   button: <Button>Add to Bag</Button>
 }
 
 /** @component */
-export default withTheme(LookDetail)
+export default withTheme(OutfitDetail)

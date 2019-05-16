@@ -1,5 +1,5 @@
 ```js
-<LookCards looks={
+<OutfitCards outfits={
   [
     {
       image: {

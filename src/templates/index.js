@@ -1,1 +1,1 @@
-export * from './looks'
+export * from './outfits'

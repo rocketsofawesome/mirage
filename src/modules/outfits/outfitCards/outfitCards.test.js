@@ -2,13 +2,13 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { Label, LookCards, Card } from 'SRC'
+import { Label, OutfitCards, Card } from 'SRC'
 
 const { mountWithTheme } = global
 
 const defaultProps = {
   element: 'a',
-  looks: [
+  outfits: [
     {
       image: {
         src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg'
@@ -20,32 +20,32 @@ const defaultProps = {
     }
   ]
 }
-describe('(Module) LookCards', () => {
-  const createLookCards = (inProps) => {
+describe('(Module) OutfitCards', () => {
+  const createOutfitCards = (inProps) => {
     const props = {
       ...defaultProps,
       ...inProps
     }
-    return mountWithTheme(<LookCards {...props} />)
+    return mountWithTheme(<OutfitCards {...props} />)
   }
 
   test('matching the snapshot', () => {
-    expect(createLookCards())
+    expect(createOutfitCards())
     .toMatchSnapshot()
   })
 
   test('Should render out the appropriate ', () => {
-    const component = createLookCards()
-    expect(component.find(Card).length).toEqual(defaultProps.looks.length)
+    const component = createOutfitCards()
+    expect(component.find(Card).length).toEqual(defaultProps.outfits.length)
   })
 
   test('Should pass the element to the card', () => {
     expect(
-      createLookCards()
+      createOutfitCards()
       .find(defaultProps.element)
       .length
     ).toEqual(
-      defaultProps.looks.length
+      defaultProps.outfits.length
     )
   })
 })

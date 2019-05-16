@@ -1,6 +1,6 @@
 import React from 'react'
 import 'jest-styled-components'
-import { LookSizePicker } from 'SRC'
+import { OutfitSizePicker } from 'SRC'
 
 const { mountWithTheme } = global
 
@@ -42,34 +42,34 @@ const defaultProps = {
   onSizeSelect: () => {}
 }
 
-describe('() LookSizePicker', () => {
-  const createLookSizePicker = (inProps) => {
+describe('() OutfitSizePicker', () => {
+  const createOutfitSizePicker = (inProps) => {
     const props = {
       ...defaultProps,
       ...inProps
     }
-    return mountWithTheme(<LookSizePicker {...props} />)
+    return mountWithTheme(<OutfitSizePicker {...props} />)
   }
 
   test('matching the snapshot', () => {
-    expect(createLookSizePicker())
+    expect(createOutfitSizePicker())
     .toMatchSnapshot()
   })
 
   test('renders proper amount of products', () => {
-    expect(createLookSizePicker().find('.product').length).toEqual(defaultProps.products.length)
+    expect(createOutfitSizePicker().find('.product').length).toEqual(defaultProps.products.length)
   })
 
   test('fires onSizeSelect on render, setting the product id', () => {
     const onSizeSelect = jest.fn()
-    createLookSizePicker({onSizeSelect: onSizeSelect})
+    createOutfitSizePicker({onSizeSelect: onSizeSelect})
     expect(onSizeSelect.mock.calls.length).toEqual(defaultProps.products.length)
     expect(onSizeSelect.mock.calls[0][0]).toBe(defaultProps.products[0].id);
     expect(onSizeSelect.mock.calls[1][0]).toBe(defaultProps.products[1].id);
   })
 
   test('size should be selected when currentSizes are provided', () => {
-    const component = createLookSizePicker({
+    const component = createOutfitSizePicker({
       currentSizes: {
         12345: 'sku-1',
         12346: 'sku-26'

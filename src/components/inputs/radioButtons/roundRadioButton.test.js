@@ -10,7 +10,8 @@ const { shallowWithTheme } = global
 const input = {
   defaultChecked: false,
   name: 'size',
-  value: '1'
+  value: '1',
+  input: { onChange: () => {} }
 }
 
 describe('(Styled Component) RoundRadio', () => {

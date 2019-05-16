@@ -4,16 +4,16 @@ import styled from 'styled-components'
 
 import { Card, InlineImage, FlexCol, FlexRow } from 'SRC'
 
-const LookCards = styled(({className, element, looks}) => {
+const OutfitCards = styled(({className, element, outfits}) => {
   return (
     <FlexRow constrained>
       {
-        looks.map((look, index) => {
+        outfits.map((outfit, index) => {
           return (
             <FlexCol className={className} desktop={{width: 4}} key={index}>
-              <Card {...look.card}>
-                <InlineImage {...look.image} />
-                {look.information}
+              <Card {...outfit.card}>
+                <InlineImage {...outfit.image} />
+                {outfit.information}
               </Card>
             </FlexCol>
           )
@@ -27,14 +27,14 @@ const LookCards = styled(({className, element, looks}) => {
   }
 `
 
-LookCards.propTypes = {
+OutfitCards.propTypes = {
   element: PropTypes.node,
-  look: PropTypes.array
+  outfit: PropTypes.array
 }
 
-LookCards.defaultProps = {
+OutfitCards.defaultProps = {
   element: 'a'
 }
 
 /** @component */
-export default LookCards
+export default OutfitCards

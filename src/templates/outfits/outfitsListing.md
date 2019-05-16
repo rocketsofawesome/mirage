@@ -1,5 +1,5 @@
 ```js
-<LooksListing 
+<OutfitsListing 
   headerContent={
       [
         <H3>Introducing</H3>,
@@ -7,7 +7,7 @@
         <H2>Shop Curated looks from our team of stylists</H2>
       ]
   }
-  looks={
+  outfits={
     [
       {
         image: {

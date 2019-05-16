@@ -1,5 +1,5 @@
 ```js
-<LookDetail
+<OutfitDetail
   images={require('./defaultProps').images}
   information={require('./defaultProps').information}
   products={require('./defaultProps').products}

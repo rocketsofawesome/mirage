@@ -1,0 +1,1 @@
+export { default as OutfitCards } from './outfitCards'

@@ -2,23 +2,23 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { FlexCol, FlexRow, LookCards } from 'SRC'
+import { FlexCol, FlexRow, OutfitCards } from 'SRC'
 
-const LooksListing = styled(({className, element, headerContent, looks}) => {
+const OutfitsListing = styled(({className, element, headerContent, outfits}) => {
   return (
     <div className={className}>
       {headerContent &&
         <FlexRow constrained>
-          <FlexCol className='roa-looks-header' element='header'>
+          <FlexCol className='roa-outfits-header' element='header'>
             {headerContent}
           </FlexCol>
         </FlexRow>
       }
-      <LookCards element={element} looks={looks} />
+      <OutfitCards element={element} outfits={outfits} />
     </div>
   )
 })`
-  .roa-looks-header {
+  .roa-outfits-header {
     margin-bottom: 8rem;
     > * {
       flex-basis: 100%;
@@ -27,15 +27,15 @@ const LooksListing = styled(({className, element, headerContent, looks}) => {
     }
   }
 `
-LooksListing.propTypes = {
+OutfitsListing.propTypes = {
   element: PropTypes.node,
   headerContent: PropTypes.array,
-  looks: PropTypes.array
+  outfits: PropTypes.array
 }
 
-LooksListing.defaultProp = {
+OutfitsListing.defaultProp = {
   element: 'a',
-  looks: []
+  outfits: []
 }
 /** @component */
-export default LooksListing
+export default OutfitsListing

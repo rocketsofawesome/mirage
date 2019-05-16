@@ -5,12 +5,12 @@ import styled from 'styled-components'
 
 import { SizePicker, InlineImage, Label } from 'SRC'
 
-const LookProductImage = ({product}) => (
+const OutfitProductImage = ({product}) => (
   <InlineImage
     {...product.image} />
 )
 
-const LookSizePicker = styled(({
+const OutfitSizePicker = styled(({
   className,
   currentSizes,
   element,
@@ -79,7 +79,7 @@ const LookSizePicker = styled(({
   }
 `
 
-LookSizePicker.propTypes = {
+OutfitSizePicker.propTypes = {
   element: PropTypes.shape({
     type: PropTypes.oneOfType([
       PropTypes.string,
@@ -92,13 +92,13 @@ LookSizePicker.propTypes = {
   className: PropTypes.string
 }
 
-LookSizePicker.defaultProps = {
+OutfitSizePicker.defaultProps = {
   renderProductLink: (product) => (
     <a href={`#products/${product.slug}`}>
-      <LookProductImage product={product} />
+      <OutfitProductImage product={product} />
     </a>
   )
 }
 
 /** @component */
-export default LookSizePicker
+export default OutfitSizePicker

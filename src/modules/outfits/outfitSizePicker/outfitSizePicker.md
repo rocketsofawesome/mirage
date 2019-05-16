@@ -1,6 +1,6 @@
 ### No sizes selected
 ```js
-  <LookSizePicker products={
+  <OutfitSizePicker products={
     [
       {
         image: {
@@ -51,7 +51,7 @@
 
 ### Sizes selected
 ```js
-  <LookSizePicker products={
+  <OutfitSizePicker products={
     [
       {
         image: {
