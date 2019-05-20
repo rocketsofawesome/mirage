@@ -19,7 +19,7 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
   )
 })`
   .roa-outfits-header {
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     > * {
       flex-basis: 100%;
       text-align: center;

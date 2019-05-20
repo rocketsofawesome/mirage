@@ -49,7 +49,7 @@ const BaseOutfitDetail = ({
 }
 
 const OutfitDetail =  styled(BaseOutfitDetail)`
-margin: 6rem 0;
+margin: 3rem 0 9rem 0;
 .roa-outfit-sizepicker-header > * {
   display: inline-block;
   margin: 0.5rem 0;
