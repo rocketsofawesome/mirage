@@ -41,14 +41,12 @@ export class BaseGallery extends React.Component {
     const { className, images } = this.props
     const { activeImage } = this.state
 
-    const smallImageSrc = cloudinary.url(
-    activeImage.src, {
-      transformation: 'pdp',
-      format: 'jpg'
-    })
-
     const smallImage = {
-      src: smallImageSrc,
+      src: cloudinary.url(
+      activeImage.src, {
+        transformation: 'pdp',
+        format: 'jpg'
+      }),
       alt: `${activeImage.alt} Main Image`,
       isFluidWidth: true
     }
@@ -89,7 +87,15 @@ export class BaseGallery extends React.Component {
           <Slider className='slider' {...this.config}>
             {images.map((image, index) => {
               return (
-                <InlineImage key={index} className='image' src={smallImageSrc} alt={image.alt} />
+                <InlineImage
+                  key={index}
+                  className='image' src={
+                    cloudinary.url(image.src, {
+                      transformation: 'pdp',
+                      format: 'jpg'
+                    })
+                  }
+                  alt={image.alt} />
               )
             })}
           </Slider>
@@ -104,7 +110,6 @@ export const Gallery = styled(BaseGallery)`
     z-index: 1;
   }
   .slider {
-    margin-bottom: 2rem;
     ${props => props.theme.breakpointsVerbose.aboveTablet`
       width: 75%;
       margin-left: auto;
