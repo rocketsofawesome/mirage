@@ -1,8 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
+import styled, { css, keyframes } from 'styled-components'
 import { pStyle } from 'SRC/core/typography/P'
 import { FlexCol, FlexRow } from 'SRC'
+
+const animateRainbow = keyframes`
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+`
 
 const message = css`
   background-color: ${props => props.theme.colors.rocketBlue};
@@ -32,13 +38,22 @@ color: ${props => props.theme.colors.navy};
 font-style: italic;
 `
 
+const promo_rainbow = css`
+  background: linear-gradient(270deg, #f37a7f, #ffb36f, #fae263, #c6e472,
+#a1dddb, #c787a9, #f37a7f, #ffb36f, #fae263, #c6e472,
+#a1dddb, #c787a9);
+  background-size: 200% 200%;
+  animation:  ${animateRainbow} 30s ease-in-out infinite;
+`
+
 const setTypeStyle = ({type}) => {
   const types = {
     'error': error,
     'message': message,
     'notification': notification,
     'promo_blue': promo_blue,
-    'promo_pink': promo_pink
+    'promo_pink': promo_pink,
+    'promo_rainbow': promo_rainbow
   }
 
   return types[type]
