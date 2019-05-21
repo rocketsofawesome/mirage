@@ -28,19 +28,21 @@ const BaseOutfitDetail = ({
   return (
     <div className={className} {...props}>
       {header}
-      <FlexRow padding constrained>
+      <FlexRow padding>
         <FlexCol element="aside" className='images' desktop={{width: 6}}>
           <Gallery images={images} />
         </FlexCol>
-        <FlexCol element="article" className='information' desktop={{width: 5, span: 1}} >
-          <ProductInformation {...information} />
-          <div className='roa-outfit-sizepicker-header'>{sizePickerHeader}</div>
-          <OutfitSizePicker
-            products={products}
-            onSizeSelect={onSizeSelect}
-            currentSizes={currentSizes}
-            renderProductLink={renderProductLink} />
-          {sizePickerFooter}
+        <FlexCol element="article" desktop={{width: 5, span: 1}} >
+          <div key='outfit-information' className='information'>
+            <ProductInformation {...information} />
+            <div className='roa-outfit-sizepicker-header'>{sizePickerHeader}</div>
+            <OutfitSizePicker
+              products={products}
+              onSizeSelect={onSizeSelect}
+              currentSizes={currentSizes}
+              renderProductLink={renderProductLink} />
+            {sizePickerFooter}
+          </div>
         </FlexCol>
       </FlexRow>
       {footer}
@@ -50,24 +52,30 @@ const BaseOutfitDetail = ({
 
 const OutfitDetail =  styled(BaseOutfitDetail)`
 margin: 3rem 0 9rem 0;
-.roa-outfit-sizepicker-header > * {
-  display: inline-block;
-  margin: 0.5rem 0;
-  &:first-child {
-    margin-top: 0;
+  .roa-outfit-sizepicker-header > * {
+    display: inline-block;
+    margin: 0.5rem 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
-  &:last-child {
-    margin-bottom: 0;
+  ${ProductInformation} {
+    margin-bottom: 4rem;
   }
-}
-${ProductInformation} {
-  margin-bottom: 4rem;
-}
-${OutfitSizePicker} {
-  margin-top: 2rem;
-}
+  ${OutfitSizePicker} {
+    margin-top: 2rem;
+  }
+
   ${Button} {
     width: 100%;
+  }
+
+  .information {
+    max-width: 500px;
+    margin-right: auto;
   }
 `
 
