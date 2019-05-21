@@ -20,9 +20,15 @@ const error = css`
   font-style: italic;
 `
 
-const promo = css`
+const promo_blue = css`
 background-color: ${props => props.theme.colors.lightBlue[0]};
 color: ${props => props.theme.colors.rocketBlue};
+font-style: italic;
+`
+
+const promo_pink = css`
+background-color: ${props => props.theme.colors.pink};
+color: ${props => props.theme.colors.navy};
 font-style: italic;
 `
 
@@ -31,7 +37,8 @@ const setTypeStyle = ({type}) => {
     'error': error,
     'message': message,
     'notification': notification,
-    'promo': promo
+    'promo_blue': promo_blue,
+    'promo_pink': promo_pink
   }
 
   return types[type]
