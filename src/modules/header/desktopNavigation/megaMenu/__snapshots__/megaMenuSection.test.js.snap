@@ -43,6 +43,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  margin: 2.4rem 0;
 }
 
 .c0 {
@@ -205,6 +206,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
     >
       <styled.h4
         fontSize="1.8rem"
+        margin="2.4rem 0"
       >
         <h4
           className="c1"

@@ -66,7 +66,7 @@ margin: 3rem 0 9rem 0;
     margin-bottom: 4rem;
   }
   ${OutfitSizePicker} {
-    margin-top: 2rem;
+    margin: 2rem 0;
   }
 
   ${Button} {
