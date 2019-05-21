@@ -23,7 +23,10 @@ const OutfitCards = styled(({className, element, outfits}) => {
   )
 })`
   ${Card} {
-    margin-bottom: 6rem;
+    margin-bottom: 2rem;
+    ${props => props.theme.breakpointsVerbose.aboveTablet`
+      margin-bottom: 4rem;
+    `}
   }
 `
 
