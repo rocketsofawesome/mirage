@@ -10,7 +10,11 @@ const OutfitCards = styled(({className, element, outfits}) => {
       {
         outfits.map((outfit, index) => {
           return (
-            <FlexCol className={className} mobile={{width: 2}} desktop={{width: 4}} key={index}>
+            <FlexCol className={className}
+              mobile={{width: 2}}
+              tablet={{width: 6}}
+              desktop={{width: 4}}
+              key={index}>
               <Card {...outfit.card}>
                 <InlineImage {...outfit.image} />
                 {outfit.information}
