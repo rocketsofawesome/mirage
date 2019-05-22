@@ -48,7 +48,7 @@ const childStyle = (index) => {
 const PersistantPricing = styled(({className, children}) => {
   return (
     <div className={className}>
-      <div>{children}</div>
+      <div className='promos' key='promos'>{children}</div>
     </div>
   )
 })`

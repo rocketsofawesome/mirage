@@ -12,6 +12,7 @@ const H3 = styled.h3`
   font-size: ${props => props.fontSize};
   font-weight: 500;
   line-height: 1.0833333333333333;
+  margin: ${props => props.margin};
 `
 
 H3.propTypes = {
@@ -32,7 +33,8 @@ H3.propTypes = {
 }
 
 H3.defaultProps = {
-  fontSize: '2.4rem'
+  fontSize: '2.4rem',
+  margin: '2.4rem 0'
 }
 
 /** @component */

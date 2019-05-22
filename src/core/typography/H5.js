@@ -12,6 +12,7 @@ const H5 = styled.h5`
   font-style: italic;
   line-height: 1;
   letter-spacing: .075rem;
+  margin: ${props => props.margin};
 `
 
 H5.propTypes = {
@@ -31,7 +32,8 @@ H5.propTypes = {
 }
 
 H5.defaultProps = {
-  fontSize: '1.6rem'
+  fontSize: '1.6rem',
+  margin: '2.6rem 0'
 }
 
 /** @component */

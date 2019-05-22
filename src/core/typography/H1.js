@@ -16,6 +16,7 @@ const H1 = styled.h1`
   font-size: ${props => props.fontSize};
   font-weight: 500;
   line-height:1.0476190476190477;
+  margin: ${props => props.margin};
 `
 
 H1.propTypes = {
@@ -32,11 +33,12 @@ H1.propTypes = {
       navy: PropTypes.string
     })
   }),
-  lowercase: PropTypes.bool
+  lowercase: PropTypes.bool,
 }
 
 H1.defaultProps = {
-  fontSize: '4.2rem'
+  fontSize: '4.2rem',
+  margin: '5.5rem 0'
 }
 
 /** @component */

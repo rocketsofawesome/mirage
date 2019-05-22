@@ -11,16 +11,22 @@ const columnToPercent = (elementWidth, containerWidth) => {
 const spanner = (props, breakpoint) => {
   if (props[breakpoint].span) {
     return css`
-      margin-left: ${props => props.desktop.nested
-        ? columnToPercent(props.desktop.span, props.desktop.nested)
-        : columnToPercent(props.desktop.span, props.columns.desktop)};
+      margin-left: ${props => props[breakpoint].nested
+        ? columnToPercent(props[breakpoint].span, props[breakpoint].nested)
+        : columnToPercent(props[breakpoint].span, props.columns.desktop)};
     `
   } else {
-    return null
+    return css`
+      margin-left: 0;
+    `
   }
 }
 
 const FlexCol = styled(({ element, children, key, ...props}) => {
+  delete props.columns
+  delete props.phone
+  delete props.tablet
+  delete props.desktop
   return React.createElement(element, props, children)
 })`
   box-sizing: border-box;
@@ -41,8 +47,17 @@ const FlexCol = styled(({ element, children, key, ...props}) => {
       padding-right: ${props.gutter || '5px'};
     `
   }
+    ${props => props.theme.breakpointsVerbose.aboveTablet`
+      max-width: ${props => props.tablet.nested
+        ? columnToPercent(props.tablet.width, props.tablet.nested)
+        : columnToPercent(props.tablet.width, props.columns.desktop)};
+      flex-basis: ${props => props.tablet.nested
+        ? columnToPercent(props.tablet.width, props.tablet.nested)
+        : columnToPercent(props.tablet.width, props.columns.desktop)};
+        ${ props => spanner(props, 'tablet')}
+  `}
 
-  ${props => props.theme.breakpointsVerbose.aboveLaptop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     max-width: ${props => props.desktop.nested
       ? columnToPercent(props.desktop.width, props.desktop.nested)
       : columnToPercent(props.desktop.width, props.columns.desktop)};
@@ -50,8 +65,7 @@ const FlexCol = styled(({ element, children, key, ...props}) => {
       ? columnToPercent(props.desktop.width, props.desktop.nested)
       : columnToPercent(props.desktop.width, props.columns.desktop)};
     ${ props => spanner(props, 'desktop')}
-  `
-}
+  `}
 `
 
 FlexCol.propTypes = {
@@ -64,6 +78,11 @@ FlexCol.propTypes = {
   children: PropTypes.node,
   mobile: PropTypes.shape({
     width: PropTypes.number.isRequired,
+    span: PropTypes.number,
+    nested: PropTypes.number
+  }),
+  tablet: PropTypes.shape({
+    width: PropTypes.number,
     span: PropTypes.number,
     nested: PropTypes.number
   }),
@@ -80,6 +99,9 @@ FlexCol.defaultProps = {
     width: 4
   },
   desktop: {
+    width: 12
+  },
+  tablet: {
     width: 12
   },
   columns: {

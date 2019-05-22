@@ -57,7 +57,7 @@ describe('() OutfitSizePicker', () => {
   })
 
   test('renders proper amount of products', () => {
-    expect(createOutfitSizePicker().find('.product').length).toEqual(defaultProps.products.length)
+    expect(createOutfitSizePicker().find('.roa-product').length).toEqual(defaultProps.products.length)
   })
 
   test('fires onSizeSelect on render, setting the product id', () => {

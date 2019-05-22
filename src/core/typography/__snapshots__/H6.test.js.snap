@@ -12,6 +12,7 @@ exports[`(Styled Component) H6 matching the snapshot 1`] = `
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  margin: 3.2rem 0;
 }
 
 <h6

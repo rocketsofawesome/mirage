@@ -29,10 +29,17 @@ const BaseOutfitDetail = ({
     <div className={className} {...props}>
       {header}
       <FlexRow padding>
-        <FlexCol element="aside" className='images' desktop={{width: 6}}>
+        <FlexCol
+          element="aside"
+          className='roa-images'
+          desktop={{width: 6}}
+          tablet={{width: 8, span: 2}}>
           <Gallery images={images} />
         </FlexCol>
-        <FlexCol element="article" desktop={{width: 5, span: 1}} >
+        <FlexCol
+          element="article"
+          desktop={{width: 5, span: 1}}
+          tablet={{width: 8, span: 2}}>
           <div key='outfit-information' className='information'>
             <ProductInformation {...information} />
             <div className='roa-outfit-sizepicker-header'>{sizePickerHeader}</div>
@@ -65,17 +72,28 @@ margin: 3rem 0 9rem 0;
   ${ProductInformation} {
     margin-bottom: 4rem;
   }
+}
+
+  ${Gallery} {
+    margin-bottom: 2rem;
+  }
+
+  ${ProductInformation} {
+    margin-bottom: 4rem;
+  }
   ${OutfitSizePicker} {
-    margin: 2rem 0;
+    margin-top: 2rem;
   }
 
   ${Button} {
     width: 100%;
   }
-
   .information {
-    max-width: 500px;
-    margin-right: auto;
+    width: 100%;
+    ${props => props.theme.breakpointsVerbose.aboveTabletMax`
+      max-width: 500px;
+      margin-right: auto;
+    `}
   }
 `
 
