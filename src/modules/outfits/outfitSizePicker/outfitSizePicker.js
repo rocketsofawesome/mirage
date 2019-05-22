@@ -29,13 +29,15 @@ const OutfitSizePicker = styled(({
             <div className='roa-image-wrapper'>
               {renderProductLink(product)}
             </div>
-            <SizePicker
-              className='size-picker'
-              productId={product.id}
-              variants={product.variants}
-              currentSize={currentSize}
-              inputDisabled
-              onSizeSelect={onSizeSelect(product.id)} />
+            <div className='roa-price-size-box'>
+              <Label className='roa-item-price'>{product.price}</Label>
+              <SizePicker
+                productId={product.id}
+                variants={product.variants}
+                currentSize={currentSize}
+                inputDisabled
+                onSizeSelect={onSizeSelect(product.id)} />
+            </div>
           </div>
         )
       })}
@@ -57,6 +59,14 @@ const OutfitSizePicker = styled(({
   ${Label} {
     margin-bottom: 2rem;
     display: flex;
+  }
+  .roa-price-size-box {
+    flex-direction: column;
+  }
+  .roa-item-price {
+    margin-left: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 1.5rem;
   }
   .roa-product {
     display: flex;
