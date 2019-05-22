@@ -21,15 +21,15 @@ const rotateWordsFirst = keyframes`
     opacity: 1;
     transform: translateY(0rem);
   }
-  17% {
+  37% {
     opacity: 0.7;
     transform: translateY(0rem);
   }
-  20% {
+  40% {
     opacity: 0;
     transform: translateY(3rem);
   }
-  80% {
+  90% {
     opacity: 0;
   }
   100% {
@@ -48,7 +48,7 @@ const childStyle = (index) => {
 const PersistantPricing = styled(({className, children}) => {
   return (
     <div className={className}>
-      <div className='promos' key='promos'>{children}</div>
+      <div>{children}</div>
     </div>
   )
 })`
@@ -70,6 +70,12 @@ width: 100%;
         return childStyle(index)
       })}
     }
+    span {
+      margin-left: 0.5rem;
+    }
+    ${P} {
+      font-weight: 300;
+    }
   }
 `
 
@@ -80,9 +86,14 @@ PersistantPricing.propTypes = {
 
 PersistantPricing.defaultProps = {
   children: [
-    <P key='message1'>Heyyyyyy. You know what? You are awesome <span role='img' aria-label='confetti'>🎉</span></P>,
-    <P key='message2'>And we want to make your life easier. <span role='img' aria-label='raised hands'>🙌</span></P>,
-    <P key='message3'>Buy 3+ Items, Get 20% Off. Every day <span role='img' aria-label='crown'>👑</span></P>
+    <P key='message1'>Did you <span role='img' aria-label='hear'>👂</span>? Buy 3+ Items, Get 20% Off. ALWAYS. <span role='img' aria-label='confetti'>🎉</span></P>,
+    <P key='message2'>We gotchu! Buy 3+ Items, Get 20% Off. Everyday.<span role='img' aria-label='raised hands'>🙌</span></P>,
+    <P key='message3'>
+      We’re about to make your life 20% easier …
+      <span role='img' aria-label='face with party hat'>🥳</span>
+      <span role='img' aria-label='confetti'>🎉</span>
+      <span role='img' aria-label='hearts'>💕</span>
+    </P>
   ],
   duration: 4,
   height: 30
