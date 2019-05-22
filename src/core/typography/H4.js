@@ -32,7 +32,7 @@ H4.propTypes = {
 
 H4.defaultProps = {
   fontSize: '1.8rem',
-  margin: '2.4rem 0'
+  margin: '2.3rem 0'
 }
 
 /** @component */

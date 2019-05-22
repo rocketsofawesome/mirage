@@ -25,8 +25,10 @@ const OutfitSizePicker = styled(({
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
 
         return (
-          <div className='product' key={product.id}>
-            {renderProductLink(product)}
+          <div className='roa-product' key={product.id}>
+            <div className='roa-image-wrapper'>
+              {renderProductLink(product)}
+            </div>
             <SizePicker
               className='size-picker'
               productId={product.id}
@@ -40,33 +42,30 @@ const OutfitSizePicker = styled(({
     </div>
   )
 })`
-  .image-wrapper {
-    cursor: pointer;
+  .roa-image-wrapper {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
     display: flex;
-    justify-content: center;
-    margin-right: 1.25rem;
-    max-width: 25%;
-    ${props => props.theme.breakpointsVerbose.belowTablet`
-      margin-right: .75rem;
-      width: auto;
-    `}
+    align-items: flex-start;
+    a {
+      width: 100%;
+    }
+    img {
+      width: 100%;
+    }
   }
   ${Label} {
     margin-bottom: 2rem;
     display: flex;
   }
-  .size-picker {
-    // min-width: 30rem;
-  }
-  .product {
+  .roa-product {
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    align-items: center;
+    align-items: flex-start;
     ${props => props.theme.breakpointsVerbose.belowLaptop`
       padding-bottom: 2rem;
       border-bottom: 1px solid ${props.theme.colors.gray[4]}
-      flex-wrap: wrap;
 
       > *:first-child {
         margin-right: auto;

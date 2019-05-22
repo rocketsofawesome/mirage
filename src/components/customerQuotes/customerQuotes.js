@@ -117,7 +117,7 @@ ${H3} {
   opacity: 1;
   transition: opacity 0.5s;
   height: 30rem;
-  ${props => props.theme.media.tablet`
+  ${props => props.theme.media.phoneMax`
     order: 2;
   `}
 }

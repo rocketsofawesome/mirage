@@ -6,7 +6,7 @@ const Desktop = styled(({element, children, ...props}) => {
   return React.createElement(element, props, children)
 })`
 display: none;
-${props => props.theme.breakpointsVerbose.aboveLaptop`
+${props => props.theme.breakpointsVerbose.aboveTabletMax`
   display: ${props => props.display};
 `}
 `
@@ -28,8 +28,8 @@ display: none;
 ${props => props.theme.breakpointsVerbose.aboveTablet`
   display: ${props => props.display};
 `}
-${props => props.theme.breakpointsVerbose.abovelaptop`
-  display: none;
+${props => props.theme.breakpointsVerbose.aboveLaptop`
+  display: ${props => props.laptopDisplay};
 `}
 `
 
@@ -40,7 +40,8 @@ Tablet.propTypes = {
 }
 Tablet.defaultProps = {
   display: 'block',
-  element: 'div'
+  element: 'div',
+  laptopDisplay: 'none'
 }
 
 const Mobile = styled(({element, children, ...props}) => {
@@ -63,10 +64,11 @@ Mobile.defaultProps = {
 }
 
 const Default = styled(({element, children, ...props}) => {
+  delete props.displayTarget
   return React.createElement(element, props, children)
 })`
 display: none;
-${props => props.theme.breakpointsVerbose.belowLaptop`
+${props => props.theme.breakpointsVerbose[props.displayTarget]`
   display: ${props => props.display};
 `}
 `
@@ -78,7 +80,8 @@ Default.propTypes = {
 }
 Default.defaultProps = {
   display: 'block',
-  element: 'div'
+  element: 'div',
+  displayTarget: 'belowTabletMax'
 }
 
 export {Desktop, Tablet, Mobile, Default}

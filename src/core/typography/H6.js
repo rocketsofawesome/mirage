@@ -11,6 +11,7 @@ const H6 = styled.h6`
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  margin: ${props => props.margin};
 `
 
 H6.propTypes = {
@@ -30,7 +31,8 @@ H6.propTypes = {
 }
 
 H6.defaultProps = {
-  fontSize: '1.4rem'
+  fontSize: '1.4rem',
+  margin: '3.2rem 0'
 }
 
 /** @component */

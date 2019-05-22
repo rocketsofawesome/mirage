@@ -26,6 +26,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -36,6 +37,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -46,6 +48,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -159,7 +162,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-weight: 500;
   font-style: italic;
   line-height: 1;
-  margin: 2.4rem 0;
+  margin: 2.3rem 0;
 }
 
 .c1 {
@@ -449,7 +452,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   transition: all 0.25s ease-in-out;
 }
 
-@media (min-width:1280px) {
+@media (min-width:768px) {
+  .c12 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:960px) {
   .c12 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
@@ -459,21 +472,43 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:768px) {
+  .c18 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:960px) {
   .c18 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
     flex-basis: 25%;
+    margin-left: 0;
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:768px) {
+  .c19 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:960px) {
   .c19 {
     max-width: 33.33333333333333%;
     -webkit-flex-basis: 33.33333333333333%;
     -ms-flex-preferred-size: 33.33333333333333%;
     flex-basis: 33.33333333333333%;
+    margin-left: 0;
   }
 }
 
@@ -1188,6 +1223,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c12"
@@ -1209,21 +1249,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c12"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "span": 2,
-                                          "width": 3,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,
@@ -1385,7 +1418,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              margin="2.4rem 0"
+                                              margin="2.3rem 0"
                                             >
                                               <h4
                                                 className="c14"
@@ -2318,6 +2351,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c18"
@@ -2338,20 +2376,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c18"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "width": 3,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,
@@ -2433,7 +2465,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              margin="2.4rem 0"
+                                              margin="2.3rem 0"
                                             >
                                               <h4
                                                 className="c14"
@@ -2766,6 +2798,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c19"
@@ -2786,20 +2823,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c19"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,
@@ -3122,6 +3153,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c12"
@@ -3143,21 +3179,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c12"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "span": 2,
-                                          "width": 3,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,
@@ -3309,7 +3338,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              margin="2.4rem 0"
+                                              margin="2.3rem 0"
                                             >
                                               <h4
                                                 className="c14"
@@ -4167,6 +4196,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c18"
@@ -4187,20 +4221,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c18"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "width": 3,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,
@@ -4272,7 +4300,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              margin="2.4rem 0"
+                                              margin="2.3rem 0"
                                             >
                                               <h4
                                                 className="c14"
@@ -4530,6 +4558,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                       "width": 4,
                                     }
                                   }
+                                  tablet={
+                                    Object {
+                                      "width": 12,
+                                    }
+                                  }
                                 >
                                   <Component
                                     className="c19"
@@ -4550,20 +4583,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         "width": 4,
                                       }
                                     }
+                                    tablet={
+                                      Object {
+                                        "width": 12,
+                                      }
+                                    }
                                   >
                                     <div
                                       className="c19"
-                                      columns={
-                                        Object {
-                                          "desktop": 12,
-                                          "mobile": 4,
-                                        }
-                                      }
-                                      desktop={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
                                       mobile={
                                         Object {
                                           "width": 4,

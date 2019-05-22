@@ -12,6 +12,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   font-size: 4.2rem;
   font-weight: 500;
   line-height: 1.0476190476190477;
+  margin: 5.5rem 0;
 }
 
 .c4 {
@@ -179,6 +180,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
       <styled.h1
         aria-label="Find us @ rockets of awesome"
         fontSize="4.2rem"
+        margin="5.5rem 0"
       >
         <h1
           aria-label="Find us @ rockets of awesome"

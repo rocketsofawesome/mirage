@@ -16,6 +16,7 @@ exports[`(Styled Component) H5 matching the snapshot 1`] = `
   -moz-letter-spacing: .075rem;
   -ms-letter-spacing: .075rem;
   letter-spacing: .075rem;
+  margin: 2.6rem 0;
 }
 
 <h5

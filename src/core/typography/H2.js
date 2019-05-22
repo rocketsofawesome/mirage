@@ -15,6 +15,7 @@ const H2 = styled.h2`
     font-size: ${props => props.fontSize};
     font-weight: 500;
     line-height: 1.0625;
+    margin: ${props => props.margin};
 `
 H2.propTypes = {
   center: PropTypes.bool,
@@ -35,7 +36,8 @@ H2.propTypes = {
 }
 
 H2.defaultProps = {
-  fontSize: '3.2rem'
+  fontSize: '3.2rem',
+  margin: '2.6rem 0'
 }
 
 /** @component */

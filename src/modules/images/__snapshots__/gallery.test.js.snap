@@ -15,6 +15,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -25,6 +26,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
+  margin-left: 0;
   padding-left: 5px;
   padding-right: 5px;
 }
@@ -57,10 +59,6 @@ exports[`() Gallery matching the snapshot 1`] = `
 
 .c0 .imageZoom {
   z-index: 1;
-}
-
-.c0 .slider {
-  margin-bottom: 2rem;
 }
 
 .c0 .slider .image {
@@ -135,7 +133,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   border: 2px solid transparent!important;
 }
 
-@media (min-width:1280px) {
+@media (min-width:960px) {
   .c1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -144,35 +142,49 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (max-width:1279px) {
+@media (max-width:959px) {
   .c5 {
     display: block;
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:768px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:960px) {
   .c2 {
     max-width: 16.666666666666664%;
     -webkit-flex-basis: 16.666666666666664%;
     -ms-flex-preferred-size: 16.666666666666664%;
     flex-basis: 16.666666666666664%;
+    margin-left: 0;
   }
 }
 
-@media (min-width:1280px) {
+@media (min-width:768px) {
+  .c4 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:960px) {
   .c4 {
     max-width: 83.33333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
     -ms-flex-preferred-size: 83.33333333333334%;
     flex-basis: 83.33333333333334%;
-  }
-}
-
-@media (min-width:768px) {
-  .c0 .slider {
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 0;
   }
 }
 
@@ -529,6 +541,11 @@ exports[`() Gallery matching the snapshot 1`] = `
                   }
                 }
                 onClick={[Function]}
+                tablet={
+                  Object {
+                    "width": 12,
+                  }
+                }
                 thumbnails={
                   Array [
                     Object {
@@ -583,6 +600,11 @@ exports[`() Gallery matching the snapshot 1`] = `
                     }
                   }
                   onClick={[Function]}
+                  tablet={
+                    Object {
+                      "width": 12,
+                    }
+                  }
                   thumbnails={
                     Array [
                       Object {
@@ -619,17 +641,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                   <Styled(Component)
                     active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                     className="c2"
-                    columns={
-                      Object {
-                        "desktop": 12,
-                        "mobile": 4,
-                      }
-                    }
-                    desktop={
-                      Object {
-                        "width": 2,
-                      }
-                    }
                     mobile={
                       Object {
                         "width": 4,
@@ -672,17 +683,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                     <Component
                       active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                       className="c2 c3"
-                      columns={
-                        Object {
-                          "desktop": 12,
-                          "mobile": 4,
-                        }
-                      }
-                      desktop={
-                        Object {
-                          "width": 2,
-                        }
-                      }
                       mobile={
                         Object {
                           "width": 4,
@@ -860,6 +860,11 @@ exports[`() Gallery matching the snapshot 1`] = `
                     "width": 4,
                   }
                 }
+                tablet={
+                  Object {
+                    "width": 12,
+                  }
+                }
               >
                 <Component
                   className="c4"
@@ -880,20 +885,14 @@ exports[`() Gallery matching the snapshot 1`] = `
                       "width": 4,
                     }
                   }
+                  tablet={
+                    Object {
+                      "width": 12,
+                    }
+                  }
                 >
                   <div
                     className="c4"
-                    columns={
-                      Object {
-                        "desktop": 12,
-                        "mobile": 4,
-                      }
-                    }
-                    desktop={
-                      Object {
-                        "width": 10,
-                      }
-                    }
                     mobile={
                       Object {
                         "width": 4,
@@ -1471,11 +1470,13 @@ exports[`() Gallery matching the snapshot 1`] = `
         </Styled(Component)>
         <Styled(Component)
           display="block"
+          displayTarget="belowTabletMax"
           element="div"
         >
           <Component
             className="c5"
             display="block"
+            displayTarget="belowTabletMax"
             element="div"
           >
             <div

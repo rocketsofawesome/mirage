@@ -110,11 +110,6 @@ export const Gallery = styled(BaseGallery)`
     z-index: 1;
   }
   .slider {
-    ${props => props.theme.breakpointsVerbose.aboveTablet`
-      width: 75%;
-      margin-left: auto;
-      margin-right: auto;
-    `}
     ${props => props.theme.breakpointsVerbose.aboveTabletMax`
       width: 50%;
     `}

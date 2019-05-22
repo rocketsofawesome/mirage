@@ -12,6 +12,7 @@ exports[`(Styled Component) H3 matching the snapshot 1`] = `
   font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.0833333333333333;
+  margin: 2.4rem 0;
 }
 
 <h3
