@@ -25,19 +25,32 @@ const OutfitSizePicker = styled(({
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
 
         return (
+<<<<<<< Updated upstream
           <div className='roa-product' key={product.id}>
             <div className='roa-image-wrapper'>
               {renderProductLink(product)}
             </div>
-            <div className='roa-price-size-box'>
-              <Label className='roa-item-price'>{product.price}</Label>
+            <SizePicker
+              className='size-picker'
+              productId={product.id}
+              variants={product.variants}
+              currentSize={currentSize}
+              inputDisabled
+              onSizeSelect={onSizeSelect(product.id)} />
+=======
+          <div className='product' key={product.id}>
+            {renderProductLink(product)}
+            <div className='price-size-box'>
+              <Label className='price'>{product.price}</Label>
               <SizePicker
+                className='size-picker'
                 productId={product.id}
                 variants={product.variants}
                 currentSize={currentSize}
                 inputDisabled
                 onSizeSelect={onSizeSelect(product.id)} />
             </div>
+>>>>>>> Stashed changes
           </div>
         )
       })}
@@ -60,15 +73,22 @@ const OutfitSizePicker = styled(({
     margin-bottom: 2rem;
     display: flex;
   }
-  .roa-price-size-box {
+<<<<<<< Updated upstream
+  .roa-product {
+=======
+  .price-size-box {
     flex-direction: column;
   }
-  .roa-item-price {
-    margin-left: 1rem;
+  .price {
     margin-bottom: 0rem;
-    margin-top: 1.5rem;
+    border: 1px solid red;
   }
-  .roa-product {
+  .size-picker {
+    border: solid 1px blue;
+    // min-width: 30rem;
+  }
+  .product {
+>>>>>>> Stashed changes
     display: flex;
     margin-top: 1rem;
     margin-bottom: 1rem;

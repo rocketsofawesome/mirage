@@ -52,7 +52,8 @@ export const products = [
       {sku: 'sku-7', size: 12, in_stock: true},
     ],
     id: '12345',
-    slug: 'example-slug'
+    slug: 'example-slug',
+    price: '$22.50'
   },
   {
     image: {
@@ -69,6 +70,7 @@ export const products = [
       {sku: 'sku-26', size: 12, in_stock: true},
     ],
     id: '12346',
-    slug: 'example-slug'
+    slug: 'example-slug',
+    price: '$19.50'
   }
 ]
