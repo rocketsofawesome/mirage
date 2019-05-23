@@ -47,8 +47,8 @@ const OutfitSizePicker = styled(({
   .roa-image-wrapper {
     margin-top: 1.5rem;
     margin-left: 1rem;
-    display: flex;
-    align-items: flex-start;
+    width: 20%;
+    flex: 0 0 auto;
     a {
       width: 100%;
     }
@@ -62,6 +62,8 @@ const OutfitSizePicker = styled(({
   }
   .roa-price-size-box {
     flex-direction: column;
+    width: 80%;
+    flex: 0 0 auto;
   }
   .roa-item-price {
     margin-left: 1rem;
