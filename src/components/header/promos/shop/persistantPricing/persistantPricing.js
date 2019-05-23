@@ -62,7 +62,7 @@ width: 100%;
       animation: ${rotateWordsFirst} ${props => (props.children.length * props.duration)}s linear infinite 0s;
       position: absolute;
       opacity: 0;
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       width: 100%;
       height: ;
@@ -75,6 +75,10 @@ width: 100%;
     }
     ${P} {
       font-weight: 300;
+      font-size: 1.1rem;
+      ${props => props.theme.breakpointsVerbose.aboveTablet`
+        font-size: 1.6rem;
+      `}
     }
   }
 `
