@@ -11,23 +11,23 @@ const rotateWordsFirst = keyframes`
   }
   2% {
     opacity: 0;
-    transform: translateY(-100%);
+    transform: translateY(-30rem);
   }
   5% {
     opacity: 0.7;
-    transform: translateY(0%);
+    transform: translateY(0rem);
   }
   9% {
     opacity: 1;
-    transform: translateY(0%);
+    transform: translateY(0rem);
   }
   34% {
     opacity: 0.7;
-    transform: translateY(0%);
+    transform: translateY(0rem);
   }
   37% {
     opacity: 0;
-    transform: translateY(100%);
+    transform: translateY(30rem);
   }
   95% {
     opacity: 0;
