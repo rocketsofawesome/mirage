@@ -92,7 +92,7 @@ PersistantPricing.defaultProps = {
   children: [
 
     <P key='message1'>Did you know? Buy 4+ Items, Get 20% Off. ALWAYS. <span role='img' aria-label='confetti'>🎉</span></P>,
-    <P key='message2'>You’re Welcome! Buy 4+ Items, Get 20% Off. Everyday. <span role='img' aria-label='crown'>👑</span>. </P>,
+    <P key='message2'>You’re welcome! Buy 4+ Items, Get 20% Off. Everyday. <span role='img' aria-label='crown'>👑</span>. </P>,
     <P key='message3'>
       We’re about to make your life 20% easier …
       <span role='img' aria-label='smiling face with smiling eyes'>😊</span>
