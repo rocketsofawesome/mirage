@@ -21,15 +21,15 @@ const rotateWordsFirst = keyframes`
     opacity: 1;
     transform: translateY(0rem);
   }
-  37% {
+  34% {
     opacity: 0.7;
     transform: translateY(0rem);
   }
-  40% {
+  37% {
     opacity: 0;
     transform: translateY(3rem);
   }
-  90% {
+  95% {
     opacity: 0;
   }
   100% {
@@ -90,11 +90,11 @@ PersistantPricing.propTypes = {
 
 PersistantPricing.defaultProps = {
   children: [
-    <P key='message1'>Did you <span role='img' aria-label='hear'>👂</span>? Buy 3+ Items, Get 20% Off. ALWAYS. <span role='img' aria-label='confetti'>🎉</span></P>,
-    <P key='message2'>We gotchu! Buy 3+ Items, Get 20% Off. Everyday.<span role='img' aria-label='raised hands'>🙌</span></P>,
+    <P key='message1'>Did you <span role='img' aria-label='hear'>👂</span>? Buy 4+ Items, Get 20% Off. ALWAYS. <span role='img' aria-label='confetti'>🎉</span></P>,
+    <P key='message2'>We gotchu! Buy 4+ Items, Get 20% Off. Everyday.<span role='img' aria-label='raised hands'>🙌</span></P>,
     <P key='message3'>
       We’re about to make your life 20% easier …
-      <span role='img' aria-label='face with party hat'>🥳</span>
+      <span role='img' aria-label='smiling face with smiling eyes'>😊</span>
       <span role='img' aria-label='confetti'>🎉</span>
       <span role='img' aria-label='hearts'>💕</span>
     </P>

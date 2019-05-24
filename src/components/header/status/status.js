@@ -45,8 +45,8 @@ font-style: italic;
 `
 
 const promo_rainbow = css`
-  background: linear-gradient(270deg, #f37a7f, #ffb36f, #fae263, #c6e472,
-#a1dddb, #c787a9, #f37a7f, #ffb36f, #fae263, #c6e472,
+  background: linear-gradient(270deg, #f37a7f, #ffb36f, #fff366, #c6e472,
+#a1dddb, #c787a9, #f37a7f, #ffb36f, #fff366, #c6e472,
 #a1dddb, #c787a9);
   ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     background-size: 200% 200%;
