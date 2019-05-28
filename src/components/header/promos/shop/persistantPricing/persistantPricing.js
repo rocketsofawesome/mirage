@@ -40,7 +40,7 @@ const rotateWordsFirst = keyframes`
 const childStyle = (index) => {
   return (css`
     &:nth-of-type(${index}) {
-      animation-delay: ${props => props.duration * index}s;
+      animation-delay: -${props => props.duration * index}s;
     }
   `)
 }
@@ -100,7 +100,7 @@ PersistantPricing.defaultProps = {
       <span role='img' aria-label='hearts'>💕</span>
     </P>
   ],
-  duration: 4,
+  duration: 6,
   height: 30
 }
 
