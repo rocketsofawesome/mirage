@@ -63,7 +63,8 @@ export default class Contentful extends React.Component {
     const { children } = this.props
     const { response } = this.state
     if (response) {
-      return React.createElement(children.type, {...response})
+      console.log(response)
+      return React.createElement(children.type, {...children.props, ...response,})
     } else {
       return null
     }
