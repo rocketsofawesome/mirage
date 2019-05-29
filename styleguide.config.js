@@ -8,6 +8,9 @@ module.exports = {
   title: 'Mirage - ROA Pattern Library',
   webpackConfig: require(env[process.env.NODE_ENV]),
   components: 'src/**/*.{js,jsx,ts,tsx}',
+  require: [
+    path.join(__dirname, 'src/services/contentful.js')
+  ],
   styleguideComponents: {
     Wrapper: path.join(__dirname, 'src/core/theme')
   },
