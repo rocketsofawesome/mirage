@@ -5,7 +5,11 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
   position: relative;
 }
 
-.c0 > div > video {
+.c0 .c1 {
+  width: 100%;
+}
+
+.c0 .roa-video-fallback {
   width: 100%;
 }
 
@@ -17,7 +21,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
   bottom: 0;
 }
 
-<Styled(BaseBackgroundVideo)
+<WithTheme(Styled(BaseBackgroundVideo))
   size={
     Object {
       "width": 300,
@@ -25,13 +29,12 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
   }
   sources={
     Object {
-      "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
-      "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+      "desktop": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+      "mobile": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
     }
   }
 >
-  <BaseBackgroundVideo
-    className="c0"
+  <Styled(BaseBackgroundVideo)
     size={
       Object {
         "width": 300,
@@ -39,156 +42,247 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
     }
     sources={
       Object {
-        "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
-        "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+        "desktop": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+        "mobile": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
+      }
+    }
+    theme={
+      Object {
+        "base": undefined,
+        "breakpoints": Object {
+          "aboveDesktop": "(min-width: 1440px)",
+          "aboveLaptop": "(min-width: 1280px)",
+          "abovePhone": "(min-width: 320px)",
+          "abovePhoneMax": "(min-width: 414px)",
+          "aboveTablet": "(min-width: 768px)",
+          "aboveTabletMax": "(min-width: 960px)",
+          "belowDesktop": "(max-width: 1439px)",
+          "belowLaptop": "(max-width: 1279px)",
+          "belowPhone": "(max-width: 319px)",
+          "belowPhoneMax": "(max-width: 413px)",
+          "belowTablet": "(max-width: 767px)",
+          "belowTabletMax": "(max-width: 959px)",
+          "landscape": "(orientation: landscape)",
+          "portrait": "(orientation: portrait)",
+        },
+        "breakpointsVerbose": Object {
+          "aboveDesktop": [Function],
+          "aboveLaptop": [Function],
+          "abovePhone": [Function],
+          "abovePhoneMax": [Function],
+          "aboveTablet": [Function],
+          "aboveTabletMax": [Function],
+          "belowDesktop": [Function],
+          "belowLaptop": [Function],
+          "belowPhone": [Function],
+          "belowPhoneMax": [Function],
+          "belowTablet": [Function],
+          "belowTabletMax": [Function],
+          "landscape": [Function],
+          "portrait": [Function],
+        },
+        "colors": Object {
+          "black": "#000000",
+          "electricBlue": "#080CF1",
+          "flameOrange": "#FF511C",
+          "gray": Array [
+            "#F3F3F3",
+            "#F5F5F5",
+            "#F8F8F8",
+            "#E6E6E6",
+            "#D5D5D5",
+            "#CFCFCF",
+          ],
+          "gray0": "#F3F3F3",
+          "gray1": "#F5F5F5",
+          "gray2": "#F8F8F8",
+          "gray3": "#E6E6E6",
+          "gray4": "#D5D5D5",
+          "gray5": "#CFCFCF",
+          "lightBlue": Array [
+            "#EEFCFF",
+            "#BCE1F7",
+            "#76C2F3",
+          ],
+          "lightBlue0": "#EEFCFF",
+          "lightBlue1": "#BCE1F7",
+          "lightBlue2": "#76C2F3",
+          "lightPink": "#FBDDE4",
+          "loading": "#BFBFBF",
+          "navy": "#00003C",
+          "pink": "#FEACBE",
+          "red": "#FF511C",
+          "rocketBlue": "#0073D1",
+          "rocketBlueHover": "#0073EB",
+          "shadyLady": "#979797",
+          "white": "#FFFFFF",
+          "yellow": "#F0FF02",
+          "yellowHover": "#D8E320",
+        },
+        "fixedPosition": "relative",
+        "fonts": Object {
+          "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+          "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+          "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+        },
+        "grid": Object {
+          "columns": Object {
+            "desktop": 12,
+            "mobile": 4,
+            "tablet": 12,
+          },
+          "gutter": 2,
+          "margins": Object {
+            "desktop": "7%",
+            "mobile": "3%",
+            "tablet": "7%",
+          },
+        },
+        "media": Object {
+          "desktop": [Function],
+          "laptop": [Function],
+          "phone": [Function],
+          "phoneMax": [Function],
+          "tablet": [Function],
+          "tabletMax": [Function],
+        },
       }
     }
   >
-    <section
+    <BaseBackgroundVideo
       className="c0"
-    >
-      <WithTheme(Video)
-        aria-hidden={true}
-        sources={
-          Object {
-            "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
-            "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
-          }
+      size={
+        Object {
+          "width": 300,
         }
+      }
+      sources={
+        Object {
+          "desktop": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
+          "mobile": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
+        }
+      }
+      theme={
+        Object {
+          "base": undefined,
+          "breakpoints": Object {
+            "aboveDesktop": "(min-width: 1440px)",
+            "aboveLaptop": "(min-width: 1280px)",
+            "abovePhone": "(min-width: 320px)",
+            "abovePhoneMax": "(min-width: 414px)",
+            "aboveTablet": "(min-width: 768px)",
+            "aboveTabletMax": "(min-width: 960px)",
+            "belowDesktop": "(max-width: 1439px)",
+            "belowLaptop": "(max-width: 1279px)",
+            "belowPhone": "(max-width: 319px)",
+            "belowPhoneMax": "(max-width: 413px)",
+            "belowTablet": "(max-width: 767px)",
+            "belowTabletMax": "(max-width: 959px)",
+            "landscape": "(orientation: landscape)",
+            "portrait": "(orientation: portrait)",
+          },
+          "breakpointsVerbose": Object {
+            "aboveDesktop": [Function],
+            "aboveLaptop": [Function],
+            "abovePhone": [Function],
+            "abovePhoneMax": [Function],
+            "aboveTablet": [Function],
+            "aboveTabletMax": [Function],
+            "belowDesktop": [Function],
+            "belowLaptop": [Function],
+            "belowPhone": [Function],
+            "belowPhoneMax": [Function],
+            "belowTablet": [Function],
+            "belowTabletMax": [Function],
+            "landscape": [Function],
+            "portrait": [Function],
+          },
+          "colors": Object {
+            "black": "#000000",
+            "electricBlue": "#080CF1",
+            "flameOrange": "#FF511C",
+            "gray": Array [
+              "#F3F3F3",
+              "#F5F5F5",
+              "#F8F8F8",
+              "#E6E6E6",
+              "#D5D5D5",
+              "#CFCFCF",
+            ],
+            "gray0": "#F3F3F3",
+            "gray1": "#F5F5F5",
+            "gray2": "#F8F8F8",
+            "gray3": "#E6E6E6",
+            "gray4": "#D5D5D5",
+            "gray5": "#CFCFCF",
+            "lightBlue": Array [
+              "#EEFCFF",
+              "#BCE1F7",
+              "#76C2F3",
+            ],
+            "lightBlue0": "#EEFCFF",
+            "lightBlue1": "#BCE1F7",
+            "lightBlue2": "#76C2F3",
+            "lightPink": "#FBDDE4",
+            "loading": "#BFBFBF",
+            "navy": "#00003C",
+            "pink": "#FEACBE",
+            "red": "#FF511C",
+            "rocketBlue": "#0073D1",
+            "rocketBlueHover": "#0073EB",
+            "shadyLady": "#979797",
+            "white": "#FFFFFF",
+            "yellow": "#F0FF02",
+            "yellowHover": "#D8E320",
+          },
+          "fixedPosition": "relative",
+          "fonts": Object {
+            "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+            "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+            "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+          },
+          "grid": Object {
+            "columns": Object {
+              "desktop": 12,
+              "mobile": 4,
+              "tablet": 12,
+            },
+            "gutter": 2,
+            "margins": Object {
+              "desktop": "7%",
+              "mobile": "3%",
+              "tablet": "7%",
+            },
+          },
+          "media": Object {
+            "desktop": [Function],
+            "laptop": [Function],
+            "phone": [Function],
+            "phoneMax": [Function],
+            "tablet": [Function],
+            "tabletMax": [Function],
+          },
+        }
+      }
+    >
+      <section
+        className="c0"
       >
-        <Video
-          aria-hidden={true}
-          autoPlay={true}
-          loop={true}
-          muted={true}
-          playsInline={true}
-          sources={
-            Object {
-              "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
-              "768": "https://videos.ctfassets.net/8hhsfnb6grdi/4vn6I5vreD5xJGa24tBcLX/f9fa268493031b19e2610b4b4a66381d/ROA_Test01_1.mp4",
-            }
-          }
-          theme={
-            Object {
-              "base": undefined,
-              "breakpoints": Object {
-                "aboveDesktop": "(min-width: 1440px)",
-                "aboveLaptop": "(min-width: 1280px)",
-                "abovePhone": "(min-width: 320px)",
-                "abovePhoneMax": "(min-width: 414px)",
-                "aboveTablet": "(min-width: 768px)",
-                "aboveTabletMax": "(min-width: 960px)",
-                "belowDesktop": "(max-width: 1439px)",
-                "belowLaptop": "(max-width: 1279px)",
-                "belowPhone": "(max-width: 319px)",
-                "belowPhoneMax": "(max-width: 413px)",
-                "belowTablet": "(max-width: 767px)",
-                "belowTabletMax": "(max-width: 959px)",
-                "landscape": "(orientation: landscape)",
-                "portrait": "(orientation: portrait)",
-              },
-              "breakpointsVerbose": Object {
-                "aboveDesktop": [Function],
-                "aboveLaptop": [Function],
-                "abovePhone": [Function],
-                "abovePhoneMax": [Function],
-                "aboveTablet": [Function],
-                "aboveTabletMax": [Function],
-                "belowDesktop": [Function],
-                "belowLaptop": [Function],
-                "belowPhone": [Function],
-                "belowPhoneMax": [Function],
-                "belowTablet": [Function],
-                "belowTabletMax": [Function],
-                "landscape": [Function],
-                "portrait": [Function],
-              },
-              "colors": Object {
-                "black": "#000000",
-                "electricBlue": "#080CF1",
-                "flameOrange": "#FF511C",
-                "gray": Array [
-                  "#F3F3F3",
-                  "#F5F5F5",
-                  "#F8F8F8",
-                  "#E6E6E6",
-                  "#D5D5D5",
-                  "#CFCFCF",
-                ],
-                "gray0": "#F3F3F3",
-                "gray1": "#F5F5F5",
-                "gray2": "#F8F8F8",
-                "gray3": "#E6E6E6",
-                "gray4": "#D5D5D5",
-                "gray5": "#CFCFCF",
-                "lightBlue": Array [
-                  "#EEFCFF",
-                  "#BCE1F7",
-                  "#76C2F3",
-                ],
-                "lightBlue0": "#EEFCFF",
-                "lightBlue1": "#BCE1F7",
-                "lightBlue2": "#76C2F3",
-                "lightPink": "#FBDDE4",
-                "loading": "#BFBFBF",
-                "navy": "#00003C",
-                "pink": "#FEACBE",
-                "red": "#FF511C",
-                "rocketBlue": "#0073D1",
-                "rocketBlueHover": "#0073EB",
-                "shadyLady": "#979797",
-                "white": "#FFFFFF",
-                "yellow": "#F0FF02",
-                "yellowHover": "#D8E320",
-              },
-              "fixedPosition": "relative",
-              "fonts": Object {
-                "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
-                "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
-                "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
-              },
-              "grid": Object {
-                "columns": Object {
-                  "desktop": 12,
-                  "mobile": 4,
-                  "tablet": 12,
-                },
-                "gutter": 2,
-                "margins": Object {
-                  "desktop": "7%",
-                  "mobile": "3%",
-                  "tablet": "7%",
-                },
-              },
-              "media": Object {
-                "desktop": [Function],
-                "laptop": [Function],
-                "phone": [Function],
-                "phoneMax": [Function],
-                "tablet": [Function],
-                "tabletMax": [Function],
-              },
-            }
-          }
-        >
-          <div>
-            <MediaQuery
-              query="(min-width: 960px)"
-              values={Object {}}
-            />
-            <MediaQuery
-              query="(max-device-width: 959px)"
-              values={Object {}}
-            />
-          </div>
-        </Video>
-      </WithTheme(Video)>
-      <article>
-        <h1>
-          Hello
-        </h1>
-      </article>
-    </section>
-  </BaseBackgroundVideo>
-</Styled(BaseBackgroundVideo)>
+        <MediaQuery
+          query="(min-width: 960px)"
+          values={Object {}}
+        />
+        <MediaQuery
+          query="(max-width: 959px)"
+          values={Object {}}
+        />
+        <article>
+          <h1>
+            Hello
+          </h1>
+        </article>
+      </section>
+    </BaseBackgroundVideo>
+  </Styled(BaseBackgroundVideo)>
+</WithTheme(Styled(BaseBackgroundVideo))>
 `;
