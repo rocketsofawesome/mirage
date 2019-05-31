@@ -209,6 +209,7 @@ class BaseCartSidebar extends React.Component {
       removePromotion,
       appliedPromotion,
       renderProductLink,
+      pricingTestOn,
       currentUserEmail
     } = this.props
     if (!shouldShowCartSidebar) return null
@@ -231,15 +232,17 @@ class BaseCartSidebar extends React.Component {
               <CloseXDiv onClick={hideCartSidebar}>
                 <XIcon width='15px' stroke={'#00003C'} />
               </CloseXDiv>
-              <RiskReducerContainer>
-                <P fontSize='1.3rem'>
-                  <strong>
-                    you deserve a little awesome every day
-                    <span role='image' aria-label='hearts'>💕</span>
-                  </strong>
-                </P>
-                <P fontSize='1.2rem'>Buy 4+ items, get 20% off. always. automatically.</P>
-              </RiskReducerContainer>
+              {pricingTestOn &&
+                <RiskReducerContainer>
+                  <P fontSize='1.3rem'>
+                    <strong>
+                      you deserve a little awesome every day
+                      <span role='image' aria-label='hearts'>💕</span>
+                    </strong>
+                  </P>
+                  <P fontSize='1.2rem'>Buy 4+ items, get 20% off. always. automatically.</P>
+                </RiskReducerContainer>
+              }
               <FreeShippingDiv>
                 <FreeShippingText {...this.props} />
                 <ProgressBar percentage={percentage} />
@@ -310,6 +313,7 @@ BaseCartSidebar.propTypes = {
   removeItem: PropTypes.func,
   segmentCartViewed: PropTypes.func,
   lineItems: PropTypes.array,
+  pricingTestOn: PropTypes.bool,
   promotion: PropTypes.object,
   promotionLoading: PropTypes.bool,
   promoHasBeenApplied: PropTypes.bool,
@@ -323,7 +327,8 @@ BaseCartSidebar.propTypes = {
 
 BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
-  renderProductLink: renderLink
+  renderProductLink: renderLink,
+  pricingTestOn: true
 }
 
 const CartSidebar = styled(BaseCartSidebar)`
