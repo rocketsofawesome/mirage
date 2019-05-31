@@ -4,7 +4,11 @@ import { Elements } from 'react-stripe-elements'
 import styled from 'styled-components'
 import accounting from 'accounting'
 
-import { H3, H4, ButtonLink, ProgressBar, FreeShippingText, PersistentCartProductList, XIcon, PaymentRequestForm, CouponCodeWrapper } from 'SRC'
+import {
+  H3, H4, ButtonLink, ProgressBar, FreeShippingText,
+  PersistentCartProductList, XIcon, PaymentRequestForm,
+  CouponCodeWrapper, P
+} from 'SRC'
 
 const Overlay = styled.div`
   height: 100%;
@@ -43,21 +47,31 @@ const CartSidebarHeader = styled.div`
   justify-content: space-between;
 `
 
-const H5 = styled.h5`
+const ItemCount = styled.h5`
   text-align: center;
   justify-content: center;
-  width: 100%;
   color: ${props => props.theme.colors.navy};
   letter-spacing: 1px;
   font-weight: 200;
   font-size: 18px;
   font-family: ${props => props.theme.fonts.primaryFont};
-  margin: 0;
+  margin: 0 5px;
+  display: inline-block;
+`
+
+const TitleContainer = styled.div`
+  text-align: center;
 `
 
 const YourBagTitle = styled(H3)`
   text-align: center;
   margin-top: 0;
+  display: inline-block;
+`
+
+const RiskReducerContainer = styled.div`
+  text-transform: uppercase;
+  text-align: center;
 `
 
 const CloseXDiv = styled.div`
@@ -210,11 +224,22 @@ class BaseCartSidebar extends React.Component {
           tabIndex='-1'>
           <div>
             <CartSidebarHeader>
-              <YourBagTitle>Your bag</YourBagTitle>
+              <TitleContainer>
+                <YourBagTitle>Your bag</YourBagTitle>
+                <ItemCount>({itemsInBag} {itemsInBag !== 1 ? 'items' : 'item'})</ItemCount>
+              </TitleContainer>
               <CloseXDiv onClick={hideCartSidebar}>
                 <XIcon width='15px' stroke={'#00003C'} />
               </CloseXDiv>
-              <H5>{itemsInBag} {itemsInBag !== 1 ? 'items' : 'item'}</H5>
+              <RiskReducerContainer>
+                <P fontSize='1.3rem'>
+                  <strong>
+                    you deserve a little awesome every day
+                    <span role='image' aria-label='hearts'>💕</span>
+                  </strong>
+                </P>
+                <P fontSize='1.2rem'>Buy 4+ items, get 20% off. always. automatically.</P>
+              </RiskReducerContainer>
               <FreeShippingDiv>
                 <FreeShippingText {...this.props} />
                 <ProgressBar percentage={percentage} />
