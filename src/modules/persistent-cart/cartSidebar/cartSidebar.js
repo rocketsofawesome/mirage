@@ -237,7 +237,7 @@ class BaseCartSidebar extends React.Component {
                   <P fontSize='1.3rem'>
                     <strong>
                       you deserve a little awesome every day
-                      <span role='image' aria-label='hearts'>💕</span>
+                      <span role='img' aria-label='hearts'>💕</span>
                     </strong>
                   </P>
                   <P fontSize='1.2rem'>Buy 4+ items, get 20% off. always. automatically.</P>
