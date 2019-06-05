@@ -40,7 +40,7 @@ const DATE_FORMAT_OPTIONS = { weekday: 'long', year: 'numeric', month: 'long', d
 class BaseEmailCapture extends React.Component {
   constructor (props) {
     super(props)
-    this.state = { emailSubmitted: true }
+    this.state = { emailSubmitted: false }
   }
 
   dateDisplay = () => {
