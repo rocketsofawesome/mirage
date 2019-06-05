@@ -10,25 +10,7 @@ class BaseBackgroundVideo extends React.Component {
     const { className, children, mobileFallback, desktopFallback, sources, theme } = this.props
     return (
       <section className={className}>
-         <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-           <Video
-            sources={sources.desktop}
-            aria-hidden>
-              {desktopFallback && <InlineImage {...desktopFallback} />}
-            </Video>
-          </MediaQuery>
-          <MediaQuery query={theme.breakpoints.belowTabletMax}>
-            <Video
-             sources={sources.mobile}
-             aria-hidden>
-             {mobileFallback &&
-               <InlineImage
-               className='roa-video-fallback'
-               {...mobileFallback} />
-             }
-             </Video>
-
-          </MediaQuery>
+        <Video sources={sources} mobileFallback={mobileFallback} desktopFallback={desktopFallback} />
         <article>{children}</article>
       </section>
     )
