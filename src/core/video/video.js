@@ -1,22 +1,58 @@
 import React from 'react'
-import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import MediaQuery from 'react-responsive'
+import { withTheme } from 'styled-components'
 import Source from './sources.base'
 
 class Video extends React.Component {
+  constructor (props) {
+    super(props)
+    this.video = null
+  }
+
+  setVideoRef = (element) => {
+    this.video = element
+  }
+
+  componentDidMount () {
+    if (this.video) {
+      this.video.load()
+      this.video.play()
+    }
+  }
+
+  componentDidUpdate () {
+    if (this.video) {
+      this.video.load()
+      this.video.play()
+    }
+  }
+
   render () {
-    const {children, sources: inSources, ...props} = this.props
-    let sources = []
+    const {children, sources: inSources, mobileFallback, desktopFallback, theme, ...props} = this.props
+    let mobileSources = []
+    let desktopSources = []
     if (inSources) {
-      sources = new Source(inSources).render()
+      mobileSources = new Source(inSources[0]).render()
+      desktopSources = new Source(inSources[768]).render()
     }
     return (
-      <video {...props}>
-        {sources.map((source, key) => {
-          return source
-        })}
-        {children && children}
-      </video>
+      <div>
+        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+          <video poster={desktopFallback} ref={this.setVideoRef} {...props}>
+            {desktopSources.map((source, key) => source)}
+            {desktopFallback && <img src={desktopFallback} alt='Desktop Fallback'/>}
+            {children && children}
+          </video>
+        </MediaQuery>
+        <MediaQuery query="(max-device-width: 959px)">
+          <video poster={mobileFallback} ref={this.setVideoRef} {...props}>
+            {mobileSources.map((source, key) => source)}
+            {mobileFallback && <img src={mobileFallback} alt='Mobile Fallback'/>}
+            {children && children}
+          </video>
+        </MediaQuery>
+      </div>
     )
   }
 }
@@ -24,8 +60,12 @@ class Video extends React.Component {
 Video.propTypes = {
   sources: PropTypes.oneOfType([
     PropTypes.string,
-    PropTypes.array
+    PropTypes.array,
+    PropTypes.object
   ]),
+  mobileFallback: PropTypes.string,
+  desktopFallback: PropTypes.string,
+  theme: PropTypes.object
 }
 
 Video.defaultProps = {
@@ -36,4 +76,4 @@ Video.defaultProps = {
 }
 
 /** @component */
-export default styled(Video)``
+export default withTheme(Video)
