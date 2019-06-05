@@ -48,7 +48,6 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
       className="c0"
     >
       <WithTheme(Video)
-        aria-hidden={true}
         sources={
           Object {
             "0": "https://videos.ctfassets.net/8hhsfnb6grdi/7Iiffn2YxDIeMNqnG80As5/01aa536f3cd8ce2daa6d33b9b9c21543/ROA_Test01_Mobile.mp4",
@@ -57,7 +56,6 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         }
       >
         <Video
-          aria-hidden={true}
           autoPlay={true}
           loop={true}
           muted={true}
@@ -72,41 +70,24 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
             Object {
               "base": undefined,
               "breakpoints": Object {
-                "aboveDesktop": "(min-width: 1440px)",
-                "aboveLaptop": "(min-width: 1280px)",
-                "abovePhone": "(min-width: 320px)",
-                "abovePhoneMax": "(min-width: 414px)",
-                "aboveTablet": "(min-width: 768px)",
-                "aboveTabletMax": "(min-width: 960px)",
-                "belowDesktop": "(max-width: 1439px)",
-                "belowLaptop": "(max-width: 1279px)",
-                "belowPhone": "(max-width: 319px)",
-                "belowPhoneMax": "(max-width: 413px)",
-                "belowTablet": "(max-width: 767px)",
-                "belowTabletMax": "(max-width: 959px)",
+                "aboveDesktop": "(min-device-width: 1440px)",
+                "aboveLaptop": "(min-device-width: 1280px)",
+                "abovePhone": "(min-device-width: 320px)",
+                "abovePhoneMax": "(min-device-width: 414px)",
+                "aboveTablet": "(min-device-width: 768px)",
+                "aboveTabletMax": "(min-device-width: 960px)",
+                "belowDesktop": "(max-device-width: 1440px)",
+                "belowLaptop": "(max-device-width: 1280px)",
+                "belowPhone": "(max-device-width: 320px)",
+                "belowPhoneMax": "(max-device-width: 414px)",
+                "belowTablet": "(max-device-width: 768px)",
+                "belowTabletMax": "(max-device-width: 960px)",
                 "landscape": "(orientation: landscape)",
                 "portrait": "(orientation: portrait)",
-              },
-              "breakpointsVerbose": Object {
-                "aboveDesktop": [Function],
-                "aboveLaptop": [Function],
-                "abovePhone": [Function],
-                "abovePhoneMax": [Function],
-                "aboveTablet": [Function],
-                "aboveTabletMax": [Function],
-                "belowDesktop": [Function],
-                "belowLaptop": [Function],
-                "belowPhone": [Function],
-                "belowPhoneMax": [Function],
-                "belowTablet": [Function],
-                "belowTabletMax": [Function],
-                "landscape": [Function],
-                "portrait": [Function],
               },
               "colors": Object {
                 "black": "#000000",
                 "electricBlue": "#080CF1",
-                "flameOrange": "#FF511C",
                 "gray": Array [
                   "#F3F3F3",
                   "#F5F5F5",
@@ -136,7 +117,6 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
                 "red": "#FF511C",
                 "rocketBlue": "#0073D1",
                 "rocketBlueHover": "#0073EB",
-                "shadyLady": "#979797",
                 "white": "#FFFFFF",
                 "yellow": "#F0FF02",
                 "yellowHover": "#D8E320",
@@ -173,7 +153,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         >
           <div>
             <MediaQuery
-              query="(min-width: 960px)"
+              query="(min-device-width: 960px)"
               values={Object {}}
             />
             <MediaQuery
