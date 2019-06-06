@@ -85,6 +85,7 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     onMouseEnter={this.closeDrawers}
                     onFocus={this.closeDrawers}
+                    href={homepageUrl}
                     highlightable={false}
                     renderLink={renderLink}
                     spacing={false}>
