@@ -11,7 +11,7 @@ class BaseEmailCaptureForm extends React.Component {
       <div className={className}>
         <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
           <form onSubmit={onEmailSubmit}>
-            <Input style={{ marginBottom: '1rem' }} label={'enter your email'} />
+            <Input style={{ marginBottom: '1rem', width: '100%', boxSizing: 'border-box' }} label={'enter your email'} />
             <YellowButton style={{ transform: 'none' }} type='submit' width='242px'>
               Sign Up
             </YellowButton>
