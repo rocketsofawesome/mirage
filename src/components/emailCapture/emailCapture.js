@@ -94,6 +94,8 @@ class BaseEmailCapture extends React.Component {
 
 const EmailCapture = styled(BaseEmailCapture)`
   display: flex;
+  width: 100%;
+  box-sizing: border-box;
   padding: 2em;
 
   background-image: url('${cloudinary.url('Lightning_Bolt_nkv7ua')}');
