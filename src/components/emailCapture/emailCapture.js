@@ -2,18 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { FlexCol, H1, H2, P } from 'SRC'
+import { FlexCol, H3, P } from 'SRC'
 import EmailCaptureForm from './emailCaptureForm'
 import cloudinary from 'SRC/services/cloudinary'
 
 const SubscriptionBox = styled.div`
-  border: 2px solid ${props => props.theme.colors.rocketBlue};
+  border: 2px solid ${props => props.theme.colors.electricBlue};
   background-color: ${props => props.theme.colors.white};
+  padding: 0px 2rem;
 `
 
 const ConfirmationBox = styled.div`
-  border: 2px solid ${props => props.theme.colors.rocketBlue};
+  border: 2px solid ${props => props.theme.colors.electricBlue};
   background-color: ${props => props.theme.colors.yellow};
+  padding: 0px 2rem;
+
   ${props => props.theme.breakpointsVerbose.belowTabletMax`
     padding: 0.5rem;
   `}
@@ -50,12 +53,20 @@ class BaseEmailCapture extends React.Component {
   }
 
   submitEmail = (event) => {
+    event.preventDefault()
+
     const { emailSubmit } = this.props
-    this.setState({ emailSubmitted: true }, emailSubmit(event.target[0].value))
+    const email = event.target[0].value
+
+    if (email && email !== "") {
+      this.setState({ emailSubmitted: true }, emailSubmit(email))
+    } else {
+      this.setState({ errorMessage: 'Please enter your email address' })
+    }
   }
 
   render () {
-    const { emailSubmitted } = this.state
+    const { emailSubmitted, errorMessage } = this.state
     const { className, promoCode } = this.props
 
     return (
@@ -63,23 +74,23 @@ class BaseEmailCapture extends React.Component {
         {!emailSubmitted &&
           <FlexCol mobile={{width: 10}} desktop={{width: 6, span: 3}}>
             <SubscriptionBox>
-              <H1>
-                Sign up for Awesome + Get 10% off your first purchase 
+              <H3 lowercase>
+                Sign up for Awesome + Get 10% off your first purchase
                 <span role='img' aria-label='rocket'> 🚀</span>
-              </H1>
-              <EmailCaptureForm onEmailSubmit={this.submitEmail} />
+              </H3>
+              <EmailCaptureForm onEmailSubmit={this.submitEmail} errorMessage={errorMessage} />
             </SubscriptionBox>
           </FlexCol>
         }
         {emailSubmitted &&
           <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
             <ConfirmationBox>
-              <H1>
+              <H3 lowercase>
                 Thanks! Your code for 10% off your first purchase is:
-              </H1>
+              </H3>
               <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
                 <PromoCodeBox>
-                  <H2>{promoCode}</H2>
+                  <H3>{promoCode}</H3>
                 </PromoCodeBox>
                 <P>For new customers only. Cannot be used on subscription orders.
                 Offer expires on {this.dateDisplay()}.</P>
@@ -98,15 +109,12 @@ const EmailCapture = styled(BaseEmailCapture)`
   box-sizing: border-box;
   padding: 2em;
 
-  background-image: url('${cloudinary.url('Lightning_Bolt_nkv7ua')}');
-  background-repeat: repeat;
+  background-image: url('${cloudinary.url('web/box/d_flat_rate_return_header')}');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
-  ${H1} {
-    text-align: center;
-    margin: 5.5rem 2rem;
-  }
-
-  ${H2} {
+  ${H3} {
     text-align: center;
   }
 
@@ -124,4 +132,5 @@ EmailCapture.propTypes = {
   className: PropTypes.string
 }
 
+/** @component */
 export default EmailCapture
