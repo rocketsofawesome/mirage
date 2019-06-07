@@ -118,6 +118,10 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 
 .c2:active,
@@ -357,6 +361,10 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 
 .c2:active,
@@ -491,7 +499,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
                 target="/shop/login"
               >
                 <span>
-                  Log In
+                  Login
                 </span>
               </a>
             </Component>

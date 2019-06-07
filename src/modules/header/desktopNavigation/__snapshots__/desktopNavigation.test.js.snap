@@ -746,6 +746,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
+                      href="https://rocketsofawesome.com"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       renderLink={[Function]}
@@ -755,6 +756,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c4"
                         highlightOn="hover"
                         highlightable={false}
+                        href="https://rocketsofawesome.com"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         renderLink={[Function]}
@@ -762,6 +764,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       >
                         <Styled(Styled(Component))
                           className="c3 c4"
+                          href="https://rocketsofawesome.com"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -776,6 +779,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
+                            href="https://rocketsofawesome.com"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -790,6 +794,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
+                              href="https://rocketsofawesome.com"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -801,6 +806,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c4 c5 c6"
                                 fontStyle="normal"
+                                href="https://rocketsofawesome.com"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
@@ -4614,7 +4620,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com?view=subscribe"
+                      href="https://rocketsofawesome.com/subscribe-and-save"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       spacing={true}
@@ -4623,14 +4629,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com?view=subscribe"
+                        href="https://rocketsofawesome.com/subscribe-and-save"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
-                          href="https://rocketsofawesome.com?view=subscribe"
+                          href="https://rocketsofawesome.com/subscribe-and-save"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -4644,7 +4650,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com?view=subscribe"
+                            href="https://rocketsofawesome.com/subscribe-and-save"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -4658,7 +4664,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com?view=subscribe"
+                              href="https://rocketsofawesome.com/subscribe-and-save"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -4669,7 +4675,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com?view=subscribe"
+                                href="https://rocketsofawesome.com/subscribe-and-save"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}

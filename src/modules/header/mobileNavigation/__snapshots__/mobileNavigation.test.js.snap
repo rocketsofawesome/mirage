@@ -99,7 +99,7 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
           background="transparent"
           fontFamily="\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif"
           fontSize="2.6rem"
-          href="https://rocketsofawesome.com?view=subscribe"
+          href="https://rocketsofawesome.com/subscribe-and-save"
           underline={false}
           uppercase={true}
         >

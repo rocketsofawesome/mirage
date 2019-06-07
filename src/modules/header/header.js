@@ -9,16 +9,17 @@ const BaseHeader = ({
   below,
   className,
   desktopProps,
-  mobileProps
+  mobileProps,
+  ...props
 }) => {
   return (
     <div className={className}>
       {above}
       <Default>
-        <MobileNavigation {...mobileProps} />
+        <MobileNavigation {...props} {...mobileProps} />
       </Default>
       <Desktop>
-        <DesktopNavigation {...desktopProps} />
+        <DesktopNavigation {...props} {...desktopProps} />
       </Desktop>
       {below}
     </div>
