@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 import {
   Accordion,
   BagIcon,
@@ -16,7 +17,9 @@ import {
 
 import { theme } from 'SRC/core/theme'
 
-export class MobileNavigation extends React.Component {
+const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
+
+export class BaseMobileNavigation extends React.Component {
   constructor (props) {
     super(props)
 
@@ -44,9 +47,13 @@ export class MobileNavigation extends React.Component {
       renderLink,
       isSubscriptionMember,
       bagCount,
-      clickBag
+      clickBag,
+      showBlog,
+      outfitNav
     } = this.props
+
     const { open } = this.state
+
     return (
       <div className={className}>
         <MobileHeader>
@@ -110,17 +117,31 @@ export class MobileNavigation extends React.Component {
                 </li>
               </UL>
             </li>
-
+            {outfitNav &&
+              <li>
+                <MobileLinkTop
+                  href={`${homepageUrl}/outfits`}>
+                  Outfits
+                </MobileLinkTop>
+              </li>
+            }
             {!isSubscriptionMember &&
               <li>
                 <MobileLinkTop
-                  href={`${homepageUrl}?view=subscribe`}>
+                  href={`${homepageUrl}/subscribe-and-save`}>
                   Subscribe + Save
                 </MobileLinkTop>
               </li>
             }
             {isSubscriptionMember &&
               <div>
+              <li>
+                <MobileLinkTop
+                  target='/box'
+                  renderLink={renderLink}>
+                  Box
+                </MobileLinkTop>
+              </li>
                 <li>
                   <MobileLinkTop
                     target='/invite'
@@ -150,7 +171,14 @@ export class MobileNavigation extends React.Component {
                 <MobileLinkTop
                   target='/shop/login'
                   renderLink={renderLink}>
-                  Log In
+                  Login
+                </MobileLinkTop>
+              </li>
+            }
+            {showBlog &&
+              <li>
+                <MobileLinkTop href={`https://news.rocketsofawesome.com`}>
+                  Blog
                 </MobileLinkTop>
               </li>
             }
@@ -159,17 +187,24 @@ export class MobileNavigation extends React.Component {
                 isSubscriptionMember={isSubscriptionMember}
                 renderLink={renderLink} />
             }
-            <li>
-              <MobileLinkTop href={`https://news.rocketsofawesome.com`}>
-                Blog
-              </MobileLinkTop>
-            </li>
           </UL>
         </MenuDrawer>
       </div>
     )
   }
 }
+
+const MobileNavigation = styled(BaseMobileNavigation)`
+  ${Logo} {
+    max-width: 22.4rem;
+  }
+  ul ul {
+    margin-bottom: 2rem;
+  }
+  ul ul ul {
+    margin-bottom: 0;
+  }
+`
 
 MobileNavigation.propTypes = {
   drawerPosition: PropTypes.string,
@@ -187,7 +222,9 @@ MobileNavigation.propTypes = {
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
   bagCount: 5,
-  homepageUrl: 'https://rocketsofawesome.com'
+  homepageUrl: 'https://rocketsofawesome.com',
+  outfitNav: REACT_APP_OUTFIT_NAV,
+  showBlog: REACT_APP_SHOW_BLOG_LINK
 }
 
 /** @component */

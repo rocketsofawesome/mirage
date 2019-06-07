@@ -15,6 +15,7 @@ const HeaderLink = styled(BaseHeaderLink)`
   height: 6rem;
   align-items: center;
   text-decoration: none;
+  letter-spacing: 0.1rem
   &:active, &:visited {
     color: ${props => props.theme.colors.rocketBlue};
   }

@@ -54,7 +54,7 @@ export class BaseAccountLinks extends React.Component {
           renderLink={renderLink}
           highlightable={highlightable}
           {...props} >
-            Log In
+            Login
         </HeaderLink>
       )
     }

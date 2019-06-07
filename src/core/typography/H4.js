@@ -9,7 +9,7 @@ const H4 = styled.h4`
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   font-weight: 500;
-  font-style: italic;
+  font-style: ${props => props.italic && 'italic'};
   line-height: 1;
   margin: ${props => props.margin};
 `
@@ -20,6 +20,7 @@ H4.propTypes = {
     PropTypes.string,
     PropTypes.object
   ]),
+  italic: PropTypes.bool,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string
@@ -32,7 +33,8 @@ H4.propTypes = {
 
 H4.defaultProps = {
   fontSize: '1.8rem',
-  margin: '2.3rem 0'
+  margin: '2.3rem 0',
+  italic: true
 }
 
 /** @component */
