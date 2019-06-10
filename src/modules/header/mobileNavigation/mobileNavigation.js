@@ -58,7 +58,13 @@ export class BaseMobileNavigation extends React.Component {
       <div className={className}>
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
-          <Logo />
+          <MobileLinkTop
+            style={{marginBottom: '0'}}
+            href={homepageUrl}
+            renderLink={renderLink}>
+            <span className='screenReader'>Home</span>
+            <Logo  />
+          </MobileLinkTop>
           <a onClick={clickBag}>
             <BagIcon count={bagCount} />
           </a>
@@ -197,6 +203,9 @@ export class BaseMobileNavigation extends React.Component {
 }
 
 const MobileNavigation = styled(BaseMobileNavigation)`
+  .screenReader {
+    font-size: 0;
+  }
   ${Logo} {
     max-width: 22.4rem;
   }
