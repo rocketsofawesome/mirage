@@ -59,7 +59,9 @@ export class BaseMobileNavigation extends React.Component {
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
           <Logo />
-          <BagIcon onClick={clickBag} count={bagCount}/>
+          <a onClick={clickBag}>
+            <BagIcon count={bagCount} />
+          </a>
         </MobileHeader>
         <MenuDrawer
           open={open}
