@@ -9,6 +9,7 @@ import cloudinary from 'SRC/services/cloudinary'
 const SubscriptionBox = styled.div`
   border: 2px solid ${props => props.theme.colors.electricBlue};
   background-color: ${props => props.theme.colors.white};
+  max-width: 400px;
   padding: 0px 2rem;
 `
 
@@ -16,6 +17,7 @@ const ConfirmationBox = styled.div`
   border: 2px solid ${props => props.theme.colors.electricBlue};
   background-color: ${props => props.theme.colors.yellow};
   padding: 0px 2rem;
+  max-width: 400px;
 
   ${props => props.theme.breakpointsVerbose.belowTabletMax`
     padding: 0.5rem;
@@ -72,31 +74,27 @@ class BaseEmailCapture extends React.Component {
     return (
       <div className={className}>
         {!emailSubmitted &&
-          <FlexCol mobile={{width: 10}} desktop={{width: 6, span: 3}}>
-            <SubscriptionBox>
-              <H3 lowercase>
-                Sign up for Awesome + Get 10% off your first purchase
-                <span role='img' aria-label='rocket'> 🚀</span>
-              </H3>
-              <EmailCaptureForm onEmailSubmit={this.submitEmail} errorMessage={errorMessage} />
-            </SubscriptionBox>
-          </FlexCol>
+          <SubscriptionBox>
+            <H3 lowercase>
+              Sign up for Awesome + Get 10% off your first purchase
+              <span role='img' aria-label='rocket'> 🚀</span>
+            </H3>
+            <EmailCaptureForm onEmailSubmit={this.submitEmail} errorMessage={errorMessage} />
+          </SubscriptionBox>
         }
         {emailSubmitted &&
-          <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
-            <ConfirmationBox>
-              <H3 lowercase>
-                Thanks! Your code for 10% off your first purchase is:
-              </H3>
-              <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
-                <PromoCodeBox>
-                  <H3>{promoCode}</H3>
-                </PromoCodeBox>
-                <P>For new customers only. Cannot be used on subscription orders.
-                Offer expires on {this.dateDisplay()}.</P>
-              </FlexCol>
-            </ConfirmationBox>
-          </FlexCol>
+          <ConfirmationBox>
+            <H3 lowercase>
+              Thanks! Your code for 10% off your first purchase is:
+            </H3>
+            <FlexCol mobile={{width: 4}} desktop={{width: 8, span: 2}}>
+              <PromoCodeBox>
+                <H3>{promoCode}</H3>
+              </PromoCodeBox>
+              <P>For new customers only. Cannot be used on subscription orders.
+              Offer expires on {this.dateDisplay()}.</P>
+            </FlexCol>
+          </ConfirmationBox>
         }
       </div>
     )
@@ -105,6 +103,7 @@ class BaseEmailCapture extends React.Component {
 
 const EmailCapture = styled(BaseEmailCapture)`
   display: flex;
+  justify-content: center;
   width: 100%;
   box-sizing: border-box;
   padding: 2em;
