@@ -14,6 +14,11 @@ exports[`(Styled Component) MobileLinkTop matching the snapshot 1`] = `
   background-color: transparent;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  -webkit-letter-spacing: 0.04rem;
+  -moz-letter-spacing: 0.04rem;
+  -ms-letter-spacing: 0.04rem;
+  letter-spacing: 0.04rem;
+  margin-bottom: 2rem;
 }
 
 .c0:active,

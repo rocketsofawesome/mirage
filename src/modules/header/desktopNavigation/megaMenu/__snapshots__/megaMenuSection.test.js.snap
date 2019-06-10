@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
-.c3 {
+.c4 {
   -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   -webkit-text-decoration: none;
@@ -15,24 +15,24 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   font-style: normal;
 }
 
-.c3:hover {
+.c4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer: cursor;
 }
 
+.c3 {
+  color: #00003C;
+}
+
+.c3:active,
+.c3:focus,
+.c3:hover,
+.c3:visited {
+  color: #00003C;
+}
+
 .c2 {
-  color: #00003C;
-}
-
-.c2:active,
-.c2:focus,
-.c2:hover,
-.c2:visited {
-  color: #00003C;
-}
-
-.c1 {
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -41,13 +41,17 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
-  font-style: italic;
   line-height: 1;
   margin: 2.3rem 0;
 }
 
 .c0 {
   padding-left: 0;
+}
+
+.c0 .c1 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 
 .c0 > li {
@@ -206,10 +210,11 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
     >
       <styled.h4
         fontSize="1.8rem"
+        italic={false}
         margin="2.3rem 0"
       >
         <h4
-          className="c1"
+          className="c1 c2"
           fontSize="1.8rem"
         >
           Shop by Category
@@ -239,7 +244,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -252,7 +257,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -265,7 +270,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -302,7 +307,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -315,7 +320,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -328,7 +333,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -365,7 +370,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -378,7 +383,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -391,7 +396,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -428,7 +433,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -441,7 +446,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -454,7 +459,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -491,7 +496,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -504,7 +509,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -517,7 +522,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -554,7 +559,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -567,7 +572,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -580,7 +585,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -617,7 +622,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -630,7 +635,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -643,7 +648,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -680,7 +685,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -693,7 +698,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -706,7 +711,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -743,7 +748,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -756,7 +761,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -769,7 +774,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -806,7 +811,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -819,7 +824,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -832,7 +837,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -869,7 +874,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -882,7 +887,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -895,7 +900,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
@@ -932,7 +937,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
             underline={false}
           >
             <Styled(Component)
-              className="c2"
+              className="c3"
               fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
               fontSize="1.4rem"
               fontStyle="normal"
@@ -945,7 +950,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
               uppercase={false}
             >
               <Component
-                className="c2 c3"
+                className="c3 c4"
                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                 fontSize="1.4rem"
                 fontStyle="normal"
@@ -958,7 +963,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 uppercase={false}
               >
                 <a
-                  className="c2 c3"
+                  className="c3 c4"
                   fontStyle="normal"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}

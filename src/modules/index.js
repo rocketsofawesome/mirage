@@ -1,6 +1,7 @@
 export * from './forms'
 export * from './header'
 export * from './images'
+export * from './layout'
 export * from './social-media'
 export * from './outfits'
 export * from './complete-account'

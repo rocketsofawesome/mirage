@@ -1,29 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 
 import { Desktop, Default, DesktopNavigation, MobileNavigation } from 'SRC'
 
-const BaseHeader = ({
-  above,
-  below,
-  className,
-  desktopProps,
-  mobileProps,
-  ...props
-}) => {
-  return (
-    <div className={className}>
-      {above}
-      <Default>
-        <MobileNavigation {...props} {...mobileProps} />
-      </Default>
-      <Desktop>
-        <DesktopNavigation {...props} {...desktopProps} />
-      </Desktop>
-      {below}
-    </div>
-  )
+class BaseHeader extends React.Component {
+  constructor (props) {
+    super(props)
+    this.header = null
+  }
+
+  setMargin = () => {
+    const { setMargin, theme: { basePxSize } } = this.props
+    const remHeight = (this.header.clientHeight / basePxSize)
+    setMargin(remHeight)
+  }
+
+  componentDidMount () {
+    this.setMargin()
+  }
+
+  componentDidUpdate () {
+    this.setMargin()
+  }
+
+  render() {
+    const {
+      above,
+      below,
+      className,
+      desktopProps,
+      mobileProps,
+      ...props
+    } = this.props
+    return (
+      <div className={className} ref={(element) => { this.header = element }}>
+        {above}
+        <Default>
+          <MobileNavigation {...props} {...mobileProps} />
+        </Default>
+        <Desktop>
+          <DesktopNavigation {...props} {...desktopProps} />
+        </Desktop>
+        {below}
+      </div>
+    )
+  }
 }
 
 const Header = styled(BaseHeader)`
@@ -41,8 +63,9 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  position: 'fixed'
+  position: 'fixed',
+  setMargin: () => {}
 }
 
 /** @component */
-export default Header
+export default withTheme(Header)

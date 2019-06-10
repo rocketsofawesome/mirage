@@ -16,6 +16,10 @@ exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
 }
 
 .c0:active,
