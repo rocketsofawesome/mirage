@@ -25,6 +25,7 @@ export class BaseMainLayout extends React.Component {
     const {
       className,
       children,
+      footerProps,
       headerProps
     } = this.props
     const { contentTopMargin } = this.state
@@ -34,7 +35,7 @@ export class BaseMainLayout extends React.Component {
         <article style={{marginTop: contentTopMargin}}>
           {children}
         </article>
-        <Footer />
+        <Footer {...footerProps} />
       </main>
     )
   }
