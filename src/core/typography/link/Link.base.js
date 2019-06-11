@@ -34,7 +34,8 @@ const BaseLink = styled(({ renderLink, children, ...props }) => {
   if (renderLink) {
     return renderLink({...props, children: children})
   } else {
-    return (<a {...props}>{children}</a>)
+    const { target, ...rest } = props
+    return (<a href={target} {...rest}>{children}</a>)
   }
 })`
   ${baseLinkStyles}
