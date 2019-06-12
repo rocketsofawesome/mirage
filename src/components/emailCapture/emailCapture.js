@@ -76,7 +76,7 @@ class BaseEmailCapture extends React.Component {
         {!emailSubmitted &&
           <SubscriptionBox>
             <H3 lowercase>
-              Sign up for Awesome + Get 10% off your first purchase
+              Sign up for Awesome + get 10% off your first purchase
               <span role='img' aria-label='rocket'> 🚀</span>
             </H3>
             <EmailCaptureForm onEmailSubmit={this.submitEmail} errorMessage={errorMessage} />
