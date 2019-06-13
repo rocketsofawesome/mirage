@@ -21,13 +21,6 @@ class Video extends React.Component {
     }
   }
 
-  componentDidUpdate () {
-    if (this.video) {
-      this.video.load()
-      this.video.play()
-    }
-  }
-
   render () {
     const {children, sources: inSources, mobileFallback, desktopFallback, theme, ...props} = this.props
     let mobileSources = []
