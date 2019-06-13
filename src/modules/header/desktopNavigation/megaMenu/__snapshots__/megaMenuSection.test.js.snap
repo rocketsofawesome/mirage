@@ -272,9 +272,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Shop New
                 </a>
@@ -335,9 +335,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Best Sellers
                 </a>
@@ -398,9 +398,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Graphics Shop
                 </a>
@@ -461,9 +461,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Tees & Tops
                 </a>
@@ -524,9 +524,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Sweatshirts
                 </a>
@@ -587,9 +587,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Dresses & Skirts
                 </a>
@@ -650,9 +650,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Leggings & Sweatpants
                 </a>
@@ -713,9 +713,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Active
                 </a>
@@ -776,9 +776,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Outerwear
                 </a>
@@ -839,9 +839,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Swim
                 </a>
@@ -902,9 +902,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Accessories
                 </a>
@@ -965,9 +965,9 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
                 <a
                   className="c3 c4"
                   fontStyle="normal"
+                  href="#"
                   onBlur={[Function]}
                   onMouseLeave={[Function]}
-                  target="#"
                 >
                   Shop All
                 </a>
