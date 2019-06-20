@@ -25,10 +25,10 @@ describe('(Styled Component) DesktopAccountLinks', () => {
       .toMatchSnapshot()
     })
 
-    test('rendering the Login link', () => {
+    test('rendering the Log In link', () => {
       expect(
         createDesktopAccountLinks(loggedOutProps)
-        .contains('Login')
+        .contains('Log In')
       ).toBeTruthy()
     })
 

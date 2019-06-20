@@ -1,6 +1,7 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+
+import BaseFlexRow from './flexRow.base'
 
 const constrained = css`
   max-width: 1440px;
@@ -24,16 +25,13 @@ const padding = css`
   `}
 `
 
-const FlexRow = styled(({ children, element, ...props }) => {
-  delete props.constrained
-  return React.createElement(element, props, children)
-})`
+const FlexRow = styled(BaseFlexRow)`
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
   ${props => props.constrained ? constrained : notConstrained}
   ${props => props.padding && padding}
-  align-items: ${props => props.align || 'stretch'}
+  align-content: ${props => props.align}
 `
 
 FlexRow.propTypes = {
@@ -46,7 +44,8 @@ FlexRow.propTypes = {
 }
 
 FlexRow.defaultProps = {
-  element: 'div'
+  element: 'div',
+  align: 'flex-start'
 }
 /** @component */
 export default FlexRow

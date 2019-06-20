@@ -11,8 +11,6 @@ const MobileLinkTop = styled(Link)`
   background-color: ${props => props.background};
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  letter-spacing: 0.04rem;
-  margin-bottom: 2rem;
   &:active, &:focus, &:hover, &:visited {
     color: ${props => props.theme.colors.rocketBlue};
   }

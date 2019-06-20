@@ -12,8 +12,6 @@ import {
 } from 'SRC'
 import { girls, boys, renderLink } from './defaultProps'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
-
 export class BaseDesktopNavigation extends React.Component {
   constructor(props) {
     super(props)
@@ -66,8 +64,6 @@ export class BaseDesktopNavigation extends React.Component {
       bagCount,
       homepageUrl,
       clickBag,
-      outfitNav,
-      showBlog,
       ...props
     } = this.props
     const {
@@ -89,7 +85,6 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     onMouseEnter={this.closeDrawers}
                     onFocus={this.closeDrawers}
-                    href={homepageUrl}
                     highlightable={false}
                     renderLink={renderLink}
                     spacing={false}>
@@ -127,30 +122,17 @@ export class BaseDesktopNavigation extends React.Component {
                     animationLength={animationLength}
                     {...boysState} />
                 </li>
-                {outfitNav &&
-                  <li>
+                <li>
+                  {!isSubscriptionMember &&
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      href={`${homepageUrl}/outfits`}
-                      highlightable={highlightable}>
-                        Outfits
-                    </HeaderLink>
-                  </li>
-                }
-                {!isSubscriptionMember &&
-                  <li>
-                    <HeaderLink
-                      onMouseEnter={this.closeDrawers}
-                      onFocus={this.closeDrawers}
-                      href={`${homepageUrl}/subscribe-and-save`}
+                      href={`${homepageUrl}?view=subscribe`}
                       highlightable={highlightable}>
                         Subscribe + Save
                     </HeaderLink>
-                  </li>
-                }
-                {isSubscriptionMember &&
-                  <li>
+                  }
+                  {isSubscriptionMember &&
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
@@ -159,35 +141,16 @@ export class BaseDesktopNavigation extends React.Component {
                       renderLink={renderLink}>
                         My Subscription
                     </HeaderLink>
-                  </li>
-                }
-                {isSubscriptionMember &&
-                  <li>
-                    <HeaderLink
-                      onMouseEnter={this.closeDrawers}
-                      onFocus={this.closeDrawers}
-                      highlightable={highlightable}
-                      target='/invite'
-                      renderLink={renderLink}>
-                        Free Clothes
-                    </HeaderLink>
-                  </li>
-                }
-                {showBlog &&
-                  <span>|</span>
-                }
-                {showBlog &&
-                  <li>
-                    <HeaderLink
-                      onMouseEnter={this.closeDrawers}
-                      onFocus={this.closeDrawers}
-                      highlightable={highlightable}
-                      target='https://news.rocketsofawesome.com/'
-                      renderLink={renderLink}>
-                        Blog
-                      </HeaderLink>
-                  </li>
-                }
+                  }
+                </li>
+                <span>|</span>
+                <li>
+                  <HeaderLink
+                    href='https://news.rocketsofawesome.com'
+                    highlightable={highlightable}>
+                      Blog
+                  </HeaderLink>
+                </li>
                 <li className='spacer'>
                   <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
@@ -250,8 +213,7 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
     margin-left: auto;
   }
   ${Logo} {
-    width: 100%;
-    max-width: 35rem;
+    width: 36rem;
   }
   .megaMenu {
     position: absolute;
@@ -291,10 +253,8 @@ BaseDesktopNavigation.defaultProps = {
   highlightable: true,
   girlsLinks: girls,
   boysLinks: boys,
-  bagCount: 10,
-  homepageUrl: 'https://rocketsofawesome.com',
-  outfitNav: REACT_APP_OUTFIT_NAV,
-  showBlog: REACT_APP_SHOW_BLOG_LINK
+  bagCount: 5,
+  homepageUrl: 'https://rocketsofawesome.com'
 }
 
 /** @component */

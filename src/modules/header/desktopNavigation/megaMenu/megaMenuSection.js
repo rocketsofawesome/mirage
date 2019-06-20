@@ -14,7 +14,7 @@ class BaseMegaMenuSection extends React.Component {
         <ol className={className} key={section.id} id={section.id}>
           {
             (section.title && section.title !== '') &&
-            <H4 italic={false}>{section.title}</H4>
+            <H4>{section.title}</H4>
           }
           {section.links.map((link, id) => {
             return (
@@ -35,10 +35,6 @@ class BaseMegaMenuSection extends React.Component {
 
 const MegaMenuSection = styled(BaseMegaMenuSection)`
   padding-left: 0;
-  ${H4} {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-  }
   > li {
     list-style: none;
   }

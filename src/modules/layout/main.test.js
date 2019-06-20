@@ -8,7 +8,9 @@ const { mountWithTheme } = global
 const defaultProps = {
   children: <h1>Example</h1>,
   headerProps: {
-    highlightable: false
+    desktopProps: {
+      highlightable: false
+    }
   }
 }
 
@@ -32,6 +34,12 @@ describe('(Styled Component) MainLayout', () => {
   })
 
   test('passes props to the header', () => {
-    expect(JSON.stringify(createMainLayout().find(Header).props())).toContain(JSON.stringify(defaultProps.headerProps))
+    console.log(createMainLayout().find(Header).prop('desktopProps').highlightable)
+    expect(
+      createMainLayout()
+      .find(Header)
+      .prop('desktopProps')
+      .highlightable
+    ).toBeFalsy()
   })
 })

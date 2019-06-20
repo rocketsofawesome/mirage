@@ -154,26 +154,6 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   font-family: ${props => props.theme.fonts.primaryFont};
 `
 
-const CartTotal = ({ pricingTestOn, itemsInBag, order }) => {
-  if (pricingTestOn && itemsInBag >= 4) {
-    return (
-      <Total>
-        TOTAL
-        <Em>
-          <strike>{accounting.formatMoney(order.subtotal)}</strike>
-          {' '}{accounting.formatMoney(order.total)}
-        </Em>
-      </Total>
-    )
-  }
-
-  return (
-    <Total>
-      TOTAL<Em>{accounting.formatMoney(order.total)}</Em>
-    </Total>
-  )
-}
-
 class BaseCartSidebar extends React.Component {
   constructor (props) {
     super(props)
@@ -286,11 +266,7 @@ class BaseCartSidebar extends React.Component {
               removePromotion={removePromotion}
               appliedPromotion={appliedPromotion}
               showBorder={false} />
-            <CartTotal
-              itemsInBag={itemsInBag}
-              order={order}
-              pricingTestOn={pricingTestOn}
-            />
+            <Total>TOTAL<Em>{accounting.formatMoney(order.total)}</Em></Total>
             {parseFloat(order.total) > 0 && <Elements>
               <PaymentRequestButton
                 currentUserEmail={currentUserEmail}

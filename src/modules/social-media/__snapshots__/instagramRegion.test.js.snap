@@ -210,7 +210,6 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
           theme={
             Object {
               "base": undefined,
-              "basePxSize": 10,
               "breakpoints": Object {
                 "aboveDesktop": "(min-width: 1440px)",
                 "aboveLaptop": "(min-width: 1280px)",
@@ -320,7 +319,6 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
             theme={
               Object {
                 "base": undefined,
-                "basePxSize": 10,
                 "breakpoints": Object {
                   "aboveDesktop": "(min-width: 1440px)",
                   "aboveLaptop": "(min-width: 1280px)",

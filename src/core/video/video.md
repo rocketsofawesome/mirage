@@ -38,6 +38,7 @@
 ```js
 <Video
   controls
+  autoPlay={false}
   muted={false}
   sources='https://res.cloudinary.com/roa-canon/video/upload/v1535745827/web/ROA_BrandVideo_20180405.mp4'
   style={{width: '500px'}}/>

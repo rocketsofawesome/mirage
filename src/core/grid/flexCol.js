@@ -1,8 +1,8 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import styled, {css} from 'styled-components'
 
 import { theme } from 'SRC/core/theme'
+import BaseFlexCol from './flexCol.base'
 
 const columnToPercent = (elementWidth, containerWidth) => {
   return `${100 * (elementWidth/containerWidth)}%`
@@ -22,13 +22,9 @@ const spanner = (props, breakpoint) => {
   }
 }
 
-const FlexCol = styled(({ element, children, key, ...props}) => {
-  delete props.columns
-  delete props.phone
-  delete props.tablet
-  delete props.desktop
-  return React.createElement(element, props, children)
-})`
+
+
+const FlexCol = styled(BaseFlexCol)`
   box-sizing: border-box;
   max-width: ${props => props.mobile.nested
     ? columnToPercent(props.mobile.width, props.mobile.nested)

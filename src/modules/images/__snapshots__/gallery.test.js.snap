@@ -266,7 +266,6 @@ exports[`() Gallery matching the snapshot 1`] = `
     theme={
       Object {
         "base": undefined,
-        "basePxSize": 10,
         "breakpoints": Object {
           "aboveDesktop": "(min-width: 1440px)",
           "aboveLaptop": "(min-width: 1280px)",
@@ -405,7 +404,6 @@ exports[`() Gallery matching the snapshot 1`] = `
       theme={
         Object {
           "base": undefined,
-          "basePxSize": 10,
           "breakpoints": Object {
             "aboveDesktop": "(min-width: 1440px)",
             "aboveLaptop": "(min-width: 1280px)",
@@ -523,7 +521,7 @@ exports[`() Gallery matching the snapshot 1`] = `
               className="roa-row c1"
               display="flex"
             >
-              <Styled(Component)
+              <Styled(BaseFlexCol)
                 active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                 columns={
                   Object {
@@ -581,7 +579,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                   ]
                 }
               >
-                <Component
+                <BaseFlexCol
                   active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                   className="c2"
                   columns={
@@ -643,11 +641,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                   <Styled(Component)
                     active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                     className="c2"
-                    mobile={
-                      Object {
-                        "width": 4,
-                      }
-                    }
                     onClick={[Function]}
                     thumbnails={
                       Array [
@@ -685,11 +678,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                     <Component
                       active="production/catalog/bi5flgfpxbyr9tp2xkd9"
                       className="c2 c3"
-                      mobile={
-                        Object {
-                          "width": 4,
-                        }
-                      }
                       onClick={[Function]}
                       thumbnails={
                         Array [
@@ -842,9 +830,9 @@ exports[`() Gallery matching the snapshot 1`] = `
                       </div>
                     </Component>
                   </Styled(Component)>
-                </Component>
-              </Styled(Component)>
-              <Styled(Component)
+                </BaseFlexCol>
+              </Styled(BaseFlexCol)>
+              <Styled(BaseFlexCol)
                 columns={
                   Object {
                     "desktop": 12,
@@ -868,7 +856,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                   }
                 }
               >
-                <Component
+                <BaseFlexCol
                   className="c4"
                   columns={
                     Object {
@@ -895,11 +883,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                 >
                   <div
                     className="c4"
-                    mobile={
-                      Object {
-                        "width": 4,
-                      }
-                    }
                   >
                     <ReactImageMagnify
                       className="imageZoom"
@@ -1465,8 +1448,8 @@ exports[`() Gallery matching the snapshot 1`] = `
                       </ReactCursorPosition>
                     </ReactImageMagnify>
                   </div>
-                </Component>
-              </Styled(Component)>
+                </BaseFlexCol>
+              </Styled(BaseFlexCol)>
             </div>
           </Component>
         </Styled(Component)>
