@@ -12,15 +12,9 @@ const BaseDuet = ({children, className}) => {
         return (
           <FlexCol
             key={index}
-            mobile={{
-              width: 4
-            }}
-            tablet={{
-              width: 12
-            }}
-            desktop={{
-              width: 6
-            }}>
+            mobile={{width: 4}}
+            tablet={{width: 12}}
+            desktop={{width: 6}}>
               {child}
             </FlexCol>
           )
