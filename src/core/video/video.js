@@ -4,6 +4,22 @@ import PropTypes from 'prop-types'
 import Source from './sources.base'
 
 class Video extends React.Component {
+  constructor (props) {
+    super(props)
+    this.video = null
+  }
+
+  setVideoRef = (element) => {
+    this.video = element
+  }
+
+  componentDidMount () {
+    if (this.video) {
+      this.video.load()
+      this.video.play()
+    }
+  }
+
   render () {
     const {children, sources: inSources, ...props} = this.props
     let sources = []

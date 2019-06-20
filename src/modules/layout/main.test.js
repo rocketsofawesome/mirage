@@ -34,7 +34,6 @@ describe('(Styled Component) MainLayout', () => {
   })
 
   test('passes props to the header', () => {
-    console.log(createMainLayout().find(Header).prop('desktopProps').highlightable)
     expect(
       createMainLayout()
       .find(Header)
