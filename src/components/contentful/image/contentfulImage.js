@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { InlineImage } from 'SRC'
 const ContentfulImage = ({className, fields: {description, file: {url}}}) => {
   return (
@@ -19,4 +18,4 @@ ContentfulImage.propTypes = {
   })
 }
 /** @component */
-export default styled(ContentfulImage)``
+export default ContentfulImage
