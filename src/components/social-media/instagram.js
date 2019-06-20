@@ -76,7 +76,7 @@ class BaseInstagram extends React.Component {
       <div className={className}>
         <MediaQuery query={theme.breakpoints.aboveTabletMax}>
           <section className='desktopContainer' ref={this.setInstagramRef}>
-            <InlineImage aria-hidden className='gif' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
+            <InlineImage aria-hidden className='gif' alt='Fun and animated illustration of phone and Instagram photo' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
           </section>
         </MediaQuery>
         <MediaQuery query="(max-device-width: 959px)">
@@ -88,7 +88,7 @@ class BaseInstagram extends React.Component {
                 </a>)
               })}
             </Slider>}
-            <InlineImage className='mobileGif' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
+            <InlineImage className='mobileGif' alt='Fun and animated illustration of phone and Instagram photo' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548777765/web/PHONE_ANIM.gif' />
             <div ref={this.setInstagramRef} style={{display: 'none'}} aria-hidden />
           </div>
         </MediaQuery>
