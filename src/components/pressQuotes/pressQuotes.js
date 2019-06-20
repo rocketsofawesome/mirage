@@ -172,7 +172,6 @@ const PressQuotes = styled(BasePressQuotes)`
   }
   ${PressIcon} {
     max-height: 4.5rem;
-    padding: 0.5rem;
     box-sizing: border-box;
     &: hover {
       fill: ${props => props.theme.colors.rocketBlue};
