@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import {
   Accordion,
   BagIcon,
@@ -17,9 +16,7 @@ import {
 
 import { theme } from 'SRC/core/theme'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
-
-export class BaseMobileNavigation extends React.Component {
+export class MobileNavigation extends React.Component {
   constructor (props) {
     super(props)
 
@@ -47,27 +44,15 @@ export class BaseMobileNavigation extends React.Component {
       renderLink,
       isSubscriptionMember,
       bagCount,
-      clickBag,
-      showBlog,
-      outfitNav
+      clickBag
     } = this.props
-
     const { open } = this.state
-
     return (
       <div className={className}>
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
-          <MobileLinkTop
-            style={{marginBottom: '0'}}
-            href={homepageUrl}
-            renderLink={renderLink}>
-            <span className='screenReader'>Home</span>
-            <Logo  />
-          </MobileLinkTop>
-          <a onClick={clickBag}>
-            <BagIcon count={bagCount} />
-          </a>
+          <Logo />
+          <BagIcon onClick={clickBag} count={bagCount}/>
         </MobileHeader>
         <MenuDrawer
           open={open}
@@ -125,31 +110,17 @@ export class BaseMobileNavigation extends React.Component {
                 </li>
               </UL>
             </li>
-            {outfitNav &&
-              <li>
-                <MobileLinkTop
-                  href={`${homepageUrl}/outfits`}>
-                  Outfits
-                </MobileLinkTop>
-              </li>
-            }
+
             {!isSubscriptionMember &&
               <li>
                 <MobileLinkTop
-                  href={`${homepageUrl}/subscribe-and-save`}>
+                  href={`${homepageUrl}?view=subscribe`}>
                   Subscribe + Save
                 </MobileLinkTop>
               </li>
             }
             {isSubscriptionMember &&
               <div>
-              <li>
-                <MobileLinkTop
-                  target='/box'
-                  renderLink={renderLink}>
-                  Box
-                </MobileLinkTop>
-              </li>
                 <li>
                   <MobileLinkTop
                     target='/invite'
@@ -179,14 +150,7 @@ export class BaseMobileNavigation extends React.Component {
                 <MobileLinkTop
                   target='/shop/login'
                   renderLink={renderLink}>
-                  Login
-                </MobileLinkTop>
-              </li>
-            }
-            {showBlog &&
-              <li>
-                <MobileLinkTop href={`https://news.rocketsofawesome.com`}>
-                  Blog
+                  Log In
                 </MobileLinkTop>
               </li>
             }
@@ -195,27 +159,17 @@ export class BaseMobileNavigation extends React.Component {
                 isSubscriptionMember={isSubscriptionMember}
                 renderLink={renderLink} />
             }
+            <li>
+              <MobileLinkTop href={`https://news.rocketsofawesome.com`}>
+                Blog
+              </MobileLinkTop>
+            </li>
           </UL>
         </MenuDrawer>
       </div>
     )
   }
 }
-
-const MobileNavigation = styled(BaseMobileNavigation)`
-  .screenReader {
-    font-size: 0;
-  }
-  ${Logo} {
-    max-width: 22.4rem;
-  }
-  ul ul {
-    margin-bottom: 2rem;
-  }
-  ul ul ul {
-    margin-bottom: 0;
-  }
-`
 
 MobileNavigation.propTypes = {
   drawerPosition: PropTypes.string,
@@ -233,9 +187,7 @@ MobileNavigation.propTypes = {
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
   bagCount: 5,
-  homepageUrl: 'https://rocketsofawesome.com',
-  outfitNav: REACT_APP_OUTFIT_NAV,
-  showBlog: REACT_APP_SHOW_BLOG_LINK
+  homepageUrl: 'https://rocketsofawesome.com'
 }
 
 /** @component */

@@ -24,16 +24,13 @@ function getClient () {
   return client
 }
 
-export const loadEntry = (query) => {
-  return getClient().getEntry(query)
+export const getUrl = (entry) => entry.fields.file.url
+export const getAlt = (entry) => entry.fields.description
+export const getContentType = (entry) => {
+  return entry.sys.contentType.sys.id
 }
-export const loadEntries = (query) => {
-  if (getClient().getEntries) {
-    return getClient().getEntries(query)
-  } else {
-    return null
-  }
-}
+export const getAssetType = (entry) => /([a-z]*)\//.exec(entry.fields.file.contentType)[1]
+
 
 export { initContentful, getClient }
 
@@ -48,13 +45,18 @@ export default class Contentful extends React.Component {
     }
   }
   componentDidMount() {
-    const { operation: inOp, id } = this.props
+    const { operation: inOp, id, query } = this.props
     const client = getClient()
     try {
-      const operation = client[inOp]
-      operation(id).then((response) => {
-        this.setState({response: response})
-      })
+      if (inOp !== 'getEntries') {
+        client[inOp](id).then((response) => {
+          this.setState({response: response})
+        })
+      } else {
+        client[inOp](query).then((response) => {
+          this.setState({response: response.items[0]})
+        })
+      }
     } catch (err) {
       console.warn(err)
     }
@@ -63,7 +65,6 @@ export default class Contentful extends React.Component {
     const { children } = this.props
     const { response } = this.state
     if (response) {
-      console.log(response)
       return React.createElement(children.type, {...children.props, ...response,})
     } else {
       return null

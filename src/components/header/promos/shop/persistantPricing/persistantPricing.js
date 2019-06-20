@@ -90,7 +90,6 @@ PersistantPricing.propTypes = {
 
 PersistantPricing.defaultProps = {
   children: [
-
     <P key='message1'>Did you know? Buy 4+ Items, Get 20% Off. Every day. <span role='img' aria-label='confetti'>🎉</span></P>,
     <P key='message2'>You’re welcome! Buy 4+ Items, Get 20% Off. Every day. <span role='img' aria-label='crown'>👑</span></P>,
     <P key='message3'>

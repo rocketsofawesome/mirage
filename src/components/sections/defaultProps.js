@@ -25,7 +25,7 @@ const SubscriptionSectionProps = {
     footer: {
       link: {
         text: 'LEARN MORE →',
-        href: 'https://www.rocketsofawesome.com//subscribe-and-save'
+        href: 'https://www.rocketsofawesome.com/?view=subscribe'
       }
     }
   }

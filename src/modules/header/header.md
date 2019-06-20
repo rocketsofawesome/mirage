@@ -16,26 +16,6 @@
     </div>
 ```
 
-### Subscription Member:
-```js
-  <div style={{position: 'relative', height: '70rem'}}>
-    <Header
-      position='absolute'
-      isSubscriptionMember={true}
-      mobileProps={
-        {
-          position: 'absolute',
-          drawerPosition:'absolute'
-        }
-      }
-      desktopProps={
-        {
-          position: 'static'
-        }
-      } />
-    </div>
-```
-
 ```js
   <div style={{position: 'relative', height: '70rem'}}>
     <Header

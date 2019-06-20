@@ -10,7 +10,6 @@ const MobileLinkSecondary = styled(Link)`
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   background-color: ${props => props.background};
-  letter-spacing: 0.1rem;
   &:active, &:focus, &:hover, &:visited {
     color: ${props => props.theme.colors.rocketBlue};
   }

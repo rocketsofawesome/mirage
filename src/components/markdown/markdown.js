@@ -23,7 +23,7 @@ const headerRenderer = ({level, children, ...props}) => {
 
 const MirageMarkdown = styled(({className, children, ...props}) => {
   return(
-    <ReactMarkdown source={children} renderers={{
+    <ReactMarkdown className={className} source={children} renderers={{
       link: Link,
       thematicBreak: Hr,
       paragraph: P,

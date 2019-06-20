@@ -3,17 +3,11 @@ import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { ContentfulImage } from 'SRC'
+import { default as defaultProps } from './defaultProps'
 
 const { mountWithTheme } = global
 
-const defaultProps = {
-  fields: {
-    description: 'An example tag',
-    file: {
-      url: 'https://www.example.com/img.jpg'
-    }
-  }
-}
+
 describe('(Component) ContentfulImage', () => {
   const createContentfulImage = (inProps) => {
     const props = {

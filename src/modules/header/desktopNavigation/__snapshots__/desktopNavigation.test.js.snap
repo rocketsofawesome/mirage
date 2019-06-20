@@ -14,13 +14,23 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
-  -webkit-align-items: stretch;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
 }
 
 .c12 {
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-left: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.c18 {
   box-sizing: border-box;
   max-width: 100%;
   -webkit-flex-basis: 100%;
@@ -42,45 +52,30 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   padding-right: 5px;
 }
 
-.c20 {
-  box-sizing: border-box;
-  max-width: 100%;
-  -webkit-flex-basis: 100%;
-  -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
-  margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.c23 {
+.c22 {
   width: 2rem;
 }
 
-.c23 > polygon,
-.c23 path {
+.c22 > polygon,
+.c22 path {
   fill: none;
   stroke: #0073D1;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
 
-.c23 > g circle {
+.c22 > g circle {
   fill: #0073D1;
 }
 
-.c23 > g text {
+.c22 > g text {
   fill: #FFFFFF;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
-  font-size: 1rem;
+  font-size: .8rem;
   font-weight: 500;
-  -webkit-letter-spacing: 0;
-  -moz-letter-spacing: 0;
-  -ms-letter-spacing: 0;
-  letter-spacing: 0;
 }
 
-.c23 .screenReader {
+.c22 .screenReader {
   font-size: 0;
 }
 
@@ -113,7 +108,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   pointer: cursor;
 }
 
-.c18 {
+.c17 {
   -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
   -webkit-text-decoration: none;
@@ -127,7 +122,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-style: normal;
 }
 
-.c18:hover {
+.c17:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
   pointer: cursor;
@@ -144,18 +139,18 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   color: #00003C;
 }
 
-.c17 {
+.c16 {
   color: #00003C;
 }
 
-.c17:active,
-.c17:focus,
-.c17:hover,
-.c17:visited {
+.c16:active,
+.c16:focus,
+.c16:hover,
+.c16:visited {
   color: #00003C;
 }
 
-.c15 {
+.c14 {
   -webkit-letter-spacing: 0.5px;
   -moz-letter-spacing: 0.5px;
   -ms-letter-spacing: 0.5px;
@@ -164,6 +159,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
+  font-style: italic;
   line-height: 1;
   margin: 2.3rem 0;
 }
@@ -172,6 +168,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   background-color: #FFFFFF;
   min-height: 6rem;
   width: 100%;
+  position: fixed;
   box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
   display: -webkit-box;
   display: -webkit-flex;
@@ -199,10 +196,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-letter-spacing: 0.1rem;
-  -moz-letter-spacing: 0.1rem;
-  -ms-letter-spacing: 0.1rem;
-  letter-spacing: 0.1rem;
 }
 
 .c4:active,
@@ -219,7 +212,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   height: 0;
 }
 
-.c4 .c24 {
+.c4 .c23 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -247,10 +240,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
-  -webkit-letter-spacing: 0.1rem;
-  -moz-letter-spacing: 0.1rem;
-  -ms-letter-spacing: 0.1rem;
-  letter-spacing: 0.1rem;
 }
 
 .c10:active,
@@ -268,7 +257,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   height: 0;
 }
 
-.c10 .c24 {
+.c10 .c23 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -343,8 +332,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 .c0 .c7 {
-  width: 100%;
-  max-width: 35rem;
+  width: 36rem;
 }
 
 .c0 .megaMenu {
@@ -362,7 +350,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   text-transform: capitalize;
 }
 
-.c0 .c22 {
+.c0 .c21 {
   margin-left: 0.5rem;
 }
 
@@ -395,7 +383,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   animation: cussWI 0.3s ease-in;
 }
 
-.c11 .c16 {
+.c11 .c15 {
   margin-bottom: 1rem;
   display: inline-block;
 }
@@ -432,16 +420,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   padding-left: 0;
 }
 
-.c13 .c14 {
-  font-size: 1.6rem;
-  margin-bottom: 20px;
-}
-
 .c13 > li {
   list-style: none;
 }
 
-.c21 {
+.c20 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -449,7 +432,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   position: relative;
 }
 
-.c21 .c3 {
+.c20 .c3 {
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto;
@@ -462,7 +445,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   padding: 0 1rem;
 }
 
-.c21.active .c3 {
+.c20.active .c3 {
   border: 0.1rem solid #0073D1;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
@@ -489,7 +472,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 @media (min-width:768px) {
-  .c19 {
+  .c18 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -499,7 +482,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 @media (min-width:960px) {
-  .c19 {
+  .c18 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
     -ms-flex-preferred-size: 25%;
@@ -509,7 +492,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 @media (min-width:768px) {
-  .c20 {
+  .c19 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
     -ms-flex-preferred-size: 100%;
@@ -519,7 +502,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 @media (min-width:960px) {
-  .c20 {
+  .c19 {
     max-width: 33.33333333333333%;
     -webkit-flex-basis: 33.33333333333333%;
     -ms-flex-preferred-size: 33.33333333333333%;
@@ -533,7 +516,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 >
   <BaseDesktopNavigation
     animationLength={300}
-    bagCount={10}
+    bagCount={5}
     boysLinks={
       Object {
         "regions": Object {
@@ -736,6 +719,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     <styled.header
       className="c0"
       onMouseLeave={[Function]}
+      position="fixed"
     >
       <header
         className="c0 c1"
@@ -744,16 +728,19 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
         <div
           className="nav-wrapper"
         >
-          <Styled(Component)
+          <Styled(BaseFlexRow)
+            align="flex-start"
             constrained={true}
             element="nav"
           >
-            <Component
+            <BaseFlexRow
+              align="flex-start"
               className="c2"
               constrained={true}
               element="nav"
             >
               <nav
+                align="flex-start"
                 className="c2"
               >
                 <ol>
@@ -761,7 +748,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       renderLink={[Function]}
@@ -771,7 +757,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c4"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         renderLink={[Function]}
@@ -779,7 +764,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       >
                         <Styled(Styled(Component))
                           className="c3 c4"
-                          href="https://rocketsofawesome.com"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -794,7 +778,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -809,7 +792,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -821,7 +803,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c4 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
@@ -1213,19 +1194,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         <div
                           className="megaMenu c11 closed"
                         >
-                          <Styled(Component)
+                          <Styled(BaseFlexRow)
+                            align="flex-start"
                             constrained={true}
                             element="menu"
                           >
-                            <Component
+                            <BaseFlexRow
+                              align="flex-start"
                               className="c2"
                               constrained={true}
                               element="menu"
                             >
                               <menu
+                                align="flex-start"
                                 className="c2"
                               >
-                                <Styled(Component)
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -1250,7 +1234,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
+                                  <BaseFlexCol
                                     className="c12"
                                     columns={
                                       Object {
@@ -1278,11 +1262,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c12"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
                                     >
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
@@ -1439,11 +1418,10 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              italic={false}
                                               margin="2.3rem 0"
                                             >
                                               <h4
-                                                className="c14 c15"
+                                                className="c14"
                                                 fontSize="1.8rem"
                                               >
                                                 Shop by Category
@@ -1477,7 +1455,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1493,7 +1471,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1509,7 +1487,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1552,7 +1530,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1568,7 +1546,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1584,7 +1562,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1627,7 +1605,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1643,7 +1621,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1659,7 +1637,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1702,7 +1680,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1718,7 +1696,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1734,7 +1712,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1777,7 +1755,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1793,7 +1771,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1809,7 +1787,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1852,7 +1830,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1868,7 +1846,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1884,7 +1862,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -1927,7 +1905,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -1943,7 +1921,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -1959,7 +1937,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2002,7 +1980,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2018,7 +1996,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2034,7 +2012,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2077,7 +2055,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2093,7 +2071,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2109,7 +2087,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2152,7 +2130,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2168,7 +2146,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2184,7 +2162,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2227,7 +2205,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2243,7 +2221,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2259,7 +2237,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2302,7 +2280,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2318,7 +2296,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2334,7 +2312,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2353,9 +2331,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         </BaseMegaMenuSection>
                                       </Styled(BaseMegaMenuSection)>
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
-                                <Styled(Component)
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -2379,8 +2357,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
-                                    className="c19"
+                                  <BaseFlexCol
+                                    className="c18"
                                     columns={
                                       Object {
                                         "desktop": 12,
@@ -2405,12 +2383,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   >
                                     <div
-                                      className="c19"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
+                                      className="c18"
                                     >
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
@@ -2487,11 +2460,10 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              italic={false}
                                               margin="2.3rem 0"
                                             >
                                               <h4
-                                                className="c14 c15"
+                                                className="c14"
                                                 fontSize="1.8rem"
                                               >
                                                 Shop by Story
@@ -2525,7 +2497,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2541,7 +2513,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2557,7 +2529,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2600,7 +2572,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2616,7 +2588,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2632,7 +2604,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2675,7 +2647,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2691,7 +2663,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2707,7 +2679,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2750,7 +2722,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -2766,7 +2738,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -2782,7 +2754,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -2801,9 +2773,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         </BaseMegaMenuSection>
                                       </Styled(BaseMegaMenuSection)>
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
-                                <Styled(Component)
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -2827,8 +2799,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
-                                    className="c20"
+                                  <BaseFlexCol
+                                    className="c19"
                                     columns={
                                       Object {
                                         "desktop": 12,
@@ -2853,22 +2825,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   >
                                     <div
-                                      className="c20"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
+                                      className="c19"
                                     >
                                       <div
                                         className="imageContainer"
                                       />
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
                               </menu>
-                            </Component>
-                          </Styled(Component)>
+                            </BaseFlexRow>
+                          </Styled(BaseFlexRow)>
                         </div>
                       </BaseMegaMenu>
                     </Styled(BaseMegaMenu)>
@@ -3145,19 +3112,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         <div
                           className="megaMenu c11 closed"
                         >
-                          <Styled(Component)
+                          <Styled(BaseFlexRow)
+                            align="flex-start"
                             constrained={true}
                             element="menu"
                           >
-                            <Component
+                            <BaseFlexRow
+                              align="flex-start"
                               className="c2"
                               constrained={true}
                               element="menu"
                             >
                               <menu
+                                align="flex-start"
                                 className="c2"
                               >
-                                <Styled(Component)
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -3182,7 +3152,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
+                                  <BaseFlexCol
                                     className="c12"
                                     columns={
                                       Object {
@@ -3210,11 +3180,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   >
                                     <div
                                       className="c12"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
                                     >
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
@@ -3361,11 +3326,10 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              italic={false}
                                               margin="2.3rem 0"
                                             >
                                               <h4
-                                                className="c14 c15"
+                                                className="c14"
                                                 fontSize="1.8rem"
                                               >
                                                 Shop by Category
@@ -3399,7 +3363,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3415,7 +3379,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3431,7 +3395,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3474,7 +3438,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3490,7 +3454,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3506,7 +3470,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3549,7 +3513,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3565,7 +3529,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3581,7 +3545,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3624,7 +3588,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3640,7 +3604,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3656,7 +3620,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3699,7 +3663,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3715,7 +3679,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3731,7 +3695,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3774,7 +3738,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3790,7 +3754,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3806,7 +3770,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3849,7 +3813,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3865,7 +3829,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3881,7 +3845,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3924,7 +3888,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -3940,7 +3904,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -3956,7 +3920,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -3999,7 +3963,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4015,7 +3979,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4031,7 +3995,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4074,7 +4038,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4090,7 +4054,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4106,7 +4070,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4149,7 +4113,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4165,7 +4129,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4181,7 +4145,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4200,9 +4164,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         </BaseMegaMenuSection>
                                       </Styled(BaseMegaMenuSection)>
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
-                                <Styled(Component)
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -4226,8 +4190,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
-                                    className="c19"
+                                  <BaseFlexCol
+                                    className="c18"
                                     columns={
                                       Object {
                                         "desktop": 12,
@@ -4252,12 +4216,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   >
                                     <div
-                                      className="c19"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
+                                      className="c18"
                                     >
                                       <Styled(BaseMegaMenuSection)
                                         clearMenuImage={[Function]}
@@ -4324,11 +4283,10 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
-                                              italic={false}
                                               margin="2.3rem 0"
                                             >
                                               <h4
-                                                className="c14 c15"
+                                                className="c14"
                                                 fontSize="1.8rem"
                                               >
                                                 Shop by Story
@@ -4362,7 +4320,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4378,7 +4336,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4394,7 +4352,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4437,7 +4395,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4453,7 +4411,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4469,7 +4427,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4512,7 +4470,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                   underline={false}
                                                 >
                                                   <Styled(Component)
-                                                    className="c16 c17"
+                                                    className="c15 c16"
                                                     fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                     fontSize="1.4rem"
                                                     fontStyle="normal"
@@ -4528,7 +4486,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                     uppercase={false}
                                                   >
                                                     <Component
-                                                      className="c16 c17 c18"
+                                                      className="c15 c16 c17"
                                                       fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                                       fontSize="1.4rem"
                                                       fontStyle="normal"
@@ -4544,7 +4502,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                                       uppercase={false}
                                                     >
                                                       <a
-                                                        className="c16 c17 c18"
+                                                        className="c15 c16 c17"
                                                         fontStyle="normal"
                                                         href="#"
                                                         onBlur={[Function]}
@@ -4563,9 +4521,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                         </BaseMegaMenuSection>
                                       </Styled(BaseMegaMenuSection)>
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
-                                <Styled(Component)
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
+                                <Styled(BaseFlexCol)
                                   columns={
                                     Object {
                                       "desktop": 12,
@@ -4589,8 +4547,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   }
                                 >
-                                  <Component
-                                    className="c20"
+                                  <BaseFlexCol
+                                    className="c19"
                                     columns={
                                       Object {
                                         "desktop": 12,
@@ -4615,22 +4573,17 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     }
                                   >
                                     <div
-                                      className="c20"
-                                      mobile={
-                                        Object {
-                                          "width": 4,
-                                        }
-                                      }
+                                      className="c19"
                                     >
                                       <div
                                         className="imageContainer"
                                       />
                                     </div>
-                                  </Component>
-                                </Styled(Component)>
+                                  </BaseFlexCol>
+                                </Styled(BaseFlexCol)>
                               </menu>
-                            </Component>
-                          </Styled(Component)>
+                            </BaseFlexRow>
+                          </Styled(BaseFlexRow)>
                         </div>
                       </BaseMegaMenu>
                     </Styled(BaseMegaMenu)>
@@ -4639,7 +4592,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com/subscribe-and-save"
+                      href="https://rocketsofawesome.com?view=subscribe"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       spacing={true}
@@ -4648,14 +4601,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com/subscribe-and-save"
+                        href="https://rocketsofawesome.com?view=subscribe"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
-                          href="https://rocketsofawesome.com/subscribe-and-save"
+                          href="https://rocketsofawesome.com?view=subscribe"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -4669,7 +4622,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com/subscribe-and-save"
+                            href="https://rocketsofawesome.com?view=subscribe"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -4683,7 +4636,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com/subscribe-and-save"
+                              href="https://rocketsofawesome.com?view=subscribe"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -4694,13 +4647,82 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com/subscribe-and-save"
+                                href="https://rocketsofawesome.com?view=subscribe"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
                               >
                                 <span>
                                   Subscribe + Save
+                                </span>
+                              </a>
+                            </Component>
+                          </Styled(Component)>
+                        </Styled(Styled(Component))>
+                      </BaseHeaderLink>
+                    </Styled(BaseHeaderLink)>
+                  </li>
+                  <span>
+                    |
+                  </span>
+                  <li>
+                    <Styled(BaseHeaderLink)
+                      highlightOn="hover"
+                      highlightable={false}
+                      href="https://news.rocketsofawesome.com"
+                      spacing={true}
+                    >
+                      <BaseHeaderLink
+                        className="c3 c10"
+                        highlightOn="hover"
+                        highlightable={false}
+                        href="https://news.rocketsofawesome.com"
+                        spacing={true}
+                      >
+                        <Styled(Styled(Component))
+                          className="c3 c10"
+                          href="https://news.rocketsofawesome.com"
+                          light={true}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          underline={false}
+                          uppercase={true}
+                        >
+                          <Styled(Component)
+                            className="c3 c10 c5"
+                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                            fontSize="1.4rem"
+                            fontStyle="normal"
+                            fontWeight={500}
+                            href="https://news.rocketsofawesome.com"
+                            light={true}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            underline={false}
+                            uppercase={true}
+                          >
+                            <Component
+                              className="c3 c10 c5 c6"
+                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                              fontSize="1.4rem"
+                              fontStyle="normal"
+                              fontWeight={500}
+                              href="https://news.rocketsofawesome.com"
+                              light={true}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              underline={false}
+                              uppercase={true}
+                            >
+                              <a
+                                className="c3 c10 c5 c6"
+                                fontStyle="normal"
+                                href="https://news.rocketsofawesome.com"
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <span>
+                                  Blog
                                 </span>
                               </a>
                             </Component>
@@ -4718,13 +4740,13 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       subMenuOpen={false}
                     >
                       <BaseAccountLinks
-                        className="c21"
+                        className="c20"
                         highlightable={false}
                         renderLink={[Function]}
                         subMenuOpen={false}
                       >
                         <Styled(BaseHeaderLink)
-                          className="c21"
+                          className="c20"
                           highlightOn="hover"
                           highlightable={false}
                           renderLink={[Function]}
@@ -4732,7 +4754,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           target="/shop/login"
                         >
                           <BaseHeaderLink
-                            className="c21 c3 c10"
+                            className="c20 c3 c10"
                             highlightOn="hover"
                             highlightable={false}
                             renderLink={[Function]}
@@ -4740,7 +4762,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             target="/shop/login"
                           >
                             <Styled(Styled(Component))
-                              className="c21 c3 c10"
+                              className="c20 c3 c10"
                               light={true}
                               onMouseEnter={[Function]}
                               onMouseLeave={[Function]}
@@ -4750,7 +4772,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               uppercase={true}
                             >
                               <Styled(Component)
-                                className="c21 c3 c10 c5"
+                                className="c20 c3 c10 c5"
                                 fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                 fontSize="1.4rem"
                                 fontStyle="normal"
@@ -4764,7 +4786,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                 uppercase={true}
                               >
                                 <Component
-                                  className="c21 c3 c10 c5 c6"
+                                  className="c20 c3 c10 c5 c6"
                                   fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
                                   fontSize="1.4rem"
                                   fontStyle="normal"
@@ -4778,14 +4800,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                   uppercase={true}
                                 >
                                   <a
-                                    className="c21 c3 c10 c5 c6"
+                                    className="c20 c3 c10 c5 c6"
                                     fontStyle="normal"
                                     href="/shop/login"
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
                                   >
                                     <span>
-                                      Login
+                                      Log In
                                     </span>
                                   </a>
                                 </Component>
@@ -4870,46 +4892,46 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                     Bag
                                   </span>
                                   <Styled(BaseBagIcon)
-                                    count={10}
+                                    count={5}
                                     width="2rem"
                                   >
                                     <BaseBagIcon
-                                      className="c22 c23"
-                                      count={10}
+                                      className="c21 c22"
+                                      count={5}
                                       width="2rem"
                                     >
                                       <svg
-                                        className="c22 c23"
+                                        className="c21 c22"
                                         version="1.1"
-                                        viewBox="0 0 20 17"
+                                        viewBox="0 0 19 15"
                                       >
                                         <polygon
-                                          points="10.5 14.69 10.6 8.79 0.5 8.79 0.5 14.69 2.6 16.49 8.7 16.49 10.5 14.69"
+                                          points="10.5,12.7 10.6,6.8 0.5,6.8 0.5,12.7 2.6,14.5 8.7,14.5"
                                         />
                                         <path
-                                          d="M3.1,8.39v-1A2.43,2.43,0,0,1,5.5,5a2.43,2.43,0,0,1,2.4,2.4v1Z"
+                                          d="M3.1,6.4v-1C3.1,4.1,4.2,3,5.5,3s2.4,1.1,2.4,2.4v1H3.1z"
                                         />
                                         <g>
                                           <circle
-                                            cx="12.5"
-                                            cy="7.5"
-                                            r="7.5"
+                                            cx="13"
+                                            cy="6"
+                                            r="6"
                                           />
                                           <text
                                             className="screenReader"
                                             x="0"
                                             y="0"
                                           >
-                                            10 items currently added
+                                            5 items currently added
                                           </text>
                                           <text
                                             alignmentBaseline="middle"
                                             aria-hidden={true}
                                             textAnchor="middle"
-                                            x="12.3"
-                                            y="8.5"
+                                            x="12.75"
+                                            y="7"
                                           >
-                                            10
+                                            5
                                           </text>
                                         </g>
                                       </svg>
@@ -4925,8 +4947,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                   </li>
                 </ol>
               </nav>
-            </Component>
-          </Styled(Component)>
+            </BaseFlexRow>
+          </Styled(BaseFlexRow)>
         </div>
       </header>
     </styled.header>

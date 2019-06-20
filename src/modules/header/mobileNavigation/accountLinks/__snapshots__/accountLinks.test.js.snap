@@ -1,12 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) MobileAccountLink matching the snapshot 1`] = `
-.c0 {
-  margin-bottom: 3rem;
-}
-
 <BaseAccountLinks
-  className="c0"
+  className=""
   isSubscriptionMember={false}
 />
 `;

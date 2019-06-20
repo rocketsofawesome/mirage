@@ -5,6 +5,7 @@ exports[`(Styled component) DesktopHeader matching the snapshot 1`] = `
   background-color: #FFFFFF;
   min-height: 6rem;
   width: 100%;
+  position: fixed;
   box-shadow: 0 2px 1px 0 rgba(0,0,0,.16);
   display: -webkit-box;
   display: -webkit-flex;
