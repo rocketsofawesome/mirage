@@ -26,6 +26,7 @@ const padding = css`
 
 const FlexRow = styled(({ children, element, ...props }) => {
   delete props.constrained
+  delete props.padding
   return React.createElement(element, props, children)
 })`
   flex-basis: 100%;
