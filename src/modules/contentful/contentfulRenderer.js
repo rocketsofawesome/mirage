@@ -17,6 +17,7 @@ const ENTRY_RENDER_MAP = {
   splitTout: (props) => <Mirage.ContentfulSplitTout {...props} />,
   tout: (props) => <Mirage.ContentfulTout {...props} />,
   video: (props) => <Mirage.ContentfulResponsiveVideo {...props} />,
+  page: (props) => <Mirage.ContentfulLandingPage {...props} />,
 }
 
 const ContentfulRenderer = (props) => {
