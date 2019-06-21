@@ -32,7 +32,8 @@ const setWidth = ({fields: { width = 'Fit Text'}}) => {
 const ContentfulButton = styled(({
   fields: {
     buttonText,
-    route
+    route,
+    color
   },
   sys,
   renderLink,
@@ -58,12 +59,15 @@ const ContentfulButton = styled(({
   ${props => setWidth(props)}
 
   &:hover {
-    color: inherit;
+    color: ${props => props.fields.color ? props.fields.color : props.theme.colors.navy};
   }
   &:last-of-type {
     ${props => props.theme.breakpointsVerbose.belowTablet`
       margin-bottom: 0;
     `}
+  }
+  &:before {
+    content: ${props => props.theme.colors.navy};
   }
 `
 

@@ -96,7 +96,7 @@ const ContentfulContentRow = styled(BaseContentfulContentRow)`
     article {
       display: flex;
       justify-content: flex-start;
-      padding-top: 4rem;
+      padding-top: 2rem;
       padding-bottom: 2rem;
     }
   }
