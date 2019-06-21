@@ -5,7 +5,10 @@ import { FlexRow, FlexCol } from 'SRC'
 
 const BaseTrio = ({children, className}) => {
   return (
-    <FlexRow className={className} constrained>
+    <FlexRow
+      className={className}
+      constrained
+      padding>
       {children.map((child, index) => {
         return (
           <FlexCol

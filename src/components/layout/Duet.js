@@ -7,6 +7,7 @@ const BaseDuet = ({children, className}) => {
   return (
     <FlexRow
       constrained
+      padding
       className={className}>
       {children.map((child, index) => {
         return (

@@ -5,6 +5,6 @@
     'sys.id': '21Va4brrDmkukCqAGuUCGu',
     include: 10
   }}>
-    <ContentfulLandingPage />
+    <ContentfulRenderer />
   </Contentful>
 ```

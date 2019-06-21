@@ -27,6 +27,7 @@ function getClient () {
 export const getUrl = (entry) => entry.fields.file.url
 export const getAlt = (entry) => entry.fields.description
 export const getContentType = (entry) => {
+  console.log(entry)
   return entry.sys.contentType.sys.id
 }
 export const getAssetType = (entry) => /([a-z]*)\//.exec(entry.fields.file.contentType)[1]

@@ -7,17 +7,17 @@ import { Link } from 'SRC'
 const setWidth = ({fields: { width = 'Fit Text'}}) => {
   const WIDTH = {
     'Fit Text': css`
-    max-width: 290px;
-    width: calc(100% - 20px);
-    flex: 0 0 auto;
-    margin-bottom: 20px;
-    &:hover {
-      text-decoration: underline;
-    }
-    ${props => props.theme.breakpointsVerbose.belowTablet`
-      font-size: 1.4rem;
-      height: 3.5rem;
-    `}
+      max-width: 290px;
+      width: calc(100% - 20px);
+      flex: 0 0 auto;
+      margin-bottom: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+      ${props => props.theme.breakpointsVerbose.belowTablet`
+        font-size: 1.4rem;
+        height: 3.5rem;
+      `}
     `,
     'Full Width': css`
       flex: 1 1 100%;

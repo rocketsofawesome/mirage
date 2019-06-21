@@ -7,7 +7,8 @@ const BaseSolo = ({className, ...props}) => {
   return (
     <FlexRow
       constrained
-      className={className}>
+      className={className}
+      padding>
       <FlexCol
         mobile={{
           width: 4

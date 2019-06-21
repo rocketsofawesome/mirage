@@ -52,7 +52,8 @@ class BaseTrioWithLead extends React.Component {
     return (
       <FlexRow
         className={className}
-        constrained>
+        constrained
+        padding>
         {this.parseTrio(children, 0, [])}
       </FlexRow>
     )
