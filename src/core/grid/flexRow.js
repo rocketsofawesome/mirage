@@ -26,6 +26,7 @@ const padding = css`
 `
 
 const FlexRow = styled(BaseFlexRow)`
+  box-sizing: border-box;
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
