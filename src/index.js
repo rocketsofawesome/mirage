@@ -18,3 +18,8 @@
 /**
  * Pages:
 **/
+
+/**
+ * Services:
+**/
+  export * from './services/contentful'

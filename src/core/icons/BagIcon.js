@@ -25,6 +25,7 @@ const BagIcon = styled(BaseBagIcon)`
     stroke: ${props => props.theme.colors.rocketBlue};
     stroke-linecap:round;
     stroke-linejoin:round;
+    stroke-width: 1;
   }
   > g circle {
     fill: ${props => props.theme.colors.rocketBlue};
