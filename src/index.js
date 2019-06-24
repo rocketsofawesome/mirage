@@ -22,4 +22,4 @@
 /**
  * Services:
 **/
-  export * from './services/contentful'
+  export * from './services'
