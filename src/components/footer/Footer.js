@@ -61,7 +61,7 @@ const BaseFooter = ({
             <ul>
               <li>
                 <WhiteLink light href='tel:+1-877-ROCKETS'>1-877-ROCKETS </WhiteLink>
-                <span>&nbsp;&nbsp;[9am-5pm ET]</span>
+                <span>&nbsp;&nbsp;[M-F 9am-5pm ET]</span>
               </li>
               <li>
                 <WhiteLink light href='mailto:help@rocketsofawesome.com'>help@rocketsofawesome.com</WhiteLink>
