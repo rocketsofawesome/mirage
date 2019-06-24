@@ -2,6 +2,7 @@
 
 exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 .c2 {
+  box-sizing: border-box;
   -webkit-flex-basis: 100%;
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
@@ -62,6 +63,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   stroke: #0073D1;
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-width: 1;
 }
 
 .c22 > g circle {

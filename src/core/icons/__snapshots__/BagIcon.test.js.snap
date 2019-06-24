@@ -25,6 +25,7 @@ exports[`(Styled Component) BagIcon matching the snapshot 1`] = `
   stroke: #0073D1;
   stroke-linecap: round;
   stroke-linejoin: round;
+  stroke-width: 1;
 }
 
 .c0 > g circle {
