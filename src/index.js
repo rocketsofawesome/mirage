@@ -23,3 +23,8 @@
  * Services:
 **/
   export * from './services'
+
+/**
+ * Utilities:
+**/
+  export * from './utils'
