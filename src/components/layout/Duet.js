@@ -3,7 +3,11 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { FlexRow, FlexCol } from 'SRC'
 
-const BaseDuet = ({children, className}) => {
+const BaseDuet = ({
+  children,
+  className,
+  constrained
+}) => {
   return (
     <FlexRow
       constrained
@@ -32,7 +36,12 @@ const Duet = styled(BaseDuet)`
 
 Duet.propTypes = {
   children: PropTypes.array,
-  className: PropTypes.string
+  className: PropTypes.string,
+  constrained: PropTypes.bool
+}
+
+Duet.defaultProps = {
+  constrained: false
 }
 
 export default Duet
