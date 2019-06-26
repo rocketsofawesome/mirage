@@ -1,7 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const QuickAddSize = ({className, id, input = {}, checked = false, children}) => {
+const QuickAddSize = ({
+  checked = false,
+  children,
+  className,
+  id,
+  input = {}
+}) => {
   return (
     <div className={className}>
       <input id={input.name} type='checkbox'
@@ -13,7 +19,11 @@ const QuickAddSize = ({className, id, input = {}, checked = false, children}) =>
 }
 
 QuickAddSize.propTypes = {
-
+  checked: PropTypes.bool,
+  children: PropTypes.string,
+  className: PropTypes.string,
+  id: PropTypes.string,
+  input: PropTypes.input
 }
 
 export default QuickAddSize

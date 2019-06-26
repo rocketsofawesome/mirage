@@ -20,8 +20,8 @@ export default function withSortedSizes(WrappedComponent) {
         'M/L': 31
       }
       const variantSort = (currentVariant, nextVariant) => {
-        const currentVariantWeight = sizeMap[currentVariant.size.toUpperCase()] || parseInt(currentVariant.size)
-        const nextVariantWeight = sizeMap[nextVariant.size.toUpperCase()] || parseInt(nextVariant.size)
+        const currentVariantWeight = sizeMap[currentVariant.size.toUpperCase()] || parseInt(currentVariant.size, 10)
+        const nextVariantWeight = sizeMap[nextVariant.size.toUpperCase()] || parseInt(nextVariant.size, 10)
         return (currentVariantWeight > nextVariantWeight) ? 1 : -1
       }
       return inVariants

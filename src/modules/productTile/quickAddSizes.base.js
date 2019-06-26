@@ -16,13 +16,12 @@ export default class QuickAddSizes extends Component {
   }
 
   render () {
-    const { adding } = this.state
     const {
-      addingText,
       className,
       defaultText,
       variants,
-      loading
+      loading,
+      onClick
     } = this.props
     return (
       <div className={className}>
@@ -36,11 +35,15 @@ export default class QuickAddSizes extends Component {
           {variants.map((variant, index) => {
             const input = {
               name: variant.sku,
-              disabled: loading || !variant.in_stock
+              disabled: loading || !variant.in_stock,
+              onClick: onClick(variant.sku)
             }
             return (
               <li key={variant.sku}>
-                <QuickAddSize input={input}>{variant.size}</QuickAddSize>
+                <QuickAddSize
+                  input={input}>
+                  {variant.size}
+                </QuickAddSize>
               </li>
             )
           })}
@@ -48,6 +51,15 @@ export default class QuickAddSizes extends Component {
       </div>
     )
   }
+}
+
+QuickAddSizes.propTypes = {
+  addingText: PropTypes.string,
+  className: PropTypes.string,
+  defaultText: PropTypes.string,
+  variants: PropTypes.object,
+  loading: PropTypes.false,
+  onClick: PropTypes.func
 }
 
 QuickAddSizes.defaultProps = {

@@ -54,27 +54,20 @@ const QuickAddSize = styled(BaseQuickAddSize)`
       text-decoration: none;
     }
   }
-.productSizeItemSelected
-}
-
-.productSizeItemDisabled {
-  color: $pinkish-grey;
-  position: relative;
-  text-decoration: none;
-  overflow: hidden;
-  &:hover {
-    color: $pinkish-grey;
-    background-color: transparent;
-    position: relative;
-    text-decoration: none;
-    overflow: hidden;
-  }
-}
-
 `
 
 QuickAddSize.propTypes = {
-
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      rocketBlue: PropTypes.string,
+      loading: PropTypes.string,
+      navy: PropTypes.string,
+      white: PropTypes.string
+    }),
+    fonts: PropTypes.shape({
+      primaryFont: PropTypes.string
+    })
+  })
 }
 
 /** @component */

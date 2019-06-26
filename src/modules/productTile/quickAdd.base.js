@@ -24,21 +24,53 @@ export default class QuickAdd extends Component {
 
 
   render () {
-    const { className, variants, loading } = this.props
-    const { showSizes, selectedVariant } = this.state
+    const {
+      className,
+      children,
+      show,
+      onMouseEnter,
+      onMouseLeave,
+      ...props
+    } = this.props
+    const { showSizes } = this.state
     const SortedQuickAddSizes = withSortedSizes(QuickAddSizes)
-    return (
-      <div
-        className={className}
-        onMouseEnter={this.onMouseEnter}
-        onMouseLeave={this.onMouseLeave}>
-        {!showSizes &&
-          <P>Add to Bag</P>
-        }
-        {showSizes &&
-          <SortedQuickAddSizes loading={loading} variants={variants} />
-        }
-      </div>
-    )
+    if (show) {
+      return (
+        <div
+          className={className}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}>
+          {children}
+          <div
+            className='roa-quick-add'
+            onMouseEnter={this.onMouseEnter}
+            onMouseLeave={this.onMouseLeave}>
+            {!showSizes &&
+              <P>Add to Bag</P>
+            }
+            {showSizes &&
+              <SortedQuickAddSizes {...props}/>
+            }
+          </div>
+        </div>
+      )
+    } else {
+      return (
+        <div
+          className={className}
+          onMouseEnter={onMouseEnter}
+          onMouseLeave={onMouseLeave}>
+          {children}
+        </div>
+      )
+    }
   }
+}
+
+QuickAdd.defaultProps = {
+  className: PropTypes.string,
+  children: PropTypes.node,
+  show: PropTypes.bool,
+  onMouseEnter: PropTypes.func,
+  onMouseLeave: PropTypes.func,
 }

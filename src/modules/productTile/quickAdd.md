@@ -5,7 +5,9 @@
     width: '100%',
     backgroundColor: '#CCC'}
   }>
-    <QuickAdd variants={[
+    <QuickAdd
+    onClick={(sku) => () => { console.log(sku) } }
+    variants={[
   {
     "id": 17350,
     "sku": "5591-521-L",
@@ -106,7 +108,9 @@
     width: '100%',
     backgroundColor: '#CCC'}
   }>
-    <QuickAdd loading variants={[
+    <QuickAdd loading
+    onClick={(sku) => () => { console.log(sku) } } 
+    variants={[
   {
     "id": 17350,
     "sku": "5591-521-L",

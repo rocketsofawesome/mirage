@@ -174,7 +174,7 @@ const Clothesline = styled(({className}) => {
 `
 
 Clothesline.propTypes = {
-
+  className: PropTypes.string
 }
 
 /** @component */

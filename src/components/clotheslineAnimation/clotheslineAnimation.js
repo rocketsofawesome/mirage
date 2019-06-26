@@ -92,7 +92,7 @@ white-space: nowrap;
 `
 
 ClotheslineAnimation.propTypes = {
-
+  className: PropTypes.string
 }
 
 /** @component */

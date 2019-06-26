@@ -4,14 +4,23 @@ import QuickAddBase from './quickAdd.base'
 import { P } from 'SRC'
 
 const QuickAdd = styled(QuickAddBase)`
-  box-sizing: border-box;
+  min-height: 40px;
+  position: relative;
   margin: 0 0.8rem;
-  background-color: ${props => props.theme.colors.white};
-  box-shadow: 0.1rem 0.2rem 0.4rem -0.1rem rgba(0, 0, 0, 0.21);
-  ${P} {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 0.8rem 0;
+  box-sizing: border-box;
+  width: 100%;
+  .roa-quick-add {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 0;
+    right: 0;
+    background-color: ${props => props.theme.colors.white};
+    box-shadow: 0.1rem 0.2rem 0.4rem -0.1rem rgba(0, 0, 0, 0.21);
+    ${P} {
+      text-transform: uppercase;
+      text-align: center;
+      padding: 0.8rem 0;
+    }
   }
 `
 

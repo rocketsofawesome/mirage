@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import BaseQuickAddSizes from './quickAddSizes.base'
@@ -17,10 +16,6 @@ const QuickAddSizes = styled(BaseQuickAddSizes)`
     justify-content: center;
   }
 `
-
-QuickAddSizes.propTypes = {
-
-}
 
 /** @component */
 export default QuickAddSizes

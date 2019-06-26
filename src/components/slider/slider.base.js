@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import Slider from 'react-slick'
-import { InlineImage } from 'SRC'
+import { InlineImage, Chevron } from 'SRC'
 
 class BaseROASlider extends Component {
   constructor (props) {
@@ -12,29 +11,59 @@ class BaseROASlider extends Component {
       lazyLoad: 'progressive',
       arrows: false,
       slidesToShow: 1,
-      dots: true,
-      dotsClass: 'dots'
+      responsive: [
+        {
+          breakpoint: 769,
+          settings: {
+            dots: true,
+            dotsClass: 'dots'
+          }
+        }
+      ]
     }
+
+    this.slider = null
   }
+
+  setSlider = (element) => {
+    this.slider = element
+  }
+
+  prevSlide = () => {
+    this.slider && this.slider.slickPrev()
+  }
+
+  nextSlide = () => {
+    this.slider && this.slider.slickNext()
+  }
+
   render() {
     const { className, images } = this.props
     return (
-      <Slider className={className} {...this.config}>
-        {images.map((image) => {
-          return (
-            <InlineImage
-              alt={image.alt}
-              src={image.src} />
-          )
-        })}
-      </Slider>
+      <div className={className}>
+        <Slider
+          className='roa-slider'
+          ref={this.setSlider}
+          {...this.config}>
+          {images.map((image) => {
+            return (
+              <InlineImage
+                alt={image.alt}
+                src={image.src} />
+            )
+          })}
+        </Slider>
+        <Chevron left onClick={this.prevSlide} />
+        <Chevron right onClick={this.nextSlide} />
+      </div>
     )
   }
 }
 
 
 BaseROASlider.propTypes = {
-
+  className: PropTypes.string,
+  images: PropTypes.array
 }
 
 /** @component */

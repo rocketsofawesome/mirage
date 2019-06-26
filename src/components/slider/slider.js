@@ -2,7 +2,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import BaseROASlider from './slider.base'
 
+import { Chevron } from 'SRC'
+
 const  ROASlider = styled(BaseROASlider)`
+position: relative;
 .image {
   width: 100%;
 }
@@ -88,10 +91,29 @@ const  ROASlider = styled(BaseROASlider)`
       }
     }
   }
+}
+${Chevron} {
+  display: none;
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    &:first-of-type {
+      left: 0;
+    }
+    &:last-of-type {
+      right: 0;
+    }
+  `
+}
 `
 
 ROASlider.propTypes = {
-
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      navy: PropTypes.string,
+    })
+  })
 }
 
 /** @component */

@@ -3,17 +3,21 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { FlexRow, FlexCol } from 'SRC'
 
-const BaseQuartet = ({children, className}) => {
+const BaseQuartet = ({
+  children,
+  className,
+  constrained
+}) => {
   return (
     <FlexRow
       className={className}
-      constrained
+      constrained={constrained}
       padding>
       {children.map((child, index) => {
         return (
           <FlexCol
             mobile={{
-              width: 4
+              width: 2
             }}
             desktop={{
               width: 3
@@ -35,6 +39,10 @@ const Quartet = styled(BaseQuartet)`
 
 Quartet.propTypes = {
   children: PropTypes.array
+}
+
+Quartet.defaultProps = {
+  constrained: false
 }
 
 export default Quartet
