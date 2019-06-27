@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-export class BaseRemoveCouponCode extends React.Component {
+class BaseRemoveCouponCode extends React.Component {
   removePromoCode = () => {
-    const {removePromotion, promotion} = this.props
+    const { removePromotion, promotion } = this.props
     removePromotion(promotion)
   }
   render () {
@@ -23,7 +23,7 @@ BaseRemoveCouponCode.propTypes = {
   className: PropTypes.string
 }
 
-const RemoveCouponCode = styled.div`
+const RemoveCouponCode = styled(BaseRemoveCouponCode)`
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: 14px;
   font-weight: 400;
