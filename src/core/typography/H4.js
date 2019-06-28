@@ -9,8 +9,9 @@ const H4 = styled.h4`
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   font-weight: 500;
-  font-style: italic;
+  font-style: ${props => props.italic ? 'italic': 'normal'};
   line-height: 1;
+  text-transform: ${props => props.uppercase ? 'uppercase' : 'none'}
   margin: ${props => props.margin};
 `
 
@@ -26,13 +27,18 @@ H4.propTypes = {
     }),
     colors: PropTypes.shape({
       navy: PropTypes.string
-    })
+    }),
+    margin: PropTypes.string,
+    italic: PropTypes.bool,
+    uppercase: PropTypes.bool
   })
 }
 
 H4.defaultProps = {
   fontSize: '1.8rem',
-  margin: '2.3rem 0'
+  margin: '2.3rem 0',
+  italic: true,
+  uppercase: false
 }
 
 /** @component */
