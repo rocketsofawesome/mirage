@@ -10,7 +10,6 @@ export default class ProductTile extends React.Component {
     }
   }
   showQuickAdd = () => {
-    console.log('We are showing')
     this.setState({
       quickAdd: true
     })

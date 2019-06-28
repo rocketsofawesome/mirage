@@ -3,8 +3,6 @@ import PropTypes from 'prop-types'
 
 import { P, QuickAddSizes, withSortedSizes } from 'SRC'
 
-console.log(QuickAddSizes)
-
 export default class QuickAdd extends Component {
   constructor (props) {
     super(props)

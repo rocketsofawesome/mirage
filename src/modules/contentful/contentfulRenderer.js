@@ -18,6 +18,7 @@ const ENTRY_RENDER_MAP = {
   tout: (props) => <Mirage.ContentfulTout {...props} />,
   video: (props) => <Mirage.ContentfulResponsiveVideo {...props} />,
   page: (props) => <Mirage.ContentfulLandingPage {...props} />,
+  productQuartet: (props) => <Mirage.ContentfulProductQuartet {...props} />
 }
 
 const ContentfulRenderer = (props) => {

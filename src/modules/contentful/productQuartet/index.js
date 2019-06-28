@@ -1,1 +1,1 @@
-export { default as FeaturedProducts } from './featuredProducts'
+export { default as ContentfulProductQuartet } from './contentfulProductQuartet'
