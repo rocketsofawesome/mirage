@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { MirageMarkdown, Quartet, ProductTile } from 'SRC'
 
-const ProductQuartet = styled(({ description, products, ...props })  => {
+const ProductQuartet = styled(({ className, products, fields: { description, productTaxon }, ...props })  => {
+  console.log(productTaxon)
   return (
-    <div>
+    <div className={className}>
       <MirageMarkdown>{description}</MirageMarkdown>
       <Quartet>
         {products.map((product, index) => {
@@ -17,6 +18,13 @@ const ProductQuartet = styled(({ description, products, ...props })  => {
     </div>
   )
 })`
+  ${MirageMarkdown} {
+    text-align: center;
+    margin: 2rem 0;
+    * {
+      margin: 0;
+    }
+  }
 
 `
 

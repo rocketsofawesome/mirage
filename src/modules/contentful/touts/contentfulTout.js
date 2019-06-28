@@ -64,6 +64,7 @@ const textPosition = ({fields: { position = 'center' } }) => {
 }
 
 const ContentfulTout = styled(BaseContentfulTout)`
+  display: flex;
   width: 100%;
   position: relative;
   margin-bottom: 60px;

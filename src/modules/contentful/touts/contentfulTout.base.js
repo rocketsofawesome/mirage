@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
 import {
@@ -6,28 +6,53 @@ import {
   MirageMarkdown
 } from 'SRC'
 
-const BaseContentfulTout = ({
-  className,
-  fields: {
-    description,
-    media,
-    heroButtons
-  }
-}) => {
-  return (
-    <ContentfulRenderer className={className} {...media}>
-      <div className='roa-tout-overlay'>
-        <MirageMarkdown>{description}</MirageMarkdown>
-        <div className='roa-tout-buttons'>
-          {heroButtons && heroButtons.map((button) => {
-            return(
-              <ContentfulRenderer {...button} key={button.sys.id} />
-            )
-          })}
+class BaseContentfulTout extends Component {
+  renderContent = () => {
+    const {
+      fields: {
+        description,
+        heroButtons,
+        media
+      }
+    } = this.props
+    return (
+      <ContentfulRenderer {...media}>
+        <div className='roa-tout-overlay'>
+          <MirageMarkdown>{description}</MirageMarkdown>
+          <div className='roa-tout-buttons'>
+            {heroButtons && heroButtons.map((button) => {
+              return(
+                <ContentfulRenderer {...button} key={button.sys.id} />
+              )
+            })}
+          </div>
         </div>
+      </ContentfulRenderer>
+    )
+  }
+
+  render () {
+    const {
+      className,
+      renderToutLink,
+      fields: {
+        destination
+      }
+    } = this.props
+  const ToutLink = renderToutLink
+  if (destination) {
+    return (
+      <ToutLink className={className} destination={destination}>
+        {this.renderContent()}
+      </ToutLink>
+    )
+  }
+    return (
+      <div className={className}>
+        { this.renderContent() }
       </div>
-    </ContentfulRenderer>
-  )
+    )
+  }
 }
 
 BaseContentfulTout.propTypes = {
@@ -41,6 +66,17 @@ BaseContentfulTout.propTypes = {
     position: PropTypes.string,
     textColor: PropTypes.string,
   })
+}
+
+BaseContentfulTout.defaultProps = {
+  renderToutLink: ({
+    className,
+    children,
+    destination
+  }) =>
+    <a className={className} href={destination}>
+      {children}
+    </a>
 }
 
 export default BaseContentfulTout
