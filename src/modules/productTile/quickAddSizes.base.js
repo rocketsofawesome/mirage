@@ -57,8 +57,8 @@ QuickAddSizes.propTypes = {
   addingText: PropTypes.string,
   className: PropTypes.string,
   defaultText: PropTypes.string,
-  variants: PropTypes.object,
-  loading: PropTypes.false,
+  variants: PropTypes.array,
+  loading: PropTypes.bool,
   onClick: PropTypes.func
 }
 

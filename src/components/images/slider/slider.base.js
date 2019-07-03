@@ -30,6 +30,7 @@ class BaseROASlider extends Component {
   }
 
   prevSlide = () => {
+    console.log('Hello')
     this.slider && this.slider.slickPrev()
   }
 
@@ -45,9 +46,10 @@ class BaseROASlider extends Component {
           className='roa-slider'
           ref={this.setSlider}
           {...this.config}>
-          {images.map((image) => {
+          {images.map((image, index) => {
             return (
               <InlineImage
+                key={index}
                 alt={image.alt}
                 src={image.src} />
             )

@@ -163,6 +163,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-weight: 500;
   font-style: italic;
   line-height: 1;
+  text-transform: none;
   margin: 2.3rem 0;
 }
 
@@ -1420,7 +1421,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
+                                              italic={true}
                                               margin="2.3rem 0"
+                                              uppercase={false}
                                             >
                                               <h4
                                                 className="c14"
@@ -2462,7 +2465,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
+                                              italic={true}
                                               margin="2.3rem 0"
+                                              uppercase={false}
                                             >
                                               <h4
                                                 className="c14"
@@ -3328,7 +3333,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
+                                              italic={true}
                                               margin="2.3rem 0"
+                                              uppercase={false}
                                             >
                                               <h4
                                                 className="c14"
@@ -4285,7 +4292,9 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                           >
                                             <styled.h4
                                               fontSize="1.8rem"
+                                              italic={true}
                                               margin="2.3rem 0"
+                                              uppercase={false}
                                             >
                                               <h4
                                                 className="c14"

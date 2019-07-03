@@ -2,7 +2,7 @@
 ```js
 <QuickAddSize input={{
   name: '5-default',
-  onClick: () => { alert('Selecting a size!') }
+  onChange: () => { alert('Selecting a size!') }
 }}>5</QuickAddSize>
 ```
 
@@ -10,7 +10,7 @@
 ```js
 <QuickAddSize checked input={{
   name: '5-selected',
-  onClick: () => { alert('Selecting a size!') }
+  onChange: () => { alert('Selecting a size!') }
 }}>5</QuickAddSize>
 ```
 
@@ -19,6 +19,6 @@
 <QuickAddSize input={{
   name: '5-disabled',
   disabled: true,
-  onClick: () => { alert('Selecting a size!') }
+  onChange: () => { alert('Selecting a size!') }
 }}>5</QuickAddSize>
 ```
