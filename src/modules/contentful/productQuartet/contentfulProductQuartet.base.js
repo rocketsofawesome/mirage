@@ -26,7 +26,6 @@ export default class ContentfulProductQuartet extends Component {
       ...props
     } = this.props
     const { products } = this.state
-    console.log(products)
     return (
       <div className={className}>
         <MirageMarkdown>{description}</MirageMarkdown>
@@ -47,7 +46,6 @@ export default class ContentfulProductQuartet extends Component {
 ContentfulProductQuartet.propTypes = {
   className: PropTypes.string,
   loadProducts: PropTypes.func,
-  products: PropTypes.array,
   fields: PropTypes.shape({
     description: PropTypes.string,
     productTaxon: PropTypes.string

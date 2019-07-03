@@ -31,6 +31,32 @@ exports[`() Gallery matching the snapshot 1`] = `
   padding-right: 5px;
 }
 
+.c9 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.c10 {
+  width: 12px;
+  height: 8px;
+  fill: none;
+  stroke: #0073D1;
+  stroke-miterlimit: 10;
+  stroke-width: 5px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
 .c3 {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -57,15 +83,15 @@ exports[`() Gallery matching the snapshot 1`] = `
   border-color: #0073D1;
 }
 
-.c0 .imageZoom {
-  z-index: 1;
+.c7 {
+  position: relative;
 }
 
-.c0 .slider .image {
+.c7 .image {
   width: 100%;
 }
 
-.c0 .dots {
+.c7 .dots {
   position: absolute;
   bottom: 15px;
   display: block;
@@ -76,7 +102,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   text-align: center;
 }
 
-.c0 .dots li {
+.c7 .dots li {
   position: relative;
   display: inline-block;
   width: 7px;
@@ -86,7 +112,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   cursor: pointer;
 }
 
-.c0 .dots li button {
+.c7 .dots li button {
   font-size: 0;
   line-height: 0;
   display: block;
@@ -100,17 +126,17 @@ exports[`() Gallery matching the snapshot 1`] = `
   background: transparent;
 }
 
-.c0 .dots li button:hover,
-.c0 .dots li button:focus {
+.c7 .dots li button:hover,
+.c7 .dots li button:focus {
   outline: none;
 }
 
-.c0 .dots li button:hover:before,
-.c0 .dots li button:focus:before {
+.c7 .dots li button:hover:before,
+.c7 .dots li button:focus:before {
   opacity: 1;
 }
 
-.c0 .dots li button:before {
+.c7 .dots li button:before {
   font-family: 'slick';
   font-size: 6px;
   line-height: 5px;
@@ -128,9 +154,17 @@ exports[`() Gallery matching the snapshot 1`] = `
   box-sizing: border-box;
 }
 
-.c0 .dots .slick-active button:before {
+.c7 .dots .slick-active button:before {
   background-color: #00003C !important;
   border: 2px solid transparent!important;
+}
+
+.c7 .c8 {
+  display: none;
+}
+
+.c0 .imageZoom {
+  z-index: 1;
 }
 
 @media (min-width:960px) {
@@ -188,8 +222,24 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c7 .c8 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+  }
+
+  .c7 .c8:first-of-type {
+    left: 0;
+  }
+
+  .c7 .c8:last-of-type {
+    right: 0;
+  }
+}
+
 @media (min-width:960px) {
-  .c0 .slider {
+  .c0 .c6 {
     width: 50%;
   }
 }
@@ -1468,506 +1518,544 @@ exports[`() Gallery matching the snapshot 1`] = `
               className="c5"
               display="block"
             >
-              <Slider
-                arrows={false}
+              <Styled(BaseROASlider)
                 className="slider"
-                dots={true}
-                dotsClass="dots"
-                infinite={true}
-                lazyLoad="progressive"
-                slidesToShow={1}
+                images={
+                  Array [
+                    Object {
+                      "alt": "Cool Down Active Short on model",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                    },
+                    Object {
+                      "alt": "Cool Down Active Short on model",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                    },
+                    Object {
+                      "alt": "Fuzzy Tiger Tee on model",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                    },
+                    Object {
+                      "alt": "Fuzzy Tiger Tee front",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                    },
+                    Object {
+                      "alt": "Fuzzy Tiger Tee detail",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                    },
+                    Object {
+                      "alt": "Cool Down Active Short front",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                    },
+                    Object {
+                      "alt": "Cool Down Active Short back",
+                      "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                    },
+                  ]
+                }
               >
-                <InnerSlider
-                  accessibility={true}
-                  adaptiveHeight={false}
-                  afterChange={null}
-                  appendDots={[Function]}
-                  arrows={false}
-                  autoplay={false}
-                  autoplaySpeed={3000}
-                  beforeChange={null}
-                  centerMode={false}
-                  centerPadding="50px"
-                  className="slider"
-                  cssEase="ease"
-                  customPaging={[Function]}
-                  dots={true}
-                  dotsClass="dots"
-                  draggable={true}
-                  easing="linear"
-                  edgeFriction={0.35}
-                  fade={false}
-                  focusOnSelect={false}
-                  infinite={true}
-                  initialSlide={0}
-                  lazyLoad="progressive"
-                  nextArrow={null}
-                  onEdge={null}
-                  onInit={null}
-                  onLazyLoadError={null}
-                  onReInit={null}
-                  pauseOnDotsHover={false}
-                  pauseOnFocus={false}
-                  pauseOnHover={true}
-                  prevArrow={null}
-                  responsive={null}
-                  rows={1}
-                  rtl={false}
-                  slide="div"
-                  slidesPerRow={1}
-                  slidesToScroll={1}
-                  slidesToShow={1}
-                  speed={500}
-                  swipe={true}
-                  swipeEvent={null}
-                  swipeToSlide={false}
-                  touchMove={true}
-                  touchThreshold={5}
-                  useCSS={true}
-                  useTransform={true}
-                  variableWidth={false}
-                  vertical={false}
-                  waitForAnimate={true}
+                <BaseROASlider
+                  className="slider c6 c7"
+                  images={
+                    Array [
+                      Object {
+                        "alt": "Cool Down Active Short on model",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg",
+                      },
+                      Object {
+                        "alt": "Cool Down Active Short on model",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg",
+                      },
+                      Object {
+                        "alt": "Fuzzy Tiger Tee on model",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg",
+                      },
+                      Object {
+                        "alt": "Fuzzy Tiger Tee front",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg",
+                      },
+                      Object {
+                        "alt": "Fuzzy Tiger Tee detail",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg",
+                      },
+                      Object {
+                        "alt": "Cool Down Active Short front",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg",
+                      },
+                      Object {
+                        "alt": "Cool Down Active Short back",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg",
+                      },
+                    ]
+                  }
                 >
                   <div
-                    className="slick-slider slider slick-initialized"
-                    dir="ltr"
+                    className="slider c6 c7"
                   >
-                    <div
-                      className="slick-list"
-                      onClick={[Function]}
-                      onKeyDown={[Function]}
-                      onMouseDown={[Function]}
-                      onMouseLeave={null}
-                      onMouseMove={null}
-                      onMouseUp={[Function]}
-                      onTouchCancel={null}
-                      onTouchEnd={[Function]}
-                      onTouchMove={null}
-                      onTouchStart={[Function]}
-                      style={Object {}}
+                    <Slider
+                      arrows={false}
+                      className="roa-slider"
+                      infinite={true}
+                      lazyLoad="progressive"
+                      responsive={
+                        Array [
+                          Object {
+                            "breakpoint": 769,
+                            "settings": Object {
+                              "dots": true,
+                              "dotsClass": "dots",
+                            },
+                          },
+                        ]
+                      }
+                      slidesToShow={1}
                     >
-                      <Track
+                      <InnerSlider
+                        accessibility={true}
+                        adaptiveHeight={false}
+                        afterChange={null}
+                        appendDots={[Function]}
+                        arrows={false}
+                        autoplay={false}
+                        autoplaySpeed={3000}
+                        beforeChange={null}
                         centerMode={false}
                         centerPadding="50px"
+                        className="roa-slider"
                         cssEase="ease"
-                        currentSlide={0}
+                        customPaging={[Function]}
+                        dots={false}
+                        dotsClass="slick-dots"
+                        draggable={true}
+                        easing="linear"
+                        edgeFriction={0.35}
                         fade={false}
-                        focusOnSelect={null}
+                        focusOnSelect={false}
                         infinite={true}
+                        initialSlide={0}
                         lazyLoad="progressive"
-                        lazyLoadedList={
+                        nextArrow={null}
+                        onEdge={null}
+                        onInit={null}
+                        onLazyLoadError={null}
+                        onReInit={null}
+                        pauseOnDotsHover={false}
+                        pauseOnFocus={false}
+                        pauseOnHover={true}
+                        prevArrow={null}
+                        responsive={
                           Array [
-                            0,
+                            Object {
+                              "breakpoint": 769,
+                              "settings": Object {
+                                "dots": true,
+                                "dotsClass": "dots",
+                              },
+                            },
                           ]
                         }
-                        listHeight={0}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        onMouseOver={[Function]}
+                        rows={1}
                         rtl={false}
-                        slideCount={7}
-                        slideHeight={0}
-                        slideWidth={0}
+                        slide="div"
+                        slidesPerRow={1}
                         slidesToScroll={1}
                         slidesToShow={1}
                         speed={500}
-                        trackStyle={
-                          Object {
-                            "WebkitTransform": "translate3d(0px, 0px, 0px)",
-                            "WebkitTransition": "",
-                            "msTransform": "translateX(0px)",
-                            "opacity": 1,
-                            "transform": "translate3d(0px, 0px, 0px)",
-                            "transition": "",
-                          }
-                        }
+                        swipe={true}
+                        swipeEvent={null}
+                        swipeToSlide={false}
+                        touchMove={true}
+                        touchThreshold={5}
+                        useCSS={true}
+                        useTransform={true}
                         variableWidth={false}
                         vertical={false}
+                        waitForAnimate={true}
                       >
                         <div
-                          className="slick-track"
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          onMouseOver={[Function]}
-                          style={
-                            Object {
-                              "WebkitTransform": "translate3d(0px, 0px, 0px)",
-                              "WebkitTransition": "",
-                              "msTransform": "translateX(0px)",
-                              "opacity": 1,
-                              "transform": "translate3d(0px, 0px, 0px)",
-                              "transition": "",
-                            }
-                          }
+                          className="slick-slider roa-slider slick-initialized"
+                          dir="ltr"
                         >
                           <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={-1}
-                            key="precloned-1"
+                            className="slick-list"
                             onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={false}
-                            className="slick-slide slick-active slick-current"
-                            data-index={0}
-                            key="original0"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
+                            onKeyDown={[Function]}
+                            onMouseDown={[Function]}
+                            onMouseLeave={null}
+                            onMouseMove={null}
+                            onMouseUp={[Function]}
+                            onTouchCancel={null}
+                            onTouchEnd={[Function]}
+                            onTouchMove={null}
+                            onTouchStart={[Function]}
+                            style={Object {}}
                           >
-                            <div
-                              key="0"
+                            <Track
+                              centerMode={false}
+                              centerPadding="50px"
+                              cssEase="ease"
+                              currentSlide={0}
+                              fade={false}
+                              focusOnSelect={null}
+                              infinite={true}
+                              lazyLoad="progressive"
+                              lazyLoadedList={
+                                Array [
+                                  0,
+                                ]
+                              }
+                              listHeight={0}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              onMouseOver={[Function]}
+                              rtl={false}
+                              slideCount={7}
+                              slideHeight={0}
+                              slideWidth={0}
+                              slidesToScroll={1}
+                              slidesToShow={1}
+                              speed={500}
+                              trackStyle={
+                                Object {
+                                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                  "WebkitTransition": "",
+                                  "msTransform": "translateX(0px)",
+                                  "opacity": 1,
+                                  "transform": "translate3d(0px, 0px, 0px)",
+                                  "transition": "",
+                                }
+                              }
+                              variableWidth={false}
+                              vertical={false}
                             >
-                              <InlineImage
-                                alt="Cool Down Active Short on model"
-                                className="image"
-                                key="0"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                              <div
+                                className="slick-track"
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseOver={[Function]}
                                 style={
                                   Object {
-                                    "display": "inline-block",
-                                    "width": "100%",
+                                    "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                    "WebkitTransition": "",
+                                    "msTransform": "translateX(0px)",
+                                    "opacity": 1,
+                                    "transform": "translate3d(0px, 0px, 0px)",
+                                    "transition": "",
                                   }
                                 }
-                                tabIndex={-1}
                               >
-                                <img
-                                  alt="Cool Down Active Short on model"
-                                  className="image"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={-1}
+                                  key="precloned-1"
+                                  onClick={[Function]}
                                   style={
                                     Object {
-                                      "display": "inline-block",
-                                      "width": "100%",
+                                      "width": 0,
                                     }
                                   }
-                                  tabIndex={-1}
+                                  tabIndex="-1"
                                 />
-                              </InlineImage>
-                            </div>
-                          </div>
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={1}
-                            key="original1"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={2}
-                            key="original2"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={3}
-                            key="original3"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={4}
-                            key="original4"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={5}
-                            key="original5"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide"
-                            data-index={6}
-                            key="original6"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "outline": "none",
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={7}
-                            key="postcloned0"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          >
-                            <div
-                              key="0"
-                            >
-                              <InlineImage
-                                alt="Cool Down Active Short on model"
-                                className="image"
-                                key="0"
-                                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                                style={
-                                  Object {
-                                    "display": "inline-block",
-                                    "width": "100%",
-                                  }
-                                }
-                                tabIndex={-1}
-                              >
-                                <img
-                                  alt="Cool Down Active Short on model"
-                                  className="image"
-                                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                <div
+                                  aria-hidden={false}
+                                  className="slick-slide slick-active slick-current"
+                                  data-index={0}
+                                  key="original0"
+                                  onClick={[Function]}
                                   style={
                                     Object {
-                                      "display": "inline-block",
-                                      "width": "100%",
+                                      "outline": "none",
+                                      "width": 0,
                                     }
                                   }
-                                  tabIndex={-1}
+                                  tabIndex="-1"
+                                >
+                                  <div
+                                    key="0"
+                                  >
+                                    <InlineImage
+                                      alt="Cool Down Active Short on model"
+                                      key="0"
+                                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                      style={
+                                        Object {
+                                          "display": "inline-block",
+                                          "width": "100%",
+                                        }
+                                      }
+                                      tabIndex={-1}
+                                    >
+                                      <img
+                                        alt="Cool Down Active Short on model"
+                                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                      />
+                                    </InlineImage>
+                                  </div>
+                                </div>
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={1}
+                                  key="original1"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
                                 />
-                              </InlineImage>
-                            </div>
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={2}
+                                  key="original2"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={3}
+                                  key="original3"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={4}
+                                  key="original4"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={5}
+                                  key="original5"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide"
+                                  data-index={6}
+                                  key="original6"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "outline": "none",
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={7}
+                                  key="postcloned0"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                >
+                                  <div
+                                    key="0"
+                                  >
+                                    <InlineImage
+                                      alt="Cool Down Active Short on model"
+                                      key="0"
+                                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                      style={
+                                        Object {
+                                          "display": "inline-block",
+                                          "width": "100%",
+                                        }
+                                      }
+                                      tabIndex={-1}
+                                    >
+                                      <img
+                                        alt="Cool Down Active Short on model"
+                                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                      />
+                                    </InlineImage>
+                                  </div>
+                                </div>
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={8}
+                                  key="postcloned8"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={9}
+                                  key="postcloned9"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={10}
+                                  key="postcloned10"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={11}
+                                  key="postcloned11"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={12}
+                                  key="postcloned12"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                                <div
+                                  aria-hidden={true}
+                                  className="slick-slide slick-cloned"
+                                  data-index={13}
+                                  key="postcloned13"
+                                  onClick={[Function]}
+                                  style={
+                                    Object {
+                                      "width": 0,
+                                    }
+                                  }
+                                  tabIndex="-1"
+                                />
+                              </div>
+                            </Track>
                           </div>
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={8}
-                            key="postcloned8"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={9}
-                            key="postcloned9"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={10}
-                            key="postcloned10"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={11}
-                            key="postcloned11"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={12}
-                            key="postcloned12"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
-                          <div
-                            aria-hidden={true}
-                            className="slick-slide slick-cloned"
-                            data-index={13}
-                            key="postcloned13"
-                            onClick={[Function]}
-                            style={
-                              Object {
-                                "width": 0,
-                              }
-                            }
-                            tabIndex="-1"
-                          />
                         </div>
-                      </Track>
-                    </div>
-                    <Dots
-                      appendDots={[Function]}
-                      clickHandler={[Function]}
-                      currentSlide={0}
-                      customPaging={[Function]}
-                      dotsClass="dots"
-                      infinite={true}
-                      onMouseEnter={null}
-                      onMouseLeave={null}
-                      onMouseOver={null}
-                      slideCount={7}
-                      slidesToScroll={1}
-                      slidesToShow={1}
+                      </InnerSlider>
+                    </Slider>
+                    <Styled(BaseChevron)
+                      ignoreErrors={false}
+                      left={true}
+                      onClick={[Function]}
                     >
-                      <ul
-                        className="dots"
-                        onMouseEnter={null}
-                        onMouseLeave={null}
-                        onMouseOver={null}
-                        style={
-                          Object {
-                            "display": "block",
-                          }
-                        }
+                      <BaseChevron
+                        className="c8 c9"
+                        ignoreErrors={false}
+                        left={true}
+                        onClick={[Function]}
                       >
-                        <li
-                          className="slick-active"
-                          key="0"
+                        <svg
+                          className="c8 c9"
+                          onClick={[Function]}
+                          viewBox="0 0 48 24.12"
                         >
-                          <button
-                            onClick={[Function]}
-                          >
-                            1
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="1"
+                          <polyline
+                            points="1 1 24 22.75 47 1"
+                          />
+                        </svg>
+                      </BaseChevron>
+                    </Styled(BaseChevron)>
+                    <Styled(BaseChevron)
+                      ignoreErrors={false}
+                      onClick={[Function]}
+                      right={true}
+                    >
+                      <BaseChevron
+                        className="c8 c10"
+                        ignoreErrors={false}
+                        onClick={[Function]}
+                        right={true}
+                      >
+                        <svg
+                          className="c8 c10"
+                          onClick={[Function]}
+                          viewBox="0 0 48 24.12"
                         >
-                          <button
-                            onClick={[Function]}
-                          >
-                            2
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="2"
-                        >
-                          <button
-                            onClick={[Function]}
-                          >
-                            3
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="3"
-                        >
-                          <button
-                            onClick={[Function]}
-                          >
-                            4
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="4"
-                        >
-                          <button
-                            onClick={[Function]}
-                          >
-                            5
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="5"
-                        >
-                          <button
-                            onClick={[Function]}
-                          >
-                            6
-                          </button>
-                        </li>
-                        <li
-                          className=""
-                          key="6"
-                        >
-                          <button
-                            onClick={[Function]}
-                          >
-                            7
-                          </button>
-                        </li>
-                      </ul>
-                    </Dots>
+                          <polyline
+                            points="1 1 24 22.75 47 1"
+                          />
+                        </svg>
+                      </BaseChevron>
+                    </Styled(BaseChevron)>
                   </div>
-                </InnerSlider>
-              </Slider>
+                </BaseROASlider>
+              </Styled(BaseROASlider)>
             </div>
           </Component>
         </Styled(Component)>

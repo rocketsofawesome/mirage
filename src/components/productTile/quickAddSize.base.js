@@ -18,10 +18,14 @@ const QuickAddSize = ({
   }
   return (
     <div className={className}>
-      <input id={input.name} type='checkbox'
-      {...input}
-      checked={checked} />
-      <label for={input.name}>{label}</label>
+      <input
+      id={input.name}
+      type='button'
+      {...input} />
+      <label
+        htmlFor={input.name}>
+        {label}
+      </label>
     </div>
   )
 }
@@ -31,7 +35,7 @@ QuickAddSize.propTypes = {
   children: PropTypes.string,
   className: PropTypes.string,
   id: PropTypes.string,
-  input: PropTypes.input
+  input: PropTypes.object
 }
 
 export default QuickAddSize

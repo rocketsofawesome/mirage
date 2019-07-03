@@ -1,4 +1,4 @@
-export const defaultProps = [
+export default [
   {
     images: [
       {
@@ -106,16 +106,16 @@ export const defaultProps = [
   {
     images: [
       {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png',
+        src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/d56crumgnqefhkqbwn79.jpg',
         alt: 'Front'
       },
       {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169409/production/catalog/zppjvgtqx0ddndibimdr.png',
+        src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/vuxvunur8gbqavd2w2sy.jpg',
         alt: 'Back'
       }
     ],
-    title: 'RAINBOW SEQUIN ZELDA TEE',
-    price: 22.50,
+    title: 'NEON STRIPE TEE',
+    price: 19.50,
     variants: [
       {
         "id": 17350,
@@ -210,16 +210,12 @@ export const defaultProps = [
   {
     images: [
       {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png',
+        src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/ms1fjetho72hngytg5en.jpg',
         alt: 'Front'
-      },
-      {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169409/production/catalog/zppjvgtqx0ddndibimdr.png',
-        alt: 'Back'
       }
     ],
-    title: 'RAINBOW SEQUIN ZELDA TEE',
-    price: 22.50,
+    title: 'ALLOVER JEWEL TANK',
+    price: 24.50,
     variants: [
       {
         "id": 17350,
@@ -314,15 +310,15 @@ export const defaultProps = [
   {
     images: [
       {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png',
+        src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jruf2gsqirwfvcfxjk1f.jpg',
         alt: 'Front'
       },
       {
-        src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169409/production/catalog/zppjvgtqx0ddndibimdr.png',
+        src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/qkv9n0bpm4zkfyufrg0w.jpg',
         alt: 'Back'
       }
     ],
-    title: 'RAINBOW SEQUIN ZELDA TEE',
+    title: 'LIGHTNING POLO',
     price: 22.50,
     variants: [
       {
