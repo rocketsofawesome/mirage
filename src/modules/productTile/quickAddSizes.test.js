@@ -8,7 +8,7 @@ const { mountWithTheme } = global
 
 const defaultProps = {
   ...productWithVariants.product,
-  onClick: productWithVariants.onClick
+  quickAdd: productWithVariants.quickAdd
 }
 
 describe('(Styled Component) QuickAddSizes', () => {

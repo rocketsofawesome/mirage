@@ -5,12 +5,14 @@ const ContentfulLandingPage = ({
   className,
   fields: {
     section
-  }
+  },
+  sys,
+  ...props
 }) => {
   return (
     <section>
       {section.map((element, index) => {
-        return (<ContentfulRenderer key={index} {...element} />)
+        return (<ContentfulRenderer key={index} {...element} {...props} />)
       })}
     </section>
   )

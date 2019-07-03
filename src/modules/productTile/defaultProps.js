@@ -104,7 +104,7 @@ const productWithVariants = {
       }
     ]
   },
-  onClick: exampleClickHandler
+  quickAdd: exampleClickHandler
 }
 
 const productWithOneSize = {
@@ -132,7 +132,7 @@ const productWithOneSize = {
       }
     ]
   },
-  onClick: exampleClickHandler
+  quickAdd: exampleClickHandler
 }
 
 export { productWithVariants, productWithOneSize }

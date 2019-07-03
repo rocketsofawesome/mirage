@@ -30,7 +30,6 @@ class BaseROASlider extends Component {
   }
 
   prevSlide = () => {
-    console.log('Hello')
     this.slider && this.slider.slickPrev()
   }
 

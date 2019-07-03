@@ -52,7 +52,7 @@ describe('(Styled Component) ProductTile', () => {
       expect(
         styledProductTile
           .find(BaseProductTile)
-          .state().quickAdd
+          .state().show
       ).toBeFalsy()
 
       styledProductTile
@@ -62,7 +62,7 @@ describe('(Styled Component) ProductTile', () => {
       expect(
         styledProductTile
           .find(BaseProductTile)
-          .state().quickAdd
+          .state().show
       ).toBeTruthy()
     })
 
@@ -73,7 +73,7 @@ describe('(Styled Component) ProductTile', () => {
         styledProductTile
           .find(BaseProductTile)
           .state()
-          .quickAdd
+          .show
       ).toBeFalsy()
 
       styledProductTile
@@ -84,7 +84,7 @@ describe('(Styled Component) ProductTile', () => {
         styledProductTile
           .find(BaseProductTile)
           .state()
-          .quickAdd
+          .show
       ).toBeTruthy()
 
       styledProductTile
@@ -94,7 +94,7 @@ describe('(Styled Component) ProductTile', () => {
         styledProductTile
           .find(BaseProductTile)
           .state()
-          .quickAdd
+          .show
       ).toBeFalsy()
     })
   })

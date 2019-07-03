@@ -6,7 +6,7 @@
     backgroundColor: '#CCC'}
   }>
     <QuickAdd
-    onClick={(sku) => () => { console.log(sku) } }
+    quickAdd={(sku) => () => { console.log(sku) } }
     variants={[
   {
     "id": 17350,
@@ -109,7 +109,7 @@
     backgroundColor: '#CCC'}
   }>
     <QuickAdd loading
-    onClick={(sku) => () => { console.log(sku) } } 
+    quickAdd={(sku) => () => { console.log(sku) } } 
     variants={[
   {
     "id": 17350,

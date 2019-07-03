@@ -1,7 +1,7 @@
 ### Default:
 ```js
   <QuickAddSizes
-    onClick={(sku) => () => { console.log(sku) } }
+    quickAdd={(sku) => () => { console.log(sku) } }
     variants={
       [
         {

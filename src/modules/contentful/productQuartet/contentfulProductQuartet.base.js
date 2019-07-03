@@ -54,7 +54,6 @@ ContentfulProductQuartet.propTypes = {
 
 ContentfulProductQuartet.defaultProps = {
   loadProducts: (taxon) => {
-    console.log(products)
     return products
   }
 }

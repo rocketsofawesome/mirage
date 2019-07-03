@@ -6,34 +6,34 @@ export default class ProductTile extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      quickAdd: false
+      show: false
     }
   }
   showQuickAdd = () => {
     this.setState({
-      quickAdd: true
+      show: true
     })
   }
   hideQuickAdd = () => {
     this.setState({
-      quickAdd: false
+      show: false
     })
   }
   render () {
     const {
       className,
       product,
-      onClick
+      ...props
     } = this.props
-    const { quickAdd } = this.state
+    const { show } = this.state
     return (
       <div className={className}>
         <QuickAdd
           onMouseEnter={this.showQuickAdd}
           onMouseLeave={this.hideQuickAdd}
           variants={product.variants}
-          onClick={onClick}
-          show={quickAdd}>
+          show={show}
+          {...props}>
           <ROASlider images={product.images} />
         </QuickAdd>
         <Label>{product.title}</Label>
@@ -46,5 +46,4 @@ export default class ProductTile extends React.Component {
 ProductTile.propTypes = {
   className: PropTypes.string,
   product: PropTypes.object,
-  onClick: PropTypes.func
 }

@@ -5,6 +5,7 @@
     'sys.id': '21Va4brrDmkukCqAGuUCGu',
     include: 10
   }}>
-    <ContentfulRenderer />
+    <ContentfulRenderer
+    quickAdd={(sku) => () => { alert(`${sku} clicked`) } } />
   </Contentful>
 ```

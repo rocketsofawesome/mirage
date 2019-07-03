@@ -21,7 +21,7 @@ export default class QuickAddSizes extends Component {
       defaultText,
       variants,
       loading,
-      onClick
+      quickAdd
     } = this.props
     return (
       <div className={className}>
@@ -36,7 +36,7 @@ export default class QuickAddSizes extends Component {
             const input = {
               name: variant.sku,
               disabled: loading || !variant.in_stock,
-              onClick: onClick(variant.sku)
+              onClick: quickAdd(variant.sku)
             }
             return (
               <li key={variant.sku}>

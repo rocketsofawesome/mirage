@@ -8,7 +8,8 @@ const QuickAddSize = ({
   children,
   className,
   id,
-  input = {}
+  input = {},
+  quickAdd
 }) => {
   let label = ''
   if (children === 'OS') {
@@ -21,7 +22,8 @@ const QuickAddSize = ({
       <input
       id={input.name}
       type='button'
-      {...input} />
+      {...input}
+       />
       <label
         htmlFor={input.name}>
         {label}
