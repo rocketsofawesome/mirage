@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { MirageMarkdown, Quartet, ProductTile } from 'SRC'
-import { default as products } from './defaultProps'
 
 export default class ContentfulProductQuartet extends Component {
   constructor (props) {
@@ -29,7 +28,7 @@ export default class ContentfulProductQuartet extends Component {
     return (
       <div className={className}>
         <MirageMarkdown>{description}</MirageMarkdown>
-        {products &&
+        {Array.isArray(products) &&
           <Quartet>
             {products.map((product, index) => {
               return (

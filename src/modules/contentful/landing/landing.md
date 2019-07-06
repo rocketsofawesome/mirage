@@ -6,6 +6,7 @@
     include: 10
   }}>
     <ContentfulRenderer
-    quickAdd={(sku) => () => { alert(`${sku} clicked`) } } />
+    quickAdd={(sku) => () => { alert(`${sku} clicked`) } }
+    loadProducts={() => console.log('loading products')} />
   </Contentful>
 ```
