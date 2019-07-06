@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { MirageMarkdown, Quartet, ProductTile } from 'SRC'
+import { MirageMarkdown, ProductQuartet } from 'SRC'
+import { default as products } from './defaultProps'
 
 export default class ContentfulProductQuartet extends Component {
-  constructor (props) {
-    super(props)
-
-    this.state = {
-      products: undefined
-    }
-  }
   componentDidMount () {
     const { fields: { productTaxon }, loadProducts } = this.props
-    this.setState({
-      products: loadProducts(productTaxon)
-    })
+    loadProducts(productTaxon)
   }
   render () {
     const {
@@ -22,21 +14,12 @@ export default class ContentfulProductQuartet extends Component {
       fields: {
         description
       },
-      ...props
+      renderQuartet
     } = this.props
-    const { products } = this.state
     return (
       <div className={className}>
         <MirageMarkdown>{description}</MirageMarkdown>
-        {products && Array.isArray(products) &&
-          <Quartet>
-            {products.map((product, index) => {
-              return (
-                <ProductTile product={product} key={index} {...props} />
-              )
-            })}
-          </Quartet>
-        }
+        {renderQuartet()}
       </div>
     )
   }
@@ -52,6 +35,6 @@ ContentfulProductQuartet.propTypes = {
 }
 
 ContentfulProductQuartet.defaultProps = {
-  loadProducts: (taxon) => {
-  }
+  loadProducts: () => { console.warn('loadProducts function has not been passed to contentfulProductQuartet')},
+  renderQuartet: () => <ProductQuartet products={products} />
 }
