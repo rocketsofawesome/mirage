@@ -28,7 +28,7 @@ export default class ContentfulProductQuartet extends Component {
     return (
       <div className={className}>
         <MirageMarkdown>{description}</MirageMarkdown>
-        {Array.isArray(products) &&
+        {products && Array.isArray(products) &&
           <Quartet>
             {products.map((product, index) => {
               return (
