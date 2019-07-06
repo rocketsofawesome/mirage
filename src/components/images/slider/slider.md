@@ -1,12 +1,19 @@
 ```js
-  <ROASlider images={[
+  <ROASlider shots={[
     {
-      src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png',
-      alt: 'Front'
+      "id": 2688485,
+      "shot_type": "back",
+      "cloudinary_key": "production/catalog/cdwuwjsslhhgah2ajmr6"
     },
     {
-      src: 'https://res.cloudinary.com/roa-canon/image/upload/v1559169409/production/catalog/zppjvgtqx0ddndibimdr.png',
-      alt: 'Back'
+      "id": 2688487,
+      "shot_type": "detail",
+      "cloudinary_key": "production/catalog/vj9vd5bdrppry8uzfqoy"
+    },
+    {
+      "id": 2688486,
+      "shot_type": "front",
+      "cloudinary_key": "production/catalog/fnm4byyqsua0g0jj7dou"
     }
   ]}/>
 ```

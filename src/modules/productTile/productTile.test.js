@@ -32,16 +32,16 @@ describe('(Styled Component) ProductTile', () => {
       .find(Label)
       .first()
       .text()
-    ).toEqual(productWithVariants.product.title)
+    ).toEqual(productWithVariants.product.name)
   })
 
-  test('rendering product title', () => {
+  test('rendering product price', () => {
     expect(
      createProductTile()
       .find(Label)
       .last()
       .text()
-    ).toEqual(formatPrice(productWithVariants.product.price))
+    ).toEqual(formatPrice(productWithVariants.product.colorways[0].skus[0].price))
   })
 
   describe('mouse interations', () => {

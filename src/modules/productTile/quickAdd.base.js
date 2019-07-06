@@ -13,11 +13,13 @@ export default class QuickAdd extends Component {
   }
 
   onMouseEnter = () => {
-    this.setState({showSizes: true})
+    const { showSizes } = this.state
+    !showSizes && this.setState({showSizes: true})
   }
 
   onMouseLeave = () => {
-    this.setState({showSizes: false})
+    const { showSizes } = this.state
+    showSizes && this.setState({showSizes: false})
   }
 
 
@@ -31,7 +33,7 @@ export default class QuickAdd extends Component {
       ...props
     } = this.props
     const { showSizes } = this.state
-    const SortedQuickAddSizes = withSortedSizes(QuickAddSizes)
+
     if (show) {
       return (
         <div
@@ -47,7 +49,7 @@ export default class QuickAdd extends Component {
               <P>Add to Bag</P>
             }
             {showSizes &&
-              <SortedQuickAddSizes {...props}/>
+              <QuickAddSizes {...props}/>
             }
           </div>
         </div>

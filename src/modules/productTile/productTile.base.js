@@ -2,6 +2,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Label, ROASlider, QuickAdd, formatPrice } from 'SRC'
 
+import { default as withSortedShots } from 'SRC/utils/shotSorter'
+
+const SortedROASlider = withSortedShots(ROASlider)
+
 export default class ProductTile extends React.Component {
   constructor(props) {
     super(props)
@@ -31,13 +35,13 @@ export default class ProductTile extends React.Component {
         <QuickAdd
           onMouseEnter={this.showQuickAdd}
           onMouseLeave={this.hideQuickAdd}
-          variants={product.variants}
+          variants={product.skus}
           show={show}
           {...props}>
-          <ROASlider images={product.images} />
+          <SortedROASlider product={product} shots={product.colorways[0].shots} />
         </QuickAdd>
-        <Label>{product.title}</Label>
-        <Label>{formatPrice(product.price)}</Label>
+        <Label>{product.name}</Label>
+        <Label>{formatPrice(product.colorways[0].skus[0].price)}</Label>
       </div>
     )
   }

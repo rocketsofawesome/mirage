@@ -4,6 +4,7 @@ export default function withSortedSizes(WrappedComponent) {
   return class extends Component {
     sortVariantsBySize = () => {
       const { variants: inVariants } = this.props
+      console.log(inVariants)
       const variantFilter = (variant, index, self) =>
         index === self.findIndex((v) => (
           v.id === variant.id
@@ -20,12 +21,11 @@ export default function withSortedSizes(WrappedComponent) {
         'M/L': 31
       }
       const variantSort = (currentVariant, nextVariant) => {
-        const currentVariantWeight = sizeMap[currentVariant.size.toUpperCase()] || parseInt(currentVariant.size, 10)
-        const nextVariantWeight = sizeMap[nextVariant.size.toUpperCase()] || parseInt(nextVariant.size, 10)
+        const currentVariantWeight = sizeMap[currentVariant.size[0].toUpperCase()] || parseInt(currentVariant.size[0], 10)
+        const nextVariantWeight = sizeMap[nextVariant.size[0].toUpperCase()] || parseInt(nextVariant.size[0], 10)
         return (currentVariantWeight > nextVariantWeight) ? 1 : -1
       }
       return inVariants
-      .filter(variantFilter)
       .sort(variantSort)
     }
     render () {

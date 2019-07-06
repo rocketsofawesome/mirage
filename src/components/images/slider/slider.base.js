@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Slider from 'react-slick'
+import cloudinary from 'services/cloudinary'
 import { InlineImage, Chevron } from 'SRC'
 
-class BaseROASlider extends Component {
+export class BaseROASlider extends Component {
   constructor (props) {
     super(props)
     this.config = {
@@ -25,6 +26,14 @@ class BaseROASlider extends Component {
     this.slider = null
   }
 
+  onMouseEnter = () => {
+    this.slider && this.slider.slickGoTo(1, true)
+  }
+
+  onMouseLeave = ()  => {
+      this.slider && this.slider.slickGoTo(0, true)
+  }
+
   setSlider = (element) => {
     this.slider = element
   }
@@ -40,7 +49,10 @@ class BaseROASlider extends Component {
   render() {
     const { className, images } = this.props
     return (
-      <div className={className}>
+      <div
+        className={className}
+        onMouseEnter={this.onMouseEnter}
+        onMouseLeave={this.onMouseLeave}>
         <Slider
           className='roa-slider'
           ref={this.setSlider}
@@ -48,14 +60,22 @@ class BaseROASlider extends Component {
           {images.map((image, index) => {
             return (
               <InlineImage
+                className='roa-slider-img'
                 key={index}
                 alt={image.alt}
-                src={image.src} />
+                src={cloudinary.url(image.src, {
+                  transformation: 'plp_product_shot',
+                  format: 'jpg'
+                })} />
             )
           })}
         </Slider>
-        <Chevron left onClick={this.prevSlide} />
-        <Chevron right onClick={this.nextSlide} />
+        {(images.length > 1) &&
+          <div>
+            <Chevron left onClick={this.prevSlide} />
+            <Chevron right onClick={this.nextSlide} />
+          </div>
+        }
       </div>
     )
   }

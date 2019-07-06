@@ -1590,6 +1590,8 @@ exports[`() Gallery matching the snapshot 1`] = `
                 >
                   <div
                     className="slider c6 c7"
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                   >
                     <Slider
                       arrows={false}
@@ -1775,6 +1777,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                   >
                                     <InlineImage
                                       alt="Cool Down Active Short on model"
+                                      className="roa-slider-img"
                                       key="0"
                                       src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
@@ -1787,6 +1790,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
+                                        className="roa-slider-img"
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                         style={
                                           Object {
@@ -1901,6 +1905,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                   >
                                     <InlineImage
                                       alt="Cool Down Active Short on model"
+                                      className="roa-slider-img"
                                       key="0"
                                       src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
@@ -1913,6 +1918,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
+                                        className="roa-slider-img"
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                         style={
                                           Object {
@@ -2009,50 +2015,52 @@ exports[`() Gallery matching the snapshot 1`] = `
                         </div>
                       </InnerSlider>
                     </Slider>
-                    <Styled(BaseChevron)
-                      ignoreErrors={false}
-                      left={true}
-                      onClick={[Function]}
-                    >
-                      <BaseChevron
-                        className="c8 c9"
+                    <div>
+                      <Styled(BaseChevron)
                         ignoreErrors={false}
                         left={true}
                         onClick={[Function]}
                       >
-                        <svg
+                        <BaseChevron
                           className="c8 c9"
+                          ignoreErrors={false}
+                          left={true}
                           onClick={[Function]}
-                          viewBox="0 0 48 24.12"
                         >
-                          <polyline
-                            points="1 1 24 22.75 47 1"
-                          />
-                        </svg>
-                      </BaseChevron>
-                    </Styled(BaseChevron)>
-                    <Styled(BaseChevron)
-                      ignoreErrors={false}
-                      onClick={[Function]}
-                      right={true}
-                    >
-                      <BaseChevron
-                        className="c8 c10"
+                          <svg
+                            className="c8 c9"
+                            onClick={[Function]}
+                            viewBox="0 0 48 24.12"
+                          >
+                            <polyline
+                              points="1 1 24 22.75 47 1"
+                            />
+                          </svg>
+                        </BaseChevron>
+                      </Styled(BaseChevron)>
+                      <Styled(BaseChevron)
                         ignoreErrors={false}
                         onClick={[Function]}
                         right={true}
                       >
-                        <svg
+                        <BaseChevron
                           className="c8 c10"
+                          ignoreErrors={false}
                           onClick={[Function]}
-                          viewBox="0 0 48 24.12"
+                          right={true}
                         >
-                          <polyline
-                            points="1 1 24 22.75 47 1"
-                          />
-                        </svg>
-                      </BaseChevron>
-                    </Styled(BaseChevron)>
+                          <svg
+                            className="c8 c10"
+                            onClick={[Function]}
+                            viewBox="0 0 48 24.12"
+                          >
+                            <polyline
+                              points="1 1 24 22.75 47 1"
+                            />
+                          </svg>
+                        </BaseChevron>
+                      </Styled(BaseChevron)>
+                    </div>
                   </div>
                 </BaseROASlider>
               </Styled(BaseROASlider)>

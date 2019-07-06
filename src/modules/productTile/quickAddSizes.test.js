@@ -2,12 +2,13 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { QuickAddSizes, QuickAddSize } from 'SRC'
+import { QuickAddSize } from 'SRC'
+import { BaseQuickAddSizes } from './quickAddSizes.base'
 import { productWithVariants } from './defaultProps'
 const { mountWithTheme } = global
 
 const defaultProps = {
-  ...productWithVariants.product,
+  variants: [...productWithVariants.product.skus],
   quickAdd: productWithVariants.quickAdd
 }
 
@@ -17,7 +18,7 @@ describe('(Styled Component) QuickAddSizes', () => {
       ...defaultProps,
       ...inProps
     }
-    return mountWithTheme(<QuickAddSizes {...props} />)
+    return mountWithTheme(<BaseQuickAddSizes {...props} />)
   }
 
   test('matching the snapshot', () => {
@@ -33,7 +34,7 @@ describe('(Styled Component) QuickAddSizes', () => {
     ).toEqual(
       productWithVariants
       .product
-      .variants
+      .skus
       .length
     )
   })

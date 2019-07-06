@@ -2,9 +2,10 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { ROASlider, InlineImage, Chevron } from 'SRC'
+import { InlineImage, Chevron } from 'SRC'
 
-import BaseROASlider from './slider.base'
+import { BaseROASlider } from './slider.base'
+
 
 const { mountWithTheme } = global
 
@@ -26,7 +27,7 @@ describe('(Styled Component) ROASlider', () => {
       ...defaultProps,
       ...inProps
     }
-    return mountWithTheme(<ROASlider {...props} />)
+    return mountWithTheme(<BaseROASlider {...props} />)
   }
 
   test('matching the snapshot', () => {

@@ -92,6 +92,7 @@ position: relative;
     }
   }
 }
+
 ${Chevron} {
   display: none;
   ${props => props.theme.breakpointsVerbose.aboveTablet`

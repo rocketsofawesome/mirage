@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { H4, QuickAddSize } from 'SRC'
+import { default as withSortedSizes } from 'SRC/utils/variantSizeSorter'
 
-export default class QuickAddSizes extends Component {
+
+export class BaseQuickAddSizes extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -39,10 +41,10 @@ export default class QuickAddSizes extends Component {
               onClick: quickAdd(variant.sku)
             }
             return (
-              <li key={variant.sku}>
+              <li key={index}>
                 <QuickAddSize
                   input={input}>
-                  {variant.size}
+                  {variant.size[0]}
                 </QuickAddSize>
               </li>
             )
@@ -53,7 +55,7 @@ export default class QuickAddSizes extends Component {
   }
 }
 
-QuickAddSizes.propTypes = {
+BaseQuickAddSizes.propTypes = {
   addingText: PropTypes.string,
   className: PropTypes.string,
   defaultText: PropTypes.string,
@@ -62,7 +64,9 @@ QuickAddSizes.propTypes = {
   onClick: PropTypes.func
 }
 
-QuickAddSizes.defaultProps = {
+BaseQuickAddSizes.defaultProps = {
   addingText: 'Adding...',
   defaultText: 'Choose your size'
 }
+
+export default withSortedSizes(BaseQuickAddSizes)

@@ -1,3 +1,3 @@
 ```js
- <ProductQuartet products={require('./defaultProps').default} />
+ <ProductQuartet quickAdd={(sku) => () => console.log(`quick adding ${sku}`)} products={require('./defaultProps').default} />
 ```

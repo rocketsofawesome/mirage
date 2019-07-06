@@ -76,15 +76,13 @@
 ```js
   <QuickAddSizes
     loading
-    onClick={(sku) => () => { console.log(sku) } }
+    quickAdd={(sku) => () => { console.log(sku) } }
     variants={
       [
         {
           "id": 17350,
           "sku": "5591-521-L",
-          "size": "6",
-          "price": 22.5,
-          "cost_price": null,
+          "size": ["6"],
           "in_stock": true
         },
         {
