@@ -22,6 +22,7 @@ const BaseFullBleed = ({className, ...props}) => {
 
 const FullBleed = styled(BaseFullBleed)`
   margin-bottom: 2rem;
+  border: 1px solid red;
 `
 
 FullBleed.propTypes = {

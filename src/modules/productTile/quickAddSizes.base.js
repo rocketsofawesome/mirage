@@ -38,7 +38,7 @@ export class BaseQuickAddSizes extends Component {
             const input = {
               name: variant.sku,
               disabled: loading || !variant.in_stock,
-              onClick: quickAdd(variant.sku)
+              onClick: quickAdd(variant)
             }
             return (
               <li key={index}>

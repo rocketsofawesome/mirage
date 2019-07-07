@@ -25,6 +25,7 @@ export default function withSortedSizes(WrappedComponent) {
         return (currentVariantWeight > nextVariantWeight) ? 1 : -1
       }
       return inVariants
+      .filter(variantFilter)
       .sort(variantSort)
     }
     render () {
