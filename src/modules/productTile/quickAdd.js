@@ -5,6 +5,7 @@ import { P } from 'SRC'
 
 const QuickAdd = styled(QuickAddBase)`
   width: 100%;
+  position: relative
   .roa-quick-add {
     position: absolute;
     bottom: 2.2rem;

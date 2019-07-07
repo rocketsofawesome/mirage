@@ -10,12 +10,6 @@ const ProductTile = styled(BaseProductTile)`
     display: flex;
     flex: 1 1 100%;
   }
-  ${ROASlider} .roa-slider {
-    display: flex;
-    width: 100%;
-    margin-bottom: 1rem;
-    flex: 1 1 100%;
-  }
   ${Label} {
     flex: 1 1 100%;
     margin-left: 0.8rem;
