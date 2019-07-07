@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { P, QuickAddSizes, withSortedSizes } from 'SRC'
+import { P, QuickAddSizes } from 'SRC'
 
 export default class QuickAdd extends Component {
   constructor (props) {

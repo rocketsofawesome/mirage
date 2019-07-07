@@ -20,7 +20,7 @@ export default class ContentfulProductQuartet extends Component {
     return (
       <div className={className}>
         <MirageMarkdown>{description}</MirageMarkdown>
-        {renderQuartet(productTaxon)}
+        {renderQuartet(productTaxon, this.props)}
       </div>
     )
   }
@@ -37,5 +37,5 @@ ContentfulProductQuartet.propTypes = {
 
 ContentfulProductQuartet.defaultProps = {
   loadProducts: () => { console.warn('loadProducts function has not been passed to contentfulProductQuartet')},
-  renderQuartet: (taxon) => <ProductQuartet products={products} />
+  renderQuartet: (taxon, props) => <ProductQuartet products={products} {...props}/>
 }
