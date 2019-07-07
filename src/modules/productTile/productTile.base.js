@@ -23,19 +23,25 @@ export default class ProductTile extends React.Component {
       show: false
     })
   }
+  getColorway = () => {
+    const { product } = this.props
+    const index = product.colorways.findIndex((colorway) => colorway.code === product.code)
+    return product.colorways[index]
+  }
   render () {
     const {
       className,
       product,
       ...props
     } = this.props
+    const colorway = this.getColorway()
     const { show } = this.state
     return (
       <div className={className}>
         <QuickAdd
           onMouseEnter={this.showQuickAdd}
           onMouseLeave={this.hideQuickAdd}
-          variants={product.skus}
+          variants={colorway.skus}
           show={show}
           {...props}>
           <SortedROASlider product={product} shots={product.colorways[0].shots} />
