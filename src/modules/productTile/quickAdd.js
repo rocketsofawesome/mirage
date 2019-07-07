@@ -4,10 +4,6 @@ import QuickAddBase from './quickAdd.base'
 import { P } from 'SRC'
 
 const QuickAdd = styled(QuickAddBase)`
-  min-height: 40px;
-  position: relative;
-  margin: 0 0.8rem;
-  box-sizing: border-box;
   width: 100%;
   .roa-quick-add {
     position: absolute;

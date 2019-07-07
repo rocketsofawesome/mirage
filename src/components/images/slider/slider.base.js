@@ -59,14 +59,15 @@ export class BaseROASlider extends Component {
           {...this.config}>
           {images.map((image, index) => {
             return (
-              <InlineImage
-                className='roa-slider-img'
-                key={index}
-                alt={image.alt}
-                src={cloudinary.url(image.src, {
-                  transformation: 'plp_product_shot',
-                  format: 'jpg'
-                })} />
+              <div className='roa-slider-img'>
+                <InlineImage
+                  key={index}
+                  alt={image.alt}
+                  src={cloudinary.url(image.src, {
+                    transformation: 'plp_product_shot',
+                    format: 'jpg'
+                  })} />
+              </div>
             )
           })}
         </Slider>

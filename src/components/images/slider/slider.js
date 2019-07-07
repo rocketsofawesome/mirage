@@ -93,6 +93,15 @@ position: relative;
   }
 }
 
+
+.roa-slider-img {
+  position: relative;
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
 ${Chevron} {
   display: none;
   ${props => props.theme.breakpointsVerbose.aboveTablet`
