@@ -44,7 +44,7 @@ export class BaseQuickAddSizes extends Component {
               <li key={index}>
                 <QuickAddSize
                   input={input}>
-                  {variant.size[0]}
+                  {variant.size}
                 </QuickAddSize>
               </li>
             )
