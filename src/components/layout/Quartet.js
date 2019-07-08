@@ -16,12 +16,8 @@ const BaseQuartet = ({
       {children.map((child, index) => {
         return (
           <FlexCol
-            mobile={{
-              width: 2
-            }}
-            desktop={{
-              width: 3
-            }}
+            mobile={{width: 1}}
+            desktop={{width: 3}}
             key={index}>
               {child}
             </FlexCol>

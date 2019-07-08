@@ -10,6 +10,7 @@ border: 1rem solid ${props => props.theme.colors.white};
 box-sizing: border-box;
 display: flex;
 flex-wrap: wrap;
+margin-bottom: 2rem;
 
 .roa-split-tout-image-link {
   box-sizing: border-box;

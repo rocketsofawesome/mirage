@@ -87,13 +87,18 @@ const ContentfulTout = styled(BaseContentfulTout)`
     > * {
       color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};
     }
-    ${H1} {
-      ${props => props.fields.hero && css`
+  }
+
+  ${H1} {
+    ${props => props.fields.hero && css`
+      color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};
+      font-size: 3.6rem;
+      font-weight: 100;
+      margin: 0;
+      ${props.theme.breakpointsVerbose.aboveTablet`
         font-size: 8.2rem;
-        font-weight: 100;
-        margin: 0 0 2rem;
       `}
-    }
+    `}
   }
 
   .roa-tout-buttons {
@@ -102,16 +107,16 @@ const ContentfulTout = styled(BaseContentfulTout)`
     align-content: center;
     flex-wrap: wrap;
     width: 100%;
-    bottom: 0;
+    top: 100%;
     position: absolute;
     ${props => props.fields.hero && props.theme.breakpointsVerbose.belowTablet`
-      bottom: 3rem;
+      top: calc(100% - 2rem);
     `}
     ${props => props.fields.hero && props.theme.breakpointsVerbose.aboveTablet`
       position: relative;
+      margin-top: 4rem;
     `}
     ${props => props.theme.breakpointsVerbose.abovePhoneMax`
-      margin-top: 40px;
       justify-content: center;
       flex-direction: row;
     `}

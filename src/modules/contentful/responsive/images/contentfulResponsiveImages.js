@@ -4,6 +4,8 @@ import styled, { withTheme } from 'styled-components'
 import BaseContentfulResponsiveImages from './contentfulResponsiveImages.base'
 
 const ContentfulResponsiveImages = styled(BaseContentfulResponsiveImages)`
+  width: 100%;
+  position: relative;
   img, video {
     width: 100%;
   }

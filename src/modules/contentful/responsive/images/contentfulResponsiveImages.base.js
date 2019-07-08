@@ -26,7 +26,8 @@ export default class ContentfulResponsiveImages extends Component {
       } = currentImage.fields.file.details.image
       const elementWidth = node.offsetWidth
       const adjustedHeight = elementWidth * imageHeight / imageWidth
-      node.style = `min-height: ${adjustedHeight}px`
+      // Removing the min-height for responsive pruposes.
+      // node.style = `min-height: ${adjustedHeight}px`
     }
   }
 
