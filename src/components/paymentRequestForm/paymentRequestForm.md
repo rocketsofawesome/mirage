@@ -19,6 +19,7 @@
       waitlist_items:[]}}
       setShippingAddress={() => {}}
       submitCheckout={() => {}}
+      onClickPaymentRequestButton={() => {}}
       />
 </StripeWrapper>
 ```
