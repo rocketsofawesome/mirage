@@ -104,6 +104,8 @@
       applyPromotion={() => { console.log('apply promotion') }}
       removePromotion={() => { console.log('remove promotion') }}
       appliedPromotion={null}
+      onClickCheckout={() => { console.log('onClick checkout') }}
+      onClickPaymentRequestButton={() => { console.log('onClick payment request button') }}
     />
   </StripeProviderWrapper>
 ```

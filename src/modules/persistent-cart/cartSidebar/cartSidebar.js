@@ -210,7 +210,9 @@ class BaseCartSidebar extends React.Component {
       appliedPromotion,
       renderProductLink,
       pricingTestOn,
-      currentUserEmail
+      currentUserEmail,
+      onClickCheckout,
+      onClickPaymentRequestButton
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -272,7 +274,8 @@ class BaseCartSidebar extends React.Component {
                 currentUserEmail={currentUserEmail}
                 order={order}
                 setShippingAddress={setShippingAddress}
-                submitCheckout={this.submitCheckout} />
+                submitCheckout={this.submitCheckout}
+                onClick={onClickPaymentRequestButton} />
             </Elements>}
             <ButtonLink
               renderLink={renderLink}
@@ -280,7 +283,8 @@ class BaseCartSidebar extends React.Component {
               width='100%'
               maxWidth='30rem'
               kind='blue'
-              disabled={isCheckoutButtonDisabled}>
+              disabled={isCheckoutButtonDisabled}
+              onClick={onClickCheckout}>
               CHECKOUT
             </ButtonLink>
             <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>Continue Shopping</CheckoutLink>
