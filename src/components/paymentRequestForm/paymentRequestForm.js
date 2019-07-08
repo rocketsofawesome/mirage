@@ -130,6 +130,7 @@ export class PaymentRequestForm extends React.Component {
       <PaymentRequestButtonElement
         paymentRequest={this.state.paymentRequest}
         className={this.props.className}
+        onClick={this.props.onClickPaymentRequestButton}
         style={{
           // For more details on how to style the Payment Request Button, see:
           // https://stripe.com/docs/elements/payment-request-button#styling-the-element
@@ -149,7 +150,8 @@ PaymentRequestForm.propTypes = {
   setShippingAddress: PropTypes.func.isRequired,
   submitCheckout: PropTypes.func.isRequired,
   className: PropTypes.string,
-  currentUserEmail: PropTypes.string
+  currentUserEmail: PropTypes.string,
+  onClickPaymentRequestButton: PropTypes.func
 }
 
 export default injectStripe(PaymentRequestForm)

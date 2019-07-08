@@ -275,7 +275,7 @@ class BaseCartSidebar extends React.Component {
                 order={order}
                 setShippingAddress={setShippingAddress}
                 submitCheckout={this.submitCheckout}
-                onClick={onClickPaymentRequestButton} />
+                onClickPaymentRequestButton={onClickPaymentRequestButton} />
             </Elements>}
             <ButtonLink
               renderLink={renderLink}
