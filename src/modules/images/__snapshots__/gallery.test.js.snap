@@ -87,6 +87,10 @@ exports[`() Gallery matching the snapshot 1`] = `
   position: relative;
 }
 
+.c7 .slick-track > * {
+  padding: 0;
+}
+
 .c7 .image {
   width: 100%;
 }
@@ -157,10 +161,6 @@ exports[`() Gallery matching the snapshot 1`] = `
 .c7 .dots .slick-active button:before {
   background-color: #00003C !important;
   border: 2px solid transparent!important;
-}
-
-.c7 .dots .slick-track > * {
-  padding: 0;
 }
 
 .c7 .roa-slider-img {
@@ -235,7 +235,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:960px) {
   .c7 .c8 {
     display: inline-block;
     position: absolute;

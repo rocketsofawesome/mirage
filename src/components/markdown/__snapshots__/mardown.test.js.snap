@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) markdown matching the snapshot 1`] = `
-.c0 {
+.c2 {
   -webkit-letter-spacing: .1rem;
   -moz-letter-spacing: .1rem;
   -ms-letter-spacing: .1rem;
@@ -15,13 +15,19 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
   margin: 5.5rem 0;
 }
 
+@media (max-width:959px) {
+  .c0 .c1 {
+    font-size: 3.4rem;
+  }
+}
+
 <Styled(Component)>
   <Component
-    className=""
+    className="c0"
   >
     <ReactMarkdown
       astPlugins={Array []}
-      className=""
+      className="c0"
       escapeHtml={true}
       plugins={Array []}
       rawSourcePos={false}
@@ -40,11 +46,11 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
       transformLinkUri={[Function]}
     >
       <Root
-        className=""
+        className="c0"
         key="root-1-1"
       >
         <div
-          className=""
+          className="c0"
         >
           <headerRenderer
             key="heading-1-1"
@@ -55,7 +61,7 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
               margin="5.5rem 0"
             >
               <h1
-                className="c0"
+                className="c1 c2"
                 fontSize="4.2rem"
               >
                 <TextRenderer
