@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Label, ROASlider, QuickAdd } from 'SRC'
+import { Label, QuickAdd } from 'SRC'
 import BaseProductTile from './productTile.base'
 
 const ProductTile = styled(BaseProductTile)`

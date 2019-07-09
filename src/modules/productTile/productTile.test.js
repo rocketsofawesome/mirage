@@ -2,7 +2,7 @@ import React from 'react'
 import { css } from 'styled-components'
 import 'jest-styled-components'
 
-import { ProductTile, QuickAdd, Label, formatPrice } from 'SRC'
+import { ProductTile, QuickAdd, P, formatPrice } from 'SRC'
 import BaseProductTile from './productTile.base'
 import { productWithVariants } from './defaultProps'
 
@@ -29,7 +29,7 @@ describe('(Styled Component) ProductTile', () => {
   test('rendering product title', () => {
     expect(
      createProductTile()
-      .find(Label)
+      .find(P)
       .first()
       .text()
     ).toEqual(productWithVariants.product.name)
@@ -38,7 +38,7 @@ describe('(Styled Component) ProductTile', () => {
   test('rendering product price', () => {
     expect(
      createProductTile()
-      .find(Label)
+      .find(P)
       .last()
       .text()
     ).toEqual(formatPrice(productWithVariants.product.colorways[0].skus[0].price))
