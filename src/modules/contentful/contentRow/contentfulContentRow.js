@@ -18,26 +18,13 @@ import {
 const LAYOUT_RENDER_MAP = {
   'Duet': (entries, {sys, ...props}) => {
     return (
-      <div>
-        <Default>
-          <Solo>
-            {
-              entries.map((entry, index) => {
-                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
-              })
-            }
-          </Solo>
-        </Default>
-        <Tablet>
-          <Duet {...props} key={sys.id}>
-            {
-              entries.map((entry, index) => {
-                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
-              })
-            }
-          </Duet>
-        </Tablet>
-      </div>
+      <Duet {...props} key={sys.id}>
+        {
+          entries.map((entry, index) => {
+            return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+          })
+        }
+      </Duet>
     )
   },
   'Full Bleed': (entries, {sys, ...props}) =>
