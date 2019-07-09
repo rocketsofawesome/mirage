@@ -159,6 +159,10 @@ exports[`() Gallery matching the snapshot 1`] = `
   border: 2px solid transparent!important;
 }
 
+.c7 .dots .slick-track > * {
+  padding: 0;
+}
+
 .c7 .roa-slider-img {
   position: relative;
   width: 100%;

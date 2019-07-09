@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Label, ROASlider, QuickAdd, formatPrice } from 'SRC'
+import { P, ROASlider, QuickAdd, formatPrice } from 'SRC'
 
 import { default as withSortedShots } from 'SRC/utils/shotSorter'
 
@@ -46,8 +46,8 @@ export default class ProductTile extends React.Component {
           {...props}>
           <SortedROASlider product={product} shots={product.colorways[0].shots} />
         </QuickAdd>
-        <Label>{product.name}</Label>
-        <Label>{formatPrice(product.colorways[0].skus[0].price)}</Label>
+        <P>{product.name}</P>
+        <P>{formatPrice(product.colorways[0].skus[0].price)}</P>
       </div>
     )
   }

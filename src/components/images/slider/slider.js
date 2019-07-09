@@ -91,6 +91,9 @@ position: relative;
       }
     }
   }
+  .slick-track > * {
+    padding: 0;
+  }
 }
 
 

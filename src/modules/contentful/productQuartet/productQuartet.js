@@ -28,7 +28,8 @@ const ProductQuartet = ({ className, products, ...props}) => {
 }
 
 ProductQuartet.propTypes = {
-
+  className: PropTypes.string,
+  products: PropTypes.array
 }
 
 export default ProductQuartet
