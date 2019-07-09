@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ProductTile, Quartet, Duet, Default, Tablet } from 'SRC'
+import { ProductTile, Quartet, Duet, Default, TabletMax } from 'SRC'
 
 const ProductQuartet = ({ className, products, ...props}) => {
   return (
     <div>
-      <Default>
+      <Default displayTarget='belowTabletMax'>
         <Duet>
           {products.map((product, index) => {
             return (
@@ -14,7 +14,7 @@ const ProductQuartet = ({ className, products, ...props}) => {
           })}
         </Duet>
       </Default>
-      <Tablet laptopDisplay='block'>
+      <TabletMax laptopDisplay='block'>
         <Quartet>
           {products.map((product, index) => {
             return (
@@ -22,7 +22,7 @@ const ProductQuartet = ({ className, products, ...props}) => {
             )
           })}
         </Quartet>
-      </Tablet>
+      </TabletMax>
     </div>
   )
 }

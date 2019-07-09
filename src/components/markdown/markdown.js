@@ -32,6 +32,11 @@ const MirageMarkdown = styled(({className, children, ...props}) => {
     }} />
     )
 })`
+  ${props => props.theme.breakpointsVerbose.belowTabletMax`
+    ${H1} {
+      font-size: 3.4rem;
+    }
+  `}
 `
 
 MirageMarkdown.propTypes = {

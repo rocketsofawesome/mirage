@@ -17,6 +17,7 @@ const BaseQuartet = ({
         return (
           <FlexCol
             mobile={{width: 1}}
+            tablet={{width: 3}}
             desktop={{width: 3}}
             key={index}>
               {child}

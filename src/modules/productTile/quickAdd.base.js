@@ -42,6 +42,7 @@ export default class QuickAdd extends Component {
           onMouseLeave={onMouseLeave}>
           {children}
           <Tablet
+            laptopDisplay='block'
             className='roa-quick-add'
             onMouseEnter={this.onMouseEnter}
             onMouseLeave={this.onMouseLeave}>

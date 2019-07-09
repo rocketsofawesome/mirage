@@ -35,6 +35,7 @@ ${MirageMarkdown} {
   text-decoration: underline;
   width: 50%;
   ${Link} {
+    font-size: 1.6rem;
     color: ${props => props.theme.colors.navy};
     &:hover {
       color: ${props => props.theme.colors.navy};

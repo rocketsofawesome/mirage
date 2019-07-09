@@ -44,6 +44,29 @@ Tablet.defaultProps = {
   laptopDisplay: 'none'
 }
 
+const TabletMax = styled(({element, children, ...props}) => {
+  return React.createElement(element, props, children)
+})`
+  display: none;
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
+    display: ${props => props.display};
+  `}
+  ${props => props.theme.breakpointsVerbose.aboveLaptop`
+    display: ${props => props.laptopDisplay};
+  `}
+`
+
+TabletMax.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string,
+  element: PropTypes.node
+}
+TabletMax.defaultProps = {
+  display: 'block',
+  element: 'div',
+  laptopDisplay: 'none'
+}
+
 const Mobile = styled(({element, children, ...props}) => {
   return React.createElement(element, props, children)
 })`
@@ -84,4 +107,4 @@ Default.defaultProps = {
   displayTarget: 'belowTabletMax'
 }
 
-export {Desktop, Tablet, Mobile, Default}
+export {Desktop, Tablet, TabletMax, Mobile, Default}

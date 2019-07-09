@@ -111,7 +111,7 @@ position: relative;
 
 ${Chevron} {
   display: none;
-  ${props => props.theme.breakpointsVerbose.aboveTablet`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     display: inline-block;
     position: absolute;
     top: 50%;

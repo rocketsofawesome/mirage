@@ -19,7 +19,7 @@ class BaseTrioWithLead extends React.Component {
               desktop={{
                 width: 7
               }}>
-              {children[index]}
+              <div className='child-element'>{children[index]}</div>
             </FlexCol>
             {children[index + 1] &&
               <FlexCol
@@ -35,8 +35,8 @@ class BaseTrioWithLead extends React.Component {
                   span: 1
                 }}
               >
-              {children[index + 1]}
-              {children[index + 2] && children[index + 2]}
+              <div className='child-element'>{children[index + 1]}</div>
+              <div className='child-element'>{children[index + 2] && children[index + 2]}</div>
             </FlexCol>
             }
           </div>
@@ -69,6 +69,9 @@ const TrioWithLead = styled(BaseTrioWithLead)`
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+  }
+  .child-element {
+    margin-bottom: 6rem;
   }
 `
 

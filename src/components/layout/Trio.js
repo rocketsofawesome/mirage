@@ -17,12 +17,9 @@ const BaseTrio = ({
         return (
           <FlexCol
             key={index}
-            mobile={{
-              width: 4
-            }}
-            desktop={{
-              width: 4
-            }}>
+            mobile={{width: 4}}
+            tablet={{width: 4}}
+            desktop={{width: 4}}>
               {child}
             </FlexCol>
           )
