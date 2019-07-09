@@ -10,19 +10,34 @@ import {
   Trio,
   TrioWithLead,
   ContentfulRenderer,
-  ContentfulResponsiveVideo
+  ContentfulResponsiveVideo,
+  Tablet,
+  Default
 } from 'SRC'
 
 const LAYOUT_RENDER_MAP = {
   'Duet': (entries, {sys, ...props}) => {
     return (
-      <Duet {...props} key={sys.id}>
-        {
-          entries.map((entry, index) => {
-            return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
-          })
-        }
-      </Duet>
+      <div>
+        <Default>
+          <Solo>
+            {
+              entries.map((entry, index) => {
+                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+              })
+            }
+          </Solo>
+        </Default>
+        <Tablet>
+          <Duet {...props} key={sys.id}>
+            {
+              entries.map((entry, index) => {
+                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+              })
+            }
+          </Duet>
+        </Tablet>
+      </div>
     )
   },
   'Full Bleed': (entries, {sys, ...props}) =>
@@ -34,13 +49,26 @@ const LAYOUT_RENDER_MAP = {
       }
     </FullBleed>,
   'Quartet': (entries, {sys, ...props}) =>
-    <Quartet {...props} key={sys.id}>
-      {
-        entries.map((entry, index) => {
-          return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
-        })
-      }
-    </Quartet>,
+    <div>
+      <Default>
+        <Solo>
+          {
+            entries.map((entry, index) => {
+              return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+            })
+          }
+        </Solo>
+      </Default>
+      <Tablet>
+        <Quartet {...props} key={sys.id}>
+          {
+            entries.map((entry, index) => {
+              return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+            })
+          }
+        </Quartet>
+      </Tablet>
+    </div>,
   'Solo': (entries, {sys, ...props}) =>
     <Solo {...props} key={sys.id}>
       {
@@ -50,13 +78,27 @@ const LAYOUT_RENDER_MAP = {
       }
     </Solo>,
   'Trio': (entries, {sys, ...props}) =>
-    <Trio {...props} key={sys.id}>
-      {
-        entries.map((entry, index) => {
-          return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
-        })
-      }
-    </Trio>,
+  <div>
+    <Default>
+      <Solo>
+        {
+          entries.map((entry, index) => {
+            return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+          })
+        }
+      </Solo>
+    </Default>
+    <Tablet>
+      <Trio {...props} key={sys.id}>
+        {
+          entries.map((entry, index) => {
+            return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+          })
+        }
+      </Trio>
+    </Tablet>
+  </div>
+    ,
   'Trio With Lead': (entries, {sys, ...props}) =>
     <TrioWithLead {...props} key={sys.id}>
       {

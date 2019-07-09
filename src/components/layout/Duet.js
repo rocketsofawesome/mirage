@@ -17,8 +17,8 @@ const BaseDuet = ({
         return (
           <FlexCol
             key={index}
-            mobile={{width: 4}}
-            tablet={{width: 12}}
+            mobile={{width: 2}}
+            tablet={{width: 6}}
             desktop={{width: 6}}>
               {child}
             </FlexCol>
