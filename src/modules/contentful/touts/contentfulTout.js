@@ -105,6 +105,7 @@ const ContentfulTout = styled(BaseContentfulTout)`
     display: flex;
     flex-direction: column;
     align-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     top: 100%;
