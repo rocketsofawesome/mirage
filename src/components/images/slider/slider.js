@@ -6,6 +6,13 @@ import { Chevron } from 'SRC'
 
 const  ROASlider = styled(BaseROASlider)`
 position: relative;
+
+.slick-track {
+  & > * {
+    padding: 0;
+  }
+}
+
 .image {
   width: 100%;
 }
@@ -90,9 +97,6 @@ position: relative;
         border: 2px solid transparent!important;
       }
     }
-  }
-  .slick-track > * {
-    padding: 0;
   }
 }
 
