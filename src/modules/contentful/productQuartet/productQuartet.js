@@ -14,7 +14,7 @@ const ProductQuartet = ({ className, products, ...props}) => {
           })}
         </Duet>
       </Default>
-      <Tablet>
+      <Tablet laptopDisplay='block'>
         <Quartet>
           {products.map((product, index) => {
             return (

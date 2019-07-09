@@ -16,7 +16,6 @@ class BaseContentfulTout extends Component {
         hero
       }
     } = this.props
-    console.log('hero', hero)
     return (
       <ContentfulRenderer {...media}>
         <div className='roa-tout-overlay'>
