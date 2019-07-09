@@ -18,7 +18,7 @@ DesktopHeader.propTypes = {
 }
 
 DesktopHeader.defaultProps = {
-  position: 'fixed'
+  position: 'static'
 }
 
 /** @component */
