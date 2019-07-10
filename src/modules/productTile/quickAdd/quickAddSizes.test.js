@@ -4,7 +4,7 @@ import 'jest-styled-components'
 
 import { QuickAddSize } from 'SRC'
 import { BaseQuickAddSizes } from './quickAddSizes.base'
-import { productWithVariants } from './defaultProps'
+import { productWithVariants } from '../defaultProps'
 const { mountWithTheme } = global
 
 const defaultProps = {

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { P, ROASlider, QuickAdd, formatPrice } from 'SRC'
+import { ColorsInterface, P, ROASlider, QuickAdd, formatPrice } from 'SRC'
 
 import { default as withSortedShots } from 'SRC/utils/shotSorter'
 
@@ -10,7 +10,8 @@ export default class ProductTile extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false
+      show: false,
+      selectedColorWay: props.product.code
     }
   }
   showQuickAdd = () => {
@@ -23,9 +24,19 @@ export default class ProductTile extends React.Component {
       show: false
     })
   }
-  getColorway = () => {
+
+  getColorwayIndex = (code) => {
+    const { product: { colorways } } = this.props
+    return colorways.findIndex((colorway) => (colorway.code === code))
+  }
+
+  changeColorway = (code) => ({ target }) => {
+    this.setState({selectedColorWay: code})
+  }
+
+  getColorway = (code) => {
     const { product } = this.props
-    const index = product.colorways.findIndex((colorway) => colorway.code === product.code)
+    const index = this.getColorwayIndex(code)
     return product.colorways[index]
   }
   render () {
@@ -34,8 +45,8 @@ export default class ProductTile extends React.Component {
       product,
       ...props
     } = this.props
-    const colorway = this.getColorway()
-    const { show } = this.state
+    const { show, selectedColorWay } = this.state
+    const colorway = this.getColorway(selectedColorWay)
     return (
       <div className={className}>
         <QuickAdd
@@ -44,10 +55,15 @@ export default class ProductTile extends React.Component {
           variants={colorway.skus}
           show={show}
           {...props}>
-          <SortedROASlider product={product} shots={product.colorways[0].shots} />
+          <SortedROASlider product={product} shots={colorway.shots} />
         </QuickAdd>
         <P>{product.name}</P>
-        <P>{formatPrice(product.colorways[0].skus[0].price)}</P>
+        <P>{formatPrice(colorway.skus[0].price)}</P>
+        <ColorsInterface
+          selected={selectedColorWay}
+          colorways={product.colorways}
+          productId={product.id}
+          onChange={this.changeColorway} />
       </div>
     )
   }

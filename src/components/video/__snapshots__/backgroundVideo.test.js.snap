@@ -89,6 +89,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
             "#E6E6E6",
             "#D5D5D5",
             "#CFCFCF",
+            "#979797",
           ],
           "gray0": "#F3F3F3",
           "gray1": "#F5F5F5",
@@ -96,6 +97,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
           "gray3": "#E6E6E6",
           "gray4": "#D5D5D5",
           "gray5": "#CFCFCF",
+          "gray6": "#979797",
           "lightBlue": Array [
             "#EEFCFF",
             "#BCE1F7",
@@ -205,6 +207,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
               "#E6E6E6",
               "#D5D5D5",
               "#CFCFCF",
+              "#979797",
             ],
             "gray0": "#F3F3F3",
             "gray1": "#F5F5F5",
@@ -212,6 +215,7 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
             "gray3": "#E6E6E6",
             "gray4": "#D5D5D5",
             "gray5": "#CFCFCF",
+            "gray6": "#979797",
             "lightBlue": Array [
               "#EEFCFF",
               "#BCE1F7",

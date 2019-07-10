@@ -10,12 +10,9 @@ const BaseSolo = ({className, constrained, ...props}) => {
       className={className}
       padding>
       <FlexCol
-        mobile={{
-          width: 4
-        }}
-        desktop={{
-          width: 12
-        }}
+        mobile={{width: 4}}
+        tablet={{width: 12}}
+        desktop={{width: 12}}
         {...props}/>
     </FlexRow>
   )

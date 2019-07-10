@@ -12,8 +12,7 @@ class BaseContentfulTout extends Component {
       fields: {
         description,
         heroButtons,
-        media,
-        hero
+        media
       }
     } = this.props
     return (

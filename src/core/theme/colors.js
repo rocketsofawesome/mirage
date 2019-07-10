@@ -34,13 +34,15 @@ const supportingColors = {
   gray3: '#E6E6E6',
   gray4: '#D5D5D5',
   gray5: '#CFCFCF',
+  gray6: '#979797',
   gray: [
     '#F3F3F3',
     '#F5F5F5',
     '#F8F8F8',
     '#E6E6E6',
     '#D5D5D5',
-    '#CFCFCF'
+    '#CFCFCF',
+    '#979797'
   ],
   shadyLady: '#979797',
   red: '#FF511C',

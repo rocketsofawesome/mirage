@@ -1,1 +1,2 @@
-export { default as QuickAddSize } from './quickAddSize'
+export * from './colorPicker'
+export * from './quickAdd'
