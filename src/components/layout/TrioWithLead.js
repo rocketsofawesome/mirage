@@ -44,7 +44,7 @@ class BaseTrioWithLead extends React.Component {
                   <AnimatedCloudC />
                   <AnimatedBalloon width={'50%'} />
                 </Default>
-                <Tablet>
+                <Tablet laptopDisplay='block'>
                   <AnimatedCloudC />
                   <AnimatedBalloon desktopAnimation width={'50%'} />
                 </Tablet>
