@@ -40,11 +40,11 @@ describe('(Styled Component) ContentfulTout', () => {
 
   test('MirageMarkdown position gets set', () => {
     expect(createContentfulTout())
-    .toHaveStyleRule('justify-content', 'flex-end', {
+    .toHaveStyleRule('justify-content', 'center', {
       modifier: '.roa-tout-overlay',
     })
     expect(createContentfulTout())
-    .toHaveStyleRule('align-content', 'center', {
+    .toHaveStyleRule('align-content', 'flex-end', {
       modifier: '.roa-tout-overlay',
     })
   })
