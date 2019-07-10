@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { P, QuickAdd } from 'SRC'
+import { P, QuickAdd, ColorsInterface } from 'SRC'
 import BaseProductTile from './productTile.base'
 
 const ProductTile = styled(BaseProductTile)`
@@ -10,13 +10,15 @@ const ProductTile = styled(BaseProductTile)`
     display: flex;
     flex: 1 1 100%;
   }
-  ${P} {
+  > ${P} {
     flex: 1 1 100%;
-    margin-left: 0.8rem;
-    margin-right: 0.8rem;
     &:first-of-type {
       margin-top: 1.7rem;
     }
+  }
+  ${ColorsInterface}, ${P} {
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 `
 

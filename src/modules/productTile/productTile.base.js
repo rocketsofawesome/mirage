@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { P, ROASlider, QuickAdd, formatPrice } from 'SRC'
+import { ColorsInterface, P, ROASlider, QuickAdd, formatPrice } from 'SRC'
 
 import { default as withSortedShots } from 'SRC/utils/shotSorter'
 
@@ -10,7 +10,8 @@ export default class ProductTile extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      show: false
+      show: false,
+      selectedColor: 0
     }
   }
   showQuickAdd = () => {
@@ -35,7 +36,7 @@ export default class ProductTile extends React.Component {
       ...props
     } = this.props
     const colorway = this.getColorway()
-    const { show } = this.state
+    const { show, selectedColor } = this.state
     return (
       <div className={className}>
         <QuickAdd
@@ -47,7 +48,8 @@ export default class ProductTile extends React.Component {
           <SortedROASlider product={product} shots={product.colorways[0].shots} />
         </QuickAdd>
         <P>{product.name}</P>
-        <P>{formatPrice(product.colorways[0].skus[0].price)}</P>
+        <P>{formatPrice(product.colorways[selectedColor].skus[0].price)}</P>
+        <ColorsInterface colorways={product.colorways} productId={product.id} />
       </div>
     )
   }

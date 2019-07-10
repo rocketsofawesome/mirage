@@ -587,61 +587,48 @@ export default [
     ]
   },
   {
-    "_index": "colorways_development_20190706143737041",
+    "_index": "colorways_production_20190708213725142",
     "_type": "colorway",
-    "_id": "4391",
+    "_id": "4484",
     "_score": null,
     "sort": [
-      5860004
+      2090010
     ],
-    "color_family": "blue",
-    "color": "Navy",
+    "color_family": "green",
+    "color": "Pepper Green",
     "nav_taxons": [
-      "shop/boys-new-arrivals",
-      "shop/boys-new-arrivals/wow-styles",
+      "shop/girls",
+      "shop/girls/just-in",
       "shop/camp-shop",
-      "shop/boys",
-      "shop/boys/bottoms",
-      "shop/boys/bottoms/shorts",
-      "featured-products/summer-2019",
-      "shop/boys-new-arrivals",
-      "shop/boys-new-arrivals/shorts",
-      "shop/boys",
-      "shop/boys/just-in"
+      "shop/girls-new-arrivals",
+      "shop/girls-new-arrivals/shorts",
+      "shop/girls",
+      "shop/girls/bottoms",
+      "shop/girls/bottoms/shorts",
+      "shop/girls-new-arrivals",
+      "shop/girls-new-arrivals/wow-styles-girls"
     ],
     "nav_categories": [
-      "Boys New Arrivals",
+      "Girls",
       "Just In",
-      "Boys",
+      "Girls New Arrivals",
+      "Shorts",
+      "Girls",
       "Bottoms",
       "Shorts",
-      "Boys New Arrivals",
-      "Shorts",
-      "Boys",
+      "Girls New Arrivals",
       "Just In"
     ],
     "skus": [
       {
         "size": [
+          "4"
+        ],
+        "in_stock": true
+      },
+      {
+        "size": [
           "6"
-        ],
-        "in_stock": true
-      },
-      {
-        "size": [
-          "3"
-        ],
-        "in_stock": true
-      },
-      {
-        "size": [
-          "8"
-        ],
-        "in_stock": true
-      },
-      {
-        "size": [
-          "12"
         ],
         "in_stock": true
       },
@@ -653,168 +640,263 @@ export default [
       },
       {
         "size": [
-          "5"
-        ],
-        "in_stock": true
-      },
-      {
-        "size": [
           "10"
         ],
         "in_stock": true
       },
       {
         "size": [
-          "4"
+          "12"
+        ],
+        "in_stock": true
+      },
+      {
+        "size": [
+          "5"
+        ],
+        "in_stock": true
+      },
+      {
+        "size": [
+          "8"
+        ],
+        "in_stock": true
+      },
+      {
+        "size": [
+          "3"
         ],
         "in_stock": true
       }
     ],
-    "code": "3136-207",
+    "code": "7254-300",
     "category": [
       "Bottoms",
       "Shorts"
     ],
-    "description": "Ketchup's no match for our paint-splatter print—on our comfy tri-blend shorts (with pockets!).",
-    "details": "* 50% Polyester, 38% Cotton, 12% Rayon (exclusive of decoration) \r* Machine wash cold inside out\r* Only non-chlorine bleach\r* Tumble dry low\r* Cool iron if needed on reverse side only",
-    "id": "1728-3136-207",
-    "product_id": 1728,
-    "product_slug": "splatter-print-short",
-    "colorway_id": 4391,
-    "name": "Splatter Print Short",
+    "description": "If these don't scream \"summer camp, 1982\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+    "details": "* 65% Polyester, 35% Rayon\r* Machine wash cold gentle cycle\r* Only non-chlorine bleach\r* Tumble dry low\r* Cool iron if needed",
+    "id": "1809-7254-300",
+    "product_id": 1809,
+    "product_slug": "towel-terry-track-short",
+    "colorway_id": 4484,
+    "name": "Towel Terry Track Short",
     "sort_order": [
       {
-        "shop": 30010
+        "shop": 600012
       },
       {
-        "shop-boys": 30010
+        "shop-girls": 600012
       },
       {
-        "shop-boys-just-in": 30010
+        "shop-girls-bottoms": 600012
       },
       {
-        "featured-products": 5860004
+        "shop-girls-bottoms-shorts": 600012
       },
       {
-        "featured-products-summer-2019": 5860004
+        "shop": 3580007
       },
       {
-        "shop": 3580042
+        "shop-camp-shop": 3580007
       },
       {
-        "shop-camp-shop": 3580042
+        "shop": 450004
       },
       {
-        "shop": 2330010
+        "shop-girls": 450004
       },
       {
-        "shop-boys-new-arrivals": 2330010
+        "shop-girls-just-in": 450004
       },
       {
-        "shop-boys-new-arrivals-wow-styles": 2330010
+        "shop": 2090010
       },
       {
-        "shop": 2430003
+        "shop-girls-new-arrivals": 2090010
       },
       {
-        "shop-boys-new-arrivals": 2430003
+        "shop-girls-new-arrivals-wow-styles-girls": 2090010
       },
       {
-        "shop-boys-new-arrivals-shorts": 2430003
+        "shop": 2190002
       },
       {
-        "shop": 180004
+        "shop-girls-new-arrivals": 2190002
       },
       {
-        "shop-boys": 180004
-      },
-      {
-        "shop-boys-bottoms": 180004
-      },
-      {
-        "shop-boys-bottoms-shorts": 180004
+        "shop-girls-new-arrivals-shorts": 2190002
       }
     ],
-    "style_number": "3136",
+    "style_number": "7254",
     "colorways": [
       {
-        "id": 4391,
-        "slug": "navy",
-        "color": "Navy",
-        "code": "3136-207",
+        "id": 4484,
+        "slug": "peppergreen",
+        "color": "Pepper Green",
+        "code": "7254-300",
         "shots": [
           {
-            "id": 2700948,
+            "id": 2736986,
             "shot_type": "back",
-            "cloudinary_key": "production/catalog/grzkkgohnkr1q3dw7ipt"
+            "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui"
           },
           {
-            "id": 2700947,
+            "id": 2736987,
             "shot_type": "front",
-            "cloudinary_key": "production/catalog/ei1tzx42108uudgbvrl3"
+            "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r"
+          },
+          {
+            "id": 2736988,
+            "shot_type": "on_model",
+            "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb"
           }
         ],
         "skus": [
           {
-            "id": 18754,
-            "sku": "3136-207-L",
+            "id": 19579,
+            "sku": "7254-300-I",
+            "size": "4",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19580,
+            "sku": "7254-300-L",
             "size": "6",
             "price": 22.5,
             "cost_price": null,
             "in_stock": true
           },
           {
-            "id": 18755,
-            "sku": "3136-207-H",
-            "size": "3",
-            "price": 22.5,
-            "cost_price": null,
-            "in_stock": true
-          },
-          {
-            "id": 18756,
-            "sku": "3136-207-E",
-            "size": "8",
-            "price": 22.5,
-            "cost_price": null,
-            "in_stock": true
-          },
-          {
-            "id": 18757,
-            "sku": "3136-207-O",
-            "size": "12",
-            "price": 22.5,
-            "cost_price": null,
-            "in_stock": true
-          },
-          {
-            "id": 18758,
-            "sku": "3136-207-M",
+            "id": 19581,
+            "sku": "7254-300-M",
             "size": "7",
             "price": 22.5,
             "cost_price": null,
             "in_stock": true
           },
           {
-            "id": 18759,
-            "sku": "3136-207-K",
-            "size": "5",
-            "price": 22.5,
-            "cost_price": null,
-            "in_stock": true
-          },
-          {
-            "id": 18760,
-            "sku": "3136-207-N",
+            "id": 19582,
+            "sku": "7254-300-N",
             "size": "10",
             "price": 22.5,
             "cost_price": null,
             "in_stock": true
           },
           {
-            "id": 18761,
-            "sku": "3136-207-I",
+            "id": 19583,
+            "sku": "7254-300-O",
+            "size": "12",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19584,
+            "sku": "7254-300-K",
+            "size": "5",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19585,
+            "sku": "7254-300-E",
+            "size": "8",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19586,
+            "sku": "7254-300-H",
+            "size": "3",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          }
+        ]
+      },
+      {
+        "id": 4485,
+        "slug": "clearskyblue",
+        "color": "Clear Sky Blue",
+        "code": "7254-2B5",
+        "shots": [
+          {
+            "id": 2736998,
+            "shot_type": "back",
+            "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r"
+          },
+          {
+            "id": 2736999,
+            "shot_type": "front",
+            "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu"
+          }
+        ],
+        "skus": [
+          {
+            "id": 19587,
+            "sku": "7254-2B5-I",
             "size": "4",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19588,
+            "sku": "7254-2B5-O",
+            "size": "12",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19589,
+            "sku": "7254-2B5-L",
+            "size": "6",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19590,
+            "sku": "7254-2B5-N",
+            "size": "10",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19591,
+            "sku": "7254-2B5-K",
+            "size": "5",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19592,
+            "sku": "7254-2B5-M",
+            "size": "7",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19593,
+            "sku": "7254-2B5-E",
+            "size": "8",
+            "price": 22.5,
+            "cost_price": null,
+            "in_stock": true
+          },
+          {
+            "id": 19594,
+            "sku": "7254-2B5-H",
+            "size": "3",
             "price": 22.5,
             "cost_price": null,
             "in_stock": true
