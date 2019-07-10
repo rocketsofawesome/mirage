@@ -3,7 +3,7 @@ import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { QuickAdd } from 'SRC'
-import { productWithVariants } from './defaultProps'
+import { productWithVariants } from '../defaultProps'
 const { mountWithTheme } = global
 
 const variants = productWithVariants.product.variants
