@@ -28,12 +28,12 @@ const textPosition = ({fields: { position = 'center' } }) => {
       align-content: center;
     `,
     centerTop: css`
-      justify-content: flex-start;
-      align-content: center;
+      justify-content: center;
+      align-content: flex-start;
     `,
     centerBottom: css`
-      justify-content: flex-end;
-      align-content: center;
+      justify-content: center;
+      align-content: flex-end;
     `,
     centerLeft: css`
       justify-content: center;
