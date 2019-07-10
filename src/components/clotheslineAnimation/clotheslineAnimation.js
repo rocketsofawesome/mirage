@@ -83,10 +83,10 @@ position: relative;
 overflow: hidden;
 white-space: nowrap;
   ${Clothesline} {
-    width: 50%;
+    width: 100%;
     animation: ${move} 12s ease infinite;
     ${props => props => props.theme.breakpointsVerbose.aboveTablet`
-      width: 100%;
+      width: 50%;
     `}
   }
 `
