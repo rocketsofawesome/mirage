@@ -11,6 +11,7 @@ import {
   TrioWithLead,
   ContentfulRenderer,
   ContentfulResponsiveVideo,
+  ContentfulResponsiveImages,
   Tablet,
   Default
 } from 'SRC'
@@ -129,10 +130,12 @@ const BaseContentfulContentRow = ({
 }
 
 const ContentfulContentRow = styled(BaseContentfulContentRow)`
-  ${ContentfulResponsiveVideo} {
+  > ${ContentfulResponsiveVideo} ,   >  ${ContentfulResponsiveImages} {
     video {
-      position: absolute;
       height: 70%;
+    }
+    video, img {
+      position: absolute;
       top: 0;
     }
     article {
