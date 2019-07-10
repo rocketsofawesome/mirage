@@ -4,8 +4,7 @@ import PropTypes from 'prop-types'
 import cloudinary from 'SRC/services/cloudinary'
 import { ColorPicker, Desktop, Default, P } from 'SRC'
 
-const ColorsInterface = ({ className, colorways, productId }) => {
-  console.log(colorways, productId)
+const ColorsInterface = ({ className, colorways, productId, onChange, selected }) => {
   if (colorways && colorways.length > 1) {
     return (
       <div className={className}>
@@ -24,13 +23,15 @@ const ColorsInterface = ({ className, colorways, productId }) => {
             })
             const input = {
               value: colorway.code,
-              name: productId
+              onChange: onChange(colorway.code),
+              checked: (selected === colorway.code)
             }
             return (
               <ColorPicker
-              alt={colorway.code}
-              src={src}
-              input={input} />
+                key={`${productId}-${colorway.code}`}
+                alt={colorway.code}
+                src={src}
+                input={input} />
             )
           })}
         </Desktop>
@@ -42,7 +43,10 @@ const ColorsInterface = ({ className, colorways, productId }) => {
 }
 
 ColorsInterface.propTypes = {
-
+  className: PropTypes.string,
+  colorways: PropTypes.array,
+  productId: PropTypes.string,
+  onChange: PropTypes.func
 }
 
 export default ColorsInterface

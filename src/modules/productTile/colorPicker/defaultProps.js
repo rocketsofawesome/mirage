@@ -173,3 +173,16 @@ export const colorways = [
       ]
     }
   ]
+
+export const onChange = (code) => () => { console.log(code) }
+
+export const productId = '1234-567-890'
+
+export const selected = '7254-300'
+
+export default {
+  colorways: colorways,
+  onChange: onChange,
+  productId: productId,
+  selected: selected
+}

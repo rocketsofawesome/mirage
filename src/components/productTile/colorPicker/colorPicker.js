@@ -30,7 +30,11 @@ const ColorPicker = styled(BaseColorPicker)`
 `
 
 ColorPicker.propTypes = {
-
+  theme: PropTypes.shape({
+    colors: PropTypes.shape({
+      gray: PropTypes.array
+    })
+  })
 }
 
 /** @component */

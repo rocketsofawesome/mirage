@@ -1,6 +1,3 @@
-import * as Components from './components'
-console.log(Components)
-
 /**
  * Core:
 **/

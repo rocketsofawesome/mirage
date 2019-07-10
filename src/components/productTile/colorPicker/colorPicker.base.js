@@ -12,7 +12,10 @@ const ColorPicker = ({ alt, className, input, src }) => {
 }
 
 ColorPicker.propTypes = {
-
+  alt: PropTypes.string,
+  className: PropTypes.string,
+  input: PropTypes.object,
+  src: PropTypes.string
 }
 
 export default ColorPicker

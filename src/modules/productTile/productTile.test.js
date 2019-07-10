@@ -39,7 +39,7 @@ describe('(Styled Component) ProductTile', () => {
     expect(
      createProductTile()
       .find(P)
-      .last()
+      .at(1)
       .text()
     ).toEqual(formatPrice(productWithVariants.product.colorways[0].skus[0].price))
   })

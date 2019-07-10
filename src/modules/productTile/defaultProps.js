@@ -313,7 +313,7 @@ const productWithVariants = {
             "size": "3",
             "price": 22.5,
             "cost_price": null,
-            "in_stock": true
+            "in_stock": false
           }
         ]
       }
