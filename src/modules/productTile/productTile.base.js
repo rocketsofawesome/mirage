@@ -48,7 +48,7 @@ export default class ProductTile extends React.Component {
     } = this.props
     const { show, selectedColorWay } = this.state
     const colorway = this.getColorway(selectedColorWay)
-    const target = `/products/${product.product_slug}-${colorway.slug}`
+    const target = `products/${product.product_slug}-${colorway.slug}`
     const Link = renderLink
     return (
       <div className={className}>
@@ -90,7 +90,7 @@ ProductTile.defaultProps = {
   renderLink: ({className, children, target, ...props}) => (
     <a
       className={className}
-      href={`https://www.rocketsofawesome.com${target}`}
+      href={`https://www.rocketsofawesome.com/${target}`}
       {...props}>
       {children}
     </a>
