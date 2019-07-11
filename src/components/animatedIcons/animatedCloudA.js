@@ -71,9 +71,6 @@ const AnimatedCloudA = styled(BaseAnimatedCloudA)`
   width: auto;
   height: 100px;
   max-width: 684px;
-  ${props => props.theme.breakpointsVerbose.abovePhone`
-    height: 150px;
-  `}
   ${props => props.theme.breakpointsVerbose.aboveTablet`
     height: 150px;
   `}

@@ -60,13 +60,8 @@ const AnimatedCloudB = styled(BaseAnimatedCloudB)`
   width: auto;
   height: 100px;
   transform: translate(50%, 50%);
-  ${props => props.theme.breakpointsVerbose.abovePhone`
-    height: 150px;
-    top: 50%;
-  `}
-  ${props => props.theme.breakpointsVerbose.aboveTablet`
+  ${props => props.theme.breakpointsVerbose.aboveDesktop`
     top: 40%;
-    height: 100px;
   `}
   > img {
     height: 100%;

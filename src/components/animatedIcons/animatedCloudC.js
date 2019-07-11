@@ -61,10 +61,10 @@ const AnimatedCloudC = styled(BaseAnimatedCloudC)`
   width: auto;
   max-width: 692px;
   height: 100px;
-  ${props => props.theme.breakpointsVerbose.abovePhone`
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
     height: 150px;
   `}
-  ${props => props.theme.breakpointsVerbose.aboveTablet`
+  ${props => props.theme.breakpointsVerbose.aboveDesktop`
     height: 120px;
   `}
   svg {
