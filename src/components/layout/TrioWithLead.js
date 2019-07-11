@@ -40,12 +40,11 @@ class BaseTrioWithLead extends React.Component {
               </div>
               <div className='roa-trio-with-lead-wrapper'>
                 {children[index + 2] && children[index + 2]}
+                <AnimatedCloudC />
                 <Default displayTarget='belowTablet'>
-                  <AnimatedCloudC />
                   <AnimatedBalloon width={'50%'} />
                 </Default>
                 <Tablet laptopDisplay='block'>
-                  <AnimatedCloudC />
                   <AnimatedBalloon desktopAnimation width={'50%'} />
                 </Tablet>
               </div>

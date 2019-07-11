@@ -10,7 +10,7 @@ const ContentfulLandingPage = ({
   ...props
 }) => {
   return (
-    <section>
+    <section style={{overflow: 'hidden'}}>
       {section.map((element, index) => {
         return (<ContentfulRenderer key={index} {...element} {...props} />)
       })}
