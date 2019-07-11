@@ -130,6 +130,11 @@ const BaseContentfulContentRow = ({
 }
 
 const ContentfulContentRow = styled(BaseContentfulContentRow)`
+  > div {
+    position: relative;
+    z-index: 1;
+    padding-top: 2rem;
+  }
   > ${ContentfulResponsiveVideo} ,   >  ${ContentfulResponsiveImages} {
     video {
       height: 70%;
@@ -137,6 +142,7 @@ const ContentfulContentRow = styled(BaseContentfulContentRow)`
     video, img {
       position: absolute;
       top: 0;
+      z-index: 0;
     }
     article {
       display: flex;
