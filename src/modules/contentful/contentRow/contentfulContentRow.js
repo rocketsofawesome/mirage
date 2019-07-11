@@ -71,7 +71,7 @@ const LAYOUT_RENDER_MAP = {
       </Tablet>
     </div>,
   'Solo': (entries, {sys, ...props}) =>
-    <Solo {...props} key={sys.id}>
+    <Solo padding {...props} key={sys.id}>
       {
         entries.map((entry, index) => {
           return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />

@@ -59,12 +59,17 @@ class BaseTrioWithLead extends React.Component {
     }
   }
   render() {
-    const { children, className, constrained } = this.props
+    const {
+      children,
+      className,
+      constrained,
+      padding
+    } = this.props
     return (
       <FlexRow
         className={className}
         constrained={constrained}
-        padding>
+        padding={padding}>
         {this.parseTrio(children, 0, [])}
       </FlexRow>
     )
@@ -89,11 +94,13 @@ const TrioWithLead = styled(BaseTrioWithLead)`
 
 TrioWithLead.propTypes = {
   children: PropTypes.array,
-  constrained: PropTypes.bool
+  constrained: PropTypes.bool,
+  padding: PropTypes.bool
 }
 
 TrioWithLead.defaultProps = {
-  constrained: false
+  constrained: false,
+  padding: false
 }
 
 export default TrioWithLead

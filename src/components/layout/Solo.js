@@ -3,12 +3,17 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { FlexRow, FlexCol } from 'SRC'
 
-const BaseSolo = ({className, constrained, ...props}) => {
+const BaseSolo = ({
+  className,
+  constrained,
+  padding,
+  ...props
+}) => {
   return (
     <FlexRow
       constrained={constrained}
       className={className}
-      padding>
+      padding={padding}>
       <FlexCol
         mobile={{width: 4}}
         tablet={{width: 12}}
@@ -23,11 +28,14 @@ const Solo = styled(BaseSolo)`
 `
 
 Solo.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
+  constrained: PropTypes.bool,
+  padding: PropTypes.bool
 }
 
 Solo.defaultProps = {
-  constrained: false
+  constrained: false,
+  padding: false
 }
 
 export default Solo
