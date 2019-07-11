@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import { P, QuickAddSizes, Tablet } from 'SRC'
+import { P, QuickAddSizes, Desktop } from 'SRC'
 
 export default class QuickAdd extends Component {
   constructor (props) {
@@ -41,7 +41,7 @@ export default class QuickAdd extends Component {
           onMouseEnter={onMouseEnter}
           onMouseLeave={onMouseLeave}>
           {children}
-          <Tablet
+          <Desktop
             laptopDisplay='block'
             className='roa-quick-add'
             onMouseEnter={this.onMouseEnter}
@@ -52,7 +52,7 @@ export default class QuickAdd extends Component {
             {showSizes &&
               <QuickAddSizes {...props}/>
             }
-          </Tablet>
+          </Desktop>
         </div>
       )
     } else {
