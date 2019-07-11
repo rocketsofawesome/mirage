@@ -35,7 +35,7 @@ export class BaseAnimatedCloudC extends React.Component {
     const { bodyShape, outlineShape } = CloudCProps
     return (
       <div
-      ref={this.set}
+      ref={this.setBalloonRef}
       className={className}>
         <svg
           aria-hidden
