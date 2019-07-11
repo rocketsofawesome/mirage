@@ -43,10 +43,13 @@ export default class ProductTile extends React.Component {
     const {
       className,
       product,
+      renderLink,
       ...props
     } = this.props
     const { show, selectedColorWay } = this.state
     const colorway = this.getColorway(selectedColorWay)
+    const target = `/products/${product.product_slug}-${colorway.slug}`
+    const Link = renderLink
     return (
       <div className={className}>
         <QuickAdd
@@ -55,10 +58,24 @@ export default class ProductTile extends React.Component {
           variants={colorway.skus}
           show={show}
           {...props}>
-          <SortedROASlider product={product} shots={colorway.shots} />
+          <SortedROASlider
+            product={product}
+            shots={colorway.shots}
+            renderLink={renderLink}
+            target={target} />
         </QuickAdd>
-        <P>{product.name}</P>
-        <P>{formatPrice(colorway.skus[0].price)}</P>
+        { (renderLink && target) ?
+          <Link
+            className='roa-prodiuct-tile-details'
+            target={target}>
+            <P>{product.name}</P>
+            <P>{formatPrice(colorway.skus[0].price)}</P>
+          </Link> :
+          <div className='roa-prodiuct-tile-details'>
+            <P>{product.name}</P>
+            <P>{formatPrice(colorway.skus[0].price)}</P>
+          </div>
+        }
         <ColorsInterface
           selected={selectedColorWay}
           colorways={product.colorways}
@@ -69,7 +86,19 @@ export default class ProductTile extends React.Component {
   }
 }
 
+ProductTile.defaultProps = {
+  renderLink: ({className, children, target, ...props}) => (
+    <a
+      className={className}
+      href={`https://www.rocketsofawesome.com${target}`}
+      {...props}>
+      {children}
+    </a>
+  )
+}
+
 ProductTile.propTypes = {
   className: PropTypes.string,
   product: PropTypes.object,
+  renderLink: PropTypes.func
 }

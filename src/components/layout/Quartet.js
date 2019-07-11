@@ -6,13 +6,14 @@ import { FlexRow, FlexCol } from 'SRC'
 const BaseQuartet = ({
   children,
   className,
-  constrained
+  constrained,
+  padding
 }) => {
   return (
     <FlexRow
       className={className}
       constrained={constrained}
-      padding>
+      padding={padding}>
       {children.map((child, index) => {
         return (
           <FlexCol
@@ -35,11 +36,14 @@ const Quartet = styled(BaseQuartet)`
 `
 
 Quartet.propTypes = {
-  children: PropTypes.array
+  children: PropTypes.array,
+  constrained: PropTypes.bool,
+  padding: PropTypes.bool
 }
 
 Quartet.defaultProps = {
-  constrained: false
+  constrained: false,
+  padding: false
 }
 
 export default Quartet

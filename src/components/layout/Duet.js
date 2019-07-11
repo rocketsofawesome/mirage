@@ -6,11 +6,13 @@ import { FlexRow, FlexCol } from 'SRC'
 const BaseDuet = ({
   children,
   className,
-  constrained
+  constrained,
+  padding
 }) => {
   return (
     <FlexRow
-      padding
+      padding={padding}
+      constrained={constrained}
       className={className}>
       {children.map((child, index) => {
         return (
@@ -36,11 +38,13 @@ const Duet = styled(BaseDuet)`
 Duet.propTypes = {
   children: PropTypes.array,
   className: PropTypes.string,
-  constrained: PropTypes.bool
+  constrained: PropTypes.bool,
+  padding: PropTypes.bool
 }
 
 Duet.defaultProps = {
-  constrained: false
+  constrained: false,
+  padding: false
 }
 
 export default Duet
