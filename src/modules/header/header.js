@@ -12,12 +12,15 @@ class BaseHeader extends Component {
 
   setMargin = () => {
     const { setMargin, theme: { basePxSize } } = this.props
-    console.log(setMargin)
     const remHeight = (this.header.clientHeight / basePxSize)
     setMargin(remHeight)
   }
 
   componentDidMount () {
+    this.setMargin()
+  }
+
+  componentDidUpdate () {
     this.setMargin()
   }
 
