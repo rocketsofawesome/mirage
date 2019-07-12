@@ -1,6 +1,6 @@
 {
   "name": "@rocketsofawesome/mirage",
-  "version": "0.1.296",
+  "version": "0.1.297",
   "main": "./build/index.js",
   "dependencies": {
     "accounting": "^0.4.1",
