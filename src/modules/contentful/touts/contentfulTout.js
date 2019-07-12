@@ -67,9 +67,12 @@ const ContentfulTout = styled(BaseContentfulTout)`
   display: flex;
   width: 100%;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 4rem;
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    margin-bottom: 6rem;
+  `}
   ${props => props.fields.hero && props.theme.breakpointsVerbose.belowTablet`
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
   `}
   .roa-tout-overlay {
     position: absolute;
