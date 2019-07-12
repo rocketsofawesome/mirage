@@ -9,7 +9,8 @@ import {
   AnimatedCloudB,
   AnimatedCloudC,
   Default,
-  Tablet
+  Tablet,
+  ContentfulTout
 } from 'SRC'
 
 class BaseTrioWithLead extends React.Component {
@@ -77,6 +78,12 @@ class BaseTrioWithLead extends React.Component {
 }
 
 const TrioWithLead = styled(BaseTrioWithLead)`
+${props => props.theme.breakpointsVerbose.aboveTablet`
+  margin-bottom: 6rem;
+  ${ContentfulTout} a {
+    margin-bottom: 0;
+  }
+`}
   .roa-trio-lead{
     display: flex;
     flex-wrap: wrap;

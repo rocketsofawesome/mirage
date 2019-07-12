@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { FlexRow, FlexCol } from 'SRC'
 
-const BaseFullBleed = ({className, ...props}) => {
+const FullBleed = ({className, ...props}) => {
   return (
     <FlexRow
       className={className}
@@ -19,10 +19,6 @@ const BaseFullBleed = ({className, ...props}) => {
     </FlexRow>
   )
 }
-
-const FullBleed = styled(BaseFullBleed)`
-  margin-bottom: 2rem;
-`
 
 FullBleed.propTypes = {
 
