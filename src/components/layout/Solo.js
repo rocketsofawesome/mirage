@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { FlexRow, FlexCol } from 'SRC'
 
-const BaseSolo = ({
+const Solo = ({
   className,
   constrained,
   padding,
@@ -22,10 +22,6 @@ const BaseSolo = ({
     </FlexRow>
   )
 }
-
-const Solo = styled(BaseSolo)`
-  margin-bottom: 2rem;
-`
 
 Solo.propTypes = {
   className: PropTypes.string,
