@@ -36,6 +36,9 @@ const MirageMarkdown = styled(({className, children, ...props}) => {
     ${H1} {
       font-size: 3.4rem;
     }
+    ${H4} {
+      font-style: normal;
+    }
   `}
 `
 

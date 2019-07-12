@@ -21,6 +21,9 @@ ${MirageMarkdown} {
   display: flex;
   flex: 1 1 100%;
   justify-content: center;
+  > * {
+    text-align: center;
+  }
 }
 .roa-split-tout-link {
   align-items: center;

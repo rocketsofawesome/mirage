@@ -137,7 +137,10 @@ const ContentfulContentRow = styled(BaseContentfulContentRow)`
   }
   > ${ContentfulResponsiveVideo} ,   >  ${ContentfulResponsiveImages} {
     video {
-      height: 70%;
+      height: 100%;
+      ${props => props.theme.breakpointsVerbose.aboveDesktop`
+        height: 75%;
+      `}
     }
     video, img {
       position: absolute;
@@ -149,6 +152,10 @@ const ContentfulContentRow = styled(BaseContentfulContentRow)`
       justify-content: flex-start;
       padding-top: 2rem;
       padding-bottom: 2rem;
+      margin-bottom: 4rem;
+      ${props => props.theme.breakpointsVerbose.aboveTablet`
+        margin-bottom: 6rem;
+      `}
     }
   }
 `
