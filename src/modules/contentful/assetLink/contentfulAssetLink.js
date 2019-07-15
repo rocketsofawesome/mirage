@@ -36,7 +36,7 @@ ContentfulAssetLink.defaultProps = {
   renderLink: ({children, target, ...props}) => {
     return (
       <Link
-        href={`#${target}`}
+        href={`${target}`}
         underline={false}
         {...props}>
         {children}
