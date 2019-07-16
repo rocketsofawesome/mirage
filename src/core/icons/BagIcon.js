@@ -27,6 +27,7 @@ const BaseBagIcon = ({ className, count}) => {
 
 const BagIcon = styled(BaseBagIcon)`
 position: relative;
+display: inline-block;
   svg {
     width: ${props => props.width.mobile};
     > polygon, path {

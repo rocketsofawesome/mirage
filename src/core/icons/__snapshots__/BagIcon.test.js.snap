@@ -37,6 +37,7 @@ exports[`(Component) BaseBagIcon matching the snapshot 1`] = `
 exports[`(Styled Component) BagIcon matching the snapshot 1`] = `
 .c0 {
   position: relative;
+  display: inline-block;
 }
 
 .c0 svg {
