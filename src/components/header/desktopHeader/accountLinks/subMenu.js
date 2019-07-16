@@ -51,7 +51,7 @@ export class BaseSubMenu extends React.Component {
                 <Link
                   uppercase
                   underline={false}
-                  target='/stylefile'
+                  target='/style-file'
                   renderLink={renderLink}>
                   Style File
                 </Link>
