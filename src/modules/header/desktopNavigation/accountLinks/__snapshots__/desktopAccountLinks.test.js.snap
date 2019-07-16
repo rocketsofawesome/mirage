@@ -105,7 +105,8 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
 
 .c2 {
   position: relative;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -118,6 +119,11 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  border-bottom: 0px;
 }
 
 .c2:active,
@@ -127,7 +133,6 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
 
 .c2 > span {
   z-index: 1;
-  padding: 0.5rem 1.5rem;
 }
 
 .c2 .screenReader {
@@ -173,6 +178,12 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   border: 0.1rem solid #0073D1;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+
+@media (max-width:1039px) {
+  .c2 {
+    font-size: 1rem;
+  }
 }
 
 <Styled(BaseAccountLinks)
@@ -344,7 +355,8 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
 
 .c2 {
   position: relative;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -357,6 +369,11 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  border-bottom: 0px;
 }
 
 .c2:active,
@@ -366,7 +383,6 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
 
 .c2 > span {
   z-index: 1;
-  padding: 0.5rem 1.5rem;
 }
 
 .c2 .screenReader {
@@ -412,6 +428,12 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
   border: 0.1rem solid #0073D1;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+
+@media (max-width:1039px) {
+  .c2 {
+    font-size: 1rem;
+  }
 }
 
 <Styled(BaseAccountLinks)
@@ -491,7 +513,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
                 target="/shop/login"
               >
                 <span>
-                  Log In
+                  Login
                 </span>
               </a>
             </Component>

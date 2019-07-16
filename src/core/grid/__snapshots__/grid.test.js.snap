@@ -46,7 +46,7 @@ exports[`(Base Styles) grid matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:128em) {
+@media (min-width:102.4em) {
   .c0 {
     grid-template-columns: repeat(12,1fr);
   }
@@ -73,7 +73,7 @@ exports[`(Base Styles) grid the margins should’t have margins if they are set 
   }
 }
 
-@media (min-width:128em) {
+@media (min-width:102.4em) {
   .c0 {
     grid-template-columns: repeat(12,1fr);
   }

@@ -19,6 +19,10 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
   .c0 .c1 {
     font-size: 3.4rem;
   }
+
+  .c0 .sc-uJMKN {
+    font-style: normal;
+  }
 }
 
 <Styled(Component)>

@@ -3,7 +3,8 @@
 exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
 .c0 {
   position: relative;
-  margin: 0 1rem;
+  margin: 0 1.5rem;
+  padding: 0 1rem;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -16,6 +17,11 @@ exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
   align-items: center;
   -webkit-text-decoration: none;
   text-decoration: none;
+  -webkit-letter-spacing: 0.1rem;
+  -moz-letter-spacing: 0.1rem;
+  -ms-letter-spacing: 0.1rem;
+  letter-spacing: 0.1rem;
+  border-bottom: 0px;
 }
 
 .c0:active,
@@ -25,7 +31,6 @@ exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
 
 .c0 > span {
   z-index: 1;
-  padding: 0.5rem 1.5rem;
 }
 
 .c0 .screenReader {
@@ -44,6 +49,12 @@ exports[`(Styled Component) HeaderLink matching the snapshot 1`] = `
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width:1039px) {
+  .c0 {
+    font-size: 1rem;
+  }
 }
 
 <BaseHeaderLink

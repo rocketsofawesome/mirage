@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
+.c0 .screenReader {
+  font-size: 0;
+}
+
 .c0 .c1 {
   max-width: 22.4rem;
 }
@@ -14,11 +18,10 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
 }
 
 <BaseMobileNavigation
-  bagCount={5}
   className="c0"
   drawerPosition="fixed"
   homepageUrl="https://rocketsofawesome.com"
   outfitNav="true"
-  showBlog="true"
+  showBlog=""
 />
 `;

@@ -33,15 +33,18 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
   theme={
     Object {
       "base": undefined,
+      "basePxSize": 10,
       "breakpoints": Object {
         "aboveDesktop": "(min-width: 1440px)",
-        "aboveLaptop": "(min-width: 1280px)",
+        "aboveLaptop": "(min-width: 1024px)",
+        "aboveMobileNav": "(min-width: 889px)",
         "abovePhone": "(min-width: 320px)",
         "abovePhoneMax": "(min-width: 414px)",
         "aboveTablet": "(min-width: 768px)",
         "aboveTabletMax": "(min-width: 960px)",
         "belowDesktop": "(max-width: 1439px)",
-        "belowLaptop": "(max-width: 1279px)",
+        "belowLaptop": "(max-width: 1023px)",
+        "belowMobileNav": "(max-width: 888px)",
         "belowPhone": "(max-width: 319px)",
         "belowPhoneMax": "(max-width: 413px)",
         "belowTablet": "(max-width: 767px)",
@@ -52,12 +55,14 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
       "breakpointsVerbose": Object {
         "aboveDesktop": [Function],
         "aboveLaptop": [Function],
+        "aboveMobileNav": [Function],
         "abovePhone": [Function],
         "abovePhoneMax": [Function],
         "aboveTablet": [Function],
         "aboveTabletMax": [Function],
         "belowDesktop": [Function],
         "belowLaptop": [Function],
+        "belowMobileNav": [Function],
         "belowPhone": [Function],
         "belowPhoneMax": [Function],
         "belowTablet": [Function],
@@ -76,6 +81,7 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
           "#E6E6E6",
           "#D5D5D5",
           "#CFCFCF",
+          "#979797",
         ],
         "gray0": "#F3F3F3",
         "gray1": "#F5F5F5",
@@ -83,6 +89,7 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
         "gray3": "#E6E6E6",
         "gray4": "#D5D5D5",
         "gray5": "#CFCFCF",
+        "gray6": "#979797",
         "lightBlue": Array [
           "#EEFCFF",
           "#BCE1F7",
@@ -125,10 +132,20 @@ exports[`(Component) Checkmark matching the snapshot 1`] = `
       "media": Object {
         "desktop": [Function],
         "laptop": [Function],
+        "mobileNav": [Function],
         "phone": [Function],
         "phoneMax": [Function],
         "tablet": [Function],
         "tabletMax": [Function],
+      },
+      "sizes": Object {
+        "desktop": 1440,
+        "laptop": 1024,
+        "mobileNav": 889,
+        "phone": 320,
+        "phoneMax": 414,
+        "tablet": 768,
+        "tabletMax": 960,
       },
     }
   }
