@@ -20,7 +20,7 @@ const LAYOUT_RENDER_MAP = {
   'Duet': (entries, {sys, ...props}) => {
     return (
       <div>
-        <Default displayTarget='belowTablet'>
+        <Default displayTarget='belowTabletMax'>
           <Solo>
             {
               entries.map((entry, index) => {
