@@ -52,7 +52,7 @@ describe('(Component) BaseBagIcon', () => {
     const count = 0
     expect(
       createBaseBagIcon({count: count})
-      .find('.roa-item-count').length()
+      .find('.roa-item-count').length
     ).toEqual(0)
   })
 })
