@@ -47,4 +47,12 @@ describe('(Component) BaseBagIcon', () => {
       .find('.roa-item-count').first().text()
     ).toEqual(count.toString())
   })
+
+  test('count doesn\'t render if 0', () => {
+    const count = 0
+    expect(
+      createBaseBagIcon({count: count})
+      .find('.roa-item-count').length()
+    ).toEqual(0)
+  })
 })

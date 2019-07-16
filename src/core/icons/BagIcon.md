@@ -1,5 +1,5 @@
 ```js
-  <BagIcon />
+  <BagIcon count={0}/>
 ```
 
 ## Count Example
