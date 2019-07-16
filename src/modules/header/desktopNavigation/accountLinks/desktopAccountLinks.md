@@ -7,13 +7,17 @@
   </div>
 ```
 
-### Logged In Non-Subscriber User
+### Logged In Subscriber User
 ```js
   <div style={{marginLeft: '200px', height: '370px'}}>
     <DesktopAccountLinks
       name='Shawn'
       loggedIn
-      isSubscriptionMember />
+      isSubscriptionMember
+      renderLink={(inProps) => {
+        const {target, children, ...props } = inProps
+        return (<span href={target} {...props} onClick={()=> alert('Hello')}>{children}</span>)
+      }} />
   </div>
 ```
 

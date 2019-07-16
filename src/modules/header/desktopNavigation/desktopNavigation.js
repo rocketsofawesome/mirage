@@ -197,12 +197,12 @@ export class BaseDesktopNavigation extends React.Component {
                 </li>
                 <li>
                   <HeaderLink
+                    className='roa-bag-link'
                     justify='flex-end'
-                    highlightable={highlightable}
+                    highlightable={false}
                     onClick={clickBag}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
-                    <span className='screenReader'>Bag</span>
                     <BagIcon count={bagCount}/>
                   </HeaderLink>
                 </li>
@@ -233,11 +233,23 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
       margin: 0;
       flex-basis: 100%;
       height: 100%;
+      padding: 0 2rem;
       > li {
         list-style: none;
-        display: flex-inline;
+        display: inline-flex;
         align-items: center;
         height: 100%;
+        &:first-of-type {
+          flex-basis: 25%;
+          width: 25%;
+          max-width: 42rem;
+          * {
+            width: 100%;
+          }
+        }
+        &:last-of-type > a > span > span {
+          padding-left: 1rem;
+        }
       }
       > span {
         font-family: ${props => props.theme.fonts.primaryFont};
@@ -251,7 +263,6 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
   }
   ${Logo} {
     width: 100%;
-    max-width: 35rem;
   }
   .megaMenu {
     position: absolute;
@@ -265,6 +276,17 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
     top: 0;
     left: 0;
     text-transform: capitalize;
+  }
+  .roa-bag-link > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media(max-width: 1009px){
+      > span {
+        display: none;
+      }
+    }
+
   }
   ${BagIcon} {
     margin-left: 0.5rem;
@@ -291,7 +313,6 @@ BaseDesktopNavigation.defaultProps = {
   highlightable: true,
   girlsLinks: girls,
   boysLinks: boys,
-  bagCount: 10,
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK

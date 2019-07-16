@@ -232,7 +232,6 @@ MobileNavigation.propTypes = {
 
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
-  bagCount: 5,
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK

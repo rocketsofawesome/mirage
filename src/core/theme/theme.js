@@ -1,6 +1,6 @@
 import { injectGlobal } from 'styled-components'
 import { colors } from './colors'
-import media, { breakpoints, breakpointsVerbose } from './mediaQueries'
+import media, { sizes, breakpoints, breakpointsVerbose } from './mediaQueries'
 import fontFamilies from './fontFamilies'
 import gridSettings from './gridSettings'
 
@@ -13,13 +13,14 @@ const base = injectGlobal`
 `
 
 export default {
+  base: base,
   basePxSize: basePxSize,
   breakpoints: breakpoints,
+  breakpointsVerbose: breakpointsVerbose,
   colors: colors,
+  fixedPosition: 'relative',
   fonts: fontFamilies,
   grid: gridSettings,
-  fixedPosition: 'relative',
   media: media,
-  breakpointsVerbose: breakpointsVerbose,
-  base: base
+  sizes: sizes
 }
