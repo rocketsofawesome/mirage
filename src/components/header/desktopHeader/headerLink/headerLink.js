@@ -9,18 +9,23 @@ import BaseHeaderLink from './headerLink.base'
 /** @component */
 const HeaderLink = styled(BaseHeaderLink)`
   position: relative;
-  ${props => props.spacing ? `margin: 0 1rem;`: ''}
+  ${props => props.spacing ? `margin: 0 1.5rem;`: ''}
+  ${props => props.spacing ? `padding: 0 1rem;` : ''}
   display: flex;
   cursor: pointer;
   height: 6rem;
   align-items: center;
   text-decoration: none;
+  letter-spacing: 0.1rem;
+  border-bottom: 0px;
+  @media(max-width: 1039px){
+    font-size: 1rem;
+  }
   &:active, &:visited {
     color: ${props => props.theme.colors.rocketBlue};
   }
   > span {
     z-index: 1;
-    ${props => props.spacing ? `padding: 0.5rem 1.5rem;`: ''}
   }
   .screenReader{
     font-size: 0;

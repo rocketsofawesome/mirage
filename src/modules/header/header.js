@@ -2,7 +2,13 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled, { withTheme } from 'styled-components'
 
-import { Desktop, Default, DesktopNavigation, MobileNavigation } from 'SRC'
+import {
+  Default,
+  DesktopNavigation,
+  Laptop,
+  Mobile,
+  MobileNavigation
+} from 'SRC'
 
 class BaseHeader extends Component {
   constructor (props) {
@@ -30,17 +36,19 @@ class BaseHeader extends Component {
       below,
       className,
       desktopProps,
-      mobileProps
+      mobileProps,
+      ...props
     } = this.props
+
     return (
-      <div className={className} ref={(element) => { this.header = element }}>
+      <div className={className} ref={(element) => { this.header = element }} {...props}>
         {above}
-        <Default>
+        <Default displayTarget={'belowMobileNav'}>
           <MobileNavigation {...mobileProps} />
         </Default>
-        <Desktop>
+        <Default displayTarget={'aboveMobileNav'}>
           <DesktopNavigation {...desktopProps} />
-        </Desktop>
+        </Default>
         {below}
       </div>
     )
@@ -48,7 +56,7 @@ class BaseHeader extends Component {
 }
 
 const Header = styled(BaseHeader)`
-  position: ${(props) => props.position};
+  position: ${props => props.position};
   z-index: 2;
   width: 100%;
 `

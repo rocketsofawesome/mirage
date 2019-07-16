@@ -78,6 +78,7 @@ class BaseTrioWithLead extends React.Component {
 }
 
 const TrioWithLead = styled(BaseTrioWithLead)`
+margin: 0 2rem;
 ${props => props.theme.breakpointsVerbose.aboveTablet`
   margin-bottom: 6rem;
   ${ContentfulTout} a {
@@ -107,7 +108,7 @@ TrioWithLead.propTypes = {
 
 TrioWithLead.defaultProps = {
   constrained: false,
-  padding: false
+  padding: true
 }
 
 export default TrioWithLead

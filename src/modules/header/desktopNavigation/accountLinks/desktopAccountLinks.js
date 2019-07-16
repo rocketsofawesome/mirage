@@ -42,6 +42,7 @@ export class BaseAccountLinks extends React.Component {
           </HeaderLink>
           <SubMenu
             open={subMenuOpen}
+            renderLink={renderLink}
             isSubscriptionMember={isSubscriptionMember}
             {...props} />
           </div>
