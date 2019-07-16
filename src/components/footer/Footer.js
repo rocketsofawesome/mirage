@@ -29,11 +29,11 @@ const BaseFooter = ({
             <ul>
               {isNotSubscriber &&
                 <li>
-                  <WhiteLink light href={`${homepageUrl}?view=subscribe`}>Subscribe + Save</WhiteLink>
+                  <WhiteLink light href={`${homepageUrl}/subscribe-and-save`}>Subscribe + Save</WhiteLink>
                 </li>
               }
               <li>
-                <WhiteLink light href={homepageUrl + '/about'} target='_blank'>About Us</WhiteLink>
+                <WhiteLink light href={`${homepageUrl}/about`} target='_blank'>About Us</WhiteLink>
               </li>
               <li>
                 <WhiteLink light href='https://news.rocketsofawesome.com/' target='_blank'>The Awesome News</WhiteLink>

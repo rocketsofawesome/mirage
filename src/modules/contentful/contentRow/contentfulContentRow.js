@@ -13,6 +13,7 @@ import {
   ContentfulResponsiveVideo,
   ContentfulResponsiveImages,
   Tablet,
+  TabletMax,
   Default
 } from 'SRC'
 
@@ -20,7 +21,7 @@ const LAYOUT_RENDER_MAP = {
   'Duet': (entries, {sys, ...props}) => {
     return (
       <div>
-        <Default displayTarget='belowTablet'>
+        <Default displayTarget='belowTabletMax'>
           <Solo>
             {
               entries.map((entry, index) => {
@@ -29,7 +30,7 @@ const LAYOUT_RENDER_MAP = {
             }
           </Solo>
         </Default>
-        <Tablet laptopDisplay='block'>
+        <TabletMax laptopDisplay='block'>
           <Duet {...props} key={sys.id}>
             {
               entries.map((entry, index) => {
@@ -37,7 +38,7 @@ const LAYOUT_RENDER_MAP = {
               })
             }
           </Duet>
-        </Tablet>
+        </TabletMax>
       </div>
     )
   },
