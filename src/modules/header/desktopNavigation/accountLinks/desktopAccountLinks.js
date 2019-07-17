@@ -17,6 +17,12 @@ export class BaseAccountLinks extends React.Component {
     this.setState({subMenuOpen: !subMenuOpen})
   }
 
+  signOut = () => {
+    const { signOut } = this.props
+    this.toggleSubmenu()
+    signOut()
+  }
+
   render () {
     const {
       className,
@@ -28,6 +34,7 @@ export class BaseAccountLinks extends React.Component {
       ...props
     } = this.props
     delete props.subMenuOpen
+    delete props.signOut
     const { subMenuOpen } = this.state
     if (loggedIn) {
       const classes = classNames(className, {
@@ -44,6 +51,7 @@ export class BaseAccountLinks extends React.Component {
             open={subMenuOpen}
             renderLink={renderLink}
             isSubscriptionMember={isSubscriptionMember}
+            signOut={this.signOut}
             {...props} />
           </div>
       )
