@@ -3,7 +3,8 @@
   <div style={{marginLeft: '200px', height: '370px'}}>
     <DesktopAccountLinks
       name='Shawn'
-      loggedIn />
+      loggedIn
+      signOut={() => setTimeout(() => { alert('signing out!') }, 1000 )} />
   </div>
 ```
 
@@ -17,13 +18,14 @@
       renderLink={(inProps) => {
         const {target, children, ...props } = inProps
         return (<span href={target} {...props} onClick={()=> alert('Hello')}>{children}</span>)
-      }} />
+      }}
+      signOut={() => setTimeout(() => { alert('signing out!') }, 1000 )} />
   </div>
 ```
 
 ### Logged Out User:
 ```js
   <div style={{marginLeft: '200px'}}>
-    <DesktopAccountLinks />
+    <DesktopAccountLinks signOut={() => setTimeout(() => { alert('signing out!') }, 1000 )} />
   </div>
 ```

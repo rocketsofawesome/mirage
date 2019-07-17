@@ -5,12 +5,14 @@
       mobileProps={
         {
           position: 'absolute',
-          drawerPosition:'absolute'
+          drawerPosition:'absolute',
+          signOut: () => alert('signing out')
         }
       }
       desktopProps={
         {
-          position: 'static'
+          position: 'static',
+          signOut: () => alert('signing out')
         }
       } />
     </div>
@@ -29,13 +31,44 @@
         {
           bagCount: 5,
           position: 'absolute',
-          drawerPosition:'absolute'
+          drawerPosition:'absolute',
+          signOut: () => alert('signing out')
         }
       }
       desktopProps={
         {
           bagCount: 5,
-          position: 'static'
+          position: 'static',
+          signOut: () => alert('signing out')
+        }
+      } />
+    </div>
+```
+
+#### loggedIn
+
+```js
+  <div style={{position: 'relative', height: '70rem'}}>
+    <Header
+      position='absolute'
+      above={
+        <Status fontSize='14px'>FREE SHIPPING FOR ORDERS OF $50+ • FREE RETURNS</Status>
+      }
+      mobileProps={
+        {
+          bagCount: 5,
+          position: 'absolute',
+          drawerPosition:'absolute',
+          loggedIn: true,
+          signOut: () => alert('signing out')
+        }
+      }
+      desktopProps={
+        {
+          bagCount: 5,
+          position: 'static',
+          loggedIn: true,
+          signOut: () => alert('signing out')
         }
       } />
     </div>
