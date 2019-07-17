@@ -144,7 +144,8 @@ SubMenu.propTypes = {
 
 SubMenu.defaultProps = {
   childCount: 0,
-  isSubscriptionMember: false
+  isSubscriptionMember: false,
+  signOut: () => alert('Signing Out')
 }
 
 /** @component */
