@@ -31,7 +31,7 @@ Solo.propTypes = {
 
 Solo.defaultProps = {
   constrained: false,
-  padding: false
+  padding: true
 }
 
 export default Solo

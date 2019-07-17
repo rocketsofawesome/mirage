@@ -12,15 +12,15 @@ const notConstrained = css`
   max-width: 100%;
   margin-left: 10px;
   margin-right: 10px;
-  ${props => props.theme.media.tablet`
+  ${props => props.theme.breakpointsVerbose.abovePhoneMax`
     margin-left: 20px;
     margin-right: 20px;
   `}
 `
 
 const padding = css`
-  padding: 0 3%;
-  ${props => props.theme.media.tablet`
+  padding: 0;
+  ${props => props.theme.breakpointsVerbose.abovePhoneMax`
     padding: 0 7%;
   `}
 `

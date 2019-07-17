@@ -151,10 +151,10 @@ const ContentfulContentRow = styled(BaseContentfulContentRow)`
     article {
       display: flex;
       justify-content: flex-start;
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      padding-top: 4rem;
       margin-bottom: 4rem;
       ${props => props.theme.breakpointsVerbose.aboveTablet`
+        padding-top: 2rem;
         margin-bottom: 6rem;
       `}
     }
