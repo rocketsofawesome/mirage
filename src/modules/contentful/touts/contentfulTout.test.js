@@ -44,7 +44,7 @@ describe('(Styled Component) ContentfulTout', () => {
       modifier: '.roa-tout-overlay',
     })
     expect(createContentfulTout())
-    .toHaveStyleRule('align-content', 'flex-end', {
+    .toHaveStyleRule('align-items', 'flex-end', {
       modifier: '.roa-tout-overlay',
     })
   })

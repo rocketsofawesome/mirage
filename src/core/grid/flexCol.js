@@ -39,8 +39,8 @@ const FlexCol = styled(BaseFlexCol)`
       padding-right: 0;
     `
     : `
-      padding-left: ${props.gutter || '5px'};
-      padding-right: ${props.gutter || '5px'};
+      padding-left: ${props.gutter || '0.5rem'};
+      padding-right: ${props.gutter || '0.5rem'};
     `
   }
     ${props => props.theme.breakpointsVerbose.aboveTablet`
@@ -51,6 +51,16 @@ const FlexCol = styled(BaseFlexCol)`
         ? columnToPercent(props.tablet.width, props.tablet.nested)
         : columnToPercent(props.tablet.width, props.columns.desktop)};
         ${ props => spanner(props, 'tablet')}
+        ${props => props.nested
+          ? `
+            padding-left: 0;
+            padding-right: 0;
+          `
+          : `
+            padding-left: ${props.gutter || '1rem'};
+            padding-right: ${props.gutter || '1rem'};
+          `
+        }
   `}
 
   ${props => props.theme.breakpointsVerbose.aboveTabletMax`
