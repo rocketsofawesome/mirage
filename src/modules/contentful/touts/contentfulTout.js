@@ -25,39 +25,39 @@ const textPosition = ({fields: { position = 'center' } }) => {
   const POSITIONS = {
     center: css`
       justify-content: center;
-      align-content: center;
+      align-items: center;
     `,
     centerTop: css`
       justify-content: center;
-      align-content: flex-start;
+      align-items: flex-start;
     `,
     centerBottom: css`
       justify-content: center;
-      align-content: flex-end;
+      align-items: flex-end;
     `,
     centerLeft: css`
       justify-content: center;
-      align-content: flex-start;
+      align-items: flex-start;
     `,
     centerRight: css`
       justify-content: center;
-      align-content: flex-end;
+      align-items: flex-end;
     `,
     topLeft: css`
       justify-content: flex-start;
-      align-content: flex-start;
+      align-items: flex-start;
     `,
     topRight: css`
       justify-content: flex-start;
-      align-content: flex-end;
+      align-items: flex-end;
     `,
     bottomLeft: css`
       justify-content: flex-end;
-      align-content: flex-start;
+      align-items: flex-start;
     `,
     bottomRight: css`
       justify-content: flex-end;
-      align-content: flex-end;
+      align-items: flex-end;
     `
   }
   return POSITIONS[position]
@@ -107,7 +107,7 @@ const ContentfulTout = styled(BaseContentfulTout)`
   .roa-tout-buttons {
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
