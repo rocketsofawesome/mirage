@@ -18,7 +18,7 @@
 
 ```js
   <Status type="promo_pink">
-    <PersistantPricing />
+    Promo message appears here!
   </Status>
 ```
 

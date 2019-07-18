@@ -4,46 +4,33 @@ import styled, { css, keyframes } from 'styled-components'
 
 import { P } from 'SRC'
 
-const rotateWordsFirst = keyframes`
+//SM - I would like for this to be computed based on amount of children passed
+const animateContainer = keyframes`
   0% {
-    opacity: 0;
-    animation-timing-function: ease-in;
-  }
-  2% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  5% {
-    opacity: 0.7;
     transform: translateY(0rem);
   }
-  9% {
-    opacity: 1;
-    transform: translateY(0rem);
+  4.167% {
+    transform: translateY(3rem);
   }
-  34% {
-    opacity: 0.7;
-    transform: translateY(0rem);
+  29.167% {
+    transform: translateY(3rem);
   }
-  37% {
-    opacity: 0;
-    transform: translateY(30px);
+  37.5% {
+    transform: translateY(9rem);
   }
-  95% {
-    opacity: 0;
+  62.5% {
+    transform: translateY(9rem);
   }
-  100% {
-    opacity: 0;
+  70.834%{
+    transform: translateY(15rem);
   }
-`
-
-const childStyle = (index) => {
-  return (css`
-    &:nth-of-type(${index}) {
-      animation-delay: -${props => props.duration * index}s;
-    }
-  `)
-}
+  95.834% {
+    transform: translateY(15rem);
+  }
+  100%{
+    transform: translateY(18rem);
+  }
+  `
 
 const PersistantPricing = styled(({className, children}) => {
   return (
@@ -53,27 +40,30 @@ const PersistantPricing = styled(({className, children}) => {
   )
 })`
 width: 100%;
+height: ${props => props.height/10}rem;
+position: relative;
+overflow: hidden;
   div {
-    height: ${props => props.height/10}rem;
-    position: relative;
-    overflow: hidden;
+    position: absolute;
+    bottom: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation-name: ${animateContainer};
+    animation-duration: ${props => props.duration}s
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
     > * {
-      line-height: ${props => props.height/10}rem;
-      animation: ${rotateWordsFirst} ${props => (props.children.length * props.duration)}s linear infinite 0s;
-      position: absolute;
-      opacity: 0;
-      display: inline-flex;
-      justify-content: center;
-      width: 100%;
-      height: ;
-      ${props => props.children.map((child, index) => {
-        return childStyle(index)
-      })}
+      flex: 1 1 100%;
+      text-align: center;
     }
     span {
       margin-left: 0.5rem;
     }
     ${P} {
+      padding-top: ${props => (props.height/10)}rem;
+      height: ${props => (props.height/10)}rem;
       font-weight: 300;
       font-size: 1.1rem;
       ${props => props.theme.breakpointsVerbose.aboveTablet`
@@ -99,7 +89,7 @@ PersistantPricing.defaultProps = {
       <span role='img' aria-label='hearts'>💕</span>
     </P>
   ],
-  duration: 6,
+  duration: 12,
   height: 30
 }
 
