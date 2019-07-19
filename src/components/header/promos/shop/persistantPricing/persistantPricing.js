@@ -4,7 +4,7 @@ import styled, { css, keyframes } from 'styled-components'
 
 import { P } from 'SRC'
 
-//SM - I would like for this to be computed based on amount of children passed
+//SM - I would like for this to be computed based on amount of children passedhead
 const animateContainer = keyframes`
   0% {
     transform: translateY(0rem);
@@ -44,6 +44,7 @@ height: ${props => props.height/10}rem;
 position: relative;
 overflow: hidden;
   div {
+    width: 100%;
     position: absolute;
     bottom: 100%;
     display: flex;
@@ -62,6 +63,7 @@ overflow: hidden;
       margin-left: 0.5rem;
     }
     ${P} {
+      line-height: 3rem;
       padding-top: ${props => (props.height/10)}rem;
       height: ${props => (props.height/10)}rem;
       font-weight: 300;
