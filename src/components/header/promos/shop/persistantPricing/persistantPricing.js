@@ -43,6 +43,10 @@ width: 100%;
 height: ${props => props.height/10}rem;
 position: relative;
 overflow: hidden;
+box-sizing: border-box;
+& * {
+  box-sizing: border-box;
+}
   div {
     width: 100%;
     position: absolute;
@@ -65,7 +69,7 @@ overflow: hidden;
     ${P} {
       line-height: 3rem;
       padding-top: ${props => (props.height/10)}rem;
-      height: ${props => (props.height/10)}rem;
+      height: ${props => (props.height/10)*2}rem;
       font-weight: 300;
       font-size: 1.1rem;
       ${props => props.theme.breakpointsVerbose.aboveTablet`
