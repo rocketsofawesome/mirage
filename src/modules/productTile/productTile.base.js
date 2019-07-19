@@ -90,7 +90,7 @@ ProductTile.defaultProps = {
   renderLink: ({className, children, target, ...props}) => (
     <a
       className={className}
-      href={`https://www.rocketsofawesome.com/${target}`}
+      href={`/${target}`}
       {...props}>
       {children}
     </a>
