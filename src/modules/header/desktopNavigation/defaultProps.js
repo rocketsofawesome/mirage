@@ -77,7 +77,7 @@ export const accountLinks = {
     target: '/shop/login'
   },
   loggedIn: {
-    text: 'Shawn',
+    text: 'User',
     submenu: [
 
     ]
