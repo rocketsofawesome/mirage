@@ -59,6 +59,7 @@ box-sizing: border-box;
     animation-iteration-count: infinite;
     animation-fill-mode: backwards;
     animation-timing-function: ease-in-out;
+    animation-delay:  0.01s;
     > * {
       flex: 1 1 100%;
       text-align: center;
