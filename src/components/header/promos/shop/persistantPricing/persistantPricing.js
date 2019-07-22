@@ -7,7 +7,7 @@ import { P } from 'SRC'
 //SM - I would like for this to be computed based on amount of children passedhead
 const animateContainer = keyframes`
   0% {
-    transform: translateY(0rem);
+    transform: translateY(0px);
   }
   4.167% {
     transform: translateY(30px);
