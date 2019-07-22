@@ -79,9 +79,6 @@ class BaseTrioWithLead extends React.Component {
 
 const TrioWithLead = styled(BaseTrioWithLead)`
 margin: 0 2rem;
-${ContentfulTout} a {
-  margin-bottom: 4;
-}
 ${props => props.theme.breakpointsVerbose.aboveTablet`
   margin-bottom: 6rem;
 `}
