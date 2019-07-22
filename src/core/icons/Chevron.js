@@ -63,15 +63,22 @@ const direction = (props) => {
 }
 
 const Chevron = styled(BaseChevron)`
-  width: 12px;
+  width: 16px;
   height: 8px;
-  fill:none;
-  stroke: ${props => props.theme.colors.rocketBlue};
-  stroke-miterlimit:10;
-  stroke-width:5px;
+  fill: none;
+  stroke: ${props => props.theme.colors.navy};
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
   ${props => `transform: ${direction(props)};`}
   cursor: pointer;
   animation: ${props => props.animated ? animated : ''};
+  margin: 10px;
+
+  &:hover {
+    polyline {
+      stroke-width: 7px;
+    }
+  }
 `
 
 const validateDirection = (props, propName, componentName) => {
