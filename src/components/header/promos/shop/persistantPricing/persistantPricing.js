@@ -10,25 +10,25 @@ const animateContainer = keyframes`
     transform: translateY(0rem);
   }
   4.167% {
-    transform: translateY(3rem);
+    transform: translateY(30px);
   }
   29.167% {
-    transform: translateY(3rem);
+    transform: translateY(30px);
   }
   37.5% {
-    transform: translateY(9rem);
+    transform: translateY(90px);
   }
   62.5% {
-    transform: translateY(9rem);
+    transform: translateY(90px);
   }
   70.834%{
-    transform: translateY(15rem);
+    transform: translateY(150px);
   }
   95.834% {
-    transform: translateY(15rem);
+    transform: translateY(150px);
   }
   100%{
-    transform: translateY(18rem);
+    transform: translateY(180px);
   }
   `
 
