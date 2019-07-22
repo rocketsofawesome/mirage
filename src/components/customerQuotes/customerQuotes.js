@@ -35,7 +35,11 @@ const FadeOut = keyframes `
 
 class CustomerQuote extends React.Component {
   render () {
-    const { className, quote, index, left, right } = this.props
+    const { className, quote, index } = this.props
+
+    const leftConfettiUrl = 'https://res.cloudinary.com/roa-canon/image/upload/v1563820550/web/CONFETTI_static_left.png'
+    const rightConfettiUrl = 'https://res.cloudinary.com/roa-canon/image/upload/v1563820550/web/CONFETTI_static_right.png'
+
       return (
         <FlexRow
           constrained
@@ -49,7 +53,7 @@ class CustomerQuote extends React.Component {
             desktop={{width: 3}}
             alt='confetti'
             className='confetti'
-            src={left} />
+            src={leftConfettiUrl} />
           <FlexCol className='quote' key='cutsomeQuoteBody' mobile={{width: 4}} desktop={{width: 6}}>
               <CSSTransitionGroup
                 transitionName='fader'
@@ -70,11 +74,10 @@ class CustomerQuote extends React.Component {
             desktop={{width: 3}}
             alt='confetti'
             className='confetti'
-            src={right} />
+            src={rightConfettiUrl} />
         </FlexRow>
       )
   }
-
 }
 
 const StyledCustomerQuote = styled(CustomerQuote)`
@@ -164,8 +167,6 @@ class BaseCustomerQuotes extends React.Component {
     super(props)
     this.state = {
       index: 0,
-      left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
-      right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
       quote: {
         quote: undefined,
         signature: undefined
@@ -185,7 +186,8 @@ class BaseCustomerQuotes extends React.Component {
 
   render () {
     const { className, header, quotes } = this.props
-    const { index, quote, left, right } = this.state
+    const { index, quote } = this.state
+
     return (
       <FlexRow
         element='section'
@@ -196,9 +198,7 @@ class BaseCustomerQuotes extends React.Component {
         </FlexCol>
         <StyledCustomerQuote
           quote={quote}
-          index={index}
-          left={left}
-          right={right} />
+          index={index} />
         {quotes.map((quote, i) => {
           return (
             <blockquote key={`customerQuoteBlock-${i}`}>
@@ -217,11 +217,6 @@ class BaseCustomerQuotes extends React.Component {
     this.timer = setInterval(() => {
       const { index } = this.state
       const { quotes } = this.props
-      this.setState({
-        height: '0',
-        left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1550773588/web/transparent.png',
-        right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1550773588/web/transparent.png'
-      })
       if ( index === quotes.length - 1) {
         this.setState({
           index: 0,
@@ -233,13 +228,6 @@ class BaseCustomerQuotes extends React.Component {
           quote: quotes[index + 1]
         })
       }
-      setTimeout(() => {
-        this.setState({
-          height: 'auto',
-          left: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_left_single.gif',
-          right: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1548872934/web/CONFETTI_right_single.gif',
-        })
-      }, 1000)
     }, 8000)
   }
 }
