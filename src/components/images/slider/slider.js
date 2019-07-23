@@ -105,6 +105,7 @@ a {
   position: relative;
   width: 100%;
   img {
+    pointer-events: none
     width: 100%;
   }
 }
