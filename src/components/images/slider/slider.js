@@ -101,7 +101,7 @@ position: relative;
 }
 
 
-.roa-slider-img {
+a {
   position: relative;
   width: 100%;
   img {
