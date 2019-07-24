@@ -47,7 +47,7 @@ export class BaseROASlider extends Component {
   }
 
   render() {
-    const { className, images, renderLink, target } = this.props
+    const { className, images, renderLink, target, ...props } = this.props
     const Link = renderLink
     return (
       <div
@@ -68,7 +68,9 @@ export class BaseROASlider extends Component {
                   src={cloudinary.url(image.src, {
                     transformation: 'plp_product_shot',
                     format: 'jpg'
-                  })} />
+                  })}
+                  {...props}
+                   />
                 </Link>
               )
             } else {

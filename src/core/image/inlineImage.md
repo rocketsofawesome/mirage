@@ -34,3 +34,8 @@ and also check out the specifications
     }
     />
 ```
+
+### Setting LazyLoad (image should have data-src set instead of src):
+```js
+  <InlineImage src='https://www.fillmurray.com/g/100/100' lazyLoad={true} />
+```

@@ -62,7 +62,8 @@ export default class ProductTile extends React.Component {
             product={product}
             shots={colorway.shots}
             renderLink={renderLink}
-            target={target} />
+            target={target}
+            {...props} />
         </QuickAdd>
         { (renderLink && target) ?
           <Link

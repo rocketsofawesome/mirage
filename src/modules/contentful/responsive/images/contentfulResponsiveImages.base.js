@@ -5,11 +5,6 @@ import MediaQuery from 'react-responsive'
 import { ContentfulRenderer } from 'SRC'
 
 export default class ContentfulResponsiveImages extends Component {
-  constructor (props) {
-    super(props)
-    this.container = React.createRef()
-  }
-
   render () {
     const {
       children,
@@ -20,7 +15,7 @@ export default class ContentfulResponsiveImages extends Component {
     } = this.props
     if (mobileImage) {
       return (
-        <div ref={this.container} className={className}>
+        <div className={className}>
           <MediaQuery
             query={theme.breakpoints.belowTabletMax}
             values={mediaQueryValues}>
