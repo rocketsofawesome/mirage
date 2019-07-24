@@ -3,7 +3,7 @@ import 'jest-styled-components'
 
 import { InlineImage } from 'SRC'
 
-const { shallowWithTheme } = global
+const { mountWithTheme } = global
 
 describe('(Styled Component) InlineImage', () => {
   const defaultProps = {
@@ -14,7 +14,7 @@ describe('(Styled Component) InlineImage', () => {
       ...defaultProps,
       ...inProps
     }
-    return shallowWithTheme(<InlineImage  {...props} />)
+    return mountWithTheme(<InlineImage  {...props} />)
   }
 
   describe('When no props are provided', () => {
@@ -68,5 +68,10 @@ const sizesString = `800px (min-width: 500px),
       expect(InlineImageComponent.find('img').prop('srcSet')).toEqual(srcSetString)
       expect(InlineImageComponent.find('img').prop('sizes')).toContain(sizesString)
     })
+  })
+  
+  test('data-src is set when lazyLoad prop is passed', () => {
+    expect(createInlineImage({lazyLoad: true}).find('img').prop('src')).toEqual(undefined)
+    expect(createInlineImage({lazyLoad: true}).find('img').prop('data-src')).toEqual(defaultProps.src)
   })
 })

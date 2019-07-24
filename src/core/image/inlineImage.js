@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Sizes from './sizes.base'
 import SourceSet from './sourceSet.base'
 
-const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) => {
+const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...props }) => {
     let srcSet =  undefined
     if (inSources) {
       srcSet = new SourceSet(inSources).toString()
@@ -13,14 +13,25 @@ const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, ...props }) =
     if (inSizes) {
       sizesStr = new Sizes(inSizes).toString()
     }
-    return (
-      <img
-        alt={alt}
-        src={src}
-        srcSet={srcSet}
-        sizes={sizesStr}
-        {...props} />
-    )
+    if (!lazyLoad) {
+      return (
+        <img
+          alt={alt}
+          src={src}
+          srcSet={srcSet}
+          sizes={sizesStr}
+          {...props} />
+      )
+    } else {
+      return (
+        <img
+          alt={alt}
+          data-src={src}
+          srcSet={srcSet}
+          sizes={sizesStr}
+          {...props} />
+      )
+    }
 }
 
 InlineImage.defaultProps = {
@@ -29,6 +40,7 @@ InlineImage.defaultProps = {
 
 InlineImage.propTypes = {
   alt: PropTypes.string.isRequired,
+  lazyLoad: PropTypes.bool,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
   srcSet: PropTypes.oneOfType([
