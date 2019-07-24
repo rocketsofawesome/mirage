@@ -4,10 +4,6 @@ import PropTypes from 'prop-types'
 import {
   FlexRow,
   FlexCol,
-  AnimatedBalloon,
-  AnimatedCloudA,
-  AnimatedCloudB,
-  AnimatedCloudC,
   Default,
   Tablet,
   ContentfulTout
@@ -25,7 +21,6 @@ class BaseTrioWithLead extends React.Component {
               desktop={{width: 7}}>
               <div className='roa-trio-with-lead-wrapper'>
                 {children[index]}
-                <AnimatedCloudA />
               </div>
             </FlexCol>
             {children[index + 1] &&
@@ -37,17 +32,9 @@ class BaseTrioWithLead extends React.Component {
               >
               <div className='roa-trio-with-lead-wrapper'>
                 {children[index + 1]}
-                <AnimatedCloudB />
               </div>
               <div className='roa-trio-with-lead-wrapper'>
                 {children[index + 2] && children[index + 2]}
-                <AnimatedCloudC />
-                <Default displayTarget='belowTablet'>
-                  <AnimatedBalloon width={'50%'} />
-                </Default>
-                <Tablet laptopDisplay='block'>
-                  <AnimatedBalloon desktopAnimation width={'50%'} />
-                </Tablet>
               </div>
             </FlexCol>
             }
