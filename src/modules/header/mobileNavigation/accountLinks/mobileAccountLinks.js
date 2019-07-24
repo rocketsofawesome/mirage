@@ -8,7 +8,7 @@ import {
   UL
 } from 'SRC'
 
-const BaseAccountLinks = ({className, renderLink, isSubscriptionMember}) => {
+const BaseAccountLinks = ({ className, renderLink, isSubscriptionMember, signOut }) => {
   return (
     <div>
       <Accordion
@@ -67,7 +67,9 @@ const BaseAccountLinks = ({className, renderLink, isSubscriptionMember}) => {
           }
         </UL>
       </Accordion>
-      <MobileLinkTop className='roa-logout-link'>
+      <MobileLinkTop
+        className='roa-logout-link'
+        onClick={signOut}>
         Log out
       </MobileLinkTop>
     </div>
@@ -80,11 +82,13 @@ const MobileAccountLinks = styled(BaseAccountLinks)`
 
 MobileAccountLinks.propTypes = {
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool
+  isSubscriptionMember: PropTypes.bool,
+  signOut: PropTypes.func
 }
 
 MobileAccountLinks.defaultProps = {
-  isSubscriptionMember: false
+  isSubscriptionMember: false,
+  signOut: () => alert('Signing out')
 }
 /** @component */
 export default MobileAccountLinks
