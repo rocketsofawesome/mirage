@@ -49,7 +49,8 @@ export class BaseMobileNavigation extends React.Component {
       bagCount,
       clickBag,
       showBlog,
-      outfitNav
+      outfitNav,
+      signOut
     } = this.props
 
     const { open } = this.state
@@ -193,7 +194,8 @@ export class BaseMobileNavigation extends React.Component {
             {loggedIn &&
               <MobileAccountLinks
                 isSubscriptionMember={isSubscriptionMember}
-                renderLink={renderLink} />
+                renderLink={renderLink}
+                signOut={signOut} />
             }
           </UL>
         </MenuDrawer>
