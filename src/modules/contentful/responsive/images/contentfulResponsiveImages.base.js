@@ -5,31 +5,6 @@ import MediaQuery from 'react-responsive'
 import { ContentfulRenderer } from 'SRC'
 
 export default class ContentfulResponsiveImages extends Component {
-  constructor (props) {
-    super(props)
-    this.container = React.createRef()
-  }
-
-  componentDidMount () {
-    const node = this.container.current
-    if (node) {
-      const { fields: { defaultImage, mobileImage }, theme } = this.props
-      let currentImage = null
-      if ((window.innerWidth <= theme.breakpoints.belowTabletMax) && mobileImage ) {
-        currentImage = mobileImage
-      } else {
-        currentImage = defaultImage
-      }
-      const {
-        height: imageHeight,
-        width: imageWidth
-      } = currentImage.fields.file.details.image
-      const elementWidth = node.offsetWidth
-      const adjustedHeight = elementWidth * imageHeight / imageWidth
-      node.style = `min-height: ${adjustedHeight}px`
-    }
-  }
-
   render () {
     const {
       children,
@@ -40,7 +15,7 @@ export default class ContentfulResponsiveImages extends Component {
     } = this.props
     if (mobileImage) {
       return (
-        <div ref={this.container} className={className}>
+        <div className={className}>
           <MediaQuery
             query={theme.breakpoints.belowTabletMax}
             values={mediaQueryValues}>
