@@ -14,7 +14,6 @@ export default class ContentfulResponsiveImages extends Component {
       theme
     } = this.props
     if (mobileImage) {
-      console.log(theme)
       return (
         <div className={className}>
           <InlineImage
