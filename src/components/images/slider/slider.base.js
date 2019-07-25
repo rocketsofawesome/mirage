@@ -53,7 +53,6 @@ export class BaseROASlider extends Component {
 
   render() {
     const { className, images, renderLink, target, ...props } = this.props
-    delete props.lazyLoad
     delete props.onLazyLoad
     const Link = renderLink
     return (
@@ -108,11 +107,12 @@ export class BaseROASlider extends Component {
 BaseROASlider.propTypes = {
   className: PropTypes.string,
   images: PropTypes.array,
-  onLazyLoad: PropTypes.func
+  onLazyLoad: PropTypes.func,
+  lazyLoad: PropTypes.string
 }
 
 BaseROASlider.defaultProps = {
-  lazyLoad: 'progressive'
+  lazyLoad: 'ondemand'
 }
 
 /** @component */
