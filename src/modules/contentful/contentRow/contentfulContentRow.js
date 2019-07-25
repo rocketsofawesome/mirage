@@ -25,7 +25,7 @@ const LAYOUT_RENDER_MAP = {
           <Solo>
             {
               entries.map((entry, index) => {
-                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} {...props} />
               })
             }
           </Solo>
@@ -34,7 +34,7 @@ const LAYOUT_RENDER_MAP = {
           <Duet {...props} key={sys.id}>
             {
               entries.map((entry, index) => {
-                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} />
+                return <ContentfulRenderer {...entry} key={`${sys.id}-${entry.sys.id}-${index}`} {...props} />
               })
             }
           </Duet>
