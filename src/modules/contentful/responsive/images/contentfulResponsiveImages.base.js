@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import MediaQuery from 'react-responsive'
 
-import { ContentfulRenderer } from 'SRC'
+import { ContentfulRenderer, InlineImage } from 'SRC'
 
 export default class ContentfulResponsiveImages extends Component {
   render () {
@@ -14,18 +14,21 @@ export default class ContentfulResponsiveImages extends Component {
       theme
     } = this.props
     if (mobileImage) {
+      console.log(theme)
       return (
         <div className={className}>
-          <MediaQuery
-            query={theme.breakpoints.belowTabletMax}
-            values={mediaQueryValues}>
-            <ContentfulRenderer {...mobileImage} />
-          </MediaQuery>
-          <MediaQuery
-            query={theme.breakpoints.aboveTabletMax}
-            values={mediaQueryValues}>
-            <ContentfulRenderer {...defaultImage} />
-          </MediaQuery>
+          <InlineImage
+            alt={defaultImage.fields.description}
+            src={mobileImage.fields.file.url}
+            srcSet={{
+              '800w': defaultImage.fields.file.url,
+              '100w': mobileImage.fields.file.url,
+            }}
+            sizes={{
+              '(min-width: 800px)': '400px',
+              'default': '100px'
+            }}
+            />
           {children}
         </div>
       )

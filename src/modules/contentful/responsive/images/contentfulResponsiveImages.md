@@ -1,5 +1,5 @@
 ```js
-  <Contentful operation='getEntry' id='2bO1oxMndI8H3FLXRxTFbj'>
+  <Contentful operation='getEntry' id='4yd7jiSG3eW0Owo2sEgUoe'>
     <ContentfulResponsiveImages />
   </Contentful>
 ```
