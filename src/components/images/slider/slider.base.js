@@ -54,6 +54,7 @@ export class BaseROASlider extends Component {
   render() {
     const { className, images, renderLink, target, ...props } = this.props
     delete props.onLazyLoad
+    delete props.lazyLoad
     const Link = renderLink
     return (
       <div
