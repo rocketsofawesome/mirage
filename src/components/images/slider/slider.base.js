@@ -21,11 +21,8 @@ export class BaseROASlider extends Component {
         }
       ]
     }
-    if (props.lazyLoad) {
-      this.config.lazyLoad = props.lazyLoad
-    }
-    if (props.onLazyLoad) {
-      this.config.onLazyLoad = props.onLazyLoad
+    if (props.sliderLazyLoad) {
+      this.config.lazyLoad = props.sliderLazyLoad
     }
 
     this.slider = null
@@ -53,7 +50,6 @@ export class BaseROASlider extends Component {
 
   render() {
     const { className, images, renderLink, target, ...props } = this.props
-    delete props.onLazyLoad
     const Link = renderLink
     return (
       <div
@@ -107,12 +103,14 @@ export class BaseROASlider extends Component {
 BaseROASlider.propTypes = {
   className: PropTypes.string,
   images: PropTypes.array,
-  onLazyLoad: PropTypes.func,
-  lazyLoad: PropTypes.string
+  sliderLazyLoad: PropTypes.oneOfType([
+    PropTypes.bool,
+    PropTypes.string
+  ])
 }
 
 BaseROASlider.defaultProps = {
-  lazyLoad: 'ondemand'
+  sliderLazyLoad: 'progressive'
 }
 
 /** @component */
