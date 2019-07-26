@@ -11,7 +11,8 @@ export default class ProductTile extends React.Component {
     super(props)
     this.state = {
       show: false,
-      selectedColorWay: props.product.code
+      selectedColorWay: props.product.code,
+      lazyLoad: props.lazyLoad
     }
   }
   showQuickAdd = () => {
@@ -32,6 +33,7 @@ export default class ProductTile extends React.Component {
 
   changeColorway = (code) => ({ target }) => {
     this.setState({selectedColorWay: code})
+    this.setState({lazyLoad: false})
   }
 
   getColorway = (code) => {
@@ -46,7 +48,7 @@ export default class ProductTile extends React.Component {
       renderLink,
       ...props
     } = this.props
-    const { show, selectedColorWay } = this.state
+    const { show, selectedColorWay lazyLoad } = this.state
     const colorway = this.getColorway(selectedColorWay)
     const target = `products/${product.product_slug}-${colorway.slug}`
     const Link = renderLink
@@ -63,6 +65,7 @@ export default class ProductTile extends React.Component {
             shots={colorway.shots}
             renderLink={renderLink}
             target={target}
+            lazyLoad={lazyLoad}
             {...props} />
         </QuickAdd>
         { (renderLink && target) ?
