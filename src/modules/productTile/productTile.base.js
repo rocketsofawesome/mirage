@@ -32,8 +32,7 @@ export default class ProductTile extends React.Component {
   }
 
   changeColorway = (code) => ({ target }) => {
-    this.setState({selectedColorWay: code})
-    this.setState({lazyLoad: false})
+    this.setState({selectedColorWay: code, lazyLoad: false})
   }
 
   getColorway = (code) => {
@@ -61,12 +60,12 @@ export default class ProductTile extends React.Component {
           show={show}
           {...props}>
           <SortedROASlider
+            {...props}
             product={product}
             shots={colorway.shots}
             renderLink={renderLink}
             target={target}
-            lazyLoad={lazyLoad}
-            {...props} />
+            lazyLoad={lazyLoad} />
         </QuickAdd>
         { (renderLink && target) ?
           <Link
