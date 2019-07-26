@@ -16,18 +16,10 @@ export default class ContentfulResponsiveImages extends Component {
     if (mobileImage) {
       return (
         <div className={className}>
-          <InlineImage
-            alt={defaultImage.fields.description}
-            src={mobileImage.fields.file.url}
-            srcSet={{
-              '800w': defaultImage.fields.file.url,
-              '100w': mobileImage.fields.file.url,
-            }}
-            sizes={{
-              '(min-width: 800px)': '400px',
-              'default': '100px'
-            }}
-            />
+          <picture>
+            <source srcset={defaultImage.fields.file.url} media="(min-width: 800px)" />
+            <InlineImage src={mobileImage.fields.file.url}/>
+          </picture>
           {children}
         </div>
       )
