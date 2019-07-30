@@ -13,6 +13,11 @@ const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...
     if (inSizes) {
       sizesStr = new Sizes(inSizes).toString()
     }
+
+    let visibility = "visible"
+    if (!props.visible) {
+      visibility = "hidden"
+    }
     if (!lazyLoad) {
       return (
         <img
@@ -20,6 +25,7 @@ const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...
           src={src}
           srcSet={srcSet}
           sizes={sizesStr}
+          style={{visibility: visibility}}
           {...props} />
       )
     } else {
@@ -29,18 +35,21 @@ const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...
           data-src={src}
           srcSet={srcSet}
           sizes={sizesStr}
+          style={{visibility: visibility}}
           {...props} />
       )
     }
 }
 
 InlineImage.defaultProps = {
-  alt: ''
+  alt: '',
+  visible: true
 }
 
 InlineImage.propTypes = {
   alt: PropTypes.string.isRequired,
   lazyLoad: PropTypes.string,
+  visible: PropTypes.bool,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
   srcSet: PropTypes.oneOfType([
