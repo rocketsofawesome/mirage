@@ -86,6 +86,9 @@ const ContentfulTout = styled(BaseContentfulTout)`
     background-color: ${props => setBackgroundColor(props)};
     ${props => textPosition(props)}
   }
+  .default-shop-header {
+    background-color: red;
+  }
   ${MirageMarkdown} {
     > * {
       color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};

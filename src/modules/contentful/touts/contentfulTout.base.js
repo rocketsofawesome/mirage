@@ -13,22 +13,33 @@ class BaseContentfulTout extends Component {
         description,
         heroButtons,
         media
-      }
+      },
+      displayTitle
     } = this.props
-    return (
-      <ContentfulRenderer {...media}>
-        <div className='roa-tout-overlay'>
-          <MirageMarkdown>{description}</MirageMarkdown>
-          <div className='roa-tout-buttons'>
-            {heroButtons && heroButtons.map((button) => {
-              return(
-                <ContentfulRenderer {...button} key={button.sys.id} />
-              )
-            })}
-          </div>
+
+    // If displayTitle present, do not render hero image
+    if (displayTitle) {
+      return (
+        <div className='default-shop-header'>
+          <h1>{displayTitle}</h1>
         </div>
-      </ContentfulRenderer>
-    )
+      )
+    } else {
+      return (
+        <ContentfulRenderer {...media}>
+          <div className='roa-tout-overlay'>
+            <MirageMarkdown>{description}</MirageMarkdown>
+            <div className='roa-tout-buttons'>
+              {heroButtons && heroButtons.map((button) => {
+                return (
+                  <ContentfulRenderer {...button} key={button.sys.id} />
+                )
+              })}
+            </div>
+          </div>
+        </ContentfulRenderer>
+      )
+    }
   }
 
   render () {
@@ -39,17 +50,20 @@ class BaseContentfulTout extends Component {
         destination
       }
     } = this.props
-  const ToutLink = renderToutLink
-  if (destination) {
-    return (
-      <ToutLink className={className} destination={destination}>
-        {this.renderContent()}
-      </ToutLink>
-    )
-  }
+
+    const ToutLink = renderToutLink
+
+    if (destination) {
+      return (
+        <ToutLink className={className} destination={destination}>
+          {this.renderContent()}
+        </ToutLink>
+      )
+    }
+
     return (
       <div className={className}>
-        { this.renderContent() }
+        {this.renderContent()}
       </div>
     )
   }
