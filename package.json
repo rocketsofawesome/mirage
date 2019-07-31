@@ -17,7 +17,7 @@
     "react-markdown": "^4.0.6",
     "react-responsive": "^1.1.3",
     "react-sizeme": "^2.5.2",
-    "react-slick": "github:rocketsofawesome/react-slick",
+    "react-slick": "^0.24.0",
     "react-stripe-elements": "^3.0.0",
     "react-transition-group": "^1.2.1",
     "styled-components": "^3.2.6"
