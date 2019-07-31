@@ -14,14 +14,25 @@ class BaseContentfulTout extends Component {
         heroButtons,
         media
       },
-      displayTitle
+      displayTitle,
+      searchTerm
     } = this.props
 
-    // If displayTitle present, do not render hero image
-    if (displayTitle) {
+    // If searchTerm or displayTitle present, do not render hero image
+    if (searchTerm) {
       return (
         <div className='default-shop-header'>
-          <h1>{displayTitle}</h1>
+          <div className='default-shop-header-title-wrapper'>
+            <h1 className='default-shop-header-title default-shop-header-title-search'>You searched ‘{searchTerm}’</h1>
+          </div>
+        </div>
+      )
+    } else if (displayTitle) {
+      return (
+        <div className='default-shop-header'>
+          <div className='default-shop-header-title-wrapper'>
+            <h1 className='default-shop-header-title'>{displayTitle}</h1>
+          </div>
         </div>
       )
     } else {
