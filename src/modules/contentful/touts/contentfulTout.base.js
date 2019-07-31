@@ -9,14 +9,14 @@ import {
 class BaseContentfulTout extends Component {
   renderContent = () => {
     const {
+      displayTitle,
+      searchTerm,
+      productsFound,
       fields: {
         description,
         heroButtons,
         media
-      },
-      displayTitle,
-      searchTerm,
-      productsFound
+      }
     } = this.props
 
     // If searchTerm or displayTitle present, do not render hero image
@@ -87,13 +87,16 @@ class BaseContentfulTout extends Component {
 BaseContentfulTout.propTypes = {
   className: PropTypes.string,
   defaultColor: PropTypes.string,
+  displayTitle: PropTypes.string,
+  searchTerm: PropTypes.string,
+  productsFound: PropTypes.boolean,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
     backgroundTransparency: PropTypes.number,
     description: PropTypes.string,
     media: PropTypes.object,
     position: PropTypes.string,
-    textColor: PropTypes.string,
+    textColor: PropTypes.string
   })
 }
 
