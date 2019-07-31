@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {
   Accordion,
   BagIcon,
+  SearchIcon,
   BlueHamburger,
   Logo,
   MenuDrawer,
@@ -17,7 +18,7 @@ import {
 
 import { theme } from 'SRC/core/theme'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
+const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK, REACT_APP_SEARCH_FEATURE_ON } = process.env
 
 export class BaseMobileNavigation extends React.Component {
   constructor (props) {
@@ -48,7 +49,9 @@ export class BaseMobileNavigation extends React.Component {
       isSubscriptionMember,
       bagCount,
       clickBag,
+      clickSearch,
       showBlog,
+      showSearch,
       outfitNav,
       signOut
     } = this.props
@@ -60,15 +63,25 @@ export class BaseMobileNavigation extends React.Component {
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
           <MobileLinkTop
-            style={{marginBottom: '0'}}
+            style={{ marginBottom: '0' }}
             href={homepageUrl}
             renderLink={renderLink}>
             <span className='screenReader'>Home</span>
-            <Logo  />
+            <Logo />
           </MobileLinkTop>
-          <a onClick={clickBag}>
-            <BagIcon count={bagCount} />
-          </a>
+          <div>
+            {showSearch &&
+              <a onClick={clickSearch}>
+                <SearchIcon />
+              </a>
+            }
+            {showSearch &&
+              <span className='divider-search'>|</span>
+            }
+            <a onClick={clickBag}>
+              <BagIcon count={bagCount} />
+            </a>
+          </div>
         </MobileHeader>
         <MenuDrawer
           open={open}
@@ -217,6 +230,10 @@ const MobileNavigation = styled(BaseMobileNavigation)`
   ul ul ul {
     margin-bottom: 0;
   }
+  .divider-search {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 `
 
 MobileNavigation.propTypes = {
@@ -229,14 +246,16 @@ MobileNavigation.propTypes = {
   loggedIn: PropTypes.bool,
   renderLink: PropTypes.func,
   isSubscriptionMember: PropTypes.bool,
-  clickBag: PropTypes.func
+  clickBag: PropTypes.func,
+  clickSearch: PropTypes.func
 }
 
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
-  showBlog: REACT_APP_SHOW_BLOG_LINK
+  showBlog: REACT_APP_SHOW_BLOG_LINK,
+  showSearch: REACT_APP_SEARCH_FEATURE_ON
 }
 
 /** @component */
