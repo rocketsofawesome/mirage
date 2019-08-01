@@ -19,13 +19,20 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
   )
 })`
   .roa-outfits-header {
-    margin: 2rem 0;
     > * {
       flex-basis: 100%;
       text-align: center;
-      margin: 1rem;
     }
   }
+
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    .roa-outfits-header {
+      margin: 2rem 0;
+      > * {
+        margin: 1rem;
+      }
+    }
+  `}
 `
 OutfitsListing.propTypes = {
   element: PropTypes.node,
