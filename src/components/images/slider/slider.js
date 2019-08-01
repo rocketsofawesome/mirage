@@ -104,7 +104,11 @@ position: relative;
 a {
   position: relative;
   width: 100%;
+  padding-bottom: 150%;
   img {
+    position: absolute;
+    top: 0;
+    left: 0;
     pointer-events: none
     width: 100%;
   }
