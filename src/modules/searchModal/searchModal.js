@@ -144,16 +144,8 @@ class BaseSearchModal extends React.Component {
     this.updateSearchTerm = this.updateSearchTerm.bind(this)
     this.clearSearchInput = this.clearSearchInput.bind(this)
     this.keyDownSearchInput = this.keyDownSearchInput.bind(this)
+    this.submitSearch = this.submitSearch.bind(this)
   }
-
-  // TODO: Add componentDidMount (maybe)
-  // componentDidMount () {
-  // }
-
-  // TODO: Add componentWillUnmount (maybe)
-  // componentWillUnmount () {
-  //   document.body.style.overflow = 'inherit'
-  // }
 
   updateSearchTerm = (event) => {
     this.setState({ searchTerm: event.target.value })
@@ -173,6 +165,18 @@ class BaseSearchModal extends React.Component {
     if (event.keyCode === 27) { exitSearch() }
   }
 
+  submitSearch = (event) => {
+    event.preventDefault()
+
+    const { exitSearch, submitSearch } = this.props
+    const { searchTerm } = this.state
+
+    if (searchTerm.length > 0) {
+      submitSearch(searchTerm)
+      exitSearch()
+    }
+  }
+
   render () {
     const { exitSearch } = this.props
     const { searchTerm } = this.state
@@ -182,7 +186,7 @@ class BaseSearchModal extends React.Component {
     return (
       <SearchDiv>
         <SearchBarDiv>
-          <SearchForm role='search'>
+          <SearchForm role='search' onSubmit={this.submitSearch}>
             <SearchInput
               id='input-search'
               value={searchTerm}
@@ -218,15 +222,10 @@ class BaseSearchModal extends React.Component {
 }
 
 BaseSearchModal.propTypes = {
-  exitSearch: PropTypes.func
+  exitSearch: PropTypes.func,
+  submitSearch: PropTypes.func
 }
 
-// TODO: Add defaultProps
-// BaseSearchModal.defaultProps = {
-//   propName: propValue
-// }
-
-// TODO: Style Search
 const SearchModal = styled(BaseSearchModal)``
 
 export default SearchModal
