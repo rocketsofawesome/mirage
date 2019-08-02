@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {
   DesktopAccountLinks,
   BagIcon,
+  SearchIcon,
   DesktopHeader,
   FlexRow,
   HeaderLink,
@@ -12,7 +13,7 @@ import {
 } from 'SRC'
 import { girls, boys, renderLink } from './defaultProps'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
+const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK, REACT_APP_SEARCH_FEATURE_ON } = process.env
 
 export class BaseDesktopNavigation extends React.Component {
   constructor(props) {
@@ -66,14 +67,17 @@ export class BaseDesktopNavigation extends React.Component {
       bagCount,
       homepageUrl,
       clickBag,
+      clickSearch,
       outfitNav,
       showBlog,
+      showSearch,
       ...props
     } = this.props
     const {
       boys: boysState,
       girls: girlsState
     } = this.state
+
     return (
       <DesktopHeader
         ref={this.setHeaderRef}
@@ -94,7 +98,7 @@ export class BaseDesktopNavigation extends React.Component {
                     renderLink={renderLink}
                     spacing={false}>
                     <span className='screenReader'>Home</span>
-                    <Logo  />
+                    <Logo />
                   </HeaderLink>
                 </li>
                 <li>
@@ -188,7 +192,22 @@ export class BaseDesktopNavigation extends React.Component {
                       </HeaderLink>
                   </li>
                 }
-                <li className='spacer'>
+                {showSearch &&
+                  <li className='spacer'>
+                    <HeaderLink
+                      className='roa-bag-link'
+                      justify='flex-end'
+                      highlightable={false}
+                      onClick={clickSearch}
+                      aria-haspopup>
+                      <SearchIcon />
+                    </HeaderLink>
+                  </li>
+                }
+                {showSearch &&
+                  <span>|</span>
+                }
+                <li className={!showSearch && 'spacer'}>
                   <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
@@ -203,7 +222,7 @@ export class BaseDesktopNavigation extends React.Component {
                     onClick={clickBag}
                     aria-haspopup>
                     <span aria-hidden>Bag</span>
-                    <BagIcon count={bagCount}/>
+                    <BagIcon count={bagCount} />
                   </HeaderLink>
                 </li>
               </ol>
@@ -291,6 +310,10 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
   ${BagIcon} {
     margin-left: 0.5rem;
   }
+
+  ${SearchIcon} {
+    margin-left: 0.5rem;
+  }
 `
 
 BaseDesktopNavigation.propTypes = {
@@ -303,7 +326,8 @@ BaseDesktopNavigation.propTypes = {
   boysLinks: PropTypes.object,
   bagCount: PropTypes.number,
   homepageUrl: PropTypes.string,
-  clickBag: PropTypes.func
+  clickBag: PropTypes.func,
+  clickSearch: PropTypes.func
 }
 
 BaseDesktopNavigation.defaultProps = {
@@ -315,7 +339,8 @@ BaseDesktopNavigation.defaultProps = {
   boysLinks: boys,
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
-  showBlog: REACT_APP_SHOW_BLOG_LINK
+  showBlog: REACT_APP_SHOW_BLOG_LINK,
+  showSearch: REACT_APP_SEARCH_FEATURE_ON
 }
 
 /** @component */

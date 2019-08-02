@@ -5,10 +5,12 @@ import { theme } from 'SRC/core/theme'
 import { MirageMarkdown, H1 } from 'SRC'
 import BaseContentfulTout from './contentfulTout.base'
 
-const setBackgroundColor = ({fields: {
-  backgroundColor = '#FFFFFF',
-  backgroundTransparency = '0.0'
-}}) => {
+const setBackgroundColor = ({
+  fields: {
+    backgroundColor = '#FFFFFF',
+    backgroundTransparency = '0.0'
+  }
+}) => {
   var c
   if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(backgroundColor)) {
     c = backgroundColor.substring(1).split('')
@@ -21,7 +23,7 @@ const setBackgroundColor = ({fields: {
   throw new Error('Bad Hex')
 }
 
-const textPosition = ({fields: { position = 'center' } }) => {
+const textPosition = ({ fields: { position = 'center' } }) => {
   const POSITIONS = {
     center: css`
       justify-content: center;
@@ -74,6 +76,7 @@ const ContentfulTout = styled(BaseContentfulTout)`
   ${props => props.fields.hero && props.theme.breakpointsVerbose.belowTablet`
     padding-bottom: 6rem;
   `}
+
   .roa-tout-overlay {
     position: absolute;
     top: 0;
@@ -86,6 +89,7 @@ const ContentfulTout = styled(BaseContentfulTout)`
     background-color: ${props => setBackgroundColor(props)};
     ${props => textPosition(props)}
   }
+
   ${MirageMarkdown} {
     > * {
       color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};
@@ -125,6 +129,66 @@ const ContentfulTout = styled(BaseContentfulTout)`
       flex-direction: row;
     `}
   }
+
+  .default-shop-header {
+    width: 100%;
+    height: inherit;
+
+    color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};
+    background-color: #FFFFFF;
+    background-size: 100% auto;
+    background-position: 0 80%;
+    padding: 0 19px;
+
+    ${props => props.theme.breakpointsVerbose.belowTablet`
+      margin-top: 24px;
+      margin-bottom: 8px;
+    `}
+
+    .default-shop-header-title-wrapper {
+      ${props => props.theme.breakpointsVerbose.belowTablet`
+        margin-top: 0px;
+      `}
+
+      font-weight: 100;
+      text-align: center;
+
+      margin-top: 32px;
+      margin-bottom: 0;
+
+      .default-shop-header-title {
+        position: relative;
+        display: flex;
+
+        max-width: 1400px;
+        height: 100%;
+        margin: 0 auto;
+
+        justify-content: center;
+        align-items: center;
+
+        font-family: ${props => props.theme.fonts.headerFont};
+        font-size: 42px;
+        line-height: 54px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        ${props => props.theme.breakpointsVerbose.belowTablet`
+          font-size: 36px;
+          line-height: 46px;
+          letter-spacing: 0px;
+          margin-top: 0px;
+        `}
+      }
+
+      .default-shop-header-title-search {
+        font-size: 32px;
+        font-weight: 500;
+        letter-spacing: normal;
+        text-transform: none;
+      }
+    }
+  }
 `
 
 ContentfulTout.propTypes = {
@@ -141,7 +205,8 @@ ContentfulTout.propTypes = {
 }
 
 ContentfulTout.defaultProps = {
-  defaultColor: theme.colors.navy
+  defaultColor: theme.colors.navy,
+  fields: {}
 }
 
 /** @component */

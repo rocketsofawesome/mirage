@@ -9,26 +9,50 @@ import {
 class BaseContentfulTout extends Component {
   renderContent = () => {
     const {
+      displayTitle,
+      searchTerm,
+      productsFound,
       fields: {
         description,
         heroButtons,
         media
       }
     } = this.props
-    return (
-      <ContentfulRenderer {...media}>
-        <div className='roa-tout-overlay'>
-          <MirageMarkdown>{description}</MirageMarkdown>
-          <div className='roa-tout-buttons'>
-            {heroButtons && heroButtons.map((button) => {
-              return(
-                <ContentfulRenderer {...button} key={button.sys.id} />
-              )
-            })}
+
+    // If searchTerm or displayTitle present, do not render hero image
+    let defaultShopHeader = null
+    if (searchTerm) {
+      let searchTitle = `You searched ‘${searchTerm}’`
+      if (!productsFound) { searchTitle = `Aw, shucks! 0 results for your search ‘${searchTerm}.’` }
+      defaultShopHeader = <h1 className='default-shop-header-title default-shop-header-title-search'>{searchTitle}</h1>
+    } else if (displayTitle) {
+      defaultShopHeader = <h1 className='default-shop-header-title'>{displayTitle}</h1>
+    }
+
+    if (defaultShopHeader) {
+      return (
+        <div className='default-shop-header'>
+          <div className='default-shop-header-title-wrapper'>
+            {defaultShopHeader}
           </div>
         </div>
-      </ContentfulRenderer>
-    )
+      )
+    } else {
+      return (
+        <ContentfulRenderer {...media}>
+          <div className='roa-tout-overlay'>
+            <MirageMarkdown>{description}</MirageMarkdown>
+            <div className='roa-tout-buttons'>
+              {heroButtons && heroButtons.map((button) => {
+                return (
+                  <ContentfulRenderer {...button} key={button.sys.id} />
+                )
+              })}
+            </div>
+          </div>
+        </ContentfulRenderer>
+      )
+    }
   }
 
   render () {
@@ -39,17 +63,20 @@ class BaseContentfulTout extends Component {
         destination
       }
     } = this.props
-  const ToutLink = renderToutLink
-  if (destination) {
-    return (
-      <ToutLink className={className} destination={destination}>
-        {this.renderContent()}
-      </ToutLink>
-    )
-  }
+
+    const ToutLink = renderToutLink
+
+    if (destination) {
+      return (
+        <ToutLink className={className} destination={destination}>
+          {this.renderContent()}
+        </ToutLink>
+      )
+    }
+
     return (
       <div className={className}>
-        { this.renderContent() }
+        {this.renderContent()}
       </div>
     )
   }
@@ -58,13 +85,16 @@ class BaseContentfulTout extends Component {
 BaseContentfulTout.propTypes = {
   className: PropTypes.string,
   defaultColor: PropTypes.string,
+  displayTitle: PropTypes.string,
+  searchTerm: PropTypes.string,
+  productsFound: PropTypes.boolean,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
     backgroundTransparency: PropTypes.number,
     description: PropTypes.string,
     media: PropTypes.object,
     position: PropTypes.string,
-    textColor: PropTypes.string,
+    textColor: PropTypes.string
   })
 }
 
