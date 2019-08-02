@@ -143,6 +143,7 @@ class BaseSearchModal extends React.Component {
 
     this.updateSearchTerm = this.updateSearchTerm.bind(this)
     this.clearSearchInput = this.clearSearchInput.bind(this)
+    this.keyDownSearchInput = this.keyDownSearchInput.bind(this)
   }
 
   // TODO: Add componentDidMount (maybe)
@@ -165,6 +166,13 @@ class BaseSearchModal extends React.Component {
     searchInput.focus()
   }
 
+  // Escape key exits search
+  keyDownSearchInput = (event) => {
+    const { exitSearch } = this.props
+
+    if (event.keyCode === 27) { exitSearch() }
+  }
+
   render () {
     const { exitSearch } = this.props
     const { searchTerm } = this.state
@@ -175,7 +183,12 @@ class BaseSearchModal extends React.Component {
       <SearchDiv>
         <SearchBarDiv>
           <SearchForm role='search'>
-            <SearchInput id='input-search' value={searchTerm} onChange={this.updateSearchTerm} autoFocus />
+            <SearchInput
+              id='input-search'
+              value={searchTerm}
+              onChange={this.updateSearchTerm}
+              onKeyDown={this.keyDownSearchInput}
+              autoFocus />
             <SearchClearWrapperDiv onClick={this.clearSearchInput}>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <g fill="none" fill-rule="evenodd">
