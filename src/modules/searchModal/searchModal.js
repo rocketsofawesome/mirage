@@ -15,9 +15,10 @@ const SearchBarDiv = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  height: 320px;
+  height: 326px;
   width: 100%;
   background-color: #FFFFFF;
+  overflow: hidden;
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     height: 336px;
