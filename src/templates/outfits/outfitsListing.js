@@ -19,18 +19,17 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
   )
 })`
   .roa-outfits-header {
+    margin: 1.6rem 0rem 0.8rem 0rem;
     > * {
       flex-basis: 100%;
       text-align: center;
+      margin: 0.8rem;
     }
   }
 
   ${props => props.theme.breakpointsVerbose.aboveTablet`
     .roa-outfits-header {
-      margin: 2rem 0;
-      > * {
-        margin: 1rem;
-      }
+      margin: 2.4rem 0rem 1.6rem 0rem;
     }
   `}
 `
