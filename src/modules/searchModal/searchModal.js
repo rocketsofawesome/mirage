@@ -138,6 +138,11 @@ const SearchInput = styled.input`
 class BaseSearchModal extends React.Component {
   constructor (props) {
     super(props)
+
+    this.state = { searchTerm: '' }
+
+    this.updateSearchTerm = this.updateSearchTerm.bind(this)
+    this.clearSearchInput = this.clearSearchInput.bind(this)
   }
 
   // TODO: Add componentDidMount (maybe)
@@ -149,13 +154,20 @@ class BaseSearchModal extends React.Component {
   //   document.body.style.overflow = 'inherit'
   // }
 
-  // Example function
-  // setBag = (element) => {
-  //   this.bag = element
-  // }
+  updateSearchTerm = (event) => {
+    this.setState({ searchTerm: event.target.value })
+  }
+
+  clearSearchInput = () => {
+    this.setState({ searchTerm: '' })
+
+    const searchInput = document.getElementById('input-search');
+    searchInput.focus()
+  }
 
   render () {
     const { exitSearch } = this.props
+    const { searchTerm } = this.state
 
     const searchOverlayImageSrc = cloudinary.url('web/search/SearchOverlayDesktop')
 
@@ -163,8 +175,8 @@ class BaseSearchModal extends React.Component {
       <SearchDiv>
         <SearchBarDiv>
           <SearchForm role='search'>
-            <SearchInput autoFocus />
-            <SearchClearWrapperDiv>
+            <SearchInput id='input-search' value={searchTerm} onChange={this.updateSearchTerm} autoFocus />
+            <SearchClearWrapperDiv onClick={this.clearSearchInput}>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <g fill="none" fill-rule="evenodd">
                   <circle cx="7" cy="7" r="7" fill="#DCD6CE" />
