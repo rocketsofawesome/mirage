@@ -136,10 +136,9 @@ const SearchInput = styled.input`
 `
 
 class BaseSearchModal extends React.Component {
-  // TODO: Add constructor (maybe)
-  // constructor (props) {
-  //   super(props)
-  // }
+  constructor (props) {
+    super(props)
+  }
 
   // TODO: Add componentDidMount (maybe)
   // componentDidMount () {
@@ -156,13 +155,15 @@ class BaseSearchModal extends React.Component {
   // }
 
   render () {
+    const { exitSearch } = this.props
+
     const searchOverlayImageSrc = cloudinary.url('web/search/SearchOverlayDesktop')
 
     return (
       <SearchDiv>
         <SearchBarDiv>
           <SearchForm role='search'>
-            <SearchInput autofocus />
+            <SearchInput autoFocus />
             <SearchClearWrapperDiv>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
                 <g fill="none" fill-rule="evenodd">
@@ -174,7 +175,7 @@ class BaseSearchModal extends React.Component {
           </SearchForm>
 
           <SearchSuggestionsDiv>Find it fast! Try: rainbow, stripe, neon, sparkle, comfy…</SearchSuggestionsDiv>
-          <SearchExitWrapperDiv>
+          <SearchExitWrapperDiv onClick={() => exitSearch()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                 <g fill="none" fill-rule="evenodd" stroke="#0073D1">
                     <path d="M1.37 1.841a.442.442 0 0 0-.002.628l12.69 12.69a.439.439 0 0 0 .628 0 .442.442 0 0 0 .001-.628L1.997 1.84a.439.439 0 0 0-.628 0z" />
@@ -185,15 +186,14 @@ class BaseSearchModal extends React.Component {
 
           <SearchOverlayImage src={searchOverlayImageSrc} />
         </SearchBarDiv>
-        <SearchModalDiv />
+        <SearchModalDiv onClick={() => exitSearch()} />
       </SearchDiv>
     )
   }
 }
 
-// TODO: Add propTypes
 BaseSearchModal.propTypes = {
-  // propName: PropTypes.string
+  exitSearch: PropTypes.func
 }
 
 // TODO: Add defaultProps
