@@ -19,7 +19,7 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
   )
 })`
   .roa-outfits-header {
-    margin: 1.6rem 0rem 0.8rem 0rem;
+    margin: 1.6rem 2.4rem 0.8rem 2.4rem;
     > * {
       flex-basis: 100%;
       text-align: center;
@@ -29,7 +29,7 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
 
   ${props => props.theme.breakpointsVerbose.aboveTablet`
     .roa-outfits-header {
-      margin: 2.4rem 0rem 1.6rem 0rem;
+      margin: 2.4rem 2.4rem 1.6rem 2.4rem;
     }
   `}
 `
