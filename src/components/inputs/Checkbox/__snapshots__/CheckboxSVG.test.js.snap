@@ -3,7 +3,6 @@
 exports[`(Component) Checkbox matching the snapshot 1`] = `
 .c0 {
   width: 2.5rem;
-  height: 2.5rem;
   margin-right: .9rem;
 }
 
@@ -129,5 +128,6 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
       },
     }
   }
+  width="2.5rem"
 />
 `;

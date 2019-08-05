@@ -9,9 +9,9 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   text-transform: uppercase;
   color: #00003C;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   font-weight: 500;
-  line-height: 1.0476190476190477;
+  line-height: 1.3;
   margin: 5.5rem 0;
 }
 
@@ -77,6 +77,18 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   margin-bottom: 1rem;
 }
 
+@media (min-width:768px) {
+  .c4 {
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c4 {
+    line-height: 1.0476190476190477;
+  }
+}
+
 <Styled(Component)
   description="Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy."
   header="Weekends Are For Fun Outfit"
@@ -105,12 +117,22 @@ exports[`() ProductInformation matching the snapshot 1`] = `
         </h3>
       </styled.h3>
       <styled.h1
-        fontSize="4.2rem"
+        fontSizes={
+          Object {
+            "desktop": "4.2rem",
+            "mobile": "3.2rem",
+          }
+        }
+        lineHeights={
+          Object {
+            "desktop": 1.0476190476190477,
+            "mobile": 1.3,
+          }
+        }
         margin="5.5rem 0"
       >
         <h1
           className="c3 c4"
-          fontSize="4.2rem"
         >
           Weekends Are For Fun Outfit
         </h1>

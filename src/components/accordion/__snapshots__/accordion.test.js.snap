@@ -2,16 +2,21 @@
 
 exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
 .c3 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c3:hover polyline {
+  stroke-width: 7px;
 }
 
 .c4 .toggleElement .c2 {
@@ -195,16 +200,21 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
 
 exports[`(Styled Component) Accordion matching the snapshot 1`] = `
 .c4 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c4:hover polyline {
+  stroke-width: 7px;
 }
 
 .c0 .toggleElement {

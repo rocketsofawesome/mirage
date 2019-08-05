@@ -2,16 +2,21 @@
 
 exports[`(Styled Component) Chevron matching the snapshot 1`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -37,16 +42,21 @@ exports[`(Styled Component) Chevron matching the snapshot 1`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 2`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -72,16 +82,21 @@ exports[`(Styled Component) Chevron matching the snapshot 2`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 3`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -107,16 +122,21 @@ exports[`(Styled Component) Chevron matching the snapshot 3`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 4`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -142,18 +162,23 @@ exports[`(Styled Component) Chevron matching the snapshot 4`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 5`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   cursor: pointer;
   -webkit-animation: gtBSkN 0.75s infinite;
   animation: gtBSkN 0.75s infinite;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -181,18 +206,23 @@ exports[`(Styled Component) Chevron matching the snapshot 5`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 6`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   cursor: pointer;
   -webkit-animation: ktSMsp 0.75s infinite;
   animation: ktSMsp 0.75s infinite;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -220,18 +250,23 @@ exports[`(Styled Component) Chevron matching the snapshot 6`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 7`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   cursor: pointer;
   -webkit-animation: hGBtOi 0.75s infinite;
   animation: hGBtOi 0.75s infinite;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)
@@ -259,18 +294,23 @@ exports[`(Styled Component) Chevron matching the snapshot 7`] = `
 
 exports[`(Styled Component) Chevron matching the snapshot 8`] = `
 .c0 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   cursor: pointer;
   -webkit-animation: lovGSO 0.75s infinite;
   animation: lovGSO 0.75s infinite;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
 }
 
 <Styled(BaseChevron)

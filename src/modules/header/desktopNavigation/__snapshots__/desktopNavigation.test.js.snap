@@ -35,8 +35,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .c18 {
@@ -46,8 +46,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .c19 {
@@ -57,12 +57,13 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .c22 {
   position: relative;
+  display: inline-block;
 }
 
 .c22 svg {
@@ -259,7 +260,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   height: 0;
 }
 
-.c4 .c25 {
+.c4 .c26 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -309,7 +310,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   height: 0;
 }
 
-.c10 .c25 {
+.c10 .c26 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -441,6 +442,10 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   margin-left: 0.5rem;
 }
 
+.c0 .c25 {
+  margin-left: 0.5rem;
+}
+
 .c11 {
   overflow: hidden;
   padding-top: 4rem;
@@ -557,6 +562,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -577,6 +584,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -597,6 +606,8 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -840,9 +851,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     }
     highlightable={false}
     homepageUrl="https://rocketsofawesome.com"
-    outfitNav="true"
     renderLink={[Function]}
-    showBlog=""
   >
     <styled.header
       className="c0"
@@ -4729,80 +4738,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         </div>
                       </BaseMegaMenu>
                     </Styled(BaseMegaMenu)>
-                  </li>
-                  <li>
-                    <Styled(BaseHeaderLink)
-                      highlightOn="hover"
-                      highlightable={false}
-                      href="https://rocketsofawesome.com/outfits"
-                      onFocus={[Function]}
-                      onMouseEnter={[Function]}
-                      spacing={true}
-                    >
-                      <BaseHeaderLink
-                        className="c3 c10"
-                        highlightOn="hover"
-                        highlightable={false}
-                        href="https://rocketsofawesome.com/outfits"
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        spacing={true}
-                      >
-                        <Styled(Styled(Component))
-                          className="c3 c10"
-                          href="https://rocketsofawesome.com/outfits"
-                          light={true}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          underline={false}
-                          uppercase={true}
-                        >
-                          <Styled(Component)
-                            className="c3 c10 c5"
-                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
-                            fontSize="1.4rem"
-                            fontStyle="normal"
-                            fontWeight={500}
-                            href="https://rocketsofawesome.com/outfits"
-                            light={true}
-                            onFocus={[Function]}
-                            onMouseEnter={[Function]}
-                            onMouseLeave={[Function]}
-                            underline={false}
-                            uppercase={true}
-                          >
-                            <Component
-                              className="c3 c10 c5 c6"
-                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
-                              fontSize="1.4rem"
-                              fontStyle="normal"
-                              fontWeight={500}
-                              href="https://rocketsofawesome.com/outfits"
-                              light={true}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              underline={false}
-                              uppercase={true}
-                            >
-                              <a
-                                className="c3 c10 c5 c6"
-                                fontStyle="normal"
-                                href="https://rocketsofawesome.com/outfits"
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
-                              >
-                                <span>
-                                  Outfits
-                                </span>
-                              </a>
-                            </Component>
-                          </Styled(Component)>
-                        </Styled(Styled(Component))>
-                      </BaseHeaderLink>
-                    </Styled(BaseHeaderLink)>
                   </li>
                   <li>
                     <Styled(BaseHeaderLink)

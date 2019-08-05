@@ -272,12 +272,14 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
         childCount={0}
         isSubscriptionMember={false}
         open={false}
+        signOut={[Function]}
       >
         <BaseSubMenu
           childCount={0}
           className="c6"
           isSubscriptionMember={false}
           open={false}
+          signOut={[Function]}
         >
           <CSSTransitionGroup
             className="c6"

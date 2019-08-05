@@ -8,5 +8,6 @@ exports[`(Styled Component) MobileAccountLink matching the snapshot 1`] = `
 <BaseAccountLinks
   className="c0"
   isSubscriptionMember={false}
+  signOut={[Function]}
 />
 `;

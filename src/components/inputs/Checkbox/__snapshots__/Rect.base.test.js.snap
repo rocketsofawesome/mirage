@@ -13,12 +13,6 @@ exports[`(Base Component) Rect matching the snapshot 1`] = `
 
 exports[`(Base Component) StyledRect matching the snapshot 1`] = `
 .c0 {
-  -webkit-animation: hBmzvO 0.25s linear forwards;
-  animation: hBmzvO 0.25s linear forwards;
-  stroke: transparent;
-  stroke-width: 10;
-  stroke-linecap: round;
-  stroke-dashoffset: 200;
   fill: none;
   stroke: #0073D1;
   stroke-width: 20;

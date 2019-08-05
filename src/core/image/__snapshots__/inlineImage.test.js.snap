@@ -4,10 +4,17 @@ exports[`(Styled Component) InlineImage When no props are provided matching the 
 <InlineImage
   alt=""
   src="https://dummyInlineImage.com/100x100/CCC/333.png&text=small"
+  visible={true}
 >
   <img
     alt=""
     src="https://dummyInlineImage.com/100x100/CCC/333.png&text=small"
+    style={
+      Object {
+        "visibility": "visible",
+      }
+    }
+    visible={true}
   />
 </InlineImage>
 `;

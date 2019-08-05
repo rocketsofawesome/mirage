@@ -12,18 +12,4 @@ describe('(Base Component) Rect', () => {
     const component = shallow(<StyledRect theme={theme} />)
     expect(component).toMatchSnapshot()
   })
-
-  test('adding "checked" styles when checked is passed', () => {
-    const component = shallow(<StyledRect theme={theme} checked />)
-    expect(component).toHaveStyleRule({
-      modifier: css`${checked}`,
-    })
-  })
-
-  test('adding "unchecked" styles when checked is not passed', () => {
-    const component = shallow(<StyledRect theme={theme} />)
-    expect(component).toHaveStyleRule({
-      modifier: css`${unchecked}`,
-    })
-  })
 })

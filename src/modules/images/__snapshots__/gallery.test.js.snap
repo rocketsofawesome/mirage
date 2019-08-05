@@ -16,8 +16,8 @@ exports[`() Gallery matching the snapshot 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .c4 {
@@ -27,34 +27,44 @@ exports[`() Gallery matching the snapshot 1`] = `
   -ms-flex-preferred-size: 100%;
   flex-basis: 100%;
   margin-left: 0;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .c9 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c9:hover polyline {
+  stroke-width: 7px;
 }
 
 .c10 {
-  width: 12px;
+  width: 16px;
   height: 8px;
   fill: none;
-  stroke: #0073D1;
+  stroke: #00003C;
   stroke-miterlimit: 10;
-  stroke-width: 5px;
+  stroke-width: 4px;
   -webkit-transform: rotate(-90deg);
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg);
   cursor: pointer;
+  margin: 10px;
+}
+
+.c10:hover polyline {
+  stroke-width: 7px;
 }
 
 .c3 {
@@ -163,12 +173,17 @@ exports[`() Gallery matching the snapshot 1`] = `
   border: 2px solid transparent!important;
 }
 
-.c7 .roa-slider-img {
+.c7 a {
   position: relative;
   width: 100%;
+  padding-bottom: 150%;
 }
 
-.c7 .roa-slider-img img {
+.c7 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
   width: 100%;
 }
 
@@ -202,6 +217,8 @@ exports[`() Gallery matching the snapshot 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -222,6 +239,8 @@ exports[`() Gallery matching the snapshot 1`] = `
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%;
     margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
@@ -819,6 +838,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short on model"
@@ -826,6 +846,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -835,6 +861,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short on model"
@@ -842,6 +869,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -851,6 +884,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee on model"
@@ -858,6 +892,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -867,6 +907,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee front"
@@ -874,6 +915,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -883,6 +930,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee detail"
@@ -890,6 +938,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -899,6 +953,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short front"
@@ -906,6 +961,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -915,6 +976,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short back"
@@ -922,6 +984,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
+                            style={
+                              Object {
+                                "visibility": "visible",
+                              }
+                            }
+                            visible={true}
                           />
                         </InlineImage>
                       </div>
@@ -1634,6 +1702,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                       },
                     ]
                   }
+                  sliderLazyLoad="progressive"
                 >
                   <div
                     className="slider c6 c7"
@@ -1641,7 +1710,9 @@ exports[`() Gallery matching the snapshot 1`] = `
                     onMouseLeave={[Function]}
                   >
                     <Slider
+                      afterChange={[Function]}
                       arrows={false}
+                      beforeChange={[Function]}
                       className="roa-slider"
                       infinite={true}
                       lazyLoad="progressive"
@@ -1661,12 +1732,12 @@ exports[`() Gallery matching the snapshot 1`] = `
                       <InnerSlider
                         accessibility={true}
                         adaptiveHeight={false}
-                        afterChange={null}
+                        afterChange={[Function]}
                         appendDots={[Function]}
                         arrows={false}
                         autoplay={false}
                         autoplaySpeed={3000}
-                        beforeChange={null}
+                        beforeChange={[Function]}
                         centerMode={false}
                         centerPadding="50px"
                         className="roa-slider"
@@ -1822,9 +1893,10 @@ exports[`() Gallery matching the snapshot 1`] = `
                                   <div
                                     key="0"
                                   >
-                                    <div
-                                      className="roa-slider-img"
+                                    <InlineImage
+                                      alt="Cool Down Active Short on model"
                                       key="0"
+                                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
                                         Object {
                                           "display": "inline-block",
@@ -1832,18 +1904,21 @@ exports[`() Gallery matching the snapshot 1`] = `
                                         }
                                       }
                                       tabIndex={-1}
+                                      visible={true}
                                     >
-                                      <InlineImage
+                                      <img
                                         alt="Cool Down Active Short on model"
-                                        key="0"
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                                      >
-                                        <img
-                                          alt="Cool Down Active Short on model"
-                                          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                                        />
-                                      </InlineImage>
-                                    </div>
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                        visible={true}
+                                      />
+                                    </InlineImage>
                                   </div>
                                 </div>
                                 <div
@@ -1946,9 +2021,10 @@ exports[`() Gallery matching the snapshot 1`] = `
                                   <div
                                     key="0"
                                   >
-                                    <div
-                                      className="roa-slider-img"
+                                    <InlineImage
+                                      alt="Cool Down Active Short on model"
                                       key="0"
+                                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
                                         Object {
                                           "display": "inline-block",
@@ -1956,18 +2032,21 @@ exports[`() Gallery matching the snapshot 1`] = `
                                         }
                                       }
                                       tabIndex={-1}
+                                      visible={true}
                                     >
-                                      <InlineImage
+                                      <img
                                         alt="Cool Down Active Short on model"
-                                        key="0"
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                                      >
-                                        <img
-                                          alt="Cool Down Active Short on model"
-                                          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                                        />
-                                      </InlineImage>
-                                    </div>
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                        visible={true}
+                                      />
+                                    </InlineImage>
                                   </div>
                                 </div>
                                 <div

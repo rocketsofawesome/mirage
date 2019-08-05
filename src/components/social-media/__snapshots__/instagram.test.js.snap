@@ -2,7 +2,7 @@
 
 exports[`(Styled Component) Instagram matching the snapshot 1`] = `
 <Styled(BaseInstagram)
-  accessToken="2310062225.ec19fa8.cd6a9975960046529c78c64347ca9ea2"
+  accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
   clientId="573c73f61f5342549cfabb281c37f4de"
   limit={4}
   theme={

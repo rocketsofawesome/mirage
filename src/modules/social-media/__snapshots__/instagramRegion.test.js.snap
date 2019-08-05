@@ -9,9 +9,9 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   text-transform: uppercase;
   color: #00003C;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;
-  font-size: 4.2rem;
+  font-size: 3.2rem;
   font-weight: 500;
-  line-height: 1.0476190476190477;
+  line-height: 1.3;
   margin: 5.5rem 0;
 }
 
@@ -157,6 +157,18 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   padding-left: 10px;
 }
 
+@media (min-width:768px) {
+  .c2 {
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    line-height: 1.0476190476190477;
+  }
+}
+
 @media (max-width:958px) {
   .c0 .c1 {
     font-size: 3.4rem;
@@ -179,13 +191,23 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
     >
       <styled.h1
         aria-label="Find us @ rockets of awesome"
-        fontSize="4.2rem"
+        fontSizes={
+          Object {
+            "desktop": "4.2rem",
+            "mobile": "3.2rem",
+          }
+        }
+        lineHeights={
+          Object {
+            "desktop": 1.0476190476190477,
+            "mobile": 1.3,
+          }
+        }
         margin="5.5rem 0"
       >
         <h1
           aria-label="Find us @ rockets of awesome"
           className="c1 c2"
-          fontSize="4.2rem"
         >
           Example Title
         </h1>
@@ -204,7 +226,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
       </styled.p>
       <WithTheme(Styled(BaseInstagram))>
         <Styled(BaseInstagram)
-          accessToken="2310062225.ec19fa8.cd6a9975960046529c78c64347ca9ea2"
+          accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
           clientId="573c73f61f5342549cfabb281c37f4de"
           limit={4}
           theme={
@@ -329,7 +351,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
           userId="2310062225"
         >
           <BaseInstagram
-            accessToken="2310062225.ec19fa8.cd6a9975960046529c78c64347ca9ea2"
+            accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
             className="c5"
             clientId="573c73f61f5342549cfabb281c37f4de"
             limit={4}

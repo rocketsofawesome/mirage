@@ -19,11 +19,4 @@ describe('(Base Component) Check', () => {
     const component = createBaseCheck()
     expect(component).toMatchSnapshot()
   })
-
-  test('adding "checked" styles when checked is passes', () => {
-    const component = createBaseCheck({checked: true})
-    expect(component).toHaveStyleRule({
-      modifier: css`${checkedAnimation}`,
-    })
-  })
 })

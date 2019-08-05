@@ -76,5 +76,6 @@ exports[`(Styled) SubMenu matching the snapshot 1`] = `
   childCount={0}
   className="c0"
   isSubscriptionMember={false}
+  signOut={[Function]}
 />
 `;

@@ -6,23 +6,12 @@ import Check from './Check.base'
 import Rect from './Rect.base'
 
 class CheckboxSVG extends Component {
-  state = {
-    showAnimation: false
-  }
-
-  componentWillReceiveProps () {
-    if (!this.state.showAnimation) {
-      this.setState({showAnimation: true})
-    }
-  }
-
   render () {
     const { className, ...props } = this.props
-    const  { showAnimation } = this.state
     return (
       <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'>
-        <Rect {...props} showAnimation={showAnimation} />
-        <Check {...props} showAnimation={showAnimation} />
+        <Rect {...props} />
+        <Check {...props} />
       </svg>
     )
   }

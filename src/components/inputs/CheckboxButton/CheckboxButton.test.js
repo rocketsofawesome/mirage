@@ -18,7 +18,6 @@ describe('(Styled Component) CheckboxButton', () => {
     return mountWithTheme(<CheckboxButton {...props} />)
   }
 
-  // TODO: Fix failing test
   test('matching the snapshot', () => {
     expect(createCheckboxButton())
     .toMatchSnapshot()

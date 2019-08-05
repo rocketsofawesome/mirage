@@ -1,38 +1,85 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled, { keyframes, css } from 'styled-components'
 
 import CheckboxSVG from './CheckboxSVG.base'
 import Rect from './Rect.base'
+import Check from './Check.base'
 import Label from 'SRC/core/typography/Label'
 
+const rectFillOut = keyframes`
+  from {
+    fill: rgba(0,115,209, 1.0);
+  }
+  to {
+    fill: rgba(255, 255, 255, 0);
+  }
+`
+
+const rectFillIn = keyframes`
+  from {
+    fill: rgba(255, 255, 255, 0);
+  }
+  to {
+    fill: rgba(0,115,209, 1.0);
+  }
+`
+
+const rectChecked = css`
+  animation: ${rectFillIn} 0.25s linear forwards;
+
+  fill: stroke: ${props => props.theme.colors.rocketBlue};
+`
+
+const rectUnchecked = css`
+  animation: ${rectFillOut} 0.25s linear forwards;
+
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dashoffset: 200;
+  fill: none;
+`
+
+const checkDash = keyframes`
+  from {
+    stroke-dashoffset: 200;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+`
+
+const checkAnimation = css`
+  animation: ${checkDash} 0.25s linear forwards;
+
+  stroke: ${props => props.theme.colors.white};
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+`
+
 class CheckboxBase extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {
-      checked: props.checked
-    }
+  state = {
+    showAnimation: false
   }
 
-  onChange = () => {
-    const { checked } = this.state
-    const { input: { onChange } } = this.props
-    this.setState({
-      checked: !checked
-    })
-    onChange()
+  onClick = () => {
+    const { input: { onClick } } = this.props
+    this.setState({ showAnimation: true })
+    onClick && onClick()
   }
+  
   render() {
-    const { className, input, children, ...props } = this.props
-    const { checked } = this.state
+    const { className, input, children, width, ...props } = this.props
+    const showAnimation = this.state.showAnimation ? 'showAnimation' : ''
     return (
       <Label {...props} lowercase className={className}>
         <input
+          className={showAnimation}
           type='checkbox'
+          onClick={this.onClick}
           {...input}
-          onChange={this.onChange}
         />
-        <CheckboxSVG {...props} checked={checked} />
+        <CheckboxSVG width={width} />
         {children}
       </Label>
     )
@@ -45,13 +92,6 @@ CheckboxBase.propTypes = {
     value: PropTypes.bool
   }).isRequired,
   label: PropTypes.string
-}
-
-CheckboxBase.defaultProps = {
-  input: {
-    value: false,
-    onChange: () => {}
-  }
 }
 
 const Checkbox = styled(CheckboxBase)`
@@ -67,8 +107,19 @@ const Checkbox = styled(CheckboxBase)`
     opacity: 0;
   }
 
-  input:focused + ${Rect} {
+  .showAnimation:focused + ${CheckboxSVG} ${Rect} {
     stroke-width: 40;
+  }
+  
+  .showAnimation:checked + ${CheckboxSVG} ${Rect} {
+    ${rectChecked}
+  }
+  
+  .showAnimation:checked + ${CheckboxSVG} ${Check} {
+    ${checkAnimation}
+  }
+  .showAnimation:not(:checked) + ${CheckboxSVG} ${Rect} {
+    ${rectUnchecked}
   }
 `
 

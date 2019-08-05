@@ -17,11 +17,14 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
   margin-bottom: 0;
 }
 
+.c0 .divider-search {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 <BaseMobileNavigation
   className="c0"
   drawerPosition="fixed"
   homepageUrl="https://rocketsofawesome.com"
-  outfitNav="true"
-  showBlog=""
 />
 `;
