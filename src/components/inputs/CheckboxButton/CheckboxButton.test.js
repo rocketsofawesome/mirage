@@ -19,7 +19,7 @@ describe('(Styled Component) CheckboxButton', () => {
   }
 
   // TODO: Fix failing test
-  test.skip('matching the snapshot', () => {
+  test('matching the snapshot', () => {
     expect(createCheckboxButton())
     .toMatchSnapshot()
   })
