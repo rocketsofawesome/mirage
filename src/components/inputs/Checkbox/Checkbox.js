@@ -63,9 +63,11 @@ class CheckboxBase extends React.Component {
   }
 
   onClick = () => {
-    const { input: { onClick } } = this.props
     this.setState({ showAnimation: true })
-    onClick && onClick()
+    if (this.props.input && this.props.input.onClick) {
+      const { input: { onClick } } = this.props
+      onClick()
+    }
   }
   
   render() {

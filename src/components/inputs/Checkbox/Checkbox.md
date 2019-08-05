@@ -1,19 +1,11 @@
 ```js
-<Checkbox
-  input={{
-    value: true,
-    onChange: () => {}
-  }}>
+<Checkbox>
     Example Checkbox Checked
   </Checkbox>
 ```
 
 ```js
-<Checkbox
-  input={{
-    value: false,
-    onChange: () => {}
-  }}>
+<Checkbox>
     Example Checkbox Unchecked
   </Checkbox>
 ```
