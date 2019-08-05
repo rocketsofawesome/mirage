@@ -1,22 +1,35 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 import Check from './Check.base'
 import Rect from './Rect.base'
 
-const CheckboxSVG = ({ className, ...props }) => {
-  return (
-    <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'>
-      <Rect {...props} />
-      <Check {...props} />
-    </svg>
-  )
+class CheckboxSVG extends Component {
+  state = {
+    showAnimation: false
+  }
+
+  componentWillReceiveProps () {
+    if (!this.state.showAnimation) {
+      this.setState({showAnimation: true})
+    }
+  }
+
+  render () {
+    const { className, ...props } = this.props
+    const  { showAnimation } = this.state
+    return (
+      <svg className={className} xmlns='http://www.w3.org/2000/svg' viewBox='0 0 190 190'>
+        <Rect {...props} showAnimation={showAnimation} />
+        <Check {...props} showAnimation={showAnimation} />
+      </svg>
+    )
+  }
 }
 
 const StyledCheckboxSVG = styled(CheckboxSVG)`
-  width: 2.5rem;
-  height: 2.5rem;
+  width: ${props => props.width};
   margin-right: .9rem;
 `
 
@@ -25,7 +38,8 @@ StyledCheckboxSVG.propTypes = {
 }
 
 StyledCheckboxSVG.defaultProps = {
-  checked: false
+  checked: false,
+  width: '2.5rem'
 }
 
 export default StyledCheckboxSVG
