@@ -4,7 +4,7 @@ import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { theme } from 'SRC/core/theme'
-import StyledCheck, { checked } from './Check.base'
+import StyledCheck, { checkedAnimation } from './Check.base'
 
 const { shallowWithTheme } = global
 
@@ -23,7 +23,7 @@ describe('(Base Component) Check', () => {
   test('adding "checked" styles when checked is passes', () => {
     const component = createBaseCheck({checked: true})
     expect(component).toHaveStyleRule({
-      modifier: css`${checked}`,
+      modifier: css`${checkedAnimation}`,
     })
   })
 })
