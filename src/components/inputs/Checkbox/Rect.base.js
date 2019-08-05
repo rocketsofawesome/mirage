@@ -36,6 +36,10 @@ const unchecked = css`
   fill: none;
 `
 
+const animate = css`
+  ${props => props.checked ? checked : unchecked }
+`
+
 const Rect = ({ className }) => {
   return (
     <rect className={className} x='2.5' y='2.5' width='185' height='185' rx='10' ry='10' />
@@ -43,7 +47,8 @@ const Rect = ({ className }) => {
 }
 
 const StyledRect = styled(Rect)`
-  ${props => props.checked ? checked : unchecked }
+  fill: none;
+  ${props => props.showAnimation && animate}
 
   stroke: ${props => props.theme.colors.rocketBlue};
   stroke-width: 20;
@@ -52,6 +57,7 @@ const StyledRect = styled(Rect)`
 
 StyledRect.propTypes = {
   checked: PropTypes.bool,
+  showAnimation: PropTypes.bool,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string
