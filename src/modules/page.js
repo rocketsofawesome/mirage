@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Page = ({children, url}) => {
+const Page = ({ children, url }) => {
   return (
     <main data-cms-url={url}>
       {children}

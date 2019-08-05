@@ -13,9 +13,15 @@ const H1 = styled.h1`
   color: ${props => props.theme.colors.navy};
 
   font-family: ${props => props.theme.fonts.headerFont};
-  font-size: ${props => props.fontSize};
+  font-size: ${props => props.fontSizes.mobile};
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    font-size: ${props => props.fontSizes.desktop};
+  `}
   font-weight: 500;
-  line-height:1.0476190476190477;
+  line-height: ${props => props.lineHeights.mobile};
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    line-height: ${props => props.lineHeights.desktop};
+  `}
   margin: ${props => props.margin};
 `
 
@@ -37,8 +43,15 @@ H1.propTypes = {
 }
 
 H1.defaultProps = {
-  fontSize: '4.2rem',
-  margin: '5.5rem 0'
+  fontSizes: {
+    desktop: '4.2rem',
+    mobile: '3.2rem'
+  },
+  margin: '5.5rem 0',
+  lineHeights: {
+    desktop: 1.0476190476190477,
+    mobile: 1.3
+  }
 }
 
 /** @component */
