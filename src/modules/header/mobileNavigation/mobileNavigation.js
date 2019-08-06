@@ -18,23 +18,21 @@ import {
 
 import { theme } from 'SRC/core/theme'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK, REACT_APP_SEARCH_FEATURE_ON } = process.env
+const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
 
 export class BaseMobileNavigation extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = {
-      open: false
-    }
+    this.state = { open: false }
   }
 
   closeDrawer = () => {
-    this.setState({open: false})
+    this.setState({ open: false })
   }
 
   openDrawer = () => {
-    this.setState({open: true})
+    this.setState({ open: true })
   }
 
   render () {
@@ -255,7 +253,7 @@ MobileNavigation.defaultProps = {
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK,
-  showSearch: REACT_APP_SEARCH_FEATURE_ON
+  showSearch: false
 }
 
 /** @component */

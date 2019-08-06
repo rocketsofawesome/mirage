@@ -10,16 +10,16 @@ const BaseSearchIcon = ({ className }) => {
       <Default displayTarget='belowLaptop'>
         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
           <g fill="none" fill-rule="evenodd" stroke="#0073D1" stroke-width="1.5" transform="translate(1 1)">
-            <circle cx="6" cy="6" r="6"/>
-            <path stroke-linecap="round" d="M10.761 11.01l4.121 3.893"/>
+            <circle cx="6" cy="6" r="6" />
+            <path stroke-linecap="round" d="M10.761 11.01l4.121 3.893" />
           </g>
         </svg>
       </Default>
       <Laptop>
         <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
           <g fill="none" fill-rule="evenodd" stroke="#0073D1" stroke-width="1.5" transform="translate(1 1)">
-            <circle cx="6.75" cy="6.75" r="6.75"/>
-            <path stroke-linecap="round" d="M12.106 12.387l4.637 4.379"/>
+            <circle cx="6.75" cy="6.75" r="6.75" />
+            <path stroke-linecap="round" d="M12.106 12.387l4.637 4.379" />
           </g>
         </svg>
       </Laptop>
