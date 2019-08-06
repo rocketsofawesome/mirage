@@ -13,7 +13,7 @@ import {
 } from 'SRC'
 import { girls, boys, renderLink } from './defaultProps'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK, REACT_APP_SEARCH_FEATURE_ON } = process.env
+const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
 
 export class BaseDesktopNavigation extends React.Component {
   constructor(props) {
@@ -340,7 +340,7 @@ BaseDesktopNavigation.defaultProps = {
   homepageUrl: 'https://rocketsofawesome.com',
   outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK,
-  showSearch: REACT_APP_SEARCH_FEATURE_ON
+  showSearch: false
 }
 
 /** @component */

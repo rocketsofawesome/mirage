@@ -206,10 +206,10 @@ class BaseSearchModal extends React.Component {
           <SearchSuggestionsDiv>Find it fast! Try: rainbow, stripe, neon, sparkle, comfy…</SearchSuggestionsDiv>
           <SearchExitWrapperDiv onClick={() => exitSearch()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-                <g fill="none" fill-rule="evenodd" stroke="#0073D1">
-                    <path d="M1.37 1.841a.442.442 0 0 0-.002.628l12.69 12.69a.439.439 0 0 0 .628 0 .442.442 0 0 0 .001-.628L1.997 1.84a.439.439 0 0 0-.628 0z" />
-                    <path d="M1.37 15.159a.442.442 0 0 0 .627 0l12.69-12.69a.439.439 0 0 0 0-.628.442.442 0 0 0-.628 0L1.369 14.53a.439.439 0 0 0 0 .628z" />
-                </g>
+              <g fill="none" fill-rule="evenodd" stroke="#0073D1">
+                <path d="M1.37 1.841a.442.442 0 0 0-.002.628l12.69 12.69a.439.439 0 0 0 .628 0 .442.442 0 0 0 .001-.628L1.997 1.84a.439.439 0 0 0-.628 0z" />
+                <path d="M1.37 15.159a.442.442 0 0 0 .627 0l12.69-12.69a.439.439 0 0 0 0-.628.442.442 0 0 0-.628 0L1.369 14.53a.439.439 0 0 0 0 .628z" />
+              </g>
             </svg>
           </SearchExitWrapperDiv>
 
