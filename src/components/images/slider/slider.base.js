@@ -7,12 +7,6 @@ import { InlineImage, Chevron } from 'SRC'
 export class BaseROASlider extends Component {
   constructor (props) {
     super(props)
-
-    this.state = {
-      currentSlide: 0,
-      transition: false
-    }
-
     this.config = {
       infinite: true,
       arrows: false,
@@ -25,16 +19,8 @@ export class BaseROASlider extends Component {
             dotsClass: 'dots'
           }
         }
-      ],
-      beforeChange: (current, next) => {
-        this.setState({
-          currentSlide: next,
-          transition: true
-        })
-      },
-      afterChange: () => this.setState({ transition: false })
+      ]
     }
-    
     if (props.sliderLazyLoad) {
       this.config.lazyLoad = props.sliderLazyLoad
     }
@@ -62,12 +48,6 @@ export class BaseROASlider extends Component {
     this.slider && this.slider.slickNext()
   }
 
-  isVisible = (index) => {
-    if (this.state.currentSlide === index) return true
-
-    return this.state.transition
-  }
-
   render() {
     const { className, images, renderLink, target, ...props } = this.props
     const Link = renderLink
@@ -91,7 +71,6 @@ export class BaseROASlider extends Component {
                     transformation: 'plp_product_shot',
                     format: 'jpg'
                   })}
-                  visible={this.isVisible(index)}
                   {...props}
                    />
                 </Link>
