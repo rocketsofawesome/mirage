@@ -96,9 +96,8 @@ const SearchForm = styled.form`
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     margin-top: 90px;
-    padding-bottom: 6px;
     width: 600px;
-    height: 36px;
+    height: 37px;
   `}
 `
 
