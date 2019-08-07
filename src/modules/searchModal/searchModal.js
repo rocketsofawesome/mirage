@@ -139,7 +139,7 @@ class BaseSearchModal extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = { searchTerm: '' }
+    this.state = { searchTerm: props.initialSearchTerm || '' }
 
     this.updateSearchTerm = this.updateSearchTerm.bind(this)
     this.clearSearchInput = this.clearSearchInput.bind(this)
@@ -148,7 +148,12 @@ class BaseSearchModal extends React.Component {
   }
 
   updateSearchTerm = (event) => {
-    this.setState({ searchTerm: event.target.value })
+    const { saveInitialSearchTerm } = this.props
+
+    const currentSearchTerm = event.target.value
+
+    this.setState({ searchTerm: currentSearchTerm })
+    saveInitialSearchTerm(currentSearchTerm)
   }
 
   clearSearchInput = () => {
@@ -222,6 +227,8 @@ class BaseSearchModal extends React.Component {
 }
 
 BaseSearchModal.propTypes = {
+  initialSearchTerm: PropTypes.string,
+  saveInitialSearchTerm: PropTypes.func,
   exitSearch: PropTypes.func,
   submitSearch: PropTypes.func
 }
