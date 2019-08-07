@@ -84,6 +84,7 @@ display: inline-block;
 `
 
 BagIcon.propTypes = {
+  count: PropTypes.number,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string,
@@ -97,11 +98,6 @@ BagIcon.propTypes = {
     desktop: PropTypes.string,
     mobile: PropTypes.string
   })
-}
-
-BagIcon.propTypes = {
-  count: PropTypes.number,
-  width: PropTypes.string.isRequired
 }
 
 BagIcon.defaultProps = {

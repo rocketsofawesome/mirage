@@ -87,7 +87,7 @@ BaseContentfulTout.propTypes = {
   defaultColor: PropTypes.string,
   displayTitle: PropTypes.string,
   searchTerm: PropTypes.string,
-  productsFound: PropTypes.boolean,
+  productsFound: PropTypes.bool,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
     backgroundTransparency: PropTypes.number,
