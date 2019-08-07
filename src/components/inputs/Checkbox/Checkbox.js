@@ -28,13 +28,12 @@ const rectFillIn = keyframes`
 const rectChecked = css`
   animation: ${rectFillIn} 0.25s linear forwards;
 
-  fill: stroke: ${props => props.theme.colors.rocketBlue};
+  fill: ${props => props.theme.colors.rocketBlue};
 `
 
 const rectUnchecked = css`
   animation: ${rectFillOut} 0.25s linear forwards;
 
-  stroke-width: 10;
   stroke-linecap: round;
   stroke-dashoffset: 200;
   fill: none;
@@ -97,31 +96,43 @@ CheckboxBase.propTypes = {
 }
 
 const Checkbox = styled(CheckboxBase)`
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 400;
+  && {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
 
-  input {
-    width: 0;
-    height: 0;
+    input {
+      width: 0;
+      height: 0;
 
-    opacity: 0;
-  }
+      opacity: 0;
+    }
+    
+    input:checked + ${CheckboxSVG} ${Rect} {
+      fill: ${props => props.theme.colors.rocketBlue};
+    }
+    
+    input:checked + ${CheckboxSVG} ${Check} {
+      stroke: ${props => props.theme.colors.white};
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+    }
 
-  .showAnimation:focused + ${CheckboxSVG} ${Rect} {
-    stroke-width: 40;
-  }
-  
-  .showAnimation:checked + ${CheckboxSVG} ${Rect} {
-    ${rectChecked}
-  }
-  
-  .showAnimation:checked + ${CheckboxSVG} ${Check} {
-    ${checkAnimation}
-  }
-  .showAnimation:not(:checked) + ${CheckboxSVG} ${Rect} {
-    ${rectUnchecked}
+    .showAnimation:focused + ${CheckboxSVG} ${Rect} {
+      stroke-width: 40;
+    }
+    
+    .showAnimation:checked + ${CheckboxSVG} ${Rect} {
+      ${rectChecked}
+    }
+    
+    .showAnimation:checked + ${CheckboxSVG} ${Check} {
+      ${checkAnimation}
+    }
+    .showAnimation:not(:checked) + ${CheckboxSVG} ${Rect} {
+      ${rectUnchecked}
+    }
   }
 `
 
