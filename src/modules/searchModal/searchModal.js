@@ -98,7 +98,7 @@ const SearchForm = styled.form`
     margin-top: 90px;
     padding-bottom: 6px;
     width: 600px;
-    height: 30px;
+    height: 36px;
   `}
 `
 
@@ -132,7 +132,7 @@ const SearchInput = styled.input`
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     width: 570px;
-    height: 26px;
+    height: 34px;
   `}
 `
 
