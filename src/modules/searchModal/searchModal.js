@@ -96,6 +96,7 @@ const SearchForm = styled.form`
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     margin-top: 90px;
+    padding-bottom: 6px;
     width: 600px;
     height: 30px;
   `}
@@ -121,7 +122,7 @@ const SearchInput = styled.input`
   height: 36px;
   border: 0;
   outline: none;
-  font-family: "adobe-caslon-pro", Helvetica, Arial, serif;
+  font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 26px;
   font-weight: 500;
   color: #00003C;
