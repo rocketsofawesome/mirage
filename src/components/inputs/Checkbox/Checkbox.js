@@ -28,13 +28,12 @@ const rectFillIn = keyframes`
 const rectChecked = css`
   animation: ${rectFillIn} 0.25s linear forwards;
 
-  fill: stroke: ${props => props.theme.colors.rocketBlue};
+  fill: ${props => props.theme.colors.rocketBlue};
 `
 
 const rectUnchecked = css`
   animation: ${rectFillOut} 0.25s linear forwards;
 
-  stroke-width: 10;
   stroke-linecap: round;
   stroke-dashoffset: 200;
   fill: none;
@@ -63,13 +62,12 @@ class CheckboxBase extends React.Component {
   }
 
   onClick = () => {
-    this.setState({ showAnimation: true })
     if (this.props.input && this.props.input.onClick) {
       const { input: { onClick } } = this.props
       onClick()
     }
   }
-  
+
   render() {
     const { className, input, children, width, ...props } = this.props
     const showAnimation = this.state.showAnimation ? 'showAnimation' : ''
@@ -97,31 +95,43 @@ CheckboxBase.propTypes = {
 }
 
 const Checkbox = styled(CheckboxBase)`
-  display: flex;
-  align-items: center;
-  font-size: 1.6rem;
-  font-weight: 400;
+  && {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: 400;
 
-  input {
-    width: 0;
-    height: 0;
+    input {
+      width: 0;
+      height: 0;
 
-    opacity: 0;
-  }
+      opacity: 0;
+    }
 
-  .showAnimation:focused + ${CheckboxSVG} ${Rect} {
-    stroke-width: 40;
-  }
-  
-  .showAnimation:checked + ${CheckboxSVG} ${Rect} {
-    ${rectChecked}
-  }
-  
-  .showAnimation:checked + ${CheckboxSVG} ${Check} {
-    ${checkAnimation}
-  }
-  .showAnimation:not(:checked) + ${CheckboxSVG} ${Rect} {
-    ${rectUnchecked}
+    input:checked + ${CheckboxSVG} ${Rect} {
+      fill: ${props => props.theme.colors.rocketBlue};
+    }
+
+    input:checked + ${CheckboxSVG} ${Check} {
+      stroke: ${props => props.theme.colors.white};
+      stroke-dasharray: 200;
+      stroke-dashoffset: 0;
+    }
+
+    .showAnimation:focused + ${CheckboxSVG} ${Rect} {
+      stroke-width: 40;
+    }
+
+    .showAnimation:checked + ${CheckboxSVG} ${Rect} {
+      ${rectChecked}
+    }
+
+    .showAnimation:checked + ${CheckboxSVG} ${Check} {
+      ${checkAnimation}
+    }
+    .showAnimation:not(:checked) + ${CheckboxSVG} ${Rect} {
+      ${rectUnchecked}
+    }
   }
 `
 
