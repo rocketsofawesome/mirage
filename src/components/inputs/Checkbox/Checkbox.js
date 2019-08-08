@@ -62,13 +62,12 @@ class CheckboxBase extends React.Component {
   }
 
   onClick = () => {
-    this.setState({ showAnimation: true })
     if (this.props.input && this.props.input.onClick) {
       const { input: { onClick } } = this.props
       onClick()
     }
   }
-  
+
   render() {
     const { className, input, children, width, ...props } = this.props
     const showAnimation = this.state.showAnimation ? 'showAnimation' : ''
@@ -108,11 +107,11 @@ const Checkbox = styled(CheckboxBase)`
 
       opacity: 0;
     }
-    
+
     input:checked + ${CheckboxSVG} ${Rect} {
       fill: ${props => props.theme.colors.rocketBlue};
     }
-    
+
     input:checked + ${CheckboxSVG} ${Check} {
       stroke: ${props => props.theme.colors.white};
       stroke-dasharray: 200;
@@ -122,11 +121,11 @@ const Checkbox = styled(CheckboxBase)`
     .showAnimation:focused + ${CheckboxSVG} ${Rect} {
       stroke-width: 40;
     }
-    
+
     .showAnimation:checked + ${CheckboxSVG} ${Rect} {
       ${rectChecked}
     }
-    
+
     .showAnimation:checked + ${CheckboxSVG} ${Check} {
       ${checkAnimation}
     }
