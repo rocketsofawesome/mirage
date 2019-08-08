@@ -186,6 +186,14 @@ const ContentfulTout = styled(BaseContentfulTout)`
         font-weight: 500;
         letter-spacing: normal;
         text-transform: none;
+
+        ${props => props.theme.breakpointsVerbose.belowTablet`
+          font-size: 24px;
+        `}
+      }
+
+      .default-shop-header-title-search-empty {
+        margin-bottom: 500px;
       }
     }
   }

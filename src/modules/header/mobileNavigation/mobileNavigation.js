@@ -231,6 +231,9 @@ const MobileNavigation = styled(BaseMobileNavigation)`
   .divider-search {
     margin-left: 10px;
     margin-right: 10px;
+
+    font-size: 2rem;
+    color: #0073D1;
   }
 `
 

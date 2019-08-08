@@ -22,9 +22,19 @@ class BaseContentfulTout extends Component {
     // If searchTerm or displayTitle present, do not render hero image
     let defaultShopHeader = null
     if (searchTerm) {
-      let searchTitle = `You searched ‘${searchTerm}’`
-      if (!productsFound) { searchTitle = `Aw, shucks! 0 results for your search ‘${searchTerm}.’` }
-      defaultShopHeader = <h1 className='default-shop-header-title default-shop-header-title-search'>{searchTitle}</h1>
+      // Truncate long search term
+      let refinedSearchTerm = searchTerm
+      if (searchTerm.length > 30) { refinedSearchTerm = `${searchTerm.substring(0, 30)}...` }
+
+      let searchTitle = `You searched ‘${refinedSearchTerm}’`
+      let searchClasses = 'default-shop-header-title default-shop-header-title-search'
+
+      if (!productsFound) {
+        searchTitle = `Aw, shucks! 0 results for your search ‘${refinedSearchTerm}’`
+        searchClasses += ' default-shop-header-title-search-empty'
+      }
+
+      defaultShopHeader = <h1 className={searchClasses}>{searchTitle}</h1>
     } else if (displayTitle) {
       defaultShopHeader = <h1 className='default-shop-header-title'>{displayTitle}</h1>
     }
@@ -87,7 +97,7 @@ BaseContentfulTout.propTypes = {
   defaultColor: PropTypes.string,
   displayTitle: PropTypes.string,
   searchTerm: PropTypes.string,
-  productsFound: PropTypes.boolean,
+  productsFound: PropTypes.bool,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
     backgroundTransparency: PropTypes.number,

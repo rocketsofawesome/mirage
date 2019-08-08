@@ -205,7 +205,7 @@ export class BaseDesktopNavigation extends React.Component {
                   </li>
                 }
                 {showSearch &&
-                  <span>|</span>
+                  <span className='divider-search'>|</span>
                 }
                 <li className={!showSearch && 'spacer'}>
                   <DesktopAccountLinks
@@ -313,6 +313,11 @@ const DesktopNavigation = styled(BaseDesktopNavigation)`
 
   ${SearchIcon} {
     margin-left: 0.5rem;
+  }
+
+  .divider-search {
+    font-size: 2rem;
+    color: #0073D1;
   }
 `
 

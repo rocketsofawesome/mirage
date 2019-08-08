@@ -91,13 +91,13 @@ const SearchForm = styled.form`
   margin: auto;
   margin-top: 75px;
   width: 280px;
-  height: 41px;
+  height: 37px;
   border-bottom: 1px solid #0073D1;
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     margin-top: 90px;
     width: 600px;
-    height: 30px;
+    height: 37px;
   `}
 `
 
@@ -121,7 +121,7 @@ const SearchInput = styled.input`
   height: 36px;
   border: 0;
   outline: none;
-  font-family: "adobe-caslon-pro", Helvetica, Arial, serif;
+  font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 26px;
   font-weight: 500;
   color: #00003C;
@@ -131,7 +131,7 @@ const SearchInput = styled.input`
 
   ${props => props.theme.breakpointsVerbose.aboveDesktop`
     width: 570px;
-    height: 26px;
+    height: 34px;
   `}
 `
 
@@ -139,7 +139,7 @@ class BaseSearchModal extends React.Component {
   constructor (props) {
     super(props)
 
-    this.state = { searchTerm: '' }
+    this.state = { searchTerm: props.initialSearchTerm || '' }
 
     this.updateSearchTerm = this.updateSearchTerm.bind(this)
     this.clearSearchInput = this.clearSearchInput.bind(this)
@@ -148,7 +148,12 @@ class BaseSearchModal extends React.Component {
   }
 
   updateSearchTerm = (event) => {
-    this.setState({ searchTerm: event.target.value })
+    const { saveInitialSearchTerm } = this.props
+
+    const currentSearchTerm = event.target.value
+
+    this.setState({ searchTerm: currentSearchTerm })
+    saveInitialSearchTerm(currentSearchTerm)
   }
 
   clearSearchInput = () => {
@@ -195,9 +200,9 @@ class BaseSearchModal extends React.Component {
               autoFocus />
             <SearchClearWrapperDiv onClick={this.clearSearchInput}>
               <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
-                <g fill="none" fill-rule="evenodd">
+                <g fill="none" fillRule="evenodd">
                   <circle cx="7" cy="7" r="7" fill="#DCD6CE" />
-                  <path stroke="#FFF" stroke-linecap="square" stroke-width="2" d="M9.898 4.142l-5.796 6.216M4.102 4.142l5.796 6.216" />
+                  <path stroke="#FFF" strokeLinecap="square" strokeWidth="2" d="M9.898 4.142l-5.796 6.216M4.102 4.142l5.796 6.216" />
                 </g>
               </svg>
             </SearchClearWrapperDiv>
@@ -206,7 +211,7 @@ class BaseSearchModal extends React.Component {
           <SearchSuggestionsDiv>Find it fast! Try: rainbow, stripe, neon, sparkle, comfy…</SearchSuggestionsDiv>
           <SearchExitWrapperDiv onClick={() => exitSearch()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
-              <g fill="none" fill-rule="evenodd" stroke="#0073D1">
+              <g fill="none" fillRule="evenodd" stroke="#0073D1">
                 <path d="M1.37 1.841a.442.442 0 0 0-.002.628l12.69 12.69a.439.439 0 0 0 .628 0 .442.442 0 0 0 .001-.628L1.997 1.84a.439.439 0 0 0-.628 0z" />
                 <path d="M1.37 15.159a.442.442 0 0 0 .627 0l12.69-12.69a.439.439 0 0 0 0-.628.442.442 0 0 0-.628 0L1.369 14.53a.439.439 0 0 0 0 .628z" />
               </g>
@@ -222,6 +227,8 @@ class BaseSearchModal extends React.Component {
 }
 
 BaseSearchModal.propTypes = {
+  initialSearchTerm: PropTypes.string,
+  saveInitialSearchTerm: PropTypes.func,
   exitSearch: PropTypes.func,
   submitSearch: PropTypes.func
 }
