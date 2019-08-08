@@ -23,8 +23,14 @@ class BaseContentfulTout extends Component {
     let defaultShopHeader = null
     if (searchTerm) {
       let searchTitle = `You searched ‘${searchTerm}’`
-      if (!productsFound) { searchTitle = `Aw, shucks! 0 results for your search ‘${searchTerm}.’` }
-      defaultShopHeader = <h1 className='default-shop-header-title default-shop-header-title-search'>{searchTitle}</h1>
+      let searchClasses = 'default-shop-header-title default-shop-header-title-search'
+
+      if (!productsFound) {
+        searchTitle = `Aw, shucks! 0 results for your search ‘${searchTerm}.’`
+        searchClasses += ' default-shop-header-title-search-empty'
+      }
+
+      defaultShopHeader = <h1 className={searchClasses}>{searchTitle}</h1>
     } else if (displayTitle) {
       defaultShopHeader = <h1 className='default-shop-header-title'>{displayTitle}</h1>
     }

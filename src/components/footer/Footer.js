@@ -43,7 +43,7 @@ const BaseFooter = ({
               </li>
             </ul>
           </FlexCol>
-          <FlexCol gutter='15px' mobile={{width: 2}} desktop={{width: 3}}>
+          <FlexCol gutter='15px' mobile={{ width: 2 }} desktop={{ width: 3 }}>
             <H5>SUPPORT</H5>
             <ul>
               <li>
