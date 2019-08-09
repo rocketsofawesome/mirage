@@ -86,7 +86,6 @@ const OutfitSizePicker = styled(({
         border-bottom: none;
       }
     `}
-
   }
 `
 
