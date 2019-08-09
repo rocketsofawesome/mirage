@@ -125,6 +125,11 @@ const animated = css`
 
 const BaseLogo = styled(UnstyledBaseLogo)`
   width: 100%;
+
+  ${props => props.theme.breakpointsVerbose.belowTablet`
+    width: 160px;
+  `}
+
   max-width: ${props => props.maxWidth};
   ${props => props.animated ? animated : ''}
 `
