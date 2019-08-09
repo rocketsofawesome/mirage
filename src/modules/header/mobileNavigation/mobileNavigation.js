@@ -67,7 +67,7 @@ export class BaseMobileNavigation extends React.Component {
             <span className='screenReader'>Home</span>
             <Logo />
           </MobileLinkTop>
-          <div>
+          <div className='icons-search-bag'>
             {showSearch &&
               <a onClick={clickSearch}>
                 <SearchIcon />
@@ -229,11 +229,16 @@ const MobileNavigation = styled(BaseMobileNavigation)`
     margin-bottom: 0;
   }
   .divider-search {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 
     font-size: 2rem;
     color: #0073D1;
+  }
+
+  .icons-search-bag {
+    width: 50px;
+    margin-left: 10px;
   }
 `
 

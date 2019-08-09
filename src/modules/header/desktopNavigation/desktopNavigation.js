@@ -188,8 +188,8 @@ export class BaseDesktopNavigation extends React.Component {
                       highlightable={highlightable}
                       target='https://news.rocketsofawesome.com/'
                       renderLink={renderLink}>
-                        Blog
-                      </HeaderLink>
+                      Blog
+                    </HeaderLink>
                   </li>
                 }
                 {showSearch &&

@@ -191,11 +191,19 @@ const ContentfulTout = styled(BaseContentfulTout)`
           font-size: 24px;
         `}
       }
-
-      .default-shop-header-title-search-empty {
-        margin-bottom: 500px;
-      }
     }
+  }
+
+  .subtitle-search {
+    margin-top: 16px;
+
+    font-family: ${props => props.theme.fonts.headerFont};
+    font-size: 16px;
+    font-weight: 500;
+    height: 21px;
+    line-height: 23px;
+
+    margin-bottom: 500px;
   }
 `
 

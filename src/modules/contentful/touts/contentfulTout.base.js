@@ -21,6 +21,7 @@ class BaseContentfulTout extends Component {
 
     // If searchTerm or displayTitle present, do not render hero image
     let defaultShopHeader = null
+    let searchSubtitle = null
     if (searchTerm) {
       // Truncate long search term
       let refinedSearchTerm = searchTerm
@@ -31,6 +32,7 @@ class BaseContentfulTout extends Component {
 
       if (!productsFound) {
         searchTitle = `Aw, shucks! 0 results for your search ‘${refinedSearchTerm}’`
+        searchSubtitle = <h2 className='subtitle-search'>Please try again!</h2>
         searchClasses += ' default-shop-header-title-search-empty'
       }
 
@@ -44,6 +46,7 @@ class BaseContentfulTout extends Component {
         <div className='default-shop-header'>
           <div className='default-shop-header-title-wrapper'>
             {defaultShopHeader}
+            {searchTerm && searchSubtitle}
           </div>
         </div>
       )
