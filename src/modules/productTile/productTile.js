@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { P, QuickAdd, ColorsInterface } from 'SRC'
+import { P, QuickAdd } from 'SRC'
 import BaseProductTile from './productTile.base'
 
 const ProductTile = styled(BaseProductTile)`

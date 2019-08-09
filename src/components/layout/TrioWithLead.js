@@ -3,10 +3,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import {
   FlexRow,
-  FlexCol,
-  Default,
-  Tablet,
-  ContentfulTout
+  FlexCol
 } from 'SRC'
 
 class BaseTrioWithLead extends React.Component {

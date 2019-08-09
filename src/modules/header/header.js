@@ -5,8 +5,6 @@ import styled, { withTheme } from 'styled-components'
 import {
   Default,
   DesktopNavigation,
-  Laptop,
-  Mobile,
   MobileNavigation
 } from 'SRC'
 

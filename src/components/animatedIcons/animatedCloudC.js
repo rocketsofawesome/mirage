@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 import React from 'react'
-import PropTypes from 'prop-types'
 import { TimelineLite, Linear } from 'gsap/umd/TweenMax'
 
 import { CloudCProps } from './defaultProps'

@@ -130,7 +130,6 @@ const PaymentRequestButton = styled(PaymentRequestForm)`
   margin: 0 auto;
   margin-bottom: 20px;
 `
-
 const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   delete props.light
   delete props.uppercase
@@ -153,6 +152,29 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   letter-spacing: 0.5;
   font-family: ${props => props.theme.fonts.primaryFont};
 `
+
+const Striked = styled.span`
+  color: ${props => props.theme.colors.gray6};
+  text-decoration: line-through;
+  margin-right: 5px;
+`
+
+const OrderTotal = ({ order }) => {
+  let originalAmount = null
+  if (parseFloat(order.subtotal) > parseFloat(order.total)) {
+    originalAmount = <Striked>{accounting.formatMoney(order.subtotal)}</Striked>
+  }
+
+  return (
+    <Total>
+      TOTAL
+      <Em>
+        {originalAmount}
+        {accounting.formatMoney(order.total)}
+      </Em>
+    </Total>
+  )
+}
 
 class BaseCartSidebar extends React.Component {
   constructor (props) {
@@ -256,7 +278,8 @@ class BaseCartSidebar extends React.Component {
               updateBag={updateBag}
               removeItem={removeItem}
               renderProductLink={renderProductLink}
-              segmentCartViewed={segmentCartViewed} />
+              segmentCartViewed={segmentCartViewed}
+            />
           </div>
           <Footer>
             <CouponCodeWrapper
@@ -267,15 +290,17 @@ class BaseCartSidebar extends React.Component {
               applyPromotion={applyPromotion}
               removePromotion={removePromotion}
               appliedPromotion={appliedPromotion}
-              showBorder={false} />
-            <Total>TOTAL<Em>{accounting.formatMoney(order.total)}</Em></Total>
+              showBorder={false}
+            />
+            <OrderTotal order={order} />
             {parseFloat(order.total) > 0 && <Elements>
               <PaymentRequestButton
                 currentUserEmail={currentUserEmail}
                 order={order}
                 setShippingAddress={setShippingAddress}
                 submitCheckout={this.submitCheckout}
-                onClickPaymentRequestButton={onClickPaymentRequestButton} />
+                onClickPaymentRequestButton={onClickPaymentRequestButton}
+              />
             </Elements>}
             <ButtonLink
               renderLink={renderLink}

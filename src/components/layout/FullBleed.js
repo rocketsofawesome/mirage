@@ -1,5 +1,4 @@
 import React from 'react'
-import styled from 'styled-components'
 import { FlexRow, FlexCol } from 'SRC'
 
 const FullBleed = ({className, ...props}) => {
@@ -18,10 +17,6 @@ const FullBleed = ({className, ...props}) => {
         {...props}/>
     </FlexRow>
   )
-}
-
-FullBleed.propTypes = {
-
 }
 
 export default FullBleed
