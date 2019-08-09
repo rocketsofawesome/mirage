@@ -154,7 +154,7 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
 `
 
 const Striked = styled.span`
-  color: ${props => props.theme.colors.gray6};
+  color: ${props => props.theme.colors.loading};
   text-decoration: line-through;
   margin-right: 5px;
 `
