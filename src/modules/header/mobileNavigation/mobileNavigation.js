@@ -237,8 +237,7 @@ const MobileNavigation = styled(BaseMobileNavigation)`
   }
 
   .icons-search-bag {
-    width: 50px;
-    margin-left: 10px;
+    width: 70px;
   }
 `
 
