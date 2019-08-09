@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import BaseCheckboxButton from './CheckboxButton.base'
 
@@ -33,10 +32,6 @@ const CheckboxButton = styled(BaseCheckboxButton)`
     color: ${props => props.theme.colors.white};
   }
 `
-
-CheckboxButton.propTypes = {
-
-}
 
 /** @component */
 export default CheckboxButton

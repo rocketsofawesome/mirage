@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import MediaQuery from 'react-responsive'
 
 import { ContentfulRenderer, InlineImage } from 'SRC'
 
@@ -9,9 +8,7 @@ export default class ContentfulResponsiveImages extends Component {
     const {
       children,
       className,
-      fields: { defaultImage, mobileImage },
-      mediaQueryValues,
-      theme
+      fields: { defaultImage, mobileImage }
     } = this.props
     if (mobileImage) {
       return (
@@ -45,7 +42,5 @@ ContentfulResponsiveImages.propTypes = {
   fields: PropTypes.shape({
     defaultImage: PropTypes.object,
     mobileImage: PropTypes.object
-  }),
-  mediaQueryValues: PropTypes.object,
-  theme: PropTypes.object
+  })
 }

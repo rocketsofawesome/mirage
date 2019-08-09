@@ -9,11 +9,10 @@ const BaseCheckboxButton = ({className, input, children}) => {
     </label>
   )
 }
-BaseCheckboxButton.defaultProps = {
 
-}
 BaseCheckboxButton.propTypes = {
-
+  children: PropTypes.node,
+  input: PropTypes.object.isRequired
 }
 
 export default BaseCheckboxButton
