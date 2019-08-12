@@ -61,7 +61,7 @@ export class BaseMobileNavigation extends React.Component {
         <MobileHeader>
           <BlueHamburger onClick={this.openDrawer} />
           <MobileLinkTop
-            style={{ marginBottom: '0' }}
+            className='link-home'
             href={homepageUrl}
             renderLink={renderLink}>
             <span className='screenReader'>Home</span>
@@ -216,10 +216,15 @@ export class BaseMobileNavigation extends React.Component {
 }
 
 const MobileNavigation = styled(BaseMobileNavigation)`
+  .link-home {
+    margin-bottom: 0;
+    padding: 0;
+  }
   .screenReader {
     font-size: 0;
   }
   ${Logo} {
+    padding: 0;
     max-width: 22.4rem;
   }
   ul ul {
@@ -229,15 +234,15 @@ const MobileNavigation = styled(BaseMobileNavigation)`
     margin-bottom: 0;
   }
   .divider-search {
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
 
     font-size: 2rem;
     color: #0073D1;
   }
 
   .icons-search-bag {
-    width: 70px;
+    width: 72px;
   }
 `
 
