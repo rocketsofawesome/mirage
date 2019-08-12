@@ -20,7 +20,7 @@ const SearchBarDiv = styled.div`
   background-color: #FFFFFF;
   overflow: hidden;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     height: 336px;
   `}
 `
@@ -39,7 +39,7 @@ const SearchOverlayImage = styled.img`
   margin: 17px auto 0 auto;
   display: block;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     margin: 30px auto 0 auto;
   `}
 `
@@ -53,7 +53,7 @@ const SearchExitWrapperDiv = styled.div`
   top: 0;
   right: 0;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     top: 53px;
     right: calc(50% - 300px - 10%);
   `}
@@ -63,7 +63,7 @@ const SearchExitWrapperDiv = styled.div`
     bottom: 0;
     left: 0;
 
-    ${props => props.theme.breakpointsVerbose.aboveDesktop`
+    ${props => props.theme.breakpointsVerbose.aboveTabletMax`
       top: 10px;
       left: 10px;
     `}
@@ -80,7 +80,7 @@ const SearchSuggestionsDiv = styled.div`
   text-align: center;
   color: #00003C;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     height: 21px;
     width: 565px;
     margin-top: 15px;
@@ -94,7 +94,7 @@ const SearchForm = styled.form`
   height: 37px;
   border-bottom: 1px solid #0073D1;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     margin-top: 90px;
     width: 600px;
     height: 37px;
@@ -110,7 +110,7 @@ const SearchClearWrapperDiv = styled.div`
   > svg {
     margin-left: 10px;
 
-    ${props => props.theme.breakpointsVerbose.aboveDesktop`
+    ${props => props.theme.breakpointsVerbose.aboveTabletMax`
       margin-bottom: 10px;
     `}
   }
@@ -129,7 +129,7 @@ const SearchInput = styled.input`
   padding: 0;
   margin: 0;
 
-  ${props => props.theme.breakpointsVerbose.aboveDesktop`
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     width: 570px;
     height: 34px;
   `}
