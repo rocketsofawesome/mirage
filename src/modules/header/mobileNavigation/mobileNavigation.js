@@ -67,7 +67,7 @@ export class BaseMobileNavigation extends React.Component {
             <span className='screenReader'>Home</span>
             <Logo />
           </MobileLinkTop>
-          <div className='icons-search-bag'>
+          <div className={showSearch && 'icons-search-bag'}>
             {showSearch &&
               <a onClick={clickSearch}>
                 <SearchIcon />
