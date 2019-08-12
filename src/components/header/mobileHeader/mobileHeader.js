@@ -10,7 +10,7 @@ const MobileHeader = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 1.5rem;
+  padding: 0 0.5rem 0 1rem;
   box-sizing: border-box;
 `
 

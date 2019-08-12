@@ -127,7 +127,7 @@ const BaseLogo = styled(UnstyledBaseLogo)`
   width: 100%;
 
   ${props => props.theme.breakpointsVerbose.belowTablet`
-    width: 160px;
+    width: 215px;
   `}
 
   max-width: ${props => props.maxWidth};
