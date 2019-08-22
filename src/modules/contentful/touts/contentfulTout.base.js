@@ -3,7 +3,8 @@ import PropTypes from 'prop-types'
 
 import {
   ContentfulRenderer,
-  MirageMarkdown
+  MirageMarkdown,
+  NavyLink
 } from 'SRC'
 
 class BaseContentfulTout extends Component {
@@ -12,6 +13,7 @@ class BaseContentfulTout extends Component {
       displayTitle,
       searchTerm,
       productsFound,
+      emptySearchSuggestions,
       fields: {
         description,
         heroButtons,
@@ -22,6 +24,7 @@ class BaseContentfulTout extends Component {
     // If searchTerm or displayTitle present, do not render hero image
     let defaultShopHeader = null
     let searchSubtitle = null
+    let searchSuggestions = null
     if (searchTerm) {
       // Truncate long search term
       let refinedSearchTerm = searchTerm
@@ -29,10 +32,12 @@ class BaseContentfulTout extends Component {
 
       let searchTitle = `You searched ‘${refinedSearchTerm}’`
       let searchClasses = 'default-shop-header-title default-shop-header-title-search'
-
       if (!productsFound) {
         searchTitle = `Aw, shucks! 0 results for your search ‘${refinedSearchTerm}’`
-        searchSubtitle = <h2 className='subtitle-search'>Please try again!</h2>
+        searchSubtitle = <h2 className='subtitle-search'>But look at what’s trending!</h2>
+        searchSuggestions = emptySearchSuggestions.map((link, id) => {
+          return <li className='suggestion-item'><NavyLink className='suggestion-link' href={link.target} underline={false}>{link.text}<span className='empty-search-emoji'>{link.emoji}</span></NavyLink></li>
+        })
         searchClasses += ' default-shop-header-title-search-empty'
       }
 
@@ -47,6 +52,7 @@ class BaseContentfulTout extends Component {
           <div className='default-shop-header-title-wrapper'>
             {defaultShopHeader}
             {searchTerm && searchSubtitle}
+            {searchTerm && <ul className='suggestion-search'>{searchSuggestions}</ul>}
           </div>
         </div>
       )
@@ -101,6 +107,7 @@ BaseContentfulTout.propTypes = {
   displayTitle: PropTypes.string,
   searchTerm: PropTypes.string,
   productsFound: PropTypes.bool,
+  emptySearchSuggestions: PropTypes.array,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
     backgroundTransparency: PropTypes.number,
@@ -112,6 +119,7 @@ BaseContentfulTout.propTypes = {
 }
 
 BaseContentfulTout.defaultProps = {
+  emptySearchSuggestions: [],
   renderToutLink: ({
     className,
     children,

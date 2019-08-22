@@ -14,7 +14,6 @@ export class BaseMainLayout extends React.Component {
   }
 
   setMargin = (height) => {
-    // console.log(height)
     const { contentTopMargin } = this.state
     const currentMargin = parseFloat(contentTopMargin.replace('rem', ''))
     if (height !== currentMargin) {
