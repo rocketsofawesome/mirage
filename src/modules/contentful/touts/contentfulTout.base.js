@@ -47,12 +47,16 @@ class BaseContentfulTout extends Component {
     }
 
     if (defaultShopHeader) {
+      let defaultShopHeaderClasses = 'default-shop-header'
+      // Reduce height if no search results
+      if (searchTerm && !productsFound) { defaultShopHeaderClasses += ' default-shop-header-search-empty' }
+
       return (
-        <div className='default-shop-header'>
+        <div className={defaultShopHeaderClasses}>
           <div className='default-shop-header-title-wrapper'>
             {defaultShopHeader}
             {searchTerm && searchSubtitle}
-            {searchTerm && <ul className='suggestion-search'>{searchSuggestions}</ul>}
+            {searchTerm && !productsFound && <ul className='suggestion-search'>{searchSuggestions}</ul>}
           </div>
         </div>
       )
