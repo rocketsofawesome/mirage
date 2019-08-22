@@ -134,6 +134,10 @@ const ContentfulTout = styled(BaseContentfulTout)`
     width: 100%;
     height: inherit;
 
+    &.default-shop-header-search-empty {
+      height: 600px;
+    }
+
     color: ${props => props.fields.textColor ? props.fields.textColor : props.defaultColor};
     background-color: #FFFFFF;
     background-size: 100% auto;
