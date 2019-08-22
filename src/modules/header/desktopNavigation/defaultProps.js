@@ -85,6 +85,6 @@ export const accountLinks = {
 }
 
 export const renderLink = (inProps) => {
-  const {target, children, ...props } = inProps
+  const { target, children, ...props } = inProps
   return (<a href={target} {...props}>{children}</a>)
 }
