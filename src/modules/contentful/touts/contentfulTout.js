@@ -203,7 +203,32 @@ const ContentfulTout = styled(BaseContentfulTout)`
     height: 21px;
     line-height: 23px;
 
-    margin-bottom: 500px;
+    margin-bottom: 32px;
+  }
+
+  .suggestion-search {
+    margin-top: 56px;
+    margin-bottom: 480px;
+    padding-left: 0;
+    list-style: none;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .suggestion-item {
+    height: 28px;
+  }
+
+  .suggestion-link {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  .empty-search-emoji {
+    text-decoration: none;
+    display: inline-block;
+
+    &::before { content: '\00a0'; }
   }
 `
 
