@@ -52,7 +52,7 @@ class BaseContentfulTout extends Component {
           <div className='default-shop-header-title-wrapper'>
             {defaultShopHeader}
             {searchTerm && searchSubtitle}
-            {searchTerm && <ul className='suggestion-search'>{searchSuggestions}</ul>}
+            {searchTerm && !productsFound && <ul className='suggestion-search'>{searchSuggestions}</ul>}
           </div>
         </div>
       )
