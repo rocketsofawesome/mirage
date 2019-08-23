@@ -124,10 +124,14 @@ const animated = css`
 `
 
 const BaseLogo = styled(UnstyledBaseLogo)`
-  width: 100%;
+  width: 168px;
 
-  ${props => props.theme.breakpointsVerbose.belowTablet`
+  ${props => props.theme.breakpointsVerbose.abovePhone`
     width: 215px;
+  `}
+
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    width: 100%;
   `}
 
   max-width: ${props => props.maxWidth};
