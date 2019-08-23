@@ -1,9 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-/**
- * Main title component
- */
 const H1 = styled.h1`
   ${props => props.center ? 'text-align: center;' : ''}
   letter-spacing: .1rem;
@@ -54,5 +51,4 @@ H1.defaultProps = {
   }
 }
 
-/** @component */
 export default H1

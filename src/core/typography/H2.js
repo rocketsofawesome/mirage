@@ -1,9 +1,7 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-/** @component */
 const H2 = styled.h2`
-
     ${props => props.center ? 'text-align: center;' : ''}
     letter-spacing: .05rem;
     text-transform: ${props => props.lowercase
@@ -12,7 +10,10 @@ const H2 = styled.h2`
     color: ${props => props.theme.colors.navy};
 
     font-family: ${props => props.theme.fonts.headerFont};
-    font-size: ${props => props.fontSize};
+    font-size: ${props => props.fontSizes.mobile};
+    ${props => props.theme.breakpointsVerbose.aboveTablet`
+      font-size: ${props => props.fontSizes.desktop};
+    `}
     font-weight: 500;
     line-height: 1.0625;
     margin: ${props => props.margin};
@@ -36,9 +37,11 @@ H2.propTypes = {
 }
 
 H2.defaultProps = {
-  fontSize: '3.2rem',
+  fontSizes: {
+    desktop: '3.2rem',
+    mobile: '2.4rem'
+  },
   margin: '2.6rem 0'
 }
 
-/** @component */
 export default H2
