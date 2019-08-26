@@ -49,7 +49,7 @@ export class BaseROASlider extends Component {
   }
 
   render() {
-    const { className, images, renderLink, target, ...props } = this.props
+    const { className, images, renderLink, target, lazyLoad } = this.props
     const Link = renderLink
     return (
       <div
@@ -71,7 +71,7 @@ export class BaseROASlider extends Component {
                     transformation: 'plp_product_shot',
                     format: 'jpg'
                   })}
-                  {...props}
+                  lazyLoad={lazyLoad}
                    />
                 </Link>
               )
