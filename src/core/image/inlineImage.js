@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Sizes from './sizes.base'
 import SourceSet from './sourceSet.base'
 
-const InlineImage = ({alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...props }) => {
+const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...props }) => {
     let srcSet =  undefined
     if (inSources) {
       srcSet = new SourceSet(inSources).toString()
