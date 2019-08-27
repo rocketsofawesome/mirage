@@ -101,8 +101,6 @@ class BaseTextCarousel extends React.Component {
 }
 
 const TextCarousel = styled(BaseTextCarousel)`
-  margin-top: 4rem;
-  margin-bottom: 2rem;
   ${props => props.theme.media.tablet`
     margin-top: 6rem;
   `}
