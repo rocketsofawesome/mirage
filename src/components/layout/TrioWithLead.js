@@ -78,6 +78,14 @@ ${props => props.theme.breakpointsVerbose.aboveTablet`
   }
   .roa-trio-with-lead-wrapper {
     position: relative;
+
+    a {
+      margin-bottom: 30px;
+
+      ${props => props.theme.breakpointsVerbose.aboveDesktop`
+        margin-bottom: 38px;
+      `}
+    }
   }
 `
 
