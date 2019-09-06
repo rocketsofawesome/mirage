@@ -15,7 +15,7 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
           <P>Colors</P>
           {colorways.map((colorway) => {
             const src = cloudinary.url(colorway.shots[0].cloudinary_key,{
-              transformation: 'swatch',
+              transformation: 'swatch_v2',
               crop: 'scale',
               quality: 100,
               width: 40,
