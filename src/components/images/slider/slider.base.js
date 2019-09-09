@@ -32,7 +32,15 @@ export class BaseROASlider extends Component {
           transitioning: true
         })
       },
-      afterChange: () => { this.setState({ transitioning: false }) }
+      afterChange: () => {
+        this.setState({ transitioning: false })
+
+        // Let mobile user tap once (instead of twice), to navigate to PDP
+        // TODO: Wait for official fix, or move away from React Slider
+        if (this.slider && this.slider.innerSlider) {
+          this.slider.innerSlider.clickable = true
+        }
+      }
     }
 
     if (props.sliderLazyLoad) {
