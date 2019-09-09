@@ -7,6 +7,12 @@ import { InlineImage, Chevron } from 'SRC'
 export class BaseROASlider extends Component {
   constructor (props) {
     super(props)
+
+    this.state = {
+      currentSlideId: 0,
+      transitioning: false
+    }
+
     this.config = {
       infinite: true,
       arrows: false,
@@ -19,8 +25,16 @@ export class BaseROASlider extends Component {
             dotsClass: 'dots'
           }
         }
-      ]
+      ],
+      beforeChange: (currentSlideId, nextSlideId) => {
+        this.setState({
+          currentSlideId: nextSlideId,
+          transitioning: true
+        })
+      },
+      afterChange: () => { this.setState({ transitioning: false }) }
     }
+
     if (props.sliderLazyLoad) {
       this.config.lazyLoad = props.sliderLazyLoad
     }
@@ -33,7 +47,7 @@ export class BaseROASlider extends Component {
   }
 
   onMouseLeave = ()  => {
-      this.slider && this.slider.slickGoTo(0, true)
+    this.slider && this.slider.slickGoTo(0, true)
   }
 
   setSlider = (element) => {
@@ -46,6 +60,11 @@ export class BaseROASlider extends Component {
 
   nextSlide = () => {
     this.slider && this.slider.slickNext()
+  }
+
+  isVisible = (currentSlideId) => {
+    if (this.state.currentSlideId === currentSlideId) { return true }
+    return this.state.transitioning
   }
 
   render() {
@@ -65,25 +84,28 @@ export class BaseROASlider extends Component {
               return (
                 <Link target={target}>
                   <InlineImage
-                  key={index}
-                  alt={image.alt}
-                  src={cloudinary.url(image.src, {
-                    transformation: 'plp_product_shot',
-                    format: 'jpg'
-                  })}
-                  lazyLoad={lazyLoad}
-                   />
+                    key={index}
+                    isVisible={this.isVisible(index)}
+                    alt={image.alt}
+                    src={cloudinary.url(image.src, {
+                      transformation: 'plp_product_shot',
+                      format: 'jpg'
+                    })}
+                    lazyLoad={lazyLoad}
+                  />
                 </Link>
               )
             } else {
               return (
                 <InlineImage
                   key={index}
+                  isVisible={this.isVisible(index)}
                   alt={image.alt}
                   src={cloudinary.url(image.src, {
                     transformation: 'plp_product_shot',
                     format: 'jpg'
-                  })} />
+                  })}
+                />
               )
             }
           })}
