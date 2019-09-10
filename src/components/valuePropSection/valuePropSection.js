@@ -142,7 +142,7 @@ const ValuePropSection = styled(BaseValuePropSection)`
   }
   ${H1} {
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   ${P} {
     text-align: center;
@@ -161,7 +161,6 @@ const ValuePropSection = styled(BaseValuePropSection)`
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 60px;
   }
   .innerFlexDiv {
     margin-bottom: 60px;
