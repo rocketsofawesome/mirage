@@ -141,6 +141,12 @@ const ValuePropSection = styled(BaseValuePropSection)`
     @media (max-width: 958px) { font-size: 3.4rem; }
   }
   ${H1} {
+    font-size: 24px;
+
+    ${props => props.theme.breakpointsVerbose.aboveTablet`
+      font-size: 32px;
+    `}
+
     margin: 0 auto;
     margin-bottom: 40px;
   }
