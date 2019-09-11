@@ -170,6 +170,18 @@ const ValuePropSection = styled(BaseValuePropSection)`
   }
   .innerFlexDiv {
     margin-bottom: 60px;
+
+    /* Remove margin-bottom for last section above phone */
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Remove margin-bottom for last 3 sections above tablet */
+    ${props => props.theme.breakpointsVerbose.aboveTabletMax`
+      &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+      }
+    `}
   }
   .textTitle {
     font-weight: bold;
