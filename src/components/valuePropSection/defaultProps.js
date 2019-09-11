@@ -2,7 +2,7 @@ export default {
   "header": "What makes us awesome",
   "sections": [
     {
-      "title": "Bold, Bright Unique Style",
+      "title": "Bold, Bright, Unique Styles",
       "body": "Magical kids' clothes you can't find anywhere else – designed by us",
       "svg": "LightningSvg"
     },
