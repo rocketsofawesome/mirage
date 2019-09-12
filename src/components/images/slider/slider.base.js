@@ -19,7 +19,14 @@ export class BaseROASlider extends Component {
             dotsClass: 'dots'
           }
         }
-      ]
+      ],
+      afterChange: () => {
+        // Let mobile user tap once (instead of twice), to navigate to PDP
+        // TODO: Wait for official fix, or move away from React Slider
+        if (this.slider && this.slider.innerSlider) {
+          this.slider.innerSlider.clickable = true
+        }
+      }
     }
     if (props.sliderLazyLoad) {
       this.config.lazyLoad = props.sliderLazyLoad
