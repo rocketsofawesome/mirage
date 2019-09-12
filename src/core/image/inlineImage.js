@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Sizes from './sizes.base'
 import SourceSet from './sourceSet.base'
 
-const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, isVisible, ...props }) => {
+const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, ...props }) => {
     let srcSet =  undefined
     if (inSources) {
       srcSet = new SourceSet(inSources).toString()
@@ -13,10 +13,6 @@ const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, is
     if (inSizes) {
       sizesStr = new Sizes(inSizes).toString()
     }
-
-    let visibility = 'visible'
-    if (!isVisible) { visibility = 'hidden' }
-
     if (!lazyLoad) {
       return (
         <img
@@ -24,7 +20,6 @@ const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, is
           src={src}
           srcSet={srcSet}
           sizes={sizesStr}
-          style={{ visibility: visibility }}
           {...props} />
       )
     } else {
@@ -34,21 +29,18 @@ const InlineImage = ({ alt, src, sizes: inSizes, srcSet: inSources, lazyLoad, is
           data-src={src}
           srcSet={srcSet}
           sizes={sizesStr}
-          style={{ visibility: visibility }}
           {...props} />
       )
     }
 }
 
 InlineImage.defaultProps = {
-  alt: '',
-  isVisible: true
+  alt: ''
 }
 
 InlineImage.propTypes = {
   alt: PropTypes.string.isRequired,
   lazyLoad: PropTypes.string,
-  isVisible: PropTypes.bool,
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
   srcSet: PropTypes.oneOfType([
