@@ -122,7 +122,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 .c9 {
-  width: 100%;
+  width: 168px;
   max-width: 36rem;
 }
 
@@ -446,6 +446,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   margin-left: 0.5rem;
 }
 
+.c0 .divider-search {
+  font-size: 2rem;
+  color: #0073D1;
+}
+
 .c11 {
   overflow: hidden;
   padding-top: 4rem;
@@ -628,6 +633,18 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 
   .c22 svg > g text {
     font-size: .7rem;
+  }
+}
+
+@media (min-width:321px) {
+  .c9 {
+    width: 215px;
+  }
+}
+
+@media (min-width:768px) {
+  .c9 {
+    width: 100%;
   }
 }
 
@@ -852,6 +869,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     highlightable={false}
     homepageUrl="https://rocketsofawesome.com"
     renderLink={[Function]}
+    showSearch={false}
   >
     <styled.header
       className="c0"

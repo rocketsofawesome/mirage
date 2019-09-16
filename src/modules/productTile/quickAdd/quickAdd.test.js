@@ -1,5 +1,4 @@
 import React from 'react'
-import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { QuickAdd } from 'SRC'
@@ -22,12 +21,6 @@ describe('(Styled Component) QuickAdd', () => {
   }
 
   test('matching the snapshot', () => {
-    expect(createQuickAdd())
-    .toMatchSnapshot()
-  })
-
-  test('shouldn\'t render if show prop isn\'t passed', () => {
-    expect(createQuickAdd())
-
+    expect(createQuickAdd()).toMatchSnapshot()
   })
 })

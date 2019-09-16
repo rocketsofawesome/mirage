@@ -63,7 +63,7 @@ const ProgressBar = styled(BaseProgressBar)`
   border-radius: 50px;
   background-color: rgba(0, 0, 0, 0.05);
   overflow: hidden;
-  margin-top: 20px;
+  margin-top: 12px;
   position: relative;
 `
 

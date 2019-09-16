@@ -24,7 +24,7 @@ describe('(Styled Component) PersistantPricing', () => {
   })
 
   test('renders the children', () => {
-    const child = <span>Example</span>
+    const child = <span key="message1">Example</span>
     expect(createPersistantPricing({children: [child]}).find('span').length).toEqual(1)
   })
 })
