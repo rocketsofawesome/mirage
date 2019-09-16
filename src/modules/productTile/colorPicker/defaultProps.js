@@ -21,6 +21,7 @@ export const colorways = [
           "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb"
         }
       ],
+      "swatch_cloudinary_key": null,
       "skus": [
         {
           "id": 19579,
@@ -105,6 +106,7 @@ export const colorways = [
           "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu"
         }
       ],
+      "swatch_cloudinary_key": null,
       "skus": [
         {
           "id": 19587,

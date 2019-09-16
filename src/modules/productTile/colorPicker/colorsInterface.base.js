@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import cloudinary from 'SRC/services/cloudinary'
 import { ColorPicker, Desktop, Default, P } from 'SRC'
+import { swatchUrl } from 'SRC'
 
 const ColorsInterface = ({ className, colorways, productId, onChange, selected }) => {
   if (colorways && colorways.length > 1) {
@@ -14,12 +14,10 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
         <Desktop display='flex' >
           <P>Colors</P>
           {colorways.map((colorway) => {
-            const src = cloudinary.url(colorway.shots[0].cloudinary_key,{
-              transformation: 'swatch_v2',
+            const src = swatchUrl(colorway, {
               crop: 'scale',
               quality: 100,
-              width: 40,
-              format: 'jpg'
+              width: 40
             })
             const input = {
               value: colorway.code,
