@@ -1,4 +1,4 @@
-<!-- ```js
+```js
   <StripeProviderWrapper>
     <CartSidebar
       shouldShowCartSidebar={true}
@@ -116,4 +116,4 @@
     />
   </StripeProviderWrapper>
 ```
--->
+

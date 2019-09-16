@@ -8,7 +8,7 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
   if (colorways && colorways.length > 1) {
     return (
       <div className={className}>
-        <Default targetDisplay='belowDesktop'>
+        <Default displayTarget='belowDesktop'>
           <P>{colorways.length} colors available</P>
         </Default>
         <Desktop display='flex' >

@@ -82,13 +82,12 @@ const Chevron = styled(BaseChevron)`
 `
 
 const validateDirection = (props, propName, componentName) => {
-  const directions = ['down', 'left', 'right', 'up']
-  const propDirections = Object.keys(props).filter((key) => {
-    return directions.includes(key)
-  })
-  if (!props.ignoreErrors && (propDirections.length > 1)) {
+  const trueDirections = ['down', 'left', 'right', 'up'].filter(
+    direction => props[direction] === true
+  )
+  if (!props.ignoreErrors && (trueDirections.length > 1)) {
     return new Error(`More than one direction prop was supplied to ${componentName}, only use one.`)
-  } else if (!props.ignoreErrors && propDirections.length === 0) {
+  } else if (!props.ignoreErrors && trueDirections.length === 0) {
     return new Error(`No direction prop was supplied to ${componentName}, please select one.`)
   }
   return null
