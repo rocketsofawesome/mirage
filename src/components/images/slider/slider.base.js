@@ -70,16 +70,15 @@ export class BaseROASlider extends Component {
           {images.map((image, index) => {
             if (renderLink && target) {
               return (
-                <Link target={target}>
+                <Link target={target} key={index}>
                   <InlineImage
-                  key={index}
-                  alt={image.alt}
-                  src={cloudinary.url(image.src, {
-                    transformation: 'plp_product_shot',
-                    format: 'jpg'
-                  })}
-                  lazyLoad={lazyLoad}
-                   />
+                    alt={image.alt}
+                    src={cloudinary.url(image.src, {
+                      transformation: 'plp_product_shot',
+                      format: 'jpg'
+                    })}
+                    lazyLoad={lazyLoad}
+                  />
                 </Link>
               )
             } else {
@@ -90,7 +89,8 @@ export class BaseROASlider extends Component {
                   src={cloudinary.url(image.src, {
                     transformation: 'plp_product_shot',
                     format: 'jpg'
-                  })} />
+                  })}
+                />
               )
             }
           })}

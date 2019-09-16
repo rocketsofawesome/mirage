@@ -1,11 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
+.c0 .link-home {
+  margin-bottom: 0;
+  padding: 0;
+}
+
 .c0 .screenReader {
   font-size: 0;
 }
 
 .c0 .c1 {
+  padding: 0;
   max-width: 22.4rem;
 }
 
@@ -18,13 +24,20 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
 }
 
 .c0 .divider-search {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 7px;
+  margin-right: 7px;
+  font-size: 2rem;
+  color: #0073D1;
+}
+
+.c0 .icons-search-bag {
+  width: 72px;
 }
 
 <BaseMobileNavigation
   className="c0"
   drawerPosition="fixed"
   homepageUrl="https://rocketsofawesome.com"
+  showSearch={false}
 />
 `;

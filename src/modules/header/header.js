@@ -35,6 +35,7 @@ class BaseHeader extends Component {
       className,
       desktopProps,
       mobileProps,
+      setMargin,
       ...props
     } = this.props
 

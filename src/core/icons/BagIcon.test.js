@@ -16,14 +16,6 @@ describe('(Styled Component) BagIcon', () => {
     expect(createBagIcon())
     .toMatchSnapshot()
   })
-
-  test('setting the width', () => {
-    const width = '6rem'
-    expect(createBagIcon({width: width}))
-    .toHaveStyleRule({
-      width: width
-    })
-  })
 })
 
 describe('(Component) BaseBagIcon', () => {

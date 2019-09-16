@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import accounting from 'accounting'
 
 import {
-  H3, H4, ButtonLink, ProgressBar, FreeShippingText,
+  H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
   CouponCodeWrapper, P
 } from 'SRC'
@@ -239,7 +239,7 @@ class BaseCartSidebar extends React.Component {
     if (!shouldShowCartSidebar) return null
 
     const isCheckoutButtonDisabled = subTotal === 0
-    const percentage = 100 - Math.min(parseFloat(subTotal) / 50 * 100, 100)
+    const percentage = 100 - (itemsInBag / 4 * 100)
 
     return (
       <div className={className}>
@@ -256,20 +256,10 @@ class BaseCartSidebar extends React.Component {
               <CloseXDiv onClick={hideCartSidebar}>
                 <XIcon width='15px' stroke={'#00003C'} />
               </CloseXDiv>
-              {pricingTestOn &&
-                <RiskReducerContainer>
-                  <P fontSize='1.3rem'>
-                    <strong>
-                      you deserve a little awesome every day
-                      <span role='img' aria-label='hearts'>💕</span>
-                    </strong>
-                  </P>
-                  <P fontSize='1.2rem'>Buy 4+ items, get 20% off. always. automatically.</P>
-                </RiskReducerContainer>
-              }
               <FreeShippingDiv>
-                <FreeShippingText {...this.props} />
+                <ProgressBarText itemsInBag={itemsInBag} />
                 <ProgressBar percentage={percentage} />
+                <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>Keep Shopping</CheckoutLink>
               </FreeShippingDiv>
             </CartSidebarHeader>
             <PersistentCartProductList
@@ -312,7 +302,6 @@ class BaseCartSidebar extends React.Component {
               onClick={onClickCheckout}>
               CHECKOUT
             </ButtonLink>
-            <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>Continue Shopping</CheckoutLink>
           </Footer>
         </CartSidebarContainer>
       </div>

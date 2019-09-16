@@ -8,7 +8,7 @@ import { productWithVariants } from '../defaultProps'
 const { mountWithTheme } = global
 
 const defaultProps = {
-  variants: [...productWithVariants.product.skus],
+  variants: [...productWithVariants.product.colorways[0].skus],
   quickAdd: productWithVariants.quickAdd
 }
 
