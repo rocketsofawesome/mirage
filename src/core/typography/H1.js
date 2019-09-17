@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const H1 = styled.h1`
   ${props => props.center ? 'text-align: center;' : ''}
-  letter-spacing: .1rem;
+  letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
 
@@ -23,6 +23,16 @@ const H1 = styled.h1`
 `
 
 H1.propTypes = {
+  letterSpacing: PropTypes.string,
+  fontSizes: PropTypes.shape({
+    desktop: PropTypes.string,
+    mobile: PropTypes.string
+  }),
+  lineHeights: PropTypes.shape({
+    desktop: PropTypes.number,
+    mobile: PropTypes.number
+  }),
+  margin: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.array,
     PropTypes.string,
@@ -40,15 +50,16 @@ H1.propTypes = {
 }
 
 H1.defaultProps = {
+  letterSpacing: '.1rem',
   fontSizes: {
     desktop: '4.2rem',
     mobile: '3.2rem'
   },
-  margin: '5.5rem 0',
   lineHeights: {
     desktop: 1.0476190476190477,
     mobile: 1.3
-  }
+  },
+  margin: '5.5rem 0'
 }
 
 export default H1
