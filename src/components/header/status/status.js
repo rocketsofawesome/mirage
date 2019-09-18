@@ -88,7 +88,10 @@ const Status = styled(({className, children, dismissable}) => {
     align-items: center;
     justify-content: center;
     ${pStyle}
-    font-size: ${props => props.fontSize};
+    font-size: 1.1rem;
+    ${props => props.theme.breakpointsVerbose.aboveTablet`
+      font-size: ${props => props.fontSize};
+    `}
   }
   ${props => setTypeStyle(props)}
 `
