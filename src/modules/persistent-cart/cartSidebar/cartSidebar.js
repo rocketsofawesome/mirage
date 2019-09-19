@@ -7,7 +7,7 @@ import accounting from 'accounting'
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper, P
+  CouponCodeWrapper
 } from 'SRC'
 
 const Overlay = styled.div`
@@ -66,12 +66,8 @@ const TitleContainer = styled.div`
 const YourBagTitle = styled(H3)`
   text-align: center;
   margin-top: 0;
+  margin-bottom: 1.6rem;
   display: inline-block;
-`
-
-const RiskReducerContainer = styled.div`
-  text-transform: uppercase;
-  text-align: center;
 `
 
 const CloseXDiv = styled.div`
@@ -131,12 +127,6 @@ const PaymentRequestButton = styled(PaymentRequestForm)`
   margin-bottom: 20px;
 `
 const CheckoutLink = styled(({ renderLink, children, ...props }) => {
-  delete props.light
-  delete props.uppercase
-  delete props.underline
-  delete props.fontFamily
-  delete props.fontSize
-  delete props.fontWeight
   if (renderLink) {
     return renderLink({...props, children: children})
   } else {
@@ -147,10 +137,11 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   display: block;
   vertical-align: middle;
   cursor: pointer;
-  color: ${props => props.theme.colors.rocketBlue};
+  color: ${props => props.theme.colors.navy};
   font-size: 14px;
-  letter-spacing: 0.5;
+  letter-spacing: 0;
   font-family: ${props => props.theme.fonts.primaryFont};
+  text-decoration: underline;
 `
 
 const Striked = styled.span`
@@ -231,7 +222,6 @@ class BaseCartSidebar extends React.Component {
       removePromotion,
       appliedPromotion,
       renderProductLink,
-      pricingTestOn,
       currentUserEmail,
       onClickCheckout,
       onClickPaymentRequestButton
@@ -257,9 +247,12 @@ class BaseCartSidebar extends React.Component {
                 <XIcon width='15px' stroke={'#00003C'} />
               </CloseXDiv>
               <FreeShippingDiv>
-                <ProgressBarText itemsInBag={itemsInBag} />
+                <ProgressBarText
+                  order={order}
+                  itemsInBag={itemsInBag}
+                />
                 <ProgressBar percentage={percentage} />
-                <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>Keep Shopping</CheckoutLink>
+                <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>KEEP SHOPPING</CheckoutLink>
               </FreeShippingDiv>
             </CartSidebarHeader>
             <PersistentCartProductList
@@ -331,7 +324,6 @@ BaseCartSidebar.propTypes = {
   removeItem: PropTypes.func,
   segmentCartViewed: PropTypes.func,
   lineItems: PropTypes.array,
-  pricingTestOn: PropTypes.bool,
   promotion: PropTypes.object,
   promotionLoading: PropTypes.bool,
   promoHasBeenApplied: PropTypes.bool,
@@ -346,7 +338,6 @@ BaseCartSidebar.propTypes = {
 BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
   renderProductLink: renderLink,
-  pricingTestOn: true
 }
 
 const CartSidebar = styled(BaseCartSidebar)`

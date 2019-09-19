@@ -6,7 +6,9 @@ import { PersistentCartProduct } from 'SRC'
 
 const BagListBody = styled.main`
   border-bottom: 1px solid ${props => props.theme.colors.gray4};
+  border-top: 1px solid ${props => props.theme.colors.gray4};
   flex-grow: 1;
+  margin-top: 6px;
 `
 
 const BagListWrapper = styled.div`
