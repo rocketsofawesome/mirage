@@ -2,12 +2,24 @@
 
 exports[`(Styled Component) GrayLogo matching the snapshot 1`] = `
 .c1 {
-  width: 100%;
+  width: 168px;
   max-width: 36rem;
 }
 
 .c0 {
   fill: #D5D5D5;
+}
+
+@media (min-width:321px) {
+  .c1 {
+    width: 215px;
+  }
+}
+
+@media (min-width:768px) {
+  .c1 {
+    width: 100%;
+  }
 }
 
 <Styled(Styled(UnstyledBaseLogo))>

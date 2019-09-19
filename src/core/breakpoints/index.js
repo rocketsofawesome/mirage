@@ -41,6 +41,7 @@ Laptop.defaultProps = {
 }
 
 const Tablet = styled(({element, children, ...props}) => {
+  delete props.laptopDisplay
   return React.createElement(element, props, children)
 })`
 display: none;
@@ -64,6 +65,7 @@ Tablet.defaultProps = {
 }
 
 const TabletMax = styled(({element, children, ...props}) => {
+  delete props.laptopDisplay
   return React.createElement(element, props, children)
 })`
   display: none;

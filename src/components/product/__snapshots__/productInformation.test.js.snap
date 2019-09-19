@@ -23,7 +23,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   text-transform: uppercase;
   color: #00003C;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: 500;
   line-height: 1.0625;
   margin: 2.6rem 0;
@@ -89,6 +89,12 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   }
 }
 
+@media (min-width:768px) {
+  .c6 {
+    font-size: 3.2rem;
+  }
+}
+
 <Styled(Component)
   description="Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy."
   header="Weekends Are For Fun Outfit"
@@ -138,12 +144,16 @@ exports[`() ProductInformation matching the snapshot 1`] = `
         </h1>
       </styled.h1>
       <styled.h2
-        fontSize="3.2rem"
+        fontSizes={
+          Object {
+            "desktop": "3.2rem",
+            "mobile": "2.4rem",
+          }
+        }
         margin="2.6rem 0"
       >
         <h2
           className="c5 c6"
-          fontSize="3.2rem"
         >
           $55
         </h2>

@@ -1,5 +1,5 @@
 export * from './progressBar'
-export * from './freeShippingText'
+export * from './progressBarText'
 export * from './persistentCartProduct'
 export * from './persistentCartProductList'
 export * from './cartSidebar'

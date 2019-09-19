@@ -353,14 +353,14 @@ exports[`() Gallery matching the snapshot 1`] = `
           "aboveDesktop": "(min-width: 1440px)",
           "aboveLaptop": "(min-width: 1024px)",
           "aboveMobileNav": "(min-width: 889px)",
-          "abovePhone": "(min-width: 320px)",
+          "abovePhone": "(min-width: 321px)",
           "abovePhoneMax": "(min-width: 414px)",
           "aboveTablet": "(min-width: 768px)",
           "aboveTabletMax": "(min-width: 960px)",
           "belowDesktop": "(max-width: 1439px)",
           "belowLaptop": "(max-width: 1023px)",
           "belowMobileNav": "(max-width: 888px)",
-          "belowPhone": "(max-width: 319px)",
+          "belowPhone": "(max-width: 320px)",
           "belowPhoneMax": "(max-width: 413px)",
           "belowTablet": "(max-width: 767px)",
           "belowTabletMax": "(max-width: 959px)",
@@ -457,7 +457,7 @@ exports[`() Gallery matching the snapshot 1`] = `
           "desktop": 1440,
           "laptop": 1024,
           "mobileNav": 889,
-          "phone": 320,
+          "phone": 321,
           "phoneMax": 414,
           "tablet": 768,
           "tabletMax": 960,
@@ -508,14 +508,14 @@ exports[`() Gallery matching the snapshot 1`] = `
             "aboveDesktop": "(min-width: 1440px)",
             "aboveLaptop": "(min-width: 1024px)",
             "aboveMobileNav": "(min-width: 889px)",
-            "abovePhone": "(min-width: 320px)",
+            "abovePhone": "(min-width: 321px)",
             "abovePhoneMax": "(min-width: 414px)",
             "aboveTablet": "(min-width: 768px)",
             "aboveTabletMax": "(min-width: 960px)",
             "belowDesktop": "(max-width: 1439px)",
             "belowLaptop": "(max-width: 1023px)",
             "belowMobileNav": "(max-width: 888px)",
-            "belowPhone": "(max-width: 319px)",
+            "belowPhone": "(max-width: 320px)",
             "belowPhoneMax": "(max-width: 413px)",
             "belowTablet": "(max-width: 767px)",
             "belowTabletMax": "(max-width: 959px)",
@@ -612,7 +612,7 @@ exports[`() Gallery matching the snapshot 1`] = `
             "desktop": 1440,
             "laptop": 1024,
             "mobileNav": 889,
-            "phone": 320,
+            "phone": 321,
             "phoneMax": 414,
             "tablet": 768,
             "tabletMax": 960,
@@ -838,7 +838,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short on model"
@@ -846,12 +845,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -861,7 +854,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short on model"
@@ -869,12 +861,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/hhdgxghcpc17xho1pngc.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -884,7 +870,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee on model"
@@ -892,12 +877,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/q5l42uiqm8orjia4j14m.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -907,7 +886,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee front"
@@ -915,12 +893,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/rfxx1bcmwy7zych1pmof.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -930,7 +902,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Fuzzy Tiger Tee detail"
@@ -938,12 +909,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/jhpde0cdhl11lu9fa41o.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -953,7 +918,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short front"
@@ -961,12 +925,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/xrpiecxqwmiso3acxucc.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                         <InlineImage
@@ -976,7 +934,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                           onClick={[Function]}
                           role="button"
                           src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
-                          visible={true}
                         >
                           <img
                             alt="Cool Down Active Short back"
@@ -984,12 +941,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                             onClick={[Function]}
                             role="button"
                             src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/wmwxd0bxeavdtgt0uqzx.jpg"
-                            style={
-                              Object {
-                                "visibility": "visible",
-                              }
-                            }
-                            visible={true}
                           />
                         </InlineImage>
                       </div>
@@ -1712,7 +1663,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                     <Slider
                       afterChange={[Function]}
                       arrows={false}
-                      beforeChange={[Function]}
                       className="roa-slider"
                       infinite={true}
                       lazyLoad="progressive"
@@ -1737,7 +1687,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                         arrows={false}
                         autoplay={false}
                         autoplaySpeed={3000}
-                        beforeChange={[Function]}
+                        beforeChange={null}
                         centerMode={false}
                         centerPadding="50px"
                         className="roa-slider"
@@ -1904,7 +1854,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                                         }
                                       }
                                       tabIndex={-1}
-                                      visible={true}
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
@@ -1916,7 +1865,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           }
                                         }
                                         tabIndex={-1}
-                                        visible={true}
                                       />
                                     </InlineImage>
                                   </div>
@@ -2032,7 +1980,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                                         }
                                       }
                                       tabIndex={-1}
-                                      visible={true}
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
@@ -2044,7 +1991,6 @@ exports[`() Gallery matching the snapshot 1`] = `
                                           }
                                         }
                                         tabIndex={-1}
-                                        visible={true}
                                       />
                                     </InlineImage>
                                   </div>
