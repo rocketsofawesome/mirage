@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import {P} from 'SRC'
 
 const Container = styled.div`
-  padding: 0 34px;
+  padding: 0 20px;
 `
 
 const Message = ({ order, itemsInBag }) => {
