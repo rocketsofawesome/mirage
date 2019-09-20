@@ -7,7 +7,7 @@ import accounting from 'accounting'
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper
+  CouponCodeWrapper, EmptyCart
 } from 'SRC'
 
 const Overlay = styled.div`
@@ -255,14 +255,18 @@ class BaseCartSidebar extends React.Component {
                 <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>KEEP SHOPPING</CheckoutLink>
               </FreeShippingDiv>
             </CartSidebarHeader>
-            <PersistentCartProductList
-              lineItems={lineItems}
-              hideCartSidebar={hideCartSidebar}
-              updateBag={updateBag}
-              removeItem={removeItem}
-              renderProductLink={renderProductLink}
-              segmentCartViewed={segmentCartViewed}
-            />
+            {lineItems.length > 0 ?
+              <PersistentCartProductList
+                lineItems={lineItems}
+                hideCartSidebar={hideCartSidebar}
+                updateBag={updateBag}
+                removeItem={removeItem}
+                renderProductLink={renderProductLink}
+                segmentCartViewed={segmentCartViewed}
+              />
+              :
+              <EmptyCart />
+            }
           </div>
           <Footer>
             <CouponCodeWrapper
@@ -309,7 +313,7 @@ const renderLink = (inProps) => {
 
 BaseCartSidebar.propTypes = {
   shouldShowCartSidebar: PropTypes.bool,
-  className: PropTypes.object,
+  className: PropTypes.string,
   hideCartSidebar: PropTypes.func,
   submitBag: PropTypes.func,
   subTotal: PropTypes.number,
