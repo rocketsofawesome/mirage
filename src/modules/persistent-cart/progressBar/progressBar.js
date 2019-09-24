@@ -19,7 +19,7 @@ const CloudContainer = styled.div`
   position: absolute;
   top: 50%;
   left: ${props => props.percentage}%;
-  transform: translate(-50%, -50%);
+  transform: translate(${props => props.percentage < 100 ? '-50%' : '-100%'}, -50%);
   z-index: 3;
   transition: all 300ms ease-out;
   opacity: ${props => (props.percentage === 0 || props.percentage === 100) ? 0 : 1};

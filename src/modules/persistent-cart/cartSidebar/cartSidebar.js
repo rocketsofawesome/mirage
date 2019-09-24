@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import accounting from 'accounting'
 
 import {
-  H3, H4, ButtonLink, ProgressBar, ProgressBarText,
+  P, H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
   CouponCodeWrapper, EmptyCart
 } from 'SRC'
@@ -76,7 +76,7 @@ const CloseXDiv = styled.div`
   right: 30px;
 `
 
-const FreeShippingDiv = styled.div`
+const ProgressBarContainer = styled.div`
   text-align: center;
 `
 
@@ -148,6 +148,10 @@ const Striked = styled.span`
   color: ${props => props.theme.colors.loading};
   text-decoration: line-through;
   margin-right: 5px;
+`
+
+const FreeShippingContainer = styled.div`
+  padding-top: 10px;
 `
 
 const OrderTotal = ({ order }) => {
@@ -246,14 +250,14 @@ class BaseCartSidebar extends React.Component {
               <CloseXDiv onClick={hideCartSidebar}>
                 <XIcon width='15px' stroke={'#00003C'} />
               </CloseXDiv>
-              <FreeShippingDiv>
+              <ProgressBarContainer>
                 <ProgressBarText
                   order={order}
                   itemsInBag={itemsInBag}
                 />
                 <ProgressBar percentage={percentage} />
                 <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>KEEP SHOPPING</CheckoutLink>
-              </FreeShippingDiv>
+              </ProgressBarContainer>
             </CartSidebarHeader>
             {lineItems.length > 0 ?
               <PersistentCartProductList
@@ -299,6 +303,9 @@ class BaseCartSidebar extends React.Component {
               onClick={onClickCheckout}>
               CHECKOUT
             </ButtonLink>
+            <FreeShippingContainer>
+              <P fontSize='14px'>Free shipping on orders of $50+</P>
+            </FreeShippingContainer>
           </Footer>
         </CartSidebarContainer>
       </div>

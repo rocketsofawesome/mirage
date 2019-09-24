@@ -6,7 +6,7 @@ import PropTypes from 'prop-types'
  * thank you Rainner Lins :)
  */
 class ConfettiParticle {
-  constructor({ context, width, height, color }) {
+  constructor({ context, width, height, color, speed }) {
     this.context = context;
     this.width = width;
     this.height = height;
@@ -15,7 +15,7 @@ class ConfettiParticle {
     this.tilt = 0;
     this.tiltAngleIncrement = 0;
     this.tiltAngle = 0;
-    this.particleSpeed = 1;
+    this.particleSpeed = speed;
     this.waveAngle = 0;
     this.x = 0;
     this.y = 0;
@@ -87,14 +87,17 @@ class Confetti extends React.Component {
   // create confetti particles
   createParticles() {
     const context = this.getContext()
-    const { width, height, particleCount } = this.props
+    const { width, height, particleCount, particleSpeed } = this.props
 
     this.particles = [];
 
     for (let i = 0; i < particleCount; ++i) {
       const index = Math.floor(Math.random() * colorOptions.length)
       const color = colorOptions[index]
-      this.particles.push( new ConfettiParticle({ context, width, height, color }) );
+      const particle = new ConfettiParticle({
+        context, width, height, color, speed: particleSpeed
+      })
+      this.particles.push(particle);
     }
   }
 
@@ -136,11 +139,13 @@ Confetti.propTypes = {
   width: PropTypes.number.isRequired,
   height: PropTypes.number.isRequired,
   particleCount: PropTypes.number,
+  particleSpeed: PropTypes.number,
   onComplete: PropTypes.func
 }
 
 Confetti.defaultProps = {
   particleCount: 300,
+  particleSpeed: 1,
   onComplete: () => null
 }
 
