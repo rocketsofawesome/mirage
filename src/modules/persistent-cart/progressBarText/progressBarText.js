@@ -27,7 +27,7 @@ const Message = ({ order, itemsInBag }) => {
       <P>
         <span role="img" aria-label="confetti">🎉 </span>{' '}
         Yay! You'll save <strong>{accounting.formatMoney(savings)}</strong> on
-        your order!{' '}
+        this order of 4+ items.{' '}
         <span role="img" aria-label="confetti">🎉 </span>
       </P>
     )
