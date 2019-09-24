@@ -26,7 +26,7 @@ const Message = ({ order, itemsInBag }) => {
     return (
       <P>
         <span role="img" aria-label="confetti">🎉 </span>{' '}
-        Yay! You saved <strong>{accounting.formatMoney(savings)}</strong> on
+        Yay! You'll save <strong>{accounting.formatMoney(savings)}</strong> on
         your order!{' '}
         <span role="img" aria-label="confetti">🎉 </span>
       </P>
