@@ -67,12 +67,17 @@ const colorOptions = [
 class Confetti extends React.Component {
   constructor(props) {
     super(props)
-    this.canvasRef = React.createRef()
+    this.setCanvasRef = this.setCanvasRef.bind(this)
     this.animate = this.animate.bind(this)
+    this.setup = this.setup.bind(this)
   }
 
   componentDidMount() {
-    setTimeout(this.setup.bind(this), 500)
+    setTimeout(this.setup, 500)
+  }
+
+  setCanvasRef(canvas) {
+    this.canvas = canvas
   }
 
   componentWillUnmount() {
@@ -102,8 +107,7 @@ class Confetti extends React.Component {
   }
 
   getContext() {
-    const canvas = this.canvasRef.current
-    return canvas.getContext('2d')
+    return this.canvas.getContext('2d')
   }
 
   animate() {
@@ -130,7 +134,7 @@ class Confetti extends React.Component {
   render() {
     const { width, height } = this.props
     return (
-      <canvas ref={this.canvasRef} width={width} height={height}></canvas>
+      <canvas ref={this.setCanvasRef} width={width} height={height}></canvas>
     )
   }
 }
