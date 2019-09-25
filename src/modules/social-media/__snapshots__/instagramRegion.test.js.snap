@@ -197,6 +197,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
             "mobile": "3.2rem",
           }
         }
+        letterSpacing=".1rem"
         lineHeights={
           Object {
             "desktop": 1.0476190476190477,
@@ -208,6 +209,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         <h1
           aria-label="Find us @ rockets of awesome"
           className="c1 c2"
+          letterSpacing=".1rem"
         >
           Example Title
         </h1>

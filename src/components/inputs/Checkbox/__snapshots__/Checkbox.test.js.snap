@@ -34,17 +34,27 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
   margin-right: .9rem;
 }
 
-.c7 .showAnimation:focused + .c1 .c3 {
+.c7.c7 input:checked + .c1 .c3 {
+  fill: #0073D1;
+}
+
+.c7.c7 input:checked + .c1 .c5 {
+  stroke: #FFFFFF;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+}
+
+.c7.c7 .showAnimation:focused + .c1 .c3 {
   stroke-width: 40;
 }
 
-.c7 .showAnimation:checked + .c1 .c3 {
+.c7.c7 .showAnimation:checked + .c1 .c3 {
   -webkit-animation: dYFWVh 0.25s linear forwards;
   animation: dYFWVh 0.25s linear forwards;
-  fill: stroke:#0073D1;
+  fill: #0073D1;
 }
 
-.c7 .showAnimation:checked + .c1 .c5 {
+.c7.c7 .showAnimation:checked + .c1 .c5 {
   -webkit-animation: fqPGid 0.25s linear forwards;
   animation: fqPGid 0.25s linear forwards;
   stroke: #FFFFFF;
@@ -52,10 +62,9 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
   stroke-dashoffset: 0;
 }
 
-.c7 .showAnimation:not(:checked) + .c1 .c3 {
+.c7.c7 .showAnimation:not(:checked) + .c1 .c3 {
   -webkit-animation: hBmzvO 0.25s linear forwards;
   animation: hBmzvO 0.25s linear forwards;
-  stroke-width: 10;
   stroke-linecap: round;
   stroke-dashoffset: 200;
   fill: none;
@@ -180,7 +189,7 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   margin-right: .9rem;
 }
 
-.c0 {
+.c0.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -193,23 +202,33 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   font-weight: 400;
 }
 
-.c0 input {
+.c0.c0 input {
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.c0 .showAnimation:focused + .c2 .c4 {
+.c0.c0 input:checked + .c2 .c4 {
+  fill: #0073D1;
+}
+
+.c0.c0 input:checked + .c2 .c6 {
+  stroke: #FFFFFF;
+  stroke-dasharray: 200;
+  stroke-dashoffset: 0;
+}
+
+.c0.c0 .showAnimation:focused + .c2 .c4 {
   stroke-width: 40;
 }
 
-.c0 .showAnimation:checked + .c2 .c4 {
+.c0.c0 .showAnimation:checked + .c2 .c4 {
   -webkit-animation: dYFWVh 0.25s linear forwards;
   animation: dYFWVh 0.25s linear forwards;
-  fill: stroke:#0073D1;
+  fill: #0073D1;
 }
 
-.c0 .showAnimation:checked + .c2 .c6 {
+.c0.c0 .showAnimation:checked + .c2 .c6 {
   -webkit-animation: fqPGid 0.25s linear forwards;
   animation: fqPGid 0.25s linear forwards;
   stroke: #FFFFFF;
@@ -217,10 +236,9 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   stroke-dashoffset: 0;
 }
 
-.c0 .showAnimation:not(:checked) + .c2 .c4 {
+.c0.c0 .showAnimation:not(:checked) + .c2 .c4 {
   -webkit-animation: hBmzvO 0.25s linear forwards;
   animation: hBmzvO 0.25s linear forwards;
-  stroke-width: 10;
   stroke-linecap: round;
   stroke-dashoffset: 200;
   fill: none;

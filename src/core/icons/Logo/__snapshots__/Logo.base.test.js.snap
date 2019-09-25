@@ -73,8 +73,20 @@ exports[`(Base Component) UnstyledBaseLogo matching the snapsot 1`] = `
 
 exports[`(Component) BaseLogo matching the snapshot 1`] = `
 .c0 {
-  width: 100%;
+  width: 168px;
   max-width: 36rem;
+}
+
+@media (min-width:321px) {
+  .c0 {
+    width: 215px;
+  }
+}
+
+@media (min-width:768px) {
+  .c0 {
+    width: 100%;
+  }
 }
 
 <UnstyledBaseLogo

@@ -129,6 +129,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
             "mobile": "3.2rem",
           }
         }
+        letterSpacing=".1rem"
         lineHeights={
           Object {
             "desktop": 1.0476190476190477,
@@ -139,6 +140,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       >
         <h1
           className="c3 c4"
+          letterSpacing=".1rem"
         >
           Weekends Are For Fun Outfit
         </h1>

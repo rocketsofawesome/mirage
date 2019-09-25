@@ -79,6 +79,7 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
                   "mobile": "3.2rem",
                 }
               }
+              letterSpacing=".1rem"
               lineHeights={
                 Object {
                   "desktop": 1.0476190476190477,
@@ -89,6 +90,7 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
             >
               <h1
                 className="c1 c2"
+                letterSpacing=".1rem"
               >
                 <TextRenderer
                   key="text-1-3"
