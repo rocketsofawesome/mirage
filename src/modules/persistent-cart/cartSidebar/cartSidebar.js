@@ -7,7 +7,7 @@ import accounting from 'accounting'
 import {
   P, H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper, EmptyCart
+  CouponCodeWrapper, EmptyCart, NavyLink
 } from 'SRC'
 
 const Overlay = styled.div`
@@ -122,10 +122,8 @@ const Em = styled.em`
 
 const PaymentRequestButton = styled(PaymentRequestForm)`
   width: 100%;
-  max-width: 30rem;
-  margin: 0 auto;
-  margin-bottom: 20px;
 `
+
 const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   if (renderLink) {
     return renderLink({...props, children: children})
@@ -150,7 +148,7 @@ const Striked = styled.span`
   margin-right: 5px;
 `
 
-const FreeShippingContainer = styled.div`
+const Padding = styled.div`
   padding-top: 10px;
 `
 
@@ -170,6 +168,13 @@ const OrderTotal = ({ order }) => {
     </Total>
   )
 }
+
+const CheckoutButtonsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+`
 
 class BaseCartSidebar extends React.Component {
   constructor (props) {
@@ -284,28 +289,38 @@ class BaseCartSidebar extends React.Component {
               showBorder={false}
             />
             <OrderTotal order={order} />
-            {parseFloat(order.total) > 0 && <Elements>
-              <PaymentRequestButton
-                currentUserEmail={currentUserEmail}
-                order={order}
-                setShippingAddress={setShippingAddress}
-                submitCheckout={this.submitCheckout}
-                onClickPaymentRequestButton={onClickPaymentRequestButton}
-              />
-            </Elements>}
-            <ButtonLink
-              renderLink={renderLink}
-              target='/checkout'
-              width='100%'
-              maxWidth='30rem'
-              kind='blue'
-              disabled={isCheckoutButtonDisabled}
-              onClick={onClickCheckout}>
-              CHECKOUT
-            </ButtonLink>
-            <FreeShippingContainer>
+
+            <CheckoutButtonsContainer>
+              <ButtonLink
+                renderLink={renderLink}
+                target='/checkout'
+                width='100%'
+                maxWidth='30rem'
+                kind='blue'
+                disabled={isCheckoutButtonDisabled}
+                onClick={onClickCheckout}>
+                CHECKOUT
+              </ButtonLink>
+              {parseFloat(order.total) > 0 && <Elements>
+                <PaymentRequestButton
+                  currentUserEmail={currentUserEmail}
+                  order={order}
+                  setShippingAddress={setShippingAddress}
+                  submitCheckout={this.submitCheckout}
+                  onClickPaymentRequestButton={onClickPaymentRequestButton}
+                />
+              </Elements>}
+            </CheckoutButtonsContainer>
+
+            <Padding>
+              <NavyLink target='/checkout' renderLink={renderLink}>
+                Is this a gift?
+              </NavyLink>
+            </Padding>
+
+            <Padding>
               <P fontSize='14px'>Free shipping on orders of $50+</P>
-            </FreeShippingContainer>
+            </Padding>
           </Footer>
         </CartSidebarContainer>
       </div>
