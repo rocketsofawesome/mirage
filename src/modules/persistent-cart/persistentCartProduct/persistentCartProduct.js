@@ -144,8 +144,8 @@ class BaseProduct extends React.Component {
     return (
       <div className={className}>
         <Thumbnail>
-          <ImageLink renderLink={renderLink} target={`/products/${item.slug}-${item.colorway_slug}`} onClick={hideCartSidebar}>
-            <img alt={item.description} src={this._getVariantShot()} />
+          <ImageLink renderLink={renderLink} target={`/products/${item.slug}-${item.colorway_slug}`}>
+            <img alt={item.description} src={this._getVariantShot()} onClick={hideCartSidebar} />
           </ImageLink>
         </Thumbnail>
         <div>
