@@ -233,7 +233,8 @@ class BaseCartSidebar extends React.Component {
       renderProductLink,
       currentUserEmail,
       onClickCheckout,
-      onClickPaymentRequestButton
+      onClickPaymentRequestButton,
+      giftFeatureOn
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -311,12 +312,13 @@ class BaseCartSidebar extends React.Component {
                 />
               </Elements>}
             </CheckoutButtonsContainer>
-
-            <Padding>
-              <NavyLink target='/checkout' renderLink={renderLink}>
-                Is this a gift?
-              </NavyLink>
-            </Padding>
+            { giftFeatureOn &&
+              <Padding>
+                <NavyLink target='/checkout' renderLink={renderLink}>
+                  Is this a gift?
+                </NavyLink>
+              </Padding>
+            }
 
             <Padding>
               <P fontSize='14px'>Free shipping on orders of $50+</P>
@@ -358,12 +360,14 @@ BaseCartSidebar.propTypes = {
   removePromotion: PropTypes.func,
   appliedPromotion: PropTypes.object,
   renderProductLink: PropTypes.func,
-  currentUserEmail: PropTypes.string
+  currentUserEmail: PropTypes.string,
+  giftFeatureOn: PropTypes.bool
 }
 
 BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
   renderProductLink: renderLink,
+  giftFeatureOn: false
 }
 
 const CartSidebar = styled(BaseCartSidebar)`
