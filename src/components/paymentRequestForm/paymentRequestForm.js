@@ -1,7 +1,9 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
-
 import { PaymentRequestButtonElement, injectStripe } from 'react-stripe-elements'
+
+import { P } from 'SRC'
 
 const buildDisplayItems = (order, pending) => {
   let displayItems = [
@@ -28,6 +30,11 @@ const buildDisplayItems = (order, pending) => {
 
   return displayItems
 }
+
+const OrContainer = styled(P)`
+  margin: 0 10px;
+`
+
 export class PaymentRequestForm extends React.Component {
   constructor (props) {
     super(props)
@@ -126,21 +133,28 @@ export class PaymentRequestForm extends React.Component {
   }
 
   render () {
-    return this.state.canMakePayment ? (
-      <PaymentRequestButtonElement
-        paymentRequest={this.state.paymentRequest}
-        className={this.props.className}
-        onClick={this.props.onClickPaymentRequestButton}
-        style={{
-          // For more details on how to style the Payment Request Button, see:
-          // https://stripe.com/docs/elements/payment-request-button#styling-the-element
-          paymentRequestButton: {
-            theme: 'dark',
-            height: '50px'
-          }
-        }}
-      />
-    ) : null
+    if (!this.state.canMakePayment) {
+      return null
+    }
+
+    return (
+      <React.Fragment>
+        <OrContainer>OR</OrContainer>
+        <PaymentRequestButtonElement
+          paymentRequest={this.state.paymentRequest}
+          className={this.props.className}
+          onClick={this.props.onClickPaymentRequestButton}
+          style={{
+            // For more details on how to style the Payment Request Button, see:
+            // https://stripe.com/docs/elements/payment-request-button#styling-the-element
+            paymentRequestButton: {
+              theme: 'dark',
+              height: '50px'
+            }
+          }}
+        />
+      </React.Fragment>
+    )
   }
 }
 

@@ -1,10 +1,10 @@
-<!-- ```js
+```js
   <StripeProviderWrapper>
     <CartSidebar
       shouldShowCartSidebar={true}
       hideCartSidebar={() => {}}
       submitBag={() => { console.log('submit bag') }}
-      subTotal={"22.5"}
+      subTotal={22.5}
       itemsInBag={4}
       order={{
         applied_coupon_codes: [],
@@ -48,4 +48,4 @@
     />
   </StripeProviderWrapper>
 ```
- -->
+
