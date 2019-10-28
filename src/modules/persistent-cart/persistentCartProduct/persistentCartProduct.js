@@ -38,8 +38,9 @@ const ImageLink = styled(({ renderLink, children, ...props }) => {
   delete props.fontFamily
   delete props.fontSize
   delete props.fontWeight
+
   if (renderLink) {
-    return renderLink({...props, children: children})
+    return renderLink({ ...props, children: children })
   } else {
     return (<a {...props}>{children}</a>)
   }
@@ -143,8 +144,8 @@ class BaseProduct extends React.Component {
 
     return (
       <div className={className}>
-        <Thumbnail>
-          <ImageLink renderLink={renderLink} target={`/products/${item.slug}-${item.colorway_slug}`} onClick={hideCartSidebar}>
+        <Thumbnail onClick={hideCartSidebar}>
+          <ImageLink renderLink={renderLink} target={`/products/${item.slug}-${item.colorway_slug}`}>
             <img alt={item.description} src={this._getVariantShot()} />
           </ImageLink>
         </Thumbnail>
@@ -181,7 +182,8 @@ class BaseProduct extends React.Component {
 }
 
 const renderLink = (inProps) => {
-  const {target, children, ...props } = inProps
+  const { target, children, ...props } = inProps
+
   return (<a href={target} {...props}>{children}</a>)
 }
 
