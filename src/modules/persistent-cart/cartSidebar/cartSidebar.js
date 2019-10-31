@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import accounting from 'accounting'
 
 import {
-  P, H3, H4, ButtonLink, ProgressBar, ProgressBarText,
+  H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
   CouponCodeWrapper, EmptyCart, NavyLink
 } from 'SRC'
@@ -142,6 +142,22 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   text-decoration: underline;
 `
 
+const GiftLink = styled(({ renderLink, children, ...props }) => {
+  if (renderLink) {
+    return renderLink({...props, children: children})
+  } else {
+    return (<a {...props}>{children}</a>)
+  }
+})`
+  cursor: pointer;
+  color: ${props => props.theme.colors.navy};
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: ${props => props.theme.fonts.primaryFont};
+  text-decoration: underline;
+  line-height: 2.1rem;
+`
+
 const Striked = styled.span`
   color: ${props => props.theme.colors.loading};
   text-decoration: line-through;
@@ -149,7 +165,7 @@ const Striked = styled.span`
 `
 
 const Padding = styled.div`
-  padding-top: 10px;
+  padding-top: 13px;
 `
 
 const OrderTotal = ({ order }) => {
@@ -314,15 +330,11 @@ class BaseCartSidebar extends React.Component {
             </CheckoutButtonsContainer>
             { giftFeatureOn &&
               <Padding>
-                <NavyLink target='/checkout' renderLink={renderLink}>
+                <GiftLink target='/checkout' renderLink={renderLink}>
                   Is this a gift?
-                </NavyLink>
+                </GiftLink>
               </Padding>
             }
-
-            <Padding>
-              <P fontSize='14px'>Free shipping on orders of $50+</P>
-            </Padding>
           </Footer>
         </CartSidebarContainer>
       </div>
