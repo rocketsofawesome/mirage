@@ -7,7 +7,7 @@ import accounting from 'accounting'
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper, EmptyCart, NavyLink
+  CouponCodeWrapper, EmptyCart
 } from 'SRC'
 
 const Overlay = styled.div`

@@ -35,6 +35,12 @@ const OrContainer = styled(P)`
   margin: 0 10px;
 `
 
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  min-width: 55%;
+`
+
 export class PaymentRequestForm extends React.Component {
   constructor (props) {
     super(props)
@@ -138,7 +144,7 @@ export class PaymentRequestForm extends React.Component {
     }
 
     return (
-      <div>
+      <Wrapper>
         <OrContainer>OR</OrContainer>
         <PaymentRequestButtonElement
           paymentRequest={this.state.paymentRequest}
@@ -153,7 +159,7 @@ export class PaymentRequestForm extends React.Component {
             }
           }}
         />
-      </div>
+      </Wrapper>
     )
   }
 }
