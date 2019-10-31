@@ -138,7 +138,7 @@ export class PaymentRequestForm extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <div>
         <OrContainer>OR</OrContainer>
         <PaymentRequestButtonElement
           paymentRequest={this.state.paymentRequest}
@@ -153,7 +153,7 @@ export class PaymentRequestForm extends React.Component {
             }
           }}
         />
-      </React.Fragment>
+      </div>
     )
   }
 }
