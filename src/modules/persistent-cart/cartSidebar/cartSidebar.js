@@ -330,7 +330,7 @@ class BaseCartSidebar extends React.Component {
             </CheckoutButtonsContainer>
             { giftFeatureOn &&
               <Padding>
-                <GiftLink target='/checkout' renderLink={renderLink}>
+                <GiftLink target='/checkout?contains_gift=true' renderLink={renderLink}>
                   Is this a gift?
                 </GiftLink>
               </Padding>
