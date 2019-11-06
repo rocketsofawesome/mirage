@@ -15,13 +15,13 @@ const ProductTile = styled(BaseProductTile)`
     display: flex;
     flex: 1 1 100%;
   }
-  .roa-prodiuct-tile-details {
+  .roa-product-tile-details {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100%;
     text-decoration: none;
   }
-  .roa-prodiuct-tile-details ${P} {
+  .roa-product-tile-details ${P} {
     flex: 1 1 100%;
     &:first-of-type {
       margin-top: 1.7rem;
