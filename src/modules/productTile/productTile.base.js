@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ColorsInterface, P, ROASlider, QuickAdd, formatPrice } from 'SRC'
+import { ColorsInterface, P, ROASlider, QuickAdd, ProductPrice } from 'SRC'
 
 import { default as withSortedShots } from 'SRC/utils/shotSorter'
 
@@ -69,14 +69,14 @@ export default class ProductTile extends React.Component {
         </QuickAdd>
         { (renderLink && target) ?
           <Link
-            className='roa-prodiuct-tile-details'
+            className='roa-product-tile-details'
             target={target}>
             <P>{product.name}</P>
-            <P>{formatPrice(colorway.skus[0].price)}</P>
+            <ProductPrice colorway={colorway} />
           </Link> :
-          <div className='roa-prodiuct-tile-details'>
+          <div className='roa-product-tile-details'>
             <P>{product.name}</P>
-            <P>{formatPrice(colorway.skus[0].price)}</P>
+            <ProductPrice colorway={colorway} />
           </div>
         }
         <ColorsInterface
