@@ -2,6 +2,7 @@
   <StripeProviderWrapper>
     <CartSidebar
       shouldShowCartSidebar={true}
+      giftFeatureOn={true}
       hideCartSidebar={() => {}}
       submitBag={() => { console.log('submit bag') }}
       subTotal={22.5}
@@ -48,4 +49,3 @@
     />
   </StripeProviderWrapper>
 ```
-
