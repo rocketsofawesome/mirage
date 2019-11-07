@@ -151,11 +151,9 @@ const GiftLink = styled(({ renderLink, children, ...props }) => {
 })`
   cursor: pointer;
   color: ${props => props.theme.colors.navy};
-  font-size: 1.6rem;
-  font-weight: 500;
+  font-size: 1.4rem;
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: underline;
-  line-height: 2.1rem;
 `
 
 const Striked = styled.span`
@@ -331,7 +329,7 @@ class BaseCartSidebar extends React.Component {
             { giftFeatureOn &&
               <Padding>
                 <GiftLink target='/checkout?contains_gift=true' renderLink={renderLink}>
-                  Is this a gift?
+                  SEND AS A GIFT
                 </GiftLink>
               </Padding>
             }
