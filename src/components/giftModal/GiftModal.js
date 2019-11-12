@@ -56,8 +56,8 @@ const GiftModal = ({ onClose }) => (
       team.
     </Text>
     <Text>
-      And don't forget, buy 4+ items to get 2% off your
-      order!
+      And don't forget, buy 4+ items to get 20%
+      off your order!
     </Text>
   </Container>
 )
