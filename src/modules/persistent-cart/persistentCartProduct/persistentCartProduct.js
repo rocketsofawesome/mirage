@@ -61,6 +61,24 @@ const ItemName = styled.h4`
   text-transform: uppercase;
 `
 
+const ItemPrice = styled.h4`
+  max-width: 150px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: ${props => props.theme.fonts.headerFont};
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  color: ${props => props.theme.colors.navy};
+  text-transform: uppercase;
+
+  .strikeThruPrice {
+    color: ${props => props.theme.colors.loading};
+    text-decoration: line-through;
+  }
+`
+
 const Attribute = styled.div`
   margin-bottom: 4px;
 
@@ -152,11 +170,15 @@ class BaseProduct extends React.Component {
         <div>
           <ItemName>
             {item.name}
-            <span>
-              <br />
-              {accounting.formatMoney(item.price)}
-            </span>
           </ItemName>
+          {item.on_sale
+            ?
+            <ItemPrice>
+              <span className="strikeThruPrice">{accounting.formatMoney(item.original_price)}</span>
+              <span>&nbsp;&nbsp;{accounting.formatMoney(item.price)}</span>
+            </ItemPrice>
+            : <ItemPrice>{accounting.formatMoney(item.price)}</ItemPrice>
+          }
           <Attribute>
             Color<em>{item.color}</em>
           </Attribute>
