@@ -50,14 +50,12 @@ const GiftModal = ({ onClose }) => (
       alt='Kid opening a box'
     />
     <Text>
-      At checkout, leave a sweet note that'll show
-      on the packing slip. Need an exchange? It's
-      free and easy via our friendly customer support
-      team.
+      At checkout, leave a message that’ll show on the packing
+      slip without pricing. Need an exchange?
+      It’s free and easy via our friendly customer support team.
     </Text>
     <Text>
-      And don't forget, buy 4+ items to get 20%
-      off your order!
+      And don’t forget, buy 4+ items to get 20% off your order!
     </Text>
   </Container>
 )
