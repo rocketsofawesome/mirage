@@ -48,6 +48,7 @@ const ImageLink = styled(({ renderLink, children, ...props }) => {
   cursor: pointer;
 `
 
+// Note that updating this will also update FinalSale
 const ItemName = styled.h4`
   max-width: 150px;
   margin-top: 0;
@@ -59,6 +60,8 @@ const ItemName = styled.h4`
   letter-spacing: 0.5px;
   color: ${props => props.theme.colors.navy};
   text-transform: uppercase;
+`
+const FinalSale = styled(ItemName)`
 `
 
 const ItemPrice = styled.h4`
@@ -196,6 +199,7 @@ class BaseProduct extends React.Component {
               {this._getNotEnoughQuantityError()}
             </Attribute>
           }
+          {item.on_sale && <FinalSale>FINAL SALE</FinalSale>}
         </div>
         {this._showRemoveItem() && <Remove onClick={this._onRemoveItem} />}
       </div>
