@@ -1,10 +1,14 @@
 ### Product Tile with Multiple Variants
 ```js
-  <ProductTile {...require('./defaultProps').productWithVariants} />
+  <div style={{ width: '33.33%'}}>
+    <ProductTile {...require('./defaultProps').productWithVariants} />
+  </div>
 ```
 
 
 ### Product Tile with a Single Size
 ```js
-  <ProductTile {...require('./defaultProps').productWithOneSize} />
+  <div style={{ width: '33.33%'}}>
+    <ProductTile {...require('./defaultProps').productWithOneSize} />
+  </div>
 ```
