@@ -5,7 +5,7 @@ import BaseLink, {BaseStyles} from './Link.base'
 
 const BlueStyles = css`
   color:  ${props => props.theme.colors.rocketBlue};
-  &:active, &:focus, &:hover, &:visited {
+  &:active, &:focus, &:hover {
     color: ${props => props.theme.colors.navy};
     ${props => props.underline ?
       `border-bottom-color: ${props.theme.colors.navy};` :

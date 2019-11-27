@@ -5,23 +5,15 @@ import styled, { css } from 'styled-components'
 import { theme } from 'SRC/core/theme'
 
 const baseLinkStyles = css`
-transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
-
-text-decoration: none;
-text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'};
-
-border-bottom: 0.2rem solid;
-border-bottom-color: transparent;
-
-font-family: ${props => props.fontFamily};
-font-size: ${props => props.fontSize};
-font-weight: ${props => (props.light) ? '400' : props.fontWeight};
-font-style: ${props => props.fontStyle}
-&:hover {
+  transition: color 0.25s ease-in-out, border-bottom-color 0.25s ease-in-out;
   text-decoration: none;
-
-  pointer: cursor;
-}
+  text-transform: ${props => props.uppercase ? 'uppercase' : 'initial'};
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: ${props => props.fontFamily};
+  font-size: ${props => props.fontSize};
+  font-weight: ${props => props.light ? '400' : props.fontWeight};
+  font-style: ${props => props.fontStyle};
 `
 
 const BaseLink = styled(({ renderLink, children, ...props }) => {
