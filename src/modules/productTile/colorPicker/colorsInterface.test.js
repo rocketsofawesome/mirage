@@ -1,10 +1,7 @@
 import React from 'react'
-import { css } from 'styled-components'
 import 'jest-styled-components'
 
 import { ColorsInterface, ColorPicker } from 'SRC'
-import BaseColorsInterface from './colorsInterface.base'
-
 import { default as defaultProps } from './defaultProps'
 
 const { mountWithTheme } = global
@@ -24,29 +21,29 @@ describe('(Styled Component) ColorsInterface', () => {
   })
 })
 
-describe('(Base Component) BaseColorsInterface', () => {
-  const createBaseColorsInterface = (inProps) => {
+describe('(Base Component) ColorsInterface', () => {
+  const createColorsInterface = (inProps) => {
     const props = {
       ...defaultProps,
       ...inProps
     }
-    return mountWithTheme(<BaseColorsInterface {...props} />)
+    return mountWithTheme(<ColorsInterface {...props} />)
   }
 
   test('matching the snapshot', () => {
-    expect(createBaseColorsInterface())
+    expect(createColorsInterface())
     .toMatchSnapshot()
   })
 
   describe('colorways', () => {
     test('renders out multiple color pickers if multiple colorways ', () => {
       expect(
-        createBaseColorsInterface().find(ColorPicker).length
+        createColorsInterface().find(ColorPicker).length
       ).toEqual(defaultProps.colorways.length)
     })
 
     test('doesn\'t render if only one colorway', () => {
-      expect(createBaseColorsInterface({colorways: [{}]}).html()).toEqual(null)
+      expect(createColorsInterface({colorways: [{}]}).html()).toEqual(null)
     })
   })
 })
