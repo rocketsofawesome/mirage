@@ -52,7 +52,7 @@ const GiftModal = ({ onClose }) => (
     <Text>
       At checkout, leave a message that will show on the packing
       slip without pricing. Need an exchange?
-      It’s free and easy via our friendly customer service team.*
+      It’s free and easy via our friendly customer service team.
     </Text>
     <Text>
       And don’t forget, buy 4+ items to get 20% off your order!
