@@ -47,9 +47,6 @@ const BaseFooter = ({
             <H5>SUPPORT</H5>
             <ul>
               <li>
-                <WhiteLink light href={LINKS['faq']} target='_blank'>FAQ</WhiteLink>
-              </li>
-              <li>
                 <WhiteLink light href={LINKS['faq']} target='_blank'>Help</WhiteLink>
               </li>
             </ul>
