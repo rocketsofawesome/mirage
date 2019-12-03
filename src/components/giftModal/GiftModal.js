@@ -28,11 +28,6 @@ const Text = styled(P)`
   margin-bottom: 15px;
 `
 
-const FinalSaleText = styled(P)`
-  font-size: 1.4rem;
-  margin-top: 27px;
-`
-
 const Image = styled(InlineImage)`
   max-width: 100%;
   margin-bottom: 15px;
@@ -62,9 +57,6 @@ const GiftModal = ({ onClose }) => (
     <Text>
       And don’t forget, buy 4+ items to get 20% off your order!
     </Text>
-    <FinalSaleText>
-      *Excludes FINAL SALE
-    </FinalSaleText>
   </Container>
 )
 
