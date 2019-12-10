@@ -423,7 +423,7 @@ BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
   renderProductLink: renderLink,
   giftFeatureOn: false,
-  scrollKeepShopping: null
+  scrollKeepShopping: false
 }
 
 const CartSidebar = styled(BaseCartSidebar)`
