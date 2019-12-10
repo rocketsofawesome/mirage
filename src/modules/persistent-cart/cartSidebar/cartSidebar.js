@@ -124,7 +124,7 @@ const PaymentRequestButton = styled(PaymentRequestForm)`
   width: 100%;
 `
 
-const CheckoutLink = styled(({ renderLink, children, ...props }) => {
+const CheckoutLinkMobile = styled(({ renderLink, children, ...props }) => {
   if (renderLink) {
     return renderLink({...props, children: children})
   } else {
@@ -140,6 +140,30 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   letter-spacing: 0;
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: underline;
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
+    display: none;
+  `}
+`
+
+const CheckoutLinkDesktop = styled(({ renderLink, children, ...props }) => {
+  if (renderLink) {
+    return renderLink({...props, children: children})
+  } else {
+    return (<a {...props}>{children}</a>)
+  }
+})`
+  line-height: 40px;
+  display: block;
+  vertical-align: middle;
+  cursor: pointer;
+  color: ${props => props.theme.colors.navy};
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: ${props => props.theme.fonts.primaryFont};
+  text-decoration: underline;
+  ${props => props.theme.breakpointsVerbose.belowTabletMax`
+    display: none;
+  `}
 `
 
 const GiftLink = styled(({ renderLink, children, ...props }) => {
@@ -223,6 +247,15 @@ class BaseCartSidebar extends React.Component {
     return this.props.submitBagCheckoutStripe(this.props.order.id, { token, ...data })
   }
 
+  handleKeepShopping = (breakpoint) => {
+    const { hideCartSidebar, scrollKeepShopping } = this.props
+    hideCartSidebar()
+
+    if (scrollKeepShopping) {
+      scrollKeepShopping(breakpoint)
+    }
+  }
+
   render () {
     const {
       shouldShowCartSidebar,
@@ -276,7 +309,18 @@ class BaseCartSidebar extends React.Component {
                   itemsInBag={itemsInBag}
                 />
                 <ProgressBar percentage={percentage} />
-                <CheckoutLink renderLink={renderLink} onClick={hideCartSidebar}>KEEP SHOPPING</CheckoutLink>
+                <CheckoutLinkMobile
+                  renderLink={renderLink}
+                  onClick={() => this.handleKeepShopping("belowTabletMax")}
+                >
+                  KEEP SHOPPING
+                </CheckoutLinkMobile>
+                <CheckoutLinkDesktop
+                  renderLink={renderLink}
+                  onClick={() => this.handleKeepShopping("aboveTabletMax")}
+                >
+                  KEEP SHOPPING
+                </CheckoutLinkDesktop>
               </ProgressBarContainer>
             </CartSidebarHeader>
             {lineItems.length > 0 ?
@@ -371,13 +415,15 @@ BaseCartSidebar.propTypes = {
   appliedPromotion: PropTypes.object,
   renderProductLink: PropTypes.func,
   currentUserEmail: PropTypes.string,
-  giftFeatureOn: PropTypes.bool
+  giftFeatureOn: PropTypes.bool,
+  scrollKeepShopping: PropTypes.oneOfType([PropTypes.bool, PropTypes.func])
 }
 
 BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
   renderProductLink: renderLink,
-  giftFeatureOn: false
+  giftFeatureOn: false,
+  scrollKeepShopping: false
 }
 
 const CartSidebar = styled(BaseCartSidebar)`
