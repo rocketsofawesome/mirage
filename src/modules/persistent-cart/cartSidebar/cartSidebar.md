@@ -36,7 +36,6 @@
       updateBag={() => { console.log('update bag') }}
       removeItem={() => { console.log('remove item') }}
       segmentCartViewed={() => { console.log('segment cart viewed') }}
-      pricingTestOn={true}
       promotion={null}
       promotionLoading={false}
       promoHasBeenApplied={null}

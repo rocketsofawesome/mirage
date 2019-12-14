@@ -1,6 +1,136 @@
 const exampleClickHandler = (sku) => () => { alert(`${sku} clicked`) }
+const productOnSale = {
+  product: {
+    "_index": "colorways_development_20190706143737041",
+    "_type": "colorway",
+    "_id": "4312",
+    "_score": null,
+    "sort": [
+      5860003
+    ],
+    "color_family": "blue",
+    "color": "Blue",
+    "nav_taxons": [
+      "shop/boys-new-arrivals",
+      "shop/boys-new-arrivals/swim",
+      "featured-products/summer-2019",
+      "shop/boys",
+      "shop/boys/swimwear",
+      "shop/vacation"
+    ],
+    "nav_categories": [
+      "Boys New Arrivals",
+      "Swim",
+      "Boys",
+      "Swimwear"
+    ],
+    "skus": [
+      {
+        "size": [
+          "OS"
+        ],
+        "in_stock": true
+      }
+    ],
+    "code": "A222-C01",
+    "category": [
+      "Swim",
+      "Swim Accessories"
+    ],
+    "description": "AHHHHHHH! The coolest goggles on the planet are here.",
+    "details": "*90% silicone, 10% pc\r\n*UV protected & anti-fog lenses\r\n*Adjustable head strap",
+    "id": "1665-A222-C01",
+    "product_id": 1665,
+    "product_slug": "monster-goggle",
+    "colorway_id": 4312,
+    "name": "Monster Goggle",
+    "sort_order": [
+      {
+        "shop": 230023
+      },
+      {
+        "shop-boys": 230023
+      },
+      {
+        "shop-boys-swimwear": 230023
+      },
+      {
+        "shop": 2350008
+      },
+      {
+        "shop-boys-new-arrivals": 2350008
+      },
+      {
+        "shop-boys-new-arrivals-swim": 2350008
+      },
+      {
+        "featured-products": 5860003
+      },
+      {
+        "featured-products-summer-2019": 5860003
+      },
+      {
+        "shop": 2780049
+      },
+      {
+        "shop-vacation": 2780049
+      }
+    ],
+    "style_number": "A222",
+    "colorways": [
+      {
+        "id": 4312,
+        "slug": "blue",
+        "color": "Blue",
+        "code": "A222-C01",
+        "shots": [
+          {
+            "id": 2707248,
+            "shot_type": "front",
+            "cloudinary_key": "production/catalog/uduxsics6nhvmvilwh16"
+          }
+        ],
+        "skus": [
+          {
+            "id": 18009,
+            "sku": "A222-C01-A",
+            "size": "OS",
+            "price": 10.0,
+            "original_price": 24.5,
+            "cost_price": null,
+            "in_stock": true
+          }
+        ]
+      },
+      {
+        "id": 4311,
+        "slug": "moss",
+        "color": "Moss",
+        "code": "A222-D07",
+        "shots": [
+          {
+            "id": 2707247,
+            "shot_type": "front",
+            "cloudinary_key": "production/catalog/dyv8xevmgetyztwk3ald"
+          }
+        ],
+        "skus": [
+          {
+            "id": 18008,
+            "sku": "A222-D07-A",
+            "size": "OS",
+            "price": 24.5,
+            "cost_price": null,
+            "in_stock": true
+          }
+        ]
+      }
+    ]
+  },
+  quickAdd: exampleClickHandler
+}
 const productWithVariants = {
-  product:   {
+  product: {
     "_index": "colorways_production_20190708213725142",
     "_type": "colorway",
     "_id": "4484",
@@ -452,4 +582,4 @@ const productWithOneSize = {
   quickAdd: exampleClickHandler
 }
 
-export { productWithVariants, productWithOneSize }
+export { productWithVariants, productWithOneSize, productOnSale }

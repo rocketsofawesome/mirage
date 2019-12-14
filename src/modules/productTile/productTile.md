@@ -12,3 +12,11 @@
     <ProductTile {...require('./defaultProps').productWithOneSize} />
   </div>
 ```
+
+
+#### Product Tile for a product in Sale
+```js
+  <div style={{ width: '33.33%'}}>
+    <ProductTile {...require('./defaultProps').productOnSale} />
+  </div>
+```

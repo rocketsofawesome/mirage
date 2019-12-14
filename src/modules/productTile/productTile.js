@@ -20,12 +20,10 @@ const ProductTile = styled(BaseProductTile)`
     flex-wrap: wrap;
     flex: 1 1 100%;
     text-decoration: none;
+    padding-top: 1.7rem;
   }
   .roa-product-tile-details ${P} {
     flex: 1 1 100%;
-    &:first-of-type {
-      margin-top: 1.7rem;
-    }
   }
 `
 

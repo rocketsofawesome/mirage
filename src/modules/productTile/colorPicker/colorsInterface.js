@@ -15,11 +15,11 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
     return (
       <div className={className}>
         <Default displayTarget='belowTabletMax'>
-          <P>{colorways.length} colors available</P>
+          <P fontSize="14px">{colorways.length} colors available</P>
         </Default>
         <Desktop>
           <SwatchContainer>
-            <P>Colors</P>
+            <P fontSize="14px">Colors</P>
             {colorways.map((colorway) => {
               const src = swatchUrl(colorway, {
                 crop: 'scale',

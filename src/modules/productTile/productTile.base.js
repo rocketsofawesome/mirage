@@ -71,11 +71,11 @@ export default class ProductTile extends React.Component {
           <Link
             className='roa-product-tile-details'
             target={target}>
-            <P>{product.name}</P>
+            <P fontSize="14px">{product.name}</P>
             <ProductPrice colorway={colorway} />
           </Link> :
           <div className='roa-product-tile-details'>
-            <P>{product.name}</P>
+            <P fontSize="14px">{product.name}</P>
             <ProductPrice colorway={colorway} />
           </div>
         }
