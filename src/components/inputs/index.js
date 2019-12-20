@@ -1,5 +1,7 @@
 export * from './Buttons'
-export {default as Checkbox} from './Checkbox/Checkbox'
+export { default as Checkbox } from './Checkbox/Checkbox'
+export { default as XCheckbox } from './XCheckbox/XCheckbox'
 export { CheckboxButton } from './CheckboxButton'
 export * from './radioButtons'
 export * from './Input'
+export * from './InputSmall'
