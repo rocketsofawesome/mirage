@@ -1,5 +1,5 @@
 ```js
-  <InputSmall placeholder={'email'} />
+  <InputSmall placeholder={'email'} errorMessage='' />
 ```
 
 ```js

@@ -25,8 +25,7 @@ class XCheckboxBase extends React.Component {
           {...input}
         />
         <XCheckboxSVG width={width} />
-        {children}
-        {label}
+        { label ? label : children }
       </Label>
     )
   }
@@ -34,9 +33,14 @@ class XCheckboxBase extends React.Component {
 
 XCheckboxBase.propTypes = {
   className: PropTypes.string,
-  input: PropTypes.shape({
-    value: PropTypes.bool
-  }),
+  input: PropTypes.oneOfType([
+    PropTypes.shape({
+      value: PropTypes.bool.isRequired
+    }),
+    PropTypes.shape({
+      checked: PropTypes.bool.isRequired
+    })
+  ]),
   label: PropTypes.string
 }
 
