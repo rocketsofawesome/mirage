@@ -69,7 +69,7 @@ class CheckboxBase extends React.Component {
   }
 
   render() {
-    const { className, input, children, width, ...props } = this.props
+    const { className, input, children, label, width, ...props } = this.props
     const showAnimation = this.state.showAnimation ? 'showAnimation' : ''
     return (
       <Label {...props} lowercase className={className}>
@@ -80,7 +80,7 @@ class CheckboxBase extends React.Component {
           {...input}
         />
         <CheckboxSVG width={width} />
-        {children}
+        { label ? label : children }
       </Label>
     )
   }
