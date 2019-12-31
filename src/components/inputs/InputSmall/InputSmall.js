@@ -68,7 +68,7 @@ const StyledInputSmall = styled.input`
   padding-top: 12.5px;
   padding-bottom: 8.5px;
 
-  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.rocketBlue}!important;
+  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy}!important;
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 16px;
 
@@ -82,8 +82,8 @@ const StyledInputSmall = styled.input`
 
   &:focus {
     outline: none;
-    border-color: ${props => props.theme.colors.rocketBlue};
-    color: ${props => props.theme.colors.rocketBlue};
+    border-color: ${props => props.theme.colors.rocketBlue} !important;
+    color: ${props => props.theme.colors.rocketBlue} !important;
   }
 `
 
@@ -98,7 +98,7 @@ const StyledInputSmallElement = styled(InputElement)`
   padding-top: 12.5px;
   padding-bottom: 8.5px;
 
-  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.rocketBlue}!important;
+  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy}!important;
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 16px;
 
@@ -112,8 +112,8 @@ const StyledInputSmallElement = styled(InputElement)`
 
   &:focus {
     outline: none;
-    border-color: ${props => props.theme.colors.rocketBlue};
-    color: ${props => props.theme.colors.rocketBlue};
+    border-color: ${props => props.theme.colors.rocketBlue} !important;
+    color: ${props => props.theme.colors.rocketBlue} !important;
   }
 `
 
