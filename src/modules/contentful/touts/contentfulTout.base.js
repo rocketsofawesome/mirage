@@ -8,6 +8,25 @@ import {
 } from 'SRC'
 
 class BaseContentfulTout extends Component {
+  // If hero and destination present, navigateToDestination
+  navigateToDestination = (event) => {
+    const {
+      fields: {
+        hero,
+        destination
+      }
+    } = this.props
+
+    // Navigate on roa-tout-overlay or roa-tout-buttons click
+    // Exclude click of button itself
+    if (hero && destination && event && event.target && event.target.className &&
+      (event.target.className === 'roa-tout-overlay' ||
+      event.target.className === 'roa-tout-buttons')) {
+
+      window.location.href = destination
+    }
+  }
+
   renderContent = () => {
     const {
       displayTitle,
@@ -63,7 +82,7 @@ class BaseContentfulTout extends Component {
     } else {
       return (
         <ContentfulRenderer {...media}>
-          <div className='roa-tout-overlay'>
+          <div className='roa-tout-overlay' onClick={this.navigateToDestination}>
             <MirageMarkdown>{description}</MirageMarkdown>
             <div className='roa-tout-buttons'>
               {heroButtons && heroButtons.map((button) => {
@@ -83,13 +102,15 @@ class BaseContentfulTout extends Component {
       className,
       renderToutLink,
       fields: {
+        hero,
         destination
       }
     } = this.props
 
     const ToutLink = renderToutLink
 
-    if (destination) {
+    // If hero with destination, maintain default div layout
+    if (!hero && destination) {
       return (
         <ToutLink className={className} destination={destination}>
           {this.renderContent()}
