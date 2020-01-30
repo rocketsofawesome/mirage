@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import { MirageMarkdown, Link, ContentfulRenderer } from 'SRC'
 
-const BaseContentfulSplitTout =({
+const BaseContentfulSplitTout = ({
   className,
   fields: {
     description,
@@ -12,7 +12,7 @@ const BaseContentfulSplitTout =({
   renderLink,
   ...props
 }) => {
-  const links = { imageLinks: [], textLinks: []}
+  const links = { imageLinks: [], textLinks: [] }
   imageLinks.map((imageLink, index) => {
     links.imageLinks[index] =
     <ContentfulRenderer

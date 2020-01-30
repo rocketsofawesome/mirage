@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { ContentfulRenderer } from 'SRC'
+
 const ContentfulLandingPage = ({
   className,
   fields: {
@@ -10,7 +11,7 @@ const ContentfulLandingPage = ({
   ...props
 }) => {
   return (
-    <section style={{overflow: 'hidden'}}>
+    <section style={{ overflow: 'hidden' }}>
       {section.map((element, index) => {
         return (<ContentfulRenderer key={index} {...element} {...props} />)
       })}

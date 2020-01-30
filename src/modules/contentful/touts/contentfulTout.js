@@ -88,6 +88,13 @@ const ContentfulTout = styled(BaseContentfulTout)`
     width: 100%;
     background-color: ${props => setBackgroundColor(props)};
     ${props => textPosition(props)}
+
+    ${props => props.fields.hero && props.fields.destination && props.theme.breakpointsVerbose.belowTablet`
+      cursor: pointer;
+    `}
+    ${props => props.fields.hero && props.fields.destination && props.theme.breakpointsVerbose.aboveTablet`
+      cursor: pointer;
+    `}
   }
 
   ${MirageMarkdown} {
