@@ -11,6 +11,7 @@ class BaseContentfulTout extends Component {
   // If hero and destination present, navigateToDestination
   navigateToDestination = (event) => {
     const {
+      segmentHeroClicked,
       fields: {
         hero,
         destination
@@ -23,6 +24,7 @@ class BaseContentfulTout extends Component {
       (event.target.className === 'roa-tout-overlay' ||
       event.target.className === 'roa-tout-buttons')) {
 
+      segmentHeroClicked(destination)
       window.location.href = destination
     }
   }
@@ -132,6 +134,7 @@ BaseContentfulTout.propTypes = {
   displayTitle: PropTypes.string,
   searchTerm: PropTypes.string,
   productsFound: PropTypes.bool,
+  segmentHeroClicked: PropTypes.func,
   emptySearchSuggestions: PropTypes.array,
   fields: PropTypes.shape({
     backgroundColor: PropTypes.string,
