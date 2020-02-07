@@ -2,22 +2,24 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Card, InlineImage, FlexCol, FlexRow } from 'SRC'
+import { NextLinkCard, InlineImage, FlexCol, FlexRow, Card } from 'SRC'
 
-const OutfitCards = styled(({className, element, outfits}) => {
+const OutfitCards = styled(({ className, element, outfits }) => {
   return (
     <FlexRow constrained>
       {
         outfits.map((outfit, index) => {
           return (
             <FlexCol className={className}
-              mobile={{width: 2}}
-              tablet={{width: 6}}
-              desktop={{width: 4}}
+              mobile={{ width: 2 }}
+              tablet={{ width: 6 }}
+              desktop={{ width: 4 }}
               key={index}>
               <Card {...outfit.card}>
-                <InlineImage {...outfit.image} />
-                {outfit.information}
+                <div>
+                  <InlineImage {...outfit.image} />
+                  {outfit.information}
+                </div>
               </Card>
             </FlexCol>
           )
