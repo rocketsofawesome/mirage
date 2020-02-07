@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { NextLinkCard, InlineImage, FlexCol, FlexRow, Card } from 'SRC'
+import { NextLinkCard, InlineImage, FlexCol, FlexRow } from 'SRC'
 
 const OutfitCards = styled(({ className, element, outfits }) => {
   return (
@@ -15,12 +15,12 @@ const OutfitCards = styled(({ className, element, outfits }) => {
               tablet={{ width: 6 }}
               desktop={{ width: 4 }}
               key={index}>
-              <Card {...outfit.card}>
+              <NextLinkCard {...outfit.card}>
                 <div>
                   <InlineImage {...outfit.image} />
                   {outfit.information}
                 </div>
-              </Card>
+              </NextLinkCard>
             </FlexCol>
           )
         })
@@ -28,7 +28,7 @@ const OutfitCards = styled(({ className, element, outfits }) => {
     </FlexRow>
   )
 })`
-  ${Card} {
+  ${NextLinkCard} {
     margin-bottom: 2rem;
     ${props => props.theme.breakpointsVerbose.aboveTablet`
       margin-bottom: 4rem;
