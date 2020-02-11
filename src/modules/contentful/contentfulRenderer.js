@@ -10,6 +10,7 @@ const ASSET_RENDER_MAP = {
 }
 
 const ENTRY_RENDER_MAP = {
+  slider: (props) => <Mirage.ContentfulSlider {...props} />,
   assetLink: (props) => <Mirage.ContentfulAssetLink {...props} />,
   heroButton: (props) => <Mirage.ContentfulButton {...props} />,
   mediaContainer: (props) => <Mirage.ContentfulContentRow {...props} />,
