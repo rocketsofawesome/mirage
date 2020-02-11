@@ -43,7 +43,18 @@ export default {
                 }
               }
             }
-          }
+          },
+          buttons: [
+            {
+              fields: {
+                buttonText: "SHOP CRAZYSOFT",
+                route: "/shop/girls-new-arrivals",
+                color: "#00003c",
+                backgroundColor: "#f5ff42",
+                width: "Fit Text"
+              }
+            }
+          ]
         }
       },
       {

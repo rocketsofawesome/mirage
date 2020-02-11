@@ -8,7 +8,7 @@ import { RightArrow, LeftArrow } from './sliderArrows';
 
 const Container = styled.div`
   position: relative;
-  padding-bottom: 20px;
+  padding-bottom: 35px;
 
   .slick-dots {
     position: absolute;
