@@ -44,6 +44,7 @@ export default {
               }
             }
           },
+          url: '/shop/girls-new-arrivals',
           buttons: [
             {
               fields: {

@@ -8,7 +8,11 @@ import { RightArrow, LeftArrow } from './sliderArrows';
 
 const Container = styled.div`
   position: relative;
-  padding-bottom: 35px;
+  margin-bottom: 4rem;
+
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    margin-bottom: 6rem;
+  `}
 
   .slick-dots {
     position: absolute;
