@@ -20,10 +20,16 @@ const ButtonContainer = styled.div`
 `
 
 const ContentfulSlide = ({ fields }) => {
-  const buttons = fields.buttons || [];
+  const buttons = fields.buttons || []
+
+  let image = <ContentfulResponsiveImages {...fields.image} />
+  if (fields.url) {
+    image = <a href={fields.url}>{image}</a>
+  }
+
   return (
     <Container>
-      <ContentfulResponsiveImages {...fields.image} />
+      {image}
       <ButtonContainer>
         {buttons.map(button => <ContentfulButton {...button} />)}
       </ButtonContainer>
