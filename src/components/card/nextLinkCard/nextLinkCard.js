@@ -28,7 +28,6 @@ const NextLinkCard = styled(({
 
   // Looks weird because next/link can't pass className to its children
   // We're adding className back here
-  // Don't change this!
   const styledChildren = (
     <CardLink>
        {React.Children.map(children, child => {

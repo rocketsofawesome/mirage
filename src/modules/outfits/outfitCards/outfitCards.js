@@ -2,9 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { NextLinkCard, InlineImage, FlexCol, FlexRow } from 'SRC'
+import { Card, NextLinkCard, InlineImage, FlexCol, FlexRow } from 'SRC'
 
-const OutfitCards = styled(({ className, element, outfits }) => {
+const OutfitCards = styled(({ className, element, outfits, nextLink }) => {
   return (
     <FlexRow constrained>
       {
@@ -15,12 +15,20 @@ const OutfitCards = styled(({ className, element, outfits }) => {
               tablet={{ width: 6 }}
               desktop={{ width: 4 }}
               key={index}>
-              <NextLinkCard {...outfit.card}>
-                <div>
+              {nextLink
+                ?
+                <NextLinkCard {...outfit.card}>
+                  <div>
+                    <InlineImage {...outfit.image} />
+                    {outfit.information}
+                  </div>
+                </NextLinkCard>
+                :
+                <Card {...outfit.card}>
                   <InlineImage {...outfit.image} />
                   {outfit.information}
-                </div>
-              </NextLinkCard>
+                </Card>
+              }
             </FlexCol>
           )
         })
@@ -28,7 +36,7 @@ const OutfitCards = styled(({ className, element, outfits }) => {
     </FlexRow>
   )
 })`
-  ${NextLinkCard} {
+  ${NextLinkCard}, ${Card} {
     margin-bottom: 2rem;
     ${props => props.theme.breakpointsVerbose.aboveTablet`
       margin-bottom: 4rem;
@@ -38,11 +46,13 @@ const OutfitCards = styled(({ className, element, outfits }) => {
 
 OutfitCards.propTypes = {
   element: PropTypes.node,
-  outfit: PropTypes.array
+  outfit: PropTypes.array,
+  nextLink: PropTypes.bool
 }
 
 OutfitCards.defaultProps = {
-  element: 'a'
+  element: 'a',
+  nextLink: false
 }
 
 /** @component */
