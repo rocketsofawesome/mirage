@@ -2,23 +2,33 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { Card, InlineImage, FlexCol, FlexRow } from 'SRC'
+import { Card, NextLinkCard, InlineImage, FlexCol, FlexRow } from 'SRC'
 
-const OutfitCards = styled(({className, element, outfits}) => {
+const OutfitCards = styled(({ className, element, outfits, nextLink }) => {
   return (
     <FlexRow constrained>
       {
         outfits.map((outfit, index) => {
           return (
             <FlexCol className={className}
-              mobile={{width: 2}}
-              tablet={{width: 6}}
-              desktop={{width: 4}}
+              mobile={{ width: 2 }}
+              tablet={{ width: 6 }}
+              desktop={{ width: 4 }}
               key={index}>
-              <Card {...outfit.card}>
-                <InlineImage {...outfit.image} />
-                {outfit.information}
-              </Card>
+              {nextLink
+                ?
+                <NextLinkCard {...outfit.card}>
+                  <div>
+                    <InlineImage {...outfit.image} />
+                    {outfit.information}
+                  </div>
+                </NextLinkCard>
+                :
+                <Card {...outfit.card}>
+                  <InlineImage {...outfit.image} />
+                  {outfit.information}
+                </Card>
+              }
             </FlexCol>
           )
         })
@@ -26,7 +36,7 @@ const OutfitCards = styled(({className, element, outfits}) => {
     </FlexRow>
   )
 })`
-  ${Card} {
+  ${NextLinkCard}, ${Card} {
     margin-bottom: 2rem;
     ${props => props.theme.breakpointsVerbose.aboveTablet`
       margin-bottom: 4rem;
@@ -36,11 +46,13 @@ const OutfitCards = styled(({className, element, outfits}) => {
 
 OutfitCards.propTypes = {
   element: PropTypes.node,
-  outfit: PropTypes.array
+  outfit: PropTypes.array,
+  nextLink: PropTypes.bool
 }
 
 OutfitCards.defaultProps = {
-  element: 'a'
+  element: 'a',
+  nextLink: false
 }
 
 /** @component */

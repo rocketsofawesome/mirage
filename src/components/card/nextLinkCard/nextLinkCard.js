@@ -2,6 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
+// This file is compatible with next/link, whereas card.js is not
+// TODO: Move regular links to next/link and remove card.js
+
 const cardHover = css`
   text-decoration: none;
   &:hover {
@@ -10,16 +13,30 @@ const cardHover = css`
 `
 const constrainedWidth = css`max-width: ${props => props.maxWidth};`
 
-const Card = styled(({
+const CardLink = styled.a`
+  text-decoration: none;
+`
+
+const NextLinkCard = styled(({
   children,
   element,
+  className,
   ...props
 }) => {
-
   delete props.maxWidth
   delete props.constrained
 
-  return React.createElement(element, props, children)
+  // Looks weird because next/link can't pass className to its children
+  // We're adding className back here
+  const styledChildren = (
+    <CardLink>
+       {React.Children.map(children, child => {
+         return React.cloneElement(child, { className }, child.props.children)
+       })}
+    </CardLink>
+  )
+
+  return React.createElement(element, props, styledChildren)
 
 })`
   ${props => props.element === 'a' ? cardHover : '' }
@@ -43,15 +60,15 @@ const Card = styled(({
     }
   }
 `
-Card.propTypes = {
+NextLinkCard.propTypes = {
   constrained: PropTypes.bool,
   element: PropTypes.node,
   maxWidth: PropTypes.string
 }
 
-Card.defaultProps = {
+NextLinkCard.defaultProps = {
   element: 'a',
   maxWidth: '29.5rem'
 }
 /** @component */
-export default Card
+export default NextLinkCard

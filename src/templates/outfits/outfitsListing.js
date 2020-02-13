@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 import { FlexCol, FlexRow, OutfitCards } from 'SRC'
 
-const OutfitsListing = styled(({className, element, headerContent, outfits}) => {
+const OutfitsListing = styled(({ className, element, headerContent, outfits, nextLink }) => {
   return (
     <div className={className}>
       {headerContent &&
@@ -14,7 +14,7 @@ const OutfitsListing = styled(({className, element, headerContent, outfits}) => 
           </FlexCol>
         </FlexRow>
       }
-      <OutfitCards element={element} outfits={outfits} />
+      <OutfitCards element={element} outfits={outfits} nextLink={nextLink} />
     </div>
   )
 })`

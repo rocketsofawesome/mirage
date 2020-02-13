@@ -56,7 +56,7 @@ class BaseHeader extends Component {
 
 const Header = styled(BaseHeader)`
   position: ${props => props.position};
-  z-index: 2;
+  z-index: 3;
   width: 100%;
 `
 
