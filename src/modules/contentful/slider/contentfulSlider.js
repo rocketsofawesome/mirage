@@ -91,7 +91,7 @@ class ContentfulSlider extends React.Component {
       <Container>
         <Slider ref={this.setSlider} {...this.config}>
           {fields.slides.map((slide, index) => {
-            return <ContentfulSlide {...slide} position={index + 1} segmentHeroClicked={segmentHeroClicked} />
+            return <ContentfulSlide {...slide} position={index + 1} totalSlides={fields.slides.length} segmentHeroClicked={segmentHeroClicked} />
           })}
         </Slider>
         <LeftArrow onClick={this.previous} />

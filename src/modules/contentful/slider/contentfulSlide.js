@@ -19,7 +19,7 @@ const ButtonContainer = styled.div`
   `}
 `
 
-const ContentfulSlide = ({ fields, segmentHeroClicked, position }) => {
+const ContentfulSlide = ({ fields, segmentHeroClicked, position, totalSlides }) => {
   const buttons = fields.buttons || []
 
   let image = <ContentfulResponsiveImages {...fields.image} />
@@ -28,7 +28,7 @@ const ContentfulSlide = ({ fields, segmentHeroClicked, position }) => {
       // Asset (image URL), destination, name, and position
       if (fields.image && fields.image.fields && fields.image.fields.defaultImage) {
         const assetUrl = `https:${fields.image.fields.defaultImage.fields.file.url}`
-        segmentHeroClicked(assetUrl, fields.url, fields.image.fields.title, position)
+        segmentHeroClicked(assetUrl, fields.url, fields.image.fields.title, position, totalSlides)
       }
     }
 
@@ -48,7 +48,8 @@ const ContentfulSlide = ({ fields, segmentHeroClicked, position }) => {
 ContentfulSlide.propTypes = {
   fields: PropTypes.object.isRequired,
   segmentHeroClicked: PropTypes.func.isRequired,
-  position: PropTypes.number.isRequired
+  position: PropTypes.number.isRequired,
+  totalSlides: PropTypes.number.isRequired
 }
 
 export default ContentfulSlide
