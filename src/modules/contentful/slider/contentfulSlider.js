@@ -65,11 +65,22 @@ class ContentfulSlider extends React.Component {
     this.setSlider = this.setSlider.bind(this)
     this.previous = this.previous.bind(this)
     this.next = this.next.bind(this)
+    this.triggerSegmentHeroViewed = this.triggerSegmentHeroViewed.bind(this)
 
     this.config = {
       arrows: false,
-      dots: true
+      dots: true,
+      afterChange: (currentSlidePosition) => this.triggerSegmentHeroViewed(currentSlidePosition)
     }
+  }
+
+  componentDidMount() {
+    // Initialize Hero Viewed with currentSlidePosition of 0 (only on client)
+    if (process.browser) { this.triggerSegmentHeroViewed(0) }
+  }
+
+  setSlider(slider) {
+    this.slider = slider
   }
 
   previous() {
@@ -80,8 +91,24 @@ class ContentfulSlider extends React.Component {
     this.slider && this.slider.slickNext()
   }
 
-  setSlider(slider) {
-    this.slider = slider
+  // Trigger segmentHeroViewed on initial view and subsequent views (e.g., transition to next slide)
+  triggerSegmentHeroViewed(currentSlidePosition) {
+    const { fields, segmentHeroViewed } = this.props
+
+    const currentSlide = fields.slides[currentSlidePosition]
+
+    const assetUrl = `https:${currentSlide.fields.image.fields.defaultImage.fields.file.url}`
+
+    let destinationUrl
+    if (currentSlide.fields.url) { destinationUrl = currentSlide.fields.url }
+
+    segmentHeroViewed(
+      assetUrl,
+      destinationUrl,
+      currentSlide.fields.image.fields.title,
+      currentSlidePosition + 1,
+      fields.slides.length
+    )
   }
 
   render() {
@@ -91,7 +118,14 @@ class ContentfulSlider extends React.Component {
       <Container>
         <Slider ref={this.setSlider} {...this.config}>
           {fields.slides.map((slide, index) => {
-            return <ContentfulSlide {...slide} position={index + 1} totalSlides={fields.slides.length} segmentHeroClicked={segmentHeroClicked} />
+            return (
+              <ContentfulSlide
+                {...slide}
+                position={index + 1}
+                totalSlides={fields.slides.length}
+                segmentHeroClicked={segmentHeroClicked}
+              />
+            )
           })}
         </Slider>
         <LeftArrow onClick={this.previous} />
@@ -102,7 +136,9 @@ class ContentfulSlider extends React.Component {
 }
 
 ContentfulSlider.propTypes = {
-  fields: PropTypes.object.isRequired
+  fields: PropTypes.object.isRequired,
+  segmentHeroClicked: PropTypes.func.isRequired,
+  segmentHeroViewed: PropTypes.func.isRequired
 }
 
 export default ContentfulSlider;
