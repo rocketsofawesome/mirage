@@ -62,15 +62,22 @@ class ContentfulSlider extends React.Component {
   constructor(props) {
     super(props)
 
+    this.isSliding = this.isSliding.bind(this)
     this.setSlider = this.setSlider.bind(this)
     this.previous = this.previous.bind(this)
     this.next = this.next.bind(this)
     this.triggerSegmentHeroViewed = this.triggerSegmentHeroViewed.bind(this)
 
+    this.sliding = false
+
     this.config = {
       arrows: false,
       dots: true,
-      afterChange: (currentSlidePosition) => this.triggerSegmentHeroViewed(currentSlidePosition)
+      beforeChange: (currentSlidePosition) => { this.sliding = true },
+      afterChange: (currentSlidePosition) => {
+        this.sliding = false
+        this.triggerSegmentHeroViewed(currentSlidePosition)
+      }
     }
   }
 
@@ -81,6 +88,11 @@ class ContentfulSlider extends React.Component {
 
   setSlider(slider) {
     this.slider = slider
+  }
+
+  // Send function into ContentfulSlide, since it is only rendered once
+  isSliding() {
+    return this.sliding
   }
 
   previous() {
@@ -124,6 +136,7 @@ class ContentfulSlider extends React.Component {
                 position={index + 1}
                 totalSlides={fields.slides.length}
                 segmentHeroClicked={segmentHeroClicked}
+                isSliding={this.isSliding}
               />
             )
           })}
