@@ -19,14 +19,15 @@ const ButtonContainer = styled.div`
   `}
 `
 
-const ContentfulSlide = ({ fields, segmentHeroClicked, position, totalSlides }) => {
+const ContentfulSlide = ({ fields, isSliding, segmentHeroClicked, position, totalSlides }) => {
   const buttons = fields.buttons || []
 
   let image = <ContentfulResponsiveImages {...fields.image} />
   if (fields.url) {
     const triggerSegmentHeroClicked = () => {
       // Asset (image URL), destination, name, and position
-      if (fields.image && fields.image.fields && fields.image.fields.defaultImage) {
+      // Only call segmentHeroClicked on actual click, not dragging click
+      if (fields.image && fields.image.fields && fields.image.fields.defaultImage && !isSliding()) {
         const assetUrl = `https:${fields.image.fields.defaultImage.fields.file.url}`
         segmentHeroClicked(assetUrl, fields.url, fields.image.fields.title, position, totalSlides)
       }
@@ -47,6 +48,7 @@ const ContentfulSlide = ({ fields, segmentHeroClicked, position, totalSlides }) 
 
 ContentfulSlide.propTypes = {
   fields: PropTypes.object.isRequired,
+  isSliding: PropTypes.func.isRequired,
   segmentHeroClicked: PropTypes.func.isRequired,
   position: PropTypes.number.isRequired,
   totalSlides: PropTypes.number.isRequired
