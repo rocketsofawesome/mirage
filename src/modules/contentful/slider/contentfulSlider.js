@@ -77,6 +77,11 @@ class ContentfulSlider extends React.Component {
       afterChange: (currentSlidePosition) => {
         this.sliding = false
         this.triggerSegmentHeroViewed(currentSlidePosition)
+
+        // Prevent some mobile Safari users from clicking twice (after slide) to navigate
+        if (this.slider && this.slider.innerSlider) {
+          this.slider.innerSlider.clickable = true
+        }
       }
     }
   }
