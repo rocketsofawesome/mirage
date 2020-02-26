@@ -119,8 +119,10 @@ class BaseProduct extends React.Component {
   }
 
   _onRemoveItem = () => {
-    const { item } = this.props
+    const { item, segmentProductRemoved } = this.props
+
     this.props.onRemoveItem(item.id)
+    segmentProductRemoved(item)
   }
 
   _renderQuantityPicker = () => {
@@ -234,7 +236,8 @@ BaseProduct.propTypes = {
   onRemoveItem: PropTypes.func,
   hideCartSidebar: PropTypes.func,
   className: PropTypes.string,
-  renderLink: PropTypes.func
+  renderLink: PropTypes.func,
+  segmentProductRemoved: PropTypes.func
 }
 
 BaseProduct.defaultProps = {

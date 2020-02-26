@@ -36,7 +36,8 @@ class BasePersistentCartProductList extends Component {
       updateBag,
       removeItem,
       hideCartSidebar,
-      renderProductLink
+      renderProductLink,
+      segmentProductRemoved
     } = this.props
 
     return (
@@ -50,6 +51,7 @@ class BasePersistentCartProductList extends Component {
                 onUpdateQuantity={updateBag}
                 onRemoveItem={removeItem}
                 renderLink={renderProductLink}
+                segmentProductRemoved={segmentProductRemoved}
                 hideCartSidebar={hideCartSidebar} />
             )}
           </BagListWrapper>
@@ -70,6 +72,7 @@ BasePersistentCartProductList.propTypes = {
   removeItem: PropTypes.func,
   hideCartSidebar: PropTypes.func,
   segmentCartViewed: PropTypes.func,
+  segmentProductRemoved: PropTypes.func,
   renderProductLink: PropTypes.func
 }
 

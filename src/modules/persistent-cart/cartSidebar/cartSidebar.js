@@ -274,6 +274,7 @@ class BaseCartSidebar extends React.Component {
       promotionLoading,
       promoHasBeenApplied,
       promoErrorMessage,
+      segmentProductRemoved,
       applyPromotion,
       removePromotion,
       appliedPromotion,
@@ -331,6 +332,7 @@ class BaseCartSidebar extends React.Component {
                 removeItem={removeItem}
                 renderProductLink={renderProductLink}
                 segmentCartViewed={segmentCartViewed}
+                segmentProductRemoved={segmentProductRemoved}
               />
               :
               <EmptyCart />
@@ -410,6 +412,7 @@ BaseCartSidebar.propTypes = {
   promotionLoading: PropTypes.bool,
   promoHasBeenApplied: PropTypes.bool,
   promoErrorMessage: PropTypes.string,
+  segmentProductRemoved: PropTypes.func,
   applyPromotion: PropTypes.func,
   removePromotion: PropTypes.func,
   appliedPromotion: PropTypes.object,
