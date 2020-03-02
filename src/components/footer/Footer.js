@@ -10,7 +10,8 @@ const LINKS = {
   'twitter': 'https://twitter.com/rocketsofawesom',
   'instagram': 'https://www.instagram.com/rocketsofawesome',
   'snapchat': 'https://www.snapchat.com/add/rocketsofawesom',
-  'contact-us': 'https://support.rocketsofawesome.com/hc/en-us/articles/115015922347'
+  'contact-us': 'https://support.rocketsofawesome.com/hc/en-us/articles/115015922347',
+  'returns': 'https://support.rocketsofawesome.com/hc/en-us/articles/360031271434-How-do-returns-work-for-my-online-order'
 }
 
 const BaseFooter = ({
@@ -48,6 +49,9 @@ const BaseFooter = ({
             <ul>
               <li>
                 <WhiteLink light href={LINKS['faq']} target='_blank'>Help</WhiteLink>
+              </li>
+              <li>
+                <WhiteLink light href={LINKS['returns']} target='_blank'>Returns</WhiteLink>
               </li>
             </ul>
           </FlexCol>
