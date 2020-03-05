@@ -282,7 +282,8 @@ class BaseCartSidebar extends React.Component {
       currentUserEmail,
       onClickCheckout,
       onClickPaymentRequestButton,
-      giftFeatureOn
+      giftFeatureOn,
+      finalSaleOn
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -333,6 +334,7 @@ class BaseCartSidebar extends React.Component {
                 renderProductLink={renderProductLink}
                 segmentCartViewed={segmentCartViewed}
                 segmentProductRemoved={segmentProductRemoved}
+                finalSaleOn={finalSaleOn}
               />
               :
               <EmptyCart />
@@ -419,14 +421,16 @@ BaseCartSidebar.propTypes = {
   renderProductLink: PropTypes.func,
   currentUserEmail: PropTypes.string,
   giftFeatureOn: PropTypes.bool,
-  scrollKeepShopping: PropTypes.oneOfType([PropTypes.bool, PropTypes.func])
+  scrollKeepShopping: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
+  finalSaleOn: PropTypes.bool
 }
 
 BaseCartSidebar.defaultProps = {
   renderLink: renderLink,
   renderProductLink: renderLink,
   giftFeatureOn: false,
-  scrollKeepShopping: false
+  scrollKeepShopping: false,
+  finalSaleOn: false
 }
 
 const CartSidebar = styled(BaseCartSidebar)`

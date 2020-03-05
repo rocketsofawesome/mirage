@@ -162,7 +162,7 @@ class BaseProduct extends React.Component {
   }
 
   render () {
-    const { item, hideCartSidebar, className, renderLink } = this.props
+    const { item, hideCartSidebar, className, renderLink, finalSaleOn } = this.props
     const isOutOfStock = this._isOutOfStock()
 
     return (
@@ -201,7 +201,7 @@ class BaseProduct extends React.Component {
               {this._getNotEnoughQuantityError()}
             </Attribute>
           }
-          {item.on_sale && <FinalSale>FINAL SALE</FinalSale>}
+          {item.on_sale && finalSaleOn && <FinalSale>FINAL SALE</FinalSale>}
         </div>
         {this._showRemoveItem() && <Remove onClick={this._onRemoveItem} />}
       </div>
@@ -237,7 +237,8 @@ BaseProduct.propTypes = {
   hideCartSidebar: PropTypes.func,
   className: PropTypes.string,
   renderLink: PropTypes.func,
-  segmentProductRemoved: PropTypes.func
+  segmentProductRemoved: PropTypes.func,
+  finalSaleOn: PropTypes.bool
 }
 
 BaseProduct.defaultProps = {
