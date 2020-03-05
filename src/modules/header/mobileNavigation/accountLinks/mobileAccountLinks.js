@@ -57,13 +57,22 @@ const BaseAccountLinks = ({ className, renderLink, isSubscriptionMember, signOut
             </MobileLinkSecondary>
           </li>
           {isSubscriptionMember &&
-            <li>
-              <MobileLinkSecondary
-                target='/add-kid'
-                renderLink={renderLink}>
-                Add a Child
-              </MobileLinkSecondary>
-            </li>
+            <div>
+              <li>
+                <MobileLinkSecondary
+                  target='/add-kid'
+                  renderLink={renderLink}>
+                  Add a Child
+                </MobileLinkSecondary>
+              </li>
+              <li>
+                <MobileLinkSecondary
+                  target='/invite'
+                  renderLink={renderLink}>
+                  Free Clothes
+                </MobileLinkSecondary>
+              </li>
+            </div>
           }
         </UL>
       </Accordion>

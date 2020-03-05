@@ -146,15 +146,29 @@ export class BaseMobileNavigation extends React.Component {
               </li>
             }
             {!isSubscriptionMember &&
-              <li>
-                <MobileLinkTop
-                  href={`${homepageUrl}/subscribe-and-save`}>
-                  Subscribe + Save
-                </MobileLinkTop>
-              </li>
+              <div>
+                <li>
+                  <MobileLinkTop
+                    href={`${homepageUrl}/shop/sale`}>
+                    Sale
+                  </MobileLinkTop>
+                </li>
+                <li>
+                  <MobileLinkTop
+                    href={`${homepageUrl}/subscribe-and-save`}>
+                    Subscribe + Save
+                  </MobileLinkTop>
+                </li>
+              </div>
             }
             {isSubscriptionMember &&
               <div>
+              <li>
+                <MobileLinkTop
+                  href={`${homepageUrl}/shop/sale`}>
+                  Sale
+                </MobileLinkTop>
+              </li>
               <li>
                 <MobileLinkTop
                   target='/box'

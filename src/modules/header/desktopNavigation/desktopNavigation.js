@@ -165,18 +165,16 @@ export class BaseDesktopNavigation extends React.Component {
                     </HeaderLink>
                   </li>
                 }
-                {isSubscriptionMember &&
-                  <li>
-                    <HeaderLink
-                      onMouseEnter={this.closeDrawers}
-                      onFocus={this.closeDrawers}
-                      highlightable={highlightable}
-                      target='/invite'
-                      renderLink={renderLink}>
-                        Free Clothes
-                    </HeaderLink>
-                  </li>
-                }
+                <li>
+                  <HeaderLink
+                    onMouseEnter={this.closeDrawers}
+                    onFocus={this.closeDrawers}
+                    highlightable={highlightable}
+                    target='/shop/sale'
+                    renderLink={renderLink}>
+                      Sale
+                  </HeaderLink>
+                </li>
                 {showBlog &&
                   <span>|</span>
                 }
