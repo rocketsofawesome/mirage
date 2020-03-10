@@ -38,6 +38,11 @@ const Title = styled(H3)`
   margin-bottom: 10px;
 `
 
+const FinalSaleText = styled(P)`
+  font-size: 1.4rem;
+  margin-top: 27px;
+`
+
 const GiftModal = ({ onClose }) => (
   <Container>
     <CloseLink onClick={onClose}>
@@ -51,12 +56,15 @@ const GiftModal = ({ onClose }) => (
     />
     <Text>
       At checkout, leave a message that will show on the packing
-      slip without pricing. Need an exchange?
+      slip without pricing. Need an exchange?*
       It’s free and easy via our friendly customer service team.
     </Text>
     <Text>
       And don’t forget, buy 4+ items to get 20% off your order!
     </Text>
+    <FinalSaleText>
+      *Excludes FINAL SALE
+    </FinalSaleText>
   </Container>
 )
 
