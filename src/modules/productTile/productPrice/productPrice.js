@@ -25,7 +25,7 @@ const BaseProductPrice = ({ colorway, className }) => {
     pricingLine = (
       <Text>
         {formatSalePrice(price)}
-        <span className="original-price">({formatPrice(originalPrice)} reg)</span>
+        <span className="original-price">{formatPrice(originalPrice)}</span>
       </Text>
     )
   }
@@ -43,6 +43,7 @@ const ProductPrice = styled(BaseProductPrice)`
     font-weight: normal;
     color: #6d7278;
     margin-left: 8px;
+    text-decoration: line-through;
   }
 `
 

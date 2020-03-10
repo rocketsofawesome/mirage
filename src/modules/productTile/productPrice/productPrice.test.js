@@ -50,7 +50,7 @@ describe('(Styled Component) ProductPrice', () => {
       .find(P)
       .first()
       .text()
-    ).not.toContain(`(${formatPrice(noSaleProps.colorway.skus[0].original_price)} reg)`)
+    ).not.toContain(`${formatPrice(noSaleProps.colorway.skus[0].original_price)}`)
   })
 
   test('renders price when there is not a sale', () => {
