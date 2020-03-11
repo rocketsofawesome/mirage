@@ -33,7 +33,9 @@ const BaseProductPrice = ({ colorway, className }) => {
   return (
     <div className={className}>
       {pricingLine}
-      <Text color={theme.colors.rocketBlue}>{formatPrice(promoPrice)} with 4+ items</Text>
+      <Text style={{backgroundColor: theme.colors.yellow}}>
+        {formatPrice(promoPrice)} with 4+ items
+      </Text>
     </div>
   )
 }
