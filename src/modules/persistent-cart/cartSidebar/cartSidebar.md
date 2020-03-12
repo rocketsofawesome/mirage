@@ -1,7 +1,7 @@
 ```js
   <StripeProviderWrapper>
     <CartSidebar
-      shouldShowCartSidebar={true}
+      shouldShowCartSidebar={false}
       giftFeatureOn={true}
       hideCartSidebar={() => {}}
       submitBag={() => { console.log('submit bag') }}
