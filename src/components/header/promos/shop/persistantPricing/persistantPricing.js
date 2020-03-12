@@ -5,32 +5,55 @@ import styled, { keyframes } from 'styled-components'
 import { P } from 'SRC'
 
 //SM - I would like for this to be computed based on amount of children passedhead
+// For two messages:
 const animateContainer = keyframes`
   0% {
     transform: translateY(0px);
   }
-  4.167% {
-    transform: translateY(30px);
+  10% {
+    transform: translateY(20px);
   }
-  29.167% {
-    transform: translateY(30px);
+  40% {
+    transform: translateY(20px);
   }
-  37.5% {
-    transform: translateY(90px);
+  60% {
+    transform: translateY(60px);
   }
-  62.5% {
-    transform: translateY(90px);
-  }
-  70.834%{
-    transform: translateY(150px);
-  }
-  95.834% {
-    transform: translateY(150px);
+  90% {
+    transform: translateY(60px);
   }
   100%{
-    transform: translateY(180px);
+    transform: translateY(80px);
   }
   `
+
+// For three messages:
+  // const animateContainer = keyframes`
+  //   0% {
+  //     transform: translateY(0px);
+  //   }
+  //   4.167% {
+  //     transform: translateY(30px);
+  //   }
+  //   29.167% {
+  //     transform: translateY(30px);
+  //   }
+  //   37.5% {
+  //     transform: translateY(90px);
+  //   }
+  //   62.5% {
+  //     transform: translateY(90px);
+  //   }
+  //   70.834%{
+  //     transform: translateY(150px);
+  //   }
+  //   95.834% {
+  //     transform: translateY(150px);
+  //   }
+  //   100%{
+  //     transform: translateY(180px);
+  //   }
+    // `
 
 const PersistantPricing = styled(({className, children}) => {
   return (
@@ -68,7 +91,7 @@ box-sizing: border-box;
       margin-left: 0.5rem;
     }
     ${P} {
-      line-height: 3rem;
+      line-height: 2rem;
       padding-top: ${props => (props.height/10)}rem;
       height: ${props => (props.height/10)*2}rem;
       font-weight: 300;
@@ -88,16 +111,10 @@ PersistantPricing.propTypes = {
 PersistantPricing.defaultProps = {
   children: [
     <P key='message1'>Did you know? Buy 4+ Items, Get 20% Off. Every day. <span role='img' aria-label='confetti'>🎉</span></P>,
-    <P key='message2'>You’re welcome! Buy 4+ Items, Get 20% Off. Every day. <span role='img' aria-label='crown'>👑</span></P>,
-    <P key='message3'>
-      We’re about to make your life 20% easier …
-      <span role='img' aria-label='smiling face with smiling eyes'>😊</span>
-      <span role='img' aria-label='confetti'>🎉</span>
-      <span role='img' aria-label='hearts'>💕</span>
-    </P>
+    <P key='message2'>You’re welcome! Buy 4+ Items, Get 20% Off. Every day. <span role='img' aria-label='crown'>👑</span></P>
   ],
   duration: 12,
-  height: 30
+  height: 20
 }
 
 /** @component */
