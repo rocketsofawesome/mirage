@@ -1,8 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Elements } from 'react-stripe-elements'
-import styled from 'styled-components'
+import styled, { withTheme } from 'styled-components'
 import accounting from 'accounting'
+import MediaQuery from 'react-responsive';
 
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
@@ -124,7 +125,7 @@ const PaymentRequestButton = styled(PaymentRequestForm)`
   width: 100%;
 `
 
-const CheckoutLinkMobile = styled(({ renderLink, children, ...props }) => {
+const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   if (renderLink) {
     return renderLink({...props, children: children})
   } else {
@@ -140,30 +141,6 @@ const CheckoutLinkMobile = styled(({ renderLink, children, ...props }) => {
   letter-spacing: 0;
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: underline;
-  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
-    display: none;
-  `}
-`
-
-const CheckoutLinkDesktop = styled(({ renderLink, children, ...props }) => {
-  if (renderLink) {
-    return renderLink({...props, children: children})
-  } else {
-    return (<a {...props}>{children}</a>)
-  }
-})`
-  line-height: 40px;
-  display: block;
-  vertical-align: middle;
-  cursor: pointer;
-  color: ${props => props.theme.colors.navy};
-  font-size: 14px;
-  letter-spacing: 0;
-  font-family: ${props => props.theme.fonts.primaryFont};
-  text-decoration: underline;
-  ${props => props.theme.breakpointsVerbose.belowTabletMax`
-    display: none;
-  `}
 `
 
 const GiftLink = styled(({ renderLink, children, ...props }) => {
@@ -283,7 +260,8 @@ class BaseCartSidebar extends React.Component {
       onClickCheckout,
       onClickPaymentRequestButton,
       giftFeatureOn,
-      finalSaleOn
+      finalSaleOn,
+      theme
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -292,7 +270,12 @@ class BaseCartSidebar extends React.Component {
 
     return (
       <div className={className}>
-        <Overlay onClick={hideCartSidebar} />
+        <MediaQuery query={theme.breakpoints.belowTabletMax}>
+          <Overlay onClick={() => this.handleKeepShopping("belowTabletMax")} />
+        </MediaQuery>
+        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+          <Overlay onClick={() => this.handleKeepShopping("aboveTabletMax")} />
+        </MediaQuery>
         <CartSidebarContainer
           aria-label='Bag' ref={this.setBag}
           tabIndex='-1'>
@@ -302,27 +285,38 @@ class BaseCartSidebar extends React.Component {
                 <YourBagTitle>Your bag</YourBagTitle>
                 <ItemCount>({itemsInBag} {itemsInBag !== 1 ? 'items' : 'item'})</ItemCount>
               </TitleContainer>
-              <CloseXDiv onClick={hideCartSidebar}>
-                <XIcon width='15px' stroke={'#00003C'} />
-              </CloseXDiv>
+              <MediaQuery query={theme.breakpoints.belowTabletMax}>
+                <CloseXDiv onClick={() => this.handleKeepShopping("belowTabletMax")}>
+                  <XIcon width='15px' stroke={'#00003C'} />
+                </CloseXDiv>
+              </MediaQuery>
+              <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+                <CloseXDiv onClick={() => this.handleKeepShopping("aboveTabletMax")}>
+                  <XIcon width='15px' stroke={'#00003C'} />
+                </CloseXDiv>
+              </MediaQuery>
               <ProgressBarContainer>
                 <ProgressBarText
                   order={order}
                   itemsInBag={itemsInBag}
                 />
                 <ProgressBar percentage={percentage} />
-                <CheckoutLinkMobile
-                  renderLink={renderLink}
-                  onClick={() => this.handleKeepShopping("belowTabletMax")}
-                >
-                  KEEP SHOPPING
-                </CheckoutLinkMobile>
-                <CheckoutLinkDesktop
-                  renderLink={renderLink}
-                  onClick={() => this.handleKeepShopping("aboveTabletMax")}
-                >
-                  KEEP SHOPPING
-                </CheckoutLinkDesktop>
+                <MediaQuery query={theme.breakpoints.belowTabletMax}>
+                  <CheckoutLink
+                    renderLink={renderLink}
+                    onClick={() => this.handleKeepShopping("belowTabletMax")}
+                  >
+                    KEEP SHOPPING
+                  </CheckoutLink>
+                </MediaQuery>
+                <MediaQuery query={theme.breakpoints.aboveTabletMax}>
+                  <CheckoutLink
+                    renderLink={renderLink}
+                    onClick={() => this.handleKeepShopping("aboveTabletMax")}
+                  >
+                    KEEP SHOPPING
+                  </CheckoutLink>
+                </MediaQuery>
               </ProgressBarContainer>
             </CartSidebarHeader>
             {lineItems.length > 0 ?
@@ -443,4 +437,5 @@ const CartSidebar = styled(BaseCartSidebar)`
   z-index: 70;
 `
 
-export default CartSidebar
+/** @component */
+export default withTheme(CartSidebar)
