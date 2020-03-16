@@ -18,7 +18,9 @@
         ],
         id: '12345',
         slug: 'example-slug',
-        price: '$22.50'
+        price: 16.5,
+        on_sale: true,
+        original_price: 22.5
       },
       {
         image: {
@@ -36,7 +38,9 @@
         ],
         id: '12346',
         slug: 'example-slug',
-        price: '$19.50'
+        price: 19.5,
+        on_sale: false,
+        original_price: 19.5
       }
     ]
   }
