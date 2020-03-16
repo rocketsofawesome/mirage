@@ -2,8 +2,9 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import accounting from 'accounting'
 
-import { SizePicker, InlineImage, Label } from 'SRC'
+import { SizePicker, InlineImage, Label, P } from 'SRC'
 
 const OutfitProductImage = ({product}) => (
   <InlineImage
@@ -23,14 +24,28 @@ const OutfitSizePicker = styled(({
       {Object.keys(products).map((size) => {
         const product = products[size]
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
-
+        const originalPrice = product.original_price
+        const onSale = product.on_sale
         return (
           <div className='roa-product' key={product.id}>
             <div className='roa-image-wrapper'>
               {renderProductLink(product)}
             </div>
             <div className='roa-price-size-box'>
-              <Label className='roa-item-price'>{product.price}</Label>
+              <P className='text'>
+                {onSale ?
+                  <span>
+                    {accounting.formatMoney(product.price)}
+                    <span className='original-price'>{accounting.formatMoney(originalPrice)}</span>
+                  </span>
+                  :
+                  accounting.formatMoney(product.price)
+                }
+                <span className='promo-text'>
+                  <span className='forward-slash'>{'//'}</span>
+                  <span className='highlighted-text'>{accounting.formatMoney(product.price * 0.8)} when you buy 4+ items</span>
+                </span>
+              </P>
               <SizePicker
                 productId={product.id}
                 variants={product.variants}
@@ -85,6 +100,39 @@ const OutfitSizePicker = styled(({
       &:last-of-type {
         border-bottom: none;
       }
+    `}
+  }
+  .text {
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin-left: 7.5px;
+    margin-top: 15px;
+  }
+  .original-price {
+    color: #6d7278;
+    text-decoration: line-through;
+    margin-left: 8px;
+  }
+  .promo-text {
+    ${props => props.theme.breakpointsVerbose.belowTablet`
+      margin-left: 0px;
+    `}
+    margin-left: 8px;
+  }
+  .forward-slash {
+    ${props => props.theme.breakpointsVerbose.belowTablet`
+      display: none;
+    `}
+  }
+  .highlighted-text {
+    background-color: yellow;
+    margin-left: 8px;
+    ${props => props.theme.breakpointsVerbose.belowTablet`
+      margin-left: 0px;
+      :before
+        { content: ' ';
+          display: block;
+        }
     `}
   }
 `
