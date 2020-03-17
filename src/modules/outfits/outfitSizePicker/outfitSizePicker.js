@@ -125,7 +125,7 @@ const OutfitSizePicker = styled(({
     `}
   }
   .highlighted-text {
-    background-color: yellow;
+    background-color: #f0ff02;
     margin-left: 8px;
     ${props => props.theme.breakpointsVerbose.belowTablet`
       margin-left: 0px;
