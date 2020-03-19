@@ -10,7 +10,7 @@ const Filler = styled.div`
   left: 0;
   width: ${props => props.percentage}%;
   height: 100%;
-  z-index: 2;
+  z-index: 1;
   border-radius: 50px;
   transition: width 300ms ease-out;
 `
@@ -20,7 +20,7 @@ const CloudContainer = styled.div`
   top: 50%;
   left: ${props => props.percentage}%;
   transform: translate(${props => props.percentage < 100 ? '-50%' : '-100%'}, -50%);
-  z-index: 3;
+  z-index: 2;
   transition: all 300ms ease-out;
   opacity: ${props => (props.percentage === 0 || props.percentage === 100) ? 0 : 1};
 `
