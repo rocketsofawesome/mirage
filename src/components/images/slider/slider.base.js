@@ -56,8 +56,8 @@ export class BaseROASlider extends Component {
   }
 
   render() {
-    const { className, images, renderLink, target, lazyLoad } = this.props
-    const Link = renderLink
+    const { className, images, onClick, lazyLoad } = this.props
+
     return (
       <div
         className={className}
@@ -66,34 +66,20 @@ export class BaseROASlider extends Component {
         <Slider
           className='roa-slider'
           ref={this.setSlider}
-          {...this.config}>
-          {images.map((image, index) => {
-            if (renderLink && target) {
-              return (
-                <Link target={target} key={index}>
-                  <InlineImage
-                    alt={image.alt}
-                    src={cloudinary.url(image.src, {
-                      transformation: 'plp_product_shot',
-                      format: 'jpg'
-                    })}
-                    lazyLoad={lazyLoad}
-                  />
-                </Link>
-              )
-            } else {
-              return (
-                <InlineImage
-                  key={index}
-                  alt={image.alt}
-                  src={cloudinary.url(image.src, {
-                    transformation: 'plp_product_shot',
-                    format: 'jpg'
-                  })}
-                />
-              )
-            }
-          })}
+          {...this.config}
+        >
+          {images.map((image, index) => (
+            <InlineImage
+              key={index}
+              alt={image.alt}
+              src={cloudinary.url(image.src, {
+                transformation: 'plp_product_shot',
+                format: 'jpg'
+              })}
+              onClick={onClick}
+              lazyLoad={lazyLoad}
+            />
+          ))}
         </Slider>
         {(images.length > 1) &&
           <div>
@@ -110,6 +96,7 @@ export class BaseROASlider extends Component {
 BaseROASlider.propTypes = {
   className: PropTypes.string,
   images: PropTypes.array,
+  onClick: PropTypes.func,
   sliderLazyLoad: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.string
@@ -117,7 +104,8 @@ BaseROASlider.propTypes = {
 }
 
 BaseROASlider.defaultProps = {
-  sliderLazyLoad: 'progressive'
+  sliderLazyLoad: 'progressive',
+  onClick: () => null
 }
 
 /** @component */

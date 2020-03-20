@@ -96,15 +96,11 @@ const Status = styled(({className, children, dismissable}) => {
   ${props => setTypeStyle(props)}
 `
 
-const statusTypeCheck = (props, propName, componentName) => {
-  const types = ['message', 'promo', 'notification', 'error']
-  if (!types.includes(props[propName])){
-    return new Error(`Invalid type prop supplied for ${componentName} please choose one of the following: ${types.toString()}`)
-  }
-}
-
 Status.propTypes = {
-  type: statusTypeCheck,
+  type: PropTypes.oneOf([
+    'error', 'message', 'notification',
+    'promo_blue', 'promo_pink', 'promo_rainbow'
+  ]),
   dismissable: PropTypes.bool
 }
 

@@ -58,7 +58,7 @@ const setCursor = css`
 
 const BaseButton = styled(CustomButton)`
   box-sizing: border-box;
-  height: 50px;
+  height: ${props => props.height};
   ${props => props.width && setWidth}
   padding: 0 01.5rem;
 
@@ -95,7 +95,6 @@ const BaseButton = styled(CustomButton)`
 
   :active {
     border-style: solid;
-    transform: translateX(.2rem);
   }
   > span {
     display: flex;
@@ -127,6 +126,11 @@ BaseButton.propTypes = {
     PropTypes.func
   ]),
   width: PropTypes.string,
+  height: PropTypes.string
+}
+
+BaseButton.defaultProps = {
+  height: '50px'
 }
 
 export default BaseButton

@@ -1,29 +1,48 @@
 import React from 'react'
+import styled from 'styled-components'
 import PropTypes from 'prop-types'
-import { ColorsInterface, P, ROASlider, QuickAdd, ProductPrice } from 'SRC'
-
-import { default as withSortedShots } from 'SRC/utils/shotSorter'
+import {
+  ColorsInterface,
+  P,
+  ROASlider,
+  ProductPrice,
+  WhiteButton
+} from 'SRC'
+import { withSortedShots } from 'SRC/utils'
 
 const SortedROASlider = withSortedShots(ROASlider)
+
+const SliderContainer = styled.div`
+  position: relative;
+  cursor: pointer;
+`
+
+const QuickView = styled.div`
+  opacity: 0;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  width: 90%;
+  transform: translate(-50%, 0);
+  transition: opacity 200ms ease-in;
+
+  ${SliderContainer}:hover & {
+    opacity: 1;
+  }
+`
+
+const QuickViewButton = styled(WhiteButton)`
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+`
 
 export default class ProductTile extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
       show: false,
-      selectedColorWay: props.product.code,
+      selectedColorway: props.product.code,
       lazyLoad: props.lazyLoad
     }
-  }
-  showQuickAdd = () => {
-    this.setState({
-      show: true
-    })
-  }
-  hideQuickAdd = () => {
-    this.setState({
-      show: false
-    })
   }
 
   getColorwayIndex = (code) => {
@@ -31,8 +50,13 @@ export default class ProductTile extends React.Component {
     return colorways.findIndex((colorway) => (colorway.code === code))
   }
 
+  handleQuickViewClick = () => {
+    const { product, onQuickView } = this.props
+    onQuickView(product)
+  }
+
   changeColorway = (code) => ({ target }) => {
-    this.setState({selectedColorWay: code, lazyLoad: false})
+    this.setState({selectedColorway: code, lazyLoad: false})
   }
 
   getColorway = (code) => {
@@ -40,6 +64,7 @@ export default class ProductTile extends React.Component {
     const index = this.getColorwayIndex(code)
     return product.colorways[index]
   }
+
   render () {
     const {
       className,
@@ -47,27 +72,32 @@ export default class ProductTile extends React.Component {
       renderLink,
       ...props
     } = this.props
-    const { show, selectedColorWay, lazyLoad } = this.state
-    const colorway = this.getColorway(selectedColorWay)
+    const { selectedColorway, lazyLoad } = this.state
+    const colorway = this.getColorway(selectedColorway)
     const target = `products/${product.product_slug}-${colorway.slug}`
     const Link = renderLink
+
     return (
       <div className={className}>
-        <QuickAdd
-          onMouseEnter={this.showQuickAdd}
-          onMouseLeave={this.hideQuickAdd}
-          variants={colorway.skus}
-          show={show}
-          {...props}>
+        <SliderContainer>
           <SortedROASlider
             {...props}
             product={product}
             shots={colorway.shots}
-            renderLink={renderLink}
-            target={target}
-            lazyLoad={lazyLoad} />
-        </QuickAdd>
-        { (renderLink && target) ?
+            lazyLoad={lazyLoad}
+            onClick={this.handleQuickViewClick}
+          />
+          <QuickView>
+            <QuickViewButton
+              width='100%'
+              height='35px'
+              onClick={this.handleQuickViewClick}
+            >
+              Quick View
+            </QuickViewButton>
+          </QuickView>
+        </SliderContainer>
+        {renderLink ?
           <Link
             className='roa-product-tile-details'
             target={target}>
@@ -80,10 +110,11 @@ export default class ProductTile extends React.Component {
           </div>
         }
         <ColorsInterface
-          selected={selectedColorWay}
+          selected={selectedColorway}
           colorways={product.colorways}
           productId={product.id}
-          onChange={this.changeColorway} />
+          onChange={this.changeColorway}
+        />
       </div>
     )
   }
@@ -97,11 +128,13 @@ ProductTile.defaultProps = {
       {...props}>
       {children}
     </a>
-  )
+  ),
+  onQuickView: () => null
 }
 
 ProductTile.propTypes = {
   className: PropTypes.string,
   product: PropTypes.object,
-  renderLink: PropTypes.func
+  renderLink: PropTypes.func,
+  onQuickView: PropTypes.func
 }

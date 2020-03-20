@@ -1,7 +1,10 @@
 ### Product Tile with Multiple Variants
 ```js
   <div style={{ width: '33.33%'}}>
-    <ProductTile {...require('./defaultProps').productWithVariants} />
+    <ProductTile
+      {...require('./defaultProps').productWithVariants}
+      onQuickView={(product) => console.log('Quick view', product)}
+    />
   </div>
 ```
 

@@ -14,7 +14,7 @@ export default class ContentfulResponsiveImages extends Component {
       return (
         <div className={className}>
           <picture>
-            <source srcset={defaultImage.fields.file.url} media="(min-width: 800px)" />
+            <source srcSet={defaultImage.fields.file.url} media="(min-width: 800px)" />
             <InlineImage src={mobileImage.fields.file.url}/>
           </picture>
           {children}

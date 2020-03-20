@@ -8,7 +8,7 @@ export const shotTypeSortOrder = [
   'other'
 ]
 
-export default function withSortedShots(WrappedComponent) {
+export const withSortedShots = (WrappedComponent) => {
   return class extends Component {
     sortShots = () => {
       const { shots: inShots } = this.props
