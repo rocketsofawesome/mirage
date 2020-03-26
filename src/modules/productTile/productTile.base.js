@@ -52,7 +52,9 @@ export default class ProductTile extends React.Component {
 
   handleQuickViewClick = () => {
     const { product, onQuickView } = this.props
-    onQuickView(product)
+    const { selectedColorway } = this.state
+    const colorway = this.getColorway(selectedColorway)
+    onQuickView(product, colorway)
   }
 
   changeColorway = (code) => ({ target }) => {
