@@ -6,7 +6,8 @@ import {
   P,
   ROASlider,
   ProductPrice,
-  WhiteButton
+  WhiteButton,
+  theme
 } from 'SRC'
 import { withSortedShots } from 'SRC/utils'
 
@@ -29,6 +30,10 @@ const QuickView = styled.div`
   ${SliderContainer}:hover & {
     opacity: 1;
   }
+
+  ${props => props.theme.breakpointsVerbose.belowLaptop`
+    display: none;
+  `}
 `
 
 const QuickViewButton = styled(WhiteButton)`
@@ -45,26 +50,40 @@ export default class ProductTile extends React.Component {
     }
   }
 
-  getColorwayIndex = (code) => {
-    const { product: { colorways } } = this.props
-    return colorways.findIndex((colorway) => (colorway.code === code))
+  handleSliderClick = () => {
+    const isMobile = window.innerWidth < theme.sizes.laptop
+    const { goToPdp } = this.props
+
+    if (isMobile) {
+      this.handleQuickViewClick()
+    } else {
+      const url = this.getUrl()
+      goToPdp(url)
+    }
+  }
+
+  getUrl = () => {
+    const { product } = this.props
+    const colorway = this.getSelectedColorway()
+    return `/products/${product.product_slug}-${colorway.slug}`
   }
 
   handleQuickViewClick = () => {
     const { product, onQuickView } = this.props
-    const { selectedColorway } = this.state
-    const colorway = this.getColorway(selectedColorway)
+    const colorway = this.getSelectedColorway()
     onQuickView(product, colorway)
   }
 
   changeColorway = (code) => ({ target }) => {
-    this.setState({selectedColorway: code, lazyLoad: false})
+    this.setState({ selectedColorway: code, lazyLoad: false })
   }
 
-  getColorway = (code) => {
+  getSelectedColorway = () => {
     const { product } = this.props
-    const index = this.getColorwayIndex(code)
-    return product.colorways[index]
+    const { selectedColorway } = this.state
+    return product.colorways.find(
+      (colorway) => colorway.code === selectedColorway
+    )
   }
 
   render () {
@@ -75,8 +94,7 @@ export default class ProductTile extends React.Component {
       ...props
     } = this.props
     const { selectedColorway, lazyLoad } = this.state
-    const colorway = this.getColorway(selectedColorway)
-    const target = `products/${product.product_slug}-${colorway.slug}`
+    const colorway = this.getSelectedColorway()
     const Link = renderLink
 
     return (
@@ -87,7 +105,7 @@ export default class ProductTile extends React.Component {
             product={product}
             shots={colorway.shots}
             lazyLoad={lazyLoad}
-            onClick={this.handleQuickViewClick}
+            onClick={this.handleSliderClick}
           />
           <QuickView>
             <QuickViewButton
@@ -102,7 +120,7 @@ export default class ProductTile extends React.Component {
         {renderLink ?
           <Link
             className='roa-product-tile-details'
-            target={target}>
+            target={this.getUrl()}>
             <P fontSize="14px">{product.name}</P>
             <ProductPrice colorway={colorway} />
           </Link> :
@@ -126,17 +144,19 @@ ProductTile.defaultProps = {
   renderLink: ({className, children, target, ...props}) => (
     <a
       className={className}
-      href={`/${target}`}
+      href={target}
       {...props}>
       {children}
     </a>
   ),
-  onQuickView: () => null
+  onQuickView: () => null,
+  goToPdp: (url) => window.location = url
 }
 
 ProductTile.propTypes = {
   className: PropTypes.string,
   product: PropTypes.object,
   renderLink: PropTypes.func,
-  onQuickView: PropTypes.func
+  onQuickView: PropTypes.func,
+  goToPdp: PropTypes.func
 }

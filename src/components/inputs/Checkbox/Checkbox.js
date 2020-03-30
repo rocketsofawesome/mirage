@@ -88,9 +88,7 @@ class CheckboxBase extends React.Component {
 
 CheckboxBase.propTypes = {
   className: PropTypes.string,
-  input: PropTypes.shape({
-    value: PropTypes.bool
-  }).isRequired,
+  input: PropTypes.object.isRequired,
   label: PropTypes.string
 }
 

@@ -40,7 +40,10 @@ InlineImage.defaultProps = {
 
 InlineImage.propTypes = {
   alt: PropTypes.string.isRequired,
-  lazyLoad: PropTypes.string,
+  lazyLoad: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.bool
+  ]),
   src: PropTypes.string.isRequired,
   sizes: PropTypes.object,
   srcSet: PropTypes.oneOfType([
