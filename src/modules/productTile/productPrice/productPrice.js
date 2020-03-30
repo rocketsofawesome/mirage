@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { P, formatPrice, theme } from 'SRC'
+import { P, formatPrice } from 'SRC'
 
 const Text = styled(P)`
   font-weight: 500;
@@ -16,6 +16,7 @@ const formatSalePrice = (price) => {
 const BaseProductPrice = ({ colorway, className }) => {
   const originalPrice = colorway.skus[0].original_price
   const price = colorway.skus[0].price
+  const discountPercent = colorway.skus[0].discount_percent
   const onSale = originalPrice && originalPrice !== 0 && price < originalPrice
   const promoPrice = parseFloat(price) * 0.8
 
@@ -26,6 +27,7 @@ const BaseProductPrice = ({ colorway, className }) => {
       <Text>
         {formatSalePrice(price)}
         <span className="original-price">{formatPrice(originalPrice)}</span>
+        <span className="discount-percent">{discountPercent}% off</span>
       </Text>
     )
   }
@@ -33,8 +35,8 @@ const BaseProductPrice = ({ colorway, className }) => {
   return (
     <div className={className}>
       {pricingLine}
-      <Text style={{backgroundColor: theme.colors.yellow}}>
-        {formatPrice(promoPrice)} with 4+ items
+      <Text>
+        <span className="highlighter">{formatPrice(promoPrice)} with 4+ items</span>
       </Text>
     </div>
   )
@@ -46,6 +48,13 @@ const ProductPrice = styled(BaseProductPrice)`
     color: #6d7278;
     margin-left: 8px;
     text-decoration: line-through;
+  }
+  .discount-percent {
+    margin-left: 4px;
+    color: ${props => props.theme.colors.rocketBlue}
+  }
+  .highlighter {
+    background-color: ${props => props.theme.colors.yellow}
   }
 `
 

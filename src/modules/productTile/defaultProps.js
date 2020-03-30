@@ -95,8 +95,9 @@ const productOnSale = {
             "id": 18009,
             "sku": "A222-C01-A",
             "size": "OS",
-            "price": 10.0,
-            "original_price": 24.5,
+            "price": 19.88,
+            "original_price": 26.50,
+            "discount_percent": 25,
             "cost_price": null,
             "in_stock": true
           }
