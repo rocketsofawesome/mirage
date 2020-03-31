@@ -8,12 +8,28 @@ const Text = styled(P)`
   font-size: 14px;
 `;
 
+const Discount = styled.span`
+  margin-left: 4px;
+  color: ${props => props.theme.colors.rocketBlue}
+`
+
+const Price = styled.span`
+  font-weight: normal;
+  color: #6d7278;
+  margin-left: 8px;
+  text-decoration: line-through;
+`
+
+const HighlightedText = styled.span`
+  background-color: ${props => props.theme.colors.yellow}
+`
+
 const formatSalePrice = (price) => {
   const decimalPlaces = parseInt(price, 10) === parseFloat(price) ? 0 : 2
   return formatPrice(price, "$", decimalPlaces)
 }
 
-const BaseProductPrice = ({ colorway, className }) => {
+const ProductPrice = ({ colorway, className }) => {
   const originalPrice = colorway.skus[0].original_price
   const price = colorway.skus[0].price
   const discountPercent = colorway.skus[0].discount_percent
@@ -26,8 +42,8 @@ const BaseProductPrice = ({ colorway, className }) => {
     pricingLine = (
       <Text>
         {formatSalePrice(price)}
-        <span className="original-price">{formatPrice(originalPrice)}</span>
-        <span className="discount-percent">{discountPercent}% off</span>
+        <Price>{formatPrice(originalPrice)}</Price>
+        <Discount>{parseInt(discountPercent)}% off</Discount>
       </Text>
     )
   }
@@ -36,29 +52,13 @@ const BaseProductPrice = ({ colorway, className }) => {
     <div className={className}>
       {pricingLine}
       <Text>
-        <span className="highlighter">{formatPrice(promoPrice)} with 4+ items</span>
+        <HighlightedText>{formatPrice(promoPrice)} with 4+ items</HighlightedText>
       </Text>
     </div>
   )
 }
 
-const ProductPrice = styled(BaseProductPrice)`
-  .original-price {
-    font-weight: normal;
-    color: #6d7278;
-    margin-left: 8px;
-    text-decoration: line-through;
-  }
-  .discount-percent {
-    margin-left: 4px;
-    color: ${props => props.theme.colors.rocketBlue}
-  }
-  .highlighter {
-    background-color: ${props => props.theme.colors.yellow}
-  }
-`
-
-BaseProductPrice.propTypes = {
+ProductPrice.propTypes = {
   colorway: PropTypes.object,
   className: PropTypes.string
 }
