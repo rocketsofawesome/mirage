@@ -1,21 +1,38 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { P, formatPrice, theme } from 'SRC'
+import { P, formatPrice } from 'SRC'
 
 const Text = styled(P)`
   font-weight: 500;
   font-size: 14px;
 `;
 
+const Discount = styled.span`
+  margin-left: 4px;
+  color: ${props => props.theme.colors.rocketBlue}
+`
+
+const Price = styled.span`
+  font-weight: normal;
+  color: #6d7278;
+  margin-left: 8px;
+  text-decoration: line-through;
+`
+
+const HighlightedText = styled.span`
+  background-color: ${props => props.theme.colors.yellow}
+`
+
 const formatSalePrice = (price) => {
   const decimalPlaces = parseInt(price, 10) === parseFloat(price) ? 0 : 2
   return formatPrice(price, "$", decimalPlaces)
 }
 
-const BaseProductPrice = ({ colorway, className }) => {
+const ProductPrice = ({ colorway, className }) => {
   const originalPrice = colorway.skus[0].original_price
   const price = colorway.skus[0].price
+  const discountPercent = colorway.skus[0].discount_percent
   const onSale = originalPrice && originalPrice !== 0 && price < originalPrice
   const promoPrice = parseFloat(price) * 0.8
 
@@ -25,7 +42,8 @@ const BaseProductPrice = ({ colorway, className }) => {
     pricingLine = (
       <Text>
         {formatSalePrice(price)}
-        <span className="original-price">{formatPrice(originalPrice)}</span>
+        <Price>{formatPrice(originalPrice)}</Price>
+        <Discount>{parseInt(discountPercent)}% off</Discount>
       </Text>
     )
   }
@@ -33,23 +51,14 @@ const BaseProductPrice = ({ colorway, className }) => {
   return (
     <div className={className}>
       {pricingLine}
-      <Text style={{backgroundColor: theme.colors.yellow}}>
-        {formatPrice(promoPrice)} with 4+ items
+      <Text>
+        <HighlightedText>{formatPrice(promoPrice)} with 4+ items</HighlightedText>
       </Text>
     </div>
   )
 }
 
-const ProductPrice = styled(BaseProductPrice)`
-  .original-price {
-    font-weight: normal;
-    color: #6d7278;
-    margin-left: 8px;
-    text-decoration: line-through;
-  }
-`
-
-BaseProductPrice.propTypes = {
+ProductPrice.propTypes = {
   colorway: PropTypes.object,
   className: PropTypes.string
 }

@@ -11,6 +11,18 @@ const OutfitProductImage = ({product}) => (
     {...product.image} />
 )
 
+const Discount = styled.span`
+  margin-left: 4px;
+  color: ${props => props.theme.colors.rocketBlue}
+`
+
+const Price = styled.span`
+  font-weight: normal;
+  color: #6d7278;
+  margin-left: 8px;
+  text-decoration: line-through;
+`
+
 const OutfitSizePicker = styled(({
   className,
   currentSizes,
@@ -26,6 +38,7 @@ const OutfitSizePicker = styled(({
         const currentSize = currentSizes && (product.id in currentSizes) ? currentSizes[product.id] : undefined
         const originalPrice = product.original_price
         const onSale = product.on_sale
+        const discountPercent = product.discount_percent
         return (
           <div className='roa-product' key={product.id}>
             <div className='roa-image-wrapper'>
@@ -36,7 +49,8 @@ const OutfitSizePicker = styled(({
                 {onSale ?
                   <span>
                     {accounting.formatMoney(product.price)}
-                    <span className='original-price'>{accounting.formatMoney(originalPrice)}</span>
+                    <Price>{accounting.formatMoney(originalPrice)}</Price>
+                    <Discount>{parseInt(discountPercent)}% Off</Discount>
                   </span>
                   :
                   accounting.formatMoney(product.price)
