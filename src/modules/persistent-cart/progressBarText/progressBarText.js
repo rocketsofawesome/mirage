@@ -10,14 +10,14 @@ const Container = styled.div`
 `
 
 const Message = ({ order, itemsInBag }) => {
-  const itemsLeft = 4 - itemsInBag
+  const itemsLeft = 6 - itemsInBag
   const itemDescription = itemsLeft > 1 ? 'items' : 'item'
 
-  if (itemsLeft === 4) {
+  if (itemsLeft === 6) {
     return (
       <P>
         You're {itemsLeft} {itemDescription} away from
-        automatically getting 20% off, every day!{' '}
+        automatically getting 25% off, every day!{' '}
         <span role="img" aria-label="hearts">💕</span>
       </P>
     )
@@ -27,7 +27,7 @@ const Message = ({ order, itemsInBag }) => {
       <P>
         <span role="img" aria-label="confetti">🎉 </span>{' '}
         Yay! You'll save <strong>{accounting.formatMoney(savings)}</strong> on
-        this order of 4+ items.{' '}
+        this order of 6+ items.{' '}
         <span role="img" aria-label="confetti">🎉 </span>
       </P>
     )
@@ -36,7 +36,7 @@ const Message = ({ order, itemsInBag }) => {
   return (
     <P>
       So close! Add <strong>{itemsLeft}</strong> more {itemDescription} to
-      automatically get 20% off, every day!{' '}
+      automatically get 25% off, every day!{' '}
       <span role="img" aria-label="hearts">💕</span>
     </P>
   )

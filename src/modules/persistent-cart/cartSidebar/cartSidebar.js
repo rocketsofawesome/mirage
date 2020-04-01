@@ -266,7 +266,7 @@ class BaseCartSidebar extends React.Component {
     if (!shouldShowCartSidebar) return null
 
     const isCheckoutButtonDisabled = subTotal === 0
-    const percentage = Math.min(itemsInBag / 4 * 100, 100)
+    const percentage = Math.min(itemsInBag / 6 * 100, 100)
 
     return (
       <div className={className}>

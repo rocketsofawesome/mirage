@@ -60,7 +60,7 @@ const GiftModal = ({ onClose }) => (
       It’s free and easy via our friendly customer service team.
     </Text>
     <Text>
-      And don’t forget, buy 4+ items to get 20% off your order!
+      And don’t forget, buy 6+ items to get 25% off your order!
     </Text>
     <FinalSaleText>
       *Excludes FINAL SALE

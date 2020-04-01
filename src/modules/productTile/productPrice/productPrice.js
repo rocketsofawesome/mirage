@@ -34,7 +34,7 @@ const ProductPrice = ({ colorway, className }) => {
   const price = colorway.skus[0].price
   const discountPercent = colorway.skus[0].discount_percent
   const onSale = originalPrice && originalPrice !== 0 && price < originalPrice
-  const promoPrice = parseFloat(price) * 0.8
+  const promoPrice = parseFloat(price) * 0.75
 
   let pricingLine = <Text>{formatPrice(price)}</Text>
 
@@ -52,7 +52,7 @@ const ProductPrice = ({ colorway, className }) => {
     <div className={className}>
       {pricingLine}
       <Text>
-        <HighlightedText>{formatPrice(promoPrice)} with 4+ items</HighlightedText>
+        <HighlightedText>{formatPrice(promoPrice)} with 6+ items</HighlightedText>
       </Text>
     </div>
   )
