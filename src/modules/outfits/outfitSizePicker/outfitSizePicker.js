@@ -57,7 +57,7 @@ const OutfitSizePicker = styled(({
                 }
                 <span className='promo-text'>
                   <span className='forward-slash'>{'//'}</span>
-                  <span className='highlighted-text'>{accounting.formatMoney(product.price * 0.8)} when you buy 4+ items</span>
+                  <span className='highlighted-text'>{accounting.formatMoney(product.price * 0.75)} when you buy 6+ items</span>
                 </span>
               </P>
               <SizePicker

@@ -27,7 +27,7 @@ export default {
       "svg": "WashingMachineSvg"
     },
     {
-      "title": "20% off 4+ Items",
+      "title": "25% off 6+ Items",
       "body": "Automatic savings every single day",
       "svg": "CashSvg"
     },
