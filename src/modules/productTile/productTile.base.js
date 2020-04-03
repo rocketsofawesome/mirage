@@ -6,8 +6,7 @@ import {
   P,
   ROASlider,
   ProductPrice,
-  WhiteButton,
-  theme
+  WhiteButton
 } from 'SRC'
 import { withSortedShots } from 'SRC/utils'
 
@@ -91,18 +90,15 @@ export default class ProductTile extends React.Component {
     } = this.props
     const { selectedColorway, lazyLoad } = this.state
     const colorway = this.getSelectedColorway()
-    const target = `products/${product.product_slug}-${colorway.slug}`
+    const target = this.getUrl()
     const Link = renderLink
-
+    const sharedSliderProps = { product, shots: colorway.shots, lazyLoad, ...props }
     return (
       <div className={className}>
         <AboveLaptopSlider>
           <SliderContainer>
             <SortedROASlider
-              {...props}
-              product={product}
-              shots={colorway.shots}
-              lazyLoad={lazyLoad}
+              {...sharedSliderProps}
               renderLink={renderLink}
               target={target}
             />
@@ -120,10 +116,7 @@ export default class ProductTile extends React.Component {
         <BelowLaptopSlider>
           <SliderContainer>
             <SortedROASlider
-              {...props}
-              product={product}
-              shots={colorway.shots}
-              lazyLoad={lazyLoad}
+              {...sharedSliderProps}
               onClick={this.handleQuickViewClick}
             />
           </SliderContainer>
@@ -155,7 +148,7 @@ ProductTile.defaultProps = {
   renderLink: ({className, children, target, ...props}) => (
     <a
       className={className}
-      href={`/${target}`}
+      href={target}
       {...props}>
       {children}
     </a>
