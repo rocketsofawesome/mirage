@@ -6,12 +6,23 @@ import {
   P,
   ROASlider,
   ProductPrice,
-  WhiteButton,
-  theme
+  WhiteButton
 } from 'SRC'
 import { withSortedShots } from 'SRC/utils'
 
 const SortedROASlider = withSortedShots(ROASlider)
+
+const AboveLaptopSlider = styled.div`
+  ${props => props.theme.breakpointsVerbose.belowLaptop`
+    display: none;
+  `}
+`
+
+const BelowLaptopSlider = styled.div`
+  ${props => props.theme.breakpointsVerbose.aboveLaptop`
+    display: none;
+  `}
+`
 
 const SliderContainer = styled.div`
   position: relative;
@@ -30,10 +41,6 @@ const QuickView = styled.div`
   ${SliderContainer}:hover & {
     opacity: 1;
   }
-
-  ${props => props.theme.breakpointsVerbose.belowLaptop`
-    display: none;
-  `}
 `
 
 const QuickViewButton = styled(WhiteButton)`
@@ -47,18 +54,6 @@ export default class ProductTile extends React.Component {
       show: false,
       selectedColorway: props.product.code,
       lazyLoad: props.lazyLoad
-    }
-  }
-
-  handleSliderClick = () => {
-    const isMobile = window.innerWidth < theme.sizes.laptop
-    const { goToPdp } = this.props
-
-    if (isMobile) {
-      this.handleQuickViewClick()
-    } else {
-      const url = this.getUrl()
-      goToPdp(url)
     }
   }
 
@@ -95,28 +90,37 @@ export default class ProductTile extends React.Component {
     } = this.props
     const { selectedColorway, lazyLoad } = this.state
     const colorway = this.getSelectedColorway()
+    const target = this.getUrl()
     const Link = renderLink
-
+    const sharedSliderProps = { product, shots: colorway.shots, lazyLoad, ...props }
     return (
       <div className={className}>
-        <SliderContainer>
-          <SortedROASlider
-            {...props}
-            product={product}
-            shots={colorway.shots}
-            lazyLoad={lazyLoad}
-            onClick={this.handleSliderClick}
-          />
-          <QuickView>
-            <QuickViewButton
-              width='100%'
-              height='35px'
+        <AboveLaptopSlider>
+          <SliderContainer>
+            <SortedROASlider
+              {...sharedSliderProps}
+              renderLink={renderLink}
+              target={target}
+            />
+            <QuickView>
+              <QuickViewButton
+                width='100%'
+                height='35px'
+                onClick={this.handleQuickViewClick}
+              >
+                Quick View
+              </QuickViewButton>
+            </QuickView>
+          </SliderContainer>
+        </AboveLaptopSlider>
+        <BelowLaptopSlider>
+          <SliderContainer>
+            <SortedROASlider
+              {...sharedSliderProps}
               onClick={this.handleQuickViewClick}
-            >
-              Quick View
-            </QuickViewButton>
-          </QuickView>
-        </SliderContainer>
+            />
+          </SliderContainer>
+        </BelowLaptopSlider>
         {renderLink ?
           <Link
             className='roa-product-tile-details'
@@ -149,14 +153,12 @@ ProductTile.defaultProps = {
       {children}
     </a>
   ),
-  onQuickView: () => null,
-  goToPdp: (url) => window.location = url
+  onQuickView: () => null
 }
 
 ProductTile.propTypes = {
   className: PropTypes.string,
   product: PropTypes.object,
   renderLink: PropTypes.func,
-  onQuickView: PropTypes.func,
-  goToPdp: PropTypes.func
+  onQuickView: PropTypes.func
 }
