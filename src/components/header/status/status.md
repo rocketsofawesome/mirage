@@ -21,9 +21,3 @@
     Promo message appears here!
   </Status>
 ```
-
-```js
-  <Status type="promo_rainbow">
-    <PersistantPricing />
-  </Status>
-```

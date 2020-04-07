@@ -43,7 +43,7 @@ const ProductPrice = ({ colorway, className }) => {
       <Text>
         {formatSalePrice(price)}
         <Price>{formatPrice(originalPrice)}</Price>
-        <Discount>{parseInt(discountPercent)}% off</Discount>
+        <Discount>{parseInt(discountPercent, 10)}% off</Discount>
       </Text>
     )
   }

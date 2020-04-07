@@ -50,7 +50,7 @@ const OutfitSizePicker = styled(({
                   <span>
                     {accounting.formatMoney(product.price)}
                     <Price>{accounting.formatMoney(originalPrice)}</Price>
-                    <Discount>{parseInt(discountPercent)}% Off</Discount>
+                    <Discount>{parseInt(discountPercent, 10)}% Off</Discount>
                   </span>
                   :
                   accounting.formatMoney(product.price)

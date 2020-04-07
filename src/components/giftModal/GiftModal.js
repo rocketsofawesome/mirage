@@ -72,4 +72,5 @@ GiftModal.propTypes = {
   onClose: PropTypes.func.isRequired
 }
 
+/** @component */
 export default GiftModal
