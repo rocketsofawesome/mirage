@@ -11,7 +11,7 @@ const SearchDiv = styled.div`
 `
 
 const SearchBarDiv = styled.div`
-  z-index: 4;
+  z-index: 5;
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +26,7 @@ const SearchBarDiv = styled.div`
 `
 
 const SearchModalDiv = styled.div`
-  z-index: 3;
+  z-index: 4;
   position: fixed;
   width: 100%;
   height: 100%;
