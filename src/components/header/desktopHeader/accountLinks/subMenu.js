@@ -122,12 +122,12 @@ const SubMenu = styled(BaseSubMenu)`
     }
 
   .enter {
-    z-index: 3;
+    z-index: 4;
     animation: ${slideDown} 0.25s;
     transform: translateY(-1px);
   }
   .leave {
-    z-index: 3;
+    z-index: 4;
     transition: transform 0.25s ease-in;
     transform: translateY(-60px);
   }
