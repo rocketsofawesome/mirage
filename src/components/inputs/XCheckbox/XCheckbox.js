@@ -4,44 +4,27 @@ import styled from 'styled-components'
 
 import XCheckboxSVG from './XCheckboxSVG.base'
 import X from './X.base'
-import Label from 'SRC/core/typography/Label'
+import { Label } from 'SRC'
 
-
-class XCheckboxBase extends React.Component {
-  onClick = () => {
-    if (this.props.input && this.props.input.onClick) {
-      const { input: { onClick } } = this.props
-      onClick()
-    }
-  }
-
-  render() {
-    const { className, input, children, label, width, ...props } = this.props
-    return (
-      <Label {...props} lowercase className={className}>
-        <input
-          type='checkbox'
-          onClick={this.onClick}
-          {...input}
-        />
-        <XCheckboxSVG width={width} />
-        { label ? label : children }
-      </Label>
-    )
-  }
-}
+const XCheckboxBase = ({ className, children, label, width, onChange, checked }) => (
+  <Label lowercase className={className}>
+    <input
+      type='checkbox'
+      checked={checked}
+      onChange={onChange}
+    />
+    <XCheckboxSVG width={width} />
+    { label ? label : children }
+  </Label>
+)
 
 XCheckboxBase.propTypes = {
   className: PropTypes.string,
-  input: PropTypes.oneOfType([
-    PropTypes.shape({
-      value: PropTypes.bool.isRequired
-    }),
-    PropTypes.shape({
-      checked: PropTypes.bool.isRequired
-    })
-  ]),
-  label: PropTypes.string
+  children: PropTypes.node,
+  width: PropTypes.string,
+  checked: PropTypes.bool,
+  label: PropTypes.string,
+  onChange: PropTypes.func.isRequired
 }
 
 const XCheckbox = styled(XCheckboxBase)`
@@ -78,4 +61,3 @@ XCheckbox.propTypes = {
 
 /** @component */
 export default XCheckbox
-export { XCheckboxBase }

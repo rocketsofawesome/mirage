@@ -5,7 +5,6 @@ import { theme } from 'SRC/core/theme'
 
 export const pStyle = css`
   letter-spacing: normal;
-
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   line-height: normal;
