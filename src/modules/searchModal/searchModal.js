@@ -208,7 +208,7 @@ class BaseSearchModal extends React.Component {
             </SearchClearWrapperDiv>
           </SearchForm>
 
-          <SearchSuggestionsDiv>Find it fast! Try: soft, tie dye, ombre, rainbow, rain jacket...</SearchSuggestionsDiv>
+          <SearchSuggestionsDiv>Find it fast! Try: shorts, swimsuits, rash guards, goggles...</SearchSuggestionsDiv>
           <SearchExitWrapperDiv onClick={() => exitSearch()}>
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
               <g fill="none" fillRule="evenodd" stroke="#0073D1">
