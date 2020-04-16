@@ -9,15 +9,20 @@ const Container = styled.div`
   padding: 0 20px;
 `
 
-const Message = ({ order, itemsInBag }) => {
-  const itemsLeft = 6 - itemsInBag
+const Message = ({
+  order,
+  itemsInBag,
+  evergreenPromoItemCount,
+  evergreenPromoPercent
+}) => {
+  const itemsLeft = parseInt(evergreenPromoItemCount) - itemsInBag
   const itemDescription = itemsLeft > 1 ? 'items' : 'item'
 
-  if (itemsLeft === 6) {
+  if (itemsLeft === parseInt(evergreenPromoItemCount)) {
     return (
       <P>
         You're {itemsLeft} {itemDescription} away from
-        automatically getting 25% off, every day!{' '}
+        automatically getting {evergreenPromoPercent}% off, every day!{' '}
         <span role="img" aria-label="hearts">💕</span>
       </P>
     )
@@ -27,7 +32,7 @@ const Message = ({ order, itemsInBag }) => {
       <P>
         <span role="img" aria-label="confetti">🎉 </span>{' '}
         Yay! You'll save <strong>{accounting.formatMoney(savings)}</strong> on
-        this order of 6+ items.{' '}
+        this order of {evergreenPromoItemCount}+ items.{' '}
         <span role="img" aria-label="confetti">🎉 </span>
       </P>
     )
@@ -36,22 +41,34 @@ const Message = ({ order, itemsInBag }) => {
   return (
     <P>
       So close! Add <strong>{itemsLeft}</strong> more {itemDescription} to
-      automatically get 25% off, every day!{' '}
+      automatically get {evergreenPromoPercent}% off, every day!{' '}
       <span role="img" aria-label="hearts">💕</span>
     </P>
   )
 
 }
 
-const ProgressBarText = ({ order, itemsInBag }) => (
+const ProgressBarText = ({
+  order,
+  itemsInBag,
+  evergreenPromoItemCount,
+  evergreenPromoPercent
+}) => (
   <Container>
-    <Message order={order} itemsInBag={itemsInBag} />
+    <Message
+      order={order}
+      itemsInBag={itemsInBag}
+      evergreenPromoItemCount={evergreenPromoItemCount}
+      evergreenPromoPercent={evergreenPromoPercent}
+    />
   </Container>
 )
 
 ProgressBarText.propTypes = {
   itemsInBag: PropTypes.number.isRequired,
-  order: PropTypes.object.isRequired
+  order: PropTypes.object.isRequired,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 /** @component */

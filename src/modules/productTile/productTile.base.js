@@ -86,6 +86,8 @@ export default class ProductTile extends React.Component {
       className,
       product,
       renderLink,
+      evergreenPromoItemCount,
+      evergreenPromoPercent,
       ...props
     } = this.props
     const { selectedColorway, lazyLoad } = this.state
@@ -126,11 +128,19 @@ export default class ProductTile extends React.Component {
             className='roa-product-tile-details'
             target={this.getUrl()}>
             <P fontSize="14px">{product.name}</P>
-            <ProductPrice colorway={colorway} />
+            <ProductPrice
+              colorway={colorway}
+              evergreenPromoItemCount={evergreenPromoItemCount}
+              evergreenPromoPercent={evergreenPromoPercent}
+            />
           </Link> :
           <div className='roa-product-tile-details'>
             <P fontSize="14px">{product.name}</P>
-            <ProductPrice colorway={colorway} />
+            <ProductPrice
+              colorway={colorway}
+              evergreenPromoItemCount={evergreenPromoItemCount}
+              evergreenPromoPercent={evergreenPromoPercent}
+            />
           </div>
         }
         <ColorsInterface

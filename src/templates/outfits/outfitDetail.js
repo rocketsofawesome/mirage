@@ -23,6 +23,8 @@ const BaseOutfitDetail = ({
   sizePickerFooter,
   sizePickerHeader,
   renderProductLink,
+  evergreenPromoItemCount,
+  evergreenPromoPercent,
   ...props
 }) => {
   return (
@@ -47,7 +49,10 @@ const BaseOutfitDetail = ({
               products={products}
               onSizeSelect={onSizeSelect}
               currentSizes={currentSizes}
-              renderProductLink={renderProductLink} />
+              renderProductLink={renderProductLink}
+              evergreenPromoItemCount={evergreenPromoItemCount}
+              evergreenPromoPercent={evergreenPromoPercent}
+            />
             {sizePickerFooter}
           </div>
         </FlexCol>

@@ -23,13 +23,20 @@ const Price = styled.span`
   text-decoration: line-through;
 `
 
+const formatSalePrice = (promoPrice) => {
+  const decimalPlaces = parseInt(promoPrice, 10) === parseFloat(promoPrice) ? 0 : 2
+  return accounting.formatMoney(promoPrice, "$", decimalPlaces)
+}
+
 const OutfitSizePicker = styled(({
   className,
   currentSizes,
   element,
   products,
   onSizeSelect,
-  renderProductLink
+  renderProductLink,
+  evergreenPromoItemCount,
+  evergreenPromoPercent
 }) => {
   return (
     <div className={className}>
@@ -39,6 +46,8 @@ const OutfitSizePicker = styled(({
         const originalPrice = product.original_price
         const onSale = product.on_sale
         const discountPercent = product.discount_percent
+        const percent = (100 - parseInt(evergreenPromoPercent)) / 100
+        const promoPrice = product.price * percent
         return (
           <div className='roa-product' key={product.id}>
             <div className='roa-image-wrapper'>
@@ -57,7 +66,7 @@ const OutfitSizePicker = styled(({
                 }
                 <span className='promo-text'>
                   <span className='forward-slash'>{'//'}</span>
-                  <span className='highlighted-text'>{accounting.formatMoney(product.price * 0.75)} when you buy 6+ items</span>
+                  <span className='highlighted-text'>{onSale ? formatSalePrice(promoPrice) : accounting.formatMoney(promoPrice)} when you buy {evergreenPromoItemCount}+ items</span>
                 </span>
               </P>
               <SizePicker
@@ -161,7 +170,9 @@ OutfitSizePicker.propTypes = {
     props: PropTypes.object
   }),
   products: PropTypes.array.isRequired,
-  className: PropTypes.string
+  className: PropTypes.string,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 OutfitSizePicker.defaultProps = {
