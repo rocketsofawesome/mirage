@@ -4,10 +4,10 @@ import styled from 'styled-components'
 
 const BaseX  = ({ className }) => {
   return (
-    <React.Fragment>
+    <g>
       <polyline className={className} points="155,30,30,155" fill="none" stroke="black" />
       <polyline className={className} points="30,30,155,155" fill="none" stroke="black" />
-    </React.Fragment>
+    </g>
   )
 }
 
