@@ -261,12 +261,14 @@ class BaseCartSidebar extends React.Component {
       onClickPaymentRequestButton,
       giftFeatureOn,
       finalSaleOn,
-      theme
+      theme,
+      evergreenPromoItemCount,
+      evergreenPromoPercent
     } = this.props
     if (!shouldShowCartSidebar) return null
 
     const isCheckoutButtonDisabled = subTotal === 0
-    const percentage = Math.min(itemsInBag / 6 * 100, 100)
+    const percentage = Math.min(itemsInBag / evergreenPromoItemCount * 100, 100)
 
     return (
       <div className={className}>
@@ -299,6 +301,8 @@ class BaseCartSidebar extends React.Component {
                 <ProgressBarText
                   order={order}
                   itemsInBag={itemsInBag}
+                  evergreenPromoItemCount={evergreenPromoItemCount}
+                  evergreenPromoPercent={evergreenPromoPercent}
                 />
                 <ProgressBar percentage={percentage} />
                 <MediaQuery query={theme.breakpoints.belowTabletMax}>
@@ -416,7 +420,9 @@ BaseCartSidebar.propTypes = {
   currentUserEmail: PropTypes.string,
   giftFeatureOn: PropTypes.bool,
   scrollKeepShopping: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
-  finalSaleOn: PropTypes.bool
+  finalSaleOn: PropTypes.bool,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 BaseCartSidebar.defaultProps = {

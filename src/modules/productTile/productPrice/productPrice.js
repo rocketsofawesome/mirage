@@ -12,9 +12,15 @@ const HighlightedText = styled.span`
   background-color: ${props => props.theme.colors.yellow}
 `
 
-const ProductPrice = ({ colorway, className }) => {
+const ProductPrice = ({
+  colorway,
+  className,
+  evergreenPromoItemCount,
+  evergreenPromoPercent
+}) => {
   const sku = colorway.skus[0]
-  const promoPrice = parseFloat(sku.price) * 0.75
+  const percent = (100 - parseInt(evergreenPromoPercent)) / 100
+  const promoPrice = parseFloat(sku.price) * percent
 
   return (
     <div className={className}>
@@ -24,7 +30,7 @@ const ProductPrice = ({ colorway, className }) => {
         price={sku.price}
       />
       <Text>
-        <HighlightedText>{formatPrice(promoPrice)} with 6+ items</HighlightedText>
+        <HighlightedText>{formatPrice(promoPrice)} with {evergreenPromoItemCount}+ items</HighlightedText>
       </Text>
     </div>
   )

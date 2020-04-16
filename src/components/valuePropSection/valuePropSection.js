@@ -1,13 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 import {
   H1,
   P,
   FlexCol
 } from 'SRC'
-
-import defaultProps from './defaultProps'
 
 const LightningSvg = () => {
   return (
@@ -108,14 +107,62 @@ const SvgMap = {
   'FounderSvg': FounderSvg
 }
 
-const BaseValuePropSection = ({className, header, sections, footer, ...props}) => {
+const BaseValuePropSection = ({
+  className,
+  evergreenPromoItemCount,
+  evergreenPromoPercent,
+  footer,
+  ...props
+}) => {
+
+  const valueProps = {
+    "header": "What makes us awesome",
+    "sections": [
+      {
+        "title": "Bold, Bright, Unique Styles",
+        "body": "Magical kids' clothes you can't find anywhere else – designed by us",
+        "svg": "LightningSvg"
+      },
+      {
+        "title": "Soft & Stretchy Everything",
+        "body": "Comfy clothes = happy people",
+        "svg": "CloudsSvg"
+      },
+      {
+        "title": "Next-level Details",
+        "body": "Itch-free tags, soft lining, minimal seams. We could go on…",
+        "svg": "StarSvg"
+      },
+      {
+        "title": "Focus on Fit",
+        "body": "We design single sizes 2 - 14",
+        "svg": "ShirtsSvg"
+      },
+      {
+        "title": "100% Washer Friendly",
+        "body": "Including the sequins",
+        "svg": "WashingMachineSvg"
+      },
+      {
+        "title": `${evergreenPromoPercent}% off ${evergreenPromoItemCount}+ Items`,
+        "body": "Automatic savings every single day",
+        "svg": "CashSvg"
+      },
+      {
+        "title": "Female Founder",
+        "body": "(Trust her, she’s a mom!)",
+        "svg": "FounderSvg"
+      }
+    ]
+  }
+
   return (
     <section className={className}>
       <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
-        <H1>{header}</H1>
+        <H1>{valueProps.header}</H1>
       </FlexCol>
       <FlexCol className='flexDiv' mobile={{width: 4}} desktop={{width: 10, span: 1}}>
-        {sections.map((section, i) => {
+        {valueProps.sections.map((section, i) => {
           const SvgTag = SvgMap[section.svg]
           return (
             <FlexCol className='innerFlexDiv' mobile={{width: 4}} tablet={{width: 5}} desktop={{width: 3}} key={`value-prop-${i}`}>
@@ -189,9 +236,13 @@ const ValuePropSection = styled(BaseValuePropSection)`
 `
 
 ValuePropSection.defaultProps = {
-  ...defaultProps,
   padding: true,
   constrained: true
+}
+
+ValuePropSection.propTypes = {
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 /** @component */

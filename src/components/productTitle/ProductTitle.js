@@ -41,21 +41,24 @@ const Pricing = styled.div`
   `}
 `
 
-const formatSalePrice = (price) => {
-  const reducedPrice = price * 0.75
-  const decimalPlaces = parseInt(reducedPrice, 10) === parseFloat(reducedPrice) ? 0 : 2
-  return accounting.formatMoney(reducedPrice, "$", decimalPlaces)
+const formatSalePrice = (promoPrice) => {
+  const decimalPlaces = parseInt(promoPrice, 10) === parseFloat(promoPrice) ? 0 : 2
+  return accounting.formatMoney(promoPrice, "$", decimalPlaces)
 }
 
 const ProductTitle = ({
   productName,
   currentVariant,
   quickView,
-  className
+  className,
+  evergreenPromoItemCount,
+  evergreenPromoPercent
 }) => {
   const originalPrice = currentVariant.original_price
   const price = currentVariant.price
   const onSale = originalPrice && price < originalPrice
+  const percent = (100 - parseInt(evergreenPromoPercent)) / 100
+  const promoPrice = price * percent
 
   if (currentVariant) {
     return (
@@ -78,7 +81,7 @@ const ProductTitle = ({
           <Spacer quickView={quickView}>{`//`}</Spacer>
           <EvergreenPromo quickView={quickView}>
             <Highlighter>
-              {onSale ? formatSalePrice(price) : accounting.formatMoney(price * 0.75)} when you buy 6+ items
+              {onSale ? formatSalePrice(promoPrice) : accounting.formatMoney(promoPrice)} when you buy {evergreenPromoItemCount}+ items
             </Highlighter>
           </EvergreenPromo>
         </Pricing>
@@ -92,7 +95,9 @@ ProductTitle.propTypes = {
   productName: PropTypes.string,
   currentVariant: PropTypes.object,
   displayReviews: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 export default ProductTitle

@@ -43,7 +43,7 @@ const FinalSaleText = styled(P)`
   margin-top: 27px;
 `
 
-const GiftModal = ({ onClose }) => (
+const GiftModal = ({ onClose, evergreenPromoItemCount, evergreenPromoPercent }) => (
   <Container>
     <CloseLink onClick={onClose}>
       <Close width='1.5rem' />
@@ -60,7 +60,7 @@ const GiftModal = ({ onClose }) => (
       It’s free and easy via our friendly customer service team.
     </Text>
     <Text>
-      And don’t forget, buy 6+ items to get 25% off your order!
+      And don’t forget, buy {evergreenPromoItemCount}+ items to get {evergreenPromoPercent}% off your order!
     </Text>
     <FinalSaleText>
       *Excludes FINAL SALE
@@ -69,7 +69,9 @@ const GiftModal = ({ onClose }) => (
 )
 
 GiftModal.propTypes = {
-  onClose: PropTypes.func.isRequired
+  onClose: PropTypes.func.isRequired,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired
 }
 
 /** @component */
