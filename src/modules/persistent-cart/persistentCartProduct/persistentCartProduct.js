@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import { XIcon } from 'SRC'
 
 import cloudinary from 'services/cloudinary'
+import { calculateItemPriceAdjustment } from 'utils/pricing'
 
 const shotTypeSortOrder = [
   'front',
@@ -81,6 +82,19 @@ const ItemPrice = styled.h4`
     text-decoration: line-through;
   }
 `
+
+const LineItemPrice = ({ price, adjustedPrice }) => {
+  if (adjustedPrice) {
+    return (
+      <ItemPrice>
+        <span className="strikeThruPrice">{accounting.formatMoney(price)}</span>
+        <span>&nbsp;&nbsp;{accounting.formatMoney(adjustedPrice)}</span>
+      </ItemPrice>
+    )
+  } else {
+    return <ItemPrice>{accounting.formatMoney(price)}</ItemPrice>
+  }
+}
 
 const Attribute = styled.div`
   margin-bottom: 4px;
@@ -164,7 +178,7 @@ class BaseProduct extends React.Component {
   render () {
     const { item, hideCartSidebar, className, renderLink, finalSaleOn } = this.props
     const isOutOfStock = this._isOutOfStock()
-
+    const price = parseFloat(item.original_price) * item.quantity
     return (
       <div className={className}>
         <Thumbnail onClick={hideCartSidebar}>
@@ -176,14 +190,10 @@ class BaseProduct extends React.Component {
           <ItemName>
             {item.name}
           </ItemName>
-          {item.on_sale
-            ?
-            <ItemPrice>
-              <span className="strikeThruPrice">{accounting.formatMoney(item.original_price)}</span>
-              <span>&nbsp;&nbsp;{accounting.formatMoney(item.price)}</span>
-            </ItemPrice>
-            : <ItemPrice>{accounting.formatMoney(item.price)}</ItemPrice>
-          }
+          <LineItemPrice
+            price={price}
+            adjustedPrice={calculateItemPriceAdjustment(item)}
+          />
           <Attribute>
             Color<em>{item.color}</em>
           </Attribute>
