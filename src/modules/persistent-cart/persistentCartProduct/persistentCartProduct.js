@@ -91,9 +91,9 @@ const LineItemPrice = ({ price, adjustedPrice }) => {
         <span>&nbsp;&nbsp;{accounting.formatMoney(adjustedPrice)}</span>
       </ItemPrice>
     )
-  } else {
-    return <ItemPrice>{accounting.formatMoney(price)}</ItemPrice>
   }
+
+  return <ItemPrice>{accounting.formatMoney(price)}</ItemPrice>
 }
 
 const Attribute = styled.div`
