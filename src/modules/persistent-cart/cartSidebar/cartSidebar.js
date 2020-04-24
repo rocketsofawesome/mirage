@@ -38,6 +38,9 @@ const CartSidebarContainer = styled.article`
     width: 35%;
   `}
   ${props => props.theme.breakpointsVerbose.aboveLaptop`
+    width: 30%;
+  `}
+  ${props => props.theme.breakpointsVerbose.aboveDesktop`
     width: 25%;
   `}
 `
@@ -103,6 +106,9 @@ const Footer = styled.footer`
     width: 35%;
   `}
   ${props => props.theme.breakpointsVerbose.aboveLaptop`
+    width: 30%;
+  `}
+  ${props => props.theme.breakpointsVerbose.aboveDesktop`
     width: 25%;
   `}
   }

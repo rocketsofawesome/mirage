@@ -121,6 +121,14 @@ const Remove = styled(XIcon)`
   cursor: pointer;
 `
 
+const AttributeContainer = styled.div`
+  min-width: 150px;
+
+  ${props => props.theme.breakpointsVerbose.belowPhone`
+    min-width: 0;
+  `}
+`
+
 class BaseProduct extends React.Component {
   constructor (props) {
     super(props)
@@ -186,7 +194,7 @@ class BaseProduct extends React.Component {
             <img alt={item.description} src={this._getVariantShot()} />
           </ImageLink>
         </Thumbnail>
-        <div>
+        <AttributeContainer>
           <ItemName>
             {item.name}
           </ItemName>
@@ -212,7 +220,7 @@ class BaseProduct extends React.Component {
             </Attribute>
           }
           {item.on_sale && finalSaleOn && <FinalSale>FINAL SALE</FinalSale>}
-        </div>
+        </AttributeContainer>
         {this._showRemoveItem() && <Remove onClick={this._onRemoveItem} />}
       </div>
     )
