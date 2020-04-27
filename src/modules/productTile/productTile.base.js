@@ -107,6 +107,7 @@ export default class ProductTile extends React.Component {
             <QuickView>
               <QuickViewButton
                 width='100%'
+                className='quickViewButton'
                 height='35px'
                 onClick={this.handleQuickViewClick}
               >
