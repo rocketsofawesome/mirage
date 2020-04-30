@@ -14,6 +14,7 @@ const BagListBody = styled.main`
 const BagListWrapper = styled.div`
   height: auto;
 `
+
 class BasePersistentCartProductList extends Component {
   componentDidMount () {
     const { lineItems, segmentCartViewed } = this.props
@@ -33,28 +34,34 @@ class BasePersistentCartProductList extends Component {
     const {
       className,
       lineItems,
-      updateBag,
+      onUpdateQuantity,
+      onUpdateSize,
       removeItem,
       hideCartSidebar,
       renderProductLink,
       segmentProductRemoved,
-      finalSaleOn
+      finalSaleOn,
+      isUpdatingQuantity,
+      isUpdatingSize
     } = this.props
 
     return (
       <section className={className}>
         <BagListBody>
           <BagListWrapper>
-            {lineItems.map((variant, i) =>
+            {lineItems.map((lineItem, i) =>
               <PersistentCartProduct
-                key={`bag-item-${variant.id}`}
-                item={variant}
-                onUpdateQuantity={updateBag}
+                key={`bag-item-${lineItem.id}`}
+                item={lineItem}
+                onUpdateQuantity={onUpdateQuantity}
+                onUpdateSize={onUpdateSize}
                 onRemoveItem={removeItem}
                 renderLink={renderProductLink}
                 segmentProductRemoved={segmentProductRemoved}
                 hideCartSidebar={hideCartSidebar}
                 finalSaleOn={finalSaleOn}
+                isUpdatingSize={isUpdatingSize === lineItem.id}
+                isUpdatingQuantity={isUpdatingQuantity === lineItem.id}
               />
             )}
           </BagListWrapper>
@@ -71,12 +78,21 @@ const PersistentCartProductList = styled(BasePersistentCartProductList)`
 BasePersistentCartProductList.propTypes = {
   className: PropTypes.string,
   lineItems: PropTypes.array,
-  updateBag: PropTypes.func,
+  onUpdateSize: PropTypes.func,
+  onUpdateQuantity: PropTypes.func,
   removeItem: PropTypes.func,
   hideCartSidebar: PropTypes.func,
   segmentCartViewed: PropTypes.func,
   segmentProductRemoved: PropTypes.func,
-  renderProductLink: PropTypes.func
+  renderProductLink: PropTypes.func,
+  isUpdatingSize: PropTypes.number,
+  isUpdatingQuantity: PropTypes.number
 }
 
+BasePersistentCartProductList.defaultProps = {
+  isUpdatingQuantity: null,
+  isUpdatingSize: null
+}
+
+/** @component */
 export default PersistentCartProductList

@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import accounting from 'accounting'
 import styled from 'styled-components'
-import { XIcon } from 'SRC'
+import { XIcon, GraySpinner } from 'SRC'
 
 import cloudinary from 'services/cloudinary'
 import { calculateItemPriceAdjustment } from 'utils/pricing'
@@ -23,6 +23,7 @@ const sortShots = (shots) => {
 
 const Select = styled.select`
   margin-left: 10px;
+  font-size: 16px;
 `
 
 const Thumbnail = styled.div`
@@ -62,8 +63,6 @@ const ItemName = styled.h4`
   color: ${props => props.theme.colors.navy};
   text-transform: uppercase;
 `
-const FinalSale = styled(ItemName)`
-`
 
 const ItemPrice = styled.h4`
   max-width: 150px;
@@ -82,19 +81,6 @@ const ItemPrice = styled.h4`
     text-decoration: line-through;
   }
 `
-
-const LineItemPrice = ({ price, adjustedPrice }) => {
-  if (adjustedPrice) {
-    return (
-      <ItemPrice>
-        <span className="strikeThruPrice">{accounting.formatMoney(price)}</span>
-        <span>&nbsp;&nbsp;{accounting.formatMoney(adjustedPrice)}</span>
-      </ItemPrice>
-    )
-  }
-
-  return <ItemPrice>{accounting.formatMoney(price)}</ItemPrice>
-}
 
 const Attribute = styled.div`
   margin-bottom: 4px;
@@ -129,29 +115,88 @@ const AttributeContainer = styled.div`
   `}
 `
 
+const SpinnerContainer = styled.span`
+  vertical-align: middle;
+  margin-left: 10px;
+`
+
+const LineItemPrice = ({ price, adjustedPrice }) => {
+  if (adjustedPrice) {
+    return (
+      <ItemPrice>
+        <span className="strikeThruPrice">{accounting.formatMoney(price)}</span>
+        <span>&nbsp;&nbsp;{accounting.formatMoney(adjustedPrice)}</span>
+      </ItemPrice>
+    )
+  }
+
+  return <ItemPrice>{accounting.formatMoney(price)}</ItemPrice>
+}
+
 class BaseProduct extends React.Component {
   constructor (props) {
     super(props)
     this.quantities = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
   }
 
-  _onUpdateQuantity = ({ target: { value } }) => {
-    const { item } = this.props
-    this.props.onUpdateQuantity(item.id, parseInt(value, 10))
+  onUpdateQuantity = ({ target: { value } }) => {
+    const { item, onUpdateQuantity } = this.props
+    onUpdateQuantity(item, parseInt(value, 10))
   }
 
-  _onRemoveItem = () => {
-    const { item, segmentProductRemoved } = this.props
+  onUpdateSize = ({ target: { value }}) => {
+    const { item, onUpdateSize } = this.props
+    onUpdateSize(item, value)
+  }
 
-    this.props.onRemoveItem(item.id)
+  onRemoveItem = () => {
+    const { item, segmentProductRemoved, onRemoveItem } = this.props
+
+    onRemoveItem(item.id)
     segmentProductRemoved(item)
   }
 
-  _renderQuantityPicker = () => {
+  renderSizePicker = () => {
+    const { isUpdatingSize } = this.props
+
+    if (isUpdatingSize) {
+      return (
+        <SpinnerContainer>
+          <GraySpinner size="21px" />
+        </SpinnerContainer>
+      )
+    }
+    return (
+      <Select value={this.props.item.variant_id} onChange={this.onUpdateSize}>
+        {
+          this.props.item.colorway_variants.map(variant =>
+            <option
+              key={variant.id}
+              value={variant.id}
+              disabled={!variant.in_stock}
+            >
+              {variant.size}
+            </option>
+          )
+        }
+      </Select>
+    )
+  }
+
+  renderQuantityPicker = () => {
+    const { isUpdatingQuantity } = this.props
+
+    if (isUpdatingQuantity) {
+      return (
+        <SpinnerContainer>
+          <GraySpinner size="21px" />
+        </SpinnerContainer>
+      )
+    }
     return (
       <Select
         value={this.props.item.quantity || ''}
-        onChange={this._onUpdateQuantity}>
+        onChange={this.onUpdateQuantity}>
         {this.quantities.map((i) =>
           <option key={`quantity-${i}`} value={i}>{i}</option>)
         }
@@ -159,23 +204,23 @@ class BaseProduct extends React.Component {
     )
   }
 
-  _showRemoveItem = () => {
+  showRemoveItem = () => {
     const { loading } = this.props
-    return !loading && !this._isOutOfStock()
+    return !loading && !this.isOutOfStock()
   }
 
-  _getNotEnoughQuantityError = () => {
+  getNotEnoughQuantityError = () => {
     const { item: { quantity } } = this.props
     if (quantity === 0) return 'Out of stock.'
     return `Only ${quantity} ${(quantity === 1) ? 'item' : 'items'} left`
   }
 
-  _isOutOfStock = () => {
+  isOutOfStock = () => {
     const { item } = this.props
     return item.quantity <= 0
   }
 
-  _getVariantShot = () => {
+  getVariantShot = () => {
     const { item } = this.props
     const shot = item.shots
       ? (sortShots(item.shots))[0].cloudinary_key
@@ -184,14 +229,20 @@ class BaseProduct extends React.Component {
   }
 
   render () {
-    const { item, hideCartSidebar, className, renderLink, finalSaleOn } = this.props
-    const isOutOfStock = this._isOutOfStock()
+    const {
+      item,
+      hideCartSidebar,
+      className,
+      renderLink,
+      finalSaleOn
+    } = this.props
+    const isOutOfStock = this.isOutOfStock()
     const price = parseFloat(item.original_price) * item.quantity
     return (
       <div className={className}>
         <Thumbnail onClick={hideCartSidebar}>
           <ImageLink renderLink={renderLink} target={`/products/${item.slug}-${item.colorway_slug}`}>
-            <img alt={item.description} src={this._getVariantShot()} />
+            <img alt={item.description} src={this.getVariantShot()} />
           </ImageLink>
         </Thumbnail>
         <AttributeContainer>
@@ -206,60 +257,59 @@ class BaseProduct extends React.Component {
             Color<em>{item.color}</em>
           </Attribute>
           <Attribute>
-            Size<em>{item.size}</em>
+            Size
+            {this.renderSizePicker()}
           </Attribute>
           {!isOutOfStock &&
             <Attribute>
               Qty
-              {this._renderQuantityPicker()}
+              {this.renderQuantityPicker()}
             </Attribute>
           }
           {(item.not_enough_quantity_error || isOutOfStock) &&
             <Attribute>
-              {this._getNotEnoughQuantityError()}
+              {this.getNotEnoughQuantityError()}
             </Attribute>
           }
-          {item.on_sale && finalSaleOn && <FinalSale>FINAL SALE</FinalSale>}
+          {item.on_sale && finalSaleOn && <ItemName>FINAL SALE</ItemName>}
         </AttributeContainer>
-        {this._showRemoveItem() && <Remove onClick={this._onRemoveItem} />}
+        {this.showRemoveItem() && <Remove onClick={this.onRemoveItem} />}
       </div>
     )
   }
 }
 
-const renderLink = (inProps) => {
-  const { target, children, ...props } = inProps
-
-  return (<a href={target} {...props}>{children}</a>)
-}
-
 const Product = styled(BaseProduct)`
   padding-top: 20px;
   padding-bottom: 20px;
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   border-bottom: 1px solid #d5d5d5;
-
-  select {
-    font-size: 16px;
-  }
 `
 
 BaseProduct.propTypes = {
-  item: PropTypes.object,
-  onUpdateQuantity: PropTypes.func,
-  onRemoveItem: PropTypes.func,
-  hideCartSidebar: PropTypes.func,
   className: PropTypes.string,
+  finalSaleOn: PropTypes.bool,
+  hideCartSidebar: PropTypes.func,
+  isUpdatingQuantity: PropTypes.bool,
+  isUpdatingSize: PropTypes.bool,
+  item: PropTypes.object,
+  onRemoveItem: PropTypes.func.isRequired,
+  onUpdateQuantity: PropTypes.func.isRequired,
+  onUpdateSize: PropTypes.func.isRequired,
   renderLink: PropTypes.func,
-  segmentProductRemoved: PropTypes.func,
-  finalSaleOn: PropTypes.bool
+  segmentProductRemoved: PropTypes.func
+}
+
+const renderLink = (inProps) => {
+  const { target, children, ...props } = inProps
+  return (<a href={target} {...props}>{children}</a>)
 }
 
 BaseProduct.defaultProps = {
+  isUpdatingQuantity: false,
+  isUpdatingSize: false,
   renderLink: renderLink
 }
 

@@ -46,7 +46,7 @@ const OutfitSizePicker = styled(({
         const originalPrice = product.original_price
         const onSale = product.on_sale
         const discountPercent = product.discount_percent
-        const percent = (100 - parseInt(evergreenPromoPercent)) / 100
+        const percent = (100 - parseInt(evergreenPromoPercent, 10)) / 100
         const promoPrice = product.price * percent
         return (
           <div className='roa-product' key={product.id}>

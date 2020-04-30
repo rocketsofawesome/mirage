@@ -46,7 +46,7 @@ const Link = ({ renderLink, children, ...props }) => {
 }
 
 const BaseButtonLink = BaseButton.withComponent(Link)
-const setMaxWidth = css`max-width: ${props => props.maxWidth}`
+const setMaxWidth = css`max-width: ${props => props.maxWidth};`
 const ButtonLink = styled(BaseButtonLink)`
   color: ${textColor};
   border-color: ${borderColor};

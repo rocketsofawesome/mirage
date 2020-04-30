@@ -15,10 +15,10 @@ const Message = ({
   evergreenPromoItemCount,
   evergreenPromoPercent
 }) => {
-  const itemsLeft = parseInt(evergreenPromoItemCount) - itemsInBag
+  const itemsLeft = parseInt(evergreenPromoItemCount, 10) - itemsInBag
   const itemDescription = itemsLeft > 1 ? 'items' : 'item'
 
-  if (itemsLeft === parseInt(evergreenPromoItemCount)) {
+  if (itemsLeft === parseInt(evergreenPromoItemCount, 10)) {
     return (
       <P>
         You're {itemsLeft} {itemDescription} away from

@@ -19,7 +19,7 @@ const ProductPrice = ({
   evergreenPromoPercent
 }) => {
   const sku = colorway.skus[0]
-  const percent = (100 - parseInt(evergreenPromoPercent)) / 100
+  const percent = (100 - parseInt(evergreenPromoPercent, 10)) / 100
   const promoPrice = parseFloat(sku.price) * percent
 
   return (

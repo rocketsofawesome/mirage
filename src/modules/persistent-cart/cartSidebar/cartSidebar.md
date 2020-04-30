@@ -33,7 +33,8 @@
       lineItems={[
 
       ]}
-      updateBag={() => { console.log('update bag') }}
+      onUpdateQuantity={() => { console.log('update quantity') }}
+      onUpdateSize={() => { console.log('update size') }}
       removeItem={() => { console.log('remove item') }}
       segmentCartViewed={() => { console.log('segment cart viewed') }}
       promotion={null}
@@ -45,6 +46,8 @@
       appliedPromotion={null}
       onClickCheckout={() => { console.log('onClick checkout') }}
       onClickPaymentRequestButton={() => { console.log('onClick payment request button') }}
+      evergreenPromoItemCount={'6'}
+      evergreenPromoPercent={'20'}
     />
   </StripeProviderWrapper>
 ```

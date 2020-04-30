@@ -241,35 +241,38 @@ class BaseCartSidebar extends React.Component {
 
   render () {
     const {
-      shouldShowCartSidebar,
-      className,
-      hideCartSidebar,
-      subTotal,
-      itemsInBag,
-      order,
-      setShippingAddress,
-      renderLink,
-      updateBag,
-      removeItem,
-      segmentCartViewed,
-      lineItems,
-      promotion,
-      promotionLoading,
-      promoHasBeenApplied,
-      promoErrorMessage,
-      segmentProductRemoved,
-      applyPromotion,
-      removePromotion,
       appliedPromotion,
-      renderProductLink,
+      applyPromotion,
+      className,
       currentUserEmail,
+      evergreenPromoItemCount,
+      evergreenPromoPercent,
+      finalSaleOn,
+      giftFeatureOn,
+      hideCartSidebar,
+      isUpdatingQuantity,
+      isUpdatingSize,
+      itemsInBag,
+      lineItems,
       onClickCheckout,
       onClickPaymentRequestButton,
-      giftFeatureOn,
-      finalSaleOn,
-      theme,
-      evergreenPromoItemCount,
-      evergreenPromoPercent
+      onUpdateQuantity,
+      onUpdateSize,
+      order,
+      promoErrorMessage,
+      promoHasBeenApplied,
+      promotion,
+      promotionLoading,
+      removeItem,
+      removePromotion,
+      renderLink,
+      renderProductLink,
+      segmentCartViewed,
+      segmentProductRemoved,
+      setShippingAddress,
+      shouldShowCartSidebar,
+      subTotal,
+      theme
     } = this.props
     if (!shouldShowCartSidebar) return null
 
@@ -333,12 +336,15 @@ class BaseCartSidebar extends React.Component {
               <PersistentCartProductList
                 lineItems={lineItems}
                 hideCartSidebar={hideCartSidebar}
-                updateBag={updateBag}
+                onUpdateQuantity={onUpdateQuantity}
+                onUpdateSize={onUpdateSize}
                 removeItem={removeItem}
                 renderProductLink={renderProductLink}
                 segmentCartViewed={segmentCartViewed}
                 segmentProductRemoved={segmentProductRemoved}
                 finalSaleOn={finalSaleOn}
+                isUpdatingQuantity={isUpdatingQuantity}
+                isUpdatingSize={isUpdatingSize}
               />
               :
               <EmptyCart />
@@ -398,45 +404,50 @@ const renderLink = (inProps) => {
 }
 
 BaseCartSidebar.propTypes = {
-  shouldShowCartSidebar: PropTypes.bool,
+  appliedPromotion: PropTypes.object,
+  applyPromotion: PropTypes.func,
   className: PropTypes.string,
-  hideCartSidebar: PropTypes.func,
-  submitBag: PropTypes.func,
-  subTotal: PropTypes.number,
-  itemsInBag: PropTypes.number,
-  order: PropTypes.object,
   currentUser: PropTypes.number,
-  submitBagCheckoutStripe: PropTypes.func,
-  loadBag: PropTypes.func,
-  setShippingAddress: PropTypes.func,
-  renderLink: PropTypes.func,
-  updateBag: PropTypes.func,
-  removeItem: PropTypes.func,
-  segmentCartViewed: PropTypes.func,
+  currentUserEmail: PropTypes.string,
+  evergreenPromoItemCount: PropTypes.string.isRequired,
+  evergreenPromoPercent: PropTypes.string.isRequired,
+  finalSaleOn: PropTypes.bool,
+  giftFeatureOn: PropTypes.bool,
+  hideCartSidebar: PropTypes.func,
+  isUpdatingQuantity: PropTypes.number,
+  isUpdatingSize: PropTypes.number,
+  itemsInBag: PropTypes.number,
   lineItems: PropTypes.array,
+  loadBag: PropTypes.func,
+  onUpdateQuantity: PropTypes.func,
+  onUpdateSize: PropTypes.func,
+  order: PropTypes.object,
+  promoErrorMessage: PropTypes.string,
+  promoHasBeenApplied: PropTypes.bool,
   promotion: PropTypes.object,
   promotionLoading: PropTypes.bool,
-  promoHasBeenApplied: PropTypes.bool,
-  promoErrorMessage: PropTypes.string,
-  segmentProductRemoved: PropTypes.func,
-  applyPromotion: PropTypes.func,
+  removeItem: PropTypes.func,
   removePromotion: PropTypes.func,
-  appliedPromotion: PropTypes.object,
+  renderLink: PropTypes.func,
   renderProductLink: PropTypes.func,
-  currentUserEmail: PropTypes.string,
-  giftFeatureOn: PropTypes.bool,
   scrollKeepShopping: PropTypes.oneOfType([PropTypes.bool, PropTypes.func]),
-  finalSaleOn: PropTypes.bool,
-  evergreenPromoItemCount: PropTypes.string.isRequired,
-  evergreenPromoPercent: PropTypes.string.isRequired
+  segmentCartViewed: PropTypes.func,
+  segmentProductRemoved: PropTypes.func,
+  setShippingAddress: PropTypes.func,
+  shouldShowCartSidebar: PropTypes.bool,
+  submitBag: PropTypes.func,
+  submitBagCheckoutStripe: PropTypes.func,
+  subTotal: PropTypes.number
 }
 
 BaseCartSidebar.defaultProps = {
+  finalSaleOn: false,
+  giftFeatureOn: false,
+  isUpdatingQuantity: null,
+  isUpdatingSize: null,
   renderLink: renderLink,
   renderProductLink: renderLink,
-  giftFeatureOn: false,
   scrollKeepShopping: false,
-  finalSaleOn: false
 }
 
 const CartSidebar = styled(BaseCartSidebar)`

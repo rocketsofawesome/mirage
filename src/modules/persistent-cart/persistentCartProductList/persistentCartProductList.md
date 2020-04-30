@@ -1,73 +1,116 @@
 ```js
-<PersistentCartProductList lineItems={[{
-  adjustments: [],
-  amount: "24.5",
-  category: ["Tops", "Graphic Tees"],
-  color: "Black",
-  colorway_slug: "black",
-  cost_price: null,
-  id: 2295178,
-  name: "Embellished Bolt Tee",
-  order_id: 627140,
-  price: "24.5",
-  product_id: 1560,
-  quantity: 1,
-  shot: { cloudinary_key: "production/catalog/rlnrtg6z2e56zneqi9dl",
-          id: 2257441,
-          shot_type: "front"
-  },
-  size: "10",
-  sku: "5601-007-N",
-  slug: "embellished-bolt-tee",
-  total: "24.5",
-  variant_id:16975},
-  {
-  adjustments: [],
-  amount: "24.5",
-  category: ["Tops", "Graphic Tees"],
-  color: "Black",
-  colorway_slug: "black",
-  cost_price: null,
-  id: 2295178,
-  name: "Embellished Bolt Tee",
-  order_id: 627140,
-  price: "24.5",
-  product_id: 1560,
-  quantity: 1,
-  shot: { cloudinary_key: "production/catalog/rlnrtg6z2e56zneqi9dl",
-          id: 2257441,
-          shot_type: "front"
-  },
-  size: "10",
-  sku: "5601-007-N",
-  slug: "embellished-bolt-tee",
-  total: "24.5",
-  variant_id:16975},
-  {
-  adjustments: [],
-  amount: "24.5",
-  category: ["Tops", "Graphic Tees"],
-  color: "Black",
-  colorway_slug: "black",
-  cost_price: null,
-  id: 2295178,
-  name: "Embellished Bolt Tee",
-  order_id: 627140,
-  price: "24.5",
-  product_id: 1560,
-  quantity: 1,
-  shot: { cloudinary_key: "production/catalog/rlnrtg6z2e56zneqi9dl",
-          id: 2257441,
-          shot_type: "front"
-  },
-  size: "10",
-  sku: "5601-007-N",
-  slug: "embellished-bolt-tee",
-  total: "24.5",
-  variant_id:16975}
+<PersistentCartProductList
+  lineItems={[
+    {
+      id: 2943132,
+      price: "34.5",
+      amount: "34.5",
+      total: "34.5",
+      variant_id: 19915,
+      sku: "7084-025-N",
+      quantity: 1,
+      name: "Varsity Sequin Skirt",
+      color: "Silver",
+      size: "10",
+      category: [
+        "Bottoms",
+        "Skirts"
+      ],
+      cost_price: null,
+      product_id: 894,
+      slug: "sequin-skirt-7084",
+      colorway_slug: "silver",
+      colorway_code: "7084-025",
+      order_id: 772492,
+      on_sale: false,
+      original_price: "34.5",
+      colorway_variants: [
+        {
+          id: 11562,
+          sku: "7084-025-H",
+          size: "3",
+          in_stock: false
+        },
+        {
+          id: 11566,
+          sku: "7084-025-C",
+          size: "4/5",
+          in_stock: false
+        },
+        {
+          id: 16484,
+          sku: "7084-025-I",
+          size: "4",
+          in_stock: false
+        },
+        {
+          id: 16486,
+          sku: "7084-025-K",
+          size: "5",
+          in_stock: false
+        },
+        {
+          id: 11567,
+          sku: "7084-025-D",
+          size: "6/7",
+          in_stock: false
+        },
+        {
+          id: 16485,
+          sku: "7084-025-L",
+          size: "6",
+          in_stock: false
+        },
+        {
+          id: 16483,
+          sku: "7084-025-M",
+          size: "7",
+          in_stock: false
+        },
+        {
+          id: 11563,
+          sku: "7084-025-E",
+          size: "8",
+          in_stock: false
+        },
+        {
+          id: 11565,
+          sku: "7084-025-F",
+          size: "10/12",
+          in_stock: false
+        },
+        {
+          id: 19915,
+          sku: "7084-025-N",
+          size: "10",
+          in_stock: true
+        },
+        {
+          id: 19914,
+          sku: "7084-025-O",
+          size: "12",
+          in_stock: true
+        },
+        {
+          id: 11564,
+          sku: "7084-025-P",
+          size: "14",
+          in_stock: false
+        }
+      ],
+      shot: {
+        id: 4503793,
+        shot_type: "front",
+        cloudinary_key: "production/catalog/kirtmym9iy3c5wirjihg"
+      },
+      adjustments: []
+    }
   ]}
-  updateBag={() => {}}
-  removeItem={() => {}}
+  onUpdateQuantity={(item, quantity) => console.log('Update quantity', item, quantity)}
+  onUpdateSize={(item, size) => console.log('Update size', item, size)}
+  removeItem={() => console.log('Remove item')}
   hideCartSidebar={() => {}}
-  segmentCartViewed={() => {}}/>
+  segmentCartViewed={() => {}}
+  isUpdatingSize={2943132}
+/>
 ```
