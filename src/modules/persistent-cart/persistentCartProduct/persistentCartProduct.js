@@ -153,7 +153,7 @@ class BaseProduct extends React.Component {
     const { item, segmentProductRemoved, onRemoveItem } = this.props
 
     onRemoveItem(item.id)
-    segmentProductRemoved(item)
+    segmentProductRemoved(item, 'bag')
   }
 
   renderSizePicker = () => {
