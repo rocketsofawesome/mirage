@@ -4,7 +4,7 @@ import Spinner from './Spinner.base'
 
 const GraySpinner = styled(Spinner)`
   rect {
-    fill: ${props => props.theme.colors.loading};
+    fill: ${props => props.theme.colors.gray7};
   }
 `
 
