@@ -35,6 +35,7 @@ const supportingColors = {
   gray4: '#D5D5D5',
   gray5: '#CFCFCF',
   gray6: '#979797',
+  gray7: '#6e6e6e',
   gray: [
     '#F3F3F3',
     '#F5F5F5',
@@ -42,7 +43,8 @@ const supportingColors = {
     '#E6E6E6',
     '#D5D5D5',
     '#CFCFCF',
-    '#979797'
+    '#979797',
+    '#6e6e6e'
   ],
   shadyLady: '#979797',
   red: '#FF511C',
