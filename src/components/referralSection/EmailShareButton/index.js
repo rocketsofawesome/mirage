@@ -38,7 +38,7 @@ const EmailShareButton = ({ className, referralClicked, referralCode, referralVa
       'of awesome kids clothes delivered to your door every season. ' +
       'Use my personal link to sign up and you’ll get ' +
       `$${referralValue} off your first purchase.\n\n ` +
-      `My link: ${homepageUrl}?r=${referralCode}\n\n` +
+      `My link: ${homepageUrl}/subscribe-and-save?r=${referralCode}\n\n` +
       'xo'
 
     const message = {

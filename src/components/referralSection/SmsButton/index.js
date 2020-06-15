@@ -7,7 +7,7 @@ const SmsButton = ({ className, referralClicked, referralCode, referralValue, ho
   const body =
       'Sign up for Rockets of Awesome with my link and ' +
       `get $${referralValue} off your first purchase of supercool kids clothes! ` +
-      `${homepageUrl}?r=${referralCode}`
+      `${homepageUrl}/subscribe-and-save?r=${referralCode}`
 
     const sms_link = `sms:?&body=${encodeURIComponent(body)}`
   return <ButtonLink className={className} href={sms_link} onClick={() => referralClicked('share_via_sms', 'Click Refer via SMS button')}>

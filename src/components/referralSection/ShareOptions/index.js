@@ -89,7 +89,7 @@ class ShareOptions extends Component {
   render () {
     const { className, showShareButtons, homepageUrl, referralCode, name, referralClicked, referralValue } = this.props
     const { copied } = this.state
-    const url = `${homepageUrl}?r=${referralCode}`
+    const url = `${homepageUrl}/subscribe-and-save?r=${referralCode}`
 
     return (
       <div className={className}>
