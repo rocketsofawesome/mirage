@@ -22,8 +22,6 @@ const spanner = (props, breakpoint) => {
   }
 }
 
-
-
 const FlexCol = styled(BaseFlexCol)`
   box-sizing: border-box;
   max-width: ${props => props.mobile.nested

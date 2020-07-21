@@ -30,9 +30,9 @@ const FlexRow = styled(BaseFlexRow)`
   flex-basis: 100%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: ${props => props.align};
   ${props => props.constrained ? constrained : notConstrained}
   ${props => props.padding && padding}
-  align-content: ${props => props.align}
 `
 
 FlexRow.propTypes = {
@@ -41,7 +41,8 @@ FlexRow.propTypes = {
     PropTypes.object
   ]),
   constrained: PropTypes.bool,
-  padding: PropTypes.bool
+  padding: PropTypes.bool,
+  align: PropTypes.string
 }
 
 FlexRow.defaultProps = {
