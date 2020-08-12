@@ -7,6 +7,8 @@ const BaseFlexCol = ({ element, children, key, ...props}) => {
   delete props.mobile
   delete props.tablet
   delete props.nested
+  delete props.gutter
+
   return React.createElement(element, props, children)
 }
 

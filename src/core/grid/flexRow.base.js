@@ -5,6 +5,7 @@ const BaseFlexRow = ({ children, element, ...props }) => {
   delete props.constrained
   delete props.padding
   delete props.align
+
   return React.createElement(element, props, children)
 }
 
