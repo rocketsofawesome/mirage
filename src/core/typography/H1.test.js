@@ -47,7 +47,7 @@ describe('(Styled Component) H1', () => {
     expect(createH1({ fontSizes: { desktop: '3.2rem', mobile: '2.4rem' } }))
     .toHaveStyleRule(
       'font-size', '3.2rem', {
-        media: '(min-width: 768px)'
+        media: '(min-width: 769px)'
       }
     )
   })
@@ -56,7 +56,7 @@ describe('(Styled Component) H1', () => {
     expect(createH1({ lineHeights: { desktop: 2, mobile: 1.5 } }))
     .toHaveStyleRule(
       'line-height', `${2}`, {
-        media: '(min-width: 768px)'
+        media: '(min-width: 769px)'
       }
     )
   })
