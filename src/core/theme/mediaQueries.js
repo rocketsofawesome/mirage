@@ -1,7 +1,7 @@
 import { css } from 'styled-components'
 
 const sizes = {
-  phone: 321,
+  phone: 320,
   phoneMax: 414,
   tablet: 768,
   mobileNav: 889,
@@ -19,7 +19,7 @@ Object.keys(sizes).forEach((label) => {
   breakpoints[`below${label.charAt(0).toUpperCase()}${label.substr(1)}`] =
   `(max-width: ${sizes[label] - 1}px)`
   breakpoints[`above${label.charAt(0).toUpperCase()}${label.substr(1)}`] =
-  `(min-width: ${sizes[label]}px)`
+  `(min-width: ${sizes[label] + 1}px)`
 })
 
 export { breakpoints, sizes }
