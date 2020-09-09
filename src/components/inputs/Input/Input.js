@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import InputElement from 'react-input-mask'
 import styled from 'styled-components'
 
+import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
+
 const domOnlyProps = ({
   initialValue,
   autofill,
@@ -39,22 +41,6 @@ const Span = styled.span`
   text-transform: uppercase;
 
   color: rgba(0,0,0,.3);
-`
-
-const ErrorMessage = styled.div`
-  text-transform: uppercase;
-  color: ${props => props.theme.colors.white};
-  background-color: ${props => props.theme.colors.flameOrange};
-  font-family: ${props => props.theme.fonts.primaryFont};
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-  text-align: left;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 2px;
-  min-height: 18px;
-  line-height: 18px;
 `
 
 const StyledInput = styled.input`

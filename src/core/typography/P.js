@@ -8,6 +8,7 @@ export const pStyle = css`
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   line-height: normal;
+  text-align: ${props => props.align};
 `
 
 const P = styled.p`
@@ -33,7 +34,8 @@ P.propTypes = {
 
 P.defaultProps = {
   fontSize: '1.6rem',
-  color: theme.colors.navy
+  color: theme.colors.navy,
+  align: 'left'
 }
 
 /** @component */

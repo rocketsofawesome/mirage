@@ -205,7 +205,7 @@ export class BaseDesktopNavigation extends React.Component {
                 {showSearch &&
                   <span className='divider-search'>|</span>
                 }
-                <li className={!showSearch && 'spacer'}>
+                <li className={showSearch ? undefined : 'spacer'}>
                   <DesktopAccountLinks
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
