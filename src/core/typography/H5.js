@@ -5,6 +5,7 @@ const H5 = styled.h5`
   letter-spacing: 0.5px;
 
   color: ${props => props.theme.colors.navy};
+  text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
@@ -33,7 +34,8 @@ H5.propTypes = {
 
 H5.defaultProps = {
   fontSize: '1.6rem',
-  margin: '2.6rem 0'
+  margin: '2.6rem 0',
+  align: 'left'
 }
 
 /** @component */

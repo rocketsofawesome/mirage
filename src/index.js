@@ -15,9 +15,6 @@
  * Templates:
 **/
   export * from './templates'
-/**
- * Pages:
-**/
 
 /**
  * Services:

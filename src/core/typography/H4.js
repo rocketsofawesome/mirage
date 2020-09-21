@@ -5,6 +5,7 @@ const H4 = styled.h4`
   letter-spacing: 0.5px;
 
   color: ${props => props.theme.colors.navy};
+  text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
@@ -38,7 +39,8 @@ H4.defaultProps = {
   fontSize: '1.8rem',
   margin: '2.3rem 0',
   italic: true,
-  uppercase: false
+  uppercase: false,
+  align: 'left'
 }
 
 /** @component */

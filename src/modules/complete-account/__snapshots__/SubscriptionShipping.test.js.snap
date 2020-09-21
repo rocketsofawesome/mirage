@@ -45,6 +45,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  text-align: left;
   margin: 0;
   color: #00003C;
 }
@@ -162,6 +163,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
       </Styled(UnstyledMailbox)>
       <aside>
         <styled.p
+          align="left"
           color="#00003C"
           fontSize="1.6rem"
         >
@@ -174,6 +176,7 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
           </p>
         </styled.p>
         <styled.p
+          align="left"
           color="#00003C"
           fontSize="1.6rem"
         >
@@ -236,6 +239,7 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  text-align: left;
   margin: 0;
   color: #00003C;
 }
@@ -379,6 +383,7 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
         </Styled(UnstyledMailbox)>
         <aside>
           <styled.p
+            align="left"
             color="#00003C"
             fontSize="1.6rem"
           >
@@ -391,6 +396,7 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
             </p>
           </styled.p>
           <styled.p
+            align="left"
             color="#00003C"
             fontSize="1.6rem"
           >

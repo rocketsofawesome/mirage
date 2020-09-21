@@ -195,7 +195,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   z-index: 1;
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c1 {
     display: -webkit-box;
     display: -webkit-flex;
@@ -210,7 +210,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c2 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -222,7 +222,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c2 {
     max-width: 16.666666666666664%;
     -webkit-flex-basis: 16.666666666666664%;
@@ -232,7 +232,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c4 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -244,7 +244,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c4 {
     max-width: 83.33333333333334%;
     -webkit-flex-basis: 83.33333333333334%;
@@ -254,7 +254,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c7 .c8 {
     display: inline-block;
     position: absolute;
@@ -270,7 +270,7 @@ exports[`() Gallery matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c0 .c6 {
     width: 50%;
   }
@@ -350,17 +350,17 @@ exports[`() Gallery matching the snapshot 1`] = `
         "base": undefined,
         "basePxSize": 10,
         "breakpoints": Object {
-          "aboveDesktop": "(min-width: 1440px)",
-          "aboveLaptop": "(min-width: 1024px)",
-          "aboveMobileNav": "(min-width: 889px)",
+          "aboveDesktop": "(min-width: 1441px)",
+          "aboveLaptop": "(min-width: 1025px)",
+          "aboveMobileNav": "(min-width: 890px)",
           "abovePhone": "(min-width: 321px)",
-          "abovePhoneMax": "(min-width: 414px)",
-          "aboveTablet": "(min-width: 768px)",
-          "aboveTabletMax": "(min-width: 960px)",
+          "abovePhoneMax": "(min-width: 415px)",
+          "aboveTablet": "(min-width: 769px)",
+          "aboveTabletMax": "(min-width: 961px)",
           "belowDesktop": "(max-width: 1439px)",
           "belowLaptop": "(max-width: 1023px)",
           "belowMobileNav": "(max-width: 888px)",
-          "belowPhone": "(max-width: 320px)",
+          "belowPhone": "(max-width: 319px)",
           "belowPhoneMax": "(max-width: 413px)",
           "belowTablet": "(max-width: 767px)",
           "belowTabletMax": "(max-width: 959px)",
@@ -397,6 +397,7 @@ exports[`() Gallery matching the snapshot 1`] = `
             "#D5D5D5",
             "#CFCFCF",
             "#979797",
+            "#6e6e6e",
           ],
           "gray0": "#F3F3F3",
           "gray1": "#F5F5F5",
@@ -405,6 +406,7 @@ exports[`() Gallery matching the snapshot 1`] = `
           "gray4": "#D5D5D5",
           "gray5": "#CFCFCF",
           "gray6": "#979797",
+          "gray7": "#6e6e6e",
           "lightBlue": Array [
             "#EEFCFF",
             "#BCE1F7",
@@ -457,7 +459,7 @@ exports[`() Gallery matching the snapshot 1`] = `
           "desktop": 1440,
           "laptop": 1024,
           "mobileNav": 889,
-          "phone": 321,
+          "phone": 320,
           "phoneMax": 414,
           "tablet": 768,
           "tabletMax": 960,
@@ -505,17 +507,17 @@ exports[`() Gallery matching the snapshot 1`] = `
           "base": undefined,
           "basePxSize": 10,
           "breakpoints": Object {
-            "aboveDesktop": "(min-width: 1440px)",
-            "aboveLaptop": "(min-width: 1024px)",
-            "aboveMobileNav": "(min-width: 889px)",
+            "aboveDesktop": "(min-width: 1441px)",
+            "aboveLaptop": "(min-width: 1025px)",
+            "aboveMobileNav": "(min-width: 890px)",
             "abovePhone": "(min-width: 321px)",
-            "abovePhoneMax": "(min-width: 414px)",
-            "aboveTablet": "(min-width: 768px)",
-            "aboveTabletMax": "(min-width: 960px)",
+            "abovePhoneMax": "(min-width: 415px)",
+            "aboveTablet": "(min-width: 769px)",
+            "aboveTabletMax": "(min-width: 961px)",
             "belowDesktop": "(max-width: 1439px)",
             "belowLaptop": "(max-width: 1023px)",
             "belowMobileNav": "(max-width: 888px)",
-            "belowPhone": "(max-width: 320px)",
+            "belowPhone": "(max-width: 319px)",
             "belowPhoneMax": "(max-width: 413px)",
             "belowTablet": "(max-width: 767px)",
             "belowTabletMax": "(max-width: 959px)",
@@ -552,6 +554,7 @@ exports[`() Gallery matching the snapshot 1`] = `
               "#D5D5D5",
               "#CFCFCF",
               "#979797",
+              "#6e6e6e",
             ],
             "gray0": "#F3F3F3",
             "gray1": "#F5F5F5",
@@ -560,6 +563,7 @@ exports[`() Gallery matching the snapshot 1`] = `
             "gray4": "#D5D5D5",
             "gray5": "#CFCFCF",
             "gray6": "#979797",
+            "gray7": "#6e6e6e",
             "lightBlue": Array [
               "#EEFCFF",
               "#BCE1F7",
@@ -612,7 +616,7 @@ exports[`() Gallery matching the snapshot 1`] = `
             "desktop": 1440,
             "laptop": 1024,
             "mobileNav": 889,
-            "phone": 321,
+            "phone": 320,
             "phoneMax": 414,
             "tablet": 768,
             "tabletMax": 960,
@@ -1653,6 +1657,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                       },
                     ]
                   }
+                  onClick={[Function]}
                   sliderLazyLoad="progressive"
                 >
                   <div
@@ -1846,6 +1851,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     <InlineImage
                                       alt="Cool Down Active Short on model"
                                       key="0"
+                                      onClick={[Function]}
                                       src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
                                         Object {
@@ -1857,6 +1863,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
+                                        onClick={[Function]}
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                         style={
                                           Object {
@@ -1972,6 +1979,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     <InlineImage
                                       alt="Cool Down Active Short on model"
                                       key="0"
+                                      onClick={[Function]}
                                       src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                       style={
                                         Object {
@@ -1983,6 +1991,7 @@ exports[`() Gallery matching the snapshot 1`] = `
                                     >
                                       <img
                                         alt="Cool Down Active Short on model"
+                                        onClick={[Function]}
                                         src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_pdp/v1/production/catalog/bi5flgfpxbyr9tp2xkd9.jpg"
                                         style={
                                           Object {

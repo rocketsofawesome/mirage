@@ -13,7 +13,7 @@ import {
 } from 'SRC'
 import { girls, boys, renderLink } from './defaultProps'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
+const { REACT_APP_SHOW_BLOG_LINK } = process.env
 
 export class BaseDesktopNavigation extends React.Component {
   constructor(props) {
@@ -68,7 +68,6 @@ export class BaseDesktopNavigation extends React.Component {
       homepageUrl,
       clickBag,
       clickSearch,
-      outfitNav,
       showBlog,
       showSearch,
       ...props
@@ -131,17 +130,15 @@ export class BaseDesktopNavigation extends React.Component {
                     animationLength={animationLength}
                     {...boysState} />
                 </li>
-                {outfitNav &&
-                  <li>
-                    <HeaderLink
-                      onMouseEnter={this.closeDrawers}
-                      onFocus={this.closeDrawers}
-                      href={`${homepageUrl}/outfits`}
-                      highlightable={highlightable}>
-                        Outfits
-                    </HeaderLink>
-                  </li>
-                }
+                <li>
+                  <HeaderLink
+                    onMouseEnter={this.closeDrawers}
+                    onFocus={this.closeDrawers}
+                    href={`${homepageUrl}/outfits`}
+                    highlightable={highlightable}>
+                      Outfits
+                  </HeaderLink>
+                </li>
                 {!isSubscriptionMember &&
                   <li>
                     <HeaderLink
@@ -341,7 +338,6 @@ BaseDesktopNavigation.defaultProps = {
   girlsLinks: girls,
   boysLinks: boys,
   homepageUrl: 'https://rocketsofawesome.com',
-  outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK,
   showSearch: false
 }

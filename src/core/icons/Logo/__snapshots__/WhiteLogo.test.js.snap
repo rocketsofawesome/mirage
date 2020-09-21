@@ -16,7 +16,7 @@ exports[`(Styled Component) WhiteLogo matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c1 {
     width: 100%;
   }

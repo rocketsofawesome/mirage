@@ -18,7 +18,7 @@ import {
 
 import { theme } from 'SRC/core/theme'
 
-const { REACT_APP_OUTFIT_NAV, REACT_APP_SHOW_BLOG_LINK } = process.env
+const { REACT_APP_SHOW_BLOG_LINK } = process.env
 
 export class BaseMobileNavigation extends React.Component {
   constructor (props) {
@@ -50,7 +50,6 @@ export class BaseMobileNavigation extends React.Component {
       clickSearch,
       showBlog,
       showSearch,
-      outfitNav,
       signOut
     } = this.props
 
@@ -137,14 +136,12 @@ export class BaseMobileNavigation extends React.Component {
                 </li>
               </UL>
             </li>
-            {outfitNav &&
-              <li>
-                <MobileLinkTop
-                  href={`${homepageUrl}/outfits`}>
-                  Outfits
-                </MobileLinkTop>
-              </li>
-            }
+            <li>
+              <MobileLinkTop
+                href={`${homepageUrl}/outfits`}>
+                Outfits
+              </MobileLinkTop>
+            </li>
             {!isSubscriptionMember &&
               <div>
                 <li>
@@ -277,7 +274,6 @@ MobileNavigation.propTypes = {
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
   homepageUrl: 'https://rocketsofawesome.com',
-  outfitNav: REACT_APP_OUTFIT_NAV,
   showBlog: REACT_APP_SHOW_BLOG_LINK,
   showSearch: false
 }

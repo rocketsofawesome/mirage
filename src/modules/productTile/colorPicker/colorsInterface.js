@@ -36,7 +36,8 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
                   key={`${productId}-${colorway.code}`}
                   alt={colorway.code}
                   src={src}
-                  input={input} />
+                  input={input}
+                />
               )
             })}
           </SwatchContainer>
@@ -51,7 +52,10 @@ const ColorsInterface = ({ className, colorways, productId, onChange, selected }
 ColorsInterface.propTypes = {
   className: PropTypes.string,
   colorways: PropTypes.array,
-  productId: PropTypes.string,
+  productId: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.number
+  ]),
   onChange: PropTypes.func
 }
 

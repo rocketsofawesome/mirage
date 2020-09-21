@@ -21,11 +21,12 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   max-width: 1440px;
   margin: 0 auto;
-  -webkit-align-content: flex-start;
-  -ms-flex-line-pack: start;
-  align-content: flex-start;
 }
 
 .c12 {
@@ -144,10 +145,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-style: normal;
 }
 
+.c6:active,
+.c6:focus,
 .c6:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c17 {
@@ -164,10 +166,11 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-style: normal;
 }
 
+.c17:active,
+.c17:focus,
 .c17:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c5 {
@@ -176,8 +179,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 
 .c5:active,
 .c5:focus,
-.c5:hover,
-.c5:visited {
+.c5:hover {
   color: #00003C;
 }
 
@@ -198,6 +200,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   color: #00003C;
+  text-align: left;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -548,7 +551,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   transition: all 0.25s ease-in-out;
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .c24 {
     display: block;
   }
@@ -560,7 +563,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c12 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -572,7 +575,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c12 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
@@ -582,7 +585,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c18 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -594,7 +597,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c18 {
     max-width: 25%;
     -webkit-flex-basis: 25%;
@@ -604,7 +607,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c19 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -616,7 +619,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:960px) {
+@media (min-width:961px) {
   .c19 {
     max-width: 33.33333333333333%;
     -webkit-flex-basis: 33.33333333333333%;
@@ -626,7 +629,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .c22 svg {
     width: 2.1rem;
   }
@@ -642,7 +645,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c9 {
     width: 100%;
   }
@@ -895,7 +898,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
               element="nav"
             >
               <nav
-                align="flex-start"
                 className="c2"
               >
                 <ol>
@@ -1367,7 +1369,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               element="menu"
                             >
                               <menu
-                                align="flex-start"
                                 className="c2"
                               >
                                 <Styled(BaseFlexCol)
@@ -1578,6 +1579,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="category"
                                           >
                                             <styled.h4
+                                              align="left"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -2622,6 +2624,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="story"
                                           >
                                             <styled.h4
+                                              align="left"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -3289,7 +3292,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               element="menu"
                             >
                               <menu
-                                align="flex-start"
                                 className="c2"
                               >
                                 <Styled(BaseFlexCol)
@@ -3490,6 +3492,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="category"
                                           >
                                             <styled.h4
+                                              align="left"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -4449,6 +4452,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="story"
                                           >
                                             <styled.h4
+                                              align="left"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -4761,6 +4765,80 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
+                      href="https://rocketsofawesome.com/outfits"
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      spacing={true}
+                    >
+                      <BaseHeaderLink
+                        className="c3 c10"
+                        highlightOn="hover"
+                        highlightable={false}
+                        href="https://rocketsofawesome.com/outfits"
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        spacing={true}
+                      >
+                        <Styled(Styled(Component))
+                          className="c3 c10"
+                          href="https://rocketsofawesome.com/outfits"
+                          light={true}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          underline={false}
+                          uppercase={true}
+                        >
+                          <Styled(Component)
+                            className="c3 c10 c5"
+                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                            fontSize="1.4rem"
+                            fontStyle="normal"
+                            fontWeight={500}
+                            href="https://rocketsofawesome.com/outfits"
+                            light={true}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            underline={false}
+                            uppercase={true}
+                          >
+                            <Component
+                              className="c3 c10 c5 c6"
+                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                              fontSize="1.4rem"
+                              fontStyle="normal"
+                              fontWeight={500}
+                              href="https://rocketsofawesome.com/outfits"
+                              light={true}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              underline={false}
+                              uppercase={true}
+                            >
+                              <a
+                                className="c3 c10 c5 c6"
+                                fontStyle="normal"
+                                href="https://rocketsofawesome.com/outfits"
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <span>
+                                  Outfits
+                                </span>
+                              </a>
+                            </Component>
+                          </Styled(Component)>
+                        </Styled(Styled(Component))>
+                      </BaseHeaderLink>
+                    </Styled(BaseHeaderLink)>
+                  </li>
+                  <li>
+                    <Styled(BaseHeaderLink)
+                      highlightOn="hover"
+                      highlightable={false}
                       href="https://rocketsofawesome.com/subscribe-and-save"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
@@ -4823,6 +4901,85 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               >
                                 <span>
                                   Subscribe + Save
+                                </span>
+                              </a>
+                            </Component>
+                          </Styled(Component)>
+                        </Styled(Styled(Component))>
+                      </BaseHeaderLink>
+                    </Styled(BaseHeaderLink)>
+                  </li>
+                  <li>
+                    <Styled(BaseHeaderLink)
+                      highlightOn="hover"
+                      highlightable={false}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      renderLink={[Function]}
+                      spacing={true}
+                      target="/shop/sale"
+                    >
+                      <BaseHeaderLink
+                        className="c3 c10"
+                        highlightOn="hover"
+                        highlightable={false}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        renderLink={[Function]}
+                        spacing={true}
+                        target="/shop/sale"
+                      >
+                        <Styled(Styled(Component))
+                          className="c3 c10"
+                          light={true}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          renderLink={[Function]}
+                          target="/shop/sale"
+                          underline={false}
+                          uppercase={true}
+                        >
+                          <Styled(Component)
+                            className="c3 c10 c5"
+                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                            fontSize="1.4rem"
+                            fontStyle="normal"
+                            fontWeight={500}
+                            light={true}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            renderLink={[Function]}
+                            target="/shop/sale"
+                            underline={false}
+                            uppercase={true}
+                          >
+                            <Component
+                              className="c3 c10 c5 c6"
+                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                              fontSize="1.4rem"
+                              fontStyle="normal"
+                              fontWeight={500}
+                              light={true}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              renderLink={[Function]}
+                              target="/shop/sale"
+                              underline={false}
+                              uppercase={true}
+                            >
+                              <a
+                                className="c3 c10 c5 c6"
+                                fontStyle="normal"
+                                href="/shop/sale"
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <span>
+                                  Sale
                                 </span>
                               </a>
                             </Component>

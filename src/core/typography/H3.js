@@ -7,6 +7,7 @@ const H3 = styled.h3`
     ? 'inherit' : 'uppercase'};
 
   color: ${props => props.theme.colors.navy};
+  text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.headerFont};
   font-size: ${props => props.fontSize};
@@ -34,7 +35,8 @@ H3.propTypes = {
 
 H3.defaultProps = {
   fontSize: '2.4rem',
-  margin: '2.4rem 0'
+  margin: '2.4rem 0',
+  align: 'left'
 }
 
 /** @component */

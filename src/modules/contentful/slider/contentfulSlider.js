@@ -138,6 +138,7 @@ class ContentfulSlider extends React.Component {
             return (
               <ContentfulSlide
                 {...slide}
+                key={slide.sys.id}
                 position={index + 1}
                 totalSlides={fields.slides.length}
                 segmentHeroClicked={segmentHeroClicked}

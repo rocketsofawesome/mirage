@@ -34,13 +34,11 @@ class BaseHeader extends Component {
       below,
       className,
       desktopProps,
-      mobileProps,
-      setMargin,
-      ...props
+      mobileProps
     } = this.props
 
     return (
-      <div className={className} ref={(element) => { this.header = element }} {...props}>
+      <div className={className} ref={(element) => { this.header = element }}>
         {above}
         <Default displayTarget={'belowMobileNav'}>
           <MobileNavigation {...mobileProps} />

@@ -122,7 +122,6 @@
     "transformIgnorePatterns": [
       "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs)$"
     ],
-    "module": "src/index.js",
     "moduleNameMapper": {
       "^SRC(.*)$": "<rootDir>/src$1"
     },

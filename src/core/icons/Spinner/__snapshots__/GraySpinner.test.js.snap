@@ -72,7 +72,7 @@ exports[`(Styled Component) GraySpinner matching the snapshot 1`] = `
 }
 
 .c0 rect {
-  fill: #BFBFBF;
+  fill: #6e6e6e;
 }
 
 <Styled(Styled(SpinnerSVG))>
