@@ -33,11 +33,7 @@ H1.propTypes = {
     mobile: PropTypes.number
   }),
   margin: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string,
-    PropTypes.object
-  ]),
+  children: PropTypes.node,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string

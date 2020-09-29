@@ -17,11 +17,7 @@ const H5 = styled.h5`
 `
 
 H5.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string,
-    PropTypes.object
-  ]),
+  children: PropTypes.node,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string

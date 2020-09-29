@@ -52,11 +52,7 @@ HeaderLink.defaultProps = {
 HeaderLink.propTypes = {
   highlightable: PropTypes.bool,
   highlightOn: PropTypes.string,
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.object,
-    PropTypes.string
-  ])
+  children: PropTypes.node
 }
 
 export { BaseHeaderLink }

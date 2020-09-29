@@ -35,11 +35,7 @@ const LowercaseLabel = ({className, children}) => {
 }
 
 Label.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.object,
-    PropTypes.string
-  ]),
+  children: PropTypes.node,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string

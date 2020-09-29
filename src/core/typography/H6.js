@@ -16,11 +16,7 @@ const H6 = styled.h6`
 `
 
 H6.propTypes = {
-  children: PropTypes.oneOfType([
-    PropTypes.array,
-    PropTypes.string,
-    PropTypes.object
-  ]),
+  children: PropTypes.node,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string
