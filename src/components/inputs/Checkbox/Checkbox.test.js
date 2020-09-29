@@ -46,10 +46,4 @@ describe('(Base Component) Checkbox', () => {
     const component = createBaseCheckbox()
     expect(component).toMatchSnapshot()
   })
-
-  test('rendering the children in the Label component', () => {
-    const LabelText = 'Example'
-    const component = createBaseCheckbox({children: LabelText})
-    expect(component.find(Label).prop('children')).toContain(LabelText)
-  })
 })
