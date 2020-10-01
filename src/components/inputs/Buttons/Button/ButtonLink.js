@@ -55,6 +55,12 @@ const ButtonLink = styled(BaseButtonLink)`
   line-height: 44px;
   text-decoration: none;
   ${props => props.maxWidth && setMaxWidth}
+
+  &:focus,
+  &:hover {
+    color: ${textColor};
+    text-decoration: none;
+  }
 `
 /** @component */
 export default ButtonLink
