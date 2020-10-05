@@ -70,6 +70,7 @@ export class BaseDesktopNavigation extends React.Component {
       clickSearch,
       showBlog,
       showSearch,
+      pathname,
       ...props
     } = this.props
     const {
@@ -207,6 +208,7 @@ export class BaseDesktopNavigation extends React.Component {
                     isSubscriptionMember={isSubscriptionMember}
                     highlightable={highlightable}
                     renderLink={renderLink}
+                    pathname={pathname}
                     {...props} />
                 </li>
                 <li>

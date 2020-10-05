@@ -31,6 +31,7 @@ export class BaseAccountLinks extends React.Component {
       loggedIn,
       renderLink,
       name,
+      pathname,
       ...props
     } = this.props
     delete props.subMenuOpen
@@ -52,6 +53,7 @@ export class BaseAccountLinks extends React.Component {
             renderLink={renderLink}
             isSubscriptionMember={isSubscriptionMember}
             signOut={this.signOut}
+            pathname={pathname}
             {...props} />
           </div>
       )
