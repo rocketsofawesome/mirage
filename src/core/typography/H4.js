@@ -36,7 +36,7 @@ H4.defaultProps = {
   margin: '2.3rem 0',
   italic: true,
   uppercase: false,
-  align: 'left'
+  align: 'inherit'
 }
 
 /** @component */

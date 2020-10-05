@@ -32,7 +32,7 @@ H3.propTypes = {
 H3.defaultProps = {
   fontSize: '2.4rem',
   margin: '2.4rem 0',
-  align: 'left'
+  align: 'inherit'
 }
 
 /** @component */

@@ -32,7 +32,7 @@ P.propTypes = {
 P.defaultProps = {
   fontSize: '1.6rem',
   color: theme.colors.navy,
-  align: 'left'
+  align: 'inherit'
 }
 
 /** @component */

@@ -31,7 +31,7 @@ H5.propTypes = {
 H5.defaultProps = {
   fontSize: '1.6rem',
   margin: '2.6rem 0',
-  align: 'left'
+  align: 'inherit'
 }
 
 /** @component */

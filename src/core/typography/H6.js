@@ -30,7 +30,7 @@ H6.propTypes = {
 H6.defaultProps = {
   fontSize: '1.4rem',
   margin: '3.2rem 0',
-  align: 'left'
+  align: 'inherit'
 }
 
 /** @component */
