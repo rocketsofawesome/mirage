@@ -65,9 +65,9 @@ export class BaseSubMenu extends React.Component {
                 <Link
                   uppercase
                   underline={false}
-                  target='/rockets-reverse'
+                  target='/reverse'
                   renderLink={renderLink}
-                  className={pathname === '/rockets-reverse' && 'highlighted'}
+                  className={pathname === '/reverse' && 'highlighted'}
                 >
                   Rockets Reverse
                 </Link>

@@ -183,7 +183,7 @@ export class BaseMobileNavigation extends React.Component {
                 </li>
                 <li>
                   <MobileLinkTop
-                    target='/rockets-reverse'
+                    target='/reverse'
                     renderLink={renderLink}>
                     Rockets Reverse
                   </MobileLinkTop>
