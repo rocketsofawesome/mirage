@@ -37,7 +37,7 @@ z-index: 10;
 
 export class BaseSubMenu extends React.Component {
   render () {
-    const { className, childCount, open, signOut, isSubscriptionMember, renderLink } = this.props
+    const { className, childCount, open, signOut, isSubscriptionMember, renderLink, pathname } = this.props
     return (
       <CSSTransitionGroup
         transitionName={transition}
@@ -62,6 +62,15 @@ export class BaseSubMenu extends React.Component {
                   renderLink={renderLink}>
                   Manage Deliveries
                 </Link>
+                <Link
+                  uppercase
+                  underline={false}
+                  target='/reverse'
+                  renderLink={renderLink}
+                  className={pathname === '/reverse' && 'highlighted'}
+                >
+                  Rockets Reverse
+                </Link>
               </div>
             }
             <Link
@@ -85,6 +94,15 @@ export class BaseSubMenu extends React.Component {
                 target='/add-kid'
                 renderLink={renderLink}>
                 Add a Child
+              </Link>
+            }
+            {isSubscriptionMember &&
+              <Link
+                uppercase
+                underline={false}
+                target='/invite'
+                renderLink={renderLink}>
+                Refer a Friend
               </Link>
             }
             <Link
@@ -121,6 +139,11 @@ const SubMenu = styled(BaseSubMenu)`
       }
     }
 
+  .highlighted {
+    background-color: ${props => props.theme.colors.rocketBlue};
+    color: ${props => props.theme.colors.white};
+  }
+
   .enter {
     z-index: 4;
     animation: ${slideDown} 0.25s;
@@ -136,10 +159,10 @@ const SubMenu = styled(BaseSubMenu)`
 
 SubMenu.propTypes = {
   open: PropTypes.bool,
-  currentPath: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   signOut: PropTypes.func,
   childCount: PropTypes.number,
-  isSubscriptionMember: PropTypes.bool
+  isSubscriptionMember: PropTypes.bool,
+  pathname: PropTypes.string
 }
 
 SubMenu.defaultProps = {
