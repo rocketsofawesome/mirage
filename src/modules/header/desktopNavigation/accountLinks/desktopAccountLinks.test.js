@@ -2,7 +2,6 @@ import React from 'react'
 import 'jest-styled-components'
 
 import { DesktopAccountLinks, Link, HeaderLink, SubMenu } from 'SRC'
-import { BaseDesktopAccountLinks } from './desktopAccountLinks'
 
 const { mountWithTheme } = global
 
@@ -89,7 +88,7 @@ describe('(Styled Component) DesktopAccountLinks', () => {
         .find(SubMenu)
         .find(Link)
         .length
-      ).toEqual(6)
+      ).toEqual(8)
     })
 
   })
