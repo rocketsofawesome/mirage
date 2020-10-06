@@ -18,6 +18,8 @@ const breakpoints  = {
 Object.keys(sizes).forEach((label) => {
   breakpoints[`below${label.charAt(0).toUpperCase()}${label.substr(1)}`] =
   `(max-width: ${sizes[label] - 1}px)`
+  breakpoints[`aboveIncluding${label.charAt(0).toUpperCase()}${label.substr(1)}`] =
+  `(min-width: ${sizes[label]}px)`
   breakpoints[`above${label.charAt(0).toUpperCase()}${label.substr(1)}`] =
   `(min-width: ${sizes[label] + 1}px)`
 })
