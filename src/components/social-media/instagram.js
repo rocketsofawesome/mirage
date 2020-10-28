@@ -1,25 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MediaQuery from 'react-responsive'
 import styled, { withTheme } from 'styled-components'
 import { InlineImage } from 'SRC'
 
 class BaseInstagram extends React.Component {
-
   render () {
-    const { className, theme } = this.props
+    const { className } = this.props
     return (
       <div className={className}>
-        <MediaQuery query={theme.breakpoints.aboveTabletMax}>
-          <section className='desktopContainer'>
-            <InlineImage aria-hidden className='gif' alt='Fun and animated illustration of phone and Instagram photo' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1563995547/web/PHONE_STATIC.png' />
-          </section>
-        </MediaQuery>
-        <MediaQuery query="(max-device-width: 959px)">
-          <div className='mobileContainer'>
-            <InlineImage className='mobileGif' alt='Fun and animated illustration of phone and Instagram photo' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1563995547/web/PHONE_STATIC.png' />
-          </div>
-        </MediaQuery>
+        <div className='gifContainer'>
+          <InlineImage aria-hidden className='gif' alt='Fun and animated illustration of phone and Instagram photo' src='https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1563995547/web/PHONE_STATIC.png' />
+        </div>
         <div className="gallery-container">
           <div
             className="yotpo yotpo-pictures-widget"
@@ -37,7 +28,7 @@ const Instagram = styled(BaseInstagram)`
   ${props => props.theme.breakpointsVerbose.belowTablet`
     display: block !important;
   `}
-  .desktopContainer {
+  .gifContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,50 +46,34 @@ const Instagram = styled(BaseInstagram)`
       height: 260px;
       z-index: 0;
       padding-left: 5px;
+      ${props => props.theme.breakpointsVerbose.belowTabletMax`
+        width: 14rem;
+        height: auto;
+        left: 0;
+        position: absolute;
+      `}
+      ${props => props.theme.breakpointsVerbose.belowTablet`
+        position: relative;
+        padding-left: 0;
+      `}
     }
-  }
-  .mobileContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+
+    ${props => props.theme.breakpointsVerbose.belowTabletMax`
+      width: 100%;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    `}
+
     ${props => props.theme.breakpointsVerbose.belowTablet`
       display: block;
       text-align: center;
       margin-bottom: 20px;
     `}
   }
-  .mobileGif {
-    width: 14rem;
-    left: 0;
-    position: absolute;
-    padding-left: 5px;
-    ${props => props.theme.breakpointsVerbose.belowTablet`
-      position: relative;
-      padding-left: 0;
-    `}
-  }
-  .mobileImg {
-    width: 20rem;
-  }
-  .slider {
-    overflow: hidden;
-    > div > div {
-      display: flex;
-    }
-    .slick-slide {
-      display: flex;
-      justify-content: center;
-      padding-right: 20px;
-    }
-  }
-  .image-link {
-    font-size: 0px;
-  }
   .gallery-container {
-    ${props => props.theme.breakpointsVerbose.aboveLaptop`
+    ${props => props.theme.breakpointsVerbose.aboveIncludingLaptop`
       padding-left: 5px;
     `}
     ${props => props.theme.breakpointsVerbose.belowLaptop`
