@@ -14,7 +14,7 @@ class BaseInstagram extends React.Component {
         <div className="gallery-container">
           <div
             className="yotpo yotpo-pictures-widget"
-            data-gallery-id="5f8f01c819d86f05c671703e">
+            data-gallery-id="5fa029c167e297000789c89b">
           </div>
         </div>
       </div>
@@ -24,9 +24,10 @@ class BaseInstagram extends React.Component {
 
 const Instagram = styled(BaseInstagram)`
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 7%;
   ${props => props.theme.breakpointsVerbose.belowTablet`
     display: block !important;
+    padding: 0 2rem;
   `}
   .gifContainer {
     display: flex;
