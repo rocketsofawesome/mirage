@@ -15,13 +15,13 @@ exports[`(Styled Component) H1 matching the snapshot 1`] = `
   margin: 5.5rem 0;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     font-size: 4.2rem;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     line-height: 1.0476190476190477;
   }

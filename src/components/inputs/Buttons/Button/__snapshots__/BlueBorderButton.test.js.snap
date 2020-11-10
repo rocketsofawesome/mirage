@@ -38,9 +38,6 @@ exports[`(Styled Componenet) BlueBorderButton matching the snapshot 1`] = `
 .c1,
 .c1:active {
   border-style: solid;
-  -webkit-transform: translateX(.2rem);
-  -ms-transform: translateX(.2rem);
-  transform: translateX(.2rem);
 }
 
 .c1 > span {
@@ -80,15 +77,18 @@ exports[`(Styled Componenet) BlueBorderButton matching the snapshot 1`] = `
   <Styled(CustomButton)
     checkmark={[Function]}
     className="c0"
+    height="50px"
     spinner={[Function]}
   >
     <CustomButton
       checkmark={[Function]}
       className="c0 c1"
+      height="50px"
       spinner={[Function]}
     >
       <button
         className="c0 c1"
+        height="50px"
       >
         <span />
       </button>

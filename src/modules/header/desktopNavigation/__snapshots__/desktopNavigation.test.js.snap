@@ -200,7 +200,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   color: #00003C;
-  text-align: left;
+  text-align: inherit;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -1579,7 +1579,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="category"
                                           >
                                             <styled.h4
-                                              align="left"
+                                              align="inherit"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -2624,7 +2624,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="story"
                                           >
                                             <styled.h4
-                                              align="left"
+                                              align="inherit"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -3492,7 +3492,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="category"
                                           >
                                             <styled.h4
-                                              align="left"
+                                              align="inherit"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"
@@ -4452,7 +4452,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                                             key="story"
                                           >
                                             <styled.h4
-                                              align="left"
+                                              align="inherit"
                                               fontSize="1.8rem"
                                               italic={true}
                                               margin="2.3rem 0"

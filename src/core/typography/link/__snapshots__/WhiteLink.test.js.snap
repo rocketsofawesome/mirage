@@ -15,10 +15,11 @@ exports[`(Styled Component) WhiteLink matching the snapshot 1`] = `
   font-style: normal;
 }
 
+.c1:active,
+.c1:focus,
 .c1:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c0 {

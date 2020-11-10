@@ -95,7 +95,7 @@ exports[`(Styled Component) BagIcon matching the snapshot 1`] = `
   font-size: 0;
 }
 
-@media (min-width:1024px) {
+@media (min-width:1025px) {
   .c0 svg {
     width: 2.1rem;
   }

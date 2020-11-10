@@ -15,7 +15,7 @@ exports[`(Styled Component) H2 matching the snapshot 1`] = `
   margin: 2.6rem 0;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     font-size: 3.2rem;
   }

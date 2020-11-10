@@ -60,9 +60,6 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
 .c1,
 .c1:active {
   border-style: solid;
-  -webkit-transform: translateX(.2rem);
-  -ms-transform: translateX(.2rem);
-  transform: translateX(.2rem);
 }
 
 .c1 > span {
@@ -117,17 +114,20 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
       <Styled(CustomButton)
         checkmark={[Function]}
         className="toggleElement c0"
+        height="50px"
         onClick={[Function]}
         spinner={[Function]}
       >
         <CustomButton
           checkmark={[Function]}
           className="toggleElement c0 c1"
+          height="50px"
           onClick={[Function]}
           spinner={[Function]}
         >
           <button
             className="toggleElement c0 c1"
+            height="50px"
             onClick={[Function]}
           >
             <span>
@@ -317,9 +317,6 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
 .c2,
 .c2:active {
   border-style: solid;
-  -webkit-transform: translateX(.2rem);
-  -ms-transform: translateX(.2rem);
-  transform: translateX(.2rem);
 }
 
 .c2 > span {
@@ -387,17 +384,20 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
         <Styled(CustomButton)
           checkmark={[Function]}
           className="toggleElement c1"
+          height="50px"
           onClick={[Function]}
           spinner={[Function]}
         >
           <CustomButton
             checkmark={[Function]}
             className="toggleElement c1 c2"
+            height="50px"
             onClick={[Function]}
             spinner={[Function]}
           >
             <button
               className="toggleElement c1 c2"
+              height="50px"
               onClick={[Function]}
             >
               <span>

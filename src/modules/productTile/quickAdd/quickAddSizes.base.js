@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { H4, QuickAddSize } from 'SRC'
-import { default as withSortedSizes } from 'SRC/utils/variantSizeSorter'
-
+import { withSortedSizes } from 'SRC/utils/variantSizeSorter'
 
 export class BaseQuickAddSizes extends Component {
   constructor (props) {

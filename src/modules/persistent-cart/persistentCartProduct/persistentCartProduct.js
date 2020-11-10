@@ -6,6 +6,7 @@ import { XIcon, GraySpinner } from 'SRC'
 
 import cloudinary from 'services/cloudinary'
 import { calculateItemPriceAdjustment } from 'utils/pricing'
+import { sortVariantsBySize } from 'utils/variantSizeSorter'
 
 const shotTypeSortOrder = [
   'front',
@@ -157,7 +158,7 @@ class BaseProduct extends React.Component {
   }
 
   renderSizePicker = () => {
-    const { isUpdatingSize } = this.props
+    const { isUpdatingSize, item } = this.props
 
     if (isUpdatingSize) {
       return (
@@ -166,10 +167,12 @@ class BaseProduct extends React.Component {
         </SpinnerContainer>
       )
     }
+    const sortedVariants = sortVariantsBySize(item.colorway_variants)
+
     return (
       <Select value={this.props.item.variant_id} onChange={this.onUpdateSize}>
         {
-          this.props.item.colorway_variants.map(variant =>
+          sortedVariants.map(variant =>
             <option
               key={variant.id}
               value={variant.id}

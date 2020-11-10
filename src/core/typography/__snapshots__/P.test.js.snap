@@ -9,6 +9,7 @@ exports[`(Styled Component) P matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  text-align: inherit;
   margin: 0;
   color: #00003C;
 }

@@ -23,7 +23,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
-  text-align: left;
+  text-align: inherit;
   margin: 0;
   color: #00003C;
 }
@@ -216,7 +216,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         </h1>
       </styled.h1>
       <styled.p
-        align="left"
+        align="inherit"
         color="#00003C"
         fontSize="1.6rem"
       >
