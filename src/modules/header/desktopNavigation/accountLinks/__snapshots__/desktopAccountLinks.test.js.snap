@@ -15,10 +15,11 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   font-style: normal;
 }
 
+.c5:active,
+.c5:focus,
 .c5:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c4 {
@@ -27,8 +28,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
 
 .c4:active,
 .c4:focus,
-.c4:hover,
-.c4:visited {
+.c4:hover {
   color: #00003C;
 }
 
@@ -85,7 +85,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
 }
 
 .c6 .enter {
-  z-index: 3;
+  z-index: 4;
   -webkit-animation: cOMQan 0.25s;
   animation: cOMQan 0.25s;
   -webkit-transform: translateY(-1px);
@@ -94,7 +94,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
 }
 
 .c6 .leave {
-  z-index: 3;
+  z-index: 4;
   -webkit-transition: -webkit-transform 0.25s ease-in;
   -webkit-transition: transform 0.25s ease-in;
   transition: transform 0.25s ease-in;
@@ -338,10 +338,11 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
   font-style: normal;
 }
 
+.c4:active,
+.c4:focus,
 .c4:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c3 {
@@ -350,8 +351,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
 
 .c3:active,
 .c3:focus,
-.c3:hover,
-.c3:visited {
+.c3:hover {
   color: #00003C;
 }
 

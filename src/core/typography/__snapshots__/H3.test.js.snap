@@ -8,6 +8,7 @@ exports[`(Styled Component) H3 matching the snapshot 1`] = `
   letter-spacing: .05rem;
   text-transform: uppercase;
   color: #00003C;
+  text-align: inherit;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;
   font-size: 2.4rem;
   font-weight: 500;

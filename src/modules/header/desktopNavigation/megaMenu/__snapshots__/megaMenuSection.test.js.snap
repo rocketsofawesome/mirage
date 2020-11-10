@@ -15,10 +15,11 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   font-style: normal;
 }
 
+.c3:active,
+.c3:focus,
 .c3:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c2 {
@@ -38,6 +39,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   color: #00003C;
+  text-align: inherit;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
@@ -206,6 +208,7 @@ exports[`(Styled Component) MegaMenuSection matching the snapshot 1`] = `
       key="category"
     >
       <styled.h4
+        align="inherit"
         fontSize="1.8rem"
         italic={true}
         margin="2.3rem 0"

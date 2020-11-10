@@ -54,7 +54,7 @@ exports[`(Styled) SubMenu matching the snapshot 1`] = `
 }
 
 .c0 .enter {
-  z-index: 3;
+  z-index: 4;
   -webkit-animation: cOMQan 0.25s;
   animation: cOMQan 0.25s;
   -webkit-transform: translateY(-1px);
@@ -63,7 +63,7 @@ exports[`(Styled) SubMenu matching the snapshot 1`] = `
 }
 
 .c0 .leave {
-  z-index: 3;
+  z-index: 4;
   -webkit-transition: -webkit-transform 0.25s ease-in;
   -webkit-transition: transform 0.25s ease-in;
   transition: transform 0.25s ease-in;

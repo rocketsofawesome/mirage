@@ -36,6 +36,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   letter-spacing: .05rem;
   text-transform: uppercase;
   color: #00003C;
+  text-align: inherit;
   font-family: "din-cond","din-condensed-web",Arial,sans-serif;
   font-size: 2.4rem;
   font-weight: 500;
@@ -51,6 +52,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   line-height: normal;
+  text-align: inherit;
   margin: 0;
   color: #00003C;
 }
@@ -77,19 +79,19 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   margin-bottom: 1rem;
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c4 {
     font-size: 4.2rem;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c4 {
     line-height: 1.0476190476190477;
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c6 {
     font-size: 3.2rem;
   }
@@ -112,6 +114,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       className="c0"
     >
       <styled.h3
+        align="inherit"
         fontSize="2.4rem"
         margin="2.4rem 0"
       >
@@ -176,6 +179,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
         </Styled(UnstyledHr)>
       </Styled(Styled(UnstyledHr))>
       <styled.p
+        align="inherit"
         color="#00003C"
         fontSize="1.6rem"
       >

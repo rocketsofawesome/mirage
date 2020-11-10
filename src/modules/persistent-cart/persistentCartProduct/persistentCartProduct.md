@@ -25,15 +25,15 @@
     original_price: "34.5",
     colorway_variants: [
       {
-        id: 11562,
-        sku: "7084-025-H",
-        size: "3",
-        in_stock: false
-      },
-      {
         id: 11566,
         sku: "7084-025-C",
         size: "4/5",
+        in_stock: false
+      },
+      {
+        id: 11562,
+        sku: "7084-025-H",
+        size: "3",
         in_stock: false
       },
       {

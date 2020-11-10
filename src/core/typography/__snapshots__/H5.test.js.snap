@@ -7,6 +7,7 @@ exports[`(Styled Component) H5 matching the snapshot 1`] = `
   -ms-letter-spacing: 0.5px;
   letter-spacing: 0.5px;
   color: #00003C;
+  text-align: inherit;
   font-family: "ff-din-web",Helvetica,Arial,sans-serif;
   font-size: 1.6rem;
   font-weight: 500;

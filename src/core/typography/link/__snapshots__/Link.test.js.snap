@@ -15,10 +15,11 @@ exports[`(Styled Component) Link matching the snapshot 1`] = `
   font-style: normal;
 }
 
+.c1:active,
+.c1:focus,
 .c1:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 .c0 {
@@ -27,8 +28,7 @@ exports[`(Styled Component) Link matching the snapshot 1`] = `
 
 .c0:active,
 .c0:focus,
-.c0:hover,
-.c0:visited {
+.c0:hover {
   color: #00003C;
   border-bottom-color: #00003C;
 }
