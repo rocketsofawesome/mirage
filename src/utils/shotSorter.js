@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import { Layer } from 'cloudinary-core'
+
+import cloudinary from 'services/cloudinary'
 
 export const shotTypeSortOrder = [
   'front',
@@ -8,25 +11,40 @@ export const shotTypeSortOrder = [
   'other'
 ]
 
+function sortShots(shots) {
+  return shots.sort((shot1, shot2) =>
+    shotTypeSortOrder.indexOf(shot1.shot_type) - shotTypeSortOrder.indexOf(shot2.shot_type)
+  )
+}
+
+function shotUrl(shot) {
+  const config = {
+    transformation: 'plp_product_shot',
+    format: 'jpg'
+  }
+
+  if (shot.badge) {
+    const layer = new Layer({ publicId: shot.badge.public_id })
+    config.overlay = layer
+    config.width = 225
+    config.gravity = 'north_east'
+    config.x = 20
+    config.y = 20
+  }
+
+  return cloudinary.url(shot.cloudinary_key, config)
+}
+
 export const withSortedShots = (WrappedComponent) => {
   return class extends Component {
-    sortShots = () => {
-      const { shots: inShots } = this.props
-      return inShots.sort((shot1, shot2) => {
-        return shotTypeSortOrder.indexOf(shot1.shot_type) < shotTypeSortOrder.indexOf(shot2.shot_type) ? -1 : 1
-      })
-    }
-
     render () {
-      const { product } = this.props
-      const sortedShots = this.sortShots()
-      const shots = sortedShots.map((shot) => {
-        return ({
-            alt: `${product.name} ${shot.shot_type}`,
-            src: shot.cloudinary_key
-          })
-      })
-      return <WrappedComponent {...this.props} images={shots} />
+      const { product, shots } = this.props
+      const sortedShots = sortShots(shots)
+      const images = sortedShots.map(shot => ({
+        alt: `${product.name} ${shot.shot_type}`,
+        src: shotUrl(shot)
+      }))
+      return <WrappedComponent {...this.props} images={images} />
     }
   }
 }

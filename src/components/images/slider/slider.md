@@ -1,19 +1,21 @@
 ```js
-  <ROASlider shots={[
-    {
-      "id": 2688485,
-      "shot_type": "back",
-      "cloudinary_key": "production/catalog/cdwuwjsslhhgah2ajmr6"
-    },
-    {
-      "id": 2688487,
-      "shot_type": "detail",
-      "cloudinary_key": "production/catalog/vj9vd5bdrppry8uzfqoy"
-    },
-    {
-      "id": 2688486,
-      "shot_type": "front",
-      "cloudinary_key": "production/catalog/fnm4byyqsua0g0jj7dou"
-    }
-  ]}/>
+  <div style={{ width: '300px' }}>
+    <ROASlider
+      images={[
+        {
+          "alt": "Front",
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/iavsjsmim3wvyxm4zmgb.jpg"
+        },
+        {
+          "alt": "Back",
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/n8trkdvxqkokennyo6xj.jpg"
+        },
+        {
+          "alt": "Detail",
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/rntecohsouhf3cpa4cyk.jpg"
+        }
+      ]}
+    />
+  </div>
 ```
+

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Slider from 'react-slick'
-import cloudinary from 'services/cloudinary'
 import { InlineImage, Chevron } from 'SRC'
 
 export class BaseROASlider extends Component {
@@ -74,10 +73,7 @@ export class BaseROASlider extends Component {
                 <Link target={target} key={index}>
                   <InlineImage
                     alt={image.alt}
-                    src={cloudinary.url(image.src, {
-                      transformation: 'plp_product_shot',
-                      format: 'jpg'
-                    })}
+                    src={image.src}
                     lazyLoad={lazyLoad}
                   />
                 </Link>
@@ -87,10 +83,7 @@ export class BaseROASlider extends Component {
                 <InlineImage
                   key={index}
                   alt={image.alt}
-                  src={cloudinary.url(image.src, {
-                    transformation: 'plp_product_shot',
-                    format: 'jpg'
-                  })}
+                  src={image.src}
                   onClick={onClick}
                   lazyLoad={lazyLoad}
                 />
