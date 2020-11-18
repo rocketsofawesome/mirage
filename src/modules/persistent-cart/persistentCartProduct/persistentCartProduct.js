@@ -89,7 +89,7 @@ const Attribute = styled.div`
   font-size: 14px;
   font-weight: normal;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.red ? props.theme.colors.red : props.theme.colors.navy};
 
   em {
     margin-left: 6px;
@@ -270,7 +270,7 @@ class BaseProduct extends React.Component {
             </Attribute>
           }
           {(item.not_enough_quantity_error || isOutOfStock) &&
-            <Attribute>
+            <Attribute red={true}>
               {this.getNotEnoughQuantityError()}
             </Attribute>
           }
