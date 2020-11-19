@@ -54,8 +54,8 @@ const ProductTitle = ({
   evergreenPromoItemCount,
   evergreenPromoPercent
 }) => {
-  const originalPrice = currentVariant.original_price
-  const price = currentVariant.price
+  const originalPrice = Number(currentVariant.original_price)
+  const price = Number(currentVariant.price)
   const onSale = originalPrice && price < originalPrice
   const percent = (100 - parseInt(evergreenPromoPercent, 10)) / 100
   const promoPrice = price * percent
