@@ -87,7 +87,10 @@ const productOnSale = {
           {
             "id": 2707248,
             "shot_type": "front",
-            "cloudinary_key": "production/catalog/uduxsics6nhvmvilwh16"
+            "cloudinary_key": "production/catalog/uduxsics6nhvmvilwh16",
+            "badge": {
+              "public_id": "web/badges/secret_stash"
+            }
           }
         ],
         "skus": [
