@@ -3,8 +3,10 @@
   <Footer
     isNotSubscriber={false}
     isSubscriptionMember={true}
-    referralAmount={30}
-    homepageUrl='https://www.rocketsofawesome.com' />
+    referrerAmount={'20'}
+    referredUserAmount={'50'}
+    homepageUrl='https://www.rocketsofawesome.com'
+  />
 ```
 
 ## Displaying the footer for a non-subscriber
@@ -12,6 +14,8 @@
   <Footer
     isNotSubscriber={true}
     isSubscriptionMember={false}
-    referralAmount={30}
-    homepageUrl='https://www.rocketsofawesome.com' />
+    referrerAmount={'20'}
+    referredUserAmount={'50'}
+    homepageUrl='https://www.rocketsofawesome.com'
+  />
 ```

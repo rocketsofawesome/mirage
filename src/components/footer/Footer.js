@@ -19,7 +19,8 @@ const BaseFooter = ({
   isNotSubscriber,
   isSubscriptionMember,
   homepageUrl,
-  referralAmount
+  referrerAmount,
+  referredUserAmount
 }) => (
   <footer className={className} id='global-footer'>
     <FlexRow constrained>
@@ -92,14 +93,15 @@ const BaseFooter = ({
           gutter='15px'
           mobile={{width: 4}}
           desktop={{width: 4, span: 1}}>
-            <H2>TELL A FRIEND, GET ${referralAmount}</H2>
+            <H2>TELL A FRIEND, GET ${referrerAmount}</H2>
             <P>
-              Get ${referralAmount} when your friend makes their <br />
-               first purchase—they’ll get ${referralAmount} too!
+              Get ${referrerAmount} when your friend makes their <br />
+              first purchase—they’ll get a free outfit
+              (${referredUserAmount} value)!
             </P>
             <div className='referralButton'>
               <ButtonLink href='/invite' kind='pink' width='100%' maxWidth='290px'>
-                GET ${referralAmount}
+                GET ${referrerAmount}
               </ButtonLink>
             </div>
         </FlexCol>
@@ -254,7 +256,8 @@ Footer.propTypes = {
   className: PropTypes.string,
   isNotSubscriber: PropTypes.bool,
   isSubscriptionMember: PropTypes.bool,
-  referralAmount: PropTypes.number
+  referralAmount: PropTypes.string,
+  referredUserAmount: PropTypes.string
 }
 
 /** @component */
