@@ -88,13 +88,20 @@ export default class ProductTile extends React.Component {
       renderLink,
       evergreenPromoItemCount,
       evergreenPromoPercent,
-      ...props
+      sliderLazyLoad,
     } = this.props
+
     const { selectedColorway, lazyLoad } = this.state
     const colorway = this.getSelectedColorway()
     const target = this.getUrl()
     const Link = renderLink
-    const sharedSliderProps = { product, shots: colorway.shots, lazyLoad, ...props }
+    const sharedSliderProps = {
+      product,
+      shots: colorway.shots,
+      lazyLoad,
+      sliderLazyLoad
+    }
+
     return (
       <div className={className}>
         <AboveLaptopSlider>

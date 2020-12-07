@@ -67,10 +67,10 @@ export class BaseROASlider extends Component {
           ref={this.setSlider}
           {...this.config}
         >
-          {images.map((image, index) => {
+          {images.map((image) => {
             if (renderLink && target) {
               return (
-                <Link target={target} key={index}>
+                <Link target={target} key={image.src}>
                   <InlineImage
                     alt={image.alt}
                     src={image.src}
@@ -81,7 +81,7 @@ export class BaseROASlider extends Component {
             } else {
               return (
                 <InlineImage
-                  key={index}
+                  key={image.src}
                   alt={image.alt}
                   src={image.src}
                   onClick={onClick}
