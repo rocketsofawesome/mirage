@@ -93,10 +93,10 @@ const BaseFooter = ({
           gutter='15px'
           mobile={{width: 4}}
           desktop={{width: 4, span: 1}}>
-            <H2>TELL A FRIEND, GET ${referrerAmount}</H2>
+            <H2>Share the awesome, get ${referrerAmount}</H2>
             <P>
-              Get ${referrerAmount} when your friend makes their <br />
-              first purchase—they’ll get a free outfit
+              Get ${referrerAmount} when your friend subscribes
+              —they’ll get a free outfit
               (${referredUserAmount} value)!
             </P>
             <div className='referralButton'>
