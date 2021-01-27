@@ -39,6 +39,8 @@ const borderColor = (props) => {
 }
 
 const Link = ({ renderLink, children, ...props }) => {
+  delete props.maxWidth
+
   if (renderLink) {
     return renderLink({...props, children: children})
   }

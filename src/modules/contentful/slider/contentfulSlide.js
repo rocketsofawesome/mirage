@@ -40,7 +40,9 @@ const ContentfulSlide = ({ fields, isSliding, segmentHeroClicked, position, tota
     <Container>
       {image}
       <ButtonContainer>
-        {buttons.map(button => <ContentfulButton {...button} />)}
+        {buttons.map(button =>
+          <ContentfulButton key={button.sys.id} {...button} />
+        )}
       </ButtonContainer>
     </Container>
   )

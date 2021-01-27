@@ -1,4 +1,6 @@
 export default {
+  segmentHeroViewed: () => null,
+  segmentHeroClicked: () => null,
   fields: {
     title: "Homepage Slider",
     slides: [
@@ -53,10 +55,12 @@ export default {
                 color: "#00003c",
                 backgroundColor: "#f5ff42",
                 width: "Fit Text"
-              }
+              },
+              sys: { id: '123-456-78910' }
             }
           ]
-        }
+        },
+        sys: { id: '123-4567-8910'}
       },
       {
         fields: {
@@ -100,7 +104,8 @@ export default {
               }
             }
           }
-        }
+        },
+        sys: { id: '987-6543-1000'}
       }
     ]
   }
