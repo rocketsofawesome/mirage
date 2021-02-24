@@ -38,14 +38,12 @@ const buildShippingOptions = (order) => {
     shippingMethods = shippingMethods.sort((x,y) => x.id === selectedId ? -1 : y.id === selectedId ? 1 : 0 )
   }
 
-  return shippingMethods.map((method) => {
-    return ({
-      id: method.id.toString(),
-      label: method.name,
-      amount: Math.round(parseFloat(method.cost) * 100),
-      detail: `Delivered in ${method.lower_bound}-${method.upper_bound} business days`
-    })
-  })
+  return shippingMethods.map((method) => ({
+    id: method.id.toString(),
+    label: method.name,
+    amount: Math.round(parseFloat(method.cost) * 100),
+    detail: `Delivered in ${method.lower_bound}-${method.upper_bound} business days`
+  }))
 }
 
 const OrContainer = styled(P)`
