@@ -270,6 +270,7 @@ class BaseCartSidebar extends React.Component {
       segmentCartViewed,
       segmentProductRemoved,
       setShippingAddress,
+      setShippingMethod,
       shouldShowCartSidebar,
       subTotal,
       theme
@@ -379,6 +380,7 @@ class BaseCartSidebar extends React.Component {
                   currentUserEmail={currentUserEmail}
                   order={order}
                   setShippingAddress={setShippingAddress}
+                  setShippingMethod={setShippingMethod}
                   submitCheckout={this.submitCheckout}
                   onClickPaymentRequestButton={onClickPaymentRequestButton}
                 />
@@ -434,6 +436,7 @@ BaseCartSidebar.propTypes = {
   segmentCartViewed: PropTypes.func,
   segmentProductRemoved: PropTypes.func,
   setShippingAddress: PropTypes.func,
+  setShippingMethod: PropTypes.func,
   shouldShowCartSidebar: PropTypes.bool,
   submitBag: PropTypes.func,
   submitBagCheckoutStripe: PropTypes.func,

@@ -31,6 +31,21 @@ const buildDisplayItems = (order, pending) => {
   return displayItems
 }
 
+const buildShippingOptions = (order) => {
+  let shippingMethods = order.shipping_methods
+  if (order.selected_shipping_rate_id) {
+    const selectedId = order.selected_shipping_rate_id
+    shippingMethods = shippingMethods.sort((x,y) => x.id === selectedId ? -1 : y.id === selectedId ? 1 : 0 )
+  }
+
+  return shippingMethods.map((method) => ({
+    id: method.id.toString(),
+    label: method.name,
+    amount: Math.round(parseFloat(method.cost) * 100),
+    detail: `Delivered in ${method.lower_bound}-${method.upper_bound} business days`
+  }))
+}
+
 const OrContainer = styled(P)`
   margin: 0 10px;
 `
@@ -65,7 +80,7 @@ export class PaymentRequestForm extends React.Component {
   }
 
   createPaymentRequest = () => {
-    const { order, stripe, submitCheckout, setShippingAddress } = this.props
+    const { order, stripe, submitCheckout, setShippingAddress, setShippingMethod } = this.props
     const paymentRequest = stripe.paymentRequest({
       country: 'US',
       currency: 'usd',
@@ -103,32 +118,41 @@ export class PaymentRequestForm extends React.Component {
         default: false,
         email: this.props.currentUserEmail || 'guest@example.com'
       }
-
       if (shippingAddress.country !== 'US') {
         updateWith({status: 'invalid_shipping_address'})
       } else {
         try {
-          const order = await setShippingAddress(address)
-          const shippingMethod = order.shipping_methods[0]
+          const response = await setShippingAddress(address)
           updateWith({
             status: 'success',
             total: {
               label: 'Total',
-              amount: Math.round(parseFloat(order.total) * 100),
+              amount: Math.round(parseFloat(response.total) * 100),
               pending: false
             },
-            displayItems: buildDisplayItems(order, false),
-            shippingOptions: [
-              {
-                id: 'default',
-                label: shippingMethod.name,
-                amount: Math.round(parseFloat(shippingMethod.cost) * 100)
-              }
-            ]
+            displayItems: buildDisplayItems(response, false),
+            shippingOptions: buildShippingOptions(response)
           })
         } catch (error) {
           updateWith({status: 'fail'})
         }
+      }
+    })
+
+    paymentRequest.on('shippingoptionchange', async ({shippingOption, updateWith}) => {
+      try {
+        const response = await setShippingMethod(order.id, shippingOption.id)
+        updateWith({
+          status: 'success',
+          total: {
+            label: 'Total',
+            amount: Math.round(parseFloat(response.total) * 100),
+            pending: false
+          },
+          displayItems: buildDisplayItems(response, false)
+        })
+      } catch (error) {
+        updateWith({status: 'fail'})
       }
     })
 
@@ -168,6 +192,7 @@ PaymentRequestForm.propTypes = {
   stripe: PropTypes.object,
   order: PropTypes.object,
   setShippingAddress: PropTypes.func.isRequired,
+  setShippingMethod: PropTypes.func.isRequired,
   submitCheckout: PropTypes.func.isRequired,
   className: PropTypes.string,
   currentUserEmail: PropTypes.string,
