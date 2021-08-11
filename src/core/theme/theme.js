@@ -7,6 +7,12 @@ import gridSettings from './gridSettings'
 const basePxSize = 10
 
 const base = injectGlobal`
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box; // 1
+  }
+
   html {
     font-size: ${basePxSize}px;
   }

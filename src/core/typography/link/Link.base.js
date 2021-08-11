@@ -14,6 +14,7 @@ const baseLinkStyles = css`
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.light ? '400' : props.fontWeight};
   font-style: ${props => props.fontStyle};
+  cursor: pointer;
 
   &:active,
   &:focus,

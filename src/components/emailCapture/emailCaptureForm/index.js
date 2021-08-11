@@ -12,7 +12,6 @@ class BaseEmailCaptureForm extends React.Component {
         <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
           <form onSubmit={onEmailSubmit}>
             <Input
-              style={{ width: '100%', boxSizing: 'border-box' }}
               label={'ENTER YOUR EMAIL'}
               errorMessage={errorMessage}
             />

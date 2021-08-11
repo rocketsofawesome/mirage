@@ -13,6 +13,7 @@ const CustomButton = ({
 }) => {
   delete props.width
   delete props.sentanceCase
+  delete props.block
   return (
     <button {...props}>
       <span>

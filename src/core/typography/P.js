@@ -2,6 +2,8 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import { theme } from 'SRC/core/theme'
+import { spaceFromProp } from 'utils/spacing'
+import colorFromProp from 'utils/colors'
 
 export const pStyle = css`
   letter-spacing: normal;
@@ -13,11 +15,14 @@ export const pStyle = css`
 
 const P = styled.p`
  ${pStyle}
- margin: 0;
- color: ${props => props.color};
+ margin-top: ${spaceFromProp('marginTop')};
+ margin-bottom: ${spaceFromProp('marginBottom')};
+ color: ${colorFromProp('color')};
 `
 
 P.propTypes = {
+  marginBottom: PropTypes.string,
+  marginTop: PropTypes.string,
   children: PropTypes.node,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
@@ -32,7 +37,9 @@ P.propTypes = {
 P.defaultProps = {
   fontSize: '1.6rem',
   color: theme.colors.navy,
-  align: 'inherit'
+  align: 'inherit',
+  marginTop: 'none',
+  marginBottom: 'none'
 }
 
 /** @component */

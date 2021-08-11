@@ -25,11 +25,17 @@ const backgroundColor = css`
   ${props => props.loading && disabledOrLoading}
 `
 
+const blockStyles = css`
+  width: 100%;
+  display: block;
+`
+
 const Button = styled(BaseButton)`
   color: ${props => props.theme.colors.white};
   border-color: transparent;
 
   ${props => backgroundColor}
+  ${props => props.block && blockStyles}
 `
 
 Button.propTypes = {
@@ -46,12 +52,14 @@ Button.propTypes = {
       rocketBlue: PropTypes.string,
       white: PropTypes.string
     })
-  })
+  }),
+  block: PropTypes.bool
 }
 
 Button.defaultProps = {
   checkmark: WhiteCheckmark,
-  spinner: WhiteSpinner
+  spinner: WhiteSpinner,
+  block: false
 }
 
 

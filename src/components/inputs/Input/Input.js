@@ -44,14 +44,15 @@ const Span = styled.span`
 `
 
 const StyledInput = styled.input`
-  border: 1px solid ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.gray4}!important;
+  border: 1px solid ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.gray4};
+  width: 100%;
 
   padding-left: 16px;
   padding-right: 16px;
   padding-top: 16px;
   padding-bottom: 6px;
 
-  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy}!important;
+  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy};
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 20px;
 

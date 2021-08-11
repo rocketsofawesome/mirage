@@ -1,13 +1,15 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import colorFromProp from 'utils/colors'
+
 const H1 = styled.h1`
   ${props => props.center ? 'text-align: center;' : ''}
   letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
     ? 'inherit' : 'uppercase'};
 
-  color: ${props => props.theme.colors.navy};
+  color: ${colorFromProp('color')};
 
   font-family: ${props => props.theme.fonts.headerFont};
   font-size: ${props => props.fontSizes.mobile};
@@ -43,6 +45,7 @@ H1.propTypes = {
     })
   }),
   lowercase: PropTypes.bool,
+  color: PropTypes.string
 }
 
 H1.defaultProps = {
@@ -55,7 +58,8 @@ H1.defaultProps = {
     desktop: 1.0476190476190477,
     mobile: 1.3
   },
-  margin: '5.5rem 0'
+  margin: '5.5rem 0',
+  color: 'navy'
 }
 
 export default H1
