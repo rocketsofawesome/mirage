@@ -103,8 +103,17 @@ class BaseInput extends React.Component {
   }
 
   render () {
-    const { label, sublabel, formError, errorMessage, className, ...inputProps } = this.props
+    const {
+      label,
+      sublabel,
+      touched,
+      active,
+      error,
+      className,
+      ...inputProps
+    } = this.props
 
+    const showError = (touched && !active && error)
     return (
       <div className={className}>
         {label &&
@@ -114,9 +123,9 @@ class BaseInput extends React.Component {
           </Label>
         }
 
-        {this._renderInput(inputProps, !!formError)}
-        {errorMessage &&
-          <ErrorMessage>{errorMessage}</ErrorMessage>
+        {this._renderInput(inputProps, showError)}
+        {showError &&
+          <ErrorMessage>{error}</ErrorMessage>
         }
       </div>
     )
@@ -124,21 +133,25 @@ class BaseInput extends React.Component {
 }
 
 BaseInput.propTypes = {
-  type: PropTypes.string,
+  active: PropTypes.bool,
+  className: PropTypes.string,
+  error: PropTypes.string,
   label: PropTypes.string,
-  sublabel: PropTypes.string,
-  onChange: PropTypes.func,
-  value: PropTypes.string,
-  placeholder: PropTypes.string,
-  required: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  formError: PropTypes.bool,
-  errorMessage: PropTypes.string,
   mask: PropTypes.string,
   maxLength: PropTypes.string,
-  className: PropTypes.string
+  onChange: PropTypes.func,
+  placeholder: PropTypes.string,
+  required: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
+  sublabel: PropTypes.string,
+  touched: PropTypes.bool,
+  type: PropTypes.string,
+  value: PropTypes.string
 }
 
 BaseInput.defaultProps = {
+  active: false,
+  error: null,
+  touched: false,
   type: 'text'
 }
 

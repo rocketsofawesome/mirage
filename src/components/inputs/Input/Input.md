@@ -3,5 +3,5 @@
 ```
 
 ```js
-  <Input label={'email'} formError errorMessage={'formError'}/>
+  <Input label={'email'} error={'This is some error message'} touched />
 ```

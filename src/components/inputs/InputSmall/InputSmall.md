@@ -1,7 +1,7 @@
 ```js
-  <InputSmall placeholder={'email'} errorMessage='' />
+  <InputSmall placeholder={'email'} />
 ```
 
 ```js
-  <InputSmall placeholder={'email'} formError errorMessage={'formError'}/>
+  <InputSmall placeholder={'email'} error={'Some error message'}/>
 ```

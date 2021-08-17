@@ -13,7 +13,7 @@ class BaseEmailCaptureForm extends React.Component {
           <form onSubmit={onEmailSubmit}>
             <Input
               label={'ENTER YOUR EMAIL'}
-              errorMessage={errorMessage}
+              error={errorMessage}
             />
             <YellowButton style={{ marginTop: '1rem', transform: 'none' }} type='submit' width='242px'>
               Sign Up

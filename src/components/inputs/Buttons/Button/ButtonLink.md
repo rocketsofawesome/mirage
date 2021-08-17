@@ -2,6 +2,7 @@
 ```js
   <ButtonLink kind='blue'>Click Me!</ButtonLink>
 ```
+
 #### Pink button link
 ```js
   <ButtonLink kind='pink'>Click Me!</ButtonLink>

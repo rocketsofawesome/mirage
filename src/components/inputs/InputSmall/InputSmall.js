@@ -126,8 +126,13 @@ class BaseInputSmall extends React.Component {
   }
 
   render () {
-    const { label, sublabel, errorMessage, className, ...inputProps } = this.props
-    const formError = errorMessage !== ''
+    const {
+      label,
+      sublabel,
+      error,
+      className,
+      ...inputProps
+    } = this.props
 
     return (
       <div className={className}>
@@ -138,9 +143,9 @@ class BaseInputSmall extends React.Component {
           </Label>
         }
 
-        {this._renderInputSmall(inputProps, !!formError)}
-        {errorMessage &&
-          <ErrorMessage>{errorMessage}</ErrorMessage>
+        {this._renderInputSmall(inputProps, !!error)}
+        {error &&
+          <ErrorMessage>{error}</ErrorMessage>
         }
       </div>
     )
@@ -155,14 +160,15 @@ BaseInputSmall.propTypes = {
   value: PropTypes.string,
   placeholder: PropTypes.string,
   required: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
-  errorMessage: PropTypes.string,
+  error: PropTypes.string,
   mask: PropTypes.string,
   maxLength: PropTypes.string,
   className: PropTypes.string
 }
 
 BaseInputSmall.defaultProps = {
-  type: 'text'
+  type: 'text',
+  error: null
 }
 
 const InputSmall = styled(BaseInputSmall)`
