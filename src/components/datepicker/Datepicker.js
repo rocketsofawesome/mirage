@@ -121,8 +121,8 @@ class Datepicker extends React.Component {
   constructor(props) {
     super(props)
     this.state = { month: null }
-    this.components = {}
     this.blurred = {}
+    this.components = buildDefaultValues(props.initialValue)
 
     this.handleMonthChange = this.handleMonthChange.bind(this)
     this.handleChange = this.handleChange.bind(this)
