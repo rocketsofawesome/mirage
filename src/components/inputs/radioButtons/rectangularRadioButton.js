@@ -3,11 +3,11 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
 
-const BaseRectangularRadioButton = ({children, className, error, input}) => {
+const BaseRectangularRadioButton = ({children, className, value, error, ...props}) => {
   return (
     <div className={className}>
-      <input id={input.value} type='radio' {...input} />
-      <label htmlFor={input.value}>
+      <input id={value} type='radio' value={value} {...props} />
+      <label htmlFor={value}>
         {children}
       </label>
       {error &&
@@ -74,7 +74,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
 
 RectangularRadioButton.propTypes = {
   children: PropTypes.node,
-  input: PropTypes.object.isRequired,
+  value: PropTypes.string,
   error: PropTypes.string,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
@@ -95,4 +95,3 @@ RectangularRadioButton.defaultProps = {
 
 /** @component */
 export default RectangularRadioButton
-export { BaseRectangularRadioButton, checked }
