@@ -5,21 +5,9 @@ import { RectangularRadioButton } from 'SRC'
 
 const { shallowWithTheme } = global
 
-const input = {
-  defaultChecked: false,
-  name: 'gender',
-  labels: 'BOYS',
-  value: 'boys',
-  input: { onChange: () => {} }
-}
-
 describe('(Styled Component) RectangularRadio', () => {
   const createRectangularRadio = (props) => {
-    let inputProp = input
-    if (props && props.input) {
-      inputProp = {...input, ...props.input}
-    }
-    return shallowWithTheme(<RectangularRadioButton {...props} input={inputProp} />)
+    return shallowWithTheme(<RectangularRadioButton name='gender' value='boys' />)
   }
   test('matching the snapshot', () => {
     expect(createRectangularRadio())
