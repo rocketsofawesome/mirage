@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
-const BaseRectangularRadioButton = ({children, className, input, ...props}) => {
+const BaseRectangularRadioButton = ({children, className, input}) => {
   return (
     <div className={className}>
       <input id={input.value} type='radio' {...input} />
@@ -63,7 +63,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
 
 RectangularRadioButton.propTypes = {
   children: PropTypes.node,
-  input: PropTypes.object,
+  input: PropTypes.object.isRequired,
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string.isRequired
