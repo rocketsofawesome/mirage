@@ -2,13 +2,15 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
+import P from 'SRC/core/typography/P'
 
-const BaseRectangularRadioButton = ({children, className, value, error, ...props}) => {
+const BaseRectangularRadioButton = ({buttonLabel, helperText, className, value, error, ...props}) => {
   return (
     <div className={className}>
       <input id={value} type='radio' value={value} {...props} />
       <label htmlFor={value}>
-        {children}
+        <P align='center' fontSize='2rem'>{buttonLabel}</P>
+        <P align='center'>{helperText}</P>
       </label>
       {error &&
         <ErrorMessage>{error}</ErrorMessage>
@@ -42,6 +44,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
   }
   > label {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
@@ -73,7 +76,8 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
 `
 
 RectangularRadioButton.propTypes = {
-  children: PropTypes.node,
+  buttonLabel: PropTypes.string,
+  helperText: PropTypes.string,
   value: PropTypes.string,
   error: PropTypes.string,
   theme: PropTypes.shape({
