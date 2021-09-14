@@ -15,7 +15,7 @@ const AppliedInput = styled(Input)`
 
 const PromoButton = styled(Button)`
   max-width: 100px;
-  height: 100%;
+  height: auto;
   ${props => props.theme.breakpointsVerbose.aboveTablet`
     max-width: 83px;
   `}
@@ -49,12 +49,15 @@ const ApplyContainer = styled.div`
   display: flex;
   max-width: 30rem;
   margin: 0 auto;
-  height: 60px !important;
   margin-top: 20px;
 `
 
 export default class CouponCodeInput extends React.Component {
-  state = { show: false }
+  state = {
+    show: false,
+    touched: false
+  }
+
   toggle = () => {
     this.setState({ show: !this.state.show })
   }
@@ -71,9 +74,13 @@ export default class CouponCodeInput extends React.Component {
     this.props.applyPromotion(this.props.couponCode)
   }
 
+  handleBlur = () => {
+    this.setState({touched: true})
+  }
+
   render () {
     const { errorMessage, loading, couponCode, onChange, showToggle = true } = this.props
-    const { show } = this.state
+    const { show, touched } = this.state
 
     return (
       <div>
@@ -88,9 +95,11 @@ export default class CouponCodeInput extends React.Component {
               type='text'
               label='PROMO CODE'
               value={couponCode}
+              onBlur={this.handleBlur}
+              touched={touched}
               onChange={onChange}
-              formError={!!errorMessage}
-              errorMessage={errorMessage} />
+              error={errorMessage}
+            />
             <PromoButton loading={loading} onClick={this.applyPromotion}>
               APPLY
             </PromoButton>

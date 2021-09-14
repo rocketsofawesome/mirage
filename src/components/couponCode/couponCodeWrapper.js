@@ -41,7 +41,7 @@ class BaseCouponCodeWrapper extends React.Component {
 
   componentDidMount () {
     const { appliedPromotion, applyPromotion } = this.props
-    if (appliedPromotion && !applyPromotion.expired) {
+    if (appliedPromotion && !appliedPromotion.expired) {
       this.setState({
         couponCode: appliedPromotion.value
       })
