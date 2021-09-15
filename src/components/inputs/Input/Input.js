@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import InputElement from 'react-input-mask'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
 
@@ -18,7 +18,15 @@ const domOnlyProps = ({
   visited,
   autofilled,
   error,
-  ...fieldProps }) => fieldProps
+  ...fieldProps
+}) => fieldProps
+
+const labelColor = (props) => {
+  if (props.kind === 'mini') {
+    return props.theme.colors.rocketBlue
+  }
+  return props.theme.colors.navy
+}
 
 const Label = styled.label`
   position: absolute;
@@ -29,7 +37,7 @@ const Label = styled.label`
   display: block;
   font-size: 12px;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${props => props.theme.colors.navy};
+  color: ${labelColor};
   letter-spacing: .5px;
   font-weight: 200;
   text-align: left;
@@ -37,14 +45,34 @@ const Label = styled.label`
 
 const Span = styled.span`
   padding-left: 8px;
-
   text-transform: uppercase;
-
   color: rgba(0,0,0,.3);
 `
 
-const StyledInput = styled.input`
-  border: 1px solid ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.gray4};
+function pickColor(props, color) {
+  if (props.error) {
+    return props.theme.colors.flameOrange
+  }
+  return props.theme.colors[color]
+}
+
+const regularStyles = css`
+  border: 1px solid ${props => pickColor(props, 'gray4')};
+  color: ${props => pickColor(props, 'navy')};
+`
+
+const miniStyles = css`
+  border: 3px solid ${props => pickColor(props, 'lightPink')};
+  color: ${props => pickColor(props, 'rocketBlue')};
+`
+
+const inputVariants = {
+  regular: regularStyles,
+  mini: miniStyles
+}
+
+const inputStyles = css`
+  ${props => inputVariants[props.kind]}
   width: 100%;
 
   padding-left: 16px;
@@ -52,7 +80,6 @@ const StyledInput = styled.input`
   padding-top: 16px;
   padding-bottom: 6px;
 
-  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy};
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 20px;
 
@@ -68,30 +95,13 @@ const StyledInput = styled.input`
   }
 `
 
+const StyledInput = styled.input`
+  ${inputStyles}
+`
+
 const StyledInputElement = styled(InputElement)`
+  ${inputStyles}
   height: 100%;
-  width: 100%;
-  border: 1px solid ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.gray4}!important;
-
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 6px;
-
-  color: ${props => props.error ? props.theme.colors.flameOrange : props.theme.colors.navy}!important;
-  font-family: ${props => props.theme.fonts.secondaryFont};
-  font-size: 20px;
-
-  &::placeholder {
-    color: rgba(0,0,0,0.2);
-    font-weight: 400;
-  }
-
-  &:focus {
-    outline: none;
-    border-color: ${props => props.theme.colors.rocketBlue};
-    color: ${props => props.theme.colors.rocketBlue};
-  }
 `
 
 class BaseInput extends React.Component {
@@ -110,20 +120,21 @@ class BaseInput extends React.Component {
       active,
       error,
       className,
-      ...inputProps
+      kind,
+      ...rest
     } = this.props
 
     const showError = (touched && !active && error)
     return (
       <div className={className}>
         {label &&
-          <Label>
+          <Label kind={kind}>
             {label}
             {sublabel && <Span>{sublabel}</Span>}
           </Label>
         }
 
-        {this._renderInput(inputProps, showError)}
+        {this._renderInput({ kind, ...rest }, showError)}
         {showError &&
           <ErrorMessage>{error}</ErrorMessage>
         }
@@ -136,6 +147,7 @@ BaseInput.propTypes = {
   active: PropTypes.bool,
   className: PropTypes.string,
   error: PropTypes.string,
+  kind: PropTypes.string,
   label: PropTypes.string,
   mask: PropTypes.string,
   maxLength: PropTypes.string,
@@ -151,6 +163,7 @@ BaseInput.propTypes = {
 BaseInput.defaultProps = {
   active: false,
   error: null,
+  kind: 'regular',
   touched: false,
   type: 'text'
 }
