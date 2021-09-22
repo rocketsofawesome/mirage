@@ -19,6 +19,7 @@ Depends on styled-components, but can be adapted for other frameworks.
 const CurvedText = (props) => {
   const {
     text,
+    fontSize,
     objectSize,
     spacing,
     offset,
@@ -27,9 +28,10 @@ const CurvedText = (props) => {
 
   const d = objectSize + spacing * 2
   const r = objectSize / 2 + spacing / 2
-  const CurvedText = styled.div`
-  margin-bottom: ${overlap ? `-${r}px` : '0'};
+  const Container = styled.div`
+    margin-bottom: ${overlap ? `-${r}px` : '0'};
     height: ${r + offset}px;
+    color: ${props => props.theme.colors.navy};
     
     path {
       fill: transparent;
@@ -37,12 +39,12 @@ const CurvedText = (props) => {
     text {
       fill: currentColor;
       text-anchor: middle;
-      
+      font-size: ${fontSize};
     }
   `
 
   return (
-    <CurvedText className='curved-text'>
+    <Container className='curved-text'>
       <svg viewBox={`0 0 ${d + offset * 2} ${r + offset * 2}`}>
         <path id='curve' d={`M${offset},${r + offset} A${r},${r} 0 0,1 ${d + offset},${r + offset}`} />
         <text width='500'>
@@ -51,7 +53,7 @@ const CurvedText = (props) => {
           </textPath>
         </text>
       </svg>
-    </CurvedText>
+    </Container>
   )
 }
 
@@ -64,6 +66,7 @@ CurvedText.propTypes = {
 }
 
 CurvedText.defaultProps = {
+  fontSize: '1.6rem',
   objectSize: 250,
   spacing: 12,
   offset: 40,

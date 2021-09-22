@@ -1,2 +1,1 @@
-import curvedText from './curvedText'
-export default curvedText
+export { default as CurvedText } from './CurvedText'

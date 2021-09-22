@@ -1,3 +1,3 @@
 ```js
-  <CurvedText text='THEY GROW UP SO FAST'/>
+  <CurvedText text='THEY GROW UP SO FAST' color='yellow'/>
 ```
