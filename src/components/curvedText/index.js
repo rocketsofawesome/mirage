@@ -1,1 +1,1 @@
-export { default as CurvedText } from './CurvedText'
+export { default as CurvedText } from './curvedText'
