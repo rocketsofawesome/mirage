@@ -39,6 +39,9 @@ const CurvedText = (props) => {
     text {
       fill: currentColor;
       text-anchor: middle;
+      letter-spacing: normal;
+      line-height: normal;
+      font-family: ${props => props.theme.fonts.primaryFont};
       font-size: ${fontSize};
     }
   `
