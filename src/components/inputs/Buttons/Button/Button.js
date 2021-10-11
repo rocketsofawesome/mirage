@@ -12,8 +12,16 @@ export const selected = css`
   background-color: ${props => props.theme.colors.navy}
 `
 
+const backgroundColor = css`
+  ${props => (!props.selected && !props.disabled && !props.loading) && props.theme.colors.rocketBlue}
+  ${props => props.selected && selected}
+  ${props => (props.disabled || props.loading) && disabledOrLoading}
+`
+
 const regularStyles = css`
-  background-color: ${props => props.theme.colors.rocketBlue};
+  background-color: ${backgroundColor};
+  border-color: transparent;
+  color: ${props => props.theme.colors.white};
   &:hover {
     background-color: ${props => props.theme.colors.rocketBlueHover};
   }
@@ -30,32 +38,16 @@ const kindVariants = {
   mini: miniStyles
 }
 
-function getBaseStyle (props) {
-  if (!props.selected && !props.disabled && !props.loading && !props.kind === 'mini') {
-    return regularStyles
-  } else if (props.kind === 'mini') {
-    return miniStyles
-  }
-}
-
-const backgroundColor = css`
-  ${props => getBaseStyle(props)}
-  ${props => props.selected && selected}
-  ${props => (props.disabled || props.loading) && disabledOrLoading}
-`
-
 const blockStyles = css`
   width: 100%;
   display: block;
 `
 
 const Button = styled(BaseButton)`
-  color: ${props => props.theme.colors.white};
-  border-color: transparent;
-
-  ${props => backgroundColor}
-  ${props => props.block && blockStyles}
   ${props => kindVariants[props.kind]}
+  ${props => props.selected && selected}
+  ${props => (props.disabled || props.loading) && disabledOrLoading}
+  ${props => props.block && blockStyles}
 `
 
 Button.propTypes = {
