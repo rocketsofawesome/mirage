@@ -20,3 +20,7 @@
 ```js
 <Button disabled width='150px'>Click Me!</Button>
 ```
+## Mini-Styled
+```js
+<Button kind='mini' width='150px'>Click Me!</Button>
+```

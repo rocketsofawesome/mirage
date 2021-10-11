@@ -5,12 +5,6 @@ import { WhiteSpinner } from 'SRC/core/icons/Spinner'
 import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
 
-export const defaultStyle = css`
-  background-color: ${props => props.theme.colors.rocketBlue};
-  &:hover {
-    background-color: ${props => props.theme.colors.rocketBlueHover};
-  }
-`
 export const disabledOrLoading = css`
   background-color: ${props => props.theme.colors.loading};
 `
@@ -18,11 +12,36 @@ export const selected = css`
   background-color: ${props => props.theme.colors.navy}
 `
 
+const regularStyles = css`
+  background-color: ${props => props.theme.colors.rocketBlue};
+  &:hover {
+    background-color: ${props => props.theme.colors.rocketBlueHover};
+  }
+`
+
+const miniStyles = css`
+  border: 3px solid ${props => props.theme.colors.lightPink};
+  background-color: white;
+  color: ${props => props.theme.colors.rocketBlue};
+`
+
+const kindVariants = {
+  regular: regularStyles,
+  mini: miniStyles
+}
+
+function getBaseStyle (props) {
+  if (!props.selected && !props.disabled && !props.loading && !props.kind === 'mini') {
+    return regularStyles
+  } else if (props.kind === 'mini') {
+    return miniStyles
+  }
+}
+
 const backgroundColor = css`
-  ${props => (!props.selected && !props.disabled && !props.loading) && defaultStyle}
+  ${props => getBaseStyle(props)}
   ${props => props.selected && selected}
-  ${props => props.disabled && disabledOrLoading}
-  ${props => props.loading && disabledOrLoading}
+  ${props => (props.disabled || props.loading) && disabledOrLoading}
 `
 
 const blockStyles = css`
@@ -36,6 +55,7 @@ const Button = styled(BaseButton)`
 
   ${props => backgroundColor}
   ${props => props.block && blockStyles}
+  ${props => kindVariants[props.kind]}
 `
 
 Button.propTypes = {
@@ -53,15 +73,16 @@ Button.propTypes = {
       white: PropTypes.string
     })
   }),
-  block: PropTypes.bool
+  block: PropTypes.bool,
+  kind: PropTypes.string
 }
 
 Button.defaultProps = {
   checkmark: WhiteCheckmark,
   spinner: WhiteSpinner,
-  block: false
+  block: false,
+  kind: 'regular'
 }
-
 
 /** @component */
 export default Button
