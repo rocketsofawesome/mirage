@@ -5,32 +5,32 @@ import { WhiteSpinner } from 'SRC/core/icons/Spinner'
 import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
 
-export const disabledOrLoading = css`
-  background-color: ${props => props.theme.colors.loading};
-`
-export const selected = css`
-  background-color: ${props => props.theme.colors.navy}
-`
-
-const backgroundColor = css`
-  ${props => (!props.selected && !props.disabled && !props.loading) && props.theme.colors.rocketBlue}
-  ${props => props.selected && selected}
-  ${props => (props.disabled || props.loading) && disabledOrLoading}
-`
-
-const regularStyles = css`
-  background-color: ${backgroundColor};
-  border-color: transparent;
-  color: ${props => props.theme.colors.white};
+export const defaultRegularStyle = css`
+  background-color: ${props => props.theme.colors.rocketBlue};
   &:hover {
     background-color: ${props => props.theme.colors.rocketBlueHover};
   }
+`
+
+const regularStyles = css`
+  ${props => (!props.selected && !props.disabled && !props.loading) && defaultRegularStyle}
+  ${props => props.selected && selected}
+  ${props => props.disabled && disabledOrLoading}
+  border-color: transparent;
+  color: ${props => props.theme.colors.white};
 `
 
 const miniStyles = css`
   border: 3px solid ${props => props.theme.colors.lightPink};
   background-color: white;
   color: ${props => props.theme.colors.rocketBlue};
+`
+
+export const disabledOrLoading = css`
+  background-color: ${props => props.theme.colors.loading};
+`
+export const selected = css`
+  background-color: ${props => props.theme.colors.navy}
 `
 
 const kindVariants = {
@@ -45,8 +45,6 @@ const blockStyles = css`
 
 const Button = styled(BaseButton)`
   ${props => kindVariants[props.kind]}
-  ${props => props.selected && selected}
-  ${props => (props.disabled || props.loading) && disabledOrLoading}
   ${props => props.block && blockStyles}
 `
 
