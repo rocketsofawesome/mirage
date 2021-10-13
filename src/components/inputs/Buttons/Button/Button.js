@@ -5,25 +5,41 @@ import { WhiteSpinner } from 'SRC/core/icons/Spinner'
 import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
 
-export const defaultStyle = css`
+const regularStyles = css`
   background-color: ${props => props.theme.colors.rocketBlue};
   &:hover {
-    background-color: ${props => props.theme.colors.rocketBlueHover};
+    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.rocketBlueHover};
   }
+  border-color: transparent;
+  color: ${props => props.theme.colors.white};
 `
-export const disabledOrLoading = css`
+
+const miniStyles = css`
+  border: 3px solid ${props => props.theme.colors.lightPink};
+  background-color: white;
+  color: ${props => props.theme.colors.rocketBlue};
+`
+
+const disabledOrLoading = css`
   background-color: ${props => props.theme.colors.loading};
 `
-export const selected = css`
+const regularStylesSelected = css`
   background-color: ${props => props.theme.colors.navy}
 `
 
-const backgroundColor = css`
-  ${props => (!props.selected && !props.disabled && !props.loading) && defaultStyle}
-  ${props => props.selected && selected}
-  ${props => props.disabled && disabledOrLoading}
-  ${props => props.loading && disabledOrLoading}
+const miniStylesSelected = css`
+  background-color: ${props => props.theme.colors.lightPink};
 `
+
+const kindVariants = {
+  regular: regularStyles,
+  mini: miniStyles
+}
+
+const kindVariantsSelected = {
+  regular: regularStylesSelected,
+  mini: miniStylesSelected
+}
 
 const blockStyles = css`
   width: 100%;
@@ -31,11 +47,10 @@ const blockStyles = css`
 `
 
 const Button = styled(BaseButton)`
-  color: ${props => props.theme.colors.white};
-  border-color: transparent;
-
-  ${props => backgroundColor}
+  ${props => kindVariants[props.kind]}
   ${props => props.block && blockStyles}
+  ${props => props.selected && kindVariantsSelected[props.kind]}
+  ${props => (props.disabled || props.loading) && disabledOrLoading}
 `
 
 Button.propTypes = {
@@ -53,15 +68,16 @@ Button.propTypes = {
       white: PropTypes.string
     })
   }),
-  block: PropTypes.bool
+  block: PropTypes.bool,
+  kind: PropTypes.string
 }
 
 Button.defaultProps = {
   checkmark: WhiteCheckmark,
   spinner: WhiteSpinner,
-  block: false
+  block: false,
+  kind: 'regular'
 }
-
 
 /** @component */
 export default Button
