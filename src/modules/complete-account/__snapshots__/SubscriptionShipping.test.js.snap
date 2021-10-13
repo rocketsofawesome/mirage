@@ -46,7 +46,8 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
   font-size: 1.6rem;
   line-height: normal;
   text-align: inherit;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #00003C;
 }
 
@@ -166,6 +167,8 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
           align="inherit"
           color="#00003C"
           fontSize="1.6rem"
+          marginBottom="none"
+          marginTop="none"
         >
           <p
             className="c3 c4"
@@ -179,6 +182,8 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
           align="inherit"
           color="#00003C"
           fontSize="1.6rem"
+          marginBottom="none"
+          marginTop="none"
         >
           <p
             className="c3 c4"
@@ -240,7 +245,8 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
   font-size: 1.6rem;
   line-height: normal;
   text-align: inherit;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #00003C;
 }
 
@@ -386,6 +392,8 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
             align="inherit"
             color="#00003C"
             fontSize="1.6rem"
+            marginBottom="none"
+            marginTop="none"
           >
             <p
               className="c4 c5"
@@ -399,6 +407,8 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
             align="inherit"
             color="#00003C"
             fontSize="1.6rem"
+            marginBottom="none"
+            marginTop="none"
           >
             <p
               className="c4 c5"
