@@ -115,24 +115,29 @@ export class BaseMobileNavigation extends React.Component {
                   </Accordion>
                 </li>
                 <li>
-                <Accordion
-                  toggleElement={
-                    <MobileLinkSecondary>Girls</MobileLinkSecondary>
-                  }>
-                  <UL type='none' leftPad='1rem'>
-                  {girlsLinks && girlsLinks.map((link, index) => {
-                    return (
-                      <li key={index}>
-                        <MobileLinkTertiary
-                          target={link.target}
-                          renderLink={renderLink}>
-                          {link.text}
-                        </MobileLinkTertiary>
-                      </li>
-                    )
-                  })}
-                  </UL>
-                </Accordion>
+                  <Accordion
+                    toggleElement={
+                      <MobileLinkSecondary>Girls</MobileLinkSecondary>
+                    }>
+                    <UL type='none' leftPad='1rem'>
+                    {girlsLinks && girlsLinks.map((link, index) => {
+                      return (
+                        <li key={index}>
+                          <MobileLinkTertiary
+                            target={link.target}
+                            renderLink={renderLink}>
+                            {link.text}
+                          </MobileLinkTertiary>
+                        </li>
+                      )
+                    })}
+                    </UL>
+                  </Accordion>
+                </li>
+                <li>
+                  <MobileLinkSecondary target='/shop/baby' renderLink={renderLink}>
+                    Baby
+                  </MobileLinkSecondary>
                 </li>
               </UL>
             </li>
