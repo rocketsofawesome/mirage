@@ -135,6 +135,16 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     onMouseEnter={this.closeDrawers}
                     onFocus={this.closeDrawers}
+                    href='/shop/baby'
+                    highlightable={highlightable}
+                  >
+                    Baby
+                  </HeaderLink>
+                </li>
+                <li>
+                  <HeaderLink
+                    onMouseEnter={this.closeDrawers}
+                    onFocus={this.closeDrawers}
                     href={`${homepageUrl}/outfits`}
                     highlightable={highlightable}>
                       Outfits
