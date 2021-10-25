@@ -88,13 +88,22 @@ export class BaseSubMenu extends React.Component {
               My Account
             </Link>
             { (isSubscriptionMember && childCount < 4) &&
-              <Link
-                uppercase
-                underline={false}
-                target='/add-kid'
-                renderLink={renderLink}>
-                Add a Child
-              </Link>
+              <React.Fragment>
+                <Link
+                  uppercase
+                  underline={false}
+                  target='/add-kid'
+                  renderLink={renderLink}>
+                  Add a Big Kid (2-14)
+                </Link>
+                <Link
+                  uppercase
+                  underline={false}
+                  target='/mini/quiz'
+                  renderLink={renderLink}>
+                  Add a Baby (0-24M)
+                </Link>
+              </React.Fragment>
             }
             {isSubscriptionMember &&
               <Link

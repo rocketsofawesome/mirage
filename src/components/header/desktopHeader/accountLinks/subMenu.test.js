@@ -43,7 +43,8 @@ describe('(Base Component) BaseSubMenu', () => {
     const nonSubscriptionMenu = createBaseSubMenu({open: true})
     expect(nonSubscriptionMenu.contains('Manage Deliveries')).toBeFalsy()
     expect(nonSubscriptionMenu.contains('Style File')).toBeFalsy()
-    expect(nonSubscriptionMenu.contains('Add a Child')).toBeFalsy()
+    expect(nonSubscriptionMenu.contains('Add a Big Kid (2-14)')).toBeFalsy()
+    expect(nonSubscriptionMenu.contains('Add a Baby (0-24M)')).toBeFalsy()
   })
 
   test('rendering subscription links if a subscriber', () => {
@@ -53,7 +54,8 @@ describe('(Base Component) BaseSubMenu', () => {
     })
     expect(nonSubscriptionMenu.contains('Manage Deliveries')).toBeTruthy()
     expect(nonSubscriptionMenu.contains('Style File')).toBeTruthy()
-    expect(nonSubscriptionMenu.contains('Add a Child')).toBeTruthy()
+    expect(nonSubscriptionMenu.contains('Add a Big Kid (2-14)')).toBeTruthy()
+    expect(nonSubscriptionMenu.contains('Add a Baby (0-24M)')).toBeTruthy()
   })
 
   test('not rendering add a child link if a subscriber but with 4 kids', () => {
@@ -64,6 +66,7 @@ describe('(Base Component) BaseSubMenu', () => {
     })
     expect(nonSubscriptionMenu.contains('Manage Deliveries')).toBeTruthy()
     expect(nonSubscriptionMenu.contains('Style File')).toBeTruthy()
-    expect(nonSubscriptionMenu.contains('Add a Child')).toBeFalsy()
+    expect(nonSubscriptionMenu.contains('Add a Big Kid (2-14)')).toBeFalsy()
+    expect(nonSubscriptionMenu.contains('Add a Baby (0-24M)')).toBeFalsy()
   })
 })
