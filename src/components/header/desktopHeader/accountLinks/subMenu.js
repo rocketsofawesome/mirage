@@ -94,7 +94,7 @@ export class BaseSubMenu extends React.Component {
                   underline={false}
                   target='/add-kid'
                   renderLink={renderLink}>
-                  Add a Kid (2-14)
+                  Add a Big Kid (2-14)
                 </Link>
                 <Link
                   uppercase
