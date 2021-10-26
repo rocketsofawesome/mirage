@@ -135,7 +135,7 @@ const BaseValuePropSection = ({
       },
       {
         "title": "Focus on Fit",
-        "body": "We design single sizes 0-3 M - 14",
+        "body": "We design single sizes 0 months to 14 years",
         "svg": "ShirtsSvg"
       },
       {
