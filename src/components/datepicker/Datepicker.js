@@ -38,7 +38,6 @@ function labelColor (props) {
   return props.theme.colors.navy
 }
 
-
 const Label = styled.label`
   display: block;
   font-size: 12px;
@@ -287,7 +286,7 @@ Datepicker.propTypes = {
   onChange: PropTypes.func.isRequired,
   onTouched: PropTypes.func,
   touched: PropTypes.bool,
-  yearOffset: PropTypes.number,
+  yearOffset: PropTypes.number
 }
 
 Datepicker.defaultProps = {
