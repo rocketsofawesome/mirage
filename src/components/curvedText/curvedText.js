@@ -66,7 +66,8 @@ CurvedText.propTypes = {
   objectSize: PropTypes.number,
   spacing: PropTypes.number,
   offset: PropTypes.number,
-  overlap: PropTypes.bool
+  overlap: PropTypes.bool,
+  color: PropTypes.string
 }
 
 CurvedText.defaultProps = {

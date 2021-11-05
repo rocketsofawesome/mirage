@@ -6,10 +6,10 @@ const H2 = styled.h2`
     ${props => props.center ? 'text-align: center;' : ''}
     letter-spacing: .05rem;
     text-transform: ${props => props.lowercase
-      ? 'inherit' : 'uppercase'};
-
+      ? 'inherit'
+      : 'uppercase'
+    };
     color: ${colorFromProp('color')};
-
     font-family: ${props => props.theme.fonts.headerFont};
     font-size: ${props => props.fontSizes.mobile};
     ${props => props.theme.breakpointsVerbose.aboveTablet`
@@ -25,9 +25,6 @@ H2.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string
-    }),
-    colors: PropTypes.shape({
-      navy: PropTypes.string
     })
   }),
   lowercase: PropTypes.bool

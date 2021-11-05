@@ -95,8 +95,7 @@ Checkbox.propTypes = {
 Checkbox.defaultProps = {
   borderColor: 'rocketBlue',
   checkColor: 'white',
-  fillColor: 'rocketBlue',
-  labelColor: 'navy'
+  fillColor: 'rocketBlue'
 }
 
 /** @component */

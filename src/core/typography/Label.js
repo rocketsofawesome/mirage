@@ -8,9 +8,9 @@ const styles = css`
   margin-bottom: 0;
   letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
-    ? 'inherit' : 'uppercase'};
-
-
+    ? 'inherit'
+    : 'uppercase'
+  };
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
@@ -18,19 +18,19 @@ const styles = css`
 
 const Label = styled.label`
   ${styles}
-
   color: ${colorFromProp('color')};
 `
 
-const LowercaseLabel = ({className, children}) => {
+const LowercaseLabel = ({ className, children }) => {
   return (
     <Label
       className={className}
       fontSize='2rem'
       letterSpacing='normal'
       fontWeight='normal'
-      lowercase>
-        {children}
+      lowercase
+    >
+      {children}
     </Label>
   )
 }
@@ -40,9 +40,6 @@ Label.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       primaryFont: PropTypes.string
-    }),
-    colors: PropTypes.shape({
-      navy: PropTypes.string
     })
   }),
   lowercase: PropTypes.bool,
