@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import colorFromProp from 'utils/colors'
 
 const H2 = styled.h2`
     ${props => props.center ? 'text-align: center;' : ''}
@@ -7,7 +8,7 @@ const H2 = styled.h2`
     text-transform: ${props => props.lowercase
       ? 'inherit' : 'uppercase'};
 
-    color: ${props => props.theme.colors.navy};
+    color: ${colorFromProp('color')};
 
     font-family: ${props => props.theme.fonts.headerFont};
     font-size: ${props => props.fontSizes.mobile};
@@ -37,7 +38,8 @@ H2.defaultProps = {
     desktop: '3.2rem',
     mobile: '2.4rem'
   },
-  margin: '2.6rem 0'
+  margin: '2.6rem 0',
+  color: 'navy'
 }
 
 export default H2

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
+import colorFromProp from 'utils/colors'
 
 const styles = css`
   text-align: ${props => props.alignRight ? 'right' : 'left'};
@@ -18,7 +19,7 @@ const styles = css`
 const Label = styled.label`
   ${styles}
 
-  color: ${props => props.theme.colors.navy}
+  color: ${colorFromProp('color')};
 `
 
 const LowercaseLabel = ({className, children}) => {
@@ -44,10 +45,12 @@ Label.propTypes = {
       navy: PropTypes.string
     })
   }),
-  lowercase: PropTypes.bool
+  lowercase: PropTypes.bool,
+  color: PropTypes.string
 }
 
 Label.defaultProps = {
+  color: 'navy',
   letterSpacing: '.1rem',
   fontSize: '1.4rem',
   fontWeight: '500'

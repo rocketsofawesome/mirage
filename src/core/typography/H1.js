@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
 import colorFromProp from 'utils/colors'
 
 const H1 = styled.h1`
