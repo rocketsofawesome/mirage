@@ -16,10 +16,10 @@ class CheckboxBase extends React.Component {
   }
 
   render() {
-    const { className, input, children, label, width, ...props } = this.props
+    const { className, input, children, label, labelColor, width, ...props } = this.props
 
     return (
-      <Label {...props} lowercase className={className}>
+      <Label {...props} color={labelColor} lowercase className={className}>
         <input
           type='checkbox'
           onClick={this.onClick}
@@ -50,6 +50,10 @@ const Checkbox = styled(CheckboxBase)`
     flex-shrink: 0;
   }
 
+  ${CheckboxSVG} ${Check} {
+    display: none; 
+  }
+
   input {
     width: 0;
     height: 0;
@@ -61,6 +65,7 @@ const Checkbox = styled(CheckboxBase)`
   }
 
   input:checked + ${CheckboxSVG} ${Check} {
+    display: block;
     stroke: ${props => props.theme.colors.white};
     stroke-dasharray: 200;
     stroke-dashoffset: 0;
@@ -71,12 +76,17 @@ Checkbox.propTypes = {
   className: PropTypes.string,
   input: PropTypes.object.isRequired,
   label: PropTypes.string,
+  labelColor: PropTypes.string,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
       rocketBlue: PropTypes.string,
       white: PropTypes.string
     })
   })
+}
+
+Checkbox.defaultProps = {
+  labelColor: 'navy'
 }
 
 /** @component */
