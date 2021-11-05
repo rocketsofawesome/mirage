@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import colorFromProp from 'utils/colors'
 
 const H2 = styled.h2`
     ${props => props.center ? 'text-align: center;' : ''}
     letter-spacing: .05rem;
     text-transform: ${props => props.lowercase
-      ? 'inherit' : 'uppercase'};
-
-    color: ${props => props.theme.colors.navy};
-
+      ? 'inherit'
+      : 'uppercase'
+    };
+    color: ${colorFromProp('color')};
     font-family: ${props => props.theme.fonts.headerFont};
     font-size: ${props => props.fontSizes.mobile};
     ${props => props.theme.breakpointsVerbose.aboveTablet`
@@ -24,9 +25,6 @@ H2.propTypes = {
   theme: PropTypes.shape({
     fonts: PropTypes.shape({
       headerFont: PropTypes.string
-    }),
-    colors: PropTypes.shape({
-      navy: PropTypes.string
     })
   }),
   lowercase: PropTypes.bool
@@ -37,7 +35,8 @@ H2.defaultProps = {
     desktop: '3.2rem',
     mobile: '2.4rem'
   },
-  margin: '2.6rem 0'
+  margin: '2.6rem 0',
+  color: 'navy'
 }
 
 export default H2

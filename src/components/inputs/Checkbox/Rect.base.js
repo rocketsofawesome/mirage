@@ -1,5 +1,4 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 const Rect = ({ className }) => {
@@ -10,19 +9,9 @@ const Rect = ({ className }) => {
 
 const StyledRect = styled(Rect)`
   fill: none;
-
-  stroke: ${props => props.theme.colors.rocketBlue};
   stroke-width: 20;
   stroke-linecap: round;
 `
-
-StyledRect.propTypes = {
-  theme: PropTypes.shape({
-    colors: PropTypes.shape({
-      rocketBlue: PropTypes.string
-    })
-  })
-}
 
 export default StyledRect
 export { Rect }

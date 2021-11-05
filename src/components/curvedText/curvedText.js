@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
+import colorFromProp from 'utils/colors'
 
 // Sourced from this gist: https://gist.github.com/garth/0ca97a1112cb969cb72d951a85d3a0fe
 /*
@@ -31,7 +32,7 @@ const CurvedText = (props) => {
   const Container = styled.div`
     margin-bottom: ${overlap ? `-${r}px` : '0'};
     height: ${r + offset}px;
-    color: ${props => props.theme.colors.navy};
+    color: ${colorFromProp('color')};
     
     path {
       fill: transparent;
@@ -65,7 +66,8 @@ CurvedText.propTypes = {
   objectSize: PropTypes.number,
   spacing: PropTypes.number,
   offset: PropTypes.number,
-  overlap: PropTypes.bool
+  overlap: PropTypes.bool,
+  color: PropTypes.string
 }
 
 CurvedText.defaultProps = {
@@ -73,7 +75,8 @@ CurvedText.defaultProps = {
   objectSize: 250,
   spacing: 12,
   offset: 40,
-  overlap: true
+  overlap: true,
+  color: 'navy'
 }
 
 /** @component */
