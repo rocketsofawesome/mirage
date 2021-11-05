@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-
+import colorFromProp from 'utils/colors'
 import CheckboxSVG from './CheckboxSVG.base'
 import Rect from './Rect.base'
 import Check from './Check.base'
@@ -54,6 +54,10 @@ const Checkbox = styled(CheckboxBase)`
     display: none; 
   }
 
+  ${CheckboxSVG} ${Rect} {
+    stroke: ${colorFromProp('borderColor')};
+  }
+
   input {
     width: 0;
     height: 0;
@@ -61,19 +65,22 @@ const Checkbox = styled(CheckboxBase)`
   }
 
   input:checked + ${CheckboxSVG} ${Rect} {
-    fill: ${props => props.theme.colors.rocketBlue};
+    fill: ${colorFromProp('fillColor')};
   }
 
   input:checked + ${CheckboxSVG} ${Check} {
     display: block;
-    stroke: ${props => props.theme.colors.white};
+    stroke: ${colorFromProp('checkColor')};
     stroke-dasharray: 200;
     stroke-dashoffset: 0;
   }
 `
 
 Checkbox.propTypes = {
+  borderColor: PropTypes.string,
+  checkColor: PropTypes.string,
   className: PropTypes.string,
+  fillColor: PropTypes.string,
   input: PropTypes.object.isRequired,
   label: PropTypes.string,
   labelColor: PropTypes.string,
@@ -86,6 +93,9 @@ Checkbox.propTypes = {
 }
 
 Checkbox.defaultProps = {
+  borderColor: 'rocketBlue',
+  checkColor: 'white',
+  fillColor: 'rocketBlue',
   labelColor: 'navy'
 }
 
