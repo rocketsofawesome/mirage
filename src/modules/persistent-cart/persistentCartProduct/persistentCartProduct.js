@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import accounting from 'accounting'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { XIcon, GraySpinner } from 'SRC'
 
 import cloudinary from 'services/cloudinary'
@@ -98,14 +98,24 @@ const Attribute = styled.div`
   }
 `
 
-const Remove = styled(XIcon)`
-  height: 12px;
+const RemoveContainer = styled.div`
   margin-left: 10px;
   margin-right: 20px;
   margin-top: 5px;
-  width: 12px;
+  min-width: 21px;
+  text-align: center;
+`
 
+const Remove = styled(XIcon)`
+  height: 12px;
+  width: 12px;
   cursor: pointer;
+  transition: opacity 200ms;
+
+  ${props => props.disabled && css`
+    opacity: 0.5;
+    pointer-events: none;
+  `}
 `
 
 const AttributeContainer = styled.div`
@@ -152,7 +162,6 @@ class BaseProduct extends React.Component {
 
   onRemoveItem = () => {
     const { item, segmentProductRemoved, onRemoveItem } = this.props
-
     onRemoveItem(item.id)
     segmentProductRemoved(item, 'bag')
   }
@@ -205,6 +214,15 @@ class BaseProduct extends React.Component {
         }
       </Select>
     )
+  }
+
+  renderRemoveIcon = () => {
+    const { removingItemId, item } = this.props
+
+    if (removingItemId === item.id) {
+      return <GraySpinner size="21px" />
+    }
+    return <Remove onClick={this.onRemoveItem} disabled={!!removingItemId} />
   }
 
   showRemoveItem = () => {
@@ -276,7 +294,9 @@ class BaseProduct extends React.Component {
           }
           {item.on_sale && finalSaleOn && <ItemName>FINAL SALE</ItemName>}
         </AttributeContainer>
-        {this.showRemoveItem() && <Remove onClick={this.onRemoveItem} />}
+        <RemoveContainer>
+          {this.renderRemoveIcon()}
+        </RemoveContainer>
       </div>
     )
   }
@@ -301,6 +321,7 @@ BaseProduct.propTypes = {
   onRemoveItem: PropTypes.func.isRequired,
   onUpdateQuantity: PropTypes.func.isRequired,
   onUpdateSize: PropTypes.func.isRequired,
+  removingItemId: PropTypes.number,
   renderLink: PropTypes.func,
   segmentProductRemoved: PropTypes.func
 }
@@ -313,7 +334,9 @@ const renderLink = (inProps) => {
 BaseProduct.defaultProps = {
   isUpdatingQuantity: false,
   isUpdatingSize: false,
+  removingItemId: null,
   renderLink: renderLink
 }
 
+/** @component */
 export default Product

@@ -16,6 +16,21 @@ const BagListWrapper = styled.div`
 `
 
 class BasePersistentCartProductList extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { removingItemId: null }
+
+    this.handleRemoveItem = this.handleRemoveItem.bind(this)
+  }
+
+  async handleRemoveItem (id) {
+    const { removeItem } = this.props
+
+    this.setState({ removingItemId: id })
+    await removeItem(id)
+    this.setState({ removingItemId: null })
+  }
+
   componentDidMount () {
     const { lineItems, segmentCartViewed } = this.props
     if (lineItems) {
@@ -36,7 +51,6 @@ class BasePersistentCartProductList extends Component {
       lineItems,
       onUpdateQuantity,
       onUpdateSize,
-      removeItem,
       hideCartSidebar,
       renderProductLink,
       segmentProductRemoved,
@@ -44,6 +58,7 @@ class BasePersistentCartProductList extends Component {
       isUpdatingQuantity,
       isUpdatingSize
     } = this.props
+    const { removingItemId } = this.state
 
     return (
       <section className={className}>
@@ -55,13 +70,14 @@ class BasePersistentCartProductList extends Component {
                 item={lineItem}
                 onUpdateQuantity={onUpdateQuantity}
                 onUpdateSize={onUpdateSize}
-                onRemoveItem={removeItem}
+                onRemoveItem={this.handleRemoveItem}
                 renderLink={renderProductLink}
                 segmentProductRemoved={segmentProductRemoved}
                 hideCartSidebar={hideCartSidebar}
                 finalSaleOn={finalSaleOn}
                 isUpdatingSize={isUpdatingSize === lineItem.id}
                 isUpdatingQuantity={isUpdatingQuantity === lineItem.id}
+                removingItemId={removingItemId}
               />
             )}
           </BagListWrapper>

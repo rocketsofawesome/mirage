@@ -16,4 +16,5 @@ const ErrorMessage = styled.div`
   line-height: 18px;
 `
 
+/** @component */
 export default ErrorMessage
