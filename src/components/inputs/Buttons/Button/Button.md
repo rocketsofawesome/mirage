@@ -22,10 +22,10 @@
 ```
 ## Mini-Styled
 ```js
-<Button kind='mini' width='150px'>Click Me!</Button>
+<Button width='150px'>Click Me!</Button>
 ```
 
 ## Mini-Styled Selected
 ```js
-<Button kind='mini' selected width='150px'>Click Me!</Button>
+<Button selected width='150px'>Click Me!</Button>
 ```
