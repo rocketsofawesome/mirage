@@ -7,9 +7,11 @@ const Caption = styled.span`
   ${props => props.center ? 'text-align: center;' : ''}
   letter-spacing: 1.29;
   text-transform: ${props => props.uppercase
-    ? 'uppercase' : 'inherit'};
+    ? 'uppercase'
+    : 'inherit'
+  };
 
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
@@ -24,7 +26,7 @@ Caption.propTypes = {
       primaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   })
 }

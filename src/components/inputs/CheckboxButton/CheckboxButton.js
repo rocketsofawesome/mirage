@@ -82,7 +82,7 @@ const CheckboxButton = styled(BaseCheckboxButton)`
     font-family: ${props => props.theme.fonts.primaryFont};
     font-size: 1.6rem;
     font-weight: 100;
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
     transition: color 0.25s, background-color 0.25s;
     ${props => handleShapeStyles(props.shape)}
   }
@@ -102,7 +102,7 @@ CheckboxButton.propTypes = {
       primaryFont: PropTypes.string.isRequired
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string.isRequired,
+      textPrimary: PropTypes.string.isRequired,
       rocketBlue: PropTypes.string.isRequired,
       white: PropTypes.string.isRequired,
       gray: PropTypes.array.isRequired

@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 import { Link } from 'SRC'
 
-const setWidth = ({fields: { width = 'Fit Text'}}) => {
+const setWidth = ({ fields: { width = 'Fit Text' } }) => {
   const WIDTH = {
     'Fit Text': css`
       max-width: 290px;
@@ -39,14 +39,14 @@ const ContentfulButton = styled(({
   renderLink,
   ...props
 }) => {
-  return renderLink({target: route, children: buttonText, ...props})
+  return renderLink({ target: route, children: buttonText, ...props })
 })`
   box-sizing: border-box;
   padding: 0 20px;
   height: 50px;
   object-fit: contain;
   display: inline-flex;
-  color: ${props => props.fields.color ? props.fields.color : props.theme.colors.navy};
+  color: ${props => props.fields.color ? props.fields.color : props.theme.colors.textPrimary};
   background-color: ${props => props.fields.backgroundColor ? props.fields.backgroundColor : props.theme.colors.yellow};
   font-family: $din-medium-font;
   font-size: 18px;
@@ -59,7 +59,7 @@ const ContentfulButton = styled(({
   ${props => setWidth(props)}
 
   &:hover {
-    color: ${props => props.fields.color ? props.fields.color : props.theme.colors.navy};
+    color: ${props => props.fields.color ? props.fields.color : props.theme.colors.textPrimary};
   }
   &:last-of-type {
     ${props => props.theme.breakpointsVerbose.belowTablet`
@@ -67,7 +67,7 @@ const ContentfulButton = styled(({
     `}
   }
   &:before {
-    content: ${props => props.theme.colors.navy};
+    content: ${props => props.theme.colors.textPrimary};
   }
 `
 
@@ -90,10 +90,11 @@ ContentfulButton.defaultProps = {
       <Link
         href={target}
         underline={false}
-        {...props}>
-          {children}
-        </Link>
-      )
+        {...props}
+      >
+        {children}
+      </Link>
+    )
   }
 }
 

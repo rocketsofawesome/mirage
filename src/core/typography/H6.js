@@ -4,7 +4,7 @@ import styled from 'styled-components'
 const H6 = styled.h6`
   letter-spacing: .075rem;
 
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.primaryFont};
@@ -22,7 +22,7 @@ H6.propTypes = {
       primaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   })
 }

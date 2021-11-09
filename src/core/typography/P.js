@@ -29,14 +29,14 @@ P.propTypes = {
       primaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   })
 }
 
 P.defaultProps = {
   fontSize: '1.6rem',
-  color: theme.colors.navy,
+  color: theme.colors.textPrimary,
   align: 'inherit',
   marginTop: 'none',
   marginBottom: 'none'

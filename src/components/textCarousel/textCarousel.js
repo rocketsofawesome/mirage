@@ -109,7 +109,7 @@ const TextCarousel = styled(BaseTextCarousel)`
     margin: 0 0 1rem 0;
   }
   ${P} {
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
     display: flex;
     justify-content: center;
     align-items: center;

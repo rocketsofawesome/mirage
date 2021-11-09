@@ -18,7 +18,7 @@ export const disabledOrLoading = css`
   border-color: ${props => props.theme.colors.loading};
 `
 export const selected = css`
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   border-color: ${props => props.theme.colors.navy};
 `
 
@@ -45,6 +45,7 @@ BlueBorderButton.propTypes = {
   ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
+      textPrimary: PropTypes.string,
       white: PropTypes.string
     })
   })

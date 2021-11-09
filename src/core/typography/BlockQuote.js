@@ -11,7 +11,7 @@ const BlockQuote = styled.blockquote`
   &:before, &:after {
     content: '\\201C';
     font-family: 'Sanchez';
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
   }
   &:after {
     content: '\\201D';

@@ -13,6 +13,7 @@ const brandColors = {
   rocketBlue: '#0073D1',
   rocketBlueHover: '#0073EB',
   navy: '#00003C',
+  textPrimary: '#00003C',
   yellow: '#F0FF02',
   yellowHover: '#D8E320',
   lightBlue0: '#EEFCFF',

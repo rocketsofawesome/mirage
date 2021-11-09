@@ -27,7 +27,7 @@ const SquareRadioButton = styled(({className, children, selected, input, disable
     font-size: 1.4rem;
     font-weight: 200;
     cursor: pointer;
-    color: ${props => props.theme.colors.navyBlue};
+    color: ${props => props.theme.colors.textPrimary};
     border: solid 0.1rem ${props => props.theme.colors.rocketBlue};
     position: relative;
     &:hover {

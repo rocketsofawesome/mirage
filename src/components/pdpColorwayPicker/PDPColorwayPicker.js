@@ -12,7 +12,7 @@ const ColorName = styled.span`
   text-transform: none;
   font-weight: 200;
   font-size: 16px;
-  color: ${props => props.theme.colors.navyBlue};
+  color: ${props => props.theme.colors.textPrimary};
   margin-left: 10px;
 `
 

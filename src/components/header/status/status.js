@@ -23,7 +23,7 @@ const message = css`
 
 const notification = css`
   background-color: ${props => props.theme.colors.yellow};
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
 `
 
 const error = css`
@@ -40,7 +40,7 @@ font-style: italic;
 
 const promo_pink = css`
 background-color: ${props => props.theme.colors.pink};
-color: ${props => props.theme.colors.navy};
+color: ${props => props.theme.colors.textPrimary};
 font-style: italic;
 `
 
@@ -75,7 +75,8 @@ const Status = styled(({className, children, dismissable}) => {
           <FlexCol
             className='container'
             mobile={{width: 4}}
-            desktop={{width: 10, span: 1}}>
+            desktop={{width: 10, span: 1}}
+          >
             {children}
           </FlexCol>
       </FlexRow>

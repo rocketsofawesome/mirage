@@ -19,8 +19,8 @@ const disabledOrLoading = css`
 `
 
 const selected = css`
-  color: ${props => props.theme.colors.navy};
-  border-color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
+  border-color: ${props => props.theme.colors.textPrimary};
 `
 
 const colorButton = css`
@@ -46,6 +46,7 @@ WhiteBorderButton.propTypes = {
   ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
+      textPrimary: PropTypes.string,
       white: PropTypes.string
     })
   })

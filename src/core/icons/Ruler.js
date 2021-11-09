@@ -21,19 +21,19 @@ const BaseRuler = (props) => {
 const Ruler = styled(BaseRuler)`
   width: ${props => props.width};
   > path {
-    fill: ${props => props.theme.colors.navy};
+    fill: ${props => props.theme.colors.textPrimary};
   }
   > line, circle {
     fill: none;
     stroke-linecap: round;
-    stroke: ${props => props.theme.colors.navy};
+    stroke: ${props => props.theme.colors.textPrimary};
   }
 `
 
 Ruler.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   }),
   width: PropTypes.string

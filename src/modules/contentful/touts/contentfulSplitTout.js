@@ -39,9 +39,9 @@ ${MirageMarkdown} {
   width: 50%;
   ${Link} {
     font-size: 1.6rem;
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
     &:hover {
-      color: ${props => props.theme.colors.navy};
+      color: ${props => props.theme.colors.textPrimary};
     }
 }
 `

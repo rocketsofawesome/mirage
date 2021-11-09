@@ -4,13 +4,13 @@ import styled from 'styled-components'
 const H4 = styled.h4`
   letter-spacing: 0.5px;
 
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: ${props => props.fontSize};
   font-weight: 500;
-  font-style: ${props => props.italic ? 'italic': 'normal'};
+  font-style: ${props => props.italic ? 'italic' : 'normal'};
   line-height: 1;
   text-transform: ${props => props.uppercase ? 'uppercase' : 'none'}
   margin: ${props => props.margin};
@@ -23,7 +23,7 @@ H4.propTypes = {
       primaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     }),
     margin: PropTypes.string,
     italic: PropTypes.bool,

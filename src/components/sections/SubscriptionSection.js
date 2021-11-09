@@ -65,10 +65,10 @@ const SubscriptionSection = styled((props) => {
     margin: 1rem 0;
   }
   ${H3} a {
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
     text-decoration: none;
     &:hover, &:visited {
-      color: ${props => props.theme.colors.navy};
+      color: ${props => props.theme.colors.textPrimary};
     }
   }
   * {

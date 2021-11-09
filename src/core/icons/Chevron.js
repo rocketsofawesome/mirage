@@ -66,7 +66,7 @@ const Chevron = styled(BaseChevron)`
   width: 16px;
   height: 8px;
   fill: none;
-  stroke: ${props => props.theme.colors.navy};
+  stroke: ${props => props.theme.colors.textPrimary};
   stroke-miterlimit: 10;
   stroke-width: 4px;
   ${props => `transform: ${direction(props)};`}
@@ -97,7 +97,8 @@ Chevron.propTypes = {
   animated: PropTypes.bool,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string.isRequired
+      rocketBlue: PropTypes.string.isRequired,
+      textPrimary: PropTypes.string
     })
   }),
   ignoreErrors: PropTypes.bool,

@@ -44,7 +44,7 @@ const RoundRadioButton = styled(BaseRoundRadioButton)`
     text-align: center;
     letter-spacing: normal;
 
-    color: ${props => props.theme.colors.navy};
+    color: ${props => props.theme.colors.textPrimary};
     border: 1px solid ${props => props.theme.colors.gray[5]};
     border-radius: 50%;
     background-color: ${props => props.theme.colors.gray[0]};
@@ -70,7 +70,7 @@ RoundRadioButton.propTypes = {
       primaryFont: PropTypes.string.isRequired
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string.isRequired,
+      textPrimary: PropTypes.string.isRequired,
       rocketBlue: PropTypes.string.isRequired,
       white: PropTypes.string.isRequired,
       gray: PropTypes.array.isRequired

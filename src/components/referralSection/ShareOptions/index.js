@@ -21,12 +21,12 @@ const UrlInput = styled.input`
   font-weight: 300;
   flex: 1 1 auto;
   height: 48px;
-  color: ${props => props.theme.colors.navyBlue};
+  color: ${props => props.theme.colors.textPrimary};
 `
 
 const CopyButton = styled(Button)`
   background-color: ${props => props.theme.colors.lightBlue1};
-  color: ${props => props.theme.colors.navyBlue};
+  color: ${props => props.theme.colors.textPrimary};
   border-radius: 0;
   margin-left: -3px;
   margin-top: 1px;
@@ -46,7 +46,7 @@ const InputHelp = styled.div`
   text-transform: uppercase;
   padding: 2px 15px;
   letter-spacing: 0.5px;
-  color: ${props => props.theme.colors.navyBlue};
+  color: ${props => props.theme.colors.textPrimary};
 `
 
 const ShareButtons = styled.div`
