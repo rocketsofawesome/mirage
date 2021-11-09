@@ -6,7 +6,7 @@ import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
 
 function pickColor(props, color) {
   if (props.error) {
-    return props.theme.colors.flameOrange
+    return props.theme.colors.textError
   }
   return props.theme.colors[color]
 }
@@ -31,18 +31,11 @@ const Container = styled.div`
   ${props => containerVariants[props.kind]};
 `
 
-function labelColor (props) {
-  if (props.kind === 'mini') {
-    return props.theme.colors.rocketBlue
-  }
-  return props.theme.colors.navy
-}
-
 const Label = styled.label`
   display: block;
   font-size: 12px;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${labelColor};
+  color: ${props => props.theme.colors.textPrimary};
   letter-spacing: .5px;
   font-weight: 200;
   text-align: left;
