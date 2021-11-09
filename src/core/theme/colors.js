@@ -13,7 +13,6 @@ const brandColors = {
   rocketBlue: '#0073D1',
   rocketBlueHover: '#0073EB',
   navy: '#00003C',
-  textPrimary: '#00003C',
   yellow: '#F0FF02',
   yellowHover: '#D8E320',
   lightBlue0: '#EEFCFF',
@@ -52,5 +51,12 @@ const supportingColors = {
   loading: '#BFBFBF'
 }
 
-const colors = { ...brandColors, ...supportingColors }
+const themeColors = {
+  textPrimary: '#00003C',
+  textSecondary: '#0073EB',
+  textError: '#FF511C',
+  borderPrimary: '#D5D5D5'
+}
+
+const colors = { ...brandColors, ...supportingColors, ...themeColors }
 export { colors }
