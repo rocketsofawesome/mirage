@@ -38,7 +38,7 @@ const Select = styled.select`
   color: ${props => props.theme.colors.textPrimary};
 
   &:focus {
-    color: ${props => props.theme.colors.textSecondary};
+    color: ${props => props.theme.colors.focusPrimary};
   }
 `
 

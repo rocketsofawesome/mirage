@@ -53,12 +53,13 @@ const supportingColors = {
 
 const themeColors = {
   textPrimary: '#00003C',
-  textSecondary: '#0073EB',
+  textSecondary: '#0073D1',
   textError: '#FF511C',
   borderPrimary: '#D5D5D5',
   buttonTextPrimary: '#FFFFFF',
+  focusPrimary: '#0073D1',
   bgUnselected: '#F3F3F3',
-  bgSelected: '#0073EB'
+  bgSelected: '#0073D1'
 }
 
 const colors = { ...brandColors, ...supportingColors, ...themeColors }

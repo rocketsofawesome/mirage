@@ -63,7 +63,7 @@ const inputStyles = css`
   &:focus {
     outline: none;
     border-color: ${props => props.theme.colors.rocketBlue};
-    color: ${props => props.theme.colors.textSecondary};
+    color: ${props => props.theme.colors.focusPrimary};
   }
 `
 

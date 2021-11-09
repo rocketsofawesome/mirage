@@ -50,7 +50,6 @@
 #### Normal Input
 ```js
 <Select
-  kind='mini'
   label='City'
   options={[
     { value: 'NY', text: 'New York' },
@@ -63,7 +62,6 @@
 ```js
 <Select
   error='Some error message'
-  kind='mini'
   label='City'
   options={[
     { value: 'NY', text: 'New York' },
