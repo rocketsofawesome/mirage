@@ -3,6 +3,7 @@ import { colors } from './colors'
 import media, { sizes, breakpoints, breakpointsVerbose } from './mediaQueries'
 import fontFamilies from './fontFamilies'
 import gridSettings from './gridSettings'
+import styles from './styles'
 
 const basePxSize = 10
 
@@ -28,5 +29,6 @@ export default {
   fonts: fontFamilies,
   grid: gridSettings,
   media: media,
-  sizes: sizes
+  sizes: sizes,
+  styles: styles
 }

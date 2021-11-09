@@ -9,7 +9,6 @@ const BaseRectangularRadioButton = (props) => {
     className,
     value,
     error,
-    kind,
     ...rest
   } = props
 
@@ -24,13 +23,6 @@ const BaseRectangularRadioButton = (props) => {
       }
     </div>
   )
-}
-
-function borderColor(props) {
-  if (props.error) {
-    return props.theme.colors.flameOrange
-  }
-  return props.theme.colors.gray4
 }
 
 const squareStyle = css`
@@ -57,38 +49,6 @@ const shapeVariants = {
 
 function handleShapeStyles(shape) {
   return shapeVariants[shape]
-}
-
-const regularStyles = css`
-  color: ${props => props.theme.colors.navy};
-  border: 1px solid ${borderColor};
-  background-color: ${props => props.theme.colors.gray[0]};
-`
-
-const regularStylesChecked = css`
-  color: ${props => props.theme.colors.white};
-  border: 1px solid ${props => props.theme.colors.rocketBlue};
-  background-color: ${props => props.theme.colors.rocketBlue};
-`
-
-const miniStyles = css`
-  border: 3px solid ${props => props.theme.colors.lightPink};
-  background-color: white;
-  color: ${props => props.theme.colors.rocketBlue};
-`
-
-const miniStylesChecked = css`
-  background-color: ${props => props.theme.colors.lightPink};
-`
-
-const kindVariants = {
-  regular: regularStyles,
-  mini: miniStyles
-}
-
-const kindVariantsChecked = {
-  regular: regularStylesChecked,
-  mini: miniStylesChecked
 }
 
 const RectangularRadioButton = styled(BaseRectangularRadioButton)`
@@ -121,13 +81,17 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
+    background-color: ${props => props.theme.colors.bgUnselected}
+    border: ${props => props.theme.styles.border}
+    border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
+    color: ${props => props.theme.colors.textPrimary}
 
     ${props => handleShapeStyles(props.shape)}
-    ${props => kindVariants[props.kind]}
   }
 
   > input:checked + label {
-    ${props => kindVariantsChecked[props.kind]}
+    background-color: ${props => props.theme.colors.bgSelected}
+    color: ${props => props.theme.colors.buttonTextPrimary}
   }
 `
 
@@ -151,8 +115,7 @@ RectangularRadioButton.propTypes = {
 
 RectangularRadioButton.defaultProps = {
   error: null,
-  shape: 'rectangle',
-  kind: 'regular'
+  shape: 'rectangle'
 }
 
 /** @component */

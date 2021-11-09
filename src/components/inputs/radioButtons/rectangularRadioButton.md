@@ -35,9 +35,9 @@
 ## Mini style
 ```js
 <div style={{ marginBottom: '1rem' }}>
-  <RectangularRadioButton name='miniGender' value='1' kind='mini'>Male</RectangularRadioButton>
+  <RectangularRadioButton name='miniGender' value='1'>Male</RectangularRadioButton>
 </div>
 <div>
-  <RectangularRadioButton name='miniGender' value='2' kind='mini'>Female</RectangularRadioButton>
+  <RectangularRadioButton name='miniGender' value='2'>Female</RectangularRadioButton>
 </div>
 ```

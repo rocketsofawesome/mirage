@@ -55,7 +55,10 @@ const themeColors = {
   textPrimary: '#00003C',
   textSecondary: '#0073EB',
   textError: '#FF511C',
-  borderPrimary: '#D5D5D5'
+  borderPrimary: '#D5D5D5',
+  buttonTextPrimary: '#FFFFFF',
+  bgUnselected: '#F3F3F3',
+  bgSelected: '#0073EB'
 }
 
 const colors = { ...brandColors, ...supportingColors, ...themeColors }
