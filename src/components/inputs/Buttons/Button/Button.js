@@ -7,6 +7,7 @@ import BaseButton from './Button.base'
 
 const disabledOrLoading = css`
   background-color: ${props => props.theme.colors.loading};
+  border: none;
 `
 
 const blockStyles = css`

@@ -52,17 +52,17 @@ const supportingColors = {
 }
 
 const themeColors = {
-  textPrimary: '#00003C',
-  textSecondary: '#0073D1',
-  textError: '#FF511C',
-  borderPrimary: '#D5D5D5',
-  buttonPrimary: '#0073D1',
-  buttonPrimaryHover: '#0073EB',
-  buttonSelected: '#00003C',
-  buttonTextPrimary: '#FFFFFF',
-  focusPrimary: '#0073D1',
-  bgUnselected: '#F3F3F3',
-  bgSelected: '#0073D1'
+  textPrimary: brandColors.navy,
+  textSecondary: brandColors.rocketBlue,
+  textError: brandColors.flameOrange,
+  borderPrimary: brandColors.gray4,
+  buttonPrimary: brandColors.rocketBlue,
+  buttonPrimaryHover: brandColors.rocketBlueHover,
+  buttonSelected: brandColors.navy,
+  buttonTextPrimary: brandColors.white,
+  focusPrimary: brandColors.rocketBlue,
+  bgUnselected: brandColors.gray0,
+  bgSelected: brandColors.rocketBlue
 }
 
 const colors = { ...brandColors, ...supportingColors, ...themeColors }

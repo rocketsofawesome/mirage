@@ -1,15 +1,16 @@
-import colors from './colors'
+import { colors } from './colors'
 
 const themeColors = {
-  textPrimary: '#0073D1',
-  textSecondary: '#00003C',
-  borderPrimary: '#FBDDE4',
-  buttonTextPrimary: '#0073D1',
-  buttonPrimary: '#FFFFFF',
-  buttonSelected: '#FBDDE4',
+  textPrimary: colors.rocketBlue,
+  textSecondary: colors.navy,
+  borderPrimary: colors.lightPink,
+  buttonTextPrimary: colors.rocketBlue,
+  buttonPrimary: colors.white,
+  buttonPrimaryHover: colors.lightPink,
+  buttonSelected: colors.lightPink,
   // Add button hover color!
-  bgUnselected: '#FFFFFF',
-  bgSelected: '#FBDDE4'
+  bgUnselected: colors.white,
+  bgSelected: colors.lightPink
 }
 
 export default {
