@@ -2,21 +2,19 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { ThemeProvider } from 'styled-components'
 import theme from './theme'
-import miniTheme from './miniTheme'
+import miniTheme from './mini/miniTheme'
 
-// const themeNames = {
-//   default: theme,
-//   mini: miniTheme
-// }
-
+const themeNames = {
+  default: theme,
+  mini: miniTheme
+}
 
 export default class ROATheme extends Component {
   render () {
-    // const { themeName } = this.props
-    // const themeRules = themeNames[themeName]
+    const { themeName } = this.props
+    const themeRules = themeNames[themeName]
     return (
-      // Change me!
-      <ThemeProvider theme={miniTheme} {...this.props}>
+      <ThemeProvider theme={themeRules} {...this.props}>
         {this.props.children}
       </ThemeProvider>
     )

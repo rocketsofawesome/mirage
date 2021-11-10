@@ -1,6 +1,6 @@
 import miniColors from './miniColors'
 import miniStyles from './miniStyles'
-import theme from './theme'
+import { theme } from 'SRC/core/theme'
 
 export default {
   ...theme,
