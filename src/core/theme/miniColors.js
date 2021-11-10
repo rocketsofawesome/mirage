@@ -8,9 +8,7 @@ const themeColors = {
   buttonPrimary: colors.white,
   buttonPrimaryHover: colors.lightPink,
   buttonSelected: colors.lightPink,
-  // Add button hover color!
-  bgUnselected: colors.white,
-  bgSelected: colors.lightPink
+  buttonUnselected: colors.white
 }
 
 export default {

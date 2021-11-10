@@ -55,14 +55,13 @@ const themeColors = {
   textPrimary: brandColors.navy,
   textSecondary: brandColors.rocketBlue,
   textError: brandColors.flameOrange,
-  borderPrimary: brandColors.gray4,
+  borderPrimary: supportingColors.gray4,
   buttonPrimary: brandColors.rocketBlue,
   buttonPrimaryHover: brandColors.rocketBlueHover,
   buttonSelected: brandColors.navy,
+  buttonUnselected: supportingColors.gray0,
   buttonTextPrimary: brandColors.white,
-  focusPrimary: brandColors.rocketBlue,
-  bgUnselected: brandColors.gray0,
-  bgSelected: brandColors.rocketBlue
+  focusPrimary: brandColors.rocketBlue
 }
 
 const colors = { ...brandColors, ...supportingColors, ...themeColors }

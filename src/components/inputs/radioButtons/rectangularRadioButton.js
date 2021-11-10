@@ -81,7 +81,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
     font-style: normal;
     font-stretch: normal;
     line-height: normal;
-    background-color: ${props => props.theme.colors.bgUnselected}
+    background-color: ${props => props.theme.colors.buttonUnselected}
     border: ${props => props.theme.styles.border}
     border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
     color: ${props => props.theme.colors.textPrimary}
@@ -90,7 +90,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
   }
 
   > input:checked + label {
-    background-color: ${props => props.theme.colors.bgSelected}
+    background-color: ${props => props.theme.colors.buttonSelected}
     color: ${props => props.theme.colors.buttonTextPrimary}
   }
 `

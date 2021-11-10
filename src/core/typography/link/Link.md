@@ -2,7 +2,7 @@
 <Link href="#">Example Link</Link>
 ```
 
-# No Hover Underline Example:
+# No Underline Hover Example:
 ```js
 <Link underline={false} href="#">Example Link</Link>
 ```

@@ -53,8 +53,7 @@ const notAllowedCursor = css`
 const setCursor = css`
   ${props => (!props.loading && !props.disabled) && pointerCursor}
   ${props => props.loading && waitCursor}
-  ${props => props.disabled && notAllowedCursor
-  }
+  ${props => props.disabled && notAllowedCursor}
 `
 
 const BaseButton = styled(CustomButton)`

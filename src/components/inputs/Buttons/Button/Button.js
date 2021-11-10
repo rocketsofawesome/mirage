@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import { WhiteSpinner } from 'SRC/core/icons/Spinner'
-import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
+import Checkmark from 'SRC/core/icons/Checkmark/Checkmark.base'
 
 const disabledOrLoading = css`
   background-color: ${props => props.theme.colors.loading};
@@ -23,6 +23,7 @@ const Button = styled(BaseButton)`
   border: ${props => props.theme.styles.border};
   border-color: ${props => props.theme.colors.borderPrimary};
   color: ${props => props.theme.colors.buttonTextPrimary};
+  stroke: ${props => props.theme.colors.buttonTextPrimary}
   ${props => props.block && blockStyles}
   ${props => (props.disabled || props.loading) && disabledOrLoading}
 `
@@ -38,15 +39,18 @@ Button.propTypes = {
   ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string,
-      white: PropTypes.string
+      buttonSelected: PropTypes.string,
+      buttonPrimary: PropTypes.string,
+      buttonPrimaryHover: PropTypes.string,
+      borderPrimary: PropTypes.string,
+      loading: PropTypes.string
     })
   }),
   block: PropTypes.bool
 }
 
 Button.defaultProps = {
-  checkmark: WhiteCheckmark,
+  checkmark: Checkmark,
   spinner: WhiteSpinner,
   block: false
 }
