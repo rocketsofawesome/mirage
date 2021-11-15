@@ -6,7 +6,9 @@ const H1 = styled.h1`
   ${props => props.center ? 'text-align: center;' : ''}
   letter-spacing: ${props => props.letterSpacing};
   text-transform: ${props => props.lowercase
-    ? 'inherit' : 'uppercase'};
+    ? 'inherit'
+    : 'uppercase'
+  };
 
   color: ${colorFromProp('color')};
 
