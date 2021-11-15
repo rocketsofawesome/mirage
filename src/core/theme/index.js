@@ -12,9 +12,9 @@ const themeNames = {
 export default class ROATheme extends Component {
   render () {
     const { themeName } = this.props
-    const themeRules = themeNames[themeName]
+    const theme = themeNames[themeName]
     return (
-      <ThemeProvider theme={themeRules} {...this.props}>
+      <ThemeProvider theme={theme} {...this.props}>
         {this.props.children}
       </ThemeProvider>
     )

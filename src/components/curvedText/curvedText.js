@@ -3,35 +3,17 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import colorFromProp from 'utils/colors'
 
-// Sourced from this gist: https://gist.github.com/garth/0ca97a1112cb969cb72d951a85d3a0fe
-/*
-Draws text around a circule (the object).
-Text is centered at the top of the circle.
-Depends on styled-components, but can be adapted for other frameworks.
-<CurvedText
-  text="I'm curved"
-  objectSize={100} // diameter of the circle to wrap the text around
-  spacing={12} // padding between the circle and text
-  offset={30} // ammount of space for text, make this bigger to stop larger text from being cropped
-  overlap={true} // sets the bottom margin to negative so that the text is centered around the object
-/>
-*/
-
 const CurvedText = (props) => {
   const {
     text,
     fontSize,
-    objectSize,
-    spacing,
-    offset,
+    letterSpacing,
     overlap
   } = props
 
-  const d = objectSize + spacing * 2
-  const r = objectSize / 2 + spacing / 2
   const Container = styled.div`
-    margin-bottom: ${overlap ? `-${r}px` : '0'};
-    height: ${r + offset}px;
+    margin-bottom: ${overlap ? '-100px' : '0'};
+    max-height: 100px;
     color: ${colorFromProp('color')};
     
     path {
@@ -40,7 +22,7 @@ const CurvedText = (props) => {
     text {
       fill: currentColor;
       text-anchor: middle;
-      letter-spacing: normal;
+      letter-spacing: ${letterSpacing};
       line-height: normal;
       font-family: ${props => props.theme.fonts.headerFont};
       font-size: ${fontSize};
@@ -49,9 +31,9 @@ const CurvedText = (props) => {
 
   return (
     <Container className='curved-text'>
-      <svg viewBox={`0 0 ${d + offset * 2} ${r + offset * 2}`}>
-        <path id='curve' d={`M${offset},${r + offset} A${r},${r} 0 0,1 ${d + offset},${r + offset}`} />
-        <text width='500'>
+      <svg viewBox='0 0 250 200'>
+        <path id='curve' d='M50 40 Q125 0, 200 40' />
+        <text width='250'>
           <textPath xlinkHref='#curve' startOffset='50%'>
             {text}
           </textPath>
@@ -62,19 +44,16 @@ const CurvedText = (props) => {
 }
 
 CurvedText.propTypes = {
+  fontSize: PropTypes.string,
+  letterSpacing: PropTypes.string,
   text: PropTypes.string.isRequired,
-  objectSize: PropTypes.number,
-  spacing: PropTypes.number,
-  offset: PropTypes.number,
   overlap: PropTypes.bool,
   color: PropTypes.string
 }
 
 CurvedText.defaultProps = {
   fontSize: '1.6rem',
-  objectSize: 250,
-  spacing: 12,
-  offset: 40,
+  letterSpacing: 'normal',
   overlap: true,
   color: 'navy'
 }
