@@ -60,7 +60,7 @@ H1.defaultProps = {
     mobile: 1.3
   },
   margin: '5.5rem 0',
-  color: 'navy'
+  color: 'textPrimary'
 }
 
 export default H1
