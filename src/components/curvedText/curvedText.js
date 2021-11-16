@@ -12,9 +12,13 @@ const CurvedText = (props) => {
   } = props
 
   const Container = styled.div`
-    margin-bottom: ${overlap ? '-100px' : '0'};
-    max-height: 100px;
+    margin-bottom: ${overlap ? '0' : '200px'};
+    max-height: 400px;
     color: ${colorFromProp('color')};
+
+    svg {
+      display: block;
+    }
     
     path {
       fill: transparent;
@@ -31,9 +35,9 @@ const CurvedText = (props) => {
 
   return (
     <Container className='curved-text'>
-      <svg viewBox='0 0 250 200'>
-        <path id='curve' d='M50 40 Q125 0, 200 40' />
-        <text width='250'>
+      <svg viewBox='0 0 200 100'>
+        <path id='curve' d='M0 40 Q100 0, 200 40' />
+        <text width='200'>
           <textPath xlinkHref='#curve' startOffset='50%'>
             {text}
           </textPath>
