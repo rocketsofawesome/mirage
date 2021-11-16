@@ -53,6 +53,11 @@ exports[`(Styled) SubMenu matching the snapshot 1`] = `
   transition: all 0.25s ease-in-out;
 }
 
+.c0 .highlighted {
+  background-color: #0073D1;
+  color: #FFFFFF;
+}
+
 .c0 .enter {
   z-index: 4;
   -webkit-animation: cOMQan 0.25s;

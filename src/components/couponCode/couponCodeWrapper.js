@@ -20,7 +20,7 @@ const RemoveWrapper = styled.div`
 `
 
 const PromoLabel = styled.div`
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   font-family: ${props => props.theme.fonts.primaryFont};
   font-size: 14px;
   display: inline-block;

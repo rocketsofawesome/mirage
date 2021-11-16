@@ -5,7 +5,7 @@ import { NavyCheckmark } from 'SRC/core/icons/Checkmark'
 import { NavySpinner } from 'SRC/core/icons/Spinner'
 
 const WhiteButton = styled(BaseButton)`
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   background-color: ${props => props.theme.colors.white};
   border-color: transparent;
 

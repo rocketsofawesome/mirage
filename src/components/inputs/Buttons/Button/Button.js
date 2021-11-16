@@ -2,44 +2,13 @@ import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
 
 import { WhiteSpinner } from 'SRC/core/icons/Spinner'
-import { WhiteCheckmark } from 'SRC/core/icons/Checkmark'
 import BaseButton from './Button.base'
-
-const regularStyles = css`
-  background-color: ${props => props.theme.colors.rocketBlue};
-  &:hover {
-    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.rocketBlueHover};
-  }
-  border-color: transparent;
-  color: ${props => props.theme.colors.white};
-`
-
-const miniStyles = css`
-  border: 3px solid ${props => props.theme.colors.lightPink};
-  background-color: white;
-  color: ${props => props.theme.colors.rocketBlue};
-`
+import Checkmark from 'SRC/core/icons/Checkmark/Checkmark.base'
 
 const disabledOrLoading = css`
   background-color: ${props => props.theme.colors.loading};
+  border: none;
 `
-const regularStylesSelected = css`
-  background-color: ${props => props.theme.colors.navy}
-`
-
-const miniStylesSelected = css`
-  background-color: ${props => props.theme.colors.lightPink};
-`
-
-const kindVariants = {
-  regular: regularStyles,
-  mini: miniStyles
-}
-
-const kindVariantsSelected = {
-  regular: regularStylesSelected,
-  mini: miniStylesSelected
-}
 
 const blockStyles = css`
   width: 100%;
@@ -47,9 +16,15 @@ const blockStyles = css`
 `
 
 const Button = styled(BaseButton)`
-  ${props => kindVariants[props.kind]}
+  background-color: ${props => props.selected ? props.theme.colors.buttonSelected : props.theme.colors.buttonPrimary};
+  &:hover {
+    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.buttonPrimaryHover};
+  }
+  border: ${props => props.theme.borders.inputBorder};
+  border-color: ${props => props.theme.colors.borderPrimary};
+  color: ${props => props.theme.colors.buttonTextPrimary};
+  stroke: ${props => props.theme.colors.buttonTextPrimary}
   ${props => props.block && blockStyles}
-  ${props => props.selected && kindVariantsSelected[props.kind]}
   ${props => (props.disabled || props.loading) && disabledOrLoading}
 `
 
@@ -64,19 +39,20 @@ Button.propTypes = {
   ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string,
-      white: PropTypes.string
+      buttonSelected: PropTypes.string,
+      buttonPrimary: PropTypes.string,
+      buttonPrimaryHover: PropTypes.string,
+      borderPrimary: PropTypes.string,
+      loading: PropTypes.string
     })
   }),
-  block: PropTypes.bool,
-  kind: PropTypes.string
+  block: PropTypes.bool
 }
 
 Button.defaultProps = {
-  checkmark: WhiteCheckmark,
+  checkmark: Checkmark,
   spinner: WhiteSpinner,
-  block: false,
-  kind: 'regular'
+  block: false
 }
 
 /** @component */

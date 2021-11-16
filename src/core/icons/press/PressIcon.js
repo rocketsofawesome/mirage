@@ -48,7 +48,7 @@ const PressIconBase = ({ brand, className, ...props }) => {
 }
 
 export const defaultStyle = css`
-  fill: ${props => props.theme.colors.navy};
+  fill: ${props => props.theme.colors.textPrimary};
 `
 
 export const selected = css`

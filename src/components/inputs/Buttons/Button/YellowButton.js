@@ -6,7 +6,7 @@ import { NavyCheckmark } from 'SRC/core/icons/Checkmark'
 import { NavySpinner } from 'SRC/core/icons/Spinner'
 
 const YellowButton = styled(BaseButton)`
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   border-color: transparent;
   background-color: ${props => props.theme.colors.yellow};
   &:hover {
@@ -25,7 +25,7 @@ YellowButton.propTypes = {
   ]).isRequired,
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      navy: PropTypes.string,
+      textPrimary: PropTypes.string,
       yellow: PropTypes.string
     })
   })

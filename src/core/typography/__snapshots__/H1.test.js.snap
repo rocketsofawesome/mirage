@@ -29,6 +29,7 @@ exports[`(Styled Component) H1 matching the snapshot 1`] = `
 
 <h1
   className="c0"
+  color="navy"
   letterSpacing=".1rem"
 />
 `;

@@ -10,29 +10,29 @@ import {
 
 import defaultProps from './defaultProps'
 
-const BaseAboutUs = ({className, header, sections, footer, ...props}) => {
-  return (<section className={className}>
-    <FlexCol mobile={{width: 4}} desktop={{width: 6, span: 3}}>
-      <H1>{header}</H1>
-    </FlexCol>
-    <FlexCol className='flexDiv' mobile={{width: 4}} desktop={{width: 10, span: 1}}>
-        {
-          sections.map((section, i) => {
-            return (
-              <FlexCol mobile={{width: 4}} desktop={{width: 4}} key={`about-us-${i}`}>
-                <div>
-                  <H2>{section.title}</H2>
-                  <P>{section.body}</P>
-                </div>
-              </FlexCol>
-            )
-          })
-        }
-    </FlexCol>
-    <FlexCol mobile={{width: 4}} desktop={{width: 12}}>
-      <H2>{footer}</H2>
-    </FlexCol>
-  </section>)
+const BaseAboutUs = ({ className, header, sections, footer, ...props }) => {
+  return (
+    <section className={className}>
+      <FlexCol mobile={{ width: 4 }} desktop={{ width: 6, span: 3 }}>
+        <H1>{header}</H1>
+      </FlexCol>
+      <FlexCol className='flexDiv' mobile={{ width: 4 }} desktop={{ width: 10, span: 1 }}>
+        {sections.map((section, i) => {
+          return (
+            <FlexCol mobile={{ width: 4 }} desktop={{ width: 4 }} key={`about-us-${i}`}>
+              <div>
+                <H2>{section.title}</H2>
+                <P>{section.body}</P>
+              </div>
+            </FlexCol>
+          )
+        })}
+      </FlexCol>
+      <FlexCol mobile={{ width: 4 }} desktop={{ width: 12 }}>
+        <H2>{footer}</H2>
+      </FlexCol>
+    </section>
+  )
 }
 
 const AboutUs = styled(BaseAboutUs)`

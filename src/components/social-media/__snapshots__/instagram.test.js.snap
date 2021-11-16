@@ -2,15 +2,22 @@
 
 exports[`(Styled Component) Instagram matching the snapshot 1`] = `
 <Styled(BaseInstagram)
-  accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
-  clientId="573c73f61f5342549cfabb281c37f4de"
-  limit={4}
   theme={
     Object {
       "base": undefined,
       "basePxSize": 10,
+      "borders": Object {
+        "inputBorder": "1px solid",
+      },
       "breakpoints": Object {
         "aboveDesktop": "(min-width: 1441px)",
+        "aboveIncludingDesktop": "(min-width: 1440px)",
+        "aboveIncludingLaptop": "(min-width: 1024px)",
+        "aboveIncludingMobileNav": "(min-width: 889px)",
+        "aboveIncludingPhone": "(min-width: 320px)",
+        "aboveIncludingPhoneMax": "(min-width: 414px)",
+        "aboveIncludingTablet": "(min-width: 768px)",
+        "aboveIncludingTabletMax": "(min-width: 960px)",
         "aboveLaptop": "(min-width: 1025px)",
         "aboveMobileNav": "(min-width: 890px)",
         "abovePhone": "(min-width: 321px)",
@@ -29,6 +36,13 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
       },
       "breakpointsVerbose": Object {
         "aboveDesktop": [Function],
+        "aboveIncludingDesktop": [Function],
+        "aboveIncludingLaptop": [Function],
+        "aboveIncludingMobileNav": [Function],
+        "aboveIncludingPhone": [Function],
+        "aboveIncludingPhoneMax": [Function],
+        "aboveIncludingTablet": [Function],
+        "aboveIncludingTabletMax": [Function],
         "aboveLaptop": [Function],
         "aboveMobileNav": [Function],
         "abovePhone": [Function],
@@ -47,8 +61,15 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
       },
       "colors": Object {
         "black": "#000000",
+        "borderPrimary": "#D5D5D5",
+        "buttonPrimary": "#0073D1",
+        "buttonPrimaryHover": "#0073EB",
+        "buttonSelected": "#00003C",
+        "buttonTextPrimary": "#FFFFFF",
+        "buttonUnselected": "#F3F3F3",
         "electricBlue": "#080CF1",
         "flameOrange": "#FF511C",
+        "focusPrimary": "#0073D1",
         "gray": Array [
           "#F3F3F3",
           "#F5F5F5",
@@ -83,6 +104,9 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
         "rocketBlue": "#0073D1",
         "rocketBlueHover": "#0073EB",
         "shadyLady": "#979797",
+        "textError": "#FF511C",
+        "textPrimary": "#00003C",
+        "textSecondary": "#0073D1",
         "white": "#FFFFFF",
         "yellow": "#F0FF02",
         "yellowHover": "#D8E320",
@@ -126,6 +150,5 @@ exports[`(Styled Component) Instagram matching the snapshot 1`] = `
       },
     }
   }
-  userId="2310062225"
 />
 `;

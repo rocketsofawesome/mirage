@@ -1,7 +1,5 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-
-import { theme } from 'SRC/core/theme'
 import { spaceFromProp } from 'utils/spacing'
 import colorFromProp from 'utils/colors'
 
@@ -29,14 +27,14 @@ P.propTypes = {
       primaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   })
 }
 
 P.defaultProps = {
   fontSize: '1.6rem',
-  color: theme.colors.navy,
+  color: 'textPrimary',
   align: 'inherit',
   marginTop: 'none',
   marginBottom: 'none'

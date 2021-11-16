@@ -61,7 +61,7 @@ const ItemName = styled.h4`
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.5px;
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   text-transform: uppercase;
 `
 
@@ -74,7 +74,7 @@ const ItemPrice = styled.h4`
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.5px;
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   text-transform: uppercase;
 
   .strikeThruPrice {
@@ -89,7 +89,7 @@ const Attribute = styled.div`
   font-size: 14px;
   font-weight: normal;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${props => props.red ? props.theme.colors.red : props.theme.colors.navy};
+  color: ${props => props.red ? props.theme.colors.red : props.theme.colors.textPrimary};
 
   em {
     margin-left: 6px;

@@ -5,7 +5,7 @@ const Serif = styled.span`
   text-align: left;
   letter-spacing: normal;
 
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
 
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: ${props => props.fontSize};
@@ -19,7 +19,7 @@ Serif.propTypes = {
       secondaryFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   })
 }

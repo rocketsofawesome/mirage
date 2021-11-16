@@ -51,5 +51,18 @@ const supportingColors = {
   loading: '#BFBFBF'
 }
 
-const colors = { ...brandColors, ...supportingColors }
+const themeColors = {
+  textPrimary: brandColors.navy,
+  textSecondary: brandColors.rocketBlue,
+  textError: brandColors.flameOrange,
+  borderPrimary: supportingColors.gray4,
+  buttonPrimary: brandColors.rocketBlue,
+  buttonPrimaryHover: brandColors.rocketBlueHover,
+  buttonSelected: brandColors.navy,
+  buttonUnselected: supportingColors.gray0,
+  buttonTextPrimary: brandColors.white,
+  focusPrimary: brandColors.rocketBlue
+}
+
+const colors = { ...brandColors, ...supportingColors, ...themeColors }
 export { colors }

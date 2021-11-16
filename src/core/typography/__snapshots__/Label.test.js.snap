@@ -17,6 +17,7 @@ exports[`(Component) Default Label matching the snapshot 1`] = `
 
 <LowercaseLabel>
   <styled.label
+    color="navy"
     fontSize="2rem"
     fontWeight="normal"
     letterSpacing="normal"
@@ -24,6 +25,7 @@ exports[`(Component) Default Label matching the snapshot 1`] = `
   >
     <label
       className="c0"
+      color="navy"
       fontSize="2rem"
       fontWeight="normal"
       letterSpacing="normal"
@@ -48,12 +50,14 @@ exports[`(Styled Component) Label matching the snapshot 1`] = `
 }
 
 <styled.label
+  color="navy"
   fontSize="1.4rem"
   fontWeight="500"
   letterSpacing=".1rem"
 >
   <label
     className="c0"
+    color="navy"
     fontSize="1.4rem"
     fontWeight="500"
     letterSpacing=".1rem"

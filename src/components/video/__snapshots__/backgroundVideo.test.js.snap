@@ -47,6 +47,9 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
       Object {
         "base": undefined,
         "basePxSize": 10,
+        "borders": Object {
+          "inputBorder": "1px solid",
+        },
         "breakpoints": Object {
           "aboveDesktop": "(min-width: 1441px)",
           "aboveIncludingDesktop": "(min-width: 1440px)",
@@ -99,8 +102,15 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         },
         "colors": Object {
           "black": "#000000",
+          "borderPrimary": "#D5D5D5",
+          "buttonPrimary": "#0073D1",
+          "buttonPrimaryHover": "#0073EB",
+          "buttonSelected": "#00003C",
+          "buttonTextPrimary": "#FFFFFF",
+          "buttonUnselected": "#F3F3F3",
           "electricBlue": "#080CF1",
           "flameOrange": "#FF511C",
+          "focusPrimary": "#0073D1",
           "gray": Array [
             "#F3F3F3",
             "#F5F5F5",
@@ -135,6 +145,9 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
           "rocketBlue": "#0073D1",
           "rocketBlueHover": "#0073EB",
           "shadyLady": "#979797",
+          "textError": "#FF511C",
+          "textPrimary": "#00003C",
+          "textSecondary": "#0073D1",
           "white": "#FFFFFF",
           "yellow": "#F0FF02",
           "yellowHover": "#D8E320",
@@ -196,6 +209,9 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
         Object {
           "base": undefined,
           "basePxSize": 10,
+          "borders": Object {
+            "inputBorder": "1px solid",
+          },
           "breakpoints": Object {
             "aboveDesktop": "(min-width: 1441px)",
             "aboveIncludingDesktop": "(min-width: 1440px)",
@@ -248,8 +264,15 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
           },
           "colors": Object {
             "black": "#000000",
+            "borderPrimary": "#D5D5D5",
+            "buttonPrimary": "#0073D1",
+            "buttonPrimaryHover": "#0073EB",
+            "buttonSelected": "#00003C",
+            "buttonTextPrimary": "#FFFFFF",
+            "buttonUnselected": "#F3F3F3",
             "electricBlue": "#080CF1",
             "flameOrange": "#FF511C",
+            "focusPrimary": "#0073D1",
             "gray": Array [
               "#F3F3F3",
               "#F5F5F5",
@@ -284,6 +307,9 @@ exports[`(Styled Component) BackgroundVideo matching the snapshot 1`] = `
             "rocketBlue": "#0073D1",
             "rocketBlueHover": "#0073EB",
             "shadyLady": "#979797",
+            "textError": "#FF511C",
+            "textPrimary": "#00003C",
+            "textSecondary": "#0073D1",
             "white": "#FFFFFF",
             "yellow": "#F0FF02",
             "yellowHover": "#D8E320",

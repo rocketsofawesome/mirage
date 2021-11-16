@@ -38,6 +38,7 @@ exports[`(Styled Component) MobileNavigation matching the snapshot 1`] = `
   className="c0"
   drawerPosition="fixed"
   homepageUrl="https://rocketsofawesome.com"
+  showBlog="true"
   showSearch={false}
 />
 `;

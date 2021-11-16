@@ -9,7 +9,7 @@ const TransparentCircleChevron = styled(BaseChevron)`
     opacity: 0.5;
   }
   polyline {
-    stroke: ${props => props.theme.colors.navy};
+    stroke: ${props => props.theme.colors.textPrimary};
     stroke-width: 2;
   }
 `
@@ -17,7 +17,7 @@ const TransparentCircleChevron = styled(BaseChevron)`
 TransparentCircleChevron.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.array
+      textPrimary: PropTypes.array
     })
   }),
   width: PropTypes.string

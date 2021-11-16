@@ -89,12 +89,14 @@ exports[`(Component) UnstyledGuarantee mathing the snapsot 1`] = `
           </UnstyledGuaranteeIcon>
         </Styled(UnstyledGuaranteeIcon)>
         <styled.label
+          color="navy"
           fontSize="1.4rem"
           fontWeight="500"
           letterSpacing=".1rem"
         >
           <label
             className="c3"
+            color="navy"
             fontSize="1.4rem"
             fontWeight="500"
             letterSpacing=".1rem"
@@ -219,12 +221,14 @@ exports[`(Styled Component) Guarantee matching the snapshot 1`] = `
             </UnstyledGuaranteeIcon>
           </Styled(UnstyledGuaranteeIcon)>
           <styled.label
+            color="navy"
             fontSize="1.4rem"
             fontWeight="500"
             letterSpacing=".1rem"
           >
             <label
               className="c4"
+              color="navy"
               fontSize="1.4rem"
               fontWeight="500"
               letterSpacing=".1rem"

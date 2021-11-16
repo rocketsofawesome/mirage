@@ -1,48 +1,21 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled, { css } from 'styled-components'
-
+import styled from 'styled-components'
 import ErrorMessage from 'SRC/components/inputs/ErrorMessage'
-
-function pickColor(props, color) {
-  if (props.error) {
-    return props.theme.colors.flameOrange
-  }
-  return props.theme.colors[color]
-}
-
-const regularContainerStyles = css`
-  border: 1px solid ${props => pickColor(props, 'gray4')}
-`
-
-const miniContainerStyles = css`
-  border: 3px solid ${props => pickColor(props, 'lightPink')}
-`
-
-const containerVariants = {
-  regular: regularContainerStyles,
-  mini: miniContainerStyles
-}
 
 const Container = styled.div`
   background-color: white;
   width: 100%;
   padding: 10px 16px 6px;
-  ${props => containerVariants[props.kind]};
+  border: ${props => props.theme.borders.inputBorder};
+  border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
 `
-
-function labelColor (props) {
-  if (props.kind === 'mini') {
-    return props.theme.colors.rocketBlue
-  }
-  return props.theme.colors.navy
-}
 
 const Label = styled.label`
   display: block;
   font-size: 12px;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${labelColor};
+  color: ${props => props.theme.colors.textPrimary};
   letter-spacing: .5px;
   font-weight: 200;
   text-align: left;
@@ -53,23 +26,6 @@ const SelectContainer = styled.div`
   padding-top: 5px;
 `
 
-const regularSelectStyles = css`
-  color: ${props => props.theme.colors.navy};
-
-  &:focus {
-    color: ${props => props.theme.colors.rocketBlue};
-  }
-`
-
-const miniSelectStyles = css`
-  color: ${props => props.theme.colors.rocketBlue};
-`
-
-const selectVariants = {
-  regular: regularSelectStyles,
-  mini: miniSelectStyles
-}
-
 const Select = styled.select`
   background-color: transparent;
   flex-grow: 1;
@@ -79,7 +35,11 @@ const Select = styled.select`
   font-family: ${props => props.theme.fonts.secondaryFont};
   font-size: 20px;
 
-  ${props => selectVariants[props.kind]}
+  color: ${props => props.theme.colors.textPrimary};
+
+  &:focus {
+    color: ${props => props.theme.colors.focusPrimary};
+  }
 `
 
 function buildYears(baseYear, yearOffset) {
@@ -190,7 +150,6 @@ class Datepicker extends React.Component {
       baseYear,
       error,
       initialValue,
-      kind,
       label,
       months,
       touched,
@@ -204,12 +163,11 @@ class Datepicker extends React.Component {
 
     return (
       <div>
-        <Container kind={kind} error={showError}>
-          <Label kind={kind}>{label}</Label>
+        <Container error={showError}>
+          <Label>{label}</Label>
           <SelectContainer>
             <Select
               name='month'
-              kind={kind}
               onChange={this.handleMonthChange}
               onBlur={this.handleBlur}
               defaultValue={defaults.month}
@@ -228,7 +186,6 @@ class Datepicker extends React.Component {
             <Select
               indented
               name='day'
-              kind={kind}
               onChange={this.handleChange}
               onBlur={this.handleBlur}
               defaultValue={defaults.day}
@@ -247,7 +204,6 @@ class Datepicker extends React.Component {
             <Select
               indented
               name='year'
-              kind={kind}
               onChange={this.handleChange}
               onBlur={this.handleBlur}
               defaultValue={defaults.year}
@@ -280,7 +236,6 @@ Datepicker.propTypes = {
     PropTypes.string,
     PropTypes.instanceOf(Date)
   ]),
-  kind: PropTypes.string,
   label: PropTypes.string.isRequired,
   months: PropTypes.array,
   onChange: PropTypes.func.isRequired,
@@ -293,7 +248,6 @@ Datepicker.defaultProps = {
   baseYear: defaultBaseYear(),
   error: null,
   initialValue: null,
-  kind: 'regular',
   months: [
     'January',
     'February',

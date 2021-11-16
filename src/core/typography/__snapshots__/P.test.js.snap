@@ -10,13 +10,14 @@ exports[`(Styled Component) P matching the snapshot 1`] = `
   font-size: 1.6rem;
   line-height: normal;
   text-align: inherit;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #00003C;
 }
 
 <p
   className="c0"
-  color="#00003C"
+  color="textPrimary"
   fontSize="1.6rem"
 />
 `;

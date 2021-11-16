@@ -47,7 +47,7 @@ Label.propTypes = {
 }
 
 Label.defaultProps = {
-  color: 'navy',
+  color: 'textPrimary',
   letterSpacing: '.1rem',
   fontSize: '1.4rem',
   fontWeight: '500'

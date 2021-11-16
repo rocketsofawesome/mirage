@@ -54,7 +54,7 @@ const CartSidebarHeader = styled.div`
 const ItemCount = styled.h5`
   text-align: center;
   justify-content: center;
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   letter-spacing: 1px;
   font-weight: 200;
   font-size: 18px;
@@ -115,7 +115,7 @@ const Footer = styled.footer`
 `
 
 const Total = styled(H4)`
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   letter-spacing: 0.5px;
   font-size: 20px;
   font-family: ${props => props.theme.fonts.headerFont};
@@ -142,7 +142,7 @@ const CheckoutLink = styled(({ renderLink, children, ...props }) => {
   display: block;
   vertical-align: middle;
   cursor: pointer;
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   font-size: 14px;
   letter-spacing: 0;
   font-family: ${props => props.theme.fonts.primaryFont};
@@ -157,7 +157,7 @@ const GiftLink = styled(({ renderLink, children, ...props }) => {
   }
 })`
   cursor: pointer;
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   font-size: 1.4rem;
   font-family: ${props => props.theme.fonts.primaryFont};
   text-decoration: underline;

@@ -36,7 +36,7 @@ H2.defaultProps = {
     mobile: '2.4rem'
   },
   margin: '2.6rem 0',
-  color: 'navy'
+  color: 'textPrimary'
 }
 
 export default H2

@@ -6,10 +6,10 @@ import BaseLink, {BaseStyles} from './Link.base'
 const BlueStyles = css`
   color:  ${props => props.theme.colors.rocketBlue};
   &:active, &:focus, &:hover {
-    color: ${props => props.theme.colors.navy};
-    ${props => props.underline ?
-      `border-bottom-color: ${props.theme.colors.navy};` :
-      ''
+    color: ${props => props.theme.colors.textPrimary};
+    ${props => props.underline 
+      ? `border-bottom-color: ${props.theme.colors.textPrimary};`
+      : ''
     }
   }
 `
@@ -26,7 +26,8 @@ const Link = styled(BaseLink)`
 Link.propTypes = {
   theme: PropTypes.shape({
     colors: PropTypes.shape({
-      rocketBlue: PropTypes.string
+      rocketBlue: PropTypes.string,
+      textPrimary: PropTypes.string
     })
   }),
   uppercase: PropTypes.bool,

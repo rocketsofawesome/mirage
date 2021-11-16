@@ -27,7 +27,7 @@ const Label = styled.label`
   display: block;
   font-size: 12px;
   font-family: ${props => props.theme.fonts.primaryFont};
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   letter-spacing: .5px;
   font-weight: 200;
   text-align: left;

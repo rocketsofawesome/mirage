@@ -4,9 +4,11 @@ import styled from 'styled-components'
 const H3 = styled.h3`
   letter-spacing: .05rem;
   text-transform: ${props => props.lowercase
-    ? 'inherit' : 'uppercase'};
+    ? 'inherit'
+    : 'uppercase'
+  };
 
-  color: ${props => props.theme.colors.navy};
+  color: ${props => props.theme.colors.textPrimary};
   text-align: ${props => props.align};
 
   font-family: ${props => props.theme.fonts.headerFont};
@@ -23,7 +25,7 @@ H3.propTypes = {
       headerFont: PropTypes.string
     }),
     colors: PropTypes.shape({
-      navy: PropTypes.string
+      textPrimary: PropTypes.string
     })
   }),
   lowercase: PropTypes.bool

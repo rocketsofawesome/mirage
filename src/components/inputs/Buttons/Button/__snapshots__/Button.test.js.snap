@@ -61,8 +61,10 @@ exports[`(Styled Componenet) Button matching the snapshot 1`] = `
 
 .c0 {
   background-color: #0073D1;
-  border-color: transparent;
+  border: 1px solid;
+  border-color: #D5D5D5;
   color: #FFFFFF;
+  stroke: #FFFFFF;
 }
 
 .c0:hover {
@@ -72,7 +74,6 @@ exports[`(Styled Componenet) Button matching the snapshot 1`] = `
 <Styled(Styled(CustomButton))
   block={false}
   checkmark={[Function]}
-  kind="regular"
   spinner={[Function]}
 >
   <Styled(CustomButton)
@@ -80,7 +81,6 @@ exports[`(Styled Componenet) Button matching the snapshot 1`] = `
     checkmark={[Function]}
     className="c0"
     height="50px"
-    kind="regular"
     spinner={[Function]}
   >
     <CustomButton
@@ -88,13 +88,11 @@ exports[`(Styled Componenet) Button matching the snapshot 1`] = `
       checkmark={[Function]}
       className="c0 c1"
       height="50px"
-      kind="regular"
       spinner={[Function]}
     >
       <button
         className="c0 c1"
         height="50px"
-        kind="regular"
       >
         <span>
           Example

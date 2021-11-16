@@ -73,6 +73,7 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
             level={1}
           >
             <styled.h1
+              color="navy"
               fontSizes={
                 Object {
                   "desktop": "4.2rem",
@@ -90,6 +91,7 @@ exports[`(Styled Component) markdown matching the snapshot 1`] = `
             >
               <h1
                 className="c1 c2"
+                color="navy"
                 letterSpacing=".1rem"
               >
                 <TextRenderer

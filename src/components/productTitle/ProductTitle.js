@@ -33,7 +33,7 @@ const Pricing = styled.div`
   font-family: ${props => props.theme.fonts.headerFont};
   line-height: 1.13;
   letter-spacing: 0.5px;
-  color: ${props => props.theme.colors.navyBlue};
+  color: ${props => props.theme.colors.textPrimary};
   font-size: 18px;
 
   ${props => props.theme.breakpointsVerbose.aboveTablet`
