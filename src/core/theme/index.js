@@ -14,7 +14,7 @@ export default class ROATheme extends Component {
     const { themeName } = this.props
     const theme = themeNames[themeName]
     return (
-      <ThemeProvider theme={miniTheme} {...this.props}>
+      <ThemeProvider theme={theme} {...this.props}>
         {this.props.children}
       </ThemeProvider>
     )
