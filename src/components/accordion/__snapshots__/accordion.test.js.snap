@@ -82,9 +82,11 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
 }
 
 .c0 {
-  color: #FFFFFF;
-  border-color: transparent;
   background-color: #0073D1;
+  border: 1px solid;
+  border-color: #D5D5D5;
+  color: #FFFFFF;
+  stroke: #FFFFFF;
 }
 
 .c0:hover {
@@ -95,6 +97,7 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
   ignoreErrors={true}
   toggleElement={
     <Styled(Styled(CustomButton))
+      block={false}
       checkmark={[Function]}
       spinner={[Function]}
     >
@@ -106,12 +109,14 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
     role="region"
   >
     <Styled(Styled(CustomButton))
+      block={false}
       checkmark={[Function]}
       className="toggleElement"
       onClick={[Function]}
       spinner={[Function]}
     >
       <Styled(CustomButton)
+        block={false}
         checkmark={[Function]}
         className="toggleElement c0"
         height="50px"
@@ -119,6 +124,7 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
         spinner={[Function]}
       >
         <CustomButton
+          block={false}
           checkmark={[Function]}
           className="toggleElement c0 c1"
           height="50px"
@@ -339,9 +345,11 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
 }
 
 .c1 {
-  color: #FFFFFF;
-  border-color: transparent;
   background-color: #0073D1;
+  border: 1px solid;
+  border-color: #D5D5D5;
+  color: #FFFFFF;
+  stroke: #FFFFFF;
 }
 
 .c1:hover {
@@ -352,6 +360,7 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
   ignoreErrors={true}
   toggleElement={
     <Styled(Styled(CustomButton))
+      block={false}
       checkmark={[Function]}
       spinner={[Function]}
     >
@@ -364,6 +373,7 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
     ignoreErrors={true}
     toggleElement={
       <Styled(Styled(CustomButton))
+        block={false}
         checkmark={[Function]}
         spinner={[Function]}
       >
@@ -376,12 +386,14 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
       role="region"
     >
       <Styled(Styled(CustomButton))
+        block={false}
         checkmark={[Function]}
         className="toggleElement"
         onClick={[Function]}
         spinner={[Function]}
       >
         <Styled(CustomButton)
+          block={false}
           checkmark={[Function]}
           className="toggleElement c1"
           height="50px"
@@ -389,6 +401,7 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
           spinner={[Function]}
         >
           <CustomButton
+            block={false}
             checkmark={[Function]}
             className="toggleElement c1 c2"
             height="50px"

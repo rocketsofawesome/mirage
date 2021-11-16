@@ -13,6 +13,7 @@ exports[`(Styled Component) NavyLink matching the snapshot 1`] = `
   font-size: 1.4rem;
   font-weight: 500;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c1:active,

@@ -13,6 +13,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c5:active,
@@ -82,6 +83,11 @@ exports[`(Styled Component) DesktopAccountLinks when logged in matching the snap
   color: #FFFFFF;
   -webkit-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
+}
+
+.c6 .highlighted {
+  background-color: #0073D1;
+  color: #FFFFFF;
 }
 
 .c6 .enter {
@@ -336,6 +342,7 @@ exports[`(Styled Component) DesktopAccountLinks when logged out matching the sna
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c4:active,

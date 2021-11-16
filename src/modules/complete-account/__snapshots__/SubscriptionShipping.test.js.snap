@@ -165,14 +165,14 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
       <aside>
         <styled.p
           align="inherit"
-          color="#00003C"
+          color="textPrimary"
           fontSize="1.6rem"
           marginBottom="none"
           marginTop="none"
         >
           <p
             className="c3 c4"
-            color="#00003C"
+            color="textPrimary"
             fontSize="1.6rem"
           >
             Seasonal Shipments
@@ -180,14 +180,14 @@ exports[`(Component) UnstyledSubscriptionShipping matching the snapshot 1`] = `
         </styled.p>
         <styled.p
           align="inherit"
-          color="#00003C"
+          color="textPrimary"
           fontSize="1.6rem"
           marginBottom="none"
           marginTop="none"
         >
           <p
             className="c3 c4"
-            color="#00003C"
+            color="textPrimary"
             fontSize="1.6rem"
           >
             A box every 3 months. So easy. Simple to cancel anytime.
@@ -390,14 +390,14 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
         <aside>
           <styled.p
             align="inherit"
-            color="#00003C"
+            color="textPrimary"
             fontSize="1.6rem"
             marginBottom="none"
             marginTop="none"
           >
             <p
               className="c4 c5"
-              color="#00003C"
+              color="textPrimary"
               fontSize="1.6rem"
             >
               Seasonal Shipments
@@ -405,14 +405,14 @@ exports[`(Styled component) SubscriptionShipping matching the snapshot 1`] = `
           </styled.p>
           <styled.p
             align="inherit"
-            color="#00003C"
+            color="textPrimary"
             fontSize="1.6rem"
             marginBottom="none"
             marginTop="none"
           >
             <p
               className="c4 c5"
-              color="#00003C"
+              color="textPrimary"
               fontSize="1.6rem"
             >
               A box every 3 months. So easy. Simple to cancel anytime.

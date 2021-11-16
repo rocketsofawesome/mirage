@@ -53,7 +53,8 @@ exports[`() ProductInformation matching the snapshot 1`] = `
   font-size: 1.6rem;
   line-height: normal;
   text-align: inherit;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #00003C;
 }
 
@@ -126,6 +127,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
         </h3>
       </styled.h3>
       <styled.h1
+        color="navy"
         fontSizes={
           Object {
             "desktop": "4.2rem",
@@ -143,12 +145,14 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       >
         <h1
           className="c3 c4"
+          color="navy"
           letterSpacing=".1rem"
         >
           Weekends Are For Fun Outfit
         </h1>
       </styled.h1>
       <styled.h2
+        color="navy"
         fontSizes={
           Object {
             "desktop": "3.2rem",
@@ -159,6 +163,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       >
         <h2
           className="c5 c6"
+          color="navy"
         >
           $55
         </h2>
@@ -180,12 +185,14 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       </Styled(Styled(UnstyledHr))>
       <styled.p
         align="inherit"
-        color="#00003C"
+        color="textPrimary"
         fontSize="1.6rem"
+        marginBottom="none"
+        marginTop="none"
       >
         <p
           className="c9"
-          color="#00003C"
+          color="textPrimary"
           fontSize="1.6rem"
         >
           Cheesecake bocconcini red leicester. Melted cheese when the cheese comes out everybody's happy.

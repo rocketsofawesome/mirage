@@ -24,6 +24,7 @@ exports[`() SizePicker matching the snapshot 1`] = `
   font-size: 1.4rem;
   font-weight: 200;
   cursor: pointer;
+  color: #00003C;
   border: solid 0.1rem #0073D1;
   position: relative;
 }

@@ -24,15 +24,17 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   font-size: 1.6rem;
   line-height: normal;
   text-align: inherit;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   color: #00003C;
 }
 
 .c5 {
   width: 100%;
+  padding: 0 7%;
 }
 
-.c5 .desktopContainer {
+.c5 .gifContainer {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -46,80 +48,22 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   justify-content: center;
 }
 
-.c5 .desktopContainer > a {
+.c5 .gifContainer > a {
   width: 50%;
   max-width: 28rem;
   padding: 1rem;
   box-sizing: border-box;
 }
 
-.c5 .desktopContainer > a img {
+.c5 .gifContainer > a img {
   width: 100%;
   max-width: 26rem;
 }
 
-.c5 .desktopContainer .gif {
+.c5 .gifContainer .gif {
   height: 260px;
-  margin-right: -50px;
   z-index: 0;
-}
-
-.c5 .mobileContainer {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: relative;
-}
-
-.c5 .mobileGif {
-  width: 14rem;
-  left: 0;
-  position: absolute;
   padding-left: 5px;
-}
-
-.c5 .mobileImg {
-  width: 20rem;
-}
-
-.c5 .slider {
-  overflow: hidden;
-}
-
-.c5 .slider > div > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.c5 .slider .slick-slide {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  padding-right: 20px;
-}
-
-.c5 .image-link {
-  font-size: 0px;
 }
 
 .c0 {
@@ -170,6 +114,73 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
   }
 }
 
+@media (max-width:767px) {
+  .c5 {
+    display: block !important;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width:959px) {
+  .c5 .gifContainer .gif {
+    width: 14rem;
+    height: auto;
+    left: 0;
+    position: absolute;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 .gifContainer .gif {
+    position: relative;
+    padding-left: 0;
+  }
+}
+
+@media (max-width:959px) {
+  .c5 .gifContainer {
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 .gifContainer {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width:1024px) {
+  .c5 .gallery-container {
+    padding-left: 5px;
+  }
+}
+
+@media (max-width:1023px) {
+  .c5 .gallery-container {
+    margin-left: 14rem;
+  }
+}
+
+@media (max-width:767px) {
+  .c5 .gallery-container {
+    margin-left: 0;
+  }
+}
+
 @media (max-width:958px) {
   .c0 .c1 {
     font-size: 3.4rem;
@@ -192,6 +203,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
     >
       <styled.h1
         aria-label="Find us @ rockets of awesome"
+        color="navy"
         fontSizes={
           Object {
             "desktop": "4.2rem",
@@ -210,6 +222,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         <h1
           aria-label="Find us @ rockets of awesome"
           className="c1 c2"
+          color="navy"
           letterSpacing=".1rem"
         >
           Example Title
@@ -217,12 +230,14 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
       </styled.h1>
       <styled.p
         align="inherit"
-        color="#00003C"
+        color="textPrimary"
         fontSize="1.6rem"
+        marginBottom="none"
+        marginTop="none"
       >
         <p
           className="c3 c4"
-          color="#00003C"
+          color="textPrimary"
           fontSize="1.6rem"
         >
           This is the example content
@@ -230,15 +245,22 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
       </styled.p>
       <WithTheme(Styled(BaseInstagram))>
         <Styled(BaseInstagram)
-          accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
-          clientId="573c73f61f5342549cfabb281c37f4de"
-          limit={4}
           theme={
             Object {
               "base": undefined,
               "basePxSize": 10,
+              "borders": Object {
+                "inputBorder": "1px solid",
+              },
               "breakpoints": Object {
                 "aboveDesktop": "(min-width: 1441px)",
+                "aboveIncludingDesktop": "(min-width: 1440px)",
+                "aboveIncludingLaptop": "(min-width: 1024px)",
+                "aboveIncludingMobileNav": "(min-width: 889px)",
+                "aboveIncludingPhone": "(min-width: 320px)",
+                "aboveIncludingPhoneMax": "(min-width: 414px)",
+                "aboveIncludingTablet": "(min-width: 768px)",
+                "aboveIncludingTabletMax": "(min-width: 960px)",
                 "aboveLaptop": "(min-width: 1025px)",
                 "aboveMobileNav": "(min-width: 890px)",
                 "abovePhone": "(min-width: 321px)",
@@ -257,6 +279,13 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               },
               "breakpointsVerbose": Object {
                 "aboveDesktop": [Function],
+                "aboveIncludingDesktop": [Function],
+                "aboveIncludingLaptop": [Function],
+                "aboveIncludingMobileNav": [Function],
+                "aboveIncludingPhone": [Function],
+                "aboveIncludingPhoneMax": [Function],
+                "aboveIncludingTablet": [Function],
+                "aboveIncludingTabletMax": [Function],
                 "aboveLaptop": [Function],
                 "aboveMobileNav": [Function],
                 "abovePhone": [Function],
@@ -275,8 +304,15 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               },
               "colors": Object {
                 "black": "#000000",
+                "borderPrimary": "#D5D5D5",
+                "buttonPrimary": "#0073D1",
+                "buttonPrimaryHover": "#0073EB",
+                "buttonSelected": "#00003C",
+                "buttonTextPrimary": "#FFFFFF",
+                "buttonUnselected": "#F3F3F3",
                 "electricBlue": "#080CF1",
                 "flameOrange": "#FF511C",
+                "focusPrimary": "#0073D1",
                 "gray": Array [
                   "#F3F3F3",
                   "#F5F5F5",
@@ -311,6 +347,9 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                 "rocketBlue": "#0073D1",
                 "rocketBlueHover": "#0073EB",
                 "shadyLady": "#979797",
+                "textError": "#FF511C",
+                "textPrimary": "#00003C",
+                "textSecondary": "#0073D1",
                 "white": "#FFFFFF",
                 "yellow": "#F0FF02",
                 "yellowHover": "#D8E320",
@@ -354,19 +393,25 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               },
             }
           }
-          userId="2310062225"
         >
           <BaseInstagram
-            accessToken="2310062225.ec19fa8.24ef99c73cee4fbaac4ba574be6125eb"
             className="c5"
-            clientId="573c73f61f5342549cfabb281c37f4de"
-            limit={4}
             theme={
               Object {
                 "base": undefined,
                 "basePxSize": 10,
+                "borders": Object {
+                  "inputBorder": "1px solid",
+                },
                 "breakpoints": Object {
                   "aboveDesktop": "(min-width: 1441px)",
+                  "aboveIncludingDesktop": "(min-width: 1440px)",
+                  "aboveIncludingLaptop": "(min-width: 1024px)",
+                  "aboveIncludingMobileNav": "(min-width: 889px)",
+                  "aboveIncludingPhone": "(min-width: 320px)",
+                  "aboveIncludingPhoneMax": "(min-width: 414px)",
+                  "aboveIncludingTablet": "(min-width: 768px)",
+                  "aboveIncludingTabletMax": "(min-width: 960px)",
                   "aboveLaptop": "(min-width: 1025px)",
                   "aboveMobileNav": "(min-width: 890px)",
                   "abovePhone": "(min-width: 321px)",
@@ -385,6 +430,13 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                 },
                 "breakpointsVerbose": Object {
                   "aboveDesktop": [Function],
+                  "aboveIncludingDesktop": [Function],
+                  "aboveIncludingLaptop": [Function],
+                  "aboveIncludingMobileNav": [Function],
+                  "aboveIncludingPhone": [Function],
+                  "aboveIncludingPhoneMax": [Function],
+                  "aboveIncludingTablet": [Function],
+                  "aboveIncludingTabletMax": [Function],
                   "aboveLaptop": [Function],
                   "aboveMobileNav": [Function],
                   "abovePhone": [Function],
@@ -403,8 +455,15 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                 },
                 "colors": Object {
                   "black": "#000000",
+                  "borderPrimary": "#D5D5D5",
+                  "buttonPrimary": "#0073D1",
+                  "buttonPrimaryHover": "#0073EB",
+                  "buttonSelected": "#00003C",
+                  "buttonTextPrimary": "#FFFFFF",
+                  "buttonUnselected": "#F3F3F3",
                   "electricBlue": "#080CF1",
                   "flameOrange": "#FF511C",
+                  "focusPrimary": "#0073D1",
                   "gray": Array [
                     "#F3F3F3",
                     "#F5F5F5",
@@ -439,6 +498,9 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                   "rocketBlue": "#0073D1",
                   "rocketBlueHover": "#0073EB",
                   "shadyLady": "#979797",
+                  "textError": "#FF511C",
+                  "textPrimary": "#00003C",
+                  "textSecondary": "#0073D1",
                   "white": "#FFFFFF",
                   "yellow": "#F0FF02",
                   "yellowHover": "#D8E320",
@@ -482,19 +544,35 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                 },
               }
             }
-            userId="2310062225"
           >
             <div
               className="c5"
             >
-              <MediaQuery
-                query="(min-width: 961px)"
-                values={Object {}}
-              />
-              <MediaQuery
-                query="(max-device-width: 959px)"
-                values={Object {}}
-              />
+              <div
+                className="gifContainer"
+              >
+                <InlineImage
+                  alt="Fun and animated illustration of phone and Instagram photo"
+                  aria-hidden={true}
+                  className="gif"
+                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1563995547/web/PHONE_STATIC.png"
+                >
+                  <img
+                    alt="Fun and animated illustration of phone and Instagram photo"
+                    aria-hidden={true}
+                    className="gif"
+                    src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1563995547/web/PHONE_STATIC.png"
+                  />
+                </InlineImage>
+              </div>
+              <div
+                className="gallery-container"
+              >
+                <div
+                  className="yotpo yotpo-pictures-widget"
+                  data-gallery-id="5fa029c167e297000789c89b"
+                />
+              </div>
             </div>
           </BaseInstagram>
         </Styled(BaseInstagram)>

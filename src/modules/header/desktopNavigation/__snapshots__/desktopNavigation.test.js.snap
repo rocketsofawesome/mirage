@@ -143,6 +143,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c6:active,
@@ -164,6 +165,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   font-size: 1.4rem;
   font-weight: 400;
   font-style: normal;
+  cursor: pointer;
 }
 
 .c17:active,
@@ -872,6 +874,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
     highlightable={false}
     homepageUrl="https://rocketsofawesome.com"
     renderLink={[Function]}
+    showBlog="true"
     showSearch={false}
   >
     <styled.header
@@ -4765,6 +4768,80 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
+                      href="/shop/baby"
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      spacing={true}
+                    >
+                      <BaseHeaderLink
+                        className="c3 c10"
+                        highlightOn="hover"
+                        highlightable={false}
+                        href="/shop/baby"
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        spacing={true}
+                      >
+                        <Styled(Styled(Component))
+                          className="c3 c10"
+                          href="/shop/baby"
+                          light={true}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          underline={false}
+                          uppercase={true}
+                        >
+                          <Styled(Component)
+                            className="c3 c10 c5"
+                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                            fontSize="1.4rem"
+                            fontStyle="normal"
+                            fontWeight={500}
+                            href="/shop/baby"
+                            light={true}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            underline={false}
+                            uppercase={true}
+                          >
+                            <Component
+                              className="c3 c10 c5 c6"
+                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                              fontSize="1.4rem"
+                              fontStyle="normal"
+                              fontWeight={500}
+                              href="/shop/baby"
+                              light={true}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              underline={false}
+                              uppercase={true}
+                            >
+                              <a
+                                className="c3 c10 c5 c6"
+                                fontStyle="normal"
+                                href="/shop/baby"
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <span>
+                                  Baby
+                                </span>
+                              </a>
+                            </Component>
+                          </Styled(Component)>
+                        </Styled(Styled(Component))>
+                      </BaseHeaderLink>
+                    </Styled(BaseHeaderLink)>
+                  </li>
+                  <li>
+                    <Styled(BaseHeaderLink)
+                      highlightOn="hover"
+                      highlightable={false}
                       href="https://rocketsofawesome.com/outfits"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
@@ -4980,6 +5057,88 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               >
                                 <span>
                                   Sale
+                                </span>
+                              </a>
+                            </Component>
+                          </Styled(Component)>
+                        </Styled(Styled(Component))>
+                      </BaseHeaderLink>
+                    </Styled(BaseHeaderLink)>
+                  </li>
+                  <span>
+                    |
+                  </span>
+                  <li>
+                    <Styled(BaseHeaderLink)
+                      highlightOn="hover"
+                      highlightable={false}
+                      onFocus={[Function]}
+                      onMouseEnter={[Function]}
+                      renderLink={[Function]}
+                      spacing={true}
+                      target="https://news.rocketsofawesome.com/"
+                    >
+                      <BaseHeaderLink
+                        className="c3 c10"
+                        highlightOn="hover"
+                        highlightable={false}
+                        onFocus={[Function]}
+                        onMouseEnter={[Function]}
+                        renderLink={[Function]}
+                        spacing={true}
+                        target="https://news.rocketsofawesome.com/"
+                      >
+                        <Styled(Styled(Component))
+                          className="c3 c10"
+                          light={true}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
+                          renderLink={[Function]}
+                          target="https://news.rocketsofawesome.com/"
+                          underline={false}
+                          uppercase={true}
+                        >
+                          <Styled(Component)
+                            className="c3 c10 c5"
+                            fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                            fontSize="1.4rem"
+                            fontStyle="normal"
+                            fontWeight={500}
+                            light={true}
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            renderLink={[Function]}
+                            target="https://news.rocketsofawesome.com/"
+                            underline={false}
+                            uppercase={true}
+                          >
+                            <Component
+                              className="c3 c10 c5 c6"
+                              fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+                              fontSize="1.4rem"
+                              fontStyle="normal"
+                              fontWeight={500}
+                              light={true}
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              renderLink={[Function]}
+                              target="https://news.rocketsofawesome.com/"
+                              underline={false}
+                              uppercase={true}
+                            >
+                              <a
+                                className="c3 c10 c5 c6"
+                                fontStyle="normal"
+                                href="https://news.rocketsofawesome.com/"
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                              >
+                                <span>
+                                  Blog
                                 </span>
                               </a>
                             </Component>
