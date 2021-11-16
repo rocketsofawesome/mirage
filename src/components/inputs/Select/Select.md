@@ -44,29 +44,3 @@
   ]}
 />
 ```
-
-## Mini Styles
-
-#### Normal Input
-```js
-<Select
-  label='City'
-  options={[
-    { value: 'NY', text: 'New York' },
-    { value: 'CA', text: 'California' }
-  ]}
-/>
-```
-
-#### Input With Errors
-```js
-<Select
-  error='Some error message'
-  label='City'
-  options={[
-    { value: 'NY', text: 'New York' },
-    { value: 'CA', text: 'California' }
-  ]}
-  touched={true}
-/>
-```

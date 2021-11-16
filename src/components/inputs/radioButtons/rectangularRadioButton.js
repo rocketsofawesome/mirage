@@ -82,7 +82,7 @@ const RectangularRadioButton = styled(BaseRectangularRadioButton)`
     font-stretch: normal;
     line-height: normal;
     background-color: ${props => props.theme.colors.buttonUnselected}
-    border: ${props => props.theme.styles.border}
+    border: ${props => props.theme.borders.inputBorder}
     border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
     color: ${props => props.theme.colors.textPrimary}
 

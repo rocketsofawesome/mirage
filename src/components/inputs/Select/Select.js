@@ -16,7 +16,7 @@ function pickColor (props) {
 const Container = styled.div`
   background-color: white;
   padding: 10px 16px 0px;
-  border: ${props => props.theme.styles.border};
+  border: ${props => props.theme.borders.inputBorder};
   border-color: ${props => pickColor(props)};
 `
 

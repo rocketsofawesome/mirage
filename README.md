@@ -24,6 +24,19 @@ You should then have access to the component and can use it like a normal react 
 
 It's that easy! Additional props are documented in
 
+### Loading Components with Alternate Themes
+
+`reactstyleguidist` does not provide support for switching between themes in the pattern library. If you want to see what certain components look like with Mini styles applied, change this line of `SRC/core/theme/index.js` from this:
+```
+<ThemeProvider theme={theme} {...this.props}>
+```
+to this:
+```
+<ThemeProvider theme={miniTheme} {...this.props}>
+```
+
+If you want to switch back to the default theme, just revert your changes.
+
 ## Development
 
 To run the pattern library locally, run the following:

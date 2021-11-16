@@ -44,7 +44,7 @@ const Span = styled.span`
 
 const inputStyles = css`
   width: 100%;
-  border: ${props => props.theme.styles.border};
+  border: ${props => props.theme.borders.inputBorder};
   border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
   color: ${props => props.theme.colors.textPrimary};
   padding-left: 16px;

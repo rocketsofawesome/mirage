@@ -3,7 +3,7 @@ import { colors } from './colors'
 import media, { sizes, breakpoints, breakpointsVerbose } from './mediaQueries'
 import fontFamilies from './fontFamilies'
 import gridSettings from './gridSettings'
-import styles from './styles'
+import borders from './borders'
 
 const basePxSize = 10
 
@@ -22,6 +22,7 @@ const base = injectGlobal`
 export default {
   base: base,
   basePxSize: basePxSize,
+  borders: borders,
   breakpoints: breakpoints,
   breakpointsVerbose: breakpointsVerbose,
   colors: colors,
@@ -29,6 +30,5 @@ export default {
   fonts: fontFamilies,
   grid: gridSettings,
   media: media,
-  sizes: sizes,
-  styles: styles
+  sizes: sizes
 }

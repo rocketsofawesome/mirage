@@ -1,9 +1,9 @@
 import miniColors from './miniColors'
-import miniStyles from './miniStyles'
-import { theme } from 'SRC/core/theme'
+import miniBorders from './miniBorders'
+import theme from 'SRC/core/theme/theme'
 
 export default {
   ...theme,
-  colors: miniColors,
-  styles: miniStyles
+  borders: miniBorders,
+  colors: miniColors
 }

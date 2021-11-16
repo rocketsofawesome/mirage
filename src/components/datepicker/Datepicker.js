@@ -7,7 +7,7 @@ const Container = styled.div`
   background-color: white;
   width: 100%;
   padding: 10px 16px 6px;
-  border: ${props => props.theme.styles.border};
+  border: ${props => props.theme.borders.inputBorder};
   border-color: ${props => props.error ? props.theme.colors.textError : props.theme.colors.borderPrimary};
 `
 

@@ -32,12 +32,3 @@
     <RectangularRadioButton name='circleGender' value='13' shape='circle'>13</RectangularRadioButton>
   </div>
 ```
-## Mini style
-```js
-<div style={{ marginBottom: '1rem' }}>
-  <RectangularRadioButton name='miniGender' value='1'>Male</RectangularRadioButton>
-</div>
-<div>
-  <RectangularRadioButton name='miniGender' value='2'>Female</RectangularRadioButton>
-</div>
-```

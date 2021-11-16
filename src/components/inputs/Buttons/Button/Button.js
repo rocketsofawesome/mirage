@@ -20,7 +20,7 @@ const Button = styled(BaseButton)`
   &:hover {
     background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.buttonPrimaryHover};
   }
-  border: ${props => props.theme.styles.border};
+  border: ${props => props.theme.borders.inputBorder};
   border-color: ${props => props.theme.colors.borderPrimary};
   color: ${props => props.theme.colors.buttonTextPrimary};
   stroke: ${props => props.theme.colors.buttonTextPrimary}
