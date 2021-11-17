@@ -15,14 +15,14 @@ const blockStyles = css`
 `
 
 const Button = styled(BaseButton)`
-  background-color: ${props => props.selected ? props.theme.colors.navy : props.theme.colors.rocketBlue};
+  background-color: ${props => props.selected ? props.theme.colors.buttonSelected : props.theme.colors.buttonPrimary};
   &:hover {
-    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.rocketBlueHover};
+    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.buttonPrimaryHover};
   }
   border: ${props => props.theme.borders.inputBorder};
-  border-color: transparent;
-  color: ${props => props.theme.colors.white};
-  stroke: ${props => props.theme.colors.white}
+  border-color: ${props => props.theme.colors.buttonBorderPrimary};
+  color: ${props => props.theme.colors.buttonTextPrimary};
+  stroke: ${props => props.theme.colors.buttonTextPrimary}
   ${props => props.block && blockStyles}
   ${props => (props.disabled || props.loading) && disabledOrLoading}
 `

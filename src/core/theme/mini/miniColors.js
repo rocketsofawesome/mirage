@@ -4,6 +4,7 @@ const themeColors = {
   textPrimary: colors.rocketBlue,
   textSecondary: colors.navy,
   borderPrimary: colors.lightPink,
+  buttonBorderPrimary: colors.lightPink,
   buttonTextPrimary: colors.rocketBlue,
   buttonPrimary: colors.white,
   buttonPrimaryHover: colors.lightPink,
