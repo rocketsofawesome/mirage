@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import colorFromProp from 'utils/colors'
 
 const Container = styled.div`
-  margin-bottom: ${props => props.overlap ? '-50px' : '0'};
+  margin-bottom: ${props => props.overlap ? '-100px' : '0'};
   margin-left: auto;
   margin-right: auto;
   max-height: 200px;
