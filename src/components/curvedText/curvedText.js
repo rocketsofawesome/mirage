@@ -4,8 +4,11 @@ import PropTypes from 'prop-types'
 import colorFromProp from 'utils/colors'
 
 const Container = styled.div`
-  margin-bottom: ${props => props.overlap ? '0' : '200px'};
-  max-height: 400px;
+  margin-bottom: ${props => props.overlap ? '-100px' : '0'};
+  margin-left: auto;
+  margin-right: auto;
+  max-height: 200px;
+  max-width: 950px;
   color: ${colorFromProp('color')};
 
   svg {
@@ -33,8 +36,8 @@ const CurvedText = (props) => {
 
   return (
     <Container {...rest} className='curved-text'>
-      <svg viewBox='0 0 200 100'>
-        <path id='curve' d='M0 40 Q100 0, 200 40' />
+      <svg viewBox='0 10 200 100'>
+        <path id='curve' d='M0 80 Q100 -30, 200 80' />
         <text width='200'>
           <textPath xlinkHref='#curve' startOffset='50%'>
             {text}

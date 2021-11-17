@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import styled, { css } from 'styled-components'
-
 import { WhiteSpinner } from 'SRC/core/icons/Spinner'
 import BaseButton from './Button.base'
 import Checkmark from 'SRC/core/icons/Checkmark/Checkmark.base'
@@ -16,14 +15,14 @@ const blockStyles = css`
 `
 
 const Button = styled(BaseButton)`
-  background-color: ${props => props.selected ? props.theme.colors.buttonSelected : props.theme.colors.buttonPrimary};
+  background-color: ${props => props.selected ? props.theme.colors.navy : props.theme.colors.rocketBlue};
   &:hover {
-    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.buttonPrimaryHover};
+    background-color: ${props => !(props.disabled || props.loading || props.selected) && props.theme.colors.rocketBlueHover};
   }
   border: ${props => props.theme.borders.inputBorder};
-  border-color: ${props => props.theme.colors.borderPrimary};
-  color: ${props => props.theme.colors.buttonTextPrimary};
-  stroke: ${props => props.theme.colors.buttonTextPrimary}
+  border-color: transparent;
+  color: ${props => props.theme.colors.white};
+  stroke: ${props => props.theme.colors.white}
   ${props => props.block && blockStyles}
   ${props => (props.disabled || props.loading) && disabledOrLoading}
 `
