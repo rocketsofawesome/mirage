@@ -56,6 +56,7 @@ const themeColors = {
   textSecondary: brandColors.rocketBlue,
   textError: brandColors.flameOrange,
   borderPrimary: supportingColors.gray4,
+  buttonBorder: 'transparent',
   buttonPrimary: brandColors.rocketBlue,
   buttonPrimaryHover: brandColors.rocketBlueHover,
   buttonSelected: brandColors.navy,
