@@ -29,8 +29,9 @@ const FlexRow = styled(BaseFlexRow)`
   box-sizing: border-box;
   flex-basis: 100%;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: ${props => props.wrap};
   justify-content: ${props => props.align};
+  column-gap: ${props => props.columnGap}
   ${props => props.constrained ? constrained : notConstrained}
   ${props => props.padding && padding}
 `
@@ -42,12 +43,15 @@ FlexRow.propTypes = {
   ]),
   constrained: PropTypes.bool,
   padding: PropTypes.bool,
-  align: PropTypes.string
+  align: PropTypes.string,
+  columnGap: PropTypes.string,
+  wrap: PropTypes.bool
 }
 
 FlexRow.defaultProps = {
   element: 'div',
-  align: 'flex-start'
+  align: 'flex-start',
+  wrap: true
 }
 /** @component */
 export default FlexRow
