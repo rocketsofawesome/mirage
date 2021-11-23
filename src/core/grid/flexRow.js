@@ -45,13 +45,13 @@ FlexRow.propTypes = {
   padding: PropTypes.bool,
   align: PropTypes.string,
   columnGap: PropTypes.string,
-  wrap: PropTypes.bool
+  wrap: PropTypes.string
 }
 
 FlexRow.defaultProps = {
   element: 'div',
   align: 'flex-start',
-  wrap: true
+  wrap: 'wrap'
 }
 /** @component */
 export default FlexRow
