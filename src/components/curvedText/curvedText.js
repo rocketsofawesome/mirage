@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import colorFromProp from 'utils/colors'
 
 const Container = styled.div`
-  margin-bottom: ${props => props.overlap ? '-100px' : '0'};
+  margin-bottom: ${props => props.marginBottom};
   margin-left: auto;
   margin-right: auto;
   max-height: 200px;
@@ -52,15 +52,15 @@ CurvedText.propTypes = {
   fontSize: PropTypes.string,
   letterSpacing: PropTypes.string,
   text: PropTypes.string.isRequired,
-  overlap: PropTypes.bool,
-  color: PropTypes.string
+  color: PropTypes.string,
+  marginBottom: PropTypes.string
 }
 
 CurvedText.defaultProps = {
   fontSize: '1.6rem',
   letterSpacing: 'normal',
-  overlap: true,
-  color: 'textPrimary'
+  color: 'textPrimary',
+  marginBottom: '-100px'
 }
 
 /** @component */
