@@ -1,6 +1,22 @@
 ### Default Styling
 ```js
+<FlexRow>
+  <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
+  <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
+</FlexRow>
+```
+
+### Constrained
+```js
 <FlexRow constrained>
+  <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
+  <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
+</FlexRow>
+```
+
+### With Padding
+```js
+<FlexRow padding>
   <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
   <FlexCol desktop={{ width: 6 }}><Input/></FlexCol>
 </FlexRow>
