@@ -60,7 +60,7 @@ CurvedText.defaultProps = {
   fontSize: '1.6rem',
   letterSpacing: 'normal',
   color: 'textPrimary',
-  marginBottom: '100px'
+  marginBottom: '-100px'
 }
 
 /** @component */
