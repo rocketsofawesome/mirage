@@ -30,6 +30,7 @@ const FlexRow = styled(BaseFlexRow)`
   flex-basis: 100%;
   display: flex;
   justify-content: ${props => props.align};
+  align-items: ${props => props.verticalAlign};
   flex-wrap: ${props => props.mobile.wrap};
   column-gap: ${props => props.mobile.columnGap};
   ${props => props.constrained ? constrained : notConstrained};
@@ -52,6 +53,7 @@ FlexRow.propTypes = {
   constrained: PropTypes.bool,
   padding: PropTypes.bool,
   align: PropTypes.string,
+  verticalAlign: PropTypes.string,
   mobile: PropTypes.shape({
     columnGap: PropTypes.string,
     wrap: PropTypes.string
