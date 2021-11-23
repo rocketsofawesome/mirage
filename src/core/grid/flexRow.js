@@ -29,11 +29,19 @@ const FlexRow = styled(BaseFlexRow)`
   box-sizing: border-box;
   flex-basis: 100%;
   display: flex;
-  flex-wrap: ${props => props.wrap};
   justify-content: ${props => props.align};
-  column-gap: ${props => props.columnGap}
-  ${props => props.constrained ? constrained : notConstrained}
-  ${props => props.padding && padding}
+  flex-wrap: ${props => props.mobile.wrap};
+  column-gap: ${props => props.mobile.columnGap};
+  ${props => props.constrained ? constrained : notConstrained};
+  ${props => props.padding && padding};
+  ${props => props.theme.breakpointsVerbose.aboveTablet`
+    flex-wrap: ${props => props.tablet.wrap}
+    column-gap: ${props => props.tablet.columnGap}
+  `}
+  ${props => props.theme.breakpointsVerbose.aboveTabletMax`
+    flex-wrap: ${props => props.desktop.wrap}
+    column-gap: ${props => props.desktop.columnGap}
+  `}
 `
 
 FlexRow.propTypes = {
@@ -44,14 +52,32 @@ FlexRow.propTypes = {
   constrained: PropTypes.bool,
   padding: PropTypes.bool,
   align: PropTypes.string,
-  columnGap: PropTypes.string,
-  wrap: PropTypes.string
+  mobile: PropTypes.shape({
+    columnGap: PropTypes.string,
+    wrap: PropTypes.string
+  }),
+  tablet: PropTypes.shape({
+    columnGap: PropTypes.string,
+    wrap: PropTypes.string
+  }),
+  desktop: PropTypes.shape({
+    columnGap: PropTypes.string,
+    wrap: PropTypes.string
+  })
 }
 
 FlexRow.defaultProps = {
   element: 'div',
   align: 'flex-start',
-  wrap: 'wrap'
+  mobile: {
+    wrap: 'wrap'
+  },
+  desktop: {
+    wrap: 'wrap'
+  },
+  tablet: {
+    wrap: 'wrap'
+  }
 }
 /** @component */
 export default FlexRow
