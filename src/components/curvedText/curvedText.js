@@ -52,7 +52,6 @@ CurvedText.propTypes = {
   fontSize: PropTypes.string,
   letterSpacing: PropTypes.string,
   text: PropTypes.string.isRequired,
-  overlap: PropTypes.bool,
   color: PropTypes.string,
   marginBottom: PropTypes.string
 }
@@ -60,7 +59,6 @@ CurvedText.propTypes = {
 CurvedText.defaultProps = {
   fontSize: '1.6rem',
   letterSpacing: 'normal',
-  overlap: true,
   color: 'textPrimary',
   marginBottom: '100px'
 }
