@@ -71,6 +71,29 @@ export const boys = {
   }
 }
 
+export const baby = {
+  regions: {
+    left: [
+      {
+        id: 'category',
+        title: 'Shop by Category',
+        links: [
+          { target: '#', text: 'Shop All' }
+        ]
+      }
+    ],
+    right: [
+      {
+        id: 'story',
+        title: 'Shop by Story',
+        links: [
+          { target: '#', text: 'Starter Kits' }
+        ]
+      }
+    ]
+  }
+}
+
 export const accountLinks = {
   loggedOut: {
     text: 'Login',
