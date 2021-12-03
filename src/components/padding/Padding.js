@@ -1,18 +1,11 @@
 import styled from 'styled-components'
-import { spacers } from 'utils/spacing'
-
-function calculateSpace (value) {
-  if (value) {
-    return spacers[value]
-  }
-  return 0
-}
+import { spaceFromProp } from 'utils/spacing'
 
 const Padding = styled.div`
-  padding-top: ${props => calculateSpace(props.t || props.y)}
-  padding-bottom: ${props => calculateSpace(props.b || props.y)}
-  padding-left: ${props => calculateSpace(props.l || props.x)}
-  padding-right: ${props => calculateSpace(props.r || props.x)}
+  padding-top: ${spaceFromProp('t' || 'y')}
+  padding-bottom: ${spaceFromProp('b' || 'y')}
+  padding-left: ${spaceFromProp('l' || 'x')}
+  padding-right: ${spaceFromProp('r' || 'x')}
 `
 
 /** @component */

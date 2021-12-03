@@ -9,5 +9,5 @@ export const spacers = {
 
 export const spaceFromProp = (propName) => (props) => {
   const propValue = props[propName]
-  return spacers[propValue]
+  return propValue in spacers ? spacers[propValue] : propValue
 }
