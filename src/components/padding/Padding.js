@@ -1,11 +1,8 @@
 import styled from 'styled-components'
 import { spacers } from 'utils/spacing'
 
-function calculateSpace (value) {
-  if (value) {
-    return spacers[value]
-  }
-  return 0
+function calculateSpace(value) {
+  return value in spacers ? spacers[value] : value
 }
 
 const Padding = styled.div`
@@ -14,6 +11,11 @@ const Padding = styled.div`
   padding-left: ${props => calculateSpace(props.l || props.x)}
   padding-right: ${props => calculateSpace(props.r || props.x)}
 `
+
+Padding.defaultProps = {
+  x: 0,
+  y: 0
+}
 
 /** @component */
 export default Padding

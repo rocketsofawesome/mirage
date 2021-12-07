@@ -92,16 +92,16 @@ export class BaseSubMenu extends React.Component {
                 <Link
                   uppercase
                   underline={false}
-                  target='/add-kid'
+                  target='/mini/quiz'
                   renderLink={renderLink}>
-                  Add a Big Kid (2-14)
+                  Add a Baby (0-24M)
                 </Link>
                 <Link
                   uppercase
                   underline={false}
-                  target='/mini/quiz'
+                  target='/add-kid'
                   renderLink={renderLink}>
-                  Add a Baby (0-24M)
+                  Add a Big Kid (2-14)
                 </Link>
               </React.Fragment>
             }

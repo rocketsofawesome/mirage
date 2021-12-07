@@ -11,7 +11,7 @@ import {
   Logo,
   MegaMenu
 } from 'SRC'
-import { girls, boys, renderLink } from './defaultProps'
+import { girls, boys, baby, renderLink } from './defaultProps'
 
 const { REACT_APP_SHOW_BLOG_LINK } = process.env
 
@@ -24,6 +24,9 @@ export class BaseDesktopNavigation extends React.Component {
       },
       girls: {
         visible: false
+      },
+      baby: {
+        visible: false
       }
     }
     this.header = undefined
@@ -32,7 +35,8 @@ export class BaseDesktopNavigation extends React.Component {
   closeDrawers = () => {
     this.setState({
       boys: { visible: false },
-      girls: { visible: false }
+      girls: { visible: false },
+      baby: { visible: false }
     })
   }
 
@@ -64,6 +68,7 @@ export class BaseDesktopNavigation extends React.Component {
       highlightable,
       girlsLinks,
       boysLinks,
+      babyLinks,
       bagCount,
       homepageUrl,
       clickBag,
@@ -75,7 +80,8 @@ export class BaseDesktopNavigation extends React.Component {
     } = this.props
     const {
       boys: boysState,
-      girls: girlsState
+      girls: girlsState,
+      baby: babyState
     } = this.state
 
     return (
@@ -133,13 +139,19 @@ export class BaseDesktopNavigation extends React.Component {
                 </li>
                 <li>
                   <HeaderLink
-                    onMouseEnter={this.closeDrawers}
-                    onFocus={this.closeDrawers}
-                    href='/shop/baby'
+                    onMouseEnter={this.openDrawer('baby')}
+                    onClick={this.toggleDrawer('baby')}
                     highlightable={highlightable}
+                    aria-haspopup
                   >
                     Baby
                   </HeaderLink>
+                  <MegaMenu
+                    className='megaMenu'
+                    regions={babyLinks.regions}
+                    renderLink={renderLink}
+                    animationLength={animationLength}
+                    {...babyState} />
                 </li>
                 <li>
                   <HeaderLink
@@ -349,6 +361,7 @@ BaseDesktopNavigation.defaultProps = {
   highlightable: true,
   girlsLinks: girls,
   boysLinks: boys,
+  babyLinks: baby,
   homepageUrl: 'https://rocketsofawesome.com',
   showBlog: REACT_APP_SHOW_BLOG_LINK,
   showSearch: false
