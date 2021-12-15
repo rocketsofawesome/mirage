@@ -11,7 +11,7 @@ export const shotTypeSortOrder = [
   'other'
 ]
 
-function sortShots(shots) {
+export function sortShots(shots) {
   return shots.sort((shot1, shot2) =>
     shotTypeSortOrder.indexOf(shot1.shot_type) - shotTypeSortOrder.indexOf(shot2.shot_type)
   )

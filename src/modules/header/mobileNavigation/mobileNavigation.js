@@ -43,7 +43,6 @@ export class BaseMobileNavigation extends React.Component {
       className,
       drawerPosition,
       loggedIn,
-      homepageUrl,
       renderLink,
       isSubscriptionMember,
       bagCount,
@@ -62,8 +61,9 @@ export class BaseMobileNavigation extends React.Component {
           <BlueHamburger onClick={this.openDrawer} />
           <MobileLinkTop
             className='link-home'
-            href={homepageUrl}
-            renderLink={renderLink}>
+            href='/'
+            renderLink={renderLink}
+          >
             <span className='screenReader'>Home</span>
             <Logo />
           </MobileLinkTop>
@@ -89,12 +89,14 @@ export class BaseMobileNavigation extends React.Component {
             <li>
               <MobileLinkTop
                 target='/shop'
-                renderLink={renderLink}>
+                renderLink={renderLink}
+              >
                 Shop
               </MobileLinkTop>
               <UL
                 leftPad='1rem'
-                type='none'>
+                type='none'
+              >
                 <li>
                   <Accordion
                     toggleElement={
@@ -102,7 +104,8 @@ export class BaseMobileNavigation extends React.Component {
                     }>
                     <UL
                       type='none'
-                      leftPad='1rem'>
+                      leftPad='1rem'
+                    >
                       {boysLinks && boysLinks.map((link, index) => {
                         return (
                           <li key={index}>
@@ -126,7 +129,8 @@ export class BaseMobileNavigation extends React.Component {
                         <li key={index}>
                           <MobileLinkTertiary
                             target={link.target}
-                            renderLink={renderLink}>
+                            renderLink={renderLink}
+                          >
                             {link.text}
                           </MobileLinkTertiary>
                         </li>
@@ -141,39 +145,38 @@ export class BaseMobileNavigation extends React.Component {
                       <MobileLinkSecondary>Baby</MobileLinkSecondary>
                     }>
                     <UL type='none' leftPad='1rem'>
-                    {babyLinks && babyLinks.map((link, index) => {
-                      return (
-                        <li key={index}>
-                          <MobileLinkTertiary
-                            target={link.target}
-                            renderLink={renderLink}>
-                            {link.text}
-                          </MobileLinkTertiary>
-                        </li>
-                      )
-                    })}
+                      {
+                        babyLinks && babyLinks.map((link, index) => {
+                          return (
+                            <li key={index}>
+                              <MobileLinkTertiary
+                                target={link.target}
+                                renderLink={renderLink}>
+                                {link.text}
+                              </MobileLinkTertiary>
+                            </li>
+                          )
+                        })
+                      }
                     </UL>
                   </Accordion>
                 </li>
               </UL>
             </li>
             <li>
-              <MobileLinkTop
-                href={`${homepageUrl}/outfits`}>
+              <MobileLinkTop href='/outfits'>
                 Outfits
               </MobileLinkTop>
             </li>
             {!isSubscriptionMember &&
               <div>
                 <li>
-                  <MobileLinkTop
-                    href={`${homepageUrl}/shop/sale`}>
+                  <MobileLinkTop href='/shop/sale'>
                     Sale
                   </MobileLinkTop>
                 </li>
                 <li>
-                  <MobileLinkTop
-                    href={`${homepageUrl}/subscribe-and-save`}>
+                  <MobileLinkTop href='/subscribe-and-save'>
                     Subscribe + Save
                   </MobileLinkTop>
                 </li>
@@ -182,15 +185,15 @@ export class BaseMobileNavigation extends React.Component {
             {isSubscriptionMember &&
               <div>
                 <li>
-                  <MobileLinkTop
-                    href={`${homepageUrl}/shop/sale`}>
+                  <MobileLinkTop href='/shop/sale'>
                     Sale
                   </MobileLinkTop>
                 </li>
                 <li>
                   <MobileLinkTop
                     target='/box'
-                    renderLink={renderLink}>
+                    renderLink={renderLink}
+                  >
                     Box
                   </MobileLinkTop>
                 </li>
@@ -198,28 +201,32 @@ export class BaseMobileNavigation extends React.Component {
                   <MobileLinkTop
                     target='/invite'
                     renderLink={renderLink}
-                    background={theme.colors.lightPink}>
+                    background={theme.colors.lightPink}
+                  >
                     Refer a Friend
                   </MobileLinkTop>
                 </li>
                 <li>
                   <MobileLinkTop
                     target='/reverse'
-                    renderLink={renderLink}>
+                    renderLink={renderLink}
+                  >
                     Rockets Reverse
                   </MobileLinkTop>
                 </li>
                 <li>
                   <MobileLinkTop
                     target='/style-file'
-                    renderLink={renderLink}>
+                    renderLink={renderLink}
+                  >
                     Style File
                   </MobileLinkTop>
                 </li>
                 <li>
                   <MobileLinkTop
                     target='/orders'
-                    renderLink={renderLink}>
+                    renderLink={renderLink}
+                  >
                     Order History
                   </MobileLinkTop>
                 </li>
@@ -229,7 +236,8 @@ export class BaseMobileNavigation extends React.Component {
               <li>
                 <MobileLinkTop
                   target='/shop/login'
-                  renderLink={renderLink}>
+                  renderLink={renderLink}
+                >
                   Login
                 </MobileLinkTop>
               </li>
@@ -245,7 +253,8 @@ export class BaseMobileNavigation extends React.Component {
               <MobileAccountLinks
                 isSubscriptionMember={isSubscriptionMember}
                 renderLink={renderLink}
-                signOut={signOut} />
+                signOut={signOut}
+              />
             }
           </UL>
         </MenuDrawer>
@@ -288,7 +297,6 @@ const MobileNavigation = styled(BaseMobileNavigation)`
 MobileNavigation.propTypes = {
   drawerPosition: PropTypes.string,
   bagCount: PropTypes.number,
-  homepageUrl: PropTypes.string,
   boysLinks: PropTypes.array,
   girlsLinks: PropTypes.array,
   className: PropTypes.string,
@@ -301,7 +309,6 @@ MobileNavigation.propTypes = {
 
 MobileNavigation.defaultProps = {
   drawerPosition: 'fixed',
-  homepageUrl: 'https://rocketsofawesome.com',
   showBlog: REACT_APP_SHOW_BLOG_LINK,
   showSearch: false
 }

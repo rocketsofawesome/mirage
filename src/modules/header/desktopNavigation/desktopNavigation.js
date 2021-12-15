@@ -70,7 +70,6 @@ export class BaseDesktopNavigation extends React.Component {
       boysLinks,
       babyLinks,
       bagCount,
-      homepageUrl,
       clickBag,
       clickSearch,
       showBlog,
@@ -99,10 +98,11 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     onMouseEnter={this.closeDrawers}
                     onFocus={this.closeDrawers}
-                    href={homepageUrl}
+                    href='/'
                     highlightable={false}
                     renderLink={renderLink}
-                    spacing={false}>
+                    spacing={false}
+                  >
                     <span className='screenReader'>Home</span>
                     <Logo />
                   </HeaderLink>
@@ -157,8 +157,9 @@ export class BaseDesktopNavigation extends React.Component {
                   <HeaderLink
                     onMouseEnter={this.closeDrawers}
                     onFocus={this.closeDrawers}
-                    href={`${homepageUrl}/outfits`}
-                    highlightable={highlightable}>
+                    href='/outfits'
+                    highlightable={highlightable}
+                  >
                       Outfits
                   </HeaderLink>
                 </li>
@@ -167,8 +168,9 @@ export class BaseDesktopNavigation extends React.Component {
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
                       onFocus={this.closeDrawers}
-                      href={`${homepageUrl}/subscribe-and-save`}
-                      highlightable={highlightable}>
+                      href='/subscribe-and-save'
+                      highlightable={highlightable}
+                    >
                         Subscribe + Save
                     </HeaderLink>
                   </li>
@@ -349,7 +351,6 @@ BaseDesktopNavigation.propTypes = {
   girlsLinks: PropTypes.object,
   boysLinks: PropTypes.object,
   bagCount: PropTypes.number,
-  homepageUrl: PropTypes.string,
   clickBag: PropTypes.func,
   clickSearch: PropTypes.func
 }
@@ -362,7 +363,6 @@ BaseDesktopNavigation.defaultProps = {
   girlsLinks: girls,
   boysLinks: boys,
   babyLinks: baby,
-  homepageUrl: 'https://rocketsofawesome.com',
   showBlog: REACT_APP_SHOW_BLOG_LINK,
   showSearch: false
 }
