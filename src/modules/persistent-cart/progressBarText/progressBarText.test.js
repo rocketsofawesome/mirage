@@ -7,7 +7,7 @@ const { shallowWithTheme } = global
 
 describe('(Styled Component) ProgressBarText', () => {
   const createProgressBarText = (props) => {
-    return shallowWithTheme(<ProgressBarText {...props} />)
+    return shallowWithTheme(<ProgressBarText evergreenPromoItemCount='6' evergreenPromoPercent='15' order={{}} {...props} />)
   }
 
   test('matching the snapshot', () => {
