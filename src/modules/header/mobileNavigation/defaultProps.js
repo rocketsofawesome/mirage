@@ -36,11 +36,6 @@ export const boysLinks = [
   {target: '#', text: 'Vacation-Ready Styles', src: 'https://d2lknnt52h7uhg.cloudfront.net/roa-canon/web/megamenu/NAV_E_Vacation.jpg'}
 ]
 
-export const babyLinks = [
-  {target: '#', text: 'Shop All' },
-  {target: '#', text: 'Starter Kits' }
-]
-
 export const renderLink = (inProps) => {
   const {target, children, ...props } = inProps
   return (<a href={target} {...props}>{children}</a>)

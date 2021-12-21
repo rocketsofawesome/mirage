@@ -39,7 +39,6 @@ export class BaseMobileNavigation extends React.Component {
     const {
       boysLinks,
       girlsLinks,
-      babyLinks,
       className,
       drawerPosition,
       loggedIn,
@@ -140,26 +139,9 @@ export class BaseMobileNavigation extends React.Component {
                   </Accordion>
                 </li>
                 <li>
-                  <Accordion
-                    toggleElement={
-                      <MobileLinkSecondary>Baby</MobileLinkSecondary>
-                    }>
-                    <UL type='none' leftPad='1rem'>
-                      {
-                        babyLinks && babyLinks.map((link, index) => {
-                          return (
-                            <li key={index}>
-                              <MobileLinkTertiary
-                                target={link.target}
-                                renderLink={renderLink}>
-                                {link.text}
-                              </MobileLinkTertiary>
-                            </li>
-                          )
-                        })
-                      }
-                    </UL>
-                  </Accordion>
+                  <MobileLinkSecondary target='/shop/baby' renderLink={renderLink}>
+                    Baby
+                  </MobileLinkSecondary>
                 </li>
               </UL>
             </li>

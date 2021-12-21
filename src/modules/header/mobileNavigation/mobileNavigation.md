@@ -8,7 +8,6 @@ _Note: The drawerPosition and position props are only used to constrain the mobi
       position='absolute'
       boysLinks={require('./defaultProps').boysLinks}
       girlsLinks={require('./defaultProps').girlsLinks}
-      babyLinks={require('./defaultProps').babyLinks}
       renderLink={require('./defaultProps').renderLink}
       clickBag={() => console.log('Bag clicked')}
     />
@@ -24,7 +23,6 @@ _Note: The drawerPosition and position props are only used to constrain the mobi
       position='absolute'
       boysLinks={require('./defaultProps').boysLinks}
       girlsLinks={require('./defaultProps').girlsLinks}
-      babyLinks={require('./defaultProps').babyLinks}
       renderLink={require('./defaultProps').renderLink}
       loggedIn />
     <img style={{maxWidth: '100%'}} src='https://www.fillmurray.com/g/500/700' />
@@ -39,7 +37,6 @@ _Note: The drawerPosition and position props are only used to constrain the mobi
     position='absolute'
       boysLinks={require('./defaultProps').boysLinks}
       girlsLinks={require('./defaultProps').girlsLinks}
-      babyLinks={require('./defaultProps').babyLinks}
       renderLink={require('./defaultProps').renderLink}
       isSubscriptionMember
       loggedIn />
