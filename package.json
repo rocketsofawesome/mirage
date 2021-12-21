@@ -33,6 +33,7 @@
     "test:badges": "npm run test:coverage  && jest-coverage-badges"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.16.5",
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",
     "babel-eslint": "7.2.3",
@@ -148,7 +149,11 @@
   "babel": {
     "presets": [
       "env",
-      "react-app"
+      "react-app",
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry"
+      }
     ]
   },
   "eslintConfig": {
