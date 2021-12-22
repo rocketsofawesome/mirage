@@ -7,6 +7,7 @@ const { mountWithTheme } = global
 const defaultProps = {
   productId: '12345',
   currentSize: 'sku-12345',
+  onSizeSelect: () => {},
   variants: [
     {sku: "sku-12345", size: 3, inStock: true},
     {sku: "sku-21354", size: 4, inStock: true},
