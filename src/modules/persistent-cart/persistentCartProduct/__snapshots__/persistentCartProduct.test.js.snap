@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) PersistentCartProduct matching the snapshot 1`] = `
+.c0 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+<BaseProduct
+  className="c0"
+  hideCartSidebar={[Function]}
+  isUpdatingQuantity={false}
+  isUpdatingSize={false}
+  item={
+    Object {
+      "adjustments": Array [],
+      "amount": "24.5",
+      "category": Array [
+        "Tops",
+        "Graphic Tees",
+      ],
+      "color": "Black",
+      "colorway_slug": "black",
+      "cost_price": null,
+      "id": 2295178,
+      "name": "Embellished Bolt Tee",
+      "order_id": 627140,
+      "price": "24.5",
+      "product_id": 1560,
+      "quantity": 1,
+      "shot": Object {
+        "cloudinary_key": "production/catalog/rlnrtg6z2e56zneqi9dl",
+        "id": 2257441,
+        "shot_type": "front",
+      },
+      "size": "10",
+      "sku": "5601-007-N",
+      "slug": "embellished-bolt-tee",
+      "total": "24.5",
+      "variant_id": 16975,
+    }
+  }
+  onRemoveItem={[Function]}
+  onUpdateQuantity={[Function]}
+  removingItemId={null}
+  renderLink={[Function]}
+/>
+`;

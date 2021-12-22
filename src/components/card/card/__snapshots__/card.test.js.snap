@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) Card matching the snapshot 1`] = `
+.c1 {
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  color: #00003C;
+  font-family: "din-cond","din-condensed-web",Arial,sans-serif;
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 1.3;
+  margin: 5.5rem 0;
+}
+
+.c0 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c0:hover {
+  cursor: pointer;
+}
+
+.c0 img {
+  height: auto;
+  width: 100%;
+}
+
+.c0 > *:first-child {
+  padding-bottom: 0.3rem;
+}
+
+.c0 > *:not(:first-child) {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+@media (min-width:769px) {
+  .c1 {
+    font-size: 4.2rem;
+  }
+}
+
+@media (min-width:769px) {
+  .c1 {
+    line-height: 1.0476190476190477;
+  }
+}
+
+<Styled(Component)
+  element="a"
+  maxWidth="29.5rem"
+>
+  <Component
+    className="c0"
+    element="a"
+    maxWidth="29.5rem"
+  >
+    <a
+      className="c0"
+    >
+      <InlineImage
+        alt=""
+        key="img"
+        src="https://www.fillmurray.com/g/300/300"
+      >
+        <img
+          alt=""
+          src="https://www.fillmurray.com/g/300/300"
+        />
+      </InlineImage>
+      <styled.h1
+        color="textPrimary"
+        fontSizes={
+          Object {
+            "desktop": "4.2rem",
+            "mobile": "3.2rem",
+          }
+        }
+        key="title"
+        letterSpacing=".1rem"
+        lineHeights={
+          Object {
+            "desktop": 1.0476190476190477,
+            "mobile": 1.3,
+          }
+        }
+        margin="5.5rem 0"
+      >
+        <h1
+          className="c1"
+          color="textPrimary"
+          letterSpacing=".1rem"
+        >
+          Example
+        </h1>
+      </styled.h1>
+    </a>
+  </Component>
+</Styled(Component)>
+`;

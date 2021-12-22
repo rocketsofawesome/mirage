@@ -110,6 +110,7 @@ exports[`(Styled Component) PressQuotes matching the snapshot 1`] = `
       "colors": Object {
         "black": "#000000",
         "borderPrimary": "#D5D5D5",
+        "buttonBorderPrimary": "transparent",
         "buttonPrimary": "#0073D1",
         "buttonPrimaryHover": "#0073EB",
         "buttonSelected": "#00003C",

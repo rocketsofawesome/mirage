@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) RoundRadio matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 > input {
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.c0 > label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 6.4rem;
+  height: 6.4rem;
+  cursor: pointer;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 0.25s;
+  transition-duration: 0.25s;
+  -webkit-transition-property: background-color,border-color,color;
+  transition-property: background-color,border-color,color;
+  text-align: center;
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  color: #00003C;
+  border: 1px solid #CFCFCF;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+}
+
+.c0 > input:checked + label {
+  color: #FFFFFF;
+  border: 1px solid #0073D1;
+  background-color: #0073D1;
+}
+
+<BaseRoundRadioButton
+  className="c0"
+  input={
+    Object {
+      "defaultChecked": false,
+      "input": Object {
+        "onChange": [Function],
+      },
+      "name": "size",
+      "value": "1",
+    }
+  }
+/>
+`;

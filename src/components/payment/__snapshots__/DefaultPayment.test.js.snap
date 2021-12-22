@@ -117,7 +117,7 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
     <aside>
       <LowercaseLabel>
         <styled.label
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -125,7 +125,7 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
         >
           <label
             className="c2 c3"
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -136,7 +136,7 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
       </LowercaseLabel>
       <LowercaseLabel>
         <styled.label
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -144,7 +144,7 @@ exports[`(Component) BaseDefaultPayment matching the snapshot 1`] = `
         >
           <label
             className="c2 c3"
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -306,7 +306,7 @@ exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
       <aside>
         <LowercaseLabel>
           <styled.label
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -314,7 +314,7 @@ exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
           >
             <label
               className="c3 c4"
-              color="navy"
+              color="textPrimary"
               fontSize="2rem"
               fontWeight="normal"
               letterSpacing="normal"
@@ -325,7 +325,7 @@ exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
         </LowercaseLabel>
         <LowercaseLabel>
           <styled.label
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -333,7 +333,7 @@ exports[`(Styled Component) DefaultPayment matching the snapshot 1`] = `
           >
             <label
               className="c3 c4"
-              color="navy"
+              color="textPrimary"
               fontSize="2rem"
               fontWeight="normal"
               letterSpacing="normal"

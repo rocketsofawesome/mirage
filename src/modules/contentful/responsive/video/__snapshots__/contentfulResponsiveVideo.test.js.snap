@@ -1,0 +1,487 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ContentfulResponsiveVideo matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+}
+
+.c0 .c1 {
+  width: 100%;
+  object-fit: fill;
+}
+
+.c0 .roa-video-fallback {
+  width: 100%;
+}
+
+.c0 > article {
+  position: relative;
+}
+
+<ContentfulResponsiveVideo
+  fields={
+    Object {
+      "desktopFallbackImage": Object {
+        "fields": Object {
+          "description": "An example tag",
+          "file": Object {
+            "contentType": "image/jpeg",
+            "url": "https://www.example.com/img.jpg",
+          },
+        },
+        "sys": Object {
+          "type": "Asset",
+        },
+      },
+      "mobileFallbackImage": Object {
+        "fields": Object {
+          "description": "An example tag",
+          "file": Object {
+            "contentType": "image/jpeg",
+            "url": "https://www.example.com/img.jpg",
+          },
+        },
+        "sys": Object {
+          "type": "Asset",
+        },
+      },
+      "mobileSources": Array [
+        Object {
+          "fields": Object {
+            "description": "An example tag",
+            "file": Object {
+              "contentType": "video/mp4",
+              "url": "https://www.example.com/video.mp4",
+            },
+          },
+          "sys": Object {
+            "contentType": Object {
+              "sys": Object {
+                "id": "Video",
+              },
+            },
+            "id": "example-video-asset",
+          },
+        },
+      ],
+      "sources": Array [
+        Object {
+          "fields": Object {
+            "description": "An example tag",
+            "file": Object {
+              "contentType": "video/mp4",
+              "url": "https://www.example.com/video.mp4",
+            },
+          },
+          "sys": Object {
+            "contentType": Object {
+              "sys": Object {
+                "id": "Video",
+              },
+            },
+            "id": "example-video-asset",
+          },
+        },
+      ],
+    }
+  }
+  sys={
+    Object {
+      "contentType": Object {
+        "sys": Object {
+          "id": "contentRow",
+        },
+      },
+      "id": "example-responsive-video",
+    }
+  }
+>
+  <WithTheme(Styled(BaseBackgroundVideo))
+    desktopFallback={
+      Object {
+        "alt": "An example tag",
+        "src": "https://www.example.com/img.jpg",
+      }
+    }
+    mobileFallback={
+      Object {
+        "alt": "An example tag",
+        "src": "https://www.example.com/img.jpg",
+      }
+    }
+    sources={
+      Object {
+        "desktop": Array [
+          "https://www.example.com/video.mp4",
+        ],
+        "mobile": Array [
+          "https://www.example.com/video.mp4",
+        ],
+      }
+    }
+  >
+    <Styled(BaseBackgroundVideo)
+      desktopFallback={
+        Object {
+          "alt": "An example tag",
+          "src": "https://www.example.com/img.jpg",
+        }
+      }
+      mobileFallback={
+        Object {
+          "alt": "An example tag",
+          "src": "https://www.example.com/img.jpg",
+        }
+      }
+      sources={
+        Object {
+          "desktop": Array [
+            "https://www.example.com/video.mp4",
+          ],
+          "mobile": Array [
+            "https://www.example.com/video.mp4",
+          ],
+        }
+      }
+      theme={
+        Object {
+          "base": undefined,
+          "basePxSize": 10,
+          "borders": Object {
+            "inputBorder": "1px solid",
+          },
+          "breakpoints": Object {
+            "aboveDesktop": "(min-width: 1441px)",
+            "aboveIncludingDesktop": "(min-width: 1440px)",
+            "aboveIncludingLaptop": "(min-width: 1024px)",
+            "aboveIncludingMobileNav": "(min-width: 889px)",
+            "aboveIncludingPhone": "(min-width: 320px)",
+            "aboveIncludingPhoneMax": "(min-width: 414px)",
+            "aboveIncludingTablet": "(min-width: 768px)",
+            "aboveIncludingTabletMax": "(min-width: 960px)",
+            "aboveLaptop": "(min-width: 1025px)",
+            "aboveMobileNav": "(min-width: 890px)",
+            "abovePhone": "(min-width: 321px)",
+            "abovePhoneMax": "(min-width: 415px)",
+            "aboveTablet": "(min-width: 769px)",
+            "aboveTabletMax": "(min-width: 961px)",
+            "belowDesktop": "(max-width: 1439px)",
+            "belowLaptop": "(max-width: 1023px)",
+            "belowMobileNav": "(max-width: 888px)",
+            "belowPhone": "(max-width: 319px)",
+            "belowPhoneMax": "(max-width: 413px)",
+            "belowTablet": "(max-width: 767px)",
+            "belowTabletMax": "(max-width: 959px)",
+            "landscape": "(orientation: landscape)",
+            "portrait": "(orientation: portrait)",
+          },
+          "breakpointsVerbose": Object {
+            "aboveDesktop": [Function],
+            "aboveIncludingDesktop": [Function],
+            "aboveIncludingLaptop": [Function],
+            "aboveIncludingMobileNav": [Function],
+            "aboveIncludingPhone": [Function],
+            "aboveIncludingPhoneMax": [Function],
+            "aboveIncludingTablet": [Function],
+            "aboveIncludingTabletMax": [Function],
+            "aboveLaptop": [Function],
+            "aboveMobileNav": [Function],
+            "abovePhone": [Function],
+            "abovePhoneMax": [Function],
+            "aboveTablet": [Function],
+            "aboveTabletMax": [Function],
+            "belowDesktop": [Function],
+            "belowLaptop": [Function],
+            "belowMobileNav": [Function],
+            "belowPhone": [Function],
+            "belowPhoneMax": [Function],
+            "belowTablet": [Function],
+            "belowTabletMax": [Function],
+            "landscape": [Function],
+            "portrait": [Function],
+          },
+          "colors": Object {
+            "black": "#000000",
+            "borderPrimary": "#D5D5D5",
+            "buttonBorderPrimary": "transparent",
+            "buttonPrimary": "#0073D1",
+            "buttonPrimaryHover": "#0073EB",
+            "buttonSelected": "#00003C",
+            "buttonTextPrimary": "#FFFFFF",
+            "buttonUnselected": "#F3F3F3",
+            "electricBlue": "#080CF1",
+            "flameOrange": "#FF511C",
+            "focusPrimary": "#0073D1",
+            "gray": Array [
+              "#F3F3F3",
+              "#F5F5F5",
+              "#F8F8F8",
+              "#E6E6E6",
+              "#D5D5D5",
+              "#CFCFCF",
+              "#979797",
+              "#6e6e6e",
+            ],
+            "gray0": "#F3F3F3",
+            "gray1": "#F5F5F5",
+            "gray2": "#F8F8F8",
+            "gray3": "#E6E6E6",
+            "gray4": "#D5D5D5",
+            "gray5": "#CFCFCF",
+            "gray6": "#979797",
+            "gray7": "#6e6e6e",
+            "lightBlue": Array [
+              "#EEFCFF",
+              "#BCE1F7",
+              "#76C2F3",
+            ],
+            "lightBlue0": "#EEFCFF",
+            "lightBlue1": "#BCE1F7",
+            "lightBlue2": "#76C2F3",
+            "lightPink": "#FBDDE4",
+            "loading": "#BFBFBF",
+            "navy": "#00003C",
+            "pink": "#FEACBE",
+            "red": "#FF511C",
+            "rocketBlue": "#0073D1",
+            "rocketBlueHover": "#0073EB",
+            "shadyLady": "#979797",
+            "textError": "#FF511C",
+            "textPrimary": "#00003C",
+            "textSecondary": "#0073D1",
+            "white": "#FFFFFF",
+            "yellow": "#F0FF02",
+            "yellowHover": "#D8E320",
+          },
+          "fixedPosition": "relative",
+          "fonts": Object {
+            "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+            "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+            "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+          },
+          "grid": Object {
+            "columns": Object {
+              "desktop": 12,
+              "mobile": 4,
+              "tablet": 12,
+            },
+            "gutter": 2,
+            "margins": Object {
+              "desktop": "7%",
+              "mobile": "3%",
+              "tablet": "7%",
+            },
+          },
+          "media": Object {
+            "desktop": [Function],
+            "laptop": [Function],
+            "mobileNav": [Function],
+            "phone": [Function],
+            "phoneMax": [Function],
+            "tablet": [Function],
+            "tabletMax": [Function],
+          },
+          "sizes": Object {
+            "desktop": 1440,
+            "laptop": 1024,
+            "mobileNav": 889,
+            "phone": 320,
+            "phoneMax": 414,
+            "tablet": 768,
+            "tabletMax": 960,
+          },
+        }
+      }
+    >
+      <BaseBackgroundVideo
+        className="c0"
+        desktopFallback={
+          Object {
+            "alt": "An example tag",
+            "src": "https://www.example.com/img.jpg",
+          }
+        }
+        mobileFallback={
+          Object {
+            "alt": "An example tag",
+            "src": "https://www.example.com/img.jpg",
+          }
+        }
+        sources={
+          Object {
+            "desktop": Array [
+              "https://www.example.com/video.mp4",
+            ],
+            "mobile": Array [
+              "https://www.example.com/video.mp4",
+            ],
+          }
+        }
+        theme={
+          Object {
+            "base": undefined,
+            "basePxSize": 10,
+            "borders": Object {
+              "inputBorder": "1px solid",
+            },
+            "breakpoints": Object {
+              "aboveDesktop": "(min-width: 1441px)",
+              "aboveIncludingDesktop": "(min-width: 1440px)",
+              "aboveIncludingLaptop": "(min-width: 1024px)",
+              "aboveIncludingMobileNav": "(min-width: 889px)",
+              "aboveIncludingPhone": "(min-width: 320px)",
+              "aboveIncludingPhoneMax": "(min-width: 414px)",
+              "aboveIncludingTablet": "(min-width: 768px)",
+              "aboveIncludingTabletMax": "(min-width: 960px)",
+              "aboveLaptop": "(min-width: 1025px)",
+              "aboveMobileNav": "(min-width: 890px)",
+              "abovePhone": "(min-width: 321px)",
+              "abovePhoneMax": "(min-width: 415px)",
+              "aboveTablet": "(min-width: 769px)",
+              "aboveTabletMax": "(min-width: 961px)",
+              "belowDesktop": "(max-width: 1439px)",
+              "belowLaptop": "(max-width: 1023px)",
+              "belowMobileNav": "(max-width: 888px)",
+              "belowPhone": "(max-width: 319px)",
+              "belowPhoneMax": "(max-width: 413px)",
+              "belowTablet": "(max-width: 767px)",
+              "belowTabletMax": "(max-width: 959px)",
+              "landscape": "(orientation: landscape)",
+              "portrait": "(orientation: portrait)",
+            },
+            "breakpointsVerbose": Object {
+              "aboveDesktop": [Function],
+              "aboveIncludingDesktop": [Function],
+              "aboveIncludingLaptop": [Function],
+              "aboveIncludingMobileNav": [Function],
+              "aboveIncludingPhone": [Function],
+              "aboveIncludingPhoneMax": [Function],
+              "aboveIncludingTablet": [Function],
+              "aboveIncludingTabletMax": [Function],
+              "aboveLaptop": [Function],
+              "aboveMobileNav": [Function],
+              "abovePhone": [Function],
+              "abovePhoneMax": [Function],
+              "aboveTablet": [Function],
+              "aboveTabletMax": [Function],
+              "belowDesktop": [Function],
+              "belowLaptop": [Function],
+              "belowMobileNav": [Function],
+              "belowPhone": [Function],
+              "belowPhoneMax": [Function],
+              "belowTablet": [Function],
+              "belowTabletMax": [Function],
+              "landscape": [Function],
+              "portrait": [Function],
+            },
+            "colors": Object {
+              "black": "#000000",
+              "borderPrimary": "#D5D5D5",
+              "buttonBorderPrimary": "transparent",
+              "buttonPrimary": "#0073D1",
+              "buttonPrimaryHover": "#0073EB",
+              "buttonSelected": "#00003C",
+              "buttonTextPrimary": "#FFFFFF",
+              "buttonUnselected": "#F3F3F3",
+              "electricBlue": "#080CF1",
+              "flameOrange": "#FF511C",
+              "focusPrimary": "#0073D1",
+              "gray": Array [
+                "#F3F3F3",
+                "#F5F5F5",
+                "#F8F8F8",
+                "#E6E6E6",
+                "#D5D5D5",
+                "#CFCFCF",
+                "#979797",
+                "#6e6e6e",
+              ],
+              "gray0": "#F3F3F3",
+              "gray1": "#F5F5F5",
+              "gray2": "#F8F8F8",
+              "gray3": "#E6E6E6",
+              "gray4": "#D5D5D5",
+              "gray5": "#CFCFCF",
+              "gray6": "#979797",
+              "gray7": "#6e6e6e",
+              "lightBlue": Array [
+                "#EEFCFF",
+                "#BCE1F7",
+                "#76C2F3",
+              ],
+              "lightBlue0": "#EEFCFF",
+              "lightBlue1": "#BCE1F7",
+              "lightBlue2": "#76C2F3",
+              "lightPink": "#FBDDE4",
+              "loading": "#BFBFBF",
+              "navy": "#00003C",
+              "pink": "#FEACBE",
+              "red": "#FF511C",
+              "rocketBlue": "#0073D1",
+              "rocketBlueHover": "#0073EB",
+              "shadyLady": "#979797",
+              "textError": "#FF511C",
+              "textPrimary": "#00003C",
+              "textSecondary": "#0073D1",
+              "white": "#FFFFFF",
+              "yellow": "#F0FF02",
+              "yellowHover": "#D8E320",
+            },
+            "fixedPosition": "relative",
+            "fonts": Object {
+              "headerFont": "\\"din-cond\\", \\"din-condensed-web\\", Arial, sans-serif",
+              "primaryFont": "\\"ff-din-web\\", Helvetica, Arial, sans-serif",
+              "secondaryFont": "\\"adobe-caslon-pro\\", Helvetica, Arial, serif",
+            },
+            "grid": Object {
+              "columns": Object {
+                "desktop": 12,
+                "mobile": 4,
+                "tablet": 12,
+              },
+              "gutter": 2,
+              "margins": Object {
+                "desktop": "7%",
+                "mobile": "3%",
+                "tablet": "7%",
+              },
+            },
+            "media": Object {
+              "desktop": [Function],
+              "laptop": [Function],
+              "mobileNav": [Function],
+              "phone": [Function],
+              "phoneMax": [Function],
+              "tablet": [Function],
+              "tabletMax": [Function],
+            },
+            "sizes": Object {
+              "desktop": 1440,
+              "laptop": 1024,
+              "mobileNav": 889,
+              "phone": 320,
+              "phoneMax": 414,
+              "tablet": 768,
+              "tabletMax": 960,
+            },
+          }
+        }
+      >
+        <section
+          className="c0"
+        >
+          <MediaQuery
+            query="(min-width: 961px)"
+            values={Object {}}
+          />
+          <MediaQuery
+            query="(max-width: 959px)"
+            values={Object {}}
+          />
+          <article />
+        </section>
+      </BaseBackgroundVideo>
+    </Styled(BaseBackgroundVideo)>
+  </WithTheme(Styled(BaseBackgroundVideo))>
+</ContentfulResponsiveVideo>
+`;

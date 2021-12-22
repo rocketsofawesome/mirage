@@ -10,7 +10,6 @@ exports[`(Base Component) CheckboxSVG matching the snapshot 1`] = `
 
 .c0 {
   fill: none;
-  stroke: #0073D1;
   stroke-width: 20;
   stroke-linecap: round;
 }
@@ -59,7 +58,6 @@ exports[`(Component) StyledCheckboxSVG matching the snapshot 1`] = `
 
 .c1 {
   fill: none;
-  stroke: #0073D1;
   stroke-width: 20;
   stroke-linecap: round;
 }

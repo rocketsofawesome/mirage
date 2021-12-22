@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ProgressBarText matching the snapshot 1`] = `
+<styled.div>
+  <Message
+    itemsInBag={3}
+  />
+</styled.div>
+`;

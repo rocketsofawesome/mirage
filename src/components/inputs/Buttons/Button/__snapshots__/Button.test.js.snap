@@ -62,7 +62,7 @@ exports[`(Styled Componenet) Button matching the snapshot 1`] = `
 .c0 {
   background-color: #0073D1;
   border: 1px solid;
-  border-color: #D5D5D5;
+  border-color: transparent;
   color: #FFFFFF;
   stroke: #FFFFFF;
 }

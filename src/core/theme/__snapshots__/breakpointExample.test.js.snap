@@ -6,7 +6,7 @@ exports[`(Style Component) Example matching the snapshot 1`] = `
   height: 300px;
 }
 
-@media (min-width:32.1em) {
+@media (min-width:32em) {
   .c0 {
     background-color: green;
   }

@@ -84,7 +84,7 @@ exports[`(Base Component) BaseAccordion matching the snapshot 1`] = `
 .c0 {
   background-color: #0073D1;
   border: 1px solid;
-  border-color: #D5D5D5;
+  border-color: transparent;
   color: #FFFFFF;
   stroke: #FFFFFF;
 }
@@ -347,7 +347,7 @@ exports[`(Styled Component) Accordion matching the snapshot 1`] = `
 .c1 {
   background-color: #0073D1;
   border: 1px solid;
-  border-color: #D5D5D5;
+  border-color: transparent;
   color: #FFFFFF;
   stroke: #FFFFFF;
 }

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) EmailCapture matching the snapshot 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 2em;
+  background-image: url('https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/v1/web/box/d_flat_rate_return_header');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.c0 .c1 {
+  text-align: center;
+}
+
+@media (min-width:961px) {
+  .c0 .sc-ktHwxA {
+    margin-bottom: 5.5rem;
+  }
+}
+
+@media (max-width:959px) {
+  .c0 .sc-ktHwxA {
+    margin: 0 2rem 5.5rem 2rem;
+  }
+}
+
+<BaseEmailCapture
+  className="c0"
+/>
+`;

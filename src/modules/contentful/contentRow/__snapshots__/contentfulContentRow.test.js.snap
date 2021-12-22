@@ -1,0 +1,281 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ContentfulContentRow matching the snapshot 1`] = `
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.c2 {
+  box-sizing: border-box;
+  max-width: 100%;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.c0 > div {
+  position: relative;
+  z-index: 1;
+  padding-top: 2rem;
+}
+
+.c0 > video,
+.c0 > video {
+  height: 100%;
+}
+
+.c0 > video,
+.c0 > video,
+.c0 > img,
+.c0 > img {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.c0 > article,
+.c0 > article {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  padding-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+@media (min-width:415px) {
+  .c1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width:769px) {
+  .c1 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:961px) {
+  .c1 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:769px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width:961px) {
+  .c2 {
+    max-width: 100%;
+    -webkit-flex-basis: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:1441px) {
+  .c0 > video,
+  .c0 > video {
+    height: 75%;
+  }
+}
+
+@media (min-width:769px) {
+  .c0 > article,
+  .c0 > article {
+    padding-top: 2rem;
+    margin-bottom: 6rem;
+  }
+}
+
+<Styled(BaseContentfulContentRow)
+  fields={
+    Object {
+      "entryElements": Array [],
+      "layout": "Full Bleed",
+    }
+  }
+  sys={
+    Object {
+      "id": "example-content-row",
+    }
+  }
+>
+  <BaseContentfulContentRow
+    className="c0"
+    fields={
+      Object {
+        "entryElements": Array [],
+        "layout": "Full Bleed",
+      }
+    }
+    sys={
+      Object {
+        "id": "example-content-row",
+      }
+    }
+  >
+    <FullBleed
+      key="example-content-row"
+    >
+      <Styled(BaseFlexRow)
+        align="flex-start"
+        desktop={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+        element="div"
+        mobile={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+        padding={false}
+        tablet={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+      >
+        <BaseFlexRow
+          align="flex-start"
+          className="c1"
+          desktop={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+          element="div"
+          mobile={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+          padding={false}
+          tablet={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+        >
+          <div
+            className="c1"
+            desktop={
+              Object {
+                "wrap": "wrap",
+              }
+            }
+            mobile={
+              Object {
+                "wrap": "wrap",
+              }
+            }
+            tablet={
+              Object {
+                "wrap": "wrap",
+              }
+            }
+          >
+            <Styled(BaseFlexCol)
+              columns={
+                Object {
+                  "desktop": 12,
+                  "mobile": 4,
+                }
+              }
+              desktop={
+                Object {
+                  "width": 12,
+                }
+              }
+              element="div"
+              mobile={
+                Object {
+                  "width": 4,
+                }
+              }
+              nested={true}
+              tablet={
+                Object {
+                  "width": 12,
+                }
+              }
+            >
+              <BaseFlexCol
+                className="c2"
+                columns={
+                  Object {
+                    "desktop": 12,
+                    "mobile": 4,
+                  }
+                }
+                desktop={
+                  Object {
+                    "width": 12,
+                  }
+                }
+                element="div"
+                mobile={
+                  Object {
+                    "width": 4,
+                  }
+                }
+                nested={true}
+                tablet={
+                  Object {
+                    "width": 12,
+                  }
+                }
+              >
+                <div
+                  className="c2"
+                />
+              </BaseFlexCol>
+            </Styled(BaseFlexCol)>
+          </div>
+        </BaseFlexRow>
+      </Styled(BaseFlexRow)>
+    </FullBleed>
+  </BaseContentfulContentRow>
+</Styled(BaseContentfulContentRow)>
+`;
