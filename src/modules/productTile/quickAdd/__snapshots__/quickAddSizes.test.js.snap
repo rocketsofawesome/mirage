@@ -1,0 +1,511 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) QuickAddSizes matching the snapshot 1`] = `
+.c0 {
+  -webkit-letter-spacing: 0.5px;
+  -moz-letter-spacing: 0.5px;
+  -ms-letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
+  color: #00003C;
+  text-align: inherit;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1;
+  text-transform: uppercase;
+  margin: 2.3rem 0;
+}
+
+.c1 {
+  position: relative;
+}
+
+.c1 input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.c1 input:checked + label {
+  background-color: #00003C;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 input:checked + label:hover {
+  background-color: #00003C;
+  color: #FFFFFF;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 input:disabled + label {
+  color: #BFBFBF;
+}
+
+.c1 input:disabled + label:hover {
+  color: #BFBFBF;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c1 label {
+  box-sizing: border-box;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  border-radius: 1.5rem;
+  color: $navy-blue;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  margin: 0.6rem;
+  padding: 0 0.6rem;
+  min-width: 2.8rem;
+  width: auto;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 label:hover {
+  background-color: #0073D1;
+  color: #FFFFFF;
+  cursor: pointer;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+<BaseQuickAddSizes
+  addingText="Adding..."
+  defaultText="Choose your size"
+  quickAdd={[Function]}
+  variants={
+    Array [
+      Object {
+        "cost_price": null,
+        "id": 19579,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "4",
+        "sku": "7254-300-I",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19580,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "6",
+        "sku": "7254-300-L",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19581,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "7",
+        "sku": "7254-300-M",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19582,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "10",
+        "sku": "7254-300-N",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19583,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "12",
+        "sku": "7254-300-O",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19584,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "5",
+        "sku": "7254-300-K",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19585,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "8",
+        "sku": "7254-300-E",
+      },
+      Object {
+        "cost_price": null,
+        "id": 19586,
+        "in_stock": true,
+        "price": 22.5,
+        "size": "3",
+        "sku": "7254-300-H",
+      },
+    ]
+  }
+>
+  <div>
+    <styled.h4
+      align="inherit"
+      fontSize="1.4rem"
+      italic={false}
+      margin="2.3rem 0"
+      uppercase={true}
+    >
+      <h4
+        className="c0"
+        fontSize="1.4rem"
+      >
+        Choose your size
+      </h4>
+    </styled.h4>
+    <ul>
+      <li
+        key="0"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-I",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-I",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-I"
+                name="7254-300-I"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-I"
+              >
+                4
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="1"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-L",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-L",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-L"
+                name="7254-300-L"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-L"
+              >
+                6
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="2"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-M",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-M",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-M"
+                name="7254-300-M"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-M"
+              >
+                7
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="3"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-N",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-N",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-N"
+                name="7254-300-N"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-N"
+              >
+                10
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="4"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-O",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-O",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-O"
+                name="7254-300-O"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-O"
+              >
+                12
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="5"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-K",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-K",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-K"
+                name="7254-300-K"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-K"
+              >
+                5
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="6"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-E",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-E",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-E"
+                name="7254-300-E"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-E"
+              >
+                8
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+      <li
+        key="7"
+      >
+        <Styled(QuickAddSize)
+          input={
+            Object {
+              "disabled": false,
+              "name": "7254-300-H",
+              "onClick": [Function],
+            }
+          }
+        >
+          <QuickAddSize
+            className="c1"
+            input={
+              Object {
+                "disabled": false,
+                "name": "7254-300-H",
+                "onClick": [Function],
+              }
+            }
+          >
+            <div
+              className="c1"
+            >
+              <input
+                disabled={false}
+                id="7254-300-H"
+                name="7254-300-H"
+                onClick={[Function]}
+                type="button"
+              />
+              <label
+                htmlFor="7254-300-H"
+              >
+                3
+              </label>
+            </div>
+          </QuickAddSize>
+        </Styled(QuickAddSize)>
+      </li>
+    </ul>
+  </div>
+</BaseQuickAddSizes>
+`;

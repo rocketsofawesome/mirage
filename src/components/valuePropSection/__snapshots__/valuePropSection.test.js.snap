@@ -1,0 +1,84 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ValuePropSection matching the snapshot 1`] = `
+.c0 .c1 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.c0 .c1 {
+  font-size: 24px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.c0 .c2 {
+  text-align: center;
+  max-width: 275px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.c0 .image {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  min-height: 76px;
+  text-align: center;
+}
+
+.c0 .flexDiv {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: space-around;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: space-around;
+  justify-content: space-around;
+}
+
+.c0 .innerFlexDiv {
+  margin-bottom: 60px;
+}
+
+.c0 .innerFlexDiv:last-child {
+  margin-bottom: 0;
+}
+
+.c0 .textTitle {
+  font-weight: bold;
+}
+
+@media (max-width:958px) {
+  .c0 .c1 {
+    font-size: 3.4rem;
+  }
+}
+
+@media (min-width:769px) {
+  .c0 .c1 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width:961px) {
+  .c0 .innerFlexDiv:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+  }
+}
+
+<BaseValuePropSection
+  className="c0"
+  constrained={true}
+  padding={true}
+/>
+`;

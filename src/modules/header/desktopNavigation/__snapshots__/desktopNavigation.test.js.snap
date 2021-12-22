@@ -18,13 +18,13 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -566,6 +566,22 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
 }
 
 @media (min-width:769px) {
+  .c2 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:961px) {
+  .c2 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:769px) {
   .c12 {
     max-width: 100%;
     -webkit-flex-basis: 100%;
@@ -872,7 +888,6 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
       }
     }
     highlightable={false}
-    homepageUrl="https://rocketsofawesome.com"
     renderLink={[Function]}
     showBlog="true"
     showSearch={false}
@@ -892,23 +907,68 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
           <Styled(BaseFlexRow)
             align="flex-start"
             constrained={true}
+            desktop={
+              Object {
+                "wrap": "wrap",
+              }
+            }
             element="nav"
+            mobile={
+              Object {
+                "wrap": "wrap",
+              }
+            }
+            tablet={
+              Object {
+                "wrap": "wrap",
+              }
+            }
           >
             <BaseFlexRow
               align="flex-start"
               className="c2"
               constrained={true}
+              desktop={
+                Object {
+                  "wrap": "wrap",
+                }
+              }
               element="nav"
+              mobile={
+                Object {
+                  "wrap": "wrap",
+                }
+              }
+              tablet={
+                Object {
+                  "wrap": "wrap",
+                }
+              }
             >
               <nav
                 className="c2"
+                desktop={
+                  Object {
+                    "wrap": "wrap",
+                  }
+                }
+                mobile={
+                  Object {
+                    "wrap": "wrap",
+                  }
+                }
+                tablet={
+                  Object {
+                    "wrap": "wrap",
+                  }
+                }
               >
                 <ol>
                   <li>
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com"
+                      href="/"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       renderLink={[Function]}
@@ -918,7 +978,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c4"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com"
+                        href="/"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         renderLink={[Function]}
@@ -926,7 +986,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                       >
                         <Styled(Styled(Component))
                           className="c3 c4"
-                          href="https://rocketsofawesome.com"
+                          href="/"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -941,7 +1001,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com"
+                            href="/"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -956,7 +1016,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com"
+                              href="/"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -968,7 +1028,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c4 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com"
+                                href="/"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
@@ -1363,16 +1423,61 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           <Styled(BaseFlexRow)
                             align="flex-start"
                             constrained={true}
+                            desktop={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
                             element="menu"
+                            mobile={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
+                            tablet={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
                           >
                             <BaseFlexRow
                               align="flex-start"
                               className="c2"
                               constrained={true}
+                              desktop={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
                               element="menu"
+                              mobile={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
+                              tablet={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
                             >
                               <menu
                                 className="c2"
+                                desktop={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
+                                mobile={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
+                                tablet={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
                               >
                                 <Styled(BaseFlexCol)
                                   columns={
@@ -3286,16 +3391,61 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                           <Styled(BaseFlexRow)
                             align="flex-start"
                             constrained={true}
+                            desktop={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
                             element="menu"
+                            mobile={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
+                            tablet={
+                              Object {
+                                "wrap": "wrap",
+                              }
+                            }
                           >
                             <BaseFlexRow
                               align="flex-start"
                               className="c2"
                               constrained={true}
+                              desktop={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
                               element="menu"
+                              mobile={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
+                              tablet={
+                                Object {
+                                  "wrap": "wrap",
+                                }
+                              }
                             >
                               <menu
                                 className="c2"
+                                desktop={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
+                                mobile={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
+                                tablet={
+                                  Object {
+                                    "wrap": "wrap",
+                                  }
+                                }
                               >
                                 <Styled(BaseFlexCol)
                                   columns={
@@ -4842,7 +4992,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com/outfits"
+                      href="/outfits"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       spacing={true}
@@ -4851,14 +5001,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com/outfits"
+                        href="/outfits"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
-                          href="https://rocketsofawesome.com/outfits"
+                          href="/outfits"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -4872,7 +5022,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com/outfits"
+                            href="/outfits"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -4886,7 +5036,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com/outfits"
+                              href="/outfits"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -4897,7 +5047,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com/outfits"
+                                href="/outfits"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}
@@ -4916,7 +5066,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                     <Styled(BaseHeaderLink)
                       highlightOn="hover"
                       highlightable={false}
-                      href="https://rocketsofawesome.com/subscribe-and-save"
+                      href="/subscribe-and-save"
                       onFocus={[Function]}
                       onMouseEnter={[Function]}
                       spacing={true}
@@ -4925,14 +5075,14 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                         className="c3 c10"
                         highlightOn="hover"
                         highlightable={false}
-                        href="https://rocketsofawesome.com/subscribe-and-save"
+                        href="/subscribe-and-save"
                         onFocus={[Function]}
                         onMouseEnter={[Function]}
                         spacing={true}
                       >
                         <Styled(Styled(Component))
                           className="c3 c10"
-                          href="https://rocketsofawesome.com/subscribe-and-save"
+                          href="/subscribe-and-save"
                           light={true}
                           onFocus={[Function]}
                           onMouseEnter={[Function]}
@@ -4946,7 +5096,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                             fontSize="1.4rem"
                             fontStyle="normal"
                             fontWeight={500}
-                            href="https://rocketsofawesome.com/subscribe-and-save"
+                            href="/subscribe-and-save"
                             light={true}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
@@ -4960,7 +5110,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               fontSize="1.4rem"
                               fontStyle="normal"
                               fontWeight={500}
-                              href="https://rocketsofawesome.com/subscribe-and-save"
+                              href="/subscribe-and-save"
                               light={true}
                               onFocus={[Function]}
                               onMouseEnter={[Function]}
@@ -4971,7 +5121,7 @@ exports[`(Styled Component)  DesktopNavigation matching the snapshot 1`] = `
                               <a
                                 className="c3 c10 c5 c6"
                                 fontStyle="normal"
-                                href="https://rocketsofawesome.com/subscribe-and-save"
+                                href="/subscribe-and-save"
                                 onFocus={[Function]}
                                 onMouseEnter={[Function]}
                                 onMouseLeave={[Function]}

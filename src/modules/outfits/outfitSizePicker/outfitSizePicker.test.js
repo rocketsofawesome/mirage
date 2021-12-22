@@ -37,8 +37,10 @@ const defaultProps = {
         {sku: 'sku-26', size: 12, inStock: true},
       ],
       id: '12346'
-    }
+    },
   ],
+  evergreenPromoItemCount: '6',
+  evergreenPromoPercent: '15',
   onSizeSelect: () => {}
 }
 

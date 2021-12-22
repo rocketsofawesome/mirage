@@ -127,7 +127,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
         </h3>
       </styled.h3>
       <styled.h1
-        color="navy"
+        color="textPrimary"
         fontSizes={
           Object {
             "desktop": "4.2rem",
@@ -145,14 +145,14 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       >
         <h1
           className="c3 c4"
-          color="navy"
+          color="textPrimary"
           letterSpacing=".1rem"
         >
           Weekends Are For Fun Outfit
         </h1>
       </styled.h1>
       <styled.h2
-        color="navy"
+        color="textPrimary"
         fontSizes={
           Object {
             "desktop": "3.2rem",
@@ -163,7 +163,7 @@ exports[`() ProductInformation matching the snapshot 1`] = `
       >
         <h2
           className="c5 c6"
-          color="navy"
+          color="textPrimary"
         >
           $55
         </h2>

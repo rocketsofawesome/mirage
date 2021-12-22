@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) ContentfulVideo matching the snapshot 1`] = `
+<ContentfulVideo
+  fields={
+    Object {
+      "description": "An example tag",
+      "file": Object {
+        "contentType": "video/mp4",
+        "url": "https://www.example.com/video.mp4",
+      },
+    }
+  }
+  sys={
+    Object {
+      "contentType": Object {
+        "sys": Object {
+          "id": "Video",
+        },
+      },
+      "id": "example-video-asset",
+    }
+  }
+>
+  <Styled(Video)
+    sources="https://www.example.com/video.mp4"
+    sys={
+      Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "Video",
+          },
+        },
+        "id": "example-video-asset",
+      }
+    }
+  >
+    <Video
+      autoPlay={true}
+      className=""
+      loop={true}
+      muted={true}
+      playsInline={true}
+      sources="https://www.example.com/video.mp4"
+      sys={
+        Object {
+          "contentType": Object {
+            "sys": Object {
+              "id": "Video",
+            },
+          },
+          "id": "example-video-asset",
+        }
+      }
+    >
+      <video
+        autoPlay={true}
+        className=""
+        loop={true}
+        muted={true}
+        playsInline={true}
+        sys={
+          Object {
+            "contentType": Object {
+              "sys": Object {
+                "id": "Video",
+              },
+            },
+            "id": "example-video-asset",
+          }
+        }
+      >
+        <source
+          key="0"
+          src="https://www.example.com/video.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </Video>
+  </Styled(Video)>
+</ContentfulVideo>
+`;

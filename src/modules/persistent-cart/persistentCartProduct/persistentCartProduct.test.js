@@ -18,6 +18,8 @@ describe('(Styled Component) PersistentCartProduct', () => {
   color: "Black",
   colorway_slug: "black",
   cost_price: null,
+  evergreenPromoItemCount: '6',
+  evergreenPromoPercent: '15',
   id: 2295178,
   name: "Embellished Bolt Tee",
   order_id: 627140,
@@ -33,6 +35,7 @@ describe('(Styled Component) PersistentCartProduct', () => {
   slug: "embellished-bolt-tee",
   total: "24.5",
   variant_id:16975},
+  onUpdateSize: () => {},
   onUpdateQuantity: () => {},
   onRemoveItem: () => {},
   hideCartSidebar: () => {}}))

@@ -24,7 +24,6 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
 
 .c4 {
   fill: none;
-  stroke: #0073D1;
   stroke-width: 20;
   stroke-linecap: round;
 }
@@ -34,40 +33,29 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
   margin-right: .9rem;
 }
 
-.c7.c7 input:checked + .c1 .c3 {
+.c7 .c1 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c7 .c1 .c5 {
+  display: none;
+}
+
+.c7 .c1 .c3 {
+  stroke: #0073D1;
+}
+
+.c7 input:checked + .c1 .c3 {
   fill: #0073D1;
 }
 
-.c7.c7 input:checked + .c1 .c5 {
+.c7 input:checked + .c1 .c5 {
+  display: block;
   stroke: #FFFFFF;
   stroke-dasharray: 200;
   stroke-dashoffset: 0;
-}
-
-.c7.c7 .showAnimation:focused + .c1 .c3 {
-  stroke-width: 40;
-}
-
-.c7.c7 .showAnimation:checked + .c1 .c3 {
-  -webkit-animation: dYFWVh 0.25s linear forwards;
-  animation: dYFWVh 0.25s linear forwards;
-  fill: #0073D1;
-}
-
-.c7.c7 .showAnimation:checked + .c1 .c5 {
-  -webkit-animation: fqPGid 0.25s linear forwards;
-  animation: fqPGid 0.25s linear forwards;
-  stroke: #FFFFFF;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 0;
-}
-
-.c7.c7 .showAnimation:not(:checked) + .c1 .c3 {
-  -webkit-animation: hBmzvO 0.25s linear forwards;
-  animation: hBmzvO 0.25s linear forwards;
-  stroke-linecap: round;
-  stroke-dashoffset: 200;
-  fill: none;
 }
 
 <CheckboxBase
@@ -79,6 +67,7 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
   }
 >
   <styled.label
+    color="textPrimary"
     fontSize="1.4rem"
     fontWeight="500"
     letterSpacing=".1rem"
@@ -86,12 +75,12 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
   >
     <label
       className="c0"
+      color="textPrimary"
       fontSize="1.4rem"
       fontWeight="500"
       letterSpacing=".1rem"
     >
       <input
-        className=""
         onChange={[Function]}
         onClick={[Function]}
         type="checkbox"
@@ -149,7 +138,9 @@ exports[`(Base Component) Checkbox matching the snapshot 1`] = `
           </svg>
         </CheckboxSVG>
       </Styled(CheckboxSVG)>
-      Example Checkbox
+      <span>
+        Example Checkbox
+      </span>
     </label>
   </styled.label>
 </CheckboxBase>
@@ -179,7 +170,6 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
 
 .c5 {
   fill: none;
-  stroke: #0073D1;
   stroke-width: 20;
   stroke-linecap: round;
 }
@@ -189,7 +179,7 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   margin-right: .9rem;
 }
 
-.c0.c0 {
+.c0 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -202,49 +192,41 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   font-weight: 400;
 }
 
-.c0.c0 input {
+.c0 .c2 {
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.c0 .c2 .c6 {
+  display: none;
+}
+
+.c0 .c2 .c4 {
+  stroke: #0073D1;
+}
+
+.c0 input {
   width: 0;
   height: 0;
   opacity: 0;
 }
 
-.c0.c0 input:checked + .c2 .c4 {
+.c0 input:checked + .c2 .c4 {
   fill: #0073D1;
 }
 
-.c0.c0 input:checked + .c2 .c6 {
+.c0 input:checked + .c2 .c6 {
+  display: block;
   stroke: #FFFFFF;
   stroke-dasharray: 200;
   stroke-dashoffset: 0;
-}
-
-.c0.c0 .showAnimation:focused + .c2 .c4 {
-  stroke-width: 40;
-}
-
-.c0.c0 .showAnimation:checked + .c2 .c4 {
-  -webkit-animation: dYFWVh 0.25s linear forwards;
-  animation: dYFWVh 0.25s linear forwards;
-  fill: #0073D1;
-}
-
-.c0.c0 .showAnimation:checked + .c2 .c6 {
-  -webkit-animation: fqPGid 0.25s linear forwards;
-  animation: fqPGid 0.25s linear forwards;
-  stroke: #FFFFFF;
-  stroke-dasharray: 200;
-  stroke-dashoffset: 0;
-}
-
-.c0.c0 .showAnimation:not(:checked) + .c2 .c4 {
-  -webkit-animation: hBmzvO 0.25s linear forwards;
-  animation: hBmzvO 0.25s linear forwards;
-  stroke-linecap: round;
-  stroke-dashoffset: 200;
-  fill: none;
 }
 
 <Styled(CheckboxBase)
+  borderColor="rocketBlue"
+  checkColor="white"
+  fillColor="rocketBlue"
   input={
     Object {
       "onChange": [Function],
@@ -253,7 +235,10 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
   }
 >
   <CheckboxBase
+    borderColor="rocketBlue"
+    checkColor="white"
     className="c0"
+    fillColor="rocketBlue"
     input={
       Object {
         "onChange": [Function],
@@ -262,7 +247,11 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
     }
   >
     <styled.label
+      borderColor="rocketBlue"
+      checkColor="white"
       className="c0"
+      color="textPrimary"
+      fillColor="rocketBlue"
       fontSize="1.4rem"
       fontWeight="500"
       letterSpacing=".1rem"
@@ -270,12 +259,12 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
     >
       <label
         className="c0 c1"
+        color="textPrimary"
         fontSize="1.4rem"
         fontWeight="500"
         letterSpacing=".1rem"
       >
         <input
-          className=""
           onChange={[Function]}
           onClick={[Function]}
           type="checkbox"
@@ -333,7 +322,9 @@ exports[`(Component) Checkbox matching the snapshot 1`] = `
             </svg>
           </CheckboxSVG>
         </Styled(CheckboxSVG)>
-        Example Checkbox
+        <span>
+          Example Checkbox
+        </span>
       </label>
     </styled.label>
   </CheckboxBase>

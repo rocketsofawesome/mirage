@@ -3,8 +3,16 @@
 exports[`(Object) colors matching the snapshot 1`] = `
 Object {
   "black": "#000000",
+  "borderPrimary": "#D5D5D5",
+  "buttonBorderPrimary": "transparent",
+  "buttonPrimary": "#0073D1",
+  "buttonPrimaryHover": "#0073EB",
+  "buttonSelected": "#00003C",
+  "buttonTextPrimary": "#FFFFFF",
+  "buttonUnselected": "#F3F3F3",
   "electricBlue": "#080CF1",
   "flameOrange": "#FF511C",
+  "focusPrimary": "#0073D1",
   "gray": Array [
     "#F3F3F3",
     "#F5F5F5",
@@ -13,6 +21,7 @@ Object {
     "#D5D5D5",
     "#CFCFCF",
     "#979797",
+    "#6e6e6e",
   ],
   "gray0": "#F3F3F3",
   "gray1": "#F5F5F5",
@@ -21,6 +30,7 @@ Object {
   "gray4": "#D5D5D5",
   "gray5": "#CFCFCF",
   "gray6": "#979797",
+  "gray7": "#6e6e6e",
   "lightBlue": Array [
     "#EEFCFF",
     "#BCE1F7",
@@ -37,6 +47,9 @@ Object {
   "rocketBlue": "#0073D1",
   "rocketBlueHover": "#0073EB",
   "shadyLady": "#979797",
+  "textError": "#FF511C",
+  "textPrimary": "#00003C",
+  "textSecondary": "#0073D1",
   "white": "#FFFFFF",
   "yellow": "#F0FF02",
   "yellowHover": "#D8E320",

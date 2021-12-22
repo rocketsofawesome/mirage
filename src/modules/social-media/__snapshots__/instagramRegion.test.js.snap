@@ -203,7 +203,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
     >
       <styled.h1
         aria-label="Find us @ rockets of awesome"
-        color="navy"
+        color="textPrimary"
         fontSizes={
           Object {
             "desktop": "4.2rem",
@@ -222,7 +222,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
         <h1
           aria-label="Find us @ rockets of awesome"
           className="c1 c2"
-          color="navy"
+          color="textPrimary"
           letterSpacing=".1rem"
         >
           Example Title
@@ -305,6 +305,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
               "colors": Object {
                 "black": "#000000",
                 "borderPrimary": "#D5D5D5",
+                "buttonBorderPrimary": "transparent",
                 "buttonPrimary": "#0073D1",
                 "buttonPrimaryHover": "#0073EB",
                 "buttonSelected": "#00003C",
@@ -456,6 +457,7 @@ exports[`(Styled Component) InstagramRegion matching the snapshot 1`] = `
                 "colors": Object {
                   "black": "#000000",
                   "borderPrimary": "#D5D5D5",
+                  "buttonBorderPrimary": "transparent",
                   "buttonPrimary": "#0073D1",
                   "buttonPrimaryHover": "#0073EB",
                   "buttonSelected": "#00003C",

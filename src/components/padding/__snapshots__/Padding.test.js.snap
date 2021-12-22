@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(StyledComponent) Padding matches the snapshot 1`] = `
+.c0 {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+<div
+  className="c0"
+  x={0}
+  y={0}
+/>
+`;

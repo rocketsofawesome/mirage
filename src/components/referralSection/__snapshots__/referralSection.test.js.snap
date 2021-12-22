@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ReferralSection matching the snapshot 1`] = `
+.c0 {
+  background-color: #FFFFFF;
+  border: 15px solid #FBDDE4;
+  margin-top: 30px;
+}
+
+@media (min-width:76.8em) {
+  .c0 {
+    padding-top: 14px;
+    max-width: 600px;
+    margin: 30px auto 0;
+  }
+}
+
+@media (min-width:96em) {
+  .c0 {
+    border-width: 30px;
+  }
+}
+
+<BaseReferralSection
+  className="c0"
+  homepageUrl="https://localhost:3001"
+  name="John Doe"
+  referralClicked={[Function]}
+  referralCode="referral1234"
+  referralValue="20"
+/>
+`;

@@ -1,0 +1,379 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Module) OutfitCards matching the snapshot 1`] = `
+.c1 {
+  box-sizing: border-box;
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.c2 {
+  box-sizing: border-box;
+  max-width: 50%;
+  -webkit-flex-basis: 50%;
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+  margin-left: 0;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.c5 {
+  text-align: left;
+  margin-bottom: 0;
+  -webkit-letter-spacing: .1rem;
+  -moz-letter-spacing: .1rem;
+  -ms-letter-spacing: .1rem;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #00003C;
+}
+
+.c4 {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 0.3rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c4:hover {
+  cursor: pointer;
+}
+
+.c4 img {
+  height: auto;
+  width: 100%;
+}
+
+.c4 > *:first-child {
+  padding-bottom: 0.3rem;
+}
+
+.c4 > *:not(:first-child) {
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+
+.c0 .c6,
+.c0 .c3 {
+  margin-bottom: 2rem;
+}
+
+@media (min-width:769px) {
+  .c1 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:961px) {
+  .c1 {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width:769px) {
+  .c2 {
+    max-width: 50%;
+    -webkit-flex-basis: 50%;
+    -ms-flex-preferred-size: 50%;
+    flex-basis: 50%;
+    margin-left: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (min-width:961px) {
+  .c2 {
+    max-width: 33.33333333333333%;
+    -webkit-flex-basis: 33.33333333333333%;
+    -ms-flex-preferred-size: 33.33333333333333%;
+    flex-basis: 33.33333333333333%;
+    margin-left: 0;
+  }
+}
+
+@media (min-width:769px) {
+  .c0 .c6,
+  .c0 .c3 {
+    margin-bottom: 4rem;
+  }
+}
+
+<Styled(Component)
+  element="a"
+  nextLink={false}
+  outfits={
+    Array [
+      Object {
+        "image": Object {
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg",
+        },
+        "information": Array [
+          <styled.label
+            color="textPrimary"
+            fontSize="1.4rem"
+            fontWeight="500"
+            letterSpacing=".1rem"
+    >
+            Lacey & Lively
+    </styled.label>,
+          <styled.label
+            color="textPrimary"
+            fontSize="1.4rem"
+            fontWeight="500"
+            letterSpacing=".1rem"
+    >
+            $50.00
+    </styled.label>,
+        ],
+      },
+    ]
+  }
+>
+  <Component
+    className="c0"
+    element="a"
+    nextLink={false}
+    outfits={
+      Array [
+        Object {
+          "image": Object {
+            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg",
+          },
+          "information": Array [
+            <styled.label
+              color="textPrimary"
+              fontSize="1.4rem"
+              fontWeight="500"
+              letterSpacing=".1rem"
+      >
+              Lacey & Lively
+      </styled.label>,
+            <styled.label
+              color="textPrimary"
+              fontSize="1.4rem"
+              fontWeight="500"
+              letterSpacing=".1rem"
+      >
+              $50.00
+      </styled.label>,
+          ],
+        },
+      ]
+    }
+  >
+    <Styled(BaseFlexRow)
+      align="flex-start"
+      constrained={true}
+      desktop={
+        Object {
+          "wrap": "wrap",
+        }
+      }
+      element="div"
+      mobile={
+        Object {
+          "wrap": "wrap",
+        }
+      }
+      tablet={
+        Object {
+          "wrap": "wrap",
+        }
+      }
+    >
+      <BaseFlexRow
+        align="flex-start"
+        className="c1"
+        constrained={true}
+        desktop={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+        element="div"
+        mobile={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+        tablet={
+          Object {
+            "wrap": "wrap",
+          }
+        }
+      >
+        <div
+          className="c1"
+          desktop={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+          mobile={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+          tablet={
+            Object {
+              "wrap": "wrap",
+            }
+          }
+        >
+          <Styled(BaseFlexCol)
+            className="c0"
+            columns={
+              Object {
+                "desktop": 12,
+                "mobile": 4,
+              }
+            }
+            desktop={
+              Object {
+                "width": 4,
+              }
+            }
+            element="div"
+            key="0"
+            mobile={
+              Object {
+                "width": 2,
+              }
+            }
+            tablet={
+              Object {
+                "width": 6,
+              }
+            }
+          >
+            <BaseFlexCol
+              className="c0 c2"
+              columns={
+                Object {
+                  "desktop": 12,
+                  "mobile": 4,
+                }
+              }
+              desktop={
+                Object {
+                  "width": 4,
+                }
+              }
+              element="div"
+              mobile={
+                Object {
+                  "width": 2,
+                }
+              }
+              tablet={
+                Object {
+                  "width": 6,
+                }
+              }
+            >
+              <div
+                className="c0 c2"
+              >
+                <Styled(Component)
+                  element="a"
+                  maxWidth="29.5rem"
+                >
+                  <Component
+                    className="c3 c4"
+                    element="a"
+                    maxWidth="29.5rem"
+                  >
+                    <a
+                      className="c3 c4"
+                    >
+                      <InlineImage
+                        alt=""
+                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg"
+                      >
+                        <img
+                          alt=""
+                          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/m44tim52vvuz4ofsb5te.jpg"
+                        />
+                      </InlineImage>
+                      <styled.label
+                        color="textPrimary"
+                        fontSize="1.4rem"
+                        fontWeight="500"
+                        key="title"
+                        letterSpacing=".1rem"
+                      >
+                        <label
+                          className="c5"
+                          color="textPrimary"
+                          fontSize="1.4rem"
+                          fontWeight="500"
+                          letterSpacing=".1rem"
+                        >
+                          Lacey & Lively
+                        </label>
+                      </styled.label>
+                      <styled.label
+                        color="textPrimary"
+                        fontSize="1.4rem"
+                        fontWeight="500"
+                        key="price"
+                        letterSpacing=".1rem"
+                      >
+                        <label
+                          className="c5"
+                          color="textPrimary"
+                          fontSize="1.4rem"
+                          fontWeight="500"
+                          letterSpacing=".1rem"
+                        >
+                          $50.00
+                        </label>
+                      </styled.label>
+                    </a>
+                  </Component>
+                </Styled(Component)>
+              </div>
+            </BaseFlexCol>
+          </Styled(BaseFlexCol)>
+        </div>
+      </BaseFlexRow>
+    </Styled(BaseFlexRow)>
+  </Component>
+</Styled(Component)>
+`;

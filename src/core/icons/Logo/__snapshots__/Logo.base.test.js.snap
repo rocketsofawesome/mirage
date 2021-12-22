@@ -83,7 +83,7 @@ exports[`(Component) BaseLogo matching the snapshot 1`] = `
   }
 }
 
-@media (min-width:768px) {
+@media (min-width:769px) {
   .c0 {
     width: 100%;
   }

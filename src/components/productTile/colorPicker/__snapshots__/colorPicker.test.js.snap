@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ColorPicker matching the snapshot 1`] = `
+.c0 {
+  font-size: 0;
+  margin-left: 0.5rem;
+}
+
+.c0 img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+  border: 1px solid;
+  border-color: transparent;
+}
+
+.c0 img:hover {
+  border-color: #D5D5D5;
+  cursor: pointer;
+}
+
+.c0 input:checked + img {
+  border-color: #979797;
+}
+
+.c0 input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+<Styled(ColorPicker)
+  alt="Multi"
+  input={
+    Object {
+      "checked": true,
+      "name": "color-block",
+      "onChange": [Function],
+      "value": "multi",
+    }
+  }
+  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/jbku3g2yunsmtxz1c8nc.jpg"
+>
+  <ColorPicker
+    alt="Multi"
+    className="c0"
+    input={
+      Object {
+        "checked": true,
+        "name": "color-block",
+        "onChange": [Function],
+        "value": "multi",
+      }
+    }
+    src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/jbku3g2yunsmtxz1c8nc.jpg"
+  >
+    <label
+      className="c0"
+    >
+      multi
+      <input
+        checked={true}
+        name="color-block"
+        onChange={[Function]}
+        type="radio"
+        value="multi"
+      />
+      <InlineImage
+        alt="Multi"
+        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/jbku3g2yunsmtxz1c8nc.jpg"
+      >
+        <img
+          alt="Multi"
+          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/jbku3g2yunsmtxz1c8nc.jpg"
+        />
+      </InlineImage>
+    </label>
+  </ColorPicker>
+</Styled(ColorPicker)>
+`;

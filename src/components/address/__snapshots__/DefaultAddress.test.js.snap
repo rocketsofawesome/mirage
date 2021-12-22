@@ -46,7 +46,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
   <section>
     <LowercaseLabel>
       <styled.label
-        color="navy"
+        color="textPrimary"
         fontSize="2rem"
         fontWeight="normal"
         letterSpacing="normal"
@@ -54,7 +54,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
       >
         <label
           className="c0 c1"
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -67,7 +67,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
     </LowercaseLabel>
     <LowercaseLabel>
       <styled.label
-        color="navy"
+        color="textPrimary"
         fontSize="2rem"
         fontWeight="normal"
         letterSpacing="normal"
@@ -75,7 +75,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
       >
         <label
           className="c0 c1"
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -86,7 +86,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
     </LowercaseLabel>
     <LowercaseLabel>
       <styled.label
-        color="navy"
+        color="textPrimary"
         fontSize="2rem"
         fontWeight="normal"
         letterSpacing="normal"
@@ -94,7 +94,7 @@ exports[`(Component) DefaultAddress matching the snapshot 1`] = `
       >
         <label
           className="c0 c1"
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -172,7 +172,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
     >
       <LowercaseLabel>
         <styled.label
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -180,7 +180,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
         >
           <label
             className="c1 c2"
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -193,7 +193,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
       </LowercaseLabel>
       <LowercaseLabel>
         <styled.label
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -201,7 +201,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
         >
           <label
             className="c1 c2"
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"
@@ -212,7 +212,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
       </LowercaseLabel>
       <LowercaseLabel>
         <styled.label
-          color="navy"
+          color="textPrimary"
           fontSize="2rem"
           fontWeight="normal"
           letterSpacing="normal"
@@ -220,7 +220,7 @@ exports[`(Styled Component) DefaultAddress matching the snapshot 1`] = `
         >
           <label
             className="c1 c2"
-            color="navy"
+            color="textPrimary"
             fontSize="2rem"
             fontWeight="normal"
             letterSpacing="normal"

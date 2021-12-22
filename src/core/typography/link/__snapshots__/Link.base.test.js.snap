@@ -13,12 +13,14 @@ exports[`(Styled Component) BaseLink matching the snapshot 1`] = `
   font-size: 1.4rem;
   font-weight: 500;
   font-style: normal;
+  cursor: pointer;
 }
 
+.c0:active,
+.c0:focus,
 .c0:hover {
   -webkit-text-decoration: none;
   text-decoration: none;
-  pointer: cursor;
 }
 
 <Component

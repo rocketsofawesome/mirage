@@ -1,0 +1,70 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) CheckboxButton matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.c0 input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.c0 > label {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 3.2rem;
+  width: 6.4rem;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #D5D5D5;
+  border-radius: 0.2rem;
+  background-color: #F3F3F3;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  font-weight: 100;
+  color: #00003C;
+  -webkit-transition: color 0.25s,background-color 0.25s;
+  transition: color 0.25s,background-color 0.25s;
+}
+
+.c0 > input:checked + label {
+  color: #FFFFFF;
+  border: 1px solid #0073D1;
+  background-color: #0073D1;
+}
+
+<Styled(BaseCheckboxButton)
+  error={null}
+>
+  <BaseCheckboxButton
+    className="c0"
+    error={null}
+  >
+    <div
+      className="c0"
+    >
+      <input
+        type="checkbox"
+      />
+      <label />
+    </div>
+  </BaseCheckboxButton>
+</Styled(BaseCheckboxButton)>
+`;

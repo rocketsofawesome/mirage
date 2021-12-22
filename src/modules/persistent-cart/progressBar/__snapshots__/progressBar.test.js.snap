@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ProgressBar matching the snapshot 1`] = `
+.c0 {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgba(0,0,0,0.1);
+  margin-top: 12px;
+  position: relative;
+}
+
+<BaseProgressBar
+  className="c0"
+  percentage={10}
+/>
+`;

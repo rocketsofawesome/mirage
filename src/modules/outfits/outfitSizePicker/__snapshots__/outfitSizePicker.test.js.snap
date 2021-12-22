@@ -1,0 +1,1337 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`() OutfitSizePicker matching the snapshot 1`] = `
+.c1 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+  text-align: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #00003C;
+}
+
+.c4 {
+  box-sizing: border-box;
+  width: 6rem;
+  height: 4.7rem;
+  border-radius: 0.2rem;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 0;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 200;
+  cursor: pointer;
+  color: #00003C;
+  border: solid 0.1rem #0073D1;
+  position: relative;
+}
+
+.c4:hover {
+  background-color: #BCE1F7;
+}
+
+.c4 > input {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+
+.c4.disabled {
+  border: solid 0.1rem #979797;
+  color: #979797;
+}
+
+.c4.disabled:hover {
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.c4.selected {
+  background-color: #BCE1F7;
+}
+
+.c2 .c3 {
+  margin-top: 1.5rem;
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.c0 .roa-image-wrapper {
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  width: 20%;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 .roa-image-wrapper a {
+  width: 100%;
+}
+
+.c0 .roa-image-wrapper img {
+  width: 100%;
+}
+
+.c0 .c5 {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c0 .roa-price-size-box {
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 80%;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.c0 .roa-item-price {
+  margin-left: 1rem;
+  margin-bottom: 0rem;
+  margin-top: 1.5rem;
+}
+
+.c0 .roa-product {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+}
+
+.c0 .text {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 7.5px;
+  margin-top: 15px;
+}
+
+.c0 .original-price {
+  color: #6d7278;
+  -webkit-text-decoration: line-through;
+  text-decoration: line-through;
+  margin-left: 8px;
+}
+
+.c0 .promo-text {
+  margin-left: 8px;
+}
+
+.c0 .highlighted-text {
+  background-color: #f0ff02;
+  margin-left: 8px;
+}
+
+@media (max-width:1023px) {
+  .c0 .roa-product {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #D5D5D5;
+  }
+
+  .c0 .roa-product > *:first-child {
+    margin-right: auto;
+  }
+
+  .c0 .roa-product:last-of-type {
+    border-bottom: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 .promo-text {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 .forward-slash {
+    display: none;
+  }
+}
+
+@media (max-width:767px) {
+  .c0 .highlighted-text {
+    margin-left: 0px;
+  }
+
+  .c0 .highlighted-text:before {
+    content: ' ';
+    display: block;
+  }
+}
+
+<Styled(Component)
+  onSizeSelect={[Function]}
+  products={
+    Array [
+      Object {
+        "id": "12345",
+        "image": Object {
+          "alt": "Fuzzy Tiger Tee front",
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+        },
+        "variants": Array [
+          Object {
+            "inStock": true,
+            "size": 3,
+            "sku": "sku-1",
+          },
+          Object {
+            "inStock": true,
+            "size": 4,
+            "sku": "sku-2",
+          },
+          Object {
+            "inStock": true,
+            "size": 5,
+            "sku": "sku-3",
+          },
+          Object {
+            "inStock": true,
+            "size": 6,
+            "sku": "sku-4",
+          },
+          Object {
+            "inStock": false,
+            "size": 7,
+            "sku": "sku-5",
+          },
+          Object {
+            "inStock": true,
+            "size": 9,
+            "sku": "sku-6",
+          },
+          Object {
+            "inStock": true,
+            "size": 12,
+            "sku": "sku-7",
+          },
+        ],
+      },
+      Object {
+        "id": "12346",
+        "image": Object {
+          "alt": "Cool Down Active Short front",
+          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+        },
+        "variants": Array [
+          Object {
+            "inStock": true,
+            "size": 3,
+            "sku": "sku-20",
+          },
+          Object {
+            "inStock": true,
+            "size": 4,
+            "sku": "sku-21",
+          },
+          Object {
+            "inStock": true,
+            "size": 5,
+            "sku": "sku-22",
+          },
+          Object {
+            "inStock": true,
+            "size": 6,
+            "sku": "sku-23",
+          },
+          Object {
+            "inStock": false,
+            "size": 7,
+            "sku": "sku-24",
+          },
+          Object {
+            "inStock": true,
+            "size": 9,
+            "sku": "sku-25",
+          },
+          Object {
+            "inStock": true,
+            "size": 12,
+            "sku": "sku-26",
+          },
+        ],
+      },
+    ]
+  }
+  renderProductLink={[Function]}
+>
+  <Component
+    className="c0"
+    onSizeSelect={[Function]}
+    products={
+      Array [
+        Object {
+          "id": "12345",
+          "image": Object {
+            "alt": "Fuzzy Tiger Tee front",
+            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+          },
+          "variants": Array [
+            Object {
+              "inStock": true,
+              "size": 3,
+              "sku": "sku-1",
+            },
+            Object {
+              "inStock": true,
+              "size": 4,
+              "sku": "sku-2",
+            },
+            Object {
+              "inStock": true,
+              "size": 5,
+              "sku": "sku-3",
+            },
+            Object {
+              "inStock": true,
+              "size": 6,
+              "sku": "sku-4",
+            },
+            Object {
+              "inStock": false,
+              "size": 7,
+              "sku": "sku-5",
+            },
+            Object {
+              "inStock": true,
+              "size": 9,
+              "sku": "sku-6",
+            },
+            Object {
+              "inStock": true,
+              "size": 12,
+              "sku": "sku-7",
+            },
+          ],
+        },
+        Object {
+          "id": "12346",
+          "image": Object {
+            "alt": "Cool Down Active Short front",
+            "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+          },
+          "variants": Array [
+            Object {
+              "inStock": true,
+              "size": 3,
+              "sku": "sku-20",
+            },
+            Object {
+              "inStock": true,
+              "size": 4,
+              "sku": "sku-21",
+            },
+            Object {
+              "inStock": true,
+              "size": 5,
+              "sku": "sku-22",
+            },
+            Object {
+              "inStock": true,
+              "size": 6,
+              "sku": "sku-23",
+            },
+            Object {
+              "inStock": false,
+              "size": 7,
+              "sku": "sku-24",
+            },
+            Object {
+              "inStock": true,
+              "size": 9,
+              "sku": "sku-25",
+            },
+            Object {
+              "inStock": true,
+              "size": 12,
+              "sku": "sku-26",
+            },
+          ],
+        },
+      ]
+    }
+    renderProductLink={[Function]}
+  >
+    <div
+      className="c0"
+    >
+      <div
+        className="roa-product"
+        key="12345"
+      >
+        <div
+          className="roa-image-wrapper"
+        >
+          <a
+            href="#products/undefined"
+          >
+            <OutfitProductImage
+              product={
+                Object {
+                  "id": "12345",
+                  "image": Object {
+                    "alt": "Fuzzy Tiger Tee front",
+                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png",
+                  },
+                  "variants": Array [
+                    Object {
+                      "inStock": true,
+                      "size": 3,
+                      "sku": "sku-1",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 4,
+                      "sku": "sku-2",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 5,
+                      "sku": "sku-3",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 6,
+                      "sku": "sku-4",
+                    },
+                    Object {
+                      "inStock": false,
+                      "size": 7,
+                      "sku": "sku-5",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 9,
+                      "sku": "sku-6",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 12,
+                      "sku": "sku-7",
+                    },
+                  ],
+                }
+              }
+            >
+              <InlineImage
+                alt="Fuzzy Tiger Tee front"
+                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+              >
+                <img
+                  alt="Fuzzy Tiger Tee front"
+                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/rfxx1bcmwy7zych1pmof.png"
+                />
+              </InlineImage>
+            </OutfitProductImage>
+          </a>
+        </div>
+        <div
+          className="roa-price-size-box"
+        >
+          <styled.p
+            align="inherit"
+            className="text"
+            color="textPrimary"
+            fontSize="1.6rem"
+            marginBottom="none"
+            marginTop="none"
+          >
+            <p
+              className="text c1"
+              color="textPrimary"
+              fontSize="1.6rem"
+            >
+              $0.00
+              <span
+                className="promo-text"
+              >
+                <span
+                  className="forward-slash"
+                >
+                  //
+                </span>
+                <span
+                  className="highlighted-text"
+                >
+                  $0.00
+                   when you buy 
+                  + items
+                </span>
+              </span>
+            </p>
+          </styled.p>
+          <Styled(Component)
+            inputDisabled={true}
+            productId="12345"
+            variants={
+              Array [
+                Object {
+                  "inStock": true,
+                  "size": 3,
+                  "sku": "sku-1",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 4,
+                  "sku": "sku-2",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 5,
+                  "sku": "sku-3",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 6,
+                  "sku": "sku-4",
+                },
+                Object {
+                  "inStock": false,
+                  "size": 7,
+                  "sku": "sku-5",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 9,
+                  "sku": "sku-6",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 12,
+                  "sku": "sku-7",
+                },
+              ]
+            }
+          >
+            <Component
+              className="c2"
+              inputDisabled={true}
+              productId="12345"
+              variants={
+                Array [
+                  Object {
+                    "inStock": true,
+                    "size": 3,
+                    "sku": "sku-1",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 4,
+                    "sku": "sku-2",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 5,
+                    "sku": "sku-3",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 6,
+                    "sku": "sku-4",
+                  },
+                  Object {
+                    "inStock": false,
+                    "size": 7,
+                    "sku": "sku-5",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 9,
+                    "sku": "sku-6",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 12,
+                    "sku": "sku-7",
+                  },
+                ]
+              }
+            >
+              <div
+                className="c2"
+              >
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-1",
+                    }
+                  }
+                  key="12345-0"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-1",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      3
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-1"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-2",
+                    }
+                  }
+                  key="12345-1"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-2",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      4
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-2"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-3",
+                    }
+                  }
+                  key="12345-2"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-3",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      5
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-3"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-4",
+                    }
+                  }
+                  key="12345-3"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-4",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      6
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-4"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-5",
+                    }
+                  }
+                  key="12345-4"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-5",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      7
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-5"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-6",
+                    }
+                  }
+                  key="12345-5"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-6",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      9
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-6"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-7",
+                    }
+                  }
+                  key="12345-6"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-7",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      12
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-7"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+              </div>
+            </Component>
+          </Styled(Component)>
+        </div>
+      </div>
+      <div
+        className="roa-product"
+        key="12346"
+      >
+        <div
+          className="roa-image-wrapper"
+        >
+          <a
+            href="#products/undefined"
+          >
+            <OutfitProductImage
+              product={
+                Object {
+                  "id": "12346",
+                  "image": Object {
+                    "alt": "Cool Down Active Short front",
+                    "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png",
+                  },
+                  "variants": Array [
+                    Object {
+                      "inStock": true,
+                      "size": 3,
+                      "sku": "sku-20",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 4,
+                      "sku": "sku-21",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 5,
+                      "sku": "sku-22",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 6,
+                      "sku": "sku-23",
+                    },
+                    Object {
+                      "inStock": false,
+                      "size": 7,
+                      "sku": "sku-24",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 9,
+                      "sku": "sku-25",
+                    },
+                    Object {
+                      "inStock": true,
+                      "size": 12,
+                      "sku": "sku-26",
+                    },
+                  ],
+                }
+              }
+            >
+              <InlineImage
+                alt="Cool Down Active Short front"
+                src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+              >
+                <img
+                  alt="Cool Down Active Short front"
+                  src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,w_122/v1548780269/production/catalog/xrpiecxqwmiso3acxucc.png"
+                />
+              </InlineImage>
+            </OutfitProductImage>
+          </a>
+        </div>
+        <div
+          className="roa-price-size-box"
+        >
+          <styled.p
+            align="inherit"
+            className="text"
+            color="textPrimary"
+            fontSize="1.6rem"
+            marginBottom="none"
+            marginTop="none"
+          >
+            <p
+              className="text c1"
+              color="textPrimary"
+              fontSize="1.6rem"
+            >
+              $0.00
+              <span
+                className="promo-text"
+              >
+                <span
+                  className="forward-slash"
+                >
+                  //
+                </span>
+                <span
+                  className="highlighted-text"
+                >
+                  $0.00
+                   when you buy 
+                  + items
+                </span>
+              </span>
+            </p>
+          </styled.p>
+          <Styled(Component)
+            inputDisabled={true}
+            productId="12346"
+            variants={
+              Array [
+                Object {
+                  "inStock": true,
+                  "size": 3,
+                  "sku": "sku-20",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 4,
+                  "sku": "sku-21",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 5,
+                  "sku": "sku-22",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 6,
+                  "sku": "sku-23",
+                },
+                Object {
+                  "inStock": false,
+                  "size": 7,
+                  "sku": "sku-24",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 9,
+                  "sku": "sku-25",
+                },
+                Object {
+                  "inStock": true,
+                  "size": 12,
+                  "sku": "sku-26",
+                },
+              ]
+            }
+          >
+            <Component
+              className="c2"
+              inputDisabled={true}
+              productId="12346"
+              variants={
+                Array [
+                  Object {
+                    "inStock": true,
+                    "size": 3,
+                    "sku": "sku-20",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 4,
+                    "sku": "sku-21",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 5,
+                    "sku": "sku-22",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 6,
+                    "sku": "sku-23",
+                  },
+                  Object {
+                    "inStock": false,
+                    "size": 7,
+                    "sku": "sku-24",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 9,
+                    "sku": "sku-25",
+                  },
+                  Object {
+                    "inStock": true,
+                    "size": 12,
+                    "sku": "sku-26",
+                  },
+                ]
+              }
+            >
+              <div
+                className="c2"
+              >
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-20",
+                    }
+                  }
+                  key="12346-0"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-20",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      3
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-20"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-21",
+                    }
+                  }
+                  key="12346-1"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-21",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      4
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-21"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-22",
+                    }
+                  }
+                  key="12346-2"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-22",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      5
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-22"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-23",
+                    }
+                  }
+                  key="12346-3"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-23",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      6
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-23"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-24",
+                    }
+                  }
+                  key="12346-4"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-24",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      7
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-24"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-25",
+                    }
+                  }
+                  key="12346-5"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-25",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      9
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-25"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+                <Styled(Component)
+                  disabled={true}
+                  input={
+                    Object {
+                      "checked": false,
+                      "disabled": true,
+                      "onChange": undefined,
+                      "value": "sku-26",
+                    }
+                  }
+                  key="12346-6"
+                  selected={false}
+                >
+                  <Component
+                    className="c3 c4"
+                    disabled={true}
+                    input={
+                      Object {
+                        "checked": false,
+                        "disabled": true,
+                        "onChange": undefined,
+                        "value": "sku-26",
+                      }
+                    }
+                    selected={false}
+                  >
+                    <label
+                      className="c3 c4 disabled"
+                    >
+                      12
+                      <input
+                        checked={false}
+                        disabled={true}
+                        type="radio"
+                        value="sku-26"
+                      />
+                    </label>
+                  </Component>
+                </Styled(Component)>
+              </div>
+            </Component>
+          </Styled(Component)>
+        </div>
+      </div>
+    </div>
+  </Component>
+</Styled(Component)>
+`;

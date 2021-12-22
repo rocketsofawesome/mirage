@@ -1,0 +1,396 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ROASlider matching the snapshot 1`] = `
+.c0 {
+  width: 16px;
+  height: 8px;
+  fill: none;
+  stroke: #00003C;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.c0:hover polyline {
+  stroke-width: 7px;
+}
+
+.c1 {
+  width: 16px;
+  height: 8px;
+  fill: none;
+  stroke: #00003C;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.c1:hover polyline {
+  stroke-width: 7px;
+}
+
+<BaseROASlider
+  images={
+    Array [
+      Object {
+        "alt": "Front",
+        "src": "https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png",
+      },
+      Object {
+        "alt": "Back",
+        "src": "https://res.cloudinary.com/roa-canon/image/upload/v1559169409/production/catalog/zppjvgtqx0ddndibimdr.png",
+      },
+    ]
+  }
+  onClick={[Function]}
+  sliderLazyLoad="progressive"
+>
+  <div
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+  >
+    <Slider
+      afterChange={[Function]}
+      arrows={false}
+      className="roa-slider"
+      infinite={true}
+      lazyLoad="progressive"
+      responsive={
+        Array [
+          Object {
+            "breakpoint": 769,
+            "settings": Object {
+              "dots": true,
+              "dotsClass": "dots",
+            },
+          },
+        ]
+      }
+      slidesToShow={1}
+    >
+      <InnerSlider
+        accessibility={true}
+        adaptiveHeight={false}
+        afterChange={[Function]}
+        appendDots={[Function]}
+        arrows={false}
+        autoplay={false}
+        autoplaySpeed={3000}
+        beforeChange={null}
+        centerMode={false}
+        centerPadding="50px"
+        className="roa-slider"
+        cssEase="ease"
+        customPaging={[Function]}
+        dots={false}
+        dotsClass="slick-dots"
+        draggable={true}
+        easing="linear"
+        edgeFriction={0.35}
+        fade={false}
+        focusOnSelect={false}
+        infinite={true}
+        initialSlide={0}
+        lazyLoad="progressive"
+        nextArrow={null}
+        onEdge={null}
+        onInit={null}
+        onLazyLoadError={null}
+        onReInit={null}
+        pauseOnDotsHover={false}
+        pauseOnFocus={false}
+        pauseOnHover={true}
+        prevArrow={null}
+        responsive={
+          Array [
+            Object {
+              "breakpoint": 769,
+              "settings": Object {
+                "dots": true,
+                "dotsClass": "dots",
+              },
+            },
+          ]
+        }
+        rows={1}
+        rtl={false}
+        slide="div"
+        slidesPerRow={1}
+        slidesToScroll={1}
+        slidesToShow={1}
+        speed={500}
+        swipe={true}
+        swipeEvent={null}
+        swipeToSlide={false}
+        touchMove={true}
+        touchThreshold={5}
+        useCSS={true}
+        useTransform={true}
+        variableWidth={false}
+        vertical={false}
+        waitForAnimate={true}
+      >
+        <div
+          className="slick-slider roa-slider slick-initialized"
+          dir="ltr"
+        >
+          <div
+            className="slick-list"
+            onClick={[Function]}
+            onKeyDown={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={null}
+            onMouseMove={null}
+            onMouseUp={[Function]}
+            onTouchCancel={null}
+            onTouchEnd={[Function]}
+            onTouchMove={null}
+            onTouchStart={[Function]}
+            style={Object {}}
+          >
+            <Track
+              centerMode={false}
+              centerPadding="50px"
+              cssEase="ease"
+              currentSlide={0}
+              fade={false}
+              focusOnSelect={null}
+              infinite={true}
+              lazyLoad="progressive"
+              lazyLoadedList={
+                Array [
+                  0,
+                ]
+              }
+              listHeight={0}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onMouseOver={[Function]}
+              rtl={false}
+              slideCount={2}
+              slideHeight={0}
+              slideWidth={0}
+              slidesToScroll={1}
+              slidesToShow={1}
+              speed={500}
+              trackStyle={
+                Object {
+                  "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                  "WebkitTransition": "",
+                  "msTransform": "translateX(0px)",
+                  "opacity": 1,
+                  "transform": "translate3d(0px, 0px, 0px)",
+                  "transition": "",
+                }
+              }
+              variableWidth={false}
+              vertical={false}
+            >
+              <div
+                className="slick-track"
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onMouseOver={[Function]}
+                style={
+                  Object {
+                    "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                    "WebkitTransition": "",
+                    "msTransform": "translateX(0px)",
+                    "opacity": 1,
+                    "transform": "translate3d(0px, 0px, 0px)",
+                    "transition": "",
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={-1}
+                  key="precloned-1"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                />
+                <div
+                  aria-hidden={false}
+                  className="slick-slide slick-active slick-current"
+                  data-index={0}
+                  key="original0"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "outline": "none",
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div
+                    key="0"
+                  >
+                    <InlineImage
+                      alt="Front"
+                      key="0"
+                      onClick={[Function]}
+                      src="https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <img
+                        alt="Front"
+                        onClick={[Function]}
+                        src="https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png"
+                        style={
+                          Object {
+                            "display": "inline-block",
+                            "width": "100%",
+                          }
+                        }
+                        tabIndex={-1}
+                      />
+                    </InlineImage>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={true}
+                  className="slick-slide"
+                  data-index={1}
+                  key="original1"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "outline": "none",
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                />
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={2}
+                  key="postcloned0"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                >
+                  <div
+                    key="0"
+                  >
+                    <InlineImage
+                      alt="Front"
+                      key="0"
+                      onClick={[Function]}
+                      src="https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png"
+                      style={
+                        Object {
+                          "display": "inline-block",
+                          "width": "100%",
+                        }
+                      }
+                      tabIndex={-1}
+                    >
+                      <img
+                        alt="Front"
+                        onClick={[Function]}
+                        src="https://res.cloudinary.com/roa-canon/image/upload/v1559169387/production/catalog/ed46u1mcjvubzjiahzjh.png"
+                        style={
+                          Object {
+                            "display": "inline-block",
+                            "width": "100%",
+                          }
+                        }
+                        tabIndex={-1}
+                      />
+                    </InlineImage>
+                  </div>
+                </div>
+                <div
+                  aria-hidden={true}
+                  className="slick-slide slick-cloned"
+                  data-index={3}
+                  key="postcloned3"
+                  onClick={[Function]}
+                  style={
+                    Object {
+                      "width": 0,
+                    }
+                  }
+                  tabIndex="-1"
+                />
+              </div>
+            </Track>
+          </div>
+        </div>
+      </InnerSlider>
+    </Slider>
+    <div>
+      <Styled(BaseChevron)
+        ignoreErrors={false}
+        left={true}
+        onClick={[Function]}
+      >
+        <BaseChevron
+          className="c0"
+          ignoreErrors={false}
+          left={true}
+          onClick={[Function]}
+        >
+          <svg
+            className="c0"
+            onClick={[Function]}
+            viewBox="0 0 48 24.12"
+          >
+            <polyline
+              points="1 1 24 22.75 47 1"
+            />
+          </svg>
+        </BaseChevron>
+      </Styled(BaseChevron)>
+      <Styled(BaseChevron)
+        ignoreErrors={false}
+        onClick={[Function]}
+        right={true}
+      >
+        <BaseChevron
+          className="c1"
+          ignoreErrors={false}
+          onClick={[Function]}
+          right={true}
+        >
+          <svg
+            className="c1"
+            onClick={[Function]}
+            viewBox="0 0 48 24.12"
+          >
+            <polyline
+              points="1 1 24 22.75 47 1"
+            />
+          </svg>
+        </BaseChevron>
+      </Styled(BaseChevron)>
+    </div>
+  </div>
+</BaseROASlider>
+`;

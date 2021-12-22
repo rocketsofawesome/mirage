@@ -1,0 +1,4575 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ProductTile matching the snapshot 1`] = `
+.c20 {
+  display: none;
+}
+
+.c19 {
+  display: none;
+}
+
+.c6 {
+  width: 16px;
+  height: 8px;
+  fill: none;
+  stroke: #00003C;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.c6:hover polyline {
+  stroke-width: 7px;
+}
+
+.c7 {
+  width: 16px;
+  height: 8px;
+  fill: none;
+  stroke: #00003C;
+  stroke-miterlimit: 10;
+  stroke-width: 4px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  cursor: pointer;
+  margin: 10px;
+}
+
+.c7:hover polyline {
+  stroke-width: 7px;
+}
+
+.c14 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  line-height: normal;
+  text-align: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #00003C;
+}
+
+.c16 {
+  -webkit-letter-spacing: normal;
+  -moz-letter-spacing: normal;
+  -ms-letter-spacing: normal;
+  letter-spacing: normal;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.6rem;
+  line-height: normal;
+  text-align: inherit;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #00003C;
+}
+
+.c4 {
+  position: relative;
+}
+
+.c4 .slick-track > * {
+  padding: 0;
+}
+
+.c4 .image {
+  width: 100%;
+}
+
+.c4 .dots {
+  position: absolute;
+  bottom: 15px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.c4 .dots li {
+  position: relative;
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin: 0 2px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.c4 .dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 7px;
+  height: 7px;
+  padding: 2px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.c4 .dots li button:hover,
+.c4 .dots li button:focus {
+  outline: none;
+}
+
+.c4 .dots li button:hover:before,
+.c4 .dots li button:focus:before {
+  opacity: 1;
+}
+
+.c4 .dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 7px;
+  height: 7px;
+  content: '•';
+  text-align: center;
+  border: #00003C solid 2px;
+  border-radius: 15px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+}
+
+.c4 .dots .slick-active button:before {
+  background-color: #00003C !important;
+  border: 2px solid transparent!important;
+}
+
+.c4 a {
+  position: relative;
+  width: 100%;
+  padding-bottom: 150%;
+}
+
+.c4 a img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  width: 100%;
+}
+
+.c4 .c5 {
+  display: none;
+}
+
+.c11 {
+  box-sizing: border-box;
+  height: 35px;
+  width: 100%;
+  padding: 0 01.5rem;
+  text-align: center;
+  -webkit-letter-spacing: 1px;
+  -moz-letter-spacing: 1px;
+  -ms-letter-spacing: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: .2rem;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  -webkit-transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+  transition: background-color 0.25s ease-in, border-color 0.25s ease-in, color 0.25s ease-in;
+}
+
+.c11 .c23 {
+  display: inline-block;
+}
+
+.c11:hover {
+  cursor: pointer;
+}
+
+.c11:hover > * {
+  cursor: pointer;
+}
+
+.c11:focus {
+  outline: 0;
+}
+
+.c11,
+.c11:active {
+  border-style: solid;
+}
+
+.c11 > span {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.c11 > span > * {
+  vertical-align: middle;
+}
+
+.c10 {
+  color: #00003C;
+  background-color: #FFFFFF;
+  border-color: transparent;
+}
+
+.c10:hover {
+  color: #0073D1;
+}
+
+.c22 {
+  font-size: 0;
+  margin-left: 0.5rem;
+}
+
+.c22 img {
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  padding: 0.2rem;
+  border: 1px solid;
+  border-color: transparent;
+}
+
+.c22 img:hover {
+  border-color: #D5D5D5;
+  cursor: pointer;
+}
+
+.c22 input:checked + img {
+  border-color: #979797;
+}
+
+.c22 input {
+  height: 0;
+  width: 0;
+  opacity: 0;
+  position: absolute;
+}
+
+.c15 {
+  font-weight: 500;
+  font-size: 14px;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  display: inline-block;
+}
+
+.c3 {
+  position: relative;
+  cursor: pointer;
+}
+
+.c8 {
+  opacity: 0;
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  width: 90%;
+  -webkit-transform: translate(-50%,0);
+  -ms-transform: translate(-50%,0);
+  transform: translate(-50%,0);
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+}
+
+.c2:hover .c8 {
+  opacity: 1;
+}
+
+.c9 {
+  box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+}
+
+.c0 {
+  margin-bottom: 2rem;
+}
+
+.c0 .roa-product-tile-details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  padding-top: 1.7rem;
+}
+
+.c0 .roa-product-tile-details .c13 {
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.c21 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.c17 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.c18 {
+  background-color: #F0FF02;
+}
+
+@media (min-width:961px) {
+  .c20 {
+    display: block;
+  }
+}
+
+@media (max-width:959px) {
+  .c19 {
+    display: block;
+  }
+}
+
+@media (min-width:961px) {
+  .c4 .c5 {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+  }
+
+  .c4 .c5:first-of-type {
+    left: 0;
+  }
+
+  .c4 .c5:last-of-type {
+    right: 0;
+  }
+}
+
+@media (max-width:1023px) {
+  .c1 {
+    display: none;
+  }
+}
+
+@media (min-width:1025px) {
+  .c12 {
+    display: none;
+  }
+}
+
+@media (min-width:769px) {
+  .c0 {
+    margin-bottom: 6rem;
+  }
+}
+
+<Styled(ProductTile)
+  marginBottom={
+    Object {
+      "desktop": "6rem",
+      "mobile": "2rem",
+    }
+  }
+  product={
+    Object {
+      "_id": "4484",
+      "_index": "colorways_production_20190708213725142",
+      "_score": null,
+      "_type": "colorway",
+      "category": Array [
+        "Bottoms",
+        "Shorts",
+      ],
+      "code": "7254-300",
+      "color": "Pepper Green",
+      "color_family": "green",
+      "colorway_id": 4484,
+      "colorways": Array [
+        Object {
+          "code": "7254-300",
+          "color": "Pepper Green",
+          "id": 4484,
+          "shots": Array [
+            Object {
+              "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+              "id": 2736987,
+              "shot_type": "front",
+            },
+            Object {
+              "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+              "id": 2736988,
+              "shot_type": "on_model",
+            },
+            Object {
+              "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+              "id": 2736986,
+              "shot_type": "back",
+            },
+          ],
+          "skus": Array [
+            Object {
+              "cost_price": null,
+              "id": 19579,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "4",
+              "sku": "7254-300-I",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19580,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "6",
+              "sku": "7254-300-L",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19581,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "7",
+              "sku": "7254-300-M",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19582,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "10",
+              "sku": "7254-300-N",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19583,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "12",
+              "sku": "7254-300-O",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19584,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "5",
+              "sku": "7254-300-K",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19585,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "8",
+              "sku": "7254-300-E",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19586,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "3",
+              "sku": "7254-300-H",
+            },
+          ],
+          "slug": "peppergreen",
+        },
+        Object {
+          "code": "7254-2B5",
+          "color": "Clear Sky Blue",
+          "id": 4485,
+          "shots": Array [
+            Object {
+              "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+              "id": 2736998,
+              "shot_type": "back",
+            },
+            Object {
+              "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+              "id": 2736999,
+              "shot_type": "front",
+            },
+          ],
+          "skus": Array [
+            Object {
+              "cost_price": null,
+              "id": 19587,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "4",
+              "sku": "7254-2B5-I",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19588,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "12",
+              "sku": "7254-2B5-O",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19589,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "6",
+              "sku": "7254-2B5-L",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19590,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "10",
+              "sku": "7254-2B5-N",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19591,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "5",
+              "sku": "7254-2B5-K",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19592,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "7",
+              "sku": "7254-2B5-M",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19593,
+              "in_stock": true,
+              "price": 22.5,
+              "size": "8",
+              "sku": "7254-2B5-E",
+            },
+            Object {
+              "cost_price": null,
+              "id": 19594,
+              "in_stock": false,
+              "price": 22.5,
+              "size": "3",
+              "sku": "7254-2B5-H",
+            },
+          ],
+          "slug": "clearskyblue",
+        },
+      ],
+      "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+      "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+      "id": "1809-7254-300",
+      "name": "Towel Terry Track Short",
+      "nav_categories": Array [
+        "Girls",
+        "Just In",
+        "Girls New Arrivals",
+        "Shorts",
+        "Girls",
+        "Bottoms",
+        "Shorts",
+        "Girls New Arrivals",
+        "Just In",
+      ],
+      "nav_taxons": Array [
+        "shop/girls",
+        "shop/girls/just-in",
+        "shop/camp-shop",
+        "shop/girls-new-arrivals",
+        "shop/girls-new-arrivals/shorts",
+        "shop/girls",
+        "shop/girls/bottoms",
+        "shop/girls/bottoms/shorts",
+        "shop/girls-new-arrivals",
+        "shop/girls-new-arrivals/wow-styles-girls",
+      ],
+      "product_id": 1809,
+      "product_slug": "towel-terry-track-short",
+      "skus": Array [
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "4",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "6",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "7",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "10",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "12",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "5",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "8",
+          ],
+        },
+        Object {
+          "in_stock": true,
+          "size": Array [
+            "3",
+          ],
+        },
+      ],
+      "sort": Array [
+        2090010,
+      ],
+      "sort_order": Array [
+        Object {
+          "shop": 600012,
+        },
+        Object {
+          "shop-girls": 600012,
+        },
+        Object {
+          "shop-girls-bottoms": 600012,
+        },
+        Object {
+          "shop-girls-bottoms-shorts": 600012,
+        },
+        Object {
+          "shop": 3580007,
+        },
+        Object {
+          "shop-camp-shop": 3580007,
+        },
+        Object {
+          "shop": 450004,
+        },
+        Object {
+          "shop-girls": 450004,
+        },
+        Object {
+          "shop-girls-just-in": 450004,
+        },
+        Object {
+          "shop": 2090010,
+        },
+        Object {
+          "shop-girls-new-arrivals": 2090010,
+        },
+        Object {
+          "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+        },
+        Object {
+          "shop": 2190002,
+        },
+        Object {
+          "shop-girls-new-arrivals": 2190002,
+        },
+        Object {
+          "shop-girls-new-arrivals-shorts": 2190002,
+        },
+      ],
+      "style_number": "7254",
+    }
+  }
+  quickAdd={[Function]}
+>
+  <ProductTile
+    className="c0"
+    marginBottom={
+      Object {
+        "desktop": "6rem",
+        "mobile": "2rem",
+      }
+    }
+    onQuickView={[Function]}
+    product={
+      Object {
+        "_id": "4484",
+        "_index": "colorways_production_20190708213725142",
+        "_score": null,
+        "_type": "colorway",
+        "category": Array [
+          "Bottoms",
+          "Shorts",
+        ],
+        "code": "7254-300",
+        "color": "Pepper Green",
+        "color_family": "green",
+        "colorway_id": 4484,
+        "colorways": Array [
+          Object {
+            "code": "7254-300",
+            "color": "Pepper Green",
+            "id": 4484,
+            "shots": Array [
+              Object {
+                "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                "id": 2736987,
+                "shot_type": "front",
+              },
+              Object {
+                "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                "id": 2736988,
+                "shot_type": "on_model",
+              },
+              Object {
+                "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                "id": 2736986,
+                "shot_type": "back",
+              },
+            ],
+            "skus": Array [
+              Object {
+                "cost_price": null,
+                "id": 19579,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "4",
+                "sku": "7254-300-I",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19580,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "6",
+                "sku": "7254-300-L",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19581,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "7",
+                "sku": "7254-300-M",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19582,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "10",
+                "sku": "7254-300-N",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19583,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "12",
+                "sku": "7254-300-O",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19584,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "5",
+                "sku": "7254-300-K",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19585,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "8",
+                "sku": "7254-300-E",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19586,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "3",
+                "sku": "7254-300-H",
+              },
+            ],
+            "slug": "peppergreen",
+          },
+          Object {
+            "code": "7254-2B5",
+            "color": "Clear Sky Blue",
+            "id": 4485,
+            "shots": Array [
+              Object {
+                "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                "id": 2736998,
+                "shot_type": "back",
+              },
+              Object {
+                "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                "id": 2736999,
+                "shot_type": "front",
+              },
+            ],
+            "skus": Array [
+              Object {
+                "cost_price": null,
+                "id": 19587,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "4",
+                "sku": "7254-2B5-I",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19588,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "12",
+                "sku": "7254-2B5-O",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19589,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "6",
+                "sku": "7254-2B5-L",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19590,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "10",
+                "sku": "7254-2B5-N",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19591,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "5",
+                "sku": "7254-2B5-K",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19592,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "7",
+                "sku": "7254-2B5-M",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19593,
+                "in_stock": true,
+                "price": 22.5,
+                "size": "8",
+                "sku": "7254-2B5-E",
+              },
+              Object {
+                "cost_price": null,
+                "id": 19594,
+                "in_stock": false,
+                "price": 22.5,
+                "size": "3",
+                "sku": "7254-2B5-H",
+              },
+            ],
+            "slug": "clearskyblue",
+          },
+        ],
+        "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+        "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+        "id": "1809-7254-300",
+        "name": "Towel Terry Track Short",
+        "nav_categories": Array [
+          "Girls",
+          "Just In",
+          "Girls New Arrivals",
+          "Shorts",
+          "Girls",
+          "Bottoms",
+          "Shorts",
+          "Girls New Arrivals",
+          "Just In",
+        ],
+        "nav_taxons": Array [
+          "shop/girls",
+          "shop/girls/just-in",
+          "shop/camp-shop",
+          "shop/girls-new-arrivals",
+          "shop/girls-new-arrivals/shorts",
+          "shop/girls",
+          "shop/girls/bottoms",
+          "shop/girls/bottoms/shorts",
+          "shop/girls-new-arrivals",
+          "shop/girls-new-arrivals/wow-styles-girls",
+        ],
+        "product_id": 1809,
+        "product_slug": "towel-terry-track-short",
+        "skus": Array [
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "4",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "6",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "7",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "10",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "12",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "5",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "8",
+            ],
+          },
+          Object {
+            "in_stock": true,
+            "size": Array [
+              "3",
+            ],
+          },
+        ],
+        "sort": Array [
+          2090010,
+        ],
+        "sort_order": Array [
+          Object {
+            "shop": 600012,
+          },
+          Object {
+            "shop-girls": 600012,
+          },
+          Object {
+            "shop-girls-bottoms": 600012,
+          },
+          Object {
+            "shop-girls-bottoms-shorts": 600012,
+          },
+          Object {
+            "shop": 3580007,
+          },
+          Object {
+            "shop-camp-shop": 3580007,
+          },
+          Object {
+            "shop": 450004,
+          },
+          Object {
+            "shop-girls": 450004,
+          },
+          Object {
+            "shop-girls-just-in": 450004,
+          },
+          Object {
+            "shop": 2090010,
+          },
+          Object {
+            "shop-girls-new-arrivals": 2090010,
+          },
+          Object {
+            "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+          },
+          Object {
+            "shop": 2190002,
+          },
+          Object {
+            "shop-girls-new-arrivals": 2190002,
+          },
+          Object {
+            "shop-girls-new-arrivals-shorts": 2190002,
+          },
+        ],
+        "style_number": "7254",
+      }
+    }
+    quickAdd={[Function]}
+    renderLink={[Function]}
+  >
+    <div
+      className="c0"
+    >
+      <styled.div>
+        <div
+          className="c1"
+        >
+          <styled.div>
+            <div
+              className="c2 c3"
+            >
+              <_class
+                product={
+                  Object {
+                    "_id": "4484",
+                    "_index": "colorways_production_20190708213725142",
+                    "_score": null,
+                    "_type": "colorway",
+                    "category": Array [
+                      "Bottoms",
+                      "Shorts",
+                    ],
+                    "code": "7254-300",
+                    "color": "Pepper Green",
+                    "color_family": "green",
+                    "colorway_id": 4484,
+                    "colorways": Array [
+                      Object {
+                        "code": "7254-300",
+                        "color": "Pepper Green",
+                        "id": 4484,
+                        "shots": Array [
+                          Object {
+                            "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                            "id": 2736987,
+                            "shot_type": "front",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                            "id": 2736988,
+                            "shot_type": "on_model",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                            "id": 2736986,
+                            "shot_type": "back",
+                          },
+                        ],
+                        "skus": Array [
+                          Object {
+                            "cost_price": null,
+                            "id": 19579,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "4",
+                            "sku": "7254-300-I",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19580,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "6",
+                            "sku": "7254-300-L",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19581,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "7",
+                            "sku": "7254-300-M",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19582,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "10",
+                            "sku": "7254-300-N",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19583,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "12",
+                            "sku": "7254-300-O",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19584,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "5",
+                            "sku": "7254-300-K",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19585,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "8",
+                            "sku": "7254-300-E",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19586,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "3",
+                            "sku": "7254-300-H",
+                          },
+                        ],
+                        "slug": "peppergreen",
+                      },
+                      Object {
+                        "code": "7254-2B5",
+                        "color": "Clear Sky Blue",
+                        "id": 4485,
+                        "shots": Array [
+                          Object {
+                            "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                            "id": 2736998,
+                            "shot_type": "back",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                            "id": 2736999,
+                            "shot_type": "front",
+                          },
+                        ],
+                        "skus": Array [
+                          Object {
+                            "cost_price": null,
+                            "id": 19587,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "4",
+                            "sku": "7254-2B5-I",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19588,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "12",
+                            "sku": "7254-2B5-O",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19589,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "6",
+                            "sku": "7254-2B5-L",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19590,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "10",
+                            "sku": "7254-2B5-N",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19591,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "5",
+                            "sku": "7254-2B5-K",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19592,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "7",
+                            "sku": "7254-2B5-M",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19593,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "8",
+                            "sku": "7254-2B5-E",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19594,
+                            "in_stock": false,
+                            "price": 22.5,
+                            "size": "3",
+                            "sku": "7254-2B5-H",
+                          },
+                        ],
+                        "slug": "clearskyblue",
+                      },
+                    ],
+                    "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                    "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                    "id": "1809-7254-300",
+                    "name": "Towel Terry Track Short",
+                    "nav_categories": Array [
+                      "Girls",
+                      "Just In",
+                      "Girls New Arrivals",
+                      "Shorts",
+                      "Girls",
+                      "Bottoms",
+                      "Shorts",
+                      "Girls New Arrivals",
+                      "Just In",
+                    ],
+                    "nav_taxons": Array [
+                      "shop/girls",
+                      "shop/girls/just-in",
+                      "shop/camp-shop",
+                      "shop/girls-new-arrivals",
+                      "shop/girls-new-arrivals/shorts",
+                      "shop/girls",
+                      "shop/girls/bottoms",
+                      "shop/girls/bottoms/shorts",
+                      "shop/girls-new-arrivals",
+                      "shop/girls-new-arrivals/wow-styles-girls",
+                    ],
+                    "product_id": 1809,
+                    "product_slug": "towel-terry-track-short",
+                    "skus": Array [
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "4",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "6",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "7",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "10",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "12",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "5",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "8",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "3",
+                        ],
+                      },
+                    ],
+                    "sort": Array [
+                      2090010,
+                    ],
+                    "sort_order": Array [
+                      Object {
+                        "shop": 600012,
+                      },
+                      Object {
+                        "shop-girls": 600012,
+                      },
+                      Object {
+                        "shop-girls-bottoms": 600012,
+                      },
+                      Object {
+                        "shop-girls-bottoms-shorts": 600012,
+                      },
+                      Object {
+                        "shop": 3580007,
+                      },
+                      Object {
+                        "shop-camp-shop": 3580007,
+                      },
+                      Object {
+                        "shop": 450004,
+                      },
+                      Object {
+                        "shop-girls": 450004,
+                      },
+                      Object {
+                        "shop-girls-just-in": 450004,
+                      },
+                      Object {
+                        "shop": 2090010,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals": 2090010,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                      },
+                      Object {
+                        "shop": 2190002,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals": 2190002,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals-shorts": 2190002,
+                      },
+                    ],
+                    "style_number": "7254",
+                  }
+                }
+                renderLink={[Function]}
+                shots={
+                  Array [
+                    Object {
+                      "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                      "id": 2736987,
+                      "shot_type": "front",
+                    },
+                    Object {
+                      "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                      "id": 2736988,
+                      "shot_type": "on_model",
+                    },
+                    Object {
+                      "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                      "id": 2736986,
+                      "shot_type": "back",
+                    },
+                  ]
+                }
+                target="/products/towel-terry-track-short-peppergreen"
+              >
+                <Styled(BaseROASlider)
+                  images={
+                    Array [
+                      Object {
+                        "alt": "Towel Terry Track Short front",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg",
+                      },
+                      Object {
+                        "alt": "Towel Terry Track Short on_model",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/wpnzyaxvwis3wfrb3xpb.jpg",
+                      },
+                      Object {
+                        "alt": "Towel Terry Track Short back",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/mu8h3v2gdaw8bf9sp3ui.jpg",
+                      },
+                    ]
+                  }
+                  product={
+                    Object {
+                      "_id": "4484",
+                      "_index": "colorways_production_20190708213725142",
+                      "_score": null,
+                      "_type": "colorway",
+                      "category": Array [
+                        "Bottoms",
+                        "Shorts",
+                      ],
+                      "code": "7254-300",
+                      "color": "Pepper Green",
+                      "color_family": "green",
+                      "colorway_id": 4484,
+                      "colorways": Array [
+                        Object {
+                          "code": "7254-300",
+                          "color": "Pepper Green",
+                          "id": 4484,
+                          "shots": Array [
+                            Object {
+                              "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                              "id": 2736987,
+                              "shot_type": "front",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                              "id": 2736988,
+                              "shot_type": "on_model",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                              "id": 2736986,
+                              "shot_type": "back",
+                            },
+                          ],
+                          "skus": Array [
+                            Object {
+                              "cost_price": null,
+                              "id": 19579,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "4",
+                              "sku": "7254-300-I",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19580,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "6",
+                              "sku": "7254-300-L",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19581,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "7",
+                              "sku": "7254-300-M",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19582,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "10",
+                              "sku": "7254-300-N",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19583,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "12",
+                              "sku": "7254-300-O",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19584,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "5",
+                              "sku": "7254-300-K",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19585,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "8",
+                              "sku": "7254-300-E",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19586,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "3",
+                              "sku": "7254-300-H",
+                            },
+                          ],
+                          "slug": "peppergreen",
+                        },
+                        Object {
+                          "code": "7254-2B5",
+                          "color": "Clear Sky Blue",
+                          "id": 4485,
+                          "shots": Array [
+                            Object {
+                              "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                              "id": 2736998,
+                              "shot_type": "back",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                              "id": 2736999,
+                              "shot_type": "front",
+                            },
+                          ],
+                          "skus": Array [
+                            Object {
+                              "cost_price": null,
+                              "id": 19587,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "4",
+                              "sku": "7254-2B5-I",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19588,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "12",
+                              "sku": "7254-2B5-O",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19589,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "6",
+                              "sku": "7254-2B5-L",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19590,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "10",
+                              "sku": "7254-2B5-N",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19591,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "5",
+                              "sku": "7254-2B5-K",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19592,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "7",
+                              "sku": "7254-2B5-M",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19593,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "8",
+                              "sku": "7254-2B5-E",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19594,
+                              "in_stock": false,
+                              "price": 22.5,
+                              "size": "3",
+                              "sku": "7254-2B5-H",
+                            },
+                          ],
+                          "slug": "clearskyblue",
+                        },
+                      ],
+                      "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                      "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                      "id": "1809-7254-300",
+                      "name": "Towel Terry Track Short",
+                      "nav_categories": Array [
+                        "Girls",
+                        "Just In",
+                        "Girls New Arrivals",
+                        "Shorts",
+                        "Girls",
+                        "Bottoms",
+                        "Shorts",
+                        "Girls New Arrivals",
+                        "Just In",
+                      ],
+                      "nav_taxons": Array [
+                        "shop/girls",
+                        "shop/girls/just-in",
+                        "shop/camp-shop",
+                        "shop/girls-new-arrivals",
+                        "shop/girls-new-arrivals/shorts",
+                        "shop/girls",
+                        "shop/girls/bottoms",
+                        "shop/girls/bottoms/shorts",
+                        "shop/girls-new-arrivals",
+                        "shop/girls-new-arrivals/wow-styles-girls",
+                      ],
+                      "product_id": 1809,
+                      "product_slug": "towel-terry-track-short",
+                      "skus": Array [
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "4",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "6",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "7",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "10",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "12",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "5",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "8",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "3",
+                          ],
+                        },
+                      ],
+                      "sort": Array [
+                        2090010,
+                      ],
+                      "sort_order": Array [
+                        Object {
+                          "shop": 600012,
+                        },
+                        Object {
+                          "shop-girls": 600012,
+                        },
+                        Object {
+                          "shop-girls-bottoms": 600012,
+                        },
+                        Object {
+                          "shop-girls-bottoms-shorts": 600012,
+                        },
+                        Object {
+                          "shop": 3580007,
+                        },
+                        Object {
+                          "shop-camp-shop": 3580007,
+                        },
+                        Object {
+                          "shop": 450004,
+                        },
+                        Object {
+                          "shop-girls": 450004,
+                        },
+                        Object {
+                          "shop-girls-just-in": 450004,
+                        },
+                        Object {
+                          "shop": 2090010,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals": 2090010,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                        },
+                        Object {
+                          "shop": 2190002,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals": 2190002,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals-shorts": 2190002,
+                        },
+                      ],
+                      "style_number": "7254",
+                    }
+                  }
+                  renderLink={[Function]}
+                  shots={
+                    Array [
+                      Object {
+                        "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                        "id": 2736987,
+                        "shot_type": "front",
+                      },
+                      Object {
+                        "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                        "id": 2736988,
+                        "shot_type": "on_model",
+                      },
+                      Object {
+                        "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                        "id": 2736986,
+                        "shot_type": "back",
+                      },
+                    ]
+                  }
+                  target="/products/towel-terry-track-short-peppergreen"
+                >
+                  <BaseROASlider
+                    className="c4"
+                    images={
+                      Array [
+                        Object {
+                          "alt": "Towel Terry Track Short front",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg",
+                        },
+                        Object {
+                          "alt": "Towel Terry Track Short on_model",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/wpnzyaxvwis3wfrb3xpb.jpg",
+                        },
+                        Object {
+                          "alt": "Towel Terry Track Short back",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/mu8h3v2gdaw8bf9sp3ui.jpg",
+                        },
+                      ]
+                    }
+                    onClick={[Function]}
+                    product={
+                      Object {
+                        "_id": "4484",
+                        "_index": "colorways_production_20190708213725142",
+                        "_score": null,
+                        "_type": "colorway",
+                        "category": Array [
+                          "Bottoms",
+                          "Shorts",
+                        ],
+                        "code": "7254-300",
+                        "color": "Pepper Green",
+                        "color_family": "green",
+                        "colorway_id": 4484,
+                        "colorways": Array [
+                          Object {
+                            "code": "7254-300",
+                            "color": "Pepper Green",
+                            "id": 4484,
+                            "shots": Array [
+                              Object {
+                                "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                                "id": 2736987,
+                                "shot_type": "front",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                                "id": 2736988,
+                                "shot_type": "on_model",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                                "id": 2736986,
+                                "shot_type": "back",
+                              },
+                            ],
+                            "skus": Array [
+                              Object {
+                                "cost_price": null,
+                                "id": 19579,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "4",
+                                "sku": "7254-300-I",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19580,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "6",
+                                "sku": "7254-300-L",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19581,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "7",
+                                "sku": "7254-300-M",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19582,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "10",
+                                "sku": "7254-300-N",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19583,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "12",
+                                "sku": "7254-300-O",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19584,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "5",
+                                "sku": "7254-300-K",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19585,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "8",
+                                "sku": "7254-300-E",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19586,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "3",
+                                "sku": "7254-300-H",
+                              },
+                            ],
+                            "slug": "peppergreen",
+                          },
+                          Object {
+                            "code": "7254-2B5",
+                            "color": "Clear Sky Blue",
+                            "id": 4485,
+                            "shots": Array [
+                              Object {
+                                "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                                "id": 2736998,
+                                "shot_type": "back",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                                "id": 2736999,
+                                "shot_type": "front",
+                              },
+                            ],
+                            "skus": Array [
+                              Object {
+                                "cost_price": null,
+                                "id": 19587,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "4",
+                                "sku": "7254-2B5-I",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19588,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "12",
+                                "sku": "7254-2B5-O",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19589,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "6",
+                                "sku": "7254-2B5-L",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19590,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "10",
+                                "sku": "7254-2B5-N",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19591,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "5",
+                                "sku": "7254-2B5-K",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19592,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "7",
+                                "sku": "7254-2B5-M",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19593,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "8",
+                                "sku": "7254-2B5-E",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19594,
+                                "in_stock": false,
+                                "price": 22.5,
+                                "size": "3",
+                                "sku": "7254-2B5-H",
+                              },
+                            ],
+                            "slug": "clearskyblue",
+                          },
+                        ],
+                        "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                        "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                        "id": "1809-7254-300",
+                        "name": "Towel Terry Track Short",
+                        "nav_categories": Array [
+                          "Girls",
+                          "Just In",
+                          "Girls New Arrivals",
+                          "Shorts",
+                          "Girls",
+                          "Bottoms",
+                          "Shorts",
+                          "Girls New Arrivals",
+                          "Just In",
+                        ],
+                        "nav_taxons": Array [
+                          "shop/girls",
+                          "shop/girls/just-in",
+                          "shop/camp-shop",
+                          "shop/girls-new-arrivals",
+                          "shop/girls-new-arrivals/shorts",
+                          "shop/girls",
+                          "shop/girls/bottoms",
+                          "shop/girls/bottoms/shorts",
+                          "shop/girls-new-arrivals",
+                          "shop/girls-new-arrivals/wow-styles-girls",
+                        ],
+                        "product_id": 1809,
+                        "product_slug": "towel-terry-track-short",
+                        "skus": Array [
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "4",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "6",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "7",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "10",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "12",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "5",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "8",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "3",
+                            ],
+                          },
+                        ],
+                        "sort": Array [
+                          2090010,
+                        ],
+                        "sort_order": Array [
+                          Object {
+                            "shop": 600012,
+                          },
+                          Object {
+                            "shop-girls": 600012,
+                          },
+                          Object {
+                            "shop-girls-bottoms": 600012,
+                          },
+                          Object {
+                            "shop-girls-bottoms-shorts": 600012,
+                          },
+                          Object {
+                            "shop": 3580007,
+                          },
+                          Object {
+                            "shop-camp-shop": 3580007,
+                          },
+                          Object {
+                            "shop": 450004,
+                          },
+                          Object {
+                            "shop-girls": 450004,
+                          },
+                          Object {
+                            "shop-girls-just-in": 450004,
+                          },
+                          Object {
+                            "shop": 2090010,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals": 2090010,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                          },
+                          Object {
+                            "shop": 2190002,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals": 2190002,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals-shorts": 2190002,
+                          },
+                        ],
+                        "style_number": "7254",
+                      }
+                    }
+                    renderLink={[Function]}
+                    shots={
+                      Array [
+                        Object {
+                          "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                          "id": 2736987,
+                          "shot_type": "front",
+                        },
+                        Object {
+                          "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                          "id": 2736988,
+                          "shot_type": "on_model",
+                        },
+                        Object {
+                          "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                          "id": 2736986,
+                          "shot_type": "back",
+                        },
+                      ]
+                    }
+                    sliderLazyLoad="progressive"
+                    target="/products/towel-terry-track-short-peppergreen"
+                  >
+                    <div
+                      className="c4"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      <Slider
+                        afterChange={[Function]}
+                        arrows={false}
+                        className="roa-slider"
+                        infinite={true}
+                        lazyLoad="progressive"
+                        responsive={
+                          Array [
+                            Object {
+                              "breakpoint": 769,
+                              "settings": Object {
+                                "dots": true,
+                                "dotsClass": "dots",
+                              },
+                            },
+                          ]
+                        }
+                        slidesToShow={1}
+                      >
+                        <InnerSlider
+                          accessibility={true}
+                          adaptiveHeight={false}
+                          afterChange={[Function]}
+                          appendDots={[Function]}
+                          arrows={false}
+                          autoplay={false}
+                          autoplaySpeed={3000}
+                          beforeChange={null}
+                          centerMode={false}
+                          centerPadding="50px"
+                          className="roa-slider"
+                          cssEase="ease"
+                          customPaging={[Function]}
+                          dots={false}
+                          dotsClass="slick-dots"
+                          draggable={true}
+                          easing="linear"
+                          edgeFriction={0.35}
+                          fade={false}
+                          focusOnSelect={false}
+                          infinite={true}
+                          initialSlide={0}
+                          lazyLoad="progressive"
+                          nextArrow={null}
+                          onEdge={null}
+                          onInit={null}
+                          onLazyLoadError={null}
+                          onReInit={null}
+                          pauseOnDotsHover={false}
+                          pauseOnFocus={false}
+                          pauseOnHover={true}
+                          prevArrow={null}
+                          responsive={
+                            Array [
+                              Object {
+                                "breakpoint": 769,
+                                "settings": Object {
+                                  "dots": true,
+                                  "dotsClass": "dots",
+                                },
+                              },
+                            ]
+                          }
+                          rows={1}
+                          rtl={false}
+                          slide="div"
+                          slidesPerRow={1}
+                          slidesToScroll={1}
+                          slidesToShow={1}
+                          speed={500}
+                          swipe={true}
+                          swipeEvent={null}
+                          swipeToSlide={false}
+                          touchMove={true}
+                          touchThreshold={5}
+                          useCSS={true}
+                          useTransform={true}
+                          variableWidth={false}
+                          vertical={false}
+                          waitForAnimate={true}
+                        >
+                          <div
+                            className="slick-slider roa-slider slick-initialized"
+                            dir="ltr"
+                          >
+                            <div
+                              className="slick-list"
+                              onClick={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={null}
+                              onMouseMove={null}
+                              onMouseUp={[Function]}
+                              onTouchCancel={null}
+                              onTouchEnd={[Function]}
+                              onTouchMove={null}
+                              onTouchStart={[Function]}
+                              style={Object {}}
+                            >
+                              <Track
+                                centerMode={false}
+                                centerPadding="50px"
+                                cssEase="ease"
+                                currentSlide={0}
+                                fade={false}
+                                focusOnSelect={null}
+                                infinite={true}
+                                lazyLoad="progressive"
+                                lazyLoadedList={
+                                  Array [
+                                    0,
+                                  ]
+                                }
+                                listHeight={0}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseOver={[Function]}
+                                rtl={false}
+                                slideCount={3}
+                                slideHeight={0}
+                                slideWidth={0}
+                                slidesToScroll={1}
+                                slidesToShow={1}
+                                speed={500}
+                                trackStyle={
+                                  Object {
+                                    "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                    "WebkitTransition": "",
+                                    "msTransform": "translateX(0px)",
+                                    "opacity": 1,
+                                    "transform": "translate3d(0px, 0px, 0px)",
+                                    "transition": "",
+                                  }
+                                }
+                                variableWidth={false}
+                                vertical={false}
+                              >
+                                <div
+                                  className="slick-track"
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  onMouseOver={[Function]}
+                                  style={
+                                    Object {
+                                      "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                      "WebkitTransition": "",
+                                      "msTransform": "translateX(0px)",
+                                      "opacity": 1,
+                                      "transform": "translate3d(0px, 0px, 0px)",
+                                      "transition": "",
+                                    }
+                                  }
+                                >
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={-1}
+                                    key="precloned-1"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={false}
+                                    className="slick-slide slick-active slick-current"
+                                    data-index={0}
+                                    key="original0"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  >
+                                    <div
+                                      key="0"
+                                    >
+                                      <renderLink
+                                        key="0"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                        target="/products/towel-terry-track-short-peppergreen"
+                                      >
+                                        <a
+                                          href="/products/towel-terry-track-short-peppergreen"
+                                          style={
+                                            Object {
+                                              "display": "inline-block",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          tabIndex={-1}
+                                        >
+                                          <InlineImage
+                                            alt="Towel Terry Track Short front"
+                                            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                          >
+                                            <img
+                                              alt="Towel Terry Track Short front"
+                                              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                            />
+                                          </InlineImage>
+                                        </a>
+                                      </renderLink>
+                                    </div>
+                                  </div>
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide"
+                                    data-index={1}
+                                    key="original1"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide"
+                                    data-index={2}
+                                    key="original2"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={3}
+                                    key="postcloned0"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  >
+                                    <div
+                                      key="0"
+                                    >
+                                      <renderLink
+                                        key="0"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                        target="/products/towel-terry-track-short-peppergreen"
+                                      >
+                                        <a
+                                          href="/products/towel-terry-track-short-peppergreen"
+                                          style={
+                                            Object {
+                                              "display": "inline-block",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          tabIndex={-1}
+                                        >
+                                          <InlineImage
+                                            alt="Towel Terry Track Short front"
+                                            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                          >
+                                            <img
+                                              alt="Towel Terry Track Short front"
+                                              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                            />
+                                          </InlineImage>
+                                        </a>
+                                      </renderLink>
+                                    </div>
+                                  </div>
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={4}
+                                    key="postcloned4"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={5}
+                                    key="postcloned5"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                </div>
+                              </Track>
+                            </div>
+                          </div>
+                        </InnerSlider>
+                      </Slider>
+                      <div>
+                        <Styled(BaseChevron)
+                          ignoreErrors={false}
+                          left={true}
+                          onClick={[Function]}
+                        >
+                          <BaseChevron
+                            className="c5 c6"
+                            ignoreErrors={false}
+                            left={true}
+                            onClick={[Function]}
+                          >
+                            <svg
+                              className="c5 c6"
+                              onClick={[Function]}
+                              viewBox="0 0 48 24.12"
+                            >
+                              <polyline
+                                points="1 1 24 22.75 47 1"
+                              />
+                            </svg>
+                          </BaseChevron>
+                        </Styled(BaseChevron)>
+                        <Styled(BaseChevron)
+                          ignoreErrors={false}
+                          onClick={[Function]}
+                          right={true}
+                        >
+                          <BaseChevron
+                            className="c5 c7"
+                            ignoreErrors={false}
+                            onClick={[Function]}
+                            right={true}
+                          >
+                            <svg
+                              className="c5 c7"
+                              onClick={[Function]}
+                              viewBox="0 0 48 24.12"
+                            >
+                              <polyline
+                                points="1 1 24 22.75 47 1"
+                              />
+                            </svg>
+                          </BaseChevron>
+                        </Styled(BaseChevron)>
+                      </div>
+                    </div>
+                  </BaseROASlider>
+                </Styled(BaseROASlider)>
+              </_class>
+              <styled.div>
+                <div
+                  className="c8"
+                >
+                  <Styled(Styled(Styled(CustomButton)))
+                    className="quickViewButton"
+                    height="35px"
+                    onClick={[Function]}
+                    width="100%"
+                  >
+                    <Styled(Styled(CustomButton))
+                      checkmark={[Function]}
+                      className="quickViewButton c9"
+                      height="35px"
+                      onClick={[Function]}
+                      spinner={[Function]}
+                      width="100%"
+                    >
+                      <Styled(CustomButton)
+                        checkmark={[Function]}
+                        className="quickViewButton c9 c10"
+                        height="35px"
+                        onClick={[Function]}
+                        spinner={[Function]}
+                        width="100%"
+                      >
+                        <CustomButton
+                          checkmark={[Function]}
+                          className="quickViewButton c9 c10 c11"
+                          height="35px"
+                          onClick={[Function]}
+                          spinner={[Function]}
+                          width="100%"
+                        >
+                          <button
+                            className="quickViewButton c9 c10 c11"
+                            height="35px"
+                            onClick={[Function]}
+                          >
+                            <span>
+                              Quick View
+                            </span>
+                          </button>
+                        </CustomButton>
+                      </Styled(CustomButton)>
+                    </Styled(Styled(CustomButton))>
+                  </Styled(Styled(Styled(CustomButton)))>
+                </div>
+              </styled.div>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <styled.div>
+        <div
+          className="c12"
+        >
+          <styled.div>
+            <div
+              className="c2 c3"
+            >
+              <_class
+                onClick={[Function]}
+                product={
+                  Object {
+                    "_id": "4484",
+                    "_index": "colorways_production_20190708213725142",
+                    "_score": null,
+                    "_type": "colorway",
+                    "category": Array [
+                      "Bottoms",
+                      "Shorts",
+                    ],
+                    "code": "7254-300",
+                    "color": "Pepper Green",
+                    "color_family": "green",
+                    "colorway_id": 4484,
+                    "colorways": Array [
+                      Object {
+                        "code": "7254-300",
+                        "color": "Pepper Green",
+                        "id": 4484,
+                        "shots": Array [
+                          Object {
+                            "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                            "id": 2736987,
+                            "shot_type": "front",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                            "id": 2736988,
+                            "shot_type": "on_model",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                            "id": 2736986,
+                            "shot_type": "back",
+                          },
+                        ],
+                        "skus": Array [
+                          Object {
+                            "cost_price": null,
+                            "id": 19579,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "4",
+                            "sku": "7254-300-I",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19580,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "6",
+                            "sku": "7254-300-L",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19581,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "7",
+                            "sku": "7254-300-M",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19582,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "10",
+                            "sku": "7254-300-N",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19583,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "12",
+                            "sku": "7254-300-O",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19584,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "5",
+                            "sku": "7254-300-K",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19585,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "8",
+                            "sku": "7254-300-E",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19586,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "3",
+                            "sku": "7254-300-H",
+                          },
+                        ],
+                        "slug": "peppergreen",
+                      },
+                      Object {
+                        "code": "7254-2B5",
+                        "color": "Clear Sky Blue",
+                        "id": 4485,
+                        "shots": Array [
+                          Object {
+                            "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                            "id": 2736998,
+                            "shot_type": "back",
+                          },
+                          Object {
+                            "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                            "id": 2736999,
+                            "shot_type": "front",
+                          },
+                        ],
+                        "skus": Array [
+                          Object {
+                            "cost_price": null,
+                            "id": 19587,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "4",
+                            "sku": "7254-2B5-I",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19588,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "12",
+                            "sku": "7254-2B5-O",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19589,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "6",
+                            "sku": "7254-2B5-L",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19590,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "10",
+                            "sku": "7254-2B5-N",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19591,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "5",
+                            "sku": "7254-2B5-K",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19592,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "7",
+                            "sku": "7254-2B5-M",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19593,
+                            "in_stock": true,
+                            "price": 22.5,
+                            "size": "8",
+                            "sku": "7254-2B5-E",
+                          },
+                          Object {
+                            "cost_price": null,
+                            "id": 19594,
+                            "in_stock": false,
+                            "price": 22.5,
+                            "size": "3",
+                            "sku": "7254-2B5-H",
+                          },
+                        ],
+                        "slug": "clearskyblue",
+                      },
+                    ],
+                    "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                    "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                    "id": "1809-7254-300",
+                    "name": "Towel Terry Track Short",
+                    "nav_categories": Array [
+                      "Girls",
+                      "Just In",
+                      "Girls New Arrivals",
+                      "Shorts",
+                      "Girls",
+                      "Bottoms",
+                      "Shorts",
+                      "Girls New Arrivals",
+                      "Just In",
+                    ],
+                    "nav_taxons": Array [
+                      "shop/girls",
+                      "shop/girls/just-in",
+                      "shop/camp-shop",
+                      "shop/girls-new-arrivals",
+                      "shop/girls-new-arrivals/shorts",
+                      "shop/girls",
+                      "shop/girls/bottoms",
+                      "shop/girls/bottoms/shorts",
+                      "shop/girls-new-arrivals",
+                      "shop/girls-new-arrivals/wow-styles-girls",
+                    ],
+                    "product_id": 1809,
+                    "product_slug": "towel-terry-track-short",
+                    "skus": Array [
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "4",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "6",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "7",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "10",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "12",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "5",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "8",
+                        ],
+                      },
+                      Object {
+                        "in_stock": true,
+                        "size": Array [
+                          "3",
+                        ],
+                      },
+                    ],
+                    "sort": Array [
+                      2090010,
+                    ],
+                    "sort_order": Array [
+                      Object {
+                        "shop": 600012,
+                      },
+                      Object {
+                        "shop-girls": 600012,
+                      },
+                      Object {
+                        "shop-girls-bottoms": 600012,
+                      },
+                      Object {
+                        "shop-girls-bottoms-shorts": 600012,
+                      },
+                      Object {
+                        "shop": 3580007,
+                      },
+                      Object {
+                        "shop-camp-shop": 3580007,
+                      },
+                      Object {
+                        "shop": 450004,
+                      },
+                      Object {
+                        "shop-girls": 450004,
+                      },
+                      Object {
+                        "shop-girls-just-in": 450004,
+                      },
+                      Object {
+                        "shop": 2090010,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals": 2090010,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                      },
+                      Object {
+                        "shop": 2190002,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals": 2190002,
+                      },
+                      Object {
+                        "shop-girls-new-arrivals-shorts": 2190002,
+                      },
+                    ],
+                    "style_number": "7254",
+                  }
+                }
+                shots={
+                  Array [
+                    Object {
+                      "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                      "id": 2736987,
+                      "shot_type": "front",
+                    },
+                    Object {
+                      "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                      "id": 2736988,
+                      "shot_type": "on_model",
+                    },
+                    Object {
+                      "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                      "id": 2736986,
+                      "shot_type": "back",
+                    },
+                  ]
+                }
+              >
+                <Styled(BaseROASlider)
+                  images={
+                    Array [
+                      Object {
+                        "alt": "Towel Terry Track Short front",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg",
+                      },
+                      Object {
+                        "alt": "Towel Terry Track Short on_model",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/wpnzyaxvwis3wfrb3xpb.jpg",
+                      },
+                      Object {
+                        "alt": "Towel Terry Track Short back",
+                        "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/mu8h3v2gdaw8bf9sp3ui.jpg",
+                      },
+                    ]
+                  }
+                  onClick={[Function]}
+                  product={
+                    Object {
+                      "_id": "4484",
+                      "_index": "colorways_production_20190708213725142",
+                      "_score": null,
+                      "_type": "colorway",
+                      "category": Array [
+                        "Bottoms",
+                        "Shorts",
+                      ],
+                      "code": "7254-300",
+                      "color": "Pepper Green",
+                      "color_family": "green",
+                      "colorway_id": 4484,
+                      "colorways": Array [
+                        Object {
+                          "code": "7254-300",
+                          "color": "Pepper Green",
+                          "id": 4484,
+                          "shots": Array [
+                            Object {
+                              "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                              "id": 2736987,
+                              "shot_type": "front",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                              "id": 2736988,
+                              "shot_type": "on_model",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                              "id": 2736986,
+                              "shot_type": "back",
+                            },
+                          ],
+                          "skus": Array [
+                            Object {
+                              "cost_price": null,
+                              "id": 19579,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "4",
+                              "sku": "7254-300-I",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19580,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "6",
+                              "sku": "7254-300-L",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19581,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "7",
+                              "sku": "7254-300-M",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19582,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "10",
+                              "sku": "7254-300-N",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19583,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "12",
+                              "sku": "7254-300-O",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19584,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "5",
+                              "sku": "7254-300-K",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19585,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "8",
+                              "sku": "7254-300-E",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19586,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "3",
+                              "sku": "7254-300-H",
+                            },
+                          ],
+                          "slug": "peppergreen",
+                        },
+                        Object {
+                          "code": "7254-2B5",
+                          "color": "Clear Sky Blue",
+                          "id": 4485,
+                          "shots": Array [
+                            Object {
+                              "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                              "id": 2736998,
+                              "shot_type": "back",
+                            },
+                            Object {
+                              "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                              "id": 2736999,
+                              "shot_type": "front",
+                            },
+                          ],
+                          "skus": Array [
+                            Object {
+                              "cost_price": null,
+                              "id": 19587,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "4",
+                              "sku": "7254-2B5-I",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19588,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "12",
+                              "sku": "7254-2B5-O",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19589,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "6",
+                              "sku": "7254-2B5-L",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19590,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "10",
+                              "sku": "7254-2B5-N",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19591,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "5",
+                              "sku": "7254-2B5-K",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19592,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "7",
+                              "sku": "7254-2B5-M",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19593,
+                              "in_stock": true,
+                              "price": 22.5,
+                              "size": "8",
+                              "sku": "7254-2B5-E",
+                            },
+                            Object {
+                              "cost_price": null,
+                              "id": 19594,
+                              "in_stock": false,
+                              "price": 22.5,
+                              "size": "3",
+                              "sku": "7254-2B5-H",
+                            },
+                          ],
+                          "slug": "clearskyblue",
+                        },
+                      ],
+                      "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                      "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                      "id": "1809-7254-300",
+                      "name": "Towel Terry Track Short",
+                      "nav_categories": Array [
+                        "Girls",
+                        "Just In",
+                        "Girls New Arrivals",
+                        "Shorts",
+                        "Girls",
+                        "Bottoms",
+                        "Shorts",
+                        "Girls New Arrivals",
+                        "Just In",
+                      ],
+                      "nav_taxons": Array [
+                        "shop/girls",
+                        "shop/girls/just-in",
+                        "shop/camp-shop",
+                        "shop/girls-new-arrivals",
+                        "shop/girls-new-arrivals/shorts",
+                        "shop/girls",
+                        "shop/girls/bottoms",
+                        "shop/girls/bottoms/shorts",
+                        "shop/girls-new-arrivals",
+                        "shop/girls-new-arrivals/wow-styles-girls",
+                      ],
+                      "product_id": 1809,
+                      "product_slug": "towel-terry-track-short",
+                      "skus": Array [
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "4",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "6",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "7",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "10",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "12",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "5",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "8",
+                          ],
+                        },
+                        Object {
+                          "in_stock": true,
+                          "size": Array [
+                            "3",
+                          ],
+                        },
+                      ],
+                      "sort": Array [
+                        2090010,
+                      ],
+                      "sort_order": Array [
+                        Object {
+                          "shop": 600012,
+                        },
+                        Object {
+                          "shop-girls": 600012,
+                        },
+                        Object {
+                          "shop-girls-bottoms": 600012,
+                        },
+                        Object {
+                          "shop-girls-bottoms-shorts": 600012,
+                        },
+                        Object {
+                          "shop": 3580007,
+                        },
+                        Object {
+                          "shop-camp-shop": 3580007,
+                        },
+                        Object {
+                          "shop": 450004,
+                        },
+                        Object {
+                          "shop-girls": 450004,
+                        },
+                        Object {
+                          "shop-girls-just-in": 450004,
+                        },
+                        Object {
+                          "shop": 2090010,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals": 2090010,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                        },
+                        Object {
+                          "shop": 2190002,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals": 2190002,
+                        },
+                        Object {
+                          "shop-girls-new-arrivals-shorts": 2190002,
+                        },
+                      ],
+                      "style_number": "7254",
+                    }
+                  }
+                  shots={
+                    Array [
+                      Object {
+                        "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                        "id": 2736987,
+                        "shot_type": "front",
+                      },
+                      Object {
+                        "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                        "id": 2736988,
+                        "shot_type": "on_model",
+                      },
+                      Object {
+                        "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                        "id": 2736986,
+                        "shot_type": "back",
+                      },
+                    ]
+                  }
+                >
+                  <BaseROASlider
+                    className="c4"
+                    images={
+                      Array [
+                        Object {
+                          "alt": "Towel Terry Track Short front",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg",
+                        },
+                        Object {
+                          "alt": "Towel Terry Track Short on_model",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/wpnzyaxvwis3wfrb3xpb.jpg",
+                        },
+                        Object {
+                          "alt": "Towel Terry Track Short back",
+                          "src": "https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/mu8h3v2gdaw8bf9sp3ui.jpg",
+                        },
+                      ]
+                    }
+                    onClick={[Function]}
+                    product={
+                      Object {
+                        "_id": "4484",
+                        "_index": "colorways_production_20190708213725142",
+                        "_score": null,
+                        "_type": "colorway",
+                        "category": Array [
+                          "Bottoms",
+                          "Shorts",
+                        ],
+                        "code": "7254-300",
+                        "color": "Pepper Green",
+                        "color_family": "green",
+                        "colorway_id": 4484,
+                        "colorways": Array [
+                          Object {
+                            "code": "7254-300",
+                            "color": "Pepper Green",
+                            "id": 4484,
+                            "shots": Array [
+                              Object {
+                                "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                                "id": 2736987,
+                                "shot_type": "front",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                                "id": 2736988,
+                                "shot_type": "on_model",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                                "id": 2736986,
+                                "shot_type": "back",
+                              },
+                            ],
+                            "skus": Array [
+                              Object {
+                                "cost_price": null,
+                                "id": 19579,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "4",
+                                "sku": "7254-300-I",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19580,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "6",
+                                "sku": "7254-300-L",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19581,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "7",
+                                "sku": "7254-300-M",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19582,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "10",
+                                "sku": "7254-300-N",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19583,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "12",
+                                "sku": "7254-300-O",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19584,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "5",
+                                "sku": "7254-300-K",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19585,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "8",
+                                "sku": "7254-300-E",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19586,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "3",
+                                "sku": "7254-300-H",
+                              },
+                            ],
+                            "slug": "peppergreen",
+                          },
+                          Object {
+                            "code": "7254-2B5",
+                            "color": "Clear Sky Blue",
+                            "id": 4485,
+                            "shots": Array [
+                              Object {
+                                "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                                "id": 2736998,
+                                "shot_type": "back",
+                              },
+                              Object {
+                                "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                                "id": 2736999,
+                                "shot_type": "front",
+                              },
+                            ],
+                            "skus": Array [
+                              Object {
+                                "cost_price": null,
+                                "id": 19587,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "4",
+                                "sku": "7254-2B5-I",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19588,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "12",
+                                "sku": "7254-2B5-O",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19589,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "6",
+                                "sku": "7254-2B5-L",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19590,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "10",
+                                "sku": "7254-2B5-N",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19591,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "5",
+                                "sku": "7254-2B5-K",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19592,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "7",
+                                "sku": "7254-2B5-M",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19593,
+                                "in_stock": true,
+                                "price": 22.5,
+                                "size": "8",
+                                "sku": "7254-2B5-E",
+                              },
+                              Object {
+                                "cost_price": null,
+                                "id": 19594,
+                                "in_stock": false,
+                                "price": 22.5,
+                                "size": "3",
+                                "sku": "7254-2B5-H",
+                              },
+                            ],
+                            "slug": "clearskyblue",
+                          },
+                        ],
+                        "description": "If these don't scream \\"summer camp, 1982\\" we don't know what does. Made from supersoft and quick-drying terrycloth, with convenient side pockets and a cute embroidered pineapple, these shorts for sure have a place in her weekly rotation.",
+                        "details": "* 65% Polyester, 35% Rayon
+* Machine wash cold gentle cycle
+* Only non-chlorine bleach
+* Tumble dry low
+* Cool iron if needed",
+                        "id": "1809-7254-300",
+                        "name": "Towel Terry Track Short",
+                        "nav_categories": Array [
+                          "Girls",
+                          "Just In",
+                          "Girls New Arrivals",
+                          "Shorts",
+                          "Girls",
+                          "Bottoms",
+                          "Shorts",
+                          "Girls New Arrivals",
+                          "Just In",
+                        ],
+                        "nav_taxons": Array [
+                          "shop/girls",
+                          "shop/girls/just-in",
+                          "shop/camp-shop",
+                          "shop/girls-new-arrivals",
+                          "shop/girls-new-arrivals/shorts",
+                          "shop/girls",
+                          "shop/girls/bottoms",
+                          "shop/girls/bottoms/shorts",
+                          "shop/girls-new-arrivals",
+                          "shop/girls-new-arrivals/wow-styles-girls",
+                        ],
+                        "product_id": 1809,
+                        "product_slug": "towel-terry-track-short",
+                        "skus": Array [
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "4",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "6",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "7",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "10",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "12",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "5",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "8",
+                            ],
+                          },
+                          Object {
+                            "in_stock": true,
+                            "size": Array [
+                              "3",
+                            ],
+                          },
+                        ],
+                        "sort": Array [
+                          2090010,
+                        ],
+                        "sort_order": Array [
+                          Object {
+                            "shop": 600012,
+                          },
+                          Object {
+                            "shop-girls": 600012,
+                          },
+                          Object {
+                            "shop-girls-bottoms": 600012,
+                          },
+                          Object {
+                            "shop-girls-bottoms-shorts": 600012,
+                          },
+                          Object {
+                            "shop": 3580007,
+                          },
+                          Object {
+                            "shop-camp-shop": 3580007,
+                          },
+                          Object {
+                            "shop": 450004,
+                          },
+                          Object {
+                            "shop-girls": 450004,
+                          },
+                          Object {
+                            "shop-girls-just-in": 450004,
+                          },
+                          Object {
+                            "shop": 2090010,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals": 2090010,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals-wow-styles-girls": 2090010,
+                          },
+                          Object {
+                            "shop": 2190002,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals": 2190002,
+                          },
+                          Object {
+                            "shop-girls-new-arrivals-shorts": 2190002,
+                          },
+                        ],
+                        "style_number": "7254",
+                      }
+                    }
+                    shots={
+                      Array [
+                        Object {
+                          "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                          "id": 2736987,
+                          "shot_type": "front",
+                        },
+                        Object {
+                          "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                          "id": 2736988,
+                          "shot_type": "on_model",
+                        },
+                        Object {
+                          "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                          "id": 2736986,
+                          "shot_type": "back",
+                        },
+                      ]
+                    }
+                    sliderLazyLoad="progressive"
+                  >
+                    <div
+                      className="c4"
+                      onMouseEnter={[Function]}
+                      onMouseLeave={[Function]}
+                    >
+                      <Slider
+                        afterChange={[Function]}
+                        arrows={false}
+                        className="roa-slider"
+                        infinite={true}
+                        lazyLoad="progressive"
+                        responsive={
+                          Array [
+                            Object {
+                              "breakpoint": 769,
+                              "settings": Object {
+                                "dots": true,
+                                "dotsClass": "dots",
+                              },
+                            },
+                          ]
+                        }
+                        slidesToShow={1}
+                      >
+                        <InnerSlider
+                          accessibility={true}
+                          adaptiveHeight={false}
+                          afterChange={[Function]}
+                          appendDots={[Function]}
+                          arrows={false}
+                          autoplay={false}
+                          autoplaySpeed={3000}
+                          beforeChange={null}
+                          centerMode={false}
+                          centerPadding="50px"
+                          className="roa-slider"
+                          cssEase="ease"
+                          customPaging={[Function]}
+                          dots={false}
+                          dotsClass="slick-dots"
+                          draggable={true}
+                          easing="linear"
+                          edgeFriction={0.35}
+                          fade={false}
+                          focusOnSelect={false}
+                          infinite={true}
+                          initialSlide={0}
+                          lazyLoad="progressive"
+                          nextArrow={null}
+                          onEdge={null}
+                          onInit={null}
+                          onLazyLoadError={null}
+                          onReInit={null}
+                          pauseOnDotsHover={false}
+                          pauseOnFocus={false}
+                          pauseOnHover={true}
+                          prevArrow={null}
+                          responsive={
+                            Array [
+                              Object {
+                                "breakpoint": 769,
+                                "settings": Object {
+                                  "dots": true,
+                                  "dotsClass": "dots",
+                                },
+                              },
+                            ]
+                          }
+                          rows={1}
+                          rtl={false}
+                          slide="div"
+                          slidesPerRow={1}
+                          slidesToScroll={1}
+                          slidesToShow={1}
+                          speed={500}
+                          swipe={true}
+                          swipeEvent={null}
+                          swipeToSlide={false}
+                          touchMove={true}
+                          touchThreshold={5}
+                          useCSS={true}
+                          useTransform={true}
+                          variableWidth={false}
+                          vertical={false}
+                          waitForAnimate={true}
+                        >
+                          <div
+                            className="slick-slider roa-slider slick-initialized"
+                            dir="ltr"
+                          >
+                            <div
+                              className="slick-list"
+                              onClick={[Function]}
+                              onKeyDown={[Function]}
+                              onMouseDown={[Function]}
+                              onMouseLeave={null}
+                              onMouseMove={null}
+                              onMouseUp={[Function]}
+                              onTouchCancel={null}
+                              onTouchEnd={[Function]}
+                              onTouchMove={null}
+                              onTouchStart={[Function]}
+                              style={Object {}}
+                            >
+                              <Track
+                                centerMode={false}
+                                centerPadding="50px"
+                                cssEase="ease"
+                                currentSlide={0}
+                                fade={false}
+                                focusOnSelect={null}
+                                infinite={true}
+                                lazyLoad="progressive"
+                                lazyLoadedList={
+                                  Array [
+                                    0,
+                                  ]
+                                }
+                                listHeight={0}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
+                                onMouseOver={[Function]}
+                                rtl={false}
+                                slideCount={3}
+                                slideHeight={0}
+                                slideWidth={0}
+                                slidesToScroll={1}
+                                slidesToShow={1}
+                                speed={500}
+                                trackStyle={
+                                  Object {
+                                    "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                    "WebkitTransition": "",
+                                    "msTransform": "translateX(0px)",
+                                    "opacity": 1,
+                                    "transform": "translate3d(0px, 0px, 0px)",
+                                    "transition": "",
+                                  }
+                                }
+                                variableWidth={false}
+                                vertical={false}
+                              >
+                                <div
+                                  className="slick-track"
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  onMouseOver={[Function]}
+                                  style={
+                                    Object {
+                                      "WebkitTransform": "translate3d(0px, 0px, 0px)",
+                                      "WebkitTransition": "",
+                                      "msTransform": "translateX(0px)",
+                                      "opacity": 1,
+                                      "transform": "translate3d(0px, 0px, 0px)",
+                                      "transition": "",
+                                    }
+                                  }
+                                >
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={-1}
+                                    key="precloned-1"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={false}
+                                    className="slick-slide slick-active slick-current"
+                                    data-index={0}
+                                    key="original0"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  >
+                                    <div
+                                      key="0"
+                                    >
+                                      <InlineImage
+                                        alt="Towel Terry Track Short front"
+                                        key="0"
+                                        onClick={[Function]}
+                                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                      >
+                                        <img
+                                          alt="Towel Terry Track Short front"
+                                          onClick={[Function]}
+                                          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                          style={
+                                            Object {
+                                              "display": "inline-block",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          tabIndex={-1}
+                                        />
+                                      </InlineImage>
+                                    </div>
+                                  </div>
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide"
+                                    data-index={1}
+                                    key="original1"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide"
+                                    data-index={2}
+                                    key="original2"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "outline": "none",
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={3}
+                                    key="postcloned0"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  >
+                                    <div
+                                      key="0"
+                                    >
+                                      <InlineImage
+                                        alt="Towel Terry Track Short front"
+                                        key="0"
+                                        onClick={[Function]}
+                                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                        style={
+                                          Object {
+                                            "display": "inline-block",
+                                            "width": "100%",
+                                          }
+                                        }
+                                        tabIndex={-1}
+                                      >
+                                        <img
+                                          alt="Towel Terry Track Short front"
+                                          onClick={[Function]}
+                                          src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/t_plp_product_shot/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                                          style={
+                                            Object {
+                                              "display": "inline-block",
+                                              "width": "100%",
+                                            }
+                                          }
+                                          tabIndex={-1}
+                                        />
+                                      </InlineImage>
+                                    </div>
+                                  </div>
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={4}
+                                    key="postcloned4"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                  <div
+                                    aria-hidden={true}
+                                    className="slick-slide slick-cloned"
+                                    data-index={5}
+                                    key="postcloned5"
+                                    onClick={[Function]}
+                                    style={
+                                      Object {
+                                        "width": 0,
+                                      }
+                                    }
+                                    tabIndex="-1"
+                                  />
+                                </div>
+                              </Track>
+                            </div>
+                          </div>
+                        </InnerSlider>
+                      </Slider>
+                      <div>
+                        <Styled(BaseChevron)
+                          ignoreErrors={false}
+                          left={true}
+                          onClick={[Function]}
+                        >
+                          <BaseChevron
+                            className="c5 c6"
+                            ignoreErrors={false}
+                            left={true}
+                            onClick={[Function]}
+                          >
+                            <svg
+                              className="c5 c6"
+                              onClick={[Function]}
+                              viewBox="0 0 48 24.12"
+                            >
+                              <polyline
+                                points="1 1 24 22.75 47 1"
+                              />
+                            </svg>
+                          </BaseChevron>
+                        </Styled(BaseChevron)>
+                        <Styled(BaseChevron)
+                          ignoreErrors={false}
+                          onClick={[Function]}
+                          right={true}
+                        >
+                          <BaseChevron
+                            className="c5 c7"
+                            ignoreErrors={false}
+                            onClick={[Function]}
+                            right={true}
+                          >
+                            <svg
+                              className="c5 c7"
+                              onClick={[Function]}
+                              viewBox="0 0 48 24.12"
+                            >
+                              <polyline
+                                points="1 1 24 22.75 47 1"
+                              />
+                            </svg>
+                          </BaseChevron>
+                        </Styled(BaseChevron)>
+                      </div>
+                    </div>
+                  </BaseROASlider>
+                </Styled(BaseROASlider)>
+              </_class>
+            </div>
+          </styled.div>
+        </div>
+      </styled.div>
+      <renderLink
+        className="roa-product-tile-details"
+        target="/products/towel-terry-track-short-peppergreen"
+      >
+        <a
+          className="roa-product-tile-details"
+          href="/products/towel-terry-track-short-peppergreen"
+        >
+          <styled.p
+            align="inherit"
+            color="textPrimary"
+            fontSize="14px"
+            marginBottom="none"
+            marginTop="none"
+          >
+            <p
+              className="c13 c14"
+              color="textPrimary"
+              fontSize="14px"
+            >
+              Towel Terry Track Short
+            </p>
+          </styled.p>
+          <ProductPrice
+            colorway={
+              Object {
+                "code": "7254-300",
+                "color": "Pepper Green",
+                "id": 4484,
+                "shots": Array [
+                  Object {
+                    "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                    "id": 2736987,
+                    "shot_type": "front",
+                  },
+                  Object {
+                    "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                    "id": 2736988,
+                    "shot_type": "on_model",
+                  },
+                  Object {
+                    "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                    "id": 2736986,
+                    "shot_type": "back",
+                  },
+                ],
+                "skus": Array [
+                  Object {
+                    "cost_price": null,
+                    "id": 19579,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "4",
+                    "sku": "7254-300-I",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19580,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "6",
+                    "sku": "7254-300-L",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19581,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "7",
+                    "sku": "7254-300-M",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19582,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "10",
+                    "sku": "7254-300-N",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19583,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "12",
+                    "sku": "7254-300-O",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19584,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "5",
+                    "sku": "7254-300-K",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19585,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "8",
+                    "sku": "7254-300-E",
+                  },
+                  Object {
+                    "cost_price": null,
+                    "id": 19586,
+                    "in_stock": true,
+                    "price": 22.5,
+                    "size": "3",
+                    "sku": "7254-300-H",
+                  },
+                ],
+                "slug": "peppergreen",
+              }
+            }
+          >
+            <div>
+              <PriceWithDiscount
+                kind="tile"
+                price={22.5}
+              >
+                <Styled(styled.p)
+                  kind="tile"
+                >
+                  <styled.p
+                    align="inherit"
+                    className="c15"
+                    color="textPrimary"
+                    fontSize="1.6rem"
+                    kind="tile"
+                    marginBottom="none"
+                    marginTop="none"
+                  >
+                    <p
+                      className="c15 c13 c16"
+                      color="textPrimary"
+                      fontSize="1.6rem"
+                      kind="tile"
+                    >
+                      $22.50
+                    </p>
+                  </styled.p>
+                </Styled(styled.p)>
+              </PriceWithDiscount>
+              <Styled(styled.p)>
+                <styled.p
+                  align="inherit"
+                  className="c17"
+                  color="textPrimary"
+                  fontSize="1.6rem"
+                  marginBottom="none"
+                  marginTop="none"
+                >
+                  <p
+                    className="c17 c13 c16"
+                    color="textPrimary"
+                    fontSize="1.6rem"
+                  >
+                    <styled.span>
+                      <span
+                        className="c18"
+                      >
+                        $0.00
+                         with 
+                        + items
+                      </span>
+                    </styled.span>
+                  </p>
+                </styled.p>
+              </Styled(styled.p)>
+            </div>
+          </ProductPrice>
+        </a>
+      </renderLink>
+      <ColorsInterface
+        colorways={
+          Array [
+            Object {
+              "code": "7254-300",
+              "color": "Pepper Green",
+              "id": 4484,
+              "shots": Array [
+                Object {
+                  "cloudinary_key": "production/catalog/la6b2vceu6ivonfp3j8r",
+                  "id": 2736987,
+                  "shot_type": "front",
+                },
+                Object {
+                  "cloudinary_key": "production/catalog/wpnzyaxvwis3wfrb3xpb",
+                  "id": 2736988,
+                  "shot_type": "on_model",
+                },
+                Object {
+                  "cloudinary_key": "production/catalog/mu8h3v2gdaw8bf9sp3ui",
+                  "id": 2736986,
+                  "shot_type": "back",
+                },
+              ],
+              "skus": Array [
+                Object {
+                  "cost_price": null,
+                  "id": 19579,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "4",
+                  "sku": "7254-300-I",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19580,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "6",
+                  "sku": "7254-300-L",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19581,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "7",
+                  "sku": "7254-300-M",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19582,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "10",
+                  "sku": "7254-300-N",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19583,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "12",
+                  "sku": "7254-300-O",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19584,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "5",
+                  "sku": "7254-300-K",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19585,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "8",
+                  "sku": "7254-300-E",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19586,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "3",
+                  "sku": "7254-300-H",
+                },
+              ],
+              "slug": "peppergreen",
+            },
+            Object {
+              "code": "7254-2B5",
+              "color": "Clear Sky Blue",
+              "id": 4485,
+              "shots": Array [
+                Object {
+                  "cloudinary_key": "production/catalog/ysjye2byyklzm2qade0r",
+                  "id": 2736998,
+                  "shot_type": "back",
+                },
+                Object {
+                  "cloudinary_key": "production/catalog/lyvrgfbajuuwq2w6jfxu",
+                  "id": 2736999,
+                  "shot_type": "front",
+                },
+              ],
+              "skus": Array [
+                Object {
+                  "cost_price": null,
+                  "id": 19587,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "4",
+                  "sku": "7254-2B5-I",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19588,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "12",
+                  "sku": "7254-2B5-O",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19589,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "6",
+                  "sku": "7254-2B5-L",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19590,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "10",
+                  "sku": "7254-2B5-N",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19591,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "5",
+                  "sku": "7254-2B5-K",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19592,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "7",
+                  "sku": "7254-2B5-M",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19593,
+                  "in_stock": true,
+                  "price": 22.5,
+                  "size": "8",
+                  "sku": "7254-2B5-E",
+                },
+                Object {
+                  "cost_price": null,
+                  "id": 19594,
+                  "in_stock": false,
+                  "price": 22.5,
+                  "size": "3",
+                  "sku": "7254-2B5-H",
+                },
+              ],
+              "slug": "clearskyblue",
+            },
+          ]
+        }
+        onChange={[Function]}
+        productId="1809-7254-300"
+        selected="7254-300"
+      >
+        <div>
+          <Styled(Component)
+            display="block"
+            displayTarget="belowTabletMax"
+            element="div"
+          >
+            <Component
+              className="c19"
+              display="block"
+              displayTarget="belowTabletMax"
+              element="div"
+            >
+              <div
+                className="c19"
+                display="block"
+              >
+                <styled.p
+                  align="inherit"
+                  color="textPrimary"
+                  fontSize="14px"
+                  marginBottom="none"
+                  marginTop="none"
+                >
+                  <p
+                    className="c13 c14"
+                    color="textPrimary"
+                    fontSize="14px"
+                  >
+                    2
+                     colors available
+                  </p>
+                </styled.p>
+              </div>
+            </Component>
+          </Styled(Component)>
+          <Styled(Component)
+            display="block"
+            element="div"
+          >
+            <Component
+              className="c20"
+              display="block"
+              element="div"
+            >
+              <div
+                className="c20"
+                display="block"
+              >
+                <styled.div>
+                  <div
+                    className="c21"
+                  >
+                    <styled.p
+                      align="inherit"
+                      color="textPrimary"
+                      fontSize="14px"
+                      marginBottom="none"
+                      marginTop="none"
+                    >
+                      <p
+                        className="c13 c14"
+                        color="textPrimary"
+                        fontSize="14px"
+                      >
+                        Colors
+                      </p>
+                    </styled.p>
+                    <Styled(ColorPicker)
+                      alt="7254-300"
+                      input={
+                        Object {
+                          "checked": true,
+                          "onChange": [Function],
+                          "value": "7254-300",
+                        }
+                      }
+                      key="1809-7254-300-7254-300"
+                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                    >
+                      <ColorPicker
+                        alt="7254-300"
+                        className="c22"
+                        input={
+                          Object {
+                            "checked": true,
+                            "onChange": [Function],
+                            "value": "7254-300",
+                          }
+                        }
+                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                      >
+                        <label
+                          className="c22"
+                        >
+                          7254-300
+                          <input
+                            checked={true}
+                            onChange={[Function]}
+                            type="radio"
+                            value="7254-300"
+                          />
+                          <InlineImage
+                            alt="7254-300"
+                            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                          >
+                            <img
+                              alt="7254-300"
+                              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/la6b2vceu6ivonfp3j8r.jpg"
+                            />
+                          </InlineImage>
+                        </label>
+                      </ColorPicker>
+                    </Styled(ColorPicker)>
+                    <Styled(ColorPicker)
+                      alt="7254-2B5"
+                      input={
+                        Object {
+                          "checked": false,
+                          "onChange": [Function],
+                          "value": "7254-2B5",
+                        }
+                      }
+                      key="1809-7254-300-7254-2B5"
+                      src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/lyvrgfbajuuwq2w6jfxu.jpg"
+                    >
+                      <ColorPicker
+                        alt="7254-2B5"
+                        className="c22"
+                        input={
+                          Object {
+                            "checked": false,
+                            "onChange": [Function],
+                            "value": "7254-2B5",
+                          }
+                        }
+                        src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/lyvrgfbajuuwq2w6jfxu.jpg"
+                      >
+                        <label
+                          className="c22"
+                        >
+                          7254-2B5
+                          <input
+                            checked={false}
+                            onChange={[Function]}
+                            type="radio"
+                            value="7254-2B5"
+                          />
+                          <InlineImage
+                            alt="7254-2B5"
+                            src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/lyvrgfbajuuwq2w6jfxu.jpg"
+                          >
+                            <img
+                              alt="7254-2B5"
+                              src="https://d2lknnt52h7uhg.cloudfront.net/roa-canon/image/upload/c_scale,q_100,t_swatch_v2,w_40/v1/production/catalog/lyvrgfbajuuwq2w6jfxu.jpg"
+                            />
+                          </InlineImage>
+                        </label>
+                      </ColorPicker>
+                    </Styled(ColorPicker)>
+                  </div>
+                </styled.div>
+              </div>
+            </Component>
+          </Styled(Component)>
+        </div>
+      </ColorsInterface>
+    </div>
+  </ProductTile>
+</Styled(ProductTile)>
+`;

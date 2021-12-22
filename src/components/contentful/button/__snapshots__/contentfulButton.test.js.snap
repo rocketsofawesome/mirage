@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Styled Component) ContentfulButton matching the snapshot 1`] = `
+.c2 {
+  -webkit-transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out,border-bottom-color 0.25s ease-in-out;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  text-transform: initial;
+  border-bottom: 0.2rem solid;
+  border-bottom-color: transparent;
+  font-family: "ff-din-web",Helvetica,Arial,sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.c2:active,
+.c2:focus,
+.c2:hover {
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  color: #0073D1;
+}
+
+.c1:active,
+.c1:focus,
+.c1:hover {
+  color: #00003C;
+}
+
+.c0 {
+  box-sizing: border-box;
+  padding: 0 20px;
+  height: 50px;
+  object-fit: contain;
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  background-color: #FFFFFF;
+  font-family: $din-medium-font;
+  font-size: 18px;
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 10px;
+  margin-right: 10px;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+  width: calc(100% - 20px);
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.c0:hover {
+  color: #000000;
+}
+
+.c0:before {
+  content: #00003C;
+}
+
+@media (max-width:767px) {
+  .c0:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+<Styled(Component)
+  fields={
+    Object {
+      "backgroundColor": "#FFFFFF",
+      "buttonText": "Example Button",
+      "color": "#000000",
+      "route": "/shop/boys/all",
+      "width": "Full Width",
+    }
+  }
+  renderLink={[Function]}
+  sys={
+    Object {
+      "contentType": Object {
+        "sys": Object {
+          "id": "heroButton",
+        },
+      },
+    }
+  }
+>
+  <Component
+    className="c0"
+    fields={
+      Object {
+        "backgroundColor": "#FFFFFF",
+        "buttonText": "Example Button",
+        "color": "#000000",
+        "route": "/shop/boys/all",
+        "width": "Full Width",
+      }
+    }
+    renderLink={[Function]}
+    sys={
+      Object {
+        "contentType": Object {
+          "sys": Object {
+            "id": "heroButton",
+          },
+        },
+      }
+    }
+  >
+    <Styled(Styled(Component))
+      className="c0"
+      href="/shop/boys/all"
+      underline={false}
+    >
+      <Styled(Component)
+        className="c0 c1"
+        fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+        fontSize="1.4rem"
+        fontStyle="normal"
+        fontWeight={500}
+        href="/shop/boys/all"
+        underline={false}
+        uppercase={false}
+      >
+        <Component
+          className="c0 c1 c2"
+          fontFamily="\\"ff-din-web\\", Helvetica, Arial, sans-serif"
+          fontSize="1.4rem"
+          fontStyle="normal"
+          fontWeight={500}
+          href="/shop/boys/all"
+          underline={false}
+          uppercase={false}
+        >
+          <a
+            className="c0 c1 c2"
+            fontStyle="normal"
+            href="/shop/boys/all"
+          >
+            Example Button
+          </a>
+        </Component>
+      </Styled(Component)>
+    </Styled(Styled(Component))>
+  </Component>
+</Styled(Component)>
+`;

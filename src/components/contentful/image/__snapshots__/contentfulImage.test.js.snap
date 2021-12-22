@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`(Component) ContentfulImage matching the snapshot 1`] = `
+<ContentfulImage
+  fields={
+    Object {
+      "description": "An example tag",
+      "file": Object {
+        "contentType": "image/jpeg",
+        "url": "https://www.example.com/img.jpg",
+      },
+    }
+  }
+  sys={
+    Object {
+      "type": "Asset",
+    }
+  }
+>
+  <InlineImage
+    alt="An example tag"
+    src="https://www.example.com/img.jpg"
+  >
+    <img
+      alt="An example tag"
+      src="https://www.example.com/img.jpg"
+    />
+  </InlineImage>
+</ContentfulImage>
+`;
