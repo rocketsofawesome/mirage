@@ -3,14 +3,7 @@ import PropTypes from 'prop-types'
 
 const OS_FULL_TEXT = 'One Size'
 
-const QuickAddSize = ({
-  checked = false,
-  children,
-  className,
-  id,
-  input = {},
-  quickAdd
-}) => {
+const QuickAddSize = ({ checked = false, children, className, input = {} }) => {
   let label = ''
   if (children === 'OS') {
     label = OS_FULL_TEXT
@@ -19,15 +12,8 @@ const QuickAddSize = ({
   }
   return (
     <div className={className}>
-      <input
-      id={input.name}
-      type='button'
-      {...input}
-       />
-      <label
-        htmlFor={input.name}>
-        {label}
-      </label>
+      <input id={input.name} type='button' {...input} />
+      <label htmlFor={input.name}>{label}</label>
     </div>
   )
 }
