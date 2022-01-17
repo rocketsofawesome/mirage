@@ -91,13 +91,11 @@ const SearchForm = styled.form`
   margin: auto;
   margin-top: 75px;
   width: 280px;
-  height: 37px;
   border-bottom: 1px solid #0073D1;
 
   ${props => props.theme.breakpointsVerbose.aboveTabletMax`
     margin-top: 90px;
     width: 600px;
-    height: 37px;
   `}
 `
 
