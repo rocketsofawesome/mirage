@@ -253,6 +253,7 @@ class BaseCartSidebar extends React.Component {
       isUpdatingQuantity,
       isUpdatingSize,
       itemsInBag,
+      klarnaEnabled,
       lineItems,
       onClickCheckout,
       onClickPaymentRequestButton,
@@ -363,7 +364,13 @@ class BaseCartSidebar extends React.Component {
               showBorder={false}
             />
             <OrderTotal order={order} />
-
+            {/* { klarnaEnabled && */}
+            <klarna-placement
+              data-key='credit-promotion-badge'
+              data-locale='en-US'
+              data-purchase-amount={order.total * 100}
+            />
+            {/* } */}
             <CheckoutButtonsContainer>
               <ButtonLink
                 renderLink={renderLink}
@@ -386,6 +393,10 @@ class BaseCartSidebar extends React.Component {
                 />
               </Elements>}
             </CheckoutButtonsContainer>
+            <klarna-express-button
+                data-locale="en-US"
+                data-theme="default"
+            />
             { giftFeatureOn &&
               <Padding>
                 <GiftLink target='/checkout?contains_gift=true' renderLink={renderLink}>
@@ -419,6 +430,7 @@ BaseCartSidebar.propTypes = {
   isUpdatingQuantity: PropTypes.number,
   isUpdatingSize: PropTypes.number,
   itemsInBag: PropTypes.number,
+  klarnaEnabled: PropTypes.string,
   lineItems: PropTypes.array,
   loadBag: PropTypes.func,
   onUpdateQuantity: PropTypes.func,
@@ -448,6 +460,7 @@ BaseCartSidebar.defaultProps = {
   giftFeatureOn: false,
   isUpdatingQuantity: null,
   isUpdatingSize: null,
+  klarnaEnabled: null,
   renderLink: renderLink,
   renderProductLink: renderLink,
   scrollKeepShopping: false,

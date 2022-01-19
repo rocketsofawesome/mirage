@@ -4,6 +4,8 @@ const env = {
   'production': './config/webpack.config.prod.js'
 }
 console.log(env[process.env.NODE_ENV])
+const KLARNA_SCRIPT_SRC = process.env.KLARNA_SCRIPT_SRC
+const KLARNA_CLIENT_ID = process.env.KLARNA_CLIENT_ID
 module.exports = {
   title: 'Mirage - ROA Pattern Library',
   webpackConfig: require(env[process.env.NODE_ENV]),
