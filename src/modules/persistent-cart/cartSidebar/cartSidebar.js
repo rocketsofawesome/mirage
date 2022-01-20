@@ -195,6 +195,9 @@ const CheckoutButtonsContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 30px;
 `
 
 class BaseCartSidebar extends React.Component {
@@ -210,11 +213,21 @@ class BaseCartSidebar extends React.Component {
   }
 
   componentDidUpdate (prevProps, prevState) {
-    const { shouldShowCartSidebar } = this.props
+    const { shouldShowCartSidebar, klarnaEnabled } = this.props
     if (prevProps.shouldShowCartSidebar === true && shouldShowCartSidebar === false) {
       document.body.style.overflow = 'inherit'
     } else if (prevProps.shouldShowCartSidebar === false && shouldShowCartSidebar === true) {
       document.body.style.overflow = 'hidden'
+      if (klarnaEnabled) {
+        const script = document.createElement("script");
+        script.async = true;
+        script.setAttribute('data-id','UG100247')
+        script.setAttribute('data-environment', 'playground')
+        script.src = "https://x.klarnacdn.net/express-button/v1/lib.js";
+        document.head.appendChild(script);
+        window.KlarnaOnsiteService = window.KlarnaOnsiteService || [];
+        window.KlarnaOnsiteService.push({ eventName: 'refresh-placements' });
+      }
     }
   }
 
@@ -364,19 +377,19 @@ class BaseCartSidebar extends React.Component {
               showBorder={false}
             />
             <OrderTotal order={order} />
-            {/* { klarnaEnabled && */}
-            <klarna-placement
-              data-key='credit-promotion-badge'
-              data-locale='en-US'
-              data-purchase-amount={order.total * 100}
-            />
-            {/* } */}
             <CheckoutButtonsContainer>
+              {klarnaEnabled &&
+                <klarna-placement
+                  data-key='credit-promotion-badge'
+                  data-locale='en-US'
+                  data-purchase-amount={10000}
+                  style={{paddingLeft: '30px'}}
+                ></klarna-placement>
+              }
               <ButtonLink
                 renderLink={renderLink}
                 target='/checkout'
                 width='100%'
-                maxWidth='30rem'
                 kind='blue'
                 disabled={isCheckoutButtonDisabled}
                 onClick={onClickCheckout}>
@@ -392,11 +405,14 @@ class BaseCartSidebar extends React.Component {
                   onClickPaymentRequestButton={onClickPaymentRequestButton}
                 />
               </Elements>}
+              {klarnaEnabled &&
+                <klarna-express-button
+                  style={{width: '100%'}}
+                  data-locale="en-US"
+                  data-theme="default"
+                />
+              }
             </CheckoutButtonsContainer>
-            <klarna-express-button
-                data-locale="en-US"
-                data-theme="default"
-            />
             { giftFeatureOn &&
               <Padding>
                 <GiftLink target='/checkout?contains_gift=true' renderLink={renderLink}>
