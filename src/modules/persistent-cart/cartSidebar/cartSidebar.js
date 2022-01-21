@@ -213,6 +213,12 @@ class BaseCartSidebar extends React.Component {
   }
 
   componentDidUpdate (prevProps, prevState) {
+    const {
+      REACT_APP_KLARNA_ENVIRONMENT,
+      REACT_APP_KLARNA_MERCHANT_ID,
+      REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC
+    } = process.env
+
     const { shouldShowCartSidebar, klarnaEnabled } = this.props
     if (prevProps.shouldShowCartSidebar === true && shouldShowCartSidebar === false) {
       document.body.style.overflow = 'inherit'
@@ -220,10 +226,10 @@ class BaseCartSidebar extends React.Component {
       document.body.style.overflow = 'hidden'
       if (klarnaEnabled) {
         const script = document.createElement("script");
+        script.src = REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC;
+        script.setAttribute('data-id', REACT_APP_KLARNA_MERCHANT_ID)
+        script.setAttribute('data-environment', REACT_APP_KLARNA_ENVIRONMENT)
         script.async = true;
-        script.setAttribute('data-id','UG100247')
-        script.setAttribute('data-environment', 'playground')
-        script.src = "https://x.klarnacdn.net/express-button/v1/lib.js";
         document.head.appendChild(script);
         window.KlarnaOnsiteService = window.KlarnaOnsiteService || [];
         window.KlarnaOnsiteService.push({ eventName: 'refresh-placements' });

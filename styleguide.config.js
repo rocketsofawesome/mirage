@@ -4,8 +4,10 @@ const env = {
   'production': './config/webpack.config.prod.js'
 }
 console.log(env[process.env.NODE_ENV])
-const KLARNA_SCRIPT_SRC = process.env.KLARNA_SCRIPT_SRC
-const KLARNA_CLIENT_ID = process.env.KLARNA_CLIENT_ID
+const {
+  REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC,
+  REACT_APP_KLARNA_CLIENT_ID
+} = process.env
 module.exports = {
   title: 'Mirage - ROA Pattern Library',
   webpackConfig: require(env[process.env.NODE_ENV]),
@@ -27,8 +29,8 @@ module.exports = {
         {src: 'src/theme/typekit.js'},
         {src: 'https://js.stripe.com/v3/'},
         {
-          src: 'https://na-library.playground.klarnaservices.com/lib.js',
-          'data-client-id': '9c24f8be-b441-5cf4-92bb-772269dcba03'
+          src: REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC,
+          'data-client-id': REACT_APP_KLARNA_CLIENT_ID
         }
       ],
       links: [
