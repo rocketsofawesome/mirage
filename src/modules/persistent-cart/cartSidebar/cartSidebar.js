@@ -389,7 +389,7 @@ class BaseCartSidebar extends React.Component {
                   data-key='credit-promotion-badge'
                   data-locale='en-US'
                   data-purchase-amount={order.total * 100}
-                  style={{paddingLeft: '30px'}}
+                  style={{paddingLeft: '30px', paddingTop: '10px', border: '1px solid lightgray'}}
                 ></klarna-placement>
               }
               <ButtonLink
