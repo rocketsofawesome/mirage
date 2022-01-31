@@ -14,6 +14,21 @@ class AddToBagState extends React.Component {
     this.changeSize = this.changeSize.bind(this)
     this.changeColor = this.changeColor.bind(this)
     this.addToBag = this.addToBag.bind(this)
+    this.findSkuBySize = this.findSkuBySize.bind(this)
+  }
+
+  // When using client-side navigating, we need to update the sku for this
+  // component so we don't duplicate the items already in our cart
+  componentDidUpdate (prevProps) {
+    const { selectedColorway } = this.props
+    const { sizeSelected } = this.state
+    if (selectedColorway !== prevProps.selectedColorway && sizeSelected) {
+      const updatedSku = this.findSkuBySize(selectedColorway, sizeSelected)
+
+      this.setState({
+        sku: updatedSku
+      })
+    }
   }
 
   addToBag () {
@@ -39,15 +54,17 @@ class AddToBagState extends React.Component {
 
   changeSize (size) {
     const { selectedColorway } = this.props
-    const sku = selectedColorway.skus.find(
-      (sku) => sku.size === size
-    )
+    const sku = this.findSkuBySize(selectedColorway, size)
 
     this.setState({
       sizeSelected: size,
       error: null,
       sku
     })
+  }
+
+  findSkuBySize (selectedColorway, size) {
+    return selectedColorway.skus.find(sku => sku.size === size)
   }
 
   changeColor (colorSlug) {
