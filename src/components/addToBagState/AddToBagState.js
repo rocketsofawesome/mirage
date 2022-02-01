@@ -16,6 +16,19 @@ class AddToBagState extends React.Component {
     this.addToBag = this.addToBag.bind(this)
   }
 
+  // When client-side navigating between different products, we need to reset the 
+  // sku and sizeSelected so they aren't persisted. This was causing a bug where users
+  // were unintentionally duplicating items in their carts
+  componentDidUpdate (prevProps) {
+    const { selectedColorway } = this.props
+    if (selectedColorway !== prevProps.selectedColorway) {
+      this.setState({
+        sku: null,
+        sizeSelected: null
+      })
+    }
+  }
+
   addToBag () {
     if (this.validate()) {
       const { onAddToBag, module } = this.props
@@ -39,9 +52,7 @@ class AddToBagState extends React.Component {
 
   changeSize (size) {
     const { selectedColorway } = this.props
-    const sku = selectedColorway.skus.find(
-      (sku) => sku.size === size
-    )
+    const sku = selectedColorway.skus.find(sku => sku.size === size)
 
     this.setState({
       sizeSelected: size,
