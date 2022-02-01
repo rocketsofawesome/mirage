@@ -14,19 +14,17 @@ class AddToBagState extends React.Component {
     this.changeSize = this.changeSize.bind(this)
     this.changeColor = this.changeColor.bind(this)
     this.addToBag = this.addToBag.bind(this)
-    this.findSkuBySize = this.findSkuBySize.bind(this)
   }
 
-  // When using client-side navigating, we need to update the sku for this
-  // component so we don't duplicate the items already in our cart
+  // When client-side navigating between different products, we need to reset the 
+  // sku and sizeSelected so they aren't persisted. This was causing a bug where users
+  // were unintentionally duplicating items in their carts
   componentDidUpdate (prevProps) {
     const { selectedColorway } = this.props
-    const { sizeSelected } = this.state
-    if (selectedColorway !== prevProps.selectedColorway && sizeSelected) {
-      const updatedSku = this.findSkuBySize(selectedColorway, sizeSelected)
-
+    if (selectedColorway !== prevProps.selectedColorway) {
       this.setState({
-        sku: updatedSku
+        sku: null,
+        sizeSelected: null
       })
     }
   }
@@ -54,17 +52,13 @@ class AddToBagState extends React.Component {
 
   changeSize (size) {
     const { selectedColorway } = this.props
-    const sku = this.findSkuBySize(selectedColorway, size)
+    const sku = selectedColorway.skus.find(sku => sku.size === size)
 
     this.setState({
       sizeSelected: size,
       error: null,
       sku
     })
-  }
-
-  findSkuBySize (selectedColorway, size) {
-    return selectedColorway.skus.find(sku => sku.size === size)
   }
 
   changeColor (colorSlug) {
