@@ -38,7 +38,7 @@ export class BaseAccountLinks extends React.Component {
     delete props.subMenuOpen
     delete props.signOut
     const { subMenuOpen } = this.state
-    const accountLinkDisplay = name ? name : <BlueSpinner size='40px' />
+    const subMenuAnchor = name ? name : <BlueSpinner size='40px' />
 
     if (loggedIn) {
       const classes = classNames(className, {
@@ -49,7 +49,7 @@ export class BaseAccountLinks extends React.Component {
           <HeaderLink
             onClick={this.toggleSubmenu}
             highlightable={false}>
-            {accountLinkDisplay}
+            {subMenuAnchor}
           </HeaderLink>
           <SubMenu
             open={subMenuOpen}
