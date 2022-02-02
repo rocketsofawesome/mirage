@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import classNames from 'classnames'
 import { HeaderLink, SubMenu } from 'SRC'
+import { BlueSpinner } from 'SRC'
 
 export class BaseAccountLinks extends React.Component {
   constructor (props) {
@@ -37,6 +38,8 @@ export class BaseAccountLinks extends React.Component {
     delete props.subMenuOpen
     delete props.signOut
     const { subMenuOpen } = this.state
+    const accountLinkDisplay = name ? name : <BlueSpinner size='40px' />
+
     if (loggedIn) {
       const classes = classNames(className, {
         'active': subMenuOpen
@@ -46,7 +49,7 @@ export class BaseAccountLinks extends React.Component {
           <HeaderLink
             onClick={this.toggleSubmenu}
             highlightable={false}>
-            {name}
+            {accountLinkDisplay}
           </HeaderLink>
           <SubMenu
             open={subMenuOpen}
@@ -100,7 +103,8 @@ DesktopAccountLinks.propTypes = {
 DesktopAccountLinks.defaultProps = {
   subMenuOpen: false,
   //Used in snap shot testing only
-  highlightable: true
+  highlightable: true,
+  name: null
 }
 
 /** @component */
