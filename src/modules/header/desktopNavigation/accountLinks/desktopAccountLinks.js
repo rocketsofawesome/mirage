@@ -54,7 +54,7 @@ export class BaseAccountLinks extends React.Component {
           <SubMenu
             open={subMenuOpen}
             renderLink={renderLink}
-            showSubscriptionLinks
+            showSubscriptionLinks={showSubscriptionLinks}
             signOut={this.signOut}
             pathname={pathname}
             {...props} />
@@ -103,8 +103,7 @@ DesktopAccountLinks.propTypes = {
 DesktopAccountLinks.defaultProps = {
   subMenuOpen: false,
   //Used in snap shot testing only
-  highlightable: true,
-  name: null
+  highlightable: true
 }
 
 /** @component */
