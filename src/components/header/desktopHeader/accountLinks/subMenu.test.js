@@ -25,7 +25,7 @@ describe('(Base Component) BaseSubMenu', () => {
   const createBaseSubMenu = (inProps) => {
     const props = {
       childCount: 0,
-      isSubscriptionMember: false,
+      showSubscriptionLinks: false,
       ...inProps
     }
     return mountWithTheme(<BaseSubMenu {...props} />)
@@ -50,7 +50,7 @@ describe('(Base Component) BaseSubMenu', () => {
   test('rendering subscription links if a subscriber', () => {
     const nonSubscriptionMenu = createBaseSubMenu({
       open: true,
-      isSubscriptionMember: true
+      showSubscriptionLinks: true
     })
     expect(nonSubscriptionMenu.contains('Manage Deliveries')).toBeTruthy()
     expect(nonSubscriptionMenu.contains('Style File')).toBeTruthy()
@@ -62,7 +62,7 @@ describe('(Base Component) BaseSubMenu', () => {
     const nonSubscriptionMenu = createBaseSubMenu({
       childCount: 4,
       open: true,
-      isSubscriptionMember: true
+      showSubscriptionLinks: true
     })
     expect(nonSubscriptionMenu.contains('Manage Deliveries')).toBeTruthy()
     expect(nonSubscriptionMenu.contains('Style File')).toBeTruthy()

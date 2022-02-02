@@ -11,7 +11,7 @@ describe('(Styled Component) DesktopAccountLinks', () => {
   }
   describe('when logged out', () => {
     const loggedOutProps = {
-      isSubscriptionMember: false,
+      showSubscriptionLinks: false,
       loggedIn: false,
       name: undefined,
       renderLink: jest.fn(({children, ...props}) => <a {...props}>{children}</a>),
@@ -40,7 +40,7 @@ describe('(Styled Component) DesktopAccountLinks', () => {
 
   describe('when logged in', () => {
     const loggedInProps = {
-      isSubscriptionMember: false,
+      showSubscriptionLinks: false,
       loggedIn: true,
       name: 'Josh',
       subMenuOpen: false
@@ -79,7 +79,7 @@ describe('(Styled Component) DesktopAccountLinks', () => {
 
       const subscriptionComponent = createDesktopAccountLinks({
         ...loggedInProps,
-        isSubscriptionMember: true,
+        showSubscriptionLinks: true,
         open: true
       })
 

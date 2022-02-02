@@ -60,7 +60,7 @@ export class BaseDesktopNavigation extends React.Component {
       className,
       animationLength,
       renderLink,
-      isSubscriptionMember,
+      showSubscriptionLinks,
       highlightable,
       girlsLinks,
       boysLinks,
@@ -151,7 +151,7 @@ export class BaseDesktopNavigation extends React.Component {
                       Outfits
                   </HeaderLink>
                 </li>
-                {!isSubscriptionMember &&
+                {!showSubscriptionLinks &&
                   <li>
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
@@ -163,7 +163,7 @@ export class BaseDesktopNavigation extends React.Component {
                     </HeaderLink>
                   </li>
                 }
-                {isSubscriptionMember &&
+                {showSubscriptionLinks &&
                   <li>
                     <HeaderLink
                       onMouseEnter={this.closeDrawers}
@@ -217,7 +217,7 @@ export class BaseDesktopNavigation extends React.Component {
                 }
                 <li className={showSearch ? undefined : 'spacer'}>
                   <DesktopAccountLinks
-                    isSubscriptionMember={isSubscriptionMember}
+                    showSubscriptionLinks={showSubscriptionLinks}
                     highlightable={highlightable}
                     renderLink={renderLink}
                     pathname={pathname}
@@ -335,7 +335,7 @@ BaseDesktopNavigation.propTypes = {
   loggedIn: PropTypes.bool,
   animationLength: PropTypes.number,
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool,
+  showSubscriptionLinks: PropTypes.bool,
   girlsLinks: PropTypes.object,
   boysLinks: PropTypes.object,
   bagCount: PropTypes.number,

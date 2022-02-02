@@ -38,7 +38,7 @@ _Note: The drawerPosition and position props are only used to constrain the mobi
       boysLinks={require('./defaultProps').boysLinks}
       girlsLinks={require('./defaultProps').girlsLinks}
       renderLink={require('./defaultProps').renderLink}
-      isSubscriptionMember
+      showSubscriptionLinks
       loggedIn />
     <img style={{maxWidth: '100%'}} src='https://www.fillmurray.com/g/500/700' />
   </div>

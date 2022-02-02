@@ -27,7 +27,7 @@ export class BaseAccountLinks extends React.Component {
     const {
       className,
       highlightable,
-      isSubscriptionMember,
+      showSubscriptionLinks,
       loggedIn,
       renderLink,
       name,
@@ -51,7 +51,7 @@ export class BaseAccountLinks extends React.Component {
           <SubMenu
             open={subMenuOpen}
             renderLink={renderLink}
-            isSubscriptionMember={isSubscriptionMember}
+            showSubscriptionLinks
             signOut={this.signOut}
             pathname={pathname}
             {...props} />
@@ -90,7 +90,7 @@ ${HeaderLink} {
 
 DesktopAccountLinks.propTypes = {
   className: PropTypes.string,
-  isSubscriptionMember: PropTypes.bool,
+  showSubscriptionLinks: PropTypes.bool,
   loggedIn: PropTypes.bool,
   name: PropTypes.string,
   renderLink: PropTypes.func,

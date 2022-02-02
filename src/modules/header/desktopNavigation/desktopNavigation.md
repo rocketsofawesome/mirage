@@ -10,7 +10,7 @@
   <DesktopNavigation
     position='static'
     loggedIn
-    isSubscriptionMember
+    showSubscriptionLinks
     name='Josh'/>
   <div style={{height: '60rem'}} />
 ```

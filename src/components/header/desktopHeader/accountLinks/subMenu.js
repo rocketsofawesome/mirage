@@ -37,7 +37,7 @@ z-index: 10;
 
 export class BaseSubMenu extends React.Component {
   render () {
-    const { className, childCount, open, signOut, isSubscriptionMember, renderLink, pathname } = this.props
+    const { className, childCount, open, signOut, showSubscriptionLinks, renderLink, pathname } = this.props
     return (
       <CSSTransitionGroup
         transitionName={transition}
@@ -46,7 +46,7 @@ export class BaseSubMenu extends React.Component {
         className={className}>
         {open &&
           <nav className='subMenu'>
-            {isSubscriptionMember &&
+            {showSubscriptionLinks &&
               <div>
                 <Link
                   uppercase
@@ -87,7 +87,7 @@ export class BaseSubMenu extends React.Component {
               renderLink={renderLink}>
               My Account
             </Link>
-            { (isSubscriptionMember && childCount < 4) &&
+            { (showSubscriptionLinks && childCount < 4) &&
               <React.Fragment>
                 <Link
                   uppercase
@@ -105,7 +105,7 @@ export class BaseSubMenu extends React.Component {
                 </Link>
               </React.Fragment>
             }
-            {isSubscriptionMember &&
+            {showSubscriptionLinks &&
               <Link
                 uppercase
                 underline={false}
@@ -170,13 +170,13 @@ SubMenu.propTypes = {
   open: PropTypes.bool,
   signOut: PropTypes.func,
   childCount: PropTypes.number,
-  isSubscriptionMember: PropTypes.bool,
+  showSubscriptionLinks: PropTypes.bool,
   pathname: PropTypes.string
 }
 
 SubMenu.defaultProps = {
   childCount: 0,
-  isSubscriptionMember: false,
+  showSubscriptionLinks: false,
   signOut: () => alert('Signing Out')
 }
 
