@@ -14,7 +14,7 @@
     <DesktopAccountLinks
       name='Shawn'
       loggedIn
-      isSubscriptionMember
+      showSubscriptionLinks
       renderLink={(inProps) => {
         const {target, children, ...props } = inProps
         return (<span href={target} {...props} onClick={()=> alert('Hello')}>{children}</span>)

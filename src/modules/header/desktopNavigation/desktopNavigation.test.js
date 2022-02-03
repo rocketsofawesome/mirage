@@ -51,7 +51,7 @@ describe('(Base Component) BaseDesktopNavigation', () => {
 
   describe('when user is a subscriber', () => {
     test('subscription links are rendered', () => {
-      const component = createBaseDesktopNavigation({isSubscriptionMember: true})
+      const component = createBaseDesktopNavigation({showSubscriptionLinks: true})
       expect(component.find({children: 'Subscribe + Save'}).length).toBeFalsy()
       expect(component.find({children: 'My Subscription'}).length).toBeTruthy()
     })

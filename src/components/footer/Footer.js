@@ -16,8 +16,7 @@ const LINKS = {
 
 const BaseFooter = ({
   className,
-  isNotSubscriber,
-  isSubscriptionMember,
+  showSubscriptionLinks,
   homepageUrl,
   referrerAmount,
   referredUserAmount
@@ -29,7 +28,7 @@ const BaseFooter = ({
           <FlexCol gutter='15px' mobile={{width: 2}} desktop={{width: 3}}>
             <H5>MORE</H5>
             <ul>
-              {isNotSubscriber &&
+              {!showSubscriptionLinks &&
                 <li>
                   <WhiteLink light href={`${homepageUrl}/subscribe-and-save`}>Subscribe + Save</WhiteLink>
                 </li>
@@ -87,7 +86,7 @@ const BaseFooter = ({
           </FlexCol>
         </FlexRow>
       </FlexCol>
-      {isSubscriptionMember &&
+      {showSubscriptionLinks &&
         <FlexCol
           className='referrals'
           gutter='15px'
@@ -254,8 +253,7 @@ const Footer = styled(BaseFooter)`
 
 Footer.propTypes = {
   className: PropTypes.string,
-  isNotSubscriber: PropTypes.bool,
-  isSubscriptionMember: PropTypes.bool,
+  showSubscriptionLinks: PropTypes.bool,
   referralAmount: PropTypes.string,
   referredUserAmount: PropTypes.string
 }

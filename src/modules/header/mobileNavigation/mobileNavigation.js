@@ -43,7 +43,7 @@ export class BaseMobileNavigation extends React.Component {
       drawerPosition,
       loggedIn,
       renderLink,
-      isSubscriptionMember,
+      showSubscriptionLinks,
       bagCount,
       clickBag,
       clickSearch,
@@ -150,7 +150,7 @@ export class BaseMobileNavigation extends React.Component {
                 Outfits
               </MobileLinkTop>
             </li>
-            {!isSubscriptionMember &&
+            {!showSubscriptionLinks &&
               <div>
                 <li>
                   <MobileLinkTop href='/shop/sale'>
@@ -164,7 +164,7 @@ export class BaseMobileNavigation extends React.Component {
                 </li>
               </div>
             }
-            {isSubscriptionMember &&
+            {showSubscriptionLinks &&
               <div>
                 <li>
                   <MobileLinkTop href='/shop/sale'>
@@ -233,7 +233,7 @@ export class BaseMobileNavigation extends React.Component {
             }
             {loggedIn &&
               <MobileAccountLinks
-                isSubscriptionMember={isSubscriptionMember}
+                showSubscriptionLinks
                 renderLink={renderLink}
                 signOut={signOut}
               />
@@ -284,7 +284,7 @@ MobileNavigation.propTypes = {
   className: PropTypes.string,
   loggedIn: PropTypes.bool,
   renderLink: PropTypes.func,
-  isSubscriptionMember: PropTypes.bool,
+  showSubscriptionLinks: PropTypes.bool,
   clickBag: PropTypes.func,
   clickSearch: PropTypes.func
 }
