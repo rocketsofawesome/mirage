@@ -25,8 +25,9 @@ module.exports = {
         {src: 'src/theme/typekit.js'},
         {src: 'https://js.stripe.com/v3/'},
         {
-          src: 'https://na-library.playground.klarnaservices.com/lib.js',
-          'data-client-id': '9c24f8be-b441-5cf4-92bb-772269dcba03'
+          src: 'https://x.klarnacdn.net/express-button/v1/lib.js',
+          'data-client-id': 'UG100247',
+          'data-environment': 'playground'
         }
       ],
       links: [

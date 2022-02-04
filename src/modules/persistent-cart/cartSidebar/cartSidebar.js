@@ -8,7 +8,8 @@ import MediaQuery from 'react-responsive';
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper, EmptyCart
+  CouponCodeWrapper, EmptyCart, KlarnaCreditPromotionBadge,
+  KlarnaExpressCheckoutButton
 } from 'SRC'
 
 const Overlay = styled.div`
@@ -195,6 +196,9 @@ const CheckoutButtonsContainer = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  flex-direction: column;
+  row-gap: 10px;
+  padding: 0 30px;
 `
 
 class BaseCartSidebar extends React.Component {
@@ -209,7 +213,7 @@ class BaseCartSidebar extends React.Component {
     }
   }
 
-  componentDidUpdate (prevProps, prevState) {
+  componentDidUpdate (prevProps) {
     const { shouldShowCartSidebar } = this.props
     if (prevProps.shouldShowCartSidebar === true && shouldShowCartSidebar === false) {
       document.body.style.overflow = 'inherit'
@@ -253,6 +257,10 @@ class BaseCartSidebar extends React.Component {
       isUpdatingQuantity,
       isUpdatingSize,
       itemsInBag,
+      klarnaEnabled,
+      klarnaExpressCheckoutScriptSource,
+      klarnaMerchantId,
+      klarnaEnvironment,
       lineItems,
       onClickCheckout,
       onClickPaymentRequestButton,
@@ -363,13 +371,16 @@ class BaseCartSidebar extends React.Component {
               showBorder={false}
             />
             <OrderTotal order={order} />
-
             <CheckoutButtonsContainer>
+              <KlarnaCreditPromotionBadge
+                amount={order.total}
+                enabled={klarnaEnabled}
+                style={{paddingLeft: '30px', paddingTop: '10px', border: '1px solid lightgray'}}
+              />
               <ButtonLink
                 renderLink={renderLink}
                 target='/checkout'
                 width='100%'
-                maxWidth='30rem'
                 kind='blue'
                 disabled={isCheckoutButtonDisabled}
                 onClick={onClickCheckout}>
@@ -385,6 +396,12 @@ class BaseCartSidebar extends React.Component {
                   onClickPaymentRequestButton={onClickPaymentRequestButton}
                 />
               </Elements>}
+              <KlarnaExpressCheckoutButton
+                enabled={klarnaEnabled}
+                klarnaExpressCheckoutScriptSource={klarnaExpressCheckoutScriptSource}
+                klarnaMerchantId={klarnaMerchantId}
+                klarnaEnvironment={klarnaEnvironment}
+              />
             </CheckoutButtonsContainer>
             { giftFeatureOn &&
               <Padding>
@@ -419,6 +436,10 @@ BaseCartSidebar.propTypes = {
   isUpdatingQuantity: PropTypes.number,
   isUpdatingSize: PropTypes.number,
   itemsInBag: PropTypes.number,
+  klarnaEnabled: PropTypes.bool,
+  klarnaExpressCheckoutScriptSource: PropTypes.string,
+  klarnaMerchantId: PropTypes.string,
+  klarnaEnvironment: PropTypes.string,
   lineItems: PropTypes.array,
   loadBag: PropTypes.func,
   onUpdateQuantity: PropTypes.func,
@@ -448,6 +469,7 @@ BaseCartSidebar.defaultProps = {
   giftFeatureOn: false,
   isUpdatingQuantity: null,
   isUpdatingSize: null,
+  klarnaEnabled: null,
   renderLink: renderLink,
   renderProductLink: renderLink,
   scrollKeepShopping: false,
