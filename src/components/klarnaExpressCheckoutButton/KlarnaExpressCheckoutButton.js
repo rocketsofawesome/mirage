@@ -8,7 +8,7 @@ class KlarnaCreditPromotionBadge extends React.Component {
       klarnaEnvironment
     } = this.props
   
-    // In order for the klarna-express-button markup to by hydrated properly,
+    // In order for the klarna-express-button markup to be hydrated properly,
     // this script has to be loaded each time this component renders
     const script = document.createElement('script')
     script.src = klarnaExpressCheckoutScriptSource
