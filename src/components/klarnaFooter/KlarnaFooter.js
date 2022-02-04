@@ -1,6 +1,6 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { klarnaEnabled } from '../klarnaEnabled'
 
 const Wrapper = styled.div`
   padding: 0 20px;
@@ -15,11 +15,7 @@ const Container = styled.div`
   padding: 10px 0;
 `
 
-function KlarnaFooter ({ enabled }) {
-  if (!enabled) {
-    return null
-  }
-
+function KlarnaFooter () {
   return (
     <Wrapper>
       <Container>
@@ -32,13 +28,5 @@ function KlarnaFooter ({ enabled }) {
   )
 }
 
-KlarnaFooter.propTypes = {
-  enabled: PropTypes.bool
-}
-
-KlarnaFooter.defaultProps = {
-  enabled: true
-}
-
 /** @component */
-export default KlarnaFooter
+export default klarnaEnabled(KlarnaFooter)

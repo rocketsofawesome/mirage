@@ -372,12 +372,11 @@ class BaseCartSidebar extends React.Component {
             />
             <OrderTotal order={order} />
             <CheckoutButtonsContainer>
-              {klarnaEnabled &&
-                <KlarnaCreditPromotionBadge
-                  amount={order.total}
-                  style={{paddingLeft: '30px', paddingTop: '10px', border: '1px solid lightgray'}}
-                />
-              }
+              <KlarnaCreditPromotionBadge
+                amount={order.total}
+                enabled={klarnaEnabled}
+                style={{paddingLeft: '30px', paddingTop: '10px', border: '1px solid lightgray'}}
+              />
               <ButtonLink
                 renderLink={renderLink}
                 target='/checkout'
@@ -397,13 +396,12 @@ class BaseCartSidebar extends React.Component {
                   onClickPaymentRequestButton={onClickPaymentRequestButton}
                 />
               </Elements>}
-              {klarnaEnabled &&
-                <KlarnaExpressCheckoutButton
-                  klarnaExpressCheckoutScriptSource={klarnaExpressCheckoutScriptSource}
-                  klarnaMerchantId={klarnaMerchantId}
-                  klarnaEnvironment={klarnaEnvironment}
-                />
-              }
+              <KlarnaExpressCheckoutButton
+                enabled={klarnaEnabled}
+                klarnaExpressCheckoutScriptSource={klarnaExpressCheckoutScriptSource}
+                klarnaMerchantId={klarnaMerchantId}
+                klarnaEnvironment={klarnaEnvironment}
+              />
             </CheckoutButtonsContainer>
             { giftFeatureOn &&
               <Padding>
@@ -438,7 +436,7 @@ BaseCartSidebar.propTypes = {
   isUpdatingQuantity: PropTypes.number,
   isUpdatingSize: PropTypes.number,
   itemsInBag: PropTypes.number,
-  klarnaEnabled: PropTypes.string,
+  klarnaEnabled: PropTypes.bool,
   klarnaExpressCheckoutScriptSource: PropTypes.string,
   klarnaMerchantId: PropTypes.string,
   klarnaEnvironment: PropTypes.string,

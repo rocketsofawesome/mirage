@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { klarnaEnabled } from '../klarnaEnabled'
 
 function refresh () {
   window.KlarnaOnsiteService = window.KlarnaOnsiteService || []
@@ -39,4 +40,5 @@ KlarnaCreditPromotionBadge.propTypes = {
   style: PropTypes.object
 }
 
-export default KlarnaCreditPromotionBadge
+/** @component */
+export default klarnaEnabled(KlarnaCreditPromotionBadge)

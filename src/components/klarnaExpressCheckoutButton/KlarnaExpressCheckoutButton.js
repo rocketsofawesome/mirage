@@ -1,6 +1,7 @@
 import React from 'react'
+import { klarnaEnabled } from '../klarnaEnabled'
 
-class KlarnaCreditPromotionBadge extends React.Component {
+class KlarnaExpressCheckoutButton extends React.Component {
   componentDidMount () {
     const {
       klarnaExpressCheckoutScriptSource,
@@ -10,17 +11,17 @@ class KlarnaCreditPromotionBadge extends React.Component {
   
     // In order for the klarna-express-button markup to be hydrated properly,
     // this script has to be loaded each time this component renders
-    const script = document.createElement('script')
-    script.src = klarnaExpressCheckoutScriptSource
-    script.id = 'klarnaCheckoutButtonScript'
-    script.setAttribute('data-id', klarnaMerchantId)
-    script.setAttribute('data-environment', klarnaEnvironment)
-    script.async = true
-    document.head.appendChild(script)
+    this.script = document.createElement('script')
+    this.script.src = klarnaExpressCheckoutScriptSource
+    this.script.id = 'klarnaCheckoutButtonScript'
+    this.script.setAttribute('data-id', klarnaMerchantId)
+    this.script.setAttribute('data-environment', klarnaEnvironment)
+    this.script.async = true
+    document.head.appendChild(this.script)
   }
 
   componentWillUnmount () {
-    document.querySelector('#klarnaCheckoutButtonScript').remove()
+    this.script.remove()
   }
 
   render () {
@@ -34,4 +35,5 @@ class KlarnaCreditPromotionBadge extends React.Component {
   }
 }
 
-export default KlarnaCreditPromotionBadge
+/** @component */
+export default klarnaEnabled(KlarnaExpressCheckoutButton)
