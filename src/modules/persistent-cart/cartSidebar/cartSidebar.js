@@ -8,7 +8,8 @@ import MediaQuery from 'react-responsive';
 import {
   H3, H4, ButtonLink, ProgressBar, ProgressBarText,
   PersistentCartProductList, XIcon, PaymentRequestForm,
-  CouponCodeWrapper, EmptyCart
+  CouponCodeWrapper, EmptyCart, KlarnaCreditPromotionBadge,
+  KlarnaExpressCheckoutButton
 } from 'SRC'
 
 const Overlay = styled.div`
@@ -212,28 +213,12 @@ class BaseCartSidebar extends React.Component {
     }
   }
 
-  componentDidUpdate (prevProps, prevState) {
-    const {
-      REACT_APP_KLARNA_ENVIRONMENT,
-      REACT_APP_KLARNA_MERCHANT_ID,
-      REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC
-    } = process.env
-
-    const { shouldShowCartSidebar, klarnaEnabled } = this.props
+  componentDidUpdate (prevProps) {
+    const { shouldShowCartSidebar } = this.props
     if (prevProps.shouldShowCartSidebar === true && shouldShowCartSidebar === false) {
       document.body.style.overflow = 'inherit'
     } else if (prevProps.shouldShowCartSidebar === false && shouldShowCartSidebar === true) {
       document.body.style.overflow = 'hidden'
-      if (klarnaEnabled) {
-        const script = document.createElement("script");
-        script.src = REACT_APP_KLARNA_EXPRESS_BUTTON_SCRIPT_SRC;
-        script.setAttribute('data-id', REACT_APP_KLARNA_MERCHANT_ID)
-        script.setAttribute('data-environment', REACT_APP_KLARNA_ENVIRONMENT)
-        script.async = true;
-        document.head.appendChild(script);
-        window.KlarnaOnsiteService = window.KlarnaOnsiteService || [];
-        window.KlarnaOnsiteService.push({ eventName: 'refresh-placements' });
-      }
     }
   }
 
@@ -273,6 +258,9 @@ class BaseCartSidebar extends React.Component {
       isUpdatingSize,
       itemsInBag,
       klarnaEnabled,
+      klarnaExpressCheckoutScriptSource,
+      klarnaMerchantId,
+      klarnaEnvironment,
       lineItems,
       onClickCheckout,
       onClickPaymentRequestButton,
@@ -385,12 +373,10 @@ class BaseCartSidebar extends React.Component {
             <OrderTotal order={order} />
             <CheckoutButtonsContainer>
               {klarnaEnabled &&
-                <klarna-placement
-                  data-key='credit-promotion-badge'
-                  data-locale='en-US'
-                  data-purchase-amount={order.total * 100}
+                <KlarnaCreditPromotionBadge
+                  amount={order.total}
                   style={{paddingLeft: '30px', paddingTop: '10px', border: '1px solid lightgray'}}
-                ></klarna-placement>
+                />
               }
               <ButtonLink
                 renderLink={renderLink}
@@ -412,10 +398,10 @@ class BaseCartSidebar extends React.Component {
                 />
               </Elements>}
               {klarnaEnabled &&
-                <klarna-express-button
-                  style={{width: '100%'}}
-                  data-locale="en-US"
-                  data-theme="default"
+                <KlarnaExpressCheckoutButton
+                  klarnaExpressCheckoutScriptSource={klarnaExpressCheckoutScriptSource}
+                  klarnaMerchantId={klarnaMerchantId}
+                  klarnaEnvironment={klarnaEnvironment}
                 />
               }
             </CheckoutButtonsContainer>
