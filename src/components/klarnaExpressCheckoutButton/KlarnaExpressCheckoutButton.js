@@ -1,23 +1,24 @@
 import React from 'react'
 
-function refresh (props) {
-  const {
-    klarnaExpressCheckoutScriptSource,
-    klarnaMerchantId,
-    klarnaEnvironment
-  } = props
-
-  const script = document.createElement('script')
-  script.src = klarnaExpressCheckoutScriptSource
-  script.setAttribute('data-id', klarnaMerchantId)
-  script.setAttribute('data-environment', klarnaEnvironment)
-  script.async = true
-  document.head.appendChild(script)
-}
-
 class KlarnaCreditPromotionBadge extends React.Component {
   componentDidMount () {
-    refresh(this.props)
+    const {
+      klarnaExpressCheckoutScriptSource,
+      klarnaMerchantId,
+      klarnaEnvironment
+    } = this.props
+  
+    const script = document.createElement('script')
+    script.src = klarnaExpressCheckoutScriptSource
+    script.id = 'klarnaCheckoutButtonScript'
+    script.setAttribute('data-id', klarnaMerchantId)
+    script.setAttribute('data-environment', klarnaEnvironment)
+    script.async = true
+    document.head.appendChild(script)
+  }
+
+  componentWillUnmount () {
+    document.querySelector('#klarnaCheckoutButtonScript').remove()
   }
 
   render () {
