@@ -23,7 +23,11 @@ module.exports = {
       scripts: [
         {src: 'https://use.typekit.net/bfw8xpa.js'},
         {src: 'src/theme/typekit.js'},
-        {src: 'https://js.stripe.com/v3/'}
+        {src: 'https://js.stripe.com/v3/'},
+        {
+          src: 'https://na-library.playground.klarnaservices.com/lib.js',
+          'data-client-id': '9c24f8be-b441-5cf4-92bb-772269dcba03'
+        }
       ],
       links: [
         {

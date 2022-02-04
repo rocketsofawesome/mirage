@@ -9,11 +9,13 @@ export class Highlighter extends React.Component {
     super(props)
     this.state = {points: ''}
   }
-  componentWillMount () {
+
+  componentDidMount () {
     const { pointCollection } = this.props
     const index = Math.floor((Math.random() * 3))
-    this.setState({points: pointCollection[index].join(' ')})
+    this.setState({ points: pointCollection[index].join(' ') })
   }
+
   render () {
     const  { className: highlighterClass, highlight } = this.props
     const className = classNames(highlighterClass, {

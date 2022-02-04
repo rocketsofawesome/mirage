@@ -80,7 +80,7 @@ class BasePressQuotes extends React.Component {
     clearInterval(this.timer)
   }
 
-  componentWillMount () {
+  componentDidMount () {
     this.setState({index: 0})
     this.quoteTimer()
   }
