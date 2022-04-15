@@ -254,6 +254,7 @@ class BaseCartSidebar extends React.Component {
       finalSaleOn,
       giftFeatureOn,
       hideCartSidebar,
+      onKlarnaExpressCheckout,
       isUpdatingQuantity,
       isUpdatingSize,
       itemsInBag,
@@ -401,6 +402,7 @@ class BaseCartSidebar extends React.Component {
                 klarnaExpressCheckoutScriptSource={klarnaExpressCheckoutScriptSource}
                 klarnaMerchantId={klarnaMerchantId}
                 klarnaEnvironment={klarnaEnvironment}
+                onKlarnaExpressCheckout={onKlarnaExpressCheckout}
               />
             </CheckoutButtonsContainer>
             { giftFeatureOn &&
@@ -444,6 +446,7 @@ BaseCartSidebar.propTypes = {
   loadBag: PropTypes.func,
   onUpdateQuantity: PropTypes.func,
   onUpdateSize: PropTypes.func,
+  onKlarnaExpressCheckout: PropTypes.func,
   order: PropTypes.object,
   promoErrorMessage: PropTypes.string,
   promoHasBeenApplied: PropTypes.bool,
@@ -470,6 +473,7 @@ BaseCartSidebar.defaultProps = {
   isUpdatingQuantity: null,
   isUpdatingSize: null,
   klarnaEnabled: null,
+  onKlarnaExpressCheckout: () => null,
   renderLink: renderLink,
   renderProductLink: renderLink,
   scrollKeepShopping: false,
