@@ -88,7 +88,7 @@ describe('(Styled Component) DesktopAccountLinks', () => {
         .find(SubMenu)
         .find(Link)
         .length
-      ).toEqual(9)
+      ).toEqual(8)
     })
 
   })
