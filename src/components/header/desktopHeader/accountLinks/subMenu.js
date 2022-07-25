@@ -37,7 +37,7 @@ z-index: 10;
 
 export class BaseSubMenu extends React.Component {
   render () {
-    const { className, childCount, open, signOut, showSubscriptionLinks, renderLink, pathname } = this.props
+    const { className, childCount, open, signOut, showSubscriptionLinks, renderLink } = this.props
     return (
       <CSSTransitionGroup
         transitionName={transition}
@@ -61,15 +61,6 @@ export class BaseSubMenu extends React.Component {
                   target='/deliveries'
                   renderLink={renderLink}>
                   Manage Deliveries
-                </Link>
-                <Link
-                  uppercase
-                  underline={false}
-                  target='/reverse'
-                  renderLink={renderLink}
-                  className={pathname === '/reverse' && 'highlighted'}
-                >
-                  Rockets Reverse
                 </Link>
               </div>
             }
@@ -170,8 +161,7 @@ SubMenu.propTypes = {
   open: PropTypes.bool,
   signOut: PropTypes.func,
   childCount: PropTypes.number,
-  showSubscriptionLinks: PropTypes.bool,
-  pathname: PropTypes.string
+  showSubscriptionLinks: PropTypes.bool
 }
 
 SubMenu.defaultProps = {

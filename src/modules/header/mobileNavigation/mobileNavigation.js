@@ -190,14 +190,6 @@ export class BaseMobileNavigation extends React.Component {
                 </li>
                 <li>
                   <MobileLinkTop
-                    target='/reverse'
-                    renderLink={renderLink}
-                  >
-                    Rockets Reverse
-                  </MobileLinkTop>
-                </li>
-                <li>
-                  <MobileLinkTop
                     target='/style-file'
                     renderLink={renderLink}
                   >
