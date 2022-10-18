@@ -150,6 +150,11 @@ export class BaseMobileNavigation extends React.Component {
                 Outfits
               </MobileLinkTop>
             </li>
+            <li>
+              <MobileLinkTop href='/bundles'>
+                Bundles
+              </MobileLinkTop>
+            </li>
             {!showSubscriptionLinks &&
               <div>
                 <li>

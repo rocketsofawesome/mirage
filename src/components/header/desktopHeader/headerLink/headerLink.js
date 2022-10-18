@@ -9,7 +9,7 @@ import BaseHeaderLink from './headerLink.base'
 /** @component */
 const HeaderLink = styled(BaseHeaderLink)`
   position: relative;
-  ${props => props.spacing ? `margin: 0 1.5rem;`: ''}
+  ${props => props.spacing ? `margin: 0 1rem;`: ''}
   ${props => props.spacing ? `padding: 0 1rem;` : ''}
   display: flex;
   cursor: pointer;
